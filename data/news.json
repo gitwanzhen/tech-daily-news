@@ -100,6 +100,346 @@
     "url": "https://juejin.cn/post/7666217642173513762"
   },
   {
+    "id": 30,
+    "title": "什么是 Luke（循环工程）",
+    "summary": "Luke（Loop）是 AI 开发的第四代 paradigm——从「写提示词」进化到「设计循环」。你不是再在一轮轮对话中指挥 AI，而是设定一个 Goal，设计一套系统，让 AI 自己循环执行、自主纠",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-26",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7666354528841515017"
+  },
+  {
+    "id": 31,
+    "title": "Agent 请求失败后，别再疯狂点击重新生成了",
+    "summary": "设想 Agent 正在帮你处理一个测试失败。 Agent 读过报错日志后，顺着日志找到相关配置文件，然后模型就开始生成修改方案，回答却停在半个代码块里。你感到有点疑惑，点击了重新生成，随后可能得到完整",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-26",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7666132791629250603"
+  },
+  {
+    "id": 32,
+    "title": "长上下文时代，RAG 还有必要吗？— 从企业级实践出发的深度分析",
+    "summary": "本文探讨在大模型上下文窗口不断扩展的背景下（2026 年主流模型已支持 128K-1M token），RAG（检索增强生成）是否仍有存在价值。文章从企业级知识库的真实痛点出发，分析长上下文模型的固有限",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-26",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7666089320763523082"
+  },
+  {
+    "id": 33,
+    "title": "Agent Harness 工程核心架构拆解与 300 行代码实现",
+    "summary": "一个语言模型，每次 API 调用都是独立事件。不记得上一轮说了什么，不知道三分钟前调过什么工具，更不会在进程崩溃后从断点恢复。它没有真正的主动性——本质上是被一个 while 循环推着走的。 这个 w",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-26",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7666250786230714402"
+  },
+  {
+    "id": 34,
+    "title": "在全面小康道路上不落下一个",
+    "summary": "在全面小康道路上不落下一个",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%9C%A8%E5%85%A8%E9%9D%A2%E5%B0%8F%E5%BA%B7%E9%81%93%E8%B7%AF%E4%B8%8A%E4%B8%8D%E8%90%BD%E4%B8%8B%E4%B8%80%E4%B8%AA"
+  },
+  {
+    "id": 35,
+    "title": "花一万多产检一路绿灯生下来畸形",
+    "summary": "花一万多产检一路绿灯生下来畸形",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%8A%B1%E4%B8%80%E4%B8%87%E5%A4%9A%E4%BA%A7%E6%A3%80%E4%B8%80%E8%B7%AF%E7%BB%BF%E7%81%AF%E7%94%9F%E4%B8%8B%E6%9D%A5%E7%95%B8%E5%BD%A2"
+  },
+  {
+    "id": 36,
+    "title": "台湾 致癌油",
+    "summary": "台湾 致癌油",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%8F%B0%E6%B9%BE%20%E8%87%B4%E7%99%8C%E6%B2%B9"
+  },
+  {
+    "id": 37,
+    "title": "APEC人工智能未来合作开启新路径",
+    "summary": "APEC人工智能未来合作开启新路径",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3DAPEC%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%9C%AA%E6%9D%A5%E5%90%88%E4%BD%9C%E5%BC%80%E5%90%AF%E6%96%B0%E8%B7%AF%E5%BE%84"
+  },
+  {
+    "id": 38,
+    "title": "鹿晗 与我无关的事情",
+    "summary": "鹿晗 与我无关的事情",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%B9%BF%E6%99%97%20%E4%B8%8E%E6%88%91%E6%97%A0%E5%85%B3%E7%9A%84%E4%BA%8B%E6%83%85"
+  },
+  {
+    "id": 39,
+    "title": "狡猾的健身猪妖",
+    "summary": "狡猾的健身猪妖",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%8B%A1%E7%8C%BE%E7%9A%84%E5%81%A5%E8%BA%AB%E7%8C%AA%E5%A6%96"
+  },
+  {
+    "id": 40,
+    "title": "中餐厅张雅琪这个发型",
+    "summary": "中餐厅张雅琪这个发型",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%B8%AD%E9%A4%90%E5%8E%85%E5%BC%A0%E9%9B%85%E7%90%AA%E8%BF%99%E4%B8%AA%E5%8F%91%E5%9E%8B"
+  },
+  {
+    "id": 41,
+    "title": "网民编造台风天骑手出勤谣言被罚",
+    "summary": "网民编造台风天骑手出勤谣言被罚",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%BD%91%E6%B0%91%E7%BC%96%E9%80%A0%E5%8F%B0%E9%A3%8E%E5%A4%A9%E9%AA%91%E6%89%8B%E5%87%BA%E5%8B%A4%E8%B0%A3%E8%A8%80%E8%A2%AB%E7%BD%9A"
+  },
+  {
+    "id": 42,
+    "title": "家属回应6岁女童基因编辑试验后死亡",
+    "summary": "家属回应6岁女童基因编辑试验后死亡",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%AE%B6%E5%B1%9E%E5%9B%9E%E5%BA%946%E5%B2%81%E5%A5%B3%E7%AB%A5%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91%E8%AF%95%E9%AA%8C%E5%90%8E%E6%AD%BB%E4%BA%A1"
+  },
+  {
+    "id": 43,
+    "title": "终于有人把英语体系给说清楚了",
+    "summary": "终于有人把英语体系给说清楚了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%BB%88%E4%BA%8E%E6%9C%89%E4%BA%BA%E6%8A%8A%E8%8B%B1%E8%AF%AD%E4%BD%93%E7%B3%BB%E7%BB%99%E8%AF%B4%E6%B8%85%E6%A5%9A%E4%BA%86"
+  },
+  {
+    "id": 44,
+    "title": "八仙！",
+    "summary": "标题：八仙！评分：8.3片长：144分钟制片国家/地区：中国大陆导演：牟正洋主演：陈浩 / 李绍哲 / 立冬",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "豆瓣",
+    "url": "https://movie.douban.com/subject/36882191"
+  },
+  {
+    "id": 45,
+    "title": "群星闪耀时",
+    "summary": "标题：群星闪耀时评分：7.6片长：131分钟制片国家/地区：中国大陆导演：章笛沙主演：黄渤 / 吴磊 / 高叶",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "豆瓣",
+    "url": "https://movie.douban.com/subject/35875462"
+  },
+  {
+    "id": 46,
+    "title": "痴迷",
+    "summary": "标题：痴迷评分：7.5片长：110分钟制片国家/地区：美国导演：库里·巴克主演：迈克尔·约翰斯顿 / 印达·纳瓦雷特 / 库珀·汤姆林森",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "豆瓣",
+    "url": "https://movie.douban.com/subject/37450627"
+  },
+  {
+    "id": 47,
+    "title": "功夫女足",
+    "summary": "标题：功夫女足评分：6.5片长：106分钟制片国家/地区：中国大陆 中国香港导演：周星驰主演：张小斐 / 迪丽热巴 / 张艺兴",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "豆瓣",
+    "url": "https://movie.douban.com/subject/36452545"
+  },
+  {
+    "id": 48,
+    "title": "三国第一部：争洛阳",
+    "summary": "标题：三国第一部：争洛阳评分：8.1片长：137分钟制片国家/地区：中国大陆导演：谢君伟主演：王凯 / 魏超 / 万昊",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "豆瓣",
+    "url": "https://movie.douban.com/subject/36752981"
+  },
+  {
+    "id": 49,
+    "title": "恐怖游轮",
+    "summary": "标题：恐怖游轮评分：8.5片长：99分钟制片国家/地区：英国 澳大利亚导演：克里斯托弗·史密斯主演：梅利莎·乔治 / 迈克尔·多曼 / 利亚姆·海姆斯沃斯",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "豆瓣",
+    "url": "https://movie.douban.com/subject/3011051"
+  },
+  {
+    "id": 50,
+    "title": "想你了",
+    "summary": "标题：想你了评分：7.2片长：107分钟制片国家/地区：中国大陆导演：麻赢心主演：章若楠 / 金靖 / 任彬",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "豆瓣",
+    "url": "https://movie.douban.com/subject/37021936"
+  },
+  {
+    "id": 51,
+    "title": "后室",
+    "summary": "标题：后室评分：6.7片长：111分钟制片国家/地区：美国 加拿大导演：凯恩·帕森斯主演：切瓦特·埃加福 / 雷娜特·赖因斯夫 / 芬恩·本尼特",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "豆瓣",
+    "url": "https://movie.douban.com/subject/36235977"
+  },
+  {
+    "id": 52,
+    "title": "哈姆雷特",
+    "summary": "标题：哈姆雷特评分：8.3片长：175分钟(中国大陆)制片国家/地区：英国导演：林赛·特纳 罗宾·洛主演：本尼迪克特·康伯巴奇 / 珊·布鲁克 / 里奥·比尔",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "豆瓣",
+    "url": "https://movie.douban.com/subject/26588017"
+  },
+  {
+    "id": 53,
+    "title": "四渡",
+    "summary": "标题：四渡评分：0片长：122分钟制片国家/地区：中国大陆导演：徐展雄主演：刘烨 / 王雷 / 于适",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "豆瓣",
+    "url": "https://movie.douban.com/subject/37191746"
+  },
+  {
+    "id": 54,
+    "title": "新闻周刊对话王虹邓煜",
+    "summary": "新闻周刊对话王虹邓煜",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E6%96%B0%E9%97%BB%E5%91%A8%E5%88%8A%E5%AF%B9%E8%AF%9D%E7%8E%8B%E8%99%B9%E9%82%93%E7%85%9C&from_source=webtop_search"
+  },
+  {
+    "id": 55,
+    "title": "TheShy 没想到自己是涅槃上单",
+    "summary": "TheShy 没想到自己是涅槃上单",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=TheShy+%E6%B2%A1%E6%83%B3%E5%88%B0%E8%87%AA%E5%B7%B1%E6%98%AF%E6%B6%85%E6%A7%83%E4%B8%8A%E5%8D%95&from_source=webtop_search"
+  },
+  {
+    "id": 56,
+    "title": "日本如何评价宇树机器人",
+    "summary": "日本如何评价宇树机器人",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E6%97%A5%E6%9C%AC%E5%A6%82%E4%BD%95%E8%AF%84%E4%BB%B7%E5%AE%87%E6%A0%91%E6%9C%BA%E5%99%A8%E4%BA%BA&from_source=webtop_search"
+  },
+  {
+    "id": 57,
+    "title": "秦牧",
+    "summary": "秦牧",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E7%A7%A6%E7%89%A7&from_source=webtop_search"
+  },
+  {
+    "id": 58,
+    "title": "凉哈皮万舰达成庆会",
+    "summary": "凉哈皮万舰达成庆会",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E5%87%89%E5%93%88%E7%9A%AE%E4%B8%87%E8%88%B0%E8%BE%BE%E6%88%90%E5%BA%86%E4%BC%9A&from_source=webtop_search"
+  },
+  {
+    "id": 59,
+    "title": "瑞克和莫蒂S9大结局预测",
+    "summary": "瑞克和莫蒂S9大结局预测",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E7%91%9E%E5%85%8B%E5%92%8C%E8%8E%AB%E8%92%82S9%E5%A4%A7%E7%BB%93%E5%B1%80%E9%A2%84%E6%B5%8B&from_source=webtop_search"
+  },
+  {
+    "id": 60,
+    "title": "直观感受台风红霞登陆",
+    "summary": "直观感受台风红霞登陆",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E7%9B%B4%E8%A7%82%E6%84%9F%E5%8F%97%E5%8F%B0%E9%A3%8E%E7%BA%A2%E9%9C%9E%E7%99%BB%E9%99%86&from_source=webtop_search"
+  },
+  {
+    "id": 61,
+    "title": "中国人能飞是什么梗",
+    "summary": "中国人能飞是什么梗",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E4%B8%AD%E5%9B%BD%E4%BA%BA%E8%83%BD%E9%A3%9E%E6%98%AF%E4%BB%80%E4%B9%88%E6%A2%97&from_source=webtop_search"
+  },
+  {
+    "id": 62,
+    "title": "詹姆斯生涯扣篮大赏",
+    "summary": "詹姆斯生涯扣篮大赏",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E8%A9%B9%E5%A7%86%E6%96%AF%E7%94%9F%E6%B6%AF%E6%89%A3%E7%AF%AE%E5%A4%A7%E8%B5%8F&from_source=webtop_search"
+  },
+  {
+    "id": 63,
+    "title": "10卢比做份成吉思鸡",
+    "summary": "10卢比做份成吉思鸡",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=10%E5%8D%A2%E6%AF%94%E5%81%9A%E4%BB%BD%E6%88%90%E5%90%89%E6%80%9D%E9%B8%A1&from_source=webtop_search"
+  },
+  {
     "id": 11,
     "title": "VLOOK 2026.7～主题天花板级大焕新+幻灯片视图～好看好用 Markdown 主题包与排版增强插件",
     "summary": "VLOOK:tm: 是针对 Typora（跨平台 Markdown 编辑器）的主题包和增强插件（针对导出的 HTML 文件)，旨在与众 Markdown 粉共创 Markdown 的自动化排版 2.0，在保持 Markdown 简洁性的基础...",
