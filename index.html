@@ -6,7 +6,7 @@
     <title>TechDaily · 技术人每日资讯</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <style>
-        /* ===== 样式与之前一致，新增部分有注释 ===== */
+        /* ===== 完整样式，与上一版保持一致 ===== */
         * { margin:0; padding:0; box-sizing:border-box; }
         :root {
             --bg-primary: #08080e;
@@ -60,7 +60,6 @@
         .tab-btn.hot.active { background:var(--color-hot-dim); color:var(--color-hot); }
         .tab-btn .badge { font-size:10px; background:rgba(255,255,255,0.06); padding:0 8px; border-radius:100px; color:var(--text-muted); }
         .toolbar { display:flex; gap:8px; margin-bottom:14px; align-items:center; flex-wrap:wrap; }
-        /* 搜索框已移除 */
         .date-input-compact { background:rgba(255,255,255,0.025); border:1px solid rgba(255,255,255,0.05); color:var(--text-secondary); padding:0 10px; border-radius:10px; font-size:13px; height:36px; cursor:pointer; outline:none; }
         .date-count { font-size:13px; color:var(--text-muted); margin-left:4px; white-space:nowrap; }
         .icon-btn { width:36px; height:36px; display:flex; align-items:center; justify-content:center; background:rgba(255,255,255,0.025); border:1px solid rgba(255,255,255,0.05); border-radius:10px; color:var(--text-tertiary); cursor:pointer; transition:all var(--transition); }
@@ -102,9 +101,8 @@
             transition:color var(--transition);
             margin:4px 0;
             position:relative;
-            padding-left:28px; /* 为序号留空间 */
+            padding-left:28px;
         }
-        /* 序号样式 */
         .card-title .index {
             position:absolute;
             left:0;
@@ -114,7 +112,6 @@
             font-size:14px;
             opacity:0.6;
         }
-        /* 已读标题颜色 */
         .read-title {
             color: var(--text-muted) !important;
             text-decoration: line-through;
@@ -123,7 +120,6 @@
         }
         .news-card.ai:hover .card-title { color:var(--color-ai); }
         .news-card.hot:hover .card-title { color:var(--color-hot); }
-        /* 已读卡片悬停时标题颜色也变化，但保留已读样式 */
         .news-card.ai:hover .read-title { color:var(--color-ai) !important; text-decoration-color:var(--color-ai); }
         .news-card.hot:hover .read-title { color:var(--color-hot) !important; text-decoration-color:var(--color-hot); }
         .card-summary { font-size:13px; color:var(--text-tertiary); line-height:1.6; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
@@ -250,6 +246,12 @@
         }
         .toast.show { transform:translateX(-50%) translateY(0); opacity:1; }
         .empty { text-align:center; padding:60px 20px; color:var(--text-muted); font-size:14px; }
+        .loading-more {
+            text-align:center;
+            padding:20px;
+            color:var(--text-muted);
+            font-size:13px;
+        }
         @media (max-width:640px) {
             .brand { font-size:32px; }
             .stats-bar { gap:10px; font-size:11px; }
@@ -296,7 +298,6 @@
         </div>
 
         <div class="toolbar">
-            <!-- 搜索框已移除 -->
             <input type="date" id="datePicker" class="date-input-compact" />
             <span class="date-count" id="dateCount">共 0 条</span>
             <button class="icon-btn" onclick="setToday()" title="今日">
@@ -314,6 +315,8 @@
 
         <div id="content-ai" class="compact"></div>
         <div id="content-hot" class="compact" style="display:none;"></div>
+
+        <!-- 加载更多提示（由 JS 动态添加） -->
 
         <div id="geekCode" style="margin-top:20px; padding:12px 16px; background:rgba(255,255,255,0.02); border-radius:12px; border:1px solid rgba(255,255,255,0.04); font-size:13px; color:var(--text-tertiary); display:none;">
             <span style="font-weight:600; color:var(--text-secondary);">🧠 今日技术暗号：</span>
@@ -371,13 +374,15 @@
 
         let articles = [];
         let aiAll = [], hotAll = [];
-        let aiPage = 0, hotPage = 0;
+        let aiPage = 0, hotPage = 0;        // 当前加载的页数（从0开始）
         let currentTab = 'ai';
         let currentDate = getTodayStr();
         let readIds = new Set();
         let digestIds = new Set();
         let currentArticle = null;
         let isRefreshing = false;
+        let isLoadingMore = false;           // 防止重复加载
+        let hasMoreAI = true, hasMoreHot = true;
 
         const GEEK_CODES = [
             "Llama 4 的 200 万 token 上下文相当于让 AI 一次性读完《三体》三部曲还多出 40% 容量",
@@ -426,7 +431,6 @@
             return Math.max(1, Math.round(words/120));
         }
 
-        // 为文章生成稳定的 ID（基于标题+来源）
         function generateStableId(article) {
             const key = (article.title || '') + (article.source || '');
             let hash = 0;
@@ -487,12 +491,8 @@
             const catClass = article.category === 'hot' ? 'hot' : 'ai';
             const catName = article.categoryName || (article.category==='hot' ? '🔥 热搜' : '🤖 AI');
 
-            // 序号显示
             const indexHtml = (index !== null) ? `<span class="index">${index+1}.</span>` : '';
-
-            // 已读标题类
             const readTitleClass = isRead ? 'read-title' : '';
-
             const articleData = encodeURIComponent(JSON.stringify(article));
 
             let html = `<div class="${featured?'featured-card':'news-card'} ${catClass} read-item" data-article="${articleData}" data-id="${article.id}">`;
@@ -534,19 +534,36 @@
         function renderAll() {
             const containerAI = document.getElementById('content-ai');
             const containerHot = document.getElementById('content-hot');
-            const aiPageData = aiAll.slice(0, PAGE_SIZE);
-            const hotPageData = hotAll.slice(0, PAGE_SIZE);
-            // AI
-            if (aiPageData.length===0) containerAI.innerHTML = '<div class="empty">暂无 AI 资讯</div>';
-            else {
+
+            // 根据页码计算要显示的数据量
+            const aiLimit = Math.min((aiPage + 1) * PAGE_SIZE, aiAll.length);
+            const hotLimit = Math.min((hotPage + 1) * PAGE_SIZE, hotAll.length);
+
+            const aiPageData = aiAll.slice(0, aiLimit);
+            const hotPageData = hotAll.slice(0, hotLimit);
+
+            // 检查是否还有更多
+            hasMoreAI = aiLimit < aiAll.length;
+            hasMoreHot = hotLimit < hotAll.length;
+
+            // AI 列表
+            if (aiPageData.length===0) {
+                containerAI.innerHTML = '<div class="empty">暂无 AI 资讯</div>';
+            } else {
                 let html = '';
                 for (let i=0; i<aiPageData.length; i++) {
                     const featured = (i===0);
                     html += renderCard(aiPageData[i], featured, i);
                 }
+                if (hasMoreAI) {
+                    html += `<div class="loading-more" id="aiLoadingMore">加载更多...</div>`;
+                } else {
+                    html += `<div class="loading-more" style="opacity:0.5;">— 已加载全部 —</div>`;
+                }
                 containerAI.innerHTML = html;
             }
-            // HOT
+
+            // HOT 列表
             if (hotPageData.length===0) {
                 containerHot.innerHTML = '<div class="empty">暂无热搜</div>';
             } else {
@@ -554,9 +571,15 @@
                 for (let i=0; i<hotPageData.length; i++) {
                     html += renderCard(hotPageData[i], i===0, i);
                 }
+                if (hasMoreHot) {
+                    html += `<div class="loading-more" id="hotLoadingMore">加载更多...</div>`;
+                } else {
+                    html += `<div class="loading-more" style="opacity:0.5;">— 已加载全部 —</div>`;
+                }
                 containerHot.innerHTML = html;
             }
-            // 更新徽章和统计
+
+            // 更新徽章、统计、日期条数
             document.getElementById('badgeAI').textContent = aiAll.length;
             document.getElementById('badgeHot').textContent = hotAll.length;
             document.getElementById('statTotal').textContent = articles.length;
@@ -564,14 +587,39 @@
             document.getElementById('statHot').textContent = hotAll.length;
             const now = getBeijingDate();
             document.getElementById('statTime').textContent = String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0');
-
-            // 更新日期条数显示
-            const count = articles.length;
-            document.getElementById('dateCount').textContent = `共 ${count} 条`;
+            document.getElementById('dateCount').textContent = `共 ${articles.length} 条`;
 
             updateReadStatusUI();
             updateDigestUI();
             updateGeekCode();
+            // 滚动加载状态重置
+            isLoadingMore = false;
+        }
+
+        // ========================================================================
+        //  LOAD MORE (滚动加载)
+        // ========================================================================
+        function loadMoreIfNeeded() {
+            if (isLoadingMore) return;
+            const container = currentTab === 'ai' ? document.getElementById('content-ai') : document.getElementById('content-hot');
+            if (!container) return;
+
+            // 检查是否到底部（距离底部小于 200px）
+            const rect = container.getBoundingClientRect();
+            const bottom = rect.bottom;
+            const viewportHeight = window.innerHeight;
+            if (bottom - viewportHeight < 200) {
+                isLoadingMore = true;
+                if (currentTab === 'ai' && hasMoreAI) {
+                    aiPage++;
+                    renderAll();
+                } else if (currentTab === 'hot' && hasMoreHot) {
+                    hotPage++;
+                    renderAll();
+                } else {
+                    isLoadingMore = false;
+                }
+            }
         }
 
         // ========================================================================
@@ -626,16 +674,11 @@
                 const id = parseInt(el.dataset.id);
                 if (!id) return;
                 const isRead = readIds.has(id);
-                // 更新小圆点
                 const dot = el.querySelector('.read-status');
                 if (dot) dot.classList.toggle('read', isRead);
-                // 更新卡片 read-item 类
                 el.classList.toggle('read-item', isRead);
-                // 更新标题样式
                 const title = el.querySelector('.card-title');
-                if (title) {
-                    title.classList.toggle('read-title', isRead);
-                }
+                if (title) title.classList.toggle('read-title', isRead);
             });
         }
 
@@ -649,10 +692,15 @@
         }
 
         // ========================================================================
-        //  TAB & SEARCH (搜索功能已移除)
+        //  TAB
         // ========================================================================
         function switchTab(tab, btn) {
             currentTab = tab;
+            // 重置页码（切换时重置，以便重新加载）
+            aiPage = 0;
+            hotPage = 0;
+            hasMoreAI = true;
+            hasMoreHot = true;
             document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
             btn.classList.add('active');
             document.getElementById('content-ai').style.display = tab==='ai' ? 'block' : 'none';
@@ -690,7 +738,10 @@
             articles = data;
             aiAll = articles.filter(a => a.category === 'ai').sort((a,b) => b.id - a.id);
             hotAll = articles.filter(a => a.category === 'hot').sort((a,b) => b.id - a.id);
-            aiPage = 0; hotPage = 0;
+            aiPage = 0;
+            hotPage = 0;
+            hasMoreAI = true;
+            hasMoreHot = true;
             renderAll();
             document.getElementById('todayDate').textContent = dateStr === getTodayStr() ? getTodayDisplay() : formatDate(dateStr);
             document.getElementById('datePicker').value = dateStr;
@@ -800,7 +851,7 @@
         }
 
         // ========================================================================
-        //  UPDATE DATA (trigger crawler)
+        //  UPDATE DATA
         // ========================================================================
         async function updateData() {
             if (isRefreshing) return;
@@ -843,7 +894,7 @@
             currentDate = targetDate;
             await loadAndRender(targetDate);
 
-            // 事件委托：点击卡片打开详情
+            // 卡片点击事件委托
             document.addEventListener('click', function(e) {
                 const card = e.target.closest('.news-card, .featured-card');
                 if (card && !e.target.closest('.card-actions')) {
@@ -851,7 +902,7 @@
                 }
             });
 
-            // 绑定 UI 事件
+            // UI 控件
             document.getElementById('hideReadToggle').addEventListener('change', toggleHideRead);
             document.getElementById('updateBtn').addEventListener('click', updateData);
             document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
@@ -861,6 +912,17 @@
             document.getElementById('modalReadToggleBtn').addEventListener('click', toggleReadStatus);
             document.getElementById('modalDigestBtn').addEventListener('click', addToDigest);
             document.getElementById('clearDigestBtn').addEventListener('click', clearDigest);
+
+            // 滚动加载（节流）
+            let scrollTimeout = false;
+            window.addEventListener('scroll', () => {
+                if (scrollTimeout) return;
+                scrollTimeout = true;
+                requestAnimationFrame(() => {
+                    loadMoreIfNeeded();
+                    scrollTimeout = false;
+                });
+            });
 
             // 键盘快捷键
             document.addEventListener('keydown', (e) => {
