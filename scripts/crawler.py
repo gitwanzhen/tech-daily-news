@@ -8,41 +8,61 @@ from datetime import datetime, timezone, timedelta
 RSS_SOURCES = [
     {
         "name": "阮一峰科技爱好者周刊",
-        "url": "http://www.ruanyifeng.com/blog/atom.xml",
+        "url": "https://rsshub.app/ruanyifeng/blog/atom.xml",
         "category": "opensource",
         "categoryName": "开源/综合"
     },
     {
         "name": "开源中国",
-        "url": "https://www.oschina.net/news/rss",
+        "url": "https://rsshub.app/oschina/news",
         "category": "opensource",
         "categoryName": "开源"
     },
     {
         "name": "InfoQ",
-        "url": "https://www.infoq.cn/feed",
+        "url": "https://rsshub.app/infoq/recommend",
         "category": "backend",
         "categoryName": "后端架构"
     },
     {
         "name": "掘金",
-        "url": "https://juejin.cn/rss",
+        "url": "https://rsshub.app/juejin/category/frontend",
         "category": "frontend",
         "categoryName": "前端"
     },
     {
         "name": "机器之心",
-        "url": "https://www.jiqizhixin.com/rss",
+        "url": "https://rsshub.app/jiqizhixin",
         "category": "ai",
         "categoryName": "AI/大模型"
     },
     {
         "name": "CSDN 资讯",
-        "url": "https://blog.csdn.net/rss.html",
+        "url": "https://rsshub.app/csdn/news",
         "category": "backend",
         "categoryName": "后端架构"
     }
 ]
+
+import time
+
+def fetch_feed(url, retries=3):
+    """带重试的 RSS 抓取"""
+    for i in range(retries):
+        try:
+            feed = feedparser.parse(
+                url,
+                request_headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'},
+                timeout=20
+            )
+            if feed.entries:
+                return feed
+            print(f"  第 {i+1} 次尝试: 无数据，2秒后重试...")
+            time.sleep(2)
+        except Exception as e:
+            print(f"  第 {i+1} 次尝试失败: {e}")
+            time.sleep(2)
+    return None
 
 def clean_html(text):
     """去除 HTML 标签"""
@@ -122,11 +142,10 @@ def crawl():
     for source in RSS_SOURCES:
         print(f"正在抓取: {source['name']} ...")
         try:
-            feed = feedparser.parse(
-                source["url"],
-                request_headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'},
-                timeout=15
-            )
+            feed = fetch_feed(source["url"])
+if not feed:
+    print(f"  {source['name']} 抓取失败，跳过")
+    continue
             
             print(f"  获取到 {len(feed.entries)} 条原始数据")
             
