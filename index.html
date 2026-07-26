@@ -41,14 +41,14 @@
         
         header {
             text-align: center;
-            padding: 40px 0 30px;
+            padding: 40px 0 20px;
             border-bottom: 1px solid var(--border);
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         
         h1 {
             font-size: 2rem;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             background: linear-gradient(90deg, var(--primary), var(--tag-cloud));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -57,6 +57,20 @@
         .subtitle {
             color: var(--text-secondary);
             font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+        
+        /* 新增：今日日期显示 */
+        .today-date {
+            display: inline-block;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--primary);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-top: 8px;
         }
         
         .controls {
@@ -237,7 +251,6 @@
             color: var(--text-secondary);
         }
         
-        /* ===== 详情弹窗 ===== */
         .modal-overlay {
             display: none;
             position: fixed;
@@ -424,6 +437,8 @@
         <header>
             <h1>TechDaily</h1>
             <p class="subtitle">技术人每日必读资讯 · 每小时自动更新</p>
+            <!-- 新增：今日日期显示 -->
+            <div class="today-date" id="todayDate">加载中...</div>
         </header>
         
         <div class="controls" id="controlsArea">
@@ -452,7 +467,6 @@
         <div id="content"></div>
     </div>
 
-    <!-- 详情弹窗 -->
     <div class="modal-overlay" id="detailModal" onclick="closeModal(event)">
         <div class="modal-content" onclick="event.stopPropagation()">
             <div class="modal-header">
@@ -490,15 +504,39 @@
         </div>
     </div>
 
-    <!-- 提示条 -->
     <div class="toast" id="toast"></div>
 
     <script>
-        // ==================== 从 JSON 加载数据 ====================
+        // ==================== 工具函数：获取北京时间 ====================
+        function getBeijingDate() {
+            const now = new Date();
+            // 强制转为北京时间（UTC+8）
+            const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+            return new Date(utc + (3600000 * 8));
+        }
+        
+        function getTodayStr() {
+            const d = getBeijingDate();
+            const year = d.getFullYear();
+            const month = String(d.getMonth() + 1).padStart(2, '0');
+            const day = String(d.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        }
+        
+        function getTodayDisplay() {
+            const d = getBeijingDate();
+            const weekdays = ['日', '一', '二', '三', '四', '五', '六'];
+            const month = d.getMonth() + 1;
+            const day = d.getDate();
+            const week = weekdays[d.getDay()];
+            return `今天 ${month}月${day}日 星期${week}`;
+        }
+
+        // ==================== 数据加载 ====================
         let articles = [];
         let currentPage = 'today';
         let currentCategory = 'all';
-        let currentDate = new Date().toISOString().split('T')[0];
+        let currentDate = getTodayStr();
         let displayedArticles = [];
         let currentModalId = null;
 
@@ -515,17 +553,15 @@
             }
         }
 
-        loadArticles();
-
-        // ==================== 日期格式化（修复版） ====================
+        // ==================== 日期格式化 ====================
         function formatDate(dateStr) {
             if (!dateStr || dateStr === 'undefined' || dateStr === 'null') return '日期未知';
-            
-            const today = new Date().toISOString().split('T')[0];
-            const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+            const today = getTodayStr();
+            const yesterday = new Date(getBeijingDate().getTime() - 86400000);
+            const yestStr = `${yesterday.getFullYear()}-${String(yesterday.getMonth()+1).padStart(2,'0')}-${String(yesterday.getDate()).padStart(2,'0')}`;
             
             if (dateStr === today) return '今天';
-            if (dateStr === yesterday) return '昨天';
+            if (dateStr === yestStr) return '昨天';
             return dateStr;
         }
 
@@ -564,7 +600,7 @@
         // ==================== 页面切换 ====================
         function initDisplay() {
             if (currentPage === 'today') {
-                const today = new Date().toISOString().split('T')[0];
+                const today = getTodayStr();
                 displayedArticles = articles.filter(a => a.date === today);
                 if (displayedArticles.length === 0) {
                     displayedArticles = articles.slice(0, 10);
@@ -595,9 +631,9 @@
             }
             
             if (page === 'today') {
-                currentDate = new Date().toISOString().split('T')[0];
+                currentDate = getTodayStr();
                 document.getElementById('datePicker').value = currentDate;
-                const today = new Date().toISOString().split('T')[0];
+                const today = getTodayStr();
                 displayedArticles = articles.filter(a => a.date === today);
                 if (displayedArticles.length === 0) displayedArticles = articles.slice(0, 10);
             } else if (page === 'history') {
@@ -611,7 +647,7 @@
         }
 
         function setToday() {
-            currentDate = new Date().toISOString().split('T')[0];
+            currentDate = getTodayStr();
             document.getElementById('datePicker').value = currentDate;
             const todayBtn = document.querySelector('.nav button:first-child');
             showPage('today', todayBtn);
@@ -753,6 +789,14 @@
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') closeModal();
         });
+
+        // ==================== 页面初始化 ====================
+        // 关键：设置日期选择器和今日日期显示
+        document.getElementById('datePicker').value = getTodayStr();
+        document.getElementById('todayDate').textContent = getTodayDisplay();
+        
+        // 加载数据
+        loadArticles();
     </script>
 </body>
 </html>
