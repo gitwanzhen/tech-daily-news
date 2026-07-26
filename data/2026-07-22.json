@@ -105,5 +105,17 @@
     "url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
     "read_time": 1,
     "hot_score": 83
+  },
+  {
+    "title": "Introducing the ChatGPT for small business program",
+    "summary": "OpenAI launches the ChatGPT for Small Businesses program, helping entrepreneurs build AI skills, automate work, and grow...",
+    "full_content": "OpenAI launches the ChatGPT for Small Businesses program, helping entrepreneurs build AI skills, automate work, and grow with ChatGPT Work.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-22",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/introducing-chatgpt-small-business-program",
+    "read_time": 1,
+    "hot_score": 47
   }
 ]

@@ -19,5 +19,17 @@
     "url": "https://www.anthropic.com/news/donation-public-first-action",
     "read_time": 1,
     "hot_score": 34
+  },
+  {
+    "title": "OpenAI and Hugging Face partner to address security incident during model evaluation",
+    "summary": "OpenAI and Hugging Face share early findings from a security incident during AI model evaluation, highlighting advanced ...",
+    "full_content": "OpenAI and Hugging Face share early findings from a security incident during AI model evaluation, highlighting advanced cyber capabilities and lessons for defenders.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-21",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+    "read_time": 1,
+    "hot_score": 54
   }
 ]
