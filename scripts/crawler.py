@@ -6,7 +6,7 @@ import time
 import requests
 from datetime import datetime, timezone, timedelta
 
-# 使用各网站官方 RSS
+# RSS 源配置（保留所有源，但只提取 AI 相关内容）
 RSS_SOURCES = [
     {
         "name": "阮一峰科技爱好者周刊",
@@ -67,23 +67,19 @@ def generate_summary(content, length=120):
     return text
 
 def determine_category(title, summary):
+    """只判断是否为 AI/大模型，不是则返回空字符串表示跳过"""
     text = (title + summary).lower()
-    keywords = {
-        "ai": ["gpt", "llm", "大模型", "openai", "claude", "gemini", "ai ", "人工智能", "深度学习", "神经网络", "transformer", "agent", "rag", "mistral", "千问", "通义", "文心", "deepseek", "llama"],
-        "frontend": ["react", "vue", "angular", "css", "html", "webpack", "vite", "前端", "javascript", "typescript", "tailwind", "bun", "next.js", "svelte", "dom", "浏览器"],
-        "backend": ["go ", "golang", "rust", "java", "python", "node.js", "后端", "微服务", "数据库", "redis", "kafka", "postgresql", "spring", "mysql", "mongodb", "nginx", "api"],
-        "mobile": ["ios", "android", "flutter", "react native", "swift", "kotlin", "移动端", "app", "小程序", "uni-app", "harmonyos", "鸿蒙"],
-        "cloud": ["kubernetes", "docker", "云原生", "devops", "aws", "阿里云", "腾讯云", "serverless", "k8s", "terraform", "cicd", "helm", "prometheus", "grafana", "容器"],
-        "security": ["漏洞", "安全", "加密", "cve", "攻击", "渗透", "csrf", "xss", "ransomware", "零日", "后门", "防火墙", "ssl", "https", "入侵"],
-        "opensource": ["开源", "github", "linux", "git", "apache", "mozilla", "许可证", "license", "kernel", "基金会", "发布", "版本"]
-    }
-    scores = {cat: 0 for cat in keywords}
-    for cat, words in keywords.items():
-        for word in words:
-            if word in text:
-                scores[cat] += 1
-    best = max(scores, key=scores.get)
-    return best if scores[best] > 0 else "opensource"
+    ai_keywords = [
+        "gpt", "llm", "大模型", "openai", "claude", "gemini", "ai ", "人工智能",
+        "深度学习", "神经网络", "transformer", "agent", "rag", "mistral", "千问",
+        "通义", "文心", "deepseek", "llama", "copilot", "chatgpt", "stable diffusion",
+        "midjourney", "sora", "多模态", "微调", "预训练", "推理模型", "智谱",
+        "百川", "星火", "盘古", "混元", "kimi", "阶跃", "商汤", "旷视"
+    ]
+    for word in ai_keywords:
+        if word in text:
+            return "ai"
+    return ""  # 非 AI，标记为跳过
 
 def parse_date(entry):
     try:
@@ -141,7 +137,8 @@ def crawl():
             continue
         
         print(f"  解析中...")
-        for entry in feed.entries[:8]:
+        ai_count = 0
+        for entry in feed.entries[:15]:  # 每个源多看几条，因为只取AI
             try:
                 title = clean_html(entry.get("title", "无标题"))
                 if not title or title == "无标题":
@@ -151,11 +148,10 @@ def crawl():
                 content = entry.get("summary", entry.get("description", ""))
                 summary = generate_summary(content)
                 
+                # 只保留 AI 分类
                 cat = determine_category(title, summary)
-                cat_names = {
-                    "ai": "AI/大模型", "frontend": "前端", "backend": "后端架构",
-                    "mobile": "移动开发", "cloud": "云原生", "security": "安全", "opensource": "开源"
-                }
+                if cat != "ai":
+                    continue  # 跳过非 AI 内容
                 
                 date_str = parse_date(entry)
                 
@@ -163,25 +159,31 @@ def crawl():
                     "id": id_counter,
                     "title": title,
                     "summary": summary,
-                    "category": cat,
-                    "categoryName": cat_names.get(cat, "综合"),
+                    "category": "ai",
+                    "categoryName": "AI/大模型",
                     "date": date_str,
                     "source": source["name"],
                     "url": link
                 }
                 all_articles.append(article)
                 id_counter += 1
-                print(f"    ✓ {title[:50]}...")
+                ai_count += 1
+                print(f"    ✓ [AI] {title[:50]}...")
             except Exception as e:
                 print(f"    解析单条失败: {e}")
+        
+        print(f"  本源共提取 {ai_count} 条 AI 资讯")
     
-    # 本次抓取的去重（同一批内可能重复）
+    # 去重
     seen = set()
     unique = []
     for a in all_articles:
         if a["title"] not in seen:
             seen.add(a["title"])
             unique.append(a)
+    
+    # 只保留 AI（二次确认）
+    unique = [a for a in unique if a["category"] == "ai"]
     
     # 读取已有的旧数据
     data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
@@ -203,9 +205,39 @@ def crawl():
     # 用旧数据的标题做去重判断
     old_titles = {a["title"] for a in old_articles}
     
-    # 只保留本次真正新的数据（标题不在旧数据里）
+    # 只保留本次真正新的数据
     truly_new = []
     for a in unique:
         if a["title"] not in old_titles:
             truly_new.append(a)
-            old_titles.add(a["
+            old_titles.add(a["title"])
+    
+    # 如果没抓到任何新数据，且旧数据存在，就不动文件
+    if len(truly_new) == 0 and len(old_articles) > 0:
+        print(f"\n{'='*40}")
+        print(f"⚠️ 本次无新数据，保留原有 {len(old_articles)} 条")
+        print(f"{'='*40}")
+        return
+    
+    # 给新数据分配 ID（接续旧数据）
+    for i, a in enumerate(truly_new, start=max_id + 1):
+        a["id"] = i
+    
+    # 合并：旧数据 + 新数据
+    all_combined = old_articles + truly_new
+    
+    # 按日期倒序排列
+    all_combined.sort(key=lambda x: x.get("date", ""), reverse=True)
+    
+    # 写入
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(all_combined, f, ensure_ascii=False, indent=2)
+    
+    print(f"\n{'='*40}")
+    print(f"✅ 本次新增 {len(truly_new)} 条 AI 资讯")
+    print(f"📚 累计共 {len(all_combined)} 条（旧{len(old_articles)} + 新{len(truly_new)}）")
+    print(f"📁 已保存到 {output_path}")
+    print(f"{'='*40}")
+
+if __name__ == "__main__":
+    crawl()
