@@ -190,6 +190,16 @@
     "url": "https://segmentfault.com/q/1010000048068589"
   },
   {
+    "id": 28,
+    "title": "200 家硅谷初创联名反对白宫政府封禁中国开源 AI 模型",
+    "summary": "这对 Anthropic 来说太好了，因为我们所有人都不得不花钱买 Anthropic 的服务。 7 月 22 日，近 200 家硅谷初创企业联名致信白宫，呼吁不要切断美国开发者获取中国开源 AI 模型的渠道。Particle 创始人 Su...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-24",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/478417"
+  },
+  {
     "id": 20,
     "title": "前端预览excel？",
     "summary": "需要实现前端预览excel文件，我尝试了很多插件但都有一个问题，插入单元格内部的图片无法展示（浮动图片可正常展示）如图：请问有什么工具插件可以实现正常前端预览excel文件",
@@ -248,6 +258,16 @@
     "date": "2026-07-22",
     "source": "SegmentFault",
     "url": "https://segmentfault.com/q/1010000048062682"
+  },
+  {
+    "id": 29,
+    "title": "2026年AI编程：效率革命还是新一轮内卷的开始？",
+    "summary": "2026 年的 AI 编程，到底是在进化还是在内卷？",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-21",
+    "source": "SegmentFault",
+    "url": "https://segmentfault.com/q/1010000048059204"
   },
   {
     "id": 26,
