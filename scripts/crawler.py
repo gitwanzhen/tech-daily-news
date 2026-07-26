@@ -6,7 +6,7 @@ import time
 import requests
 from datetime import datetime, timezone, timedelta
 
-# 使用各网站官方 RSS，不经过 RSSHub 中转
+# 使用各网站官方 RSS
 RSS_SOURCES = [
     {
         "name": "阮一峰科技爱好者周刊",
@@ -141,7 +141,7 @@ def crawl():
             continue
         
         print(f"  解析中...")
-        for entry in feed.entries[:8]:  # 每个源取8条
+        for entry in feed.entries[:8]:
             try:
                 title = clean_html(entry.get("title", "无标题"))
                 if not title or title == "无标题":
@@ -175,7 +175,7 @@ def crawl():
             except Exception as e:
                 print(f"    解析单条失败: {e}")
     
-    # 去重
+    # 本次抓取的去重（同一批内可能重复）
     seen = set()
     unique = []
     for a in all_articles:
@@ -183,22 +183,29 @@ def crawl():
             seen.add(a["title"])
             unique.append(a)
     
-    unique.sort(key=lambda x: x["date"], reverse=True)
-    
-    for i, a in enumerate(unique, 1):
-        a["id"] = i
-    
+    # 读取已有的旧数据
     data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
     os.makedirs(data_dir, exist_ok=True)
     output_path = os.path.join(data_dir, "news.json")
     
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(unique, f, ensure_ascii=False, indent=2)
+    old_articles = []
+    max_id = 0
+    if os.path.exists(output_path):
+        try:
+            with open(output_path, "r", encoding="utf-8") as f:
+                old_articles = json.load(f)
+            if old_articles:
+                max_id = max(a.get("id", 0) for a in old_articles)
+            print(f"  📂 读取旧数据 {len(old_articles)} 条，最大ID={max_id}")
+        except Exception as e:
+            print(f"  读取旧数据失败: {e}")
     
-    print(f"\n{'='*40}")
-    print(f"✅ 共抓取 {len(unique)} 条资讯")
-    print(f"📁 已保存到 {output_path}")
-    print(f"{'='*40}")
-
-if __name__ == "__main__":
-    crawl()
+    # 用旧数据的标题做去重判断
+    old_titles = {a["title"] for a in old_articles}
+    
+    # 只保留本次真正新的数据（标题不在旧数据里）
+    truly_new = []
+    for a in unique:
+        if a["title"] not in old_titles:
+            truly_new.append(a)
+            old_titles.add(a["
