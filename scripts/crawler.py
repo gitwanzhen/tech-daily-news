@@ -6,48 +6,51 @@ import time
 import requests
 from datetime import datetime, timezone, timedelta
 
-# RSS 源配置
+# 使用各网站官方 RSS，不经过 RSSHub 中转
 RSS_SOURCES = [
     {
         "name": "阮一峰科技爱好者周刊",
-        "url": "https://rsshub.app/ruanyifeng/blog/atom.xml",
+        "url": "http://www.ruanyifeng.com/blog/atom.xml",
         "category": "opensource",
         "categoryName": "开源/综合"
     },
     {
         "name": "开源中国",
-        "url": "https://rsshub.app/oschina/news",
+        "url": "https://www.oschina.net/news/rss",
         "category": "opensource",
         "categoryName": "开源"
     },
     {
         "name": "InfoQ",
-        "url": "https://rsshub.app/infoq/recommend",
+        "url": "https://feed.infoq.cn/",
         "category": "backend",
         "categoryName": "后端架构"
     },
     {
         "name": "掘金",
-        "url": "https://rsshub.app/juejin/category/frontend",
+        "url": "https://juejin.cn/rss",
         "category": "frontend",
         "categoryName": "前端"
     },
     {
-        "name": "机器之心",
-        "url": "https://rsshub.app/jiqizhixin",
-        "category": "ai",
-        "categoryName": "AI/大模型"
-    },
-    {
         "name": "CSDN 资讯",
-        "url": "https://rsshub.app/csdn/news",
+        "url": "https://blog.csdn.net/rss.html",
         "category": "backend",
         "categoryName": "后端架构"
+    },
+    {
+        "name": "SegmentFault",
+        "url": "https://segmentfault.com/feeds",
+        "category": "frontend",
+        "categoryName": "前端"
     }
 ]
 
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Accept': 'application/rss+xml, application/xml, text/xml, */*',
+    'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
+    'Referer': 'https://www.google.com/'
 }
 
 def clean_html(text):
@@ -110,8 +113,7 @@ def fetch_feed(url, retries=3):
     for i in range(retries):
         try:
             print(f"    尝试第 {i+1} 次...")
-            # 先用 requests 下载，再用 feedparser 解析
-            response = requests.get(url, headers=HEADERS, timeout=20)
+            response = requests.get(url, headers=HEADERS, timeout=25, allow_redirects=True)
             response.raise_for_status()
             feed = feedparser.parse(response.text)
             if hasattr(feed, 'entries') and feed.entries:
@@ -139,9 +141,12 @@ def crawl():
             continue
         
         print(f"  解析中...")
-        for entry in feed.entries[:5]:
+        for entry in feed.entries[:8]:  # 每个源取8条
             try:
                 title = clean_html(entry.get("title", "无标题"))
+                if not title or title == "无标题":
+                    continue
+                    
                 link = entry.get("link", "")
                 content = entry.get("summary", entry.get("description", ""))
                 summary = generate_summary(content)
