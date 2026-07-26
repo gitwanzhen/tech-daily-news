@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechDaily - 技术人每日资讯</title>
+    <title>TechDaily AI - AI每日资讯</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
@@ -17,12 +17,6 @@
             --primary: #58a6ff;
             --primary-hover: #79b8ff;
             --tag-ai: #ff7b72;
-            --tag-frontend: #7ee787;
-            --tag-backend: #79c0ff;
-            --tag-mobile: #d2a8ff;
-            --tag-cloud: #ffa657;
-            --tag-security: #f778ba;
-            --tag-opensource: #a5d6ff;
         }
         
         body {
@@ -49,7 +43,7 @@
         h1 {
             font-size: 2rem;
             margin-bottom: 8px;
-            background: linear-gradient(90deg, var(--primary), var(--tag-cloud));
+            background: linear-gradient(90deg, var(--primary), var(--tag-ai));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -119,17 +113,11 @@
             color: #fff;
         }
         
-        .btn.fav {
-            color: var(--tag-ai);
-            border-color: rgba(255, 123, 114, 0.3);
-        }
-        
         .nav {
             display: flex;
             gap: 10px;
             margin-bottom: 25px;
             border-bottom: 1px solid var(--border);
-            flex-wrap: wrap;
         }
         
         .nav button {
@@ -181,17 +169,9 @@
             font-weight: 600;
             padding: 4px 10px;
             border-radius: 6px;
-            background: rgba(88, 166, 255, 0.15);
-            color: var(--primary);
+            background: rgba(255, 123, 114, 0.15);
+            color: var(--tag-ai);
         }
-        
-        .tag.ai { background: rgba(255, 123, 114, 0.15); color: var(--tag-ai); }
-        .tag.frontend { background: rgba(126, 231, 135, 0.15); color: var(--tag-frontend); }
-        .tag.backend { background: rgba(121, 192, 255, 0.15); color: var(--tag-backend); }
-        .tag.mobile { background: rgba(210, 168, 255, 0.15); color: var(--tag-mobile); }
-        .tag.cloud { background: rgba(255, 166, 87, 0.15); color: var(--tag-cloud); }
-        .tag.security { background: rgba(247, 120, 186, 0.15); color: var(--tag-security); }
-        .tag.opensource { background: rgba(165, 214, 255, 0.15); color: var(--tag-opensource); }
         
         .article-title {
             font-size: 1.25rem;
@@ -410,20 +390,19 @@
 <body>
     <div class="container">
         <header>
-            <h1>TechDaily</h1>
-            <p class="subtitle">技术人每日必读资讯 · 每小时自动更新</p>
+            <h1>TechDaily AI</h1>
+            <p class="subtitle">AI / 大模型 / 人工智能 每日资讯</p>
             <div class="today-date" id="todayDate">加载中...</div>
         </header>
         
-        <div class="controls" id="controlsArea">
+        <div class="controls">
             <input type="date" id="datePicker">
             <button class="btn" onclick="setToday()">回到今日</button>
             <button class="btn btn-primary" onclick="refreshNews()">🔄 换一批</button>
         </div>
         
-        <!-- 分类页签（动态生成） -->
-        <nav class="nav" id="categoryNav">
-            <!-- 由 JS 动态插入分类按钮 -->
+        <nav class="nav">
+            <button class="active">AI/大模型</button>
         </nav>
         
         <div id="content"></div>
@@ -434,7 +413,7 @@
             <div class="modal-header">
                 <button class="modal-close" onclick="closeModal()">&times;</button>
                 <div class="modal-meta-row">
-                    <span class="tag" id="modalTag">分类</span>
+                    <span class="tag">AI/大模型</span>
                     <span style="color: var(--text-secondary); font-size: 0.9rem;" id="modalDate">📅 日期</span>
                 </div>
                 <div class="modal-title" id="modalTitle">标题</div>
@@ -447,7 +426,7 @@
                     </div>
                     <div class="modal-info-item">
                         <div class="modal-info-label">分类</div>
-                        <div class="modal-info-value" id="modalCategory">--</div>
+                        <div class="modal-info-value">AI/大模型</div>
                     </div>
                 </div>
                 
@@ -457,7 +436,6 @@
                 </div>
                 
                 <div class="modal-actions">
-                    <button class="btn btn-primary" id="modalFavBtn" onclick="toggleFavFromModal()">☆ 收藏</button>
                     <button class="btn" onclick="copyLink()">📋 复制链接</button>
                     <button class="btn" onclick="openSource()">↗ 阅读原文</button>
                     <button class="btn" onclick="closeModal()">关闭</button>
@@ -495,70 +473,21 @@
 
         // ==================== 数据加载 ====================
         let articles = [];
-        let currentCategory = 'ai';      // 当前选中的分类
-        let currentDate = getTodayStr(); // 当前选中的日期
+        let currentDate = getTodayStr();
         let displayedArticles = [];
         let currentModalId = null;
-        let categories = [];             // 动态分类列表
 
         async function loadArticles() {
             try {
                 const response = await fetch('data/news.json?t=' + Date.now());
                 const data = await response.json();
                 articles = data;
-                // 提取所有不重复的分类
-                extractCategories();
-                // 渲染分类导航
-                renderCategoryNav();
-                // 初始化显示
                 initDisplay();
             } catch (err) {
                 console.error('加载数据失败:', err);
                 document.getElementById('content').innerHTML = 
                     '<div class="empty">数据加载失败，请稍后刷新重试<br><small style="color:var(--text-secondary)">每小时自动更新中...</small></div>';
             }
-        }
-
-        // ==================== 提取分类 ====================
-        function extractCategories() {
-            const catMap = new Map();
-            articles.forEach(a => {
-                if (a.category && !catMap.has(a.category)) {
-                    catMap.set(a.category, {
-                        key: a.category,
-                        name: a.categoryName || a.category
-                    });
-                }
-            });
-            // 按固定顺序排序，未定义的放后面
-            const order = ['ai', 'frontend', 'backend', 'mobile', 'cloud', 'security', 'opensource'];
-            categories = [];
-            order.forEach(key => {
-                if (catMap.has(key)) {
-                    categories.push(catMap.get(key));
-                    catMap.delete(key);
-                }
-            });
-            // 剩余分类
-            catMap.forEach(cat => categories.push(cat));
-        }
-
-        // ==================== 渲染分类导航 ====================
-        function renderCategoryNav() {
-            const nav = document.getElementById('categoryNav');
-            let html = '';
-            
-            // 生成分类按钮
-            categories.forEach(cat => {
-                const isActive = cat.key === currentCategory ? 'active' : '';
-                html += `<button class="${isActive}" onclick="switchCategory('${cat.key}', this)">${cat.name}</button>`;
-            });
-            
-            // 收藏按钮（固定在最后）
-            const favActive = currentCategory === 'favorites' ? 'active' : '';
-            html += `<button class="${favActive}" onclick="showFavorites(this)">我的收藏</button>`;
-            
-            nav.innerHTML = html;
         }
 
         // ==================== 日期格式化 ====================
@@ -573,79 +502,24 @@
             return dateStr;
         }
 
-        // ==================== 收藏功能 ====================
-        function getFavorites() {
-            return JSON.parse(localStorage.getItem('techdaily_favs') || '[]');
-        }
-
-        function toggleFav(id, event) {
-            if (event) event.stopPropagation();
-            let favs = getFavorites();
-            if (favs.includes(id)) {
-                favs = favs.filter(f => f !== id);
-                showToast('已取消收藏');
-            } else {
-                favs.push(id);
-                showToast('已收藏');
-            }
-            localStorage.setItem('techdaily_favs', JSON.stringify(favs));
-            render();
-            if (currentModalId === id) {
-                updateModalFavBtn(id);
-            }
-        }
-
-        function toggleFavFromModal() {
-            if (currentModalId !== null) {
-                toggleFav(currentModalId);
-            }
-        }
-
-        function isFav(id) {
-            return getFavorites().includes(id);
-        }
-
-        // ==================== 页面切换 ====================
+        // ==================== 页面显示 ====================
         function initDisplay() {
             filterAndRender();
         }
 
-        function switchCategory(catKey, btn) {
-            currentCategory = catKey;
-            renderCategoryNav(); // 重新渲染导航，更新 active 状态
-            filterAndRender();
-        }
-
-        function showFavorites(btn) {
-            currentCategory = 'favorites';
-            renderCategoryNav();
-            filterAndRender();
-        }
-
         function filterAndRender() {
-            if (currentCategory === 'favorites') {
-                // 收藏：显示所有收藏的，不受日期影响
-                const favs = getFavorites();
-                displayedArticles = articles.filter(a => favs.includes(a.id));
-            } else {
-                // 分类：先按分类筛选，再按日期筛选
-                let filtered = articles.filter(a => a.category === currentCategory);
-                // 如果日期不是今天，或者用户手动选了日期，则按日期过滤
-                // 默认显示今天的，如果今天没有则显示全部
-                const today = getTodayStr();
-                if (currentDate === today) {
-                    // 尝试找今天的
-                    const todayArticles = filtered.filter(a => a.date === today);
-                    if (todayArticles.length > 0) {
-                        displayedArticles = todayArticles;
-                    } else {
-                        // 今天没有，显示该分类最新的10条
-                        displayedArticles = filtered.slice(0, 10);
-                    }
+            let filtered = articles.filter(a => a.category === 'ai');
+            const today = getTodayStr();
+            
+            if (currentDate === today) {
+                const todayArticles = filtered.filter(a => a.date === today);
+                if (todayArticles.length > 0) {
+                    displayedArticles = todayArticles;
                 } else {
-                    // 用户选了历史日期
-                    displayedArticles = filtered.filter(a => a.date === currentDate);
+                    displayedArticles = filtered.slice(0, 10);
                 }
+            } else {
+                displayedArticles = filtered.filter(a => a.date === currentDate);
             }
             render();
         }
@@ -653,35 +527,20 @@
         function setToday() {
             currentDate = getTodayStr();
             document.getElementById('datePicker').value = currentDate;
-            // 如果当前在收藏页，切回第一个分类
-            if (currentCategory === 'favorites' && categories.length > 0) {
-                currentCategory = categories[0].key;
-                renderCategoryNav();
-            }
             filterAndRender();
         }
 
         document.getElementById('datePicker').addEventListener('change', (e) => {
             currentDate = e.target.value;
-            // 如果当前在收藏页，切回分类
-            if (currentCategory === 'favorites' && categories.length > 0) {
-                currentCategory = categories[0].key;
-                renderCategoryNav();
-            }
             filterAndRender();
         });
 
         // ==================== 刷新功能 ====================
         function refreshNews() {
-            if (currentCategory === 'favorites') {
-                showToast('收藏列表不支持换一批');
-                return;
-            }
+            let pool = articles.filter(a => a.category === 'ai');
+            const today = getTodayStr();
             
-            // 在当前分类+日期条件下，随机换一批
-            let pool = articles.filter(a => a.category === currentCategory);
-            if (currentDate === getTodayStr()) {
-                const today = getTodayStr();
+            if (currentDate === today) {
                 const todayPool = pool.filter(a => a.date === today);
                 if (todayPool.length > 0) pool = todayPool;
             } else {
@@ -705,29 +564,13 @@
             
             currentModalId = id;
             
-            document.getElementById('modalTag').textContent = article.categoryName || '综合';
-            document.getElementById('modalTag').className = 'tag ' + (article.category || 'opensource');
             document.getElementById('modalDate').textContent = '📅 ' + formatDate(article.date);
             document.getElementById('modalTitle').textContent = article.title || '无标题';
             document.getElementById('modalSource').textContent = article.source || '未知来源';
-            document.getElementById('modalCategory').textContent = article.categoryName || '综合';
             document.getElementById('modalSummary').textContent = article.summary || '暂无详细内容';
-            
-            updateModalFavBtn(id);
             
             document.getElementById('detailModal').classList.add('active');
             document.body.style.overflow = 'hidden';
-        }
-
-        function updateModalFavBtn(id) {
-            const btn = document.getElementById('modalFavBtn');
-            if (isFav(id)) {
-                btn.innerHTML = '★ 已收藏';
-                btn.classList.add('fav');
-            } else {
-                btn.innerHTML = '☆ 收藏';
-                btn.classList.remove('fav');
-            }
         }
 
         function closeModal(event) {
@@ -762,29 +605,22 @@
         // ==================== 渲染 ====================
         function render() {
             const container = document.getElementById('content');
-            let filtered = displayedArticles;
             
-            if (filtered.length === 0) {
-                const msg = currentCategory === 'favorites' 
-                    ? '暂无收藏<br><small style="color:var(--text-secondary)">点击卡片上的☆收藏资讯</small>'
-                    : '暂无资讯<br><small style="color:var(--text-secondary)">每小时自动更新中...</small>';
-                container.innerHTML = `<div class="empty">${msg}</div>`;
+            if (displayedArticles.length === 0) {
+                container.innerHTML = '<div class="empty">暂无 AI 资讯<br><small style="color:var(--text-secondary)">每小时自动更新中...</small></div>';
                 return;
             }
             
-            container.innerHTML = filtered.map(article => `
+            container.innerHTML = displayedArticles.map(article => `
                 <div class="article-card" onclick="openDetail(${article.id})">
                     <div class="article-header">
-                        <span class="tag ${article.category || 'opensource'}">${article.categoryName || '综合'}</span>
+                        <span class="tag">AI/大模型</span>
                         <span style="color: var(--text-secondary); font-size: 0.85rem;">${formatDate(article.date)}</span>
                     </div>
                     <div class="article-title">${article.title || '无标题'}</div>
                     <div class="article-summary">${article.summary || '暂无摘要'}</div>
                     <div class="article-footer">
                         <span>来源：${article.source || '未知'}</span>
-                        <button class="btn ${isFav(article.id) ? 'fav' : ''}" onclick="toggleFav(${article.id}, event)">
-                            ${isFav(article.id) ? '★ 已收藏' : '☆ 收藏'}
-                        </button>
                     </div>
                 </div>
             `).join('');
