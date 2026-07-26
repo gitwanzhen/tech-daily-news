@@ -1,7 +1,7 @@
 import json
 import feedparser
 import re
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from html import unescape
 
 # RSS 源配置（国内权威技术媒体）
@@ -43,6 +43,32 @@ RSS_SOURCES = [
         "categoryName": "后端架构"
     }
 ]
+
+def parse_date(entry):
+    """解析 RSS 日期，统一转为北京时间字符串"""
+    try:
+        # 尝试获取 published_parsed（UTC 时间元组）
+        if hasattr(entry, 'published_parsed') and entry.published_parsed:
+            dt = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
+            # UTC + 8小时 = 北京时间
+            dt = dt.astimezone(timezone(timedelta(hours=8)))
+            return dt.strftime("%Y-%m-%d")
+    except:
+        pass
+    
+    try:
+        # 备用：从 published 字符串解析
+        if hasattr(entry, 'published') and entry.published:
+            # 常见格式：Mon, 26 Jul 2026 02:00:00 GMT
+            text = entry.published.replace('GMT', '+0000').replace('UTC', '+0000')
+            dt = datetime.strptime(text, "%a, %d %b %Y %H:%M:%S %z")
+            dt = dt.astimezone(timezone(timedelta(hours=8)))
+            return dt.strftime("%Y-%m-%d")
+    except:
+        pass
+    
+    # 兜底：用当前日期
+    return datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d")
 
 def clean_html(text):
     """去除 HTML 标签"""
@@ -109,11 +135,11 @@ def crawl():
                 try:
                     if hasattr(entry, 'published_parsed') and entry.published_parsed:
                         dt = datetime(*entry.published_parsed[:6])
-                        date_str = dt.strftime("%Y-%m-%d")
+                        date_str = parse_date(entry)
                     else:
-                        date_str = datetime.now().strftime("%Y-%m-%d")
+                        date_str = parse_date(entry)
                 except:
-                    date_str = datetime.now().strftime("%Y-%m-%d")
+                    date_str = parse_date(entry)
                 
                 article = {
                     "id": id_counter,
