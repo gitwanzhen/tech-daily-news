@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechDaily - 技术人每日资讯</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --bg: #0d1117;
+            --surface: #161b22;
+            --border: #30363d;
+            --text: #c9d1d9;
+            --text-secondary: #8b949e;
+            --primary: #58a6ff;
+            --tag-ai: #ff7b72;
+            --tag-frontend: #7ee787;
+            --tag-backend: #79c0ff;
+            --tag-mobile: #d2a8ff;
+            --tag-cloud: #ffa657;
+            --tag-security: #f778ba;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0 30px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, var(--primary), var(--tag-cloud));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        input[type="date"] {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: inherit;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .nav button {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 15px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        
+        .nav button.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+        
+        .nav button:hover {
+            color: var(--text);
+        }
+        
+        .categories {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .cat-btn {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            padding: 6px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+        
+        .cat-btn:hover, .cat-btn.active {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+        }
+        
+        .article-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary);
+        }
+        
+        .article-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .tag {
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: rgba(88, 166, 255, 0.15);
+            color: var(--primary);
+        }
+        
+        .tag.ai { background: rgba(255, 123, 114, 0.15); color: var(--tag-ai); }
+        .tag.frontend { background: rgba(126, 231, 135, 0.15); color: var(--tag-frontend); }
+        .tag.backend { background: rgba(121, 192, 255, 0.15); color: var(--tag-backend); }
+        .tag.mobile { background: rgba(210, 168, 255, 0.15); color: var(--tag-mobile); }
+        .tag.cloud { background: rgba(255, 166, 87, 0.15); color: var(--tag-cloud); }
+        .tag.security { background: rgba(247, 120, 186, 0.15); color: var(--tag-security); }
+        
+        .article-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+        
+        .article-summary {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        
+        .article-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+        
+        .btn {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            padding: 6px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+        
+        .btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn.fav {
+            color: var(--tag-ai);
+            border-color: rgba(255, 123, 114, 0.3);
+        }
+        
+        .empty {
+            text-align: center;
+            padding: 80px 20px;
+            color: var(--text-secondary);
+        }
+        
+        @media (max-width: 600px) {
+            .container { padding: 15px; }
+            h1 { font-size: 1.5rem; }
+            .article-card { padding: 18px; }
+            .nav button { padding: 10px 14px; font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TechDaily</h1>
+            <p class="subtitle">技术人每日必读资讯</p>
+        </header>
+        
+        <div class="controls" id="controlsArea">
+            <input type="date" id="datePicker">
+            <button class="btn" onclick="setToday()">回到今日</button>
+        </div>
+        
+        <nav class="nav">
+            <button class="active" onclick="showPage('today', this)">今日资讯</button>
+            <button onclick="showPage('history', this)">历史资讯</button>
+            <button onclick="showPage('favorites', this)">我的收藏</button>
+        </nav>
+        
+        <div class="categories" id="categoryFilters">
+            <button class="cat-btn active" onclick="filterCat('all', this)">全部</button>
+            <button class="cat-btn" onclick="filterCat('ai', this)">AI/大模型</button>
+            <button class="cat-btn" onclick="filterCat('frontend', this)">前端</button>
+            <button class="cat-btn" onclick="filterCat('backend', this)">后端架构</button>
+            <button class="cat-btn" onclick="filterCat('mobile', this)">移动开发</button>
+            <button class="cat-btn" onclick="filterCat('cloud', this)">云原生</button>
+            <button class="cat-btn" onclick="filterCat('security', this)">安全</button>
+        </div>
+        
+        <div id="content"></div>
+    </div>
+
+    <script>
+        // ==================== 数据区域 ====================
+        // 你可以直接修改这里的内容来更新资讯
+        const articles = [
+            {
+                id: 1,
+                title: "OpenAI 发布 GPT-5 技术预览",
+                summary: "新一代大模型在多模态理解和代码生成能力上实现重大突破，上下文窗口扩展至 200 万 token，支持直接读取整个代码库进行架构分析。",
+                category: "ai",
+                categoryName: "AI/大模型",
+                date: "2026-07-26",
+                source: "InfoQ"
+            },
+            {
+                id: 2,
+                title: "Vue 3.6 正式发布：编译器重构",
+                summary: "全新编译器架构带来 40% 的构建速度提升，引入 Signal 响应式原语，Vapor Mode 进入稳定版，服务端渲染性能翻倍。",
+                category: "frontend",
+                categoryName: "前端",
+                date: "2026-07-26",
+                source: "掘金"
+            },
+            {
+                id: 3,
+                title: "Linux Kernel 6.12 合并 Rust 驱动框架",
+                summary: "Linus 亲自合并了 Rust for Linux 的第三阶段补丁，允许在内核树中直接编写 Rust 设备驱动，内存安全特性进入生产环境。",
+                category: "backend",
+                categoryName: "后端架构",
+                date: "2026-07-26",
+                source: "开源中国"
+            },
+            {
+                id: 4,
+                title: "Swift 6 完全并发检查上线",
+                summary: "Xcode 16 默认开启完整数据竞争检测，Actor 隔离模型成为标准，iOS 开发进入内存安全新时代。",
+                category: "mobile",
+                categoryName: "移动开发",
+                date: "2026-07-25",
+                source: "GitHub"
+            },
+            {
+                id: 5,
+                title: "Kubernetes 1.32 发布：Sidecar 容器 GA",
+                summary: "原生 Sidecar 生命周期管理正式可用，Job 支持 Pod 级重试策略，集群自动扩缩容响应速度提升 3 倍。",
+                category: "cloud",
+                categoryName: "云原生",
+                date: "2026-07-25",
+                source: "云原生社区"
+            },
+            {
+                id: 6,
+                title: "Chrome 零日漏洞 CVE-2026-XXXX 紧急修复",
+                summary: "Google 发布高危漏洞补丁，影响所有 Chromium 内核浏览器，建议立即升级至最新版本。",
+                category: "security",
+                categoryName: "安全",
+                date: "2026-07-24",
+                source: "安全内参"
+            }
+        ];
+
+        // ==================== 状态管理 ====================
+        let currentPage = 'today';
+        let currentCategory = 'all';
+        let currentDate = new Date().toISOString().split('T')[0];
+
+        // ==================== 初始化 ====================
+        document.getElementById('datePicker').value = currentDate;
+        render();
+
+        // ==================== 功能函数 ====================
+        
+        // 获取收藏列表
+        function getFavorites() {
+            return JSON.parse(localStorage.getItem('techdaily_favs') || '[]');
+        }
+
+        // 切换收藏
+        function toggleFav(id) {
+            let favs = getFavorites();
+            if (favs.includes(id)) {
+                favs = favs.filter(f => f !== id);
+            } else {
+                favs.push(id);
+            }
+            localStorage.setItem('techdaily_favs', JSON.stringify(favs));
+            render();
+        }
+
+        // 检查是否已收藏
+        function isFav(id) {
+            return getFavorites().includes(id);
+        }
+
+        // 切换页面（今日/历史/收藏）
+        function showPage(page, btn) {
+            currentPage = page;
+            
+            // 更新导航按钮样式
+            document.querySelectorAll('.nav button').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            // 控制区域显示/隐藏
+            const controls = document.getElementById('controlsArea');
+            const cats = document.getElementById('categoryFilters');
+            
+            if (page === 'favorites') {
+                controls.style.display = 'none';
+                cats.style.display = 'none';
+            } else {
+                controls.style.display = 'flex';
+                cats.style.display = 'flex';
+            }
+            
+            if (page === 'today') {
+                currentDate = new Date().toISOString().split('T')[0];
+                document.getElementById('datePicker').value = currentDate;
+            }
+            
+            render();
+        }
+
+        // 回到今日
+        function setToday() {
+            currentDate = new Date().toISOString().split('T')[0];
+            document.getElementById('datePicker').value = currentDate;
+            // 自动切换到今日资讯
+            const todayBtn = document.querySelector('.nav button:first-child');
+            showPage('today', todayBtn);
+        }
+
+        // 日期选择
+        document.getElementById('datePicker').addEventListener('change', (e) => {
+            currentDate = e.target.value;
+            if (currentPage === 'today') {
+                // 如果选了非今天，自动切换到历史视图
+                const historyBtn = document.querySelector('.nav button:nth-child(2)');
+                showPage('history', historyBtn);
+            } else {
+                render();
+            }
+        });
+
+        // 分类筛选
+        function filterCat(cat, btn) {
+            currentCategory = cat;
+            document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            render();
+        }
+
+        // 渲染列表
+        function render() {
+            const container = document.getElementById('content');
+            let filtered = articles;
+
+            // 按页面筛选
+            if (currentPage === 'today') {
+                const today = new Date().toISOString().split('T')[0];
+                filtered = articles.filter(a => a.date === today);
+            } else if (currentPage === 'history') {
+                filtered = articles.filter(a => a.date === currentDate);
+            } else if (currentPage === 'favorites') {
+                const favs = getFavorites();
+                filtered = articles.filter(a => favs.includes(a.id));
+            }
+
+            // 按分类筛选
+            if (currentCategory !== 'all') {
+                filtered = filtered.filter(a => a.category === currentCategory);
+            }
+
+            // 空状态
+            if (filtered.length === 0) {
+                container.innerHTML = '<div class="empty">暂无资讯</div>';
+                return;
+            }
+
+            // 渲染卡片
+            container.innerHTML = filtered.map(article => `
+                <div class="article-card">
+                    <div class="article-header">
+                        <span class="tag ${article.category}">${article.categoryName}</span>
+                        <span style="color: var(--text-secondary); font-size: 0.85rem;">${article.date}</span>
+                    </div>
+                    <div class="article-title">${article.title}</div>
+                    <div class="article-summary">${article.summary}</div>
+                    <div class="article-footer">
+                        <span>来源：${article.source}</span>
+                        <button class="btn ${isFav(article.id) ? 'fav' : ''}" onclick="toggleFav(${article.id})">
+                            ${isFav(article.id) ? '★ 已收藏' : '☆ 收藏'}
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+    </script>
+</body>
+</html>
