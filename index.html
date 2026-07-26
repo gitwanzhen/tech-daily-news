@@ -6,7 +6,7 @@
     <title>TechDaily · 技术人每日资讯</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <style>
-        /* ===== 全局样式（与之前相同，省略重复） ===== */
+        /* ===== 完整样式（与之前保持一致） ===== */
         * { margin:0; padding:0; box-sizing:border-box; }
         :root {
             --bg-primary: #08080e;
@@ -269,7 +269,6 @@
     <div class="glow-orb glow-orb-3"></div>
 
     <div class="container" id="app">
-        <!-- Header -->
         <div class="header">
             <div class="brand">TechDaily</div>
             <div class="tagline">技术人每日必读 · 每小时自动更新</div>
@@ -280,7 +279,6 @@
             </div>
         </div>
 
-        <!-- Stats -->
         <div class="stats-bar">
             <div class="stat-item"><span>📦</span><span>今日更新</span><span class="num" id="statTotal">0</span></div>
             <div class="stat-item"><span>🤖</span><span>AI 资讯</span><span class="num" id="statAI">0</span></div>
@@ -288,7 +286,6 @@
             <div class="stat-item"><span>🕐</span><span>最后更新</span><span class="num" id="statTime">--:--</span></div>
         </div>
 
-        <!-- Tabs -->
         <div class="tab-control">
             <div class="tab-inner">
                 <button class="tab-btn active" data-tab="ai" onclick="switchTab('ai', this)">🤖 AI / 大模型 <span class="badge" id="badgeAI">0</span></button>
@@ -296,7 +293,6 @@
             </div>
         </div>
 
-        <!-- Toolbar -->
         <div class="toolbar">
             <div class="search-box">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
@@ -316,11 +312,9 @@
             </div>
         </div>
 
-        <!-- Content -->
         <div id="content-ai" class="compact"></div>
         <div id="content-hot" class="compact" style="display:none;"></div>
 
-        <!-- 技术圈暗号 -->
         <div id="geekCode" style="margin-top:20px; padding:12px 16px; background:rgba(255,255,255,0.02); border-radius:12px; border:1px solid rgba(255,255,255,0.04); font-size:13px; color:var(--text-tertiary); display:none;">
             <span style="font-weight:600; color:var(--text-secondary);">🧠 今日技术暗号：</span>
             <span id="geekText"></span>
@@ -331,14 +325,12 @@
         </div>
     </div>
 
-    <!-- ===== 待消化池 ===== -->
     <div class="digest-pool" id="digestPool">
         <div class="title">⏰ 待消化 <button class="clear-btn" onclick="clearDigest()">清空</button></div>
         <div class="count" id="digestCount">0</div>
         <div style="font-size:11px;color:var(--text-muted);margin-top:2px;" id="digestHint"></div>
     </div>
 
-    <!-- ===== Modal ===== -->
     <div class="modal-overlay" id="detailModal" onclick="closeModal(event)">
         <div class="modal-content" onclick="event.stopPropagation()">
             <div class="modal-header">
@@ -384,10 +376,9 @@
         let currentDate = getTodayStr();
         let readIds = new Set();
         let digestIds = new Set();
-        let currentModalId = null;
+        let currentArticle = null;
         let isRefreshing = false;
 
-        // 技术暗号
         const GEEK_CODES = [
             "Llama 4 的 200 万 token 上下文相当于让 AI 一次性读完《三体》三部曲还多出 40% 容量",
             "GPT-5 的代码生成准确率 92% 已超过人类初级工程师的平均水平 (约 85%)",
@@ -435,6 +426,17 @@
             return Math.max(1, Math.round(words/120));
         }
 
+        // 为文章生成稳定的 ID（基于标题+来源）
+        function generateStableId(article) {
+            const key = (article.title || '') + (article.source || '');
+            let hash = 0;
+            for (let i = 0; i < key.length; i++) {
+                hash = (hash << 5) - hash + key.charCodeAt(i);
+                hash |= 0;
+            }
+            return Math.abs(hash);
+        }
+
         // ========================================================================
         //  STORAGE
         // ========================================================================
@@ -448,8 +450,8 @@
         function saveDigestIds() { try { localStorage.setItem(STORAGE_KEY_DIGEST, JSON.stringify([...digestIds])); } catch(_){} }
 
         function markAsRead(id) { readIds.add(id); saveReadIds(); updateReadStatusUI(); updateDigestUI(); }
-        function toggleReadStatus() { if(currentModalId) { const id=currentModalId; if(readIds.has(id)) readIds.delete(id); else readIds.add(id); saveReadIds(); updateReadStatusUI(); renderAll(); showToast(readIds.has(id)?'已标记已读':'取消已读'); } }
-        function addToDigest() { if(currentModalId) { const id=currentModalId; if(digestIds.has(id)) digestIds.delete(id); else digestIds.add(id); saveDigestIds(); updateDigestUI(); showToast(digestIds.has(id)?'已加入待消化池':'已移除'); } }
+        function toggleReadStatus() { if(currentArticle) { const id=currentArticle.id; if(readIds.has(id)) readIds.delete(id); else readIds.add(id); saveReadIds(); updateReadStatusUI(); renderAll(); showToast(readIds.has(id)?'已标记已读':'取消已读'); } }
+        function addToDigest() { if(currentArticle) { const id=currentArticle.id; if(digestIds.has(id)) digestIds.delete(id); else digestIds.add(id); saveDigestIds(); updateDigestUI(); showToast(digestIds.has(id)?'已加入待消化池':'已移除'); } }
 
         // ========================================================================
         //  DATA LOADING
@@ -476,6 +478,8 @@
         //  RENDER
         // ========================================================================
         function renderCard(article, featured=false) {
+            if (!article.id) article.id = generateStableId(article);
+
             const isRead = readIds.has(article.id);
             const hot = article.hot_score || 30;
             const readTime = article.read_time || estimateReadTime(article.summary || article.title);
@@ -483,7 +487,10 @@
             const catClass = article.category === 'hot' ? 'hot' : 'ai';
             const catName = article.categoryName || (article.category==='hot' ? '🔥 热搜' : '🤖 AI');
 
-            let html = `<div class="${featured?'featured-card':'news-card'} ${catClass} read-item" data-id="${article.id}" onclick="openDetail(${article.id})">`;
+            // 将文章数据序列化存入 data-article
+            const articleData = encodeURIComponent(JSON.stringify(article));
+
+            let html = `<div class="${featured?'featured-card':'news-card'} ${catClass} read-item" data-article="${articleData}" data-id="${article.id}">`;
             if (!featured) {
                 html += `<div class="card-header">
                             <span class="card-tag ${catClass}">${catName}</span>
@@ -534,7 +541,7 @@
                 }
                 containerAI.innerHTML = html;
             }
-            // HOT (无摸鱼内容，只显示真实热搜)
+            // HOT
             if (hotPageData.length===0) {
                 containerHot.innerHTML = '<div class="empty">暂无热搜</div>';
             } else {
@@ -667,7 +674,11 @@
         //  LOAD & RENDER BY DATE
         // ========================================================================
         async function loadAndRender(dateStr) {
-            const data = await loadArticlesByDate(dateStr);
+            let data = await loadArticlesByDate(dateStr);
+            data = data.map(article => {
+                if (!article.id) article.id = generateStableId(article);
+                return article;
+            });
             articles = data;
             aiAll = articles.filter(a => a.category === 'ai').sort((a,b) => b.id - a.id);
             hotAll = articles.filter(a => a.category === 'hot').sort((a,b) => b.id - a.id);
@@ -680,16 +691,25 @@
         }
 
         // ========================================================================
-        //  MODAL
+        //  MODAL — 增强兜底逻辑
         // ========================================================================
-        function openDetail(id) {
-            const article = articles.find(a => a.id === id);
-            if (!article) {
-                showToast('未找到文章内容');
+        function openDetailFromCard(cardElement) {
+            const encoded = cardElement.dataset.article;
+            if (!encoded) {
+                showToast('无法读取文章数据');
                 return;
             }
+            try {
+                const article = JSON.parse(decodeURIComponent(encoded));
+                showModal(article);
+            } catch(e) {
+                showToast('数据解析失败');
+                console.error(e);
+            }
+        }
 
-            currentModalId = id;
+        function showModal(article) {
+            currentArticle = article;
             const tag = document.getElementById('modalTag');
             tag.textContent = article.categoryName || (article.category==='hot'?'🔥 热搜':'🤖 AI');
             tag.className = 'card-tag ' + (article.category||'ai');
@@ -702,12 +722,18 @@
             const summaryContainer = document.getElementById('modalContentBox');
             const summaryText = document.getElementById('modalSummary');
 
-            fullContainer.className = 'modal-full-content';
+            // ----- 核心修复：检查 full_content 是否有效 -----
+            let hasValidContent = false;
+            let contentHtml = article.full_content || '';
+            // 移除空白标签后检查是否有实际文本
+            const stripped = contentHtml.replace(/<[^>]+>/g, '').trim();
+            if (stripped.length > 0) {
+                hasValidContent = true;
+            }
 
-            if (article.full_content && article.full_content.trim()) {
-                let content = article.full_content;
-                content = content.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
-                fullContainer.innerHTML = content;
+            if (hasValidContent) {
+                // 有有效内容，直接显示
+                fullContainer.innerHTML = contentHtml;
                 fullContainer.style.display = 'block';
                 summaryContainer.style.display = 'none';
                 if (article.category === 'hot') {
@@ -716,29 +742,59 @@
                     fullContainer.classList.add('ai-border');
                 }
             } else {
-                fullContainer.style.display = 'none';
-                summaryContainer.style.display = 'block';
-                summaryText.textContent = article.summary || '暂无详细摘要';
-                const box = document.getElementById('modalContentBox');
-                box.className = 'modal-content-box ' + (article.category==='hot' ? 'hot-border' : '');
+                // 无有效内容，构造一个包含标题、来源、热度、日期的信息卡片
+                fullContainer.style.display = 'block';
+                summaryContainer.style.display = 'none';
+                // 构建一个美观的 fallback 内容
+                const hot = article.hot_score || 30;
+                const source = article.source || '未知来源';
+                const date = formatDate(article.date);
+                const url = article.url || '#';
+                // 如果 summary 有内容也显示
+                const summary = article.summary && article.summary.trim() ? `<p><strong>摘要：</strong>${escapeHtml(article.summary)}</p>` : '';
+
+                fullContainer.innerHTML = `
+                    <div style="padding: 8px 0;">
+                        <p style="font-size:1.1rem; font-weight:600; color:var(--text-primary); margin-bottom:8px;">📌 热搜详情</p>
+                        <p><strong>标题：</strong>${escapeHtml(article.title)}</p>
+                        <p><strong>来源：</strong>${escapeHtml(source)}</p>
+                        <p><strong>热度：</strong>🔥 ${hot}</p>
+                        <p><strong>日期：</strong>${date}</p>
+                        ${summary}
+                        ${url && url !== '#' ? `<p><strong>链接：</strong><a href="${url}" target="_blank">查看原文</a></p>` : ''}
+                        <p style="margin-top:12px; color:var(--text-muted); font-size:0.9rem; border-top:1px solid var(--border-subtle); padding-top:12px;">
+                            ⚠️ 当前数据源未提供完整文章内容，以上为摘要信息。
+                        </p>
+                    </div>
+                `;
+                // 根据分类加边框
+                if (article.category === 'hot') {
+                    fullContainer.classList.add('hot-border');
+                } else {
+                    fullContainer.classList.add('ai-border');
+                }
             }
 
             document.getElementById('detailModal').classList.add('active');
             document.body.style.overflow = 'hidden';
-            if (id > 0) markAsRead(id);
+            if (article.id) markAsRead(article.id);
         }
 
-        function closeModal(e) { if(e && e.target!==e.currentTarget) return; document.getElementById('detailModal').classList.remove('active'); document.body.style.overflow=''; currentModalId=null; updateReadStatusUI(); }
+        function closeModal(e) {
+            if (e && e.target !== e.currentTarget) return;
+            document.getElementById('detailModal').classList.remove('active');
+            document.body.style.overflow = '';
+            currentArticle = null;
+            updateReadStatusUI();
+        }
 
         function openSource() {
-            const article = articles.find(a => a.id === currentModalId);
-            if (article?.url && article.url !== '#') window.open(article.url,'_blank');
+            if (currentArticle?.url && currentArticle.url !== '#') window.open(currentArticle.url,'_blank');
             else showToast('无原文链接');
         }
         function copyLink() {
-            const article = articles.find(a => a.id === currentModalId);
-            if (article?.url && article.url !== '#') {
-                navigator.clipboard.writeText(article.url).then(()=>showToast('链接已复制')).catch(()=>showToast('复制失败'));
+            if (currentArticle?.url && currentArticle.url !== '#') {
+                navigator.clipboard.writeText(currentArticle.url).then(()=>showToast('链接已复制')).catch(()=>showToast('复制失败'));
             } else showToast('无链接');
         }
 
@@ -785,7 +841,16 @@
             }
             currentDate = targetDate;
             await loadAndRender(targetDate);
-            // 事件绑定
+
+            // 事件委托：点击卡片打开详情
+            document.addEventListener('click', function(e) {
+                const card = e.target.closest('.news-card, .featured-card');
+                if (card && !e.target.closest('.card-actions')) {
+                    openDetailFromCard(card);
+                }
+            });
+
+            // 绑定 UI 事件
             document.getElementById('hideReadToggle').addEventListener('change', toggleHideRead);
             document.getElementById('updateBtn').addEventListener('click', updateData);
             document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
@@ -796,6 +861,7 @@
             document.getElementById('modalDigestBtn').addEventListener('click', addToDigest);
             document.getElementById('clearDigestBtn').addEventListener('click', clearDigest);
             document.getElementById('searchInput').addEventListener('input', onSearch);
+
             // 键盘快捷键
             document.addEventListener('keydown', (e) => {
                 if (e.target.tagName==='INPUT') return;
@@ -803,6 +869,7 @@
                 if (e.key==='r' || e.key==='R') updateData();
                 if (e.key==='h' || e.key==='H') { const cb=document.getElementById('hideReadToggle'); cb.checked=!cb.checked; toggleHideRead(); }
             });
+
             // 实时状态
             setInterval(() => {
                 const now = getBeijingDate();
