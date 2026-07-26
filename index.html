@@ -6,7 +6,7 @@
     <title>TechDaily · 技术人每日资讯</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <style>
-        /* ===== 完整样式（与之前保持一致） ===== */
+        /* ===== 样式与之前一致，新增部分有注释 ===== */
         * { margin:0; padding:0; box-sizing:border-box; }
         :root {
             --bg-primary: #08080e;
@@ -60,11 +60,9 @@
         .tab-btn.hot.active { background:var(--color-hot-dim); color:var(--color-hot); }
         .tab-btn .badge { font-size:10px; background:rgba(255,255,255,0.06); padding:0 8px; border-radius:100px; color:var(--text-muted); }
         .toolbar { display:flex; gap:8px; margin-bottom:14px; align-items:center; flex-wrap:wrap; }
-        .search-box { flex:1; min-width:140px; display:flex; align-items:center; gap:8px; background:rgba(255,255,255,0.025); border:1px solid rgba(255,255,255,0.05); border-radius:12px; padding:0 12px; height:36px; transition:all var(--transition); }
-        .search-box:focus-within { border-color:rgba(96,165,250,0.25); background:rgba(255,255,255,0.04); }
-        .search-box input { background:transparent; border:none; outline:none; color:var(--text-primary); font-size:13px; width:100%; font-family:inherit; }
-        .search-box input::placeholder { color:var(--text-muted); }
+        /* 搜索框已移除 */
         .date-input-compact { background:rgba(255,255,255,0.025); border:1px solid rgba(255,255,255,0.05); color:var(--text-secondary); padding:0 10px; border-radius:10px; font-size:13px; height:36px; cursor:pointer; outline:none; }
+        .date-count { font-size:13px; color:var(--text-muted); margin-left:4px; white-space:nowrap; }
         .icon-btn { width:36px; height:36px; display:flex; align-items:center; justify-content:center; background:rgba(255,255,255,0.025); border:1px solid rgba(255,255,255,0.05); border-radius:10px; color:var(--text-tertiary); cursor:pointer; transition:all var(--transition); }
         .icon-btn:hover { background:rgba(255,255,255,0.05); color:var(--text-secondary); }
         .icon-btn.primary { background:var(--color-ai-dim); border-color:rgba(96,165,250,0.15); color:var(--color-ai); }
@@ -84,48 +82,50 @@
             transition:all var(--transition);
             margin-bottom:10px;
         }
-        .featured-card {
-            background:linear-gradient(145deg, rgba(96,165,250,0.05), rgba(192,132,252,0.025));
-            border-color:rgba(96,165,250,0.1);
-        }
-        .featured-card::before {
-            content:'';
-            position:absolute;
-            top:0;
-            left:0;
-            right:0;
-            height:3px;
-            background:linear-gradient(90deg, var(--color-ai), var(--color-brand-start), var(--color-brand-end));
-            background-size:200% 100%;
-            animation:shimmer 3s ease-in-out infinite;
-        }
+        .featured-card { background:linear-gradient(145deg, rgba(96,165,250,0.05), rgba(192,132,252,0.025)); border-color:rgba(96,165,250,0.1); }
+        .featured-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg, var(--color-ai), var(--color-brand-start), var(--color-brand-end)); background-size:200% 100%; animation:shimmer 3s ease-in-out infinite; }
         @keyframes shimmer { 0%,100%{background-position:0% 0%} 50%{background-position:100% 0%} }
-        .news-card::before {
-            content:'';
-            position:absolute;
-            left:0;
-            top:14px;
-            bottom:14px;
-            width:3px;
-            border-radius:0 4px 4px 0;
-            transition:all var(--transition);
-        }
+        .news-card::before { content:''; position:absolute; left:0; top:14px; bottom:14px; width:3px; border-radius:0 4px 4px 0; transition:all var(--transition); }
         .news-card.ai::before { background:linear-gradient(180deg, var(--color-ai), #3b82f6); }
         .news-card.hot::before { background:linear-gradient(180deg, var(--color-hot), #ea580c); }
-        .news-card:hover, .featured-card:hover {
-            background:var(--bg-surface-hover);
-            border-color:var(--border-visible);
-            transform:translateY(-1px);
-            box-shadow:var(--shadow-card);
-        }
+        .news-card:hover, .featured-card:hover { background:var(--bg-surface-hover); border-color:var(--border-visible); transform:translateY(-1px); box-shadow:var(--shadow-card); }
         .card-header { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; }
         .card-tag { display:inline-flex; align-items:center; gap:4px; font-size:11px; font-weight:600; padding:2px 10px; border-radius:var(--radius-pill); flex-shrink:0; }
         .card-tag.ai { background:var(--color-ai-dim); color:var(--color-ai); }
         .card-tag.hot { background:var(--color-hot-dim); color:var(--color-hot); }
         .card-date { font-size:12px; color:var(--text-muted); flex-shrink:0; }
-        .card-title { font-size:16px; font-weight:600; line-height:1.5; color:var(--text-primary); transition:color var(--transition); margin:4px 0; }
+        .card-title {
+            font-size:16px;
+            font-weight:600;
+            line-height:1.5;
+            color:var(--text-primary);
+            transition:color var(--transition);
+            margin:4px 0;
+            position:relative;
+            padding-left:28px; /* 为序号留空间 */
+        }
+        /* 序号样式 */
+        .card-title .index {
+            position:absolute;
+            left:0;
+            top:0;
+            font-weight:400;
+            color:var(--text-muted);
+            font-size:14px;
+            opacity:0.6;
+        }
+        /* 已读标题颜色 */
+        .read-title {
+            color: var(--text-muted) !important;
+            text-decoration: line-through;
+            text-decoration-color: var(--text-muted);
+            opacity:0.7;
+        }
         .news-card.ai:hover .card-title { color:var(--color-ai); }
         .news-card.hot:hover .card-title { color:var(--color-hot); }
+        /* 已读卡片悬停时标题颜色也变化，但保留已读样式 */
+        .news-card.ai:hover .read-title { color:var(--color-ai) !important; text-decoration-color:var(--color-ai); }
+        .news-card.hot:hover .read-title { color:var(--color-hot) !important; text-decoration-color:var(--color-hot); }
         .card-summary { font-size:13px; color:var(--text-tertiary); line-height:1.6; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
         .card-footer { display:flex; justify-content:space-between; align-items:center; margin-top:6px; flex-wrap:wrap; gap:6px; }
         .card-source { font-size:12px; color:var(--text-muted); display:flex; align-items:center; gap:4px; }
@@ -256,8 +256,10 @@
             .tab-btn { padding:6px 12px; font-size:13px; }
             .container { padding:20px 12px 40px; }
             .featured-card, .news-card { padding:14px; }
-            .card-title { font-size:15px; }
+            .card-title { font-size:15px; padding-left:24px; }
+            .card-title .index { font-size:12px; }
             .modal-full-content { max-height: 300px; }
+            .date-count { font-size:11px; }
         }
     </style>
 </head>
@@ -274,8 +276,8 @@
             <div class="tagline">技术人每日必读 · 每小时自动更新</div>
             <div class="date-pill">
                 <span class="dot"></span>
-                <span id="todayDate">加载中...</span>
-                <span style="color:var(--text-muted);font-weight:400;font-size:11px;margin-left:4px;" id="liveStatus">● 实时</span>
+                <span id="todayDate">正在加载...</span>
+                <span style="color:var(--text-muted);font-weight:400;font-size:11px;margin-left:4px;" id="liveStatus">更新于 --:--</span>
             </div>
         </div>
 
@@ -294,11 +296,9 @@
         </div>
 
         <div class="toolbar">
-            <div class="search-box">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-                <input type="text" placeholder="搜索..." id="searchInput" oninput="onSearch()" />
-            </div>
+            <!-- 搜索框已移除 -->
             <input type="date" id="datePicker" class="date-input-compact" />
+            <span class="date-count" id="dateCount">共 0 条</span>
             <button class="icon-btn" onclick="setToday()" title="今日">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             </button>
@@ -477,7 +477,7 @@
         // ========================================================================
         //  RENDER
         // ========================================================================
-        function renderCard(article, featured=false) {
+        function renderCard(article, featured=false, index=null) {
             if (!article.id) article.id = generateStableId(article);
 
             const isRead = readIds.has(article.id);
@@ -487,7 +487,12 @@
             const catClass = article.category === 'hot' ? 'hot' : 'ai';
             const catName = article.categoryName || (article.category==='hot' ? '🔥 热搜' : '🤖 AI');
 
-            // 将文章数据序列化存入 data-article
+            // 序号显示
+            const indexHtml = (index !== null) ? `<span class="index">${index+1}.</span>` : '';
+
+            // 已读标题类
+            const readTitleClass = isRead ? 'read-title' : '';
+
             const articleData = encodeURIComponent(JSON.stringify(article));
 
             let html = `<div class="${featured?'featured-card':'news-card'} ${catClass} read-item" data-article="${articleData}" data-id="${article.id}">`;
@@ -510,7 +515,7 @@
                             </span>
                         </div>`;
             }
-            html += `<div class="card-title">${escapeHtml(article.title)}</div>`;
+            html += `<div class="card-title ${readTitleClass}">${indexHtml}${escapeHtml(article.title)}</div>`;
             html += `<div class="card-summary"><span class="core">💡 核心：</span>${escapeHtml(summary)}</div>`;
             html += `<div class="card-footer">
                         <span class="card-source"><span class="dot"></span>${escapeHtml(article.source||'未知')}</span>
@@ -535,9 +540,9 @@
             if (aiPageData.length===0) containerAI.innerHTML = '<div class="empty">暂无 AI 资讯</div>';
             else {
                 let html = '';
-                if (aiPageData.length>0) {
-                    html += renderCard(aiPageData[0], true);
-                    for (let i=1; i<aiPageData.length; i++) html += renderCard(aiPageData[i], false);
+                for (let i=0; i<aiPageData.length; i++) {
+                    const featured = (i===0);
+                    html += renderCard(aiPageData[i], featured, i);
                 }
                 containerAI.innerHTML = html;
             }
@@ -547,7 +552,7 @@
             } else {
                 let html = '';
                 for (let i=0; i<hotPageData.length; i++) {
-                    html += renderCard(hotPageData[i], i===0);
+                    html += renderCard(hotPageData[i], i===0, i);
                 }
                 containerHot.innerHTML = html;
             }
@@ -559,6 +564,10 @@
             document.getElementById('statHot').textContent = hotAll.length;
             const now = getBeijingDate();
             document.getElementById('statTime').textContent = String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0');
+
+            // 更新日期条数显示
+            const count = articles.length;
+            document.getElementById('dateCount').textContent = `共 ${count} 条`;
 
             updateReadStatusUI();
             updateDigestUI();
@@ -616,9 +625,17 @@
             document.querySelectorAll('.news-card, .featured-card').forEach(el => {
                 const id = parseInt(el.dataset.id);
                 if (!id) return;
+                const isRead = readIds.has(id);
+                // 更新小圆点
                 const dot = el.querySelector('.read-status');
-                if (dot) dot.classList.toggle('read', readIds.has(id));
-                el.classList.toggle('read-item', readIds.has(id));
+                if (dot) dot.classList.toggle('read', isRead);
+                // 更新卡片 read-item 类
+                el.classList.toggle('read-item', isRead);
+                // 更新标题样式
+                const title = el.querySelector('.card-title');
+                if (title) {
+                    title.classList.toggle('read-title', isRead);
+                }
             });
         }
 
@@ -632,7 +649,7 @@
         }
 
         // ========================================================================
-        //  TAB & SEARCH
+        //  TAB & SEARCH (搜索功能已移除)
         // ========================================================================
         function switchTab(tab, btn) {
             currentTab = tab;
@@ -641,15 +658,6 @@
             document.getElementById('content-ai').style.display = tab==='ai' ? 'block' : 'none';
             document.getElementById('content-hot').style.display = tab==='hot' ? 'block' : 'none';
             renderAll();
-        }
-
-        function onSearch() {
-            const term = document.getElementById('searchInput').value.trim().toLowerCase();
-            document.querySelectorAll('.news-card, .featured-card').forEach(el => {
-                const title = el.querySelector('.card-title')?.textContent?.toLowerCase() || '';
-                const summary = el.querySelector('.card-summary')?.textContent?.toLowerCase() || '';
-                el.style.display = (title.includes(term) || summary.includes(term)) ? '' : 'none';
-            });
         }
 
         // ========================================================================
@@ -691,7 +699,7 @@
         }
 
         // ========================================================================
-        //  MODAL — 增强兜底逻辑
+        //  MODAL
         // ========================================================================
         function openDetailFromCard(cardElement) {
             const encoded = cardElement.dataset.article;
@@ -722,17 +730,14 @@
             const summaryContainer = document.getElementById('modalContentBox');
             const summaryText = document.getElementById('modalSummary');
 
-            // ----- 核心修复：检查 full_content 是否有效 -----
             let hasValidContent = false;
             let contentHtml = article.full_content || '';
-            // 移除空白标签后检查是否有实际文本
             const stripped = contentHtml.replace(/<[^>]+>/g, '').trim();
             if (stripped.length > 0) {
                 hasValidContent = true;
             }
 
             if (hasValidContent) {
-                // 有有效内容，直接显示
                 fullContainer.innerHTML = contentHtml;
                 fullContainer.style.display = 'block';
                 summaryContainer.style.display = 'none';
@@ -742,15 +747,12 @@
                     fullContainer.classList.add('ai-border');
                 }
             } else {
-                // 无有效内容，构造一个包含标题、来源、热度、日期的信息卡片
                 fullContainer.style.display = 'block';
                 summaryContainer.style.display = 'none';
-                // 构建一个美观的 fallback 内容
                 const hot = article.hot_score || 30;
                 const source = article.source || '未知来源';
                 const date = formatDate(article.date);
                 const url = article.url || '#';
-                // 如果 summary 有内容也显示
                 const summary = article.summary && article.summary.trim() ? `<p><strong>摘要：</strong>${escapeHtml(article.summary)}</p>` : '';
 
                 fullContainer.innerHTML = `
@@ -767,7 +769,6 @@
                         </p>
                     </div>
                 `;
-                // 根据分类加边框
                 if (article.category === 'hot') {
                     fullContainer.classList.add('hot-border');
                 } else {
@@ -860,7 +861,6 @@
             document.getElementById('modalReadToggleBtn').addEventListener('click', toggleReadStatus);
             document.getElementById('modalDigestBtn').addEventListener('click', addToDigest);
             document.getElementById('clearDigestBtn').addEventListener('click', clearDigest);
-            document.getElementById('searchInput').addEventListener('input', onSearch);
 
             // 键盘快捷键
             document.addEventListener('keydown', (e) => {
@@ -873,7 +873,7 @@
             // 实时状态
             setInterval(() => {
                 const now = getBeijingDate();
-                document.getElementById('liveStatus').textContent = '● '+String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0')+' 实时';
+                document.getElementById('liveStatus').textContent = '更新于 '+String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0');
             }, 10000);
         }
 
