@@ -253,61 +253,131 @@
         // ==================== 数据区域 ====================
         // 你可以直接修改这里的内容来更新资讯
         const articles = [
-            {
-                id: 1,
-                title: "OpenAI 发布 GPT-5 技术预览",
-                summary: "新一代大模型在多模态理解和代码生成能力上实现重大突破，上下文窗口扩展至 200 万 token，支持直接读取整个代码库进行架构分析。",
-                category: "ai",
-                categoryName: "AI/大模型",
-                date: "2026-07-26",
-                source: "InfoQ"
-            },
-            {
-                id: 2,
-                title: "Vue 3.6 正式发布：编译器重构",
-                summary: "全新编译器架构带来 40% 的构建速度提升，引入 Signal 响应式原语，Vapor Mode 进入稳定版，服务端渲染性能翻倍。",
-                category: "frontend",
-                categoryName: "前端",
-                date: "2026-07-26",
-                source: "掘金"
-            },
-            {
-                id: 3,
-                title: "Linux Kernel 6.12 合并 Rust 驱动框架",
-                summary: "Linus 亲自合并了 Rust for Linux 的第三阶段补丁，允许在内核树中直接编写 Rust 设备驱动，内存安全特性进入生产环境。",
-                category: "backend",
-                categoryName: "后端架构",
-                date: "2026-07-26",
-                source: "开源中国"
-            },
-            {
-                id: 4,
-                title: "Swift 6 完全并发检查上线",
-                summary: "Xcode 16 默认开启完整数据竞争检测，Actor 隔离模型成为标准，iOS 开发进入内存安全新时代。",
-                category: "mobile",
-                categoryName: "移动开发",
-                date: "2026-07-25",
-                source: "GitHub"
-            },
-            {
-                id: 5,
-                title: "Kubernetes 1.32 发布：Sidecar 容器 GA",
-                summary: "原生 Sidecar 生命周期管理正式可用，Job 支持 Pod 级重试策略，集群自动扩缩容响应速度提升 3 倍。",
-                category: "cloud",
-                categoryName: "云原生",
-                date: "2026-07-25",
-                source: "云原生社区"
-            },
-            {
-                id: 6,
-                title: "Chrome 零日漏洞 CVE-2026-XXXX 紧急修复",
-                summary: "Google 发布高危漏洞补丁，影响所有 Chromium 内核浏览器，建议立即升级至最新版本。",
-                category: "security",
-                categoryName: "安全",
-                date: "2026-07-24",
-                source: "安全内参"
-            }
-        ];
+    // ========== 2026-07-26 今日 ==========
+    {
+        id: 1,
+        title: "OpenAI 正式发布 GPT-5",
+        summary: "OpenAI 于 2026 年 7 月发布 GPT-5，带来增强的多模态推理、实时视频理解、改进的代码生成能力，上下文窗口扩展至 128K，事实准确性显著提升。ChatGPT Plus 价格维持 20 美元/月不变。",
+        category: "ai",
+        categoryName: "AI/大模型",
+        date: "2026-07-26",
+        source: "InfoQ"
+    },
+    {
+        id: 2,
+        title: "DeepSeek V4 发布：1T+ 参数 MoE 架构",
+        summary: "中国 AI 初创公司 DeepSeek 发布 V4 模型，采用 MoE 架构，总参数超 1T，在编程基准测试中超越 GPT-5。API 定价极具竞争力，仅为 0.14 美元/百万 token，大幅降低开发者成本。",
+        category: "ai",
+        categoryName: "AI/大模型",
+        date: "2026-07-26",
+        source: "开源中国"
+    },
+    {
+        id: 3,
+        title: "Anthropic 发布 Claude 4.5 与 Computer Use 2.0",
+        summary: "Claude 4.5 带来 500K token 超长上下文窗口，新增 Computer Use 2.0 桌面自动化能力，编程能力显著增强，多语言支持进一步优化，企业级 AI 工作流自动化迈入新阶段。",
+        category: "ai",
+        categoryName: "AI/大模型",
+        date: "2026-07-26",
+        source: "机器之心"
+    },
+    {
+        id: 4,
+        title: "Google 发布 Gemini 3.0 Pro",
+        summary: "Google 最新旗舰模型 Gemini 3.0 Pro 支持 1M token 上下文窗口，深度集成 Google 搜索，视频理解能力增强，Gemini Advanced 功能全面升级，与 OpenAI 和 Anthropic 正面竞争企业市场。",
+        category: "ai",
+        categoryName: "AI/大模型",
+        date: "2026-07-26",
+        source: "Google Blog"
+    },
+
+    // ========== 2026-07-25 昨日 ==========
+    {
+        id: 5,
+        title: "腾讯混元开源 Hy3 295B 极致量化版",
+        summary: "腾讯混元开源 Hy3 295B 的 1bit 和 4bit 量化版本，1bit 版本仅需 85.5GiB 即可在单张 96GB 显卡部署。团队为 llama.cpp 补充 MTP 投机解码，1bit 解码提速约 50%，显著降低超大模型私有化部署门槛。",
+        category: "ai",
+        categoryName: "AI/大模型",
+        date: "2026-07-25",
+        source: "CSDN"
+    },
+    {
+        id: 6,
+        title: "Bun 推出一体化 JavaScript/TypeScript 工具链",
+        summary: "Bun 以单个可执行文件提供运行时、包管理、打包、测试和脚本执行功能，使用 Rust 及 JavaScriptCore 构建，兼容多数 Node.js 项目，支持 Linux、macOS 和 Windows，旨在替代碎片化前端工具链。",
+        category: "frontend",
+        categoryName: "前端",
+        date: "2026-07-25",
+        source: "GitHub"
+    },
+    {
+        id: 7,
+        title: "llama.cpp 完成第 10000 次版本发布",
+        summary: "llama.cpp 达成第 10000 次版本发布里程碑，体现本地大模型量化、CPU/GPU 混合推理和社区优化的成熟度。该项目已成为端侧和本地部署 LLM 的事实标准工具。",
+        category: "opensource",
+        categoryName: "开源",
+        date: "2026-07-25",
+        source: "GitHub"
+    },
+
+    // ========== 2026-07-24 前日 ==========
+    {
+        id: 8,
+        title: "阶跃星辰发布 Step Edge 端侧多模态模型家族",
+        summary: "采用「1+N」架构，一个文本视觉基础模型连接 Audio、GUI 和 Gen 三个专项模型，覆盖手机和车载场景。工具调用延迟最低约 0.1 秒，W8A16 量化条件下文生图约 3 秒，推动端云协同落地。",
+        category: "mobile",
+        categoryName: "移动开发",
+        date: "2026-07-24",
+        source: "量子位"
+    },
+    {
+        id: 9,
+        title: "扩散语言模型通用后门框架 BadDLM 曝光",
+        summary: "新加坡国立大学等机构提出 BadDLM，通过修改前向掩码过程在扩散语言模型中注入生成式后门，在保持正常效用和隐蔽性的同时实现攻击。研究提醒扩散模型同样需要供应链检查和后门检测机制。",
+        category: "security",
+        categoryName: "安全",
+        date: "2026-07-24",
+        source: "安全内参"
+    },
+    {
+        id: 10,
+        title: "甲骨文升级 Oracle AI Agent Studio",
+        summary: "新版同时支持无代码、低代码和专业代码开发，可接入 VS Code、Git、Codex 和 Claude Code。构建出的智能体可继承 Fusion 云应用的权限、审批和审计体系，降低企业 Agent 进入核心业务流程的治理成本。",
+        category: "backend",
+        categoryName: "后端架构",
+        date: "2026-07-24",
+        source: "InfoQ"
+    },
+
+    // ========== 2026-07-23 更早 ==========
+    {
+        id: 11,
+        title: "商汤开源 SenseNova-Vision-7B-MoT 统一视觉模型",
+        summary: "以统一文本、图像或图文混合生成方式处理目标检测、分割、深度预测、3D 重建、多视图几何等任务，无需为每项任务设置独立预测头。同步开源约 5000 万条视觉指令数据。",
+        category: "ai",
+        categoryName: "AI/大模型",
+        date: "2026-07-23",
+        source: "机器之心"
+    },
+    {
+        id: 12,
+        title: "快手发布 KAT-Coder-Pro V2.5 智能体编程模型",
+        summary: "可在约 34 分钟生成完整点球游戏，以约 1400 行代码复刻沙盒游戏。AutoBuilder 将代码仓库环境构建成功率从 16.5% 提升至 57.2%，沉淀超过 10 万个可验证环境，编程模型竞争转向完整工程闭环。",
+        category: "ai",
+        categoryName: "AI/大模型",
+        date: "2026-07-23",
+        source: "掘金"
+    },
+    {
+        id: 13,
+        title: "火山引擎发布 AI MediaKit CLI 与 Skill",
+        summary: "沉淀超过 100 项音视频能力，覆盖剪辑、转码、字幕、画质增强、人声分离和音频处理。基础任务可本地执行，重计算任务交由云端，并内置长任务提交、查询和结果回收机制，面向 AI 原生工作流。",
+        category: "cloud",
+        categoryName: "云原生",
+        date: "2026-07-23",
+        source: "火山引擎"
+    }
+];
 
         // ==================== 状态管理 ====================
         let currentPage = 'today';
