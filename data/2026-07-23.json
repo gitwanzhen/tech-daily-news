@@ -1,0 +1,32 @@
+[
+  {
+    "id": 20,
+    "title": "前端预览excel？",
+    "summary": "需要实现前端预览excel文件，我尝试了很多插件但都有一个问题，插入单元格内部的图片无法展示（浮动图片可正常展示）如图：请问有什么工具插件可以实现正常前端预览excel文件",
+    "category": "frontend",
+    "categoryName": "前端",
+    "date": "2026-07-23",
+    "source": "SegmentFault",
+    "url": "https://segmentfault.com/q/1010000048066566"
+  },
+  {
+    "id": 21,
+    "title": "生产环境功能偶发报错但日志无记录，如何排查这种\"静默失败\"问题？",
+    "summary": "我们有一个线上服务，某个功能在正常情况下运行稳定，但近期发现偶发性出现\"服务器异常\"的报错。目前已经排查了以下几点：代码未改动：近期没有发布新版本，代码逻辑没有变化服务器资源正常：CPU、内存、磁盘、网络均在正常水位应用日志无异常记录：报错...",
+    "category": "opensource",
+    "categoryName": "开源",
+    "date": "2026-07-23",
+    "source": "SegmentFault",
+    "url": "https://segmentfault.com/q/1010000048065973"
+  },
+  {
+    "id": 22,
+    "title": "免费科研AI工具哪款强（电脑平板通用推荐）？",
+    "summary": "有无好用的科研AI工具最好是免费的，可以在电脑、平板上使用的",
+    "category": "opensource",
+    "categoryName": "开源",
+    "date": "2026-07-23",
+    "source": "SegmentFault",
+    "url": "https://segmentfault.com/q/1010000048065659"
+  }
+]
