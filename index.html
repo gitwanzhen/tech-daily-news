@@ -237,7 +237,7 @@
             color: var(--text-secondary);
         }
         
-        /* 详情弹窗 */
+        /* ===== 详情弹窗（增强版） ===== */
         .modal-overlay {
             display: none;
             position: fixed;
@@ -245,12 +245,12 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.85);
             z-index: 1000;
             justify-content: center;
             align-items: center;
             padding: 20px;
-            backdrop-filter: blur(4px);
+            backdrop-filter: blur(6px);
         }
         
         .modal-overlay.active {
@@ -261,7 +261,7 @@
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: 16px;
-            max-width: 700px;
+            max-width: 720px;
             width: 100%;
             max-height: 90vh;
             overflow-y: auto;
@@ -280,6 +280,7 @@
             top: 0;
             background: var(--surface);
             z-index: 10;
+            border-bottom: 1px solid var(--border);
         }
         
         .modal-close {
@@ -306,34 +307,71 @@
         }
         
         .modal-body {
-            padding: 20px 28px 28px;
+            padding: 24px 28px 28px;
+        }
+        
+        .modal-meta-row {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
         }
         
         .modal-title {
             font-size: 1.5rem;
             font-weight: 700;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
             padding-right: 40px;
             line-height: 1.4;
-        }
-        
-        .modal-meta {
-            display: flex;
-            gap: 16px;
-            align-items: center;
-            margin-bottom: 24px;
-            flex-wrap: wrap;
-        }
-        
-        .modal-summary {
-            font-size: 1.05rem;
-            line-height: 1.8;
             color: var(--text);
-            margin-bottom: 28px;
-            padding: 20px;
+        }
+        
+        .modal-content-box {
             background: var(--bg);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .modal-content-box h3 {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .modal-summary-full {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: var(--text);
+        }
+        
+        .modal-info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        
+        .modal-info-item {
+            background: var(--bg);
+            padding: 14px 18px;
             border-radius: 10px;
-            border-left: 3px solid var(--primary);
+        }
+        
+        .modal-info-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+        
+        .modal-info-value {
+            font-size: 0.95rem;
+            color: var(--text);
+            font-weight: 500;
         }
         
         .modal-actions {
@@ -377,6 +415,7 @@
             .modal-title { font-size: 1.2rem; }
             .modal-body { padding: 16px 20px 20px; }
             .modal-header { padding: 20px 20px 0; }
+            .modal-info-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -384,7 +423,7 @@
     <div class="container">
         <header>
             <h1>TechDaily</h1>
-            <p class="subtitle">技术人每日必读资讯 · 点击卡片查看详情</p>
+            <p class="subtitle">技术人每日必读资讯 · 每小时自动更新</p>
         </header>
         
         <div class="controls" id="controlsArea">
@@ -413,22 +452,40 @@
         <div id="content"></div>
     </div>
 
-    <!-- 详情弹窗 -->
+    <!-- 详情弹窗（增强版） -->
     <div class="modal-overlay" id="detailModal" onclick="closeModal(event)">
         <div class="modal-content" onclick="event.stopPropagation()">
             <div class="modal-header">
                 <button class="modal-close" onclick="closeModal()">&times;</button>
-                <div class="modal-meta">
+                <div class="modal-meta-row">
                     <span class="tag" id="modalTag">分类</span>
-                    <span style="color: var(--text-secondary);" id="modalDate">日期</span>
-                    <span style="color: var(--text-secondary);" id="modalSource">来源</span>
+                    <span style="color: var(--text-secondary); font-size: 0.9rem;" id="modalDate">📅 日期</span>
                 </div>
                 <div class="modal-title" id="modalTitle">标题</div>
             </div>
             <div class="modal-body">
-                <div class="modal-summary" id="modalSummary">摘要内容</div>
+                <!-- 信息网格 -->
+                <div class="modal-info-grid">
+                    <div class="modal-info-item">
+                        <div class="modal-info-label">来源</div>
+                        <div class="modal-info-value" id="modalSource">--</div>
+                    </div>
+                    <div class="modal-info-item">
+                        <div class="modal-info-label">分类</div>
+                        <div class="modal-info-value" id="modalCategory">--</div>
+                    </div>
+                </div>
+                
+                <!-- 内容区 -->
+                <div class="modal-content-box">
+                    <h3>📄 内容摘要</h3>
+                    <div class="modal-summary-full" id="modalSummary">摘要内容</div>
+                </div>
+                
+                <!-- 操作按钮 -->
                 <div class="modal-actions">
                     <button class="btn btn-primary" id="modalFavBtn" onclick="toggleFavFromModal()">☆ 收藏</button>
+                    <button class="btn" onclick="copyLink()">📋 复制链接</button>
                     <button class="btn" onclick="openSource()">↗ 阅读原文</button>
                     <button class="btn" onclick="closeModal()">关闭</button>
                 </div>
@@ -441,52 +498,27 @@
 
     <script>
         // ==================== 从 JSON 加载数据 ====================
-let articles = [];
-
-async function loadArticles() {
-    try {
-        const response = await fetch('data/news.json?t=' + Date.now());
-        const data = await response.json();
-        articles = data;
-        initDisplay();
-    } catch (err) {
-        console.error('加载数据失败:', err);
-        document.getElementById('content').innerHTML = 
-            '<div class="empty">数据加载失败，请稍后刷新重试</div>';
-    }
-}
-
-// 页面加载时自动获取数据
-loadArticles();
-
-        // ==================== 状态管理 ====================
+        let articles = [];
         let currentPage = 'today';
         let currentCategory = 'all';
         let currentDate = new Date().toISOString().split('T')[0];
         let displayedArticles = [];
         let currentModalId = null;
 
-        // ==================== 初始化 ====================
-        document.getElementById('datePicker').value = currentDate;
-        // initDisplay();
-
-        function initDisplay() {
-            // 默认显示今日资讯（按日期筛选）或随机10条
-            if (currentPage === 'today') {
-                const today = new Date().toISOString().split('T')[0];
-                displayedArticles = articles.filter(a => a.date === today);
-                if (displayedArticles.length === 0) {
-                    // 如果今天没数据，显示最新的10条
-                    displayedArticles = articles.slice(0, 10);
-                }
-            } else if (currentPage === 'history') {
-                displayedArticles = articles.filter(a => a.date === currentDate);
-            } else if (currentPage === 'favorites') {
-                const favs = getFavorites();
-                displayedArticles = articles.filter(a => favs.includes(a.id));
+        async function loadArticles() {
+            try {
+                const response = await fetch('data/news.json?t=' + Date.now());
+                const data = await response.json();
+                articles = data;
+                initDisplay();
+            } catch (err) {
+                console.error('加载数据失败:', err);
+                document.getElementById('content').innerHTML = 
+                    '<div class="empty">数据加载失败，请稍后刷新重试<br><small style="color:var(--text-secondary)">每小时自动更新中...</small></div>';
             }
-            render();
         }
+
+        loadArticles();
 
         // ==================== 收藏功能 ====================
         function getFavorites() {
@@ -505,7 +537,6 @@ loadArticles();
             }
             localStorage.setItem('techdaily_favs', JSON.stringify(favs));
             render();
-            // 如果弹窗打开，更新弹窗里的收藏按钮
             if (currentModalId === id) {
                 updateModalFavBtn(id);
             }
@@ -522,6 +553,22 @@ loadArticles();
         }
 
         // ==================== 页面切换 ====================
+        function initDisplay() {
+            if (currentPage === 'today') {
+                const today = new Date().toISOString().split('T')[0];
+                displayedArticles = articles.filter(a => a.date === today);
+                if (displayedArticles.length === 0) {
+                    displayedArticles = articles.slice(0, 10);
+                }
+            } else if (currentPage === 'history') {
+                displayedArticles = articles.filter(a => a.date === currentDate);
+            } else if (currentPage === 'favorites') {
+                const favs = getFavorites();
+                displayedArticles = articles.filter(a => favs.includes(a.id));
+            }
+            render();
+        }
+
         function showPage(page, btn) {
             currentPage = page;
             document.querySelectorAll('.nav button').forEach(b => b.classList.remove('active'));
@@ -581,35 +628,32 @@ loadArticles();
 
         // ==================== 刷新功能 ====================
         function refreshNews() {
-            // 从数据池中随机选取10条与当前显示不同的资讯
             const pool = currentPage === 'favorites' ? displayedArticles : articles;
             let available = pool.filter(a => !displayedArticles.some(d => d.id === a.id));
-            
             if (available.length < 10) {
-                available = pool; // 如果不够，从全部重新选
+                available = pool;
             }
-            
-            // 随机打乱取前10条
             const shuffled = available.sort(() => 0.5 - Math.random());
             displayedArticles = shuffled.slice(0, 10);
-            
             showToast('已刷新，为您推荐 10 条新资讯');
             render();
         }
 
-        // ==================== 详情弹窗 ====================
+        // ==================== 详情弹窗（增强版） ====================
         function openDetail(id) {
             const article = articles.find(a => a.id === id);
             if (!article) return;
             
             currentModalId = id;
             
+            // 填充弹窗内容
             document.getElementById('modalTag').textContent = article.categoryName;
             document.getElementById('modalTag').className = 'tag ' + article.category;
-            document.getElementById('modalDate').textContent = article.date;
-            document.getElementById('modalSource').textContent = '来源：' + article.source;
+            document.getElementById('modalDate').textContent = '📅 ' + article.date;
             document.getElementById('modalTitle').textContent = article.title;
-            document.getElementById('modalSummary').textContent = article.summary;
+            document.getElementById('modalSource').textContent = article.source || '未知来源';
+            document.getElementById('modalCategory').textContent = article.categoryName || '综合';
+            document.getElementById('modalSummary').textContent = article.summary || '暂无详细内容';
             
             updateModalFavBtn(id);
             
@@ -644,6 +688,19 @@ loadArticles();
             }
         }
 
+        function copyLink() {
+            const article = articles.find(a => a.id === currentModalId);
+            if (article && article.url) {
+                navigator.clipboard.writeText(article.url).then(() => {
+                    showToast('链接已复制到剪贴板');
+                }).catch(() => {
+                    showToast('复制失败，请手动复制');
+                });
+            } else {
+                showToast('暂无链接可复制');
+            }
+        }
+
         // ==================== 渲染 ====================
         function render() {
             const container = document.getElementById('content');
@@ -654,7 +711,7 @@ loadArticles();
             }
             
             if (filtered.length === 0) {
-                container.innerHTML = '<div class="empty">暂无资讯</div>';
+                container.innerHTML = '<div class="empty">暂无资讯<br><small style="color:var(--text-secondary)">每小时自动更新，或点击「换一批」试试</small></div>';
                 return;
             }
             
