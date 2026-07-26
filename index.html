@@ -237,7 +237,7 @@
             color: var(--text-secondary);
         }
         
-        /* ===== 详情弹窗（增强版） ===== */
+        /* ===== 详情弹窗 ===== */
         .modal-overlay {
             display: none;
             position: fixed;
@@ -452,19 +452,18 @@
         <div id="content"></div>
     </div>
 
-    <!-- 详情弹窗（增强版） -->
+    <!-- 详情弹窗 -->
     <div class="modal-overlay" id="detailModal" onclick="closeModal(event)">
         <div class="modal-content" onclick="event.stopPropagation()">
             <div class="modal-header">
                 <button class="modal-close" onclick="closeModal()">&times;</button>
                 <div class="modal-meta-row">
                     <span class="tag" id="modalTag">分类</span>
-                    <span style="color: var(--text-secondary); font-size: 0.85rem;">${formatDate(article.date)}</span>
+                    <span style="color: var(--text-secondary); font-size: 0.9rem;" id="modalDate">📅 日期</span>
                 </div>
                 <div class="modal-title" id="modalTitle">标题</div>
             </div>
             <div class="modal-body">
-                <!-- 信息网格 -->
                 <div class="modal-info-grid">
                     <div class="modal-info-item">
                         <div class="modal-info-label">来源</div>
@@ -476,13 +475,11 @@
                     </div>
                 </div>
                 
-                <!-- 内容区 -->
                 <div class="modal-content-box">
                     <h3>📄 内容摘要</h3>
                     <div class="modal-summary-full" id="modalSummary">摘要内容</div>
                 </div>
                 
-                <!-- 操作按钮 -->
                 <div class="modal-actions">
                     <button class="btn btn-primary" id="modalFavBtn" onclick="toggleFavFromModal()">☆ 收藏</button>
                     <button class="btn" onclick="copyLink()">📋 复制链接</button>
@@ -519,6 +516,18 @@
         }
 
         loadArticles();
+
+        // ==================== 日期格式化（修复版） ====================
+        function formatDate(dateStr) {
+            if (!dateStr || dateStr === 'undefined' || dateStr === 'null') return '日期未知';
+            
+            const today = new Date().toISOString().split('T')[0];
+            const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+            
+            if (dateStr === today) return '今天';
+            if (dateStr === yesterday) return '昨天';
+            return dateStr;
+        }
 
         // ==================== 收藏功能 ====================
         function getFavorites() {
@@ -639,18 +648,17 @@
             render();
         }
 
-        // ==================== 详情弹窗（增强版） ====================
+        // ==================== 详情弹窗 ====================
         function openDetail(id) {
             const article = articles.find(a => a.id === id);
             if (!article) return;
             
             currentModalId = id;
             
-            // 填充弹窗内容
-            document.getElementById('modalTag').textContent = article.categoryName;
-            document.getElementById('modalTag').className = 'tag ' + article.category;
+            document.getElementById('modalTag').textContent = article.categoryName || '综合';
+            document.getElementById('modalTag').className = 'tag ' + (article.category || 'opensource');
             document.getElementById('modalDate').textContent = '📅 ' + formatDate(article.date);
-            document.getElementById('modalTitle').textContent = article.title;
+            document.getElementById('modalTitle').textContent = article.title || '无标题';
             document.getElementById('modalSource').textContent = article.source || '未知来源';
             document.getElementById('modalCategory').textContent = article.categoryName || '综合';
             document.getElementById('modalSummary').textContent = article.summary || '暂无详细内容';
@@ -701,17 +709,6 @@
             }
         }
 
-        function formatDate(dateStr) {
-    if (!dateStr || dateStr === 'undefined') return '日期未知';
-    // 如果是今天的日期，显示"今天"
-    const today = new Date().toISOString().split('T')[0];
-    if (dateStr === today) return '今天';
-    // 如果是昨天，显示"昨天"
-    const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
-    if (dateStr === yesterday) return '昨天';
-    return dateStr;
-}
-
         // ==================== 渲染 ====================
         function render() {
             const container = document.getElementById('content');
@@ -729,13 +726,13 @@
             container.innerHTML = filtered.map(article => `
                 <div class="article-card" onclick="openDetail(${article.id})">
                     <div class="article-header">
-                        <span class="tag ${article.category}">${article.categoryName}</span>
-                        <span style="color: var(--text-secondary); font-size: 0.85rem;">${article.date}</span>
+                        <span class="tag ${article.category || 'opensource'}">${article.categoryName || '综合'}</span>
+                        <span style="color: var(--text-secondary); font-size: 0.85rem;">${formatDate(article.date)}</span>
                     </div>
-                    <div class="article-title">${article.title}</div>
-                    <div class="article-summary">${article.summary}</div>
+                    <div class="article-title">${article.title || '无标题'}</div>
+                    <div class="article-summary">${article.summary || '暂无摘要'}</div>
                     <div class="article-footer">
-                        <span>来源：${article.source}</span>
+                        <span>来源：${article.source || '未知'}</span>
                         <button class="btn ${isFav(article.id) ? 'fav' : ''}" onclick="toggleFav(${article.id}, event)">
                             ${isFav(article.id) ? '★ 已收藏' : '☆ 收藏'}
                         </button>
