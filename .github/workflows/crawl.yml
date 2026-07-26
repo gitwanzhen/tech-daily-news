@@ -1,0 +1,36 @@
+name: Daily News Crawler
+
+on:
+  schedule:
+    # 每天早上 8:00 UTC+8 运行（对应 UTC 0:00）
+    - cron: '0 0 * * *'
+  # 也支持手动点击运行
+  workflow_dispatch:
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install feedparser requests
+      
+      - name: Run crawler
+        run: python scripts/crawler.py
+      
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add data/news.json
+          git diff --cached --quiet || git commit -m "Update news $(date +%Y-%m-%d)"
+          git push
