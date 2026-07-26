@@ -4,228 +4,528 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechDaily - 技术人每日资讯</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        
+
         :root {
-            --bg: #0d1117;
-            --surface: #161b22;
-            --surface-hover: #1c2128;
-            --border: #30363d;
-            --text: #c9d1d9;
-            --text-secondary: #8b949e;
-            --primary: #58a6ff;
-            --primary-hover: #79b8ff;
-            --tag-ai: #ff7b72;
-            --tag-hot: #feca57;
+            --bg-primary: #0a0a0f;
+            --bg-card: rgba(255,255,255,0.025);
+            --bg-card-hover: rgba(255,255,255,0.04);
+            --border-card: rgba(255,255,255,0.05);
+            --border-card-hover: rgba(255,255,255,0.08);
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --text-tertiary: #6b7280;
+            --text-muted: #4b5563;
+            --color-ai: #60a5fa;
+            --color-hot: #f0883e;
+            --color-brand-start: #c084fc;
+            --color-brand-mid: #60a5fa;
+            --color-brand-end: #34d399;
+            --radius-card: 16px;
+            --radius-pill: 100px;
+            --radius-tab: 14px;
         }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+            overflow-x: hidden;
         }
-        
+
         .container {
-            max-width: 800px;
+            max-width: 720px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 48px 20px 60px;
+            position: relative;
+            z-index: 1;
         }
-        
-        header {
+
+        /* ===== Glow Orbs ===== */
+        .glow-orb {
+            position: fixed;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.08;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .glow-orb-1 {
+            background: var(--color-brand-mid);
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .glow-orb-2 {
+            background: var(--color-brand-start);
+            bottom: 10%;
+            right: -100px;
+        }
+
+        /* ===== Header ===== */
+        .header {
             text-align: center;
-            padding: 40px 0 20px;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 20px;
+            margin-bottom: 28px;
         }
-        
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 8px;
-            background: linear-gradient(90deg, var(--primary), var(--tag-ai));
+        .brand {
+            font-size: 42px;
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            background: linear-gradient(135deg, var(--color-brand-start) 0%, var(--color-brand-mid) 50%, var(--color-brand-end) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
         }
-        
-        .subtitle {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            margin-bottom: 12px;
+        .tagline {
+            font-size: 14px;
+            color: var(--text-tertiary);
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
         }
-        
-        .today-date {
-            display: inline-block;
-            background: var(--surface);
-            border: 1px solid var(--border);
-            color: var(--primary);
+        .date-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(96, 165, 250, 0.08);
+            border: 1px solid rgba(96, 165, 250, 0.15);
+            color: var(--color-ai);
             padding: 8px 20px;
-            border-radius: 20px;
-            font-size: 0.95rem;
+            border-radius: var(--radius-pill);
+            font-size: 13px;
             font-weight: 500;
-            margin-top: 8px;
+            backdrop-filter: blur(10px);
         }
-        
-        /* ===== 外层页签导航 ===== */
-        .main-nav {
+        .date-pill .dot {
+            width: 6px;
+            height: 6px;
+            background: var(--color-brand-end);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.8); }
+        }
+
+        /* ===== Stats Bar ===== */
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 28px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .stat-item .num {
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        /* ===== Tab Control ===== */
+        .tab-control {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+        .tab-inner {
+            display: flex;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: var(--radius-tab);
+            padding: 4px;
+            gap: 4px;
+        }
+        .tab-btn {
+            padding: 10px 24px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-tertiary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: inherit;
+        }
+        .tab-btn:hover {
+            color: var(--text-secondary);
+            background: rgba(255, 255, 255, 0.03);
+        }
+        .tab-btn.active {
+            background: rgba(96, 165, 250, 0.12);
+            color: var(--color-ai);
+            box-shadow: 0 2px 8px rgba(96, 165, 250, 0.08);
+        }
+        .tab-btn.hot.active {
+            background: rgba(240, 136, 62, 0.12);
+            color: var(--color-hot);
+            box-shadow: 0 2px 8px rgba(240, 136, 62, 0.08);
+        }
+
+        /* ===== Toolbar ===== */
+        .toolbar {
             display: flex;
             gap: 10px;
             margin-bottom: 20px;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .main-nav button {
-            background: none;
-            border: none;
-            color: var(--text-secondary);
-            padding: 14px 24px;
-            cursor: pointer;
-            font-size: 16px;
-            border-bottom: 3px solid transparent;
-            transition: all 0.2s;
-            font-family: inherit;
-            font-weight: 500;
-        }
-        
-        .main-nav button.active {
-            color: var(--primary);
-            border-bottom-color: var(--primary);
-        }
-        
-        .main-nav button:hover {
-            color: var(--text);
-        }
-        
-        /* ===== 页签内容区 ===== */
-        .tab-content {
-            display: none;
-        }
-        
-        .tab-content.active {
-            display: block;
-        }
-        
-        /* ===== 页签内控件行 ===== */
-        .tab-controls {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
             align-items: center;
-            padding: 16px;
-            background: var(--surface);
-            border: 1px solid var(--border);
+        }
+        .search-box {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
             border-radius: 12px;
+            padding: 0 14px;
+            height: 40px;
+            transition: all 0.3s ease;
+            min-width: 0;
         }
-        
-        input[type="date"] {
-            background: var(--bg);
-            border: 1px solid var(--border);
-            color: var(--text);
-            padding: 8px 12px;
-            border-radius: 6px;
-            font-size: 14px;
+        .search-box:focus-within {
+            border-color: rgba(96, 165, 250, 0.3);
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.06);
+        }
+        .search-box svg {
+            color: var(--text-muted);
+            flex-shrink: 0;
+        }
+        .search-box input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: var(--text-primary);
+            font-size: 13px;
+            width: 100%;
             font-family: inherit;
-            cursor: pointer;
         }
-        
-        .btn {
-            background: var(--bg);
-            border: 1px solid var(--border);
+        .search-box input::placeholder {
+            color: var(--text-muted);
+        }
+        .date-input-compact {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
             color: var(--text-secondary);
-            padding: 8px 16px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 14px;
-            transition: all 0.2s;
+            padding: 0 10px;
+            border-radius: 10px;
+            font-size: 13px;
             font-family: inherit;
+            height: 40px;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
         }
-        
-        .btn:hover {
-            border-color: var(--primary);
-            color: var(--primary);
+        .date-input-compact:focus {
+            border-color: rgba(96, 165, 250, 0.3);
         }
-        
-        .btn-primary {
-            background: var(--primary);
-            color: #fff;
-            border-color: var(--primary);
+        .icon-btn {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 10px;
+            color: var(--text-tertiary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
         }
-        
-        .btn-primary:hover {
-            background: var(--primary-hover);
-            color: #fff;
+        .icon-btn:hover {
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--text-secondary);
+            transform: translateY(-1px);
         }
-        
-        .article-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 12px;
+        .icon-btn.primary {
+            background: rgba(96, 165, 250, 0.12);
+            border-color: rgba(96, 165, 250, 0.2);
+            color: var(--color-ai);
+        }
+        .icon-btn.primary:hover {
+            background: rgba(96, 165, 250, 0.2);
+        }
+        .icon-btn.hot-primary {
+            background: rgba(240, 136, 62, 0.1);
+            border-color: rgba(240, 136, 62, 0.2);
+            color: var(--color-hot);
+        }
+        .icon-btn.hot-primary:hover {
+            background: rgba(240, 136, 62, 0.2);
+        }
+
+        /* ===== Featured Card ===== */
+        .featured-card {
+            background: linear-gradient(145deg, rgba(96, 165, 250, 0.06) 0%, rgba(192, 132, 252, 0.04) 100%);
+            border: 1px solid rgba(96, 165, 250, 0.12);
+            border-radius: 20px;
             padding: 24px;
             margin-bottom: 16px;
-            transition: all 0.2s;
+            position: relative;
+            overflow: hidden;
             cursor: pointer;
+            transition: all 0.3s ease;
         }
-        
-        .article-card:hover {
+        .featured-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--color-ai), var(--color-brand-start));
+        }
+        .featured-card:hover {
             transform: translateY(-2px);
-            border-color: var(--primary);
-            background: var(--surface-hover);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(96, 165, 250, 0.15);
         }
-        
-        .article-header {
-            display: flex;
-            justify-content: space-between;
+        .featured-badge {
+            display: inline-flex;
             align-items: center;
-            margin-bottom: 12px;
-        }
-        
-        .tag {
-            font-size: 12px;
+            gap: 6px;
+            background: rgba(96, 165, 250, 0.12);
+            color: var(--color-ai);
+            font-size: 11px;
             font-weight: 600;
-            padding: 4px 10px;
-            border-radius: 6px;
-            background: rgba(88, 166, 255, 0.15);
-            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: var(--radius-pill);
+            margin-bottom: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
-        
-        .tag.ai { background: rgba(255, 123, 114, 0.15); color: var(--tag-ai); }
-        .tag.hot { background: rgba(254, 202, 87, 0.15); color: var(--tag-hot); }
-        
-        .article-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-            color: var(--text);
+        .featured-title {
+            font-size: 20px;
+            font-weight: 700;
             line-height: 1.4;
+            color: #f3f4f6;
+            margin-bottom: 10px;
         }
-        
-        .article-summary {
+        .featured-summary {
+            font-size: 14px;
             color: var(--text-secondary);
-            font-size: 0.95rem;
-            line-height: 1.6;
+            line-height: 1.7;
             margin-bottom: 16px;
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
-        
-        .article-footer {
+        .featured-meta {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 0.85rem;
+        }
+        .source-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 5px 12px;
+            border-radius: var(--radius-pill);
+            font-size: 12px;
             color: var(--text-secondary);
         }
-        
+        .featured-date {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* ===== Normal Cards ===== */
+        .card-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .news-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: var(--radius-card);
+            padding: 20px 20px 20px 24px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .news-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 16px;
+            bottom: 16px;
+            width: 3px;
+            border-radius: 0 4px 4px 0;
+            transition: all 0.3s ease;
+        }
+        .news-card.ai::before {
+            background: linear-gradient(180deg, var(--color-ai), #3b82f6);
+        }
+        .news-card.hot::before {
+            background: linear-gradient(180deg, var(--color-hot), #ea580c);
+        }
+        .news-card:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--border-card-hover);
+            transform: translateY(-1px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+        .news-card:hover::before {
+            width: 4px;
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .card-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: var(--radius-pill);
+            flex-shrink: 0;
+        }
+        .card-tag.ai {
+            background: rgba(96, 165, 250, 0.1);
+            color: var(--color-ai);
+        }
+        .card-tag.hot {
+            background: rgba(240, 136, 62, 0.1);
+            color: var(--color-hot);
+        }
+        .card-date {
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+            color: var(--text-primary);
+            transition: color 0.2s ease;
+        }
+        .news-card:hover .card-title {
+            color: var(--color-ai);
+        }
+        .news-card.hot:hover .card-title {
+            color: var(--color-hot);
+        }
+        .card-summary {
+            font-size: 13px;
+            color: var(--text-tertiary);
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 4px;
+        }
+        .card-source {
+            font-size: 12px;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .card-source-dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #374151;
+        }
+        .card-arrow {
+            color: #374151;
+            transition: all 0.3s ease;
+        }
+        .news-card:hover .card-arrow {
+            color: var(--text-tertiary);
+            transform: translateX(3px);
+        }
+
+        /* ===== Section Label ===== */
+        .section-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 24px 0 16px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .section-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(255,255,255,0.06), transparent);
+        }
+
+        /* ===== Empty State ===== */
         .empty {
             text-align: center;
-            padding: 80px 20px;
-            color: var(--text-secondary);
+            padding: 60px 20px;
+            color: var(--text-muted);
+            font-size: 14px;
         }
-        
+        .empty small {
+            color: var(--text-muted);
+            opacity: 0.7;
+        }
+
+        /* ===== Footer ===== */
+        .footer {
+            text-align: center;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        .footer-text {
+            font-size: 12px;
+            color: #374151;
+        }
+
+        /* ===== Tab Content ===== */
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+
+        /* ===== Modal ===== */
         .modal-overlay {
             display: none;
             position: fixed;
@@ -233,223 +533,322 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.85);
+            background: rgba(0, 0, 0, 0.75);
             z-index: 1000;
             justify-content: center;
             align-items: center;
             padding: 20px;
-            backdrop-filter: blur(6px);
+            backdrop-filter: blur(12px);
         }
-        
         .modal-overlay.active {
             display: flex;
         }
-        
         .modal-content {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            max-width: 720px;
+            background: linear-gradient(180deg, #13131a 0%, #0f0f16 100%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            max-width: 680px;
             width: 100%;
             max-height: 90vh;
             overflow-y: auto;
             position: relative;
-            animation: slideUp 0.3s ease;
+            animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 40px 80px rgba(0,0,0,0.5);
         }
-        
         @keyframes slideUp {
-            from { transform: translateY(30px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+            from { transform: translateY(40px) scale(0.96); opacity: 0; }
+            to { transform: translateY(0) scale(1); opacity: 1; }
         }
-        
         .modal-header {
             padding: 28px 28px 0;
             position: sticky;
             top: 0;
-            background: var(--surface);
+            background: linear-gradient(180deg, #13131a 0%, #13131a 80%, transparent 100%);
             z-index: 10;
-            border-bottom: 1px solid var(--border);
+            padding-bottom: 16px;
         }
-        
         .modal-close {
             position: absolute;
             top: 16px;
             right: 20px;
-            background: none;
-            border: none;
-            color: var(--text-secondary);
-            font-size: 28px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            color: var(--text-tertiary);
+            font-size: 20px;
             cursor: pointer;
             width: 36px;
             height: 36px;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 50%;
+            border-radius: 10px;
             transition: all 0.2s;
         }
-        
         .modal-close:hover {
-            background: var(--border);
-            color: var(--text);
+            background: rgba(255,255,255,0.1);
+            color: var(--text-primary);
         }
-        
-        .modal-body {
-            padding: 24px 28px 28px;
-        }
-        
         .modal-meta-row {
             display: flex;
             gap: 12px;
             align-items: center;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
             flex-wrap: wrap;
         }
-        
         .modal-title {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 700;
             margin-bottom: 20px;
             padding-right: 40px;
             line-height: 1.4;
-            color: var(--text);
+            color: var(--text-primary);
         }
-        
+        .modal-body {
+            padding: 0 28px 28px;
+        }
         .modal-content-box {
-            background: var(--bg);
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 24px;
-            border-left: 4px solid var(--primary);
+            background: rgba(0,0,0,0.25);
+            border-radius: 14px;
+            padding: 22px;
+            margin-bottom: 20px;
+            border-left: 3px solid var(--color-ai);
         }
-        
+        .modal-content-box.hot-border {
+            border-left-color: var(--color-hot);
+        }
         .modal-content-box h3 {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
+            font-size: 0.8rem;
+            color: var(--text-tertiary);
             margin-bottom: 12px;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
+            font-weight: 600;
         }
-        
         .modal-summary-full {
-            font-size: 1.05rem;
+            font-size: 1rem;
             line-height: 1.9;
-            color: var(--text);
+            color: var(--text-secondary);
         }
-        
         .modal-info-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 12px;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
-        
         .modal-info-item {
-            background: var(--bg);
+            background: rgba(0,0,0,0.2);
             padding: 14px 18px;
-            border-radius: 10px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.04);
         }
-        
         .modal-info-label {
-            font-size: 0.8rem;
-            color: var(--text-secondary);
+            font-size: 0.75rem;
+            color: var(--text-muted);
             margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
-        
         .modal-info-value {
             font-size: 0.95rem;
-            color: var(--text);
+            color: var(--text-primary);
             font-weight: 500;
         }
-        
         .modal-actions {
             display: flex;
-            gap: 12px;
+            gap: 10px;
             flex-wrap: wrap;
         }
-        
         .modal-actions .btn {
-            padding: 10px 20px;
-            font-size: 15px;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-family: inherit;
+            transition: all 0.2s;
+            font-weight: 500;
         }
-        
+        .modal-actions .btn:hover {
+            background: rgba(255,255,255,0.08);
+            border-color: rgba(255,255,255,0.12);
+            color: var(--text-primary);
+        }
+        .modal-actions .btn-primary {
+            background: rgba(96, 165, 250, 0.12);
+            border-color: rgba(96, 165, 250, 0.2);
+            color: var(--color-ai);
+        }
+        .modal-actions .btn-primary:hover {
+            background: rgba(96, 165, 250, 0.2);
+        }
+
+        /* ===== Toast ===== */
         .toast {
             position: fixed;
             bottom: 40px;
             left: 50%;
             transform: translateX(-50%) translateY(100px);
-            background: var(--surface);
-            border: 1px solid var(--border);
-            color: var(--text);
+            background: rgba(19, 19, 26, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--text-primary);
             padding: 12px 24px;
-            border-radius: 8px;
+            border-radius: 12px;
             font-size: 14px;
             z-index: 2000;
             opacity: 0;
-            transition: all 0.3s;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
             pointer-events: none;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
         }
-        
         .toast.show {
             transform: translateX(-50%) translateY(0);
             opacity: 1;
         }
-        
-        @media (max-width: 600px) {
-            .container { padding: 15px; }
-            h1 { font-size: 1.5rem; }
-            .main-nav button { padding: 12px 16px; font-size: 15px; }
-            .tab-controls { padding: 12px; }
-            .article-card { padding: 18px; }
-            .modal-title { font-size: 1.2rem; }
-            .modal-body { padding: 16px 20px 20px; }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 640px) {
+            .container { padding: 32px 16px 40px; }
+            .brand { font-size: 32px; }
+            .stats-bar { gap: 16px; font-size: 11px; }
+            .tab-btn { padding: 8px 16px; font-size: 13px; }
+            .toolbar { flex-wrap: wrap; }
+            .search-box { width: 100%; flex: none; }
+            .date-input-compact { flex: 1; }
+            .featured-title { font-size: 17px; }
+            .modal-title { font-size: 1.15rem; }
+            .modal-body { padding: 0 20px 20px; }
             .modal-header { padding: 20px 20px 0; }
             .modal-info-grid { grid-template-columns: 1fr; }
         }
     </style>
+<base target="_blank">
 </head>
 <body>
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+
     <div class="container">
-        <header>
-            <h1>TechDaily</h1>
-            <p class="subtitle">技术人每日必读资讯 · 每小时自动更新</p>
-            <div class="today-date" id="todayDate">加载中...</div>
-        </header>
-        
-        <!-- 外层页签导航 -->
-        <nav class="main-nav">
-            <button class="active" onclick="switchTab('ai', this)">AI/大模型</button>
-            <button onclick="switchTab('hot', this)">☕ 轻松一下</button>
-        </nav>
-        
-        <!-- AI/大模型 页签内容 -->
+        <!-- Header -->
+        <div class="header">
+            <div class="brand">TechDaily</div>
+            <div class="tagline">技术人每日必读资讯 · 每小时自动更新</div>
+            <div class="date-pill">
+                <span class="dot"></span>
+                <span id="todayDate">加载中...</span>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-bar" id="statsBar">
+            <div class="stat-item">
+                <span>📦</span>
+                <span>今日更新</span>
+                <span class="num" id="statTotal">0</span>
+                <span>条</span>
+            </div>
+            <div class="stat-item">
+                <span>🤖</span>
+                <span>AI 资讯</span>
+                <span class="num" id="statAI">0</span>
+                <span>条</span>
+            </div>
+            <div class="stat-item">
+                <span>🔥</span>
+                <span>全网热搜</span>
+                <span class="num" id="statHot">0</span>
+                <span>条</span>
+            </div>
+            <div class="stat-item">
+                <span>🕐</span>
+                <span>最后更新</span>
+                <span class="num" id="statTime">--:--</span>
+            </div>
+        </div>
+
+        <!-- Tab Control -->
+        <div class="tab-control">
+            <div class="tab-inner">
+                <button class="tab-btn active" onclick="switchTab('ai', this)">
+                    <span>🤖</span>
+                    <span>AI / 大模型</span>
+                </button>
+                <button class="tab-btn hot" onclick="switchTab('hot', this)">
+                    <span>🔥</span>
+                    <span>轻松一下</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- AI Tab -->
         <div class="tab-content active" id="tab-ai">
-            <div class="tab-controls">
-                <input type="date" id="datePicker">
-                <button class="btn" onclick="setToday()">回到今日</button>
-                <button class="btn btn-primary" onclick="refreshAI()">🔄 换一批</button>
+            <div class="toolbar">
+                <div class="search-box">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </svg>
+                    <input type="text" placeholder="搜索 AI 资讯关键词..." id="searchAI" oninput="onSearchAI()">
+                </div>
+                <input type="date" id="datePicker" class="date-input-compact">
+                <button class="icon-btn" onclick="setToday()" title="回到今日">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                </button>
+                <button class="icon-btn primary" onclick="refreshAI()" title="换一批">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                        <path d="M3 3v5h5"></path>
+                        <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"></path>
+                        <path d="M16 16h5v5"></path>
+                    </svg>
+                </button>
             </div>
             <div id="content-ai"></div>
         </div>
-        
-        <!--  轻松一下 页签内容 -->
+
+        <!-- Hot Tab -->
         <div class="tab-content" id="tab-hot">
-            <div class="tab-controls">
-                <span style="color: var(--text-secondary); font-size: 14px;">看看今天发生了什么</span>
-                <button class="btn btn-primary" onclick="refreshHot()" style="margin-left: auto;">🔄 换一批</button>
+            <div class="toolbar">
+                <div class="search-box">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </svg>
+                    <input type="text" placeholder="搜索热搜关键词..." id="searchHot" oninput="onSearchHot()">
+                </div>
+                <button class="icon-btn hot-primary" onclick="refreshHot()" title="换一批">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                        <path d="M3 3v5h5"></path>
+                        <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"></path>
+                        <path d="M16 16h5v5"></path>
+                    </svg>
+                </button>
             </div>
             <div id="content-hot"></div>
         </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-text">TechDaily · 为技术人精选每一条资讯</div>
+        </div>
     </div>
 
-    <!-- 详情弹窗（共用） -->
+    <!-- Modal -->
     <div class="modal-overlay" id="detailModal" onclick="closeModal(event)">
         <div class="modal-content" onclick="event.stopPropagation()">
             <div class="modal-header">
                 <button class="modal-close" onclick="closeModal()">&times;</button>
                 <div class="modal-meta-row">
-                    <span class="tag" id="modalTag">分类</span>
-                    <span style="color: var(--text-secondary); font-size: 0.9rem;" id="modalDate">📅 日期</span>
+                    <span class="card-tag" id="modalTag" style="font-size:12px;padding:4px 12px;">分类</span>
+                    <span style="color: var(--text-muted); font-size: 0.85rem;" id="modalDate">📅 日期</span>
                 </div>
                 <div class="modal-title" id="modalTitle">标题</div>
             </div>
@@ -464,15 +863,13 @@
                         <div class="modal-info-value" id="modalCategory">--</div>
                     </div>
                 </div>
-                
-                <div class="modal-content-box">
+                <div class="modal-content-box" id="modalContentBox">
                     <h3>📄 内容摘要</h3>
                     <div class="modal-summary-full" id="modalSummary">摘要内容</div>
                 </div>
-                
                 <div class="modal-actions">
                     <button class="btn" onclick="copyLink()">📋 复制链接</button>
-                    <button class="btn" onclick="openSource()">↗ 阅读原文</button>
+                    <button class="btn btn-primary" onclick="openSource()">↗ 阅读原文</button>
                     <button class="btn" onclick="closeModal()">关闭</button>
                 </div>
             </div>
@@ -482,13 +879,20 @@
     <div class="toast" id="toast"></div>
 
     <script>
-        // ==================== 工具函数：获取北京时间 ====================
+        // ==================== 工具函数 ====================
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
         function getBeijingDate() {
             const now = new Date();
             const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
             return new Date(utc + (3600000 * 8));
         }
-        
+
         function getTodayStr() {
             const d = getBeijingDate();
             const year = d.getFullYear();
@@ -496,7 +900,7 @@
             const day = String(d.getDate()).padStart(2, '0');
             return `${year}-${month}-${day}`;
         }
-        
+
         function getTodayDisplay() {
             const d = getBeijingDate();
             const weekdays = ['日', '一', '二', '三', '四', '五', '六'];
@@ -508,18 +912,20 @@
 
         // ==================== 数据加载 ====================
         let articles = [];
-        let currentTab = 'ai';           // 'ai' 或 'hot'
+        let currentTab = 'ai';
         let currentDate = getTodayStr();
-        let aiDisplayed = [];            // AI页签当前显示的
-        let hotDisplayed = [];           //  轻松一下页签当前显示的
+        let aiDisplayed = [];
+        let hotDisplayed = [];
         let currentModalId = null;
+        let aiSearch = '';
+        let hotSearch = '';
 
         async function loadArticles() {
             try {
                 const response = await fetch('data/news.json?t=' + Date.now());
                 const data = await response.json();
                 articles = data;
-                // 初始化两个页签
+                updateStats();
                 renderAI();
                 renderHot();
             } catch (err) {
@@ -531,13 +937,23 @@
             }
         }
 
+        function updateStats() {
+            const today = getTodayStr();
+            const todayArticles = articles.filter(a => a.date === today);
+            document.getElementById('statTotal').textContent = todayArticles.length;
+            document.getElementById('statAI').textContent = todayArticles.filter(a => a.category === 'ai').length;
+            document.getElementById('statHot').textContent = todayArticles.filter(a => a.category === 'hot').length;
+            const now = getBeijingDate();
+            document.getElementById('statTime').textContent = 
+                `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
+        }
+
         // ==================== 日期格式化 ====================
         function formatDate(dateStr) {
             if (!dateStr || dateStr === 'undefined' || dateStr === 'null') return '日期未知';
             const today = getTodayStr();
             const yesterday = new Date(getBeijingDate().getTime() - 86400000);
             const yestStr = `${yesterday.getFullYear()}-${String(yesterday.getMonth()+1).padStart(2,'0')}-${String(yesterday.getDate()).padStart(2,'0')}`;
-            
             if (dateStr === today) return '今天';
             if (dateStr === yestStr) return '昨天';
             return dateStr;
@@ -546,33 +962,43 @@
         // ==================== 页签切换 ====================
         function switchTab(tab, btn) {
             currentTab = tab;
-            
-            // 更新导航样式
-            document.querySelectorAll('.main-nav button').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            
-            // 切换内容区
             document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
             document.getElementById('tab-' + tab).classList.add('active');
+        }
+
+        // ==================== 搜索 ====================
+        function onSearchAI() {
+            aiSearch = document.getElementById('searchAI').value.trim().toLowerCase();
+            renderAI();
+        }
+        function onSearchHot() {
+            hotSearch = document.getElementById('searchHot').value.trim().toLowerCase();
+            renderHot();
         }
 
         // ==================== AI/大模型 页签逻辑 ====================
         function renderAI() {
             let filtered = articles.filter(a => a.category === 'ai');
             const today = getTodayStr();
-            
+
             if (currentDate === today) {
                 const todayArticles = filtered.filter(a => a.date === today);
-                if (todayArticles.length > 0) {
-                    aiDisplayed = todayArticles;
-                } else {
-                    aiDisplayed = filtered.slice(0, 10);
-                }
+                if (todayArticles.length > 0) filtered = todayArticles;
             } else {
-                aiDisplayed = filtered.filter(a => a.date === currentDate);
+                filtered = filtered.filter(a => a.date === currentDate);
             }
-            
-            renderList('content-ai', aiDisplayed);
+
+            if (aiSearch) {
+                filtered = filtered.filter(a => 
+                    (a.title && a.title.toLowerCase().includes(aiSearch)) ||
+                    (a.summary && a.summary.toLowerCase().includes(aiSearch))
+                );
+            }
+
+            aiDisplayed = filtered.slice(0, 10);
+            renderList('content-ai', aiDisplayed, true);
         }
 
         function setToday() {
@@ -590,83 +1016,154 @@
         function refreshAI() {
             let pool = articles.filter(a => a.category === 'ai');
             const today = getTodayStr();
-            
+
             if (currentDate === today) {
                 const todayPool = pool.filter(a => a.date === today);
                 if (todayPool.length > 0) pool = todayPool;
             } else {
                 pool = pool.filter(a => a.date === currentDate);
             }
-            
+
+            if (aiSearch) {
+                pool = pool.filter(a => 
+                    (a.title && a.title.toLowerCase().includes(aiSearch)) ||
+                    (a.summary && a.summary.toLowerCase().includes(aiSearch))
+                );
+            }
+
             let available = pool.filter(a => !aiDisplayed.some(d => d.id === a.id));
             if (available.length < 3) available = pool;
-            
+
             const shuffled = available.sort(() => 0.5 - Math.random());
             aiDisplayed = shuffled.slice(0, 10);
-            renderList('content-ai', aiDisplayed);
+            renderList('content-ai', aiDisplayed, true);
             showToast('已刷新 AI 资讯');
         }
 
-        // ====================  轻松一下 页签逻辑 ====================
+        // ==================== 轻松一下 页签逻辑 ====================
         function renderHot() {
-            hotDisplayed = articles
+            let filtered = articles
                 .filter(a => a.category === 'hot')
-                .sort((a, b) => b.date.localeCompare(a.date))
-                .slice(0, 20);
-            
-            renderList('content-hot', hotDisplayed);
+                .sort((a, b) => b.date.localeCompare(a.date));
+
+            if (hotSearch) {
+                filtered = filtered.filter(a => 
+                    (a.title && a.title.toLowerCase().includes(hotSearch)) ||
+                    (a.summary && a.summary.toLowerCase().includes(hotSearch))
+                );
+            }
+
+            hotDisplayed = filtered.slice(0, 20);
+            renderList('content-hot', hotDisplayed, false);
         }
 
         function refreshHot() {
             let pool = articles.filter(a => a.category === 'hot');
             let available = pool.filter(a => !hotDisplayed.some(d => d.id === a.id));
             if (available.length < 3) available = pool;
-            
+
+            if (hotSearch) {
+                available = available.filter(a => 
+                    (a.title && a.title.toLowerCase().includes(hotSearch)) ||
+                    (a.summary && a.summary.toLowerCase().includes(hotSearch))
+                );
+            }
+
             const shuffled = available.sort(() => 0.5 - Math.random());
             hotDisplayed = shuffled.slice(0, 10);
-            renderList('content-hot', hotDisplayed);
+            renderList('content-hot', hotDisplayed, false);
             showToast('已刷新轻松一下');
         }
 
-        // ==================== 通用渲染 ====================
-        function renderList(containerId, list) {
-            const container = document.getElementById(containerId);
-            
-            if (list.length === 0) {
-                container.innerHTML = '<div class="empty">暂无数据<br><small style="color:var(--text-secondary)">每小时自动更新中...</small></div>';
-                return;
-            }
-            
-            container.innerHTML = list.map(article => `
-                <div class="article-card" onclick="openDetail(${article.id})">
-                    <div class="article-header">
-                        <span class="tag ${article.category || 'ai'}">${article.categoryName || '综合'}</span>
-                        <span style="color: var(--text-secondary); font-size: 0.85rem;">${formatDate(article.date)}</span>
+        // ==================== 卡片渲染 ====================
+        function renderFeaturedCard(article) {
+            return `
+                <div class="featured-card" onclick="openDetail(${article.id})">
+                    <div class="featured-badge">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        今日头条
                     </div>
-                    <div class="article-title">${article.title || '无标题'}</div>
-                    <div class="article-summary">${article.summary || '暂无摘要'}</div>
-                    <div class="article-footer">
-                        <span>来源：${article.source || '未知'}</span>
+                    <div class="featured-title">${escapeHtml(article.title || '无标题')}</div>
+                    <div class="featured-summary">${escapeHtml(article.summary || '暂无摘要')}</div>
+                    <div class="featured-meta">
+                        <span class="source-tag">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                            ${escapeHtml(article.source || '未知')}
+                        </span>
+                        <span class="featured-date">${formatDate(article.date)}</span>
                     </div>
                 </div>
-            `).join('');
+            `;
+        }
+
+        function renderNormalCard(article) {
+            const catClass = article.category === 'hot' ? 'hot' : 'ai';
+            const catName = article.categoryName || (article.category === 'hot' ? '🔥 热搜' : '🤖 AI');
+            return `
+                <div class="news-card ${catClass}" onclick="openDetail(${article.id})">
+                    <div class="card-header">
+                        <span class="card-tag ${catClass}">${catName}</span>
+                        <span class="card-date">${formatDate(article.date)}</span>
+                    </div>
+                    <div class="card-title">${escapeHtml(article.title || '无标题')}</div>
+                    <div class="card-summary">${escapeHtml(article.summary || '暂无摘要')}</div>
+                    <div class="card-footer">
+                        <span class="card-source"><span class="card-source-dot"></span>${escapeHtml(article.source || '未知')}</span>
+                        <svg class="card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderList(containerId, list, hasFeatured) {
+            const container = document.getElementById(containerId);
+
+            if (list.length === 0) {
+                container.innerHTML = '<div class="empty">暂无数据<br><small>每小时自动更新中...</small></div>';
+                return;
+            }
+
+            let html = '';
+
+            if (hasFeatured && list.length > 0) {
+                html += renderFeaturedCard(list[0]);
+                for (let i = 1; i < list.length; i++) {
+                    html += renderNormalCard(list[i]);
+                }
+            } else {
+                for (let i = 0; i < list.length; i++) {
+                    html += renderNormalCard(list[i]);
+                }
+            }
+
+            container.innerHTML = html;
         }
 
         // ==================== 详情弹窗 ====================
         function openDetail(id) {
             const article = articles.find(a => a.id === id);
             if (!article) return;
-            
+
             currentModalId = id;
-            
-            document.getElementById('modalTag').textContent = article.categoryName || '综合';
-            document.getElementById('modalTag').className = 'tag ' + (article.category || 'ai');
+
+            const tagEl = document.getElementById('modalTag');
+            tagEl.textContent = article.categoryName || '综合';
+            tagEl.className = 'card-tag ' + (article.category || 'ai');
+            if (article.category === 'hot') {
+                tagEl.style.cssText = 'background:rgba(240,136,62,0.1);color:var(--color-hot);';
+            } else {
+                tagEl.style.cssText = 'background:rgba(96,165,250,0.1);color:var(--color-ai);';
+            }
+
             document.getElementById('modalDate').textContent = '📅 ' + formatDate(article.date);
             document.getElementById('modalTitle').textContent = article.title || '无标题';
             document.getElementById('modalSource').textContent = article.source || '未知来源';
             document.getElementById('modalCategory').textContent = article.categoryName || '综合';
             document.getElementById('modalSummary').textContent = article.summary || '暂无详细内容';
-            
+
+            const box = document.getElementById('modalContentBox');
+            box.className = 'modal-content-box ' + (article.category === 'hot' ? 'hot-border' : '');
+
             document.getElementById('detailModal').classList.add('active');
             document.body.style.overflow = 'hidden';
         }
