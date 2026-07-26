@@ -23,29 +23,78 @@ RSSHUB_INSTANCES = [
     "https://rsshub.app",
 ]
 
-# ==================== 原有技术 RSS 源 ====================
+# ==================== 技术 RSS 源（保留稳定源） ====================
 RSS_SOURCES = [
     {"name": "阮一峰科技爱好者周刊", "url": "http://www.ruanyifeng.com/blog/atom.xml"},
     {"name": "开源中国", "url": "https://www.oschina.net/news/rss"},
-    {"name": "InfoQ", "url": "https://feed.infoq.cn/"},
     {"name": "掘金", "url": "https://juejin.cn/rss"},
-    {"name": "CSDN 资讯", "url": "https://blog.csdn.net/rss.html"},
     {"name": "SegmentFault", "url": "https://segmentfault.com/feeds"},
+    # InfoQ 和 CSDN 已移除（频繁失败）
 ]
 
-# ==================== 新增：各大模型厂商官方资讯源（RSSHub 路由） ====================
+# ==================== 大模型厂商官方资讯源 ====================
+# 使用官方 RSS 优先，RSSHub 作为备选（当官方 RSS 不支持时）
 MODEL_SOURCES = [
-    {"name": "OpenAI", "rsshub_path": "/openai/news", "category": "ai", "categoryName": "AI/大模型"},
-    {"name": "Anthropic", "rsshub_path": "/anthropic/news", "category": "ai", "categoryName": "AI/大模型"},
-    {"name": "Google DeepMind", "rsshub_path": "/google/deepmind", "category": "ai", "categoryName": "AI/大模型"},  # 需验证
-    {"name": "Meta AI", "rsshub_path": "/meta/ai", "category": "ai", "categoryName": "AI/大模型"},
-    {"name": "Mistral AI", "rsshub_path": "/mistral/news", "category": "ai", "categoryName": "AI/大模型"},
-    # 以下厂商暂无公开 RSSHub 路由，可自行添加或后续扩展（例如使用通用 RSS 或网页解析）
-    # {"name": "DeepSeek", "rsshub_path": None, "url": "https://www.deepseek.com/", "type": "web"},
-    # {"name": "Qwen", "rsshub_path": "/alibaba/qwen", "category": "ai", "categoryName": "AI/大模型"},
-    # {"name": "xAI (Grok)", "rsshub_path": "/xai/news", "category": "ai", "categoryName": "AI/大模型"},
-    # {"name": "Kimi (Moonshot)", "rsshub_path": None, "url": "https://www.moonshot.ai/", "type": "web"},
-    # {"name": "GLM (智谱)", "rsshub_path": None, "url": "https://www.zhipuai.cn/", "type": "web"},
+    {
+        "name": "OpenAI",
+        "rss_url": "https://openai.com/blog/rss.xml",
+        "rsshub_path": "/openai/news",
+        "category": "ai",
+        "categoryName": "AI/大模型"
+    },
+    {
+        "name": "Anthropic",
+        "rss_url": "https://www.anthropic.com/blog.rss",
+        "rsshub_path": "/anthropic/news",
+        "category": "ai",
+        "categoryName": "AI/大模型"
+    },
+    {
+        "name": "Google AI",
+        "rss_url": "https://ai.googleblog.com/feeds/posts/default",
+        "rsshub_path": "/google/ai",
+        "category": "ai",
+        "categoryName": "AI/大模型"
+    },
+    {
+        "name": "Meta AI",
+        # 官方无公开 RSS，仅用 RSSHub
+        "rsshub_path": "/meta/ai",
+        "category": "ai",
+        "categoryName": "AI/大模型"
+    },
+    {
+        "name": "Mistral AI",
+        # 官方无公开 RSS，仅用 RSSHub（路径可能不稳定，但保留）
+        "rsshub_path": "/mistral/news",
+        "category": "ai",
+        "categoryName": "AI/大模型"
+    },
+    # 以下厂商暂无稳定源，预留接口（可后续添加自定义解析）
+    # {
+    #     "name": "DeepSeek",
+    #     "rsshub_path": "/deepseek/news",  # 需确认 RSSHub 是否支持
+    #     "category": "ai",
+    #     "categoryName": "AI/大模型"
+    # },
+    # {
+    #     "name": "Qwen (阿里)",
+    #     "rsshub_path": "/alibaba/qwen",
+    #     "category": "ai",
+    #     "categoryName": "AI/大模型"
+    # },
+    # {
+    #     "name": "Kimi (月之暗面)",
+    #     "rsshub_path": "/moonshot/news",
+    #     "category": "ai",
+    #     "categoryName": "AI/大模型"
+    # },
+    # {
+    #     "name": "GLM (智谱)",
+    #     "rsshub_path": "/zhipu/news",
+    #     "category": "ai",
+    #     "categoryName": "AI/大模型"
+    # },
 ]
 
 # ==================== 热搜源 ====================
@@ -57,12 +106,12 @@ HOT_SOURCES = [
 ]
 
 API_TYPE_MAP = {"微博": "weibo", "知乎": "zhihu", "B站": "bilihot"}
-HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) ...'}
+HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
 os.makedirs(DATA_DIR, exist_ok=True)
 
-# ==================== 工具函数（保持不变） ====================
+# ==================== 工具函数（不变） ====================
 def clean_html(text):
     if not text: return ""
     text = re.sub(r'<[^>]+>', '', text)
@@ -72,12 +121,6 @@ def clean_html(text):
 def generate_summary(content, length=120):
     text = clean_html(content)
     return text[:length] + "..." if len(text) > length else text
-
-def determine_category(title, summary):
-    # 保留原 AI 检测（现在大部分模型相关都会自动识别）
-    text = (title + summary).lower()
-    ai_keywords = ["gpt", "llm", "大模型", "openai", "claude", "gemini", "ai", "人工智能", "深度学习", "transformer", "agent", "rag", "deepseek", "llama"]
-    return "ai" if any(k in text for k in ai_keywords) else ""
 
 def parse_date(entry):
     try:
@@ -105,7 +148,7 @@ def fetch_feed(url, retries=3):
             if feed.entries: return feed
             time.sleep(2)
         except Exception as e:
-            print(f"    第{i+1}次失败: {e}")
+            print(f"    第{i+1}次失败: {str(e)[:80]}")
             time.sleep(2)
     return None
 
@@ -119,6 +162,7 @@ def fetch_rsshub(path, retries_per_instance=2):
                 resp.raise_for_status()
                 feed = feedparser.parse(resp.text)
                 if feed.entries: return feed
+                time.sleep(1)
             except Exception as e:
                 if "403" in str(e):
                     break
@@ -155,22 +199,33 @@ def estimate_read_time(text):
     words = len(re.findall(r'[\u4e00-\u9fa5a-zA-Z0-9]', text))
     return max(1, round(words / 150))
 
-# ==================== 新增：抓取模型厂商资讯 ====================
+# ==================== 抓取模型厂商资讯 ====================
 def fetch_model_news():
-    """遍历 MODEL_SOURCES，通过 RSSHub 抓取各厂商官方资讯"""
     model_articles = []
     for src in MODEL_SOURCES:
         print(f"\n[{src['name']}]")
-        if not src.get("rsshub_path"):
-            print(f"  跳过（暂无 RSSHub 路由）")
-            continue
-        feed = fetch_rsshub(src["rsshub_path"])
+        feed = None
+
+        # 优先尝试直接 RSS URL（如果存在）
+        if src.get("rss_url"):
+            print(f"  尝试直接 RSS: {src['rss_url']}")
+            feed = fetch_feed(src["rss_url"], retries=2)
+            if feed:
+                print(f"  直接 RSS 成功")
+
+        # 若失败且配置了 RSSHub 路径，则尝试 RSSHub
+        if not feed and src.get("rsshub_path"):
+            print(f"  尝试 RSSHub: {src['rsshub_path']}")
+            feed = fetch_rsshub(src["rsshub_path"])
+            if feed:
+                print(f"  RSSHub 成功")
+
         if not feed:
-            print(f"  ❌ 抓取失败")
+            print(f"  ❌ 抓取失败（跳过）")
             continue
-        print(f"  解析中...")
+
         count = 0
-        for entry in feed.entries[:6]:  # 每个源最多取 6 条
+        for entry in feed.entries[:8]:
             try:
                 title = clean_html(entry.get("title", ""))
                 if not title: continue
@@ -178,7 +233,6 @@ def fetch_model_news():
                 content = entry.get("summary", entry.get("description", ""))
                 summary = generate_summary(content)
                 date_str = parse_date(entry)
-                # 即使 title 不含 AI 关键词，因为来源是官方，我们仍标记为 ai
                 article = {
                     "title": title,
                     "summary": summary,
@@ -191,7 +245,7 @@ def fetch_model_news():
                 }
                 model_articles.append(article)
                 count += 1
-                print(f"    ✓ [{src['name']}] {title[:50]}...")
+                print(f"    ✓ {title[:50]}...")
             except Exception as e:
                 print(f"    解析失败: {e}")
         print(f"  共抓取 {count} 条")
@@ -205,7 +259,7 @@ def crawl():
 
     all_articles = []
 
-    # 1. 技术源（原有，只保留 AI）
+    # 1. 技术源
     print("\n📡 技术资讯")
     for src in RSS_SOURCES:
         print(f"\n[{src['name']}]")
@@ -213,6 +267,7 @@ def crawl():
         if not feed:
             print("  ❌ 失败")
             continue
+        count = 0
         for entry in feed.entries[:8]:
             try:
                 title = clean_html(entry.get("title", ""))
@@ -220,8 +275,10 @@ def crawl():
                 link = entry.get("link", "")
                 content = entry.get("summary", entry.get("description", ""))
                 summary = generate_summary(content)
-                cat = determine_category(title, summary)
-                if cat != "ai": continue
+                # 只保留 AI 相关（关键词过滤）
+                text = (title + summary).lower()
+                if not any(k in text for k in ["gpt", "llm", "大模型", "openai", "claude", "gemini", "ai", "人工智能", "deepseek", "llama", "agent", "rag"]):
+                    continue
                 date_str = parse_date(entry)
                 all_articles.append({
                     "title": title,
@@ -233,11 +290,13 @@ def crawl():
                     "url": link,
                     "read_time": estimate_read_time(summary)
                 })
+                count += 1
                 print(f"    ✓ {title[:40]}...")
             except Exception as e:
                 print(f"    解析失败: {e}")
+        print(f"  共提取 {count} 条 AI 资讯")
 
-    # 2. 模型厂商官方资讯（新增）
+    # 2. 模型厂商官方资讯
     print("\n🤖 模型厂商官方资讯")
     model_articles = fetch_model_news()
     all_articles.extend(model_articles)
@@ -256,6 +315,7 @@ def crawl():
         if not feed:
             print("  ❌ 失败")
             continue
+        count = 0
         for entry in feed.entries[:10]:
             try:
                 title = clean_html(entry.get("title", ""))
@@ -274,11 +334,13 @@ def crawl():
                     "url": link,
                     "read_time": estimate_read_time(summary)
                 })
+                count += 1
                 print(f"    ✓ {title[:40]}...")
             except Exception as e:
                 print(f"    解析失败: {e}")
+        print(f"  共抓取 {count} 条")
 
-    # 4. 去重（按标题+来源）
+    # 4. 去重
     seen = set()
     unique = []
     for a in all_articles:
@@ -348,7 +410,6 @@ def update_index():
 def clean_old_files(days=30):
     now = datetime.now(timezone(timedelta(hours=8)))
     cutoff = now - timedelta(days=days)
-    cutoff_str = cutoff.strftime("%Y-%m-%d")
     for fname in os.listdir(DATA_DIR):
         if fname.endswith(".json") and fname not in ["index.json", "news.json"]:
             date_str = fname.replace(".json", "")
@@ -360,9 +421,8 @@ def clean_old_files(days=30):
             except:
                 continue
 
-# ==================== 主入口 ====================
 if __name__ == "__main__":
-    # 首次运行迁移旧 news.json（如果有）
+    # 迁移旧数据（首次运行）
     old_file = os.path.join(DATA_DIR, "news.json")
     if os.path.exists(old_file) and not any(f.endswith(".json") and f not in ["index.json", "news.json"] for f in os.listdir(DATA_DIR)):
         print("迁移旧数据...")
