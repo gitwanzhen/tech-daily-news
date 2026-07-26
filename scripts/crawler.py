@@ -3,9 +3,10 @@ import feedparser
 import re
 import os
 import time
+import requests
 from datetime import datetime, timezone, timedelta
 
-# RSS 源配置（使用 RSSHub 镜像，GitHub Actions 访问更稳定）
+# RSS 源配置
 RSS_SOURCES = [
     {
         "name": "阮一峰科技爱好者周刊",
@@ -45,8 +46,11 @@ RSS_SOURCES = [
     }
 ]
 
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+}
+
 def clean_html(text):
-    """去除 HTML 标签"""
     if not text:
         return ""
     text = re.sub(r'<[^>]+>', '', text)
@@ -54,16 +58,13 @@ def clean_html(text):
     return text.strip()
 
 def generate_summary(content, length=120):
-    """生成摘要"""
     text = clean_html(content)
     if len(text) > length:
         return text[:length] + "..."
     return text
 
 def determine_category(title, summary):
-    """根据标题和摘要智能判断分类"""
     text = (title + summary).lower()
-    
     keywords = {
         "ai": ["gpt", "llm", "大模型", "openai", "claude", "gemini", "ai ", "人工智能", "深度学习", "神经网络", "transformer", "agent", "rag", "mistral", "千问", "通义", "文心", "deepseek", "llama"],
         "frontend": ["react", "vue", "angular", "css", "html", "webpack", "vite", "前端", "javascript", "typescript", "tailwind", "bun", "next.js", "svelte", "dom", "浏览器"],
@@ -73,25 +74,22 @@ def determine_category(title, summary):
         "security": ["漏洞", "安全", "加密", "cve", "攻击", "渗透", "csrf", "xss", "ransomware", "零日", "后门", "防火墙", "ssl", "https", "入侵"],
         "opensource": ["开源", "github", "linux", "git", "apache", "mozilla", "许可证", "license", "kernel", "基金会", "发布", "版本"]
     }
-    
     scores = {cat: 0 for cat in keywords}
     for cat, words in keywords.items():
         for word in words:
             if word in text:
                 scores[cat] += 1
-    
     best = max(scores, key=scores.get)
     return best if scores[best] > 0 else "opensource"
 
 def parse_date(entry):
-    """解析 RSS 日期，统一转为北京时间字符串"""
     try:
         if hasattr(entry, 'published_parsed') and entry.published_parsed:
             dt = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
             dt = dt.astimezone(timezone(timedelta(hours=8)))
             return dt.strftime("%Y-%m-%d")
     except Exception as e:
-        print(f"    published_parsed 解析失败: {e}")
+        print(f"    published_parsed 失败: {e}")
     
     try:
         if hasattr(entry, 'published') and entry.published:
@@ -104,26 +102,23 @@ def parse_date(entry):
                 except:
                     continue
     except Exception as e:
-        print(f"    published 字符串解析失败: {e}")
+        print(f"    published 失败: {e}")
     
-    # 兜底：用当前北京时间
     return datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d")
 
 def fetch_feed(url, retries=3):
-    """带重试的 RSS 抓取"""
     for i in range(retries):
         try:
             print(f"    尝试第 {i+1} 次...")
-            feed = feedparser.parse(
-                url,
-                request_headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'},
-                timeout=20
-            )
+            # 先用 requests 下载，再用 feedparser 解析
+            response = requests.get(url, headers=HEADERS, timeout=20)
+            response.raise_for_status()
+            feed = feedparser.parse(response.text)
             if hasattr(feed, 'entries') and feed.entries:
                 print(f"    成功获取 {len(feed.entries)} 条")
                 return feed
             else:
-                print(f"    无数据，2秒后重试...")
+                print(f"    返回空数据，2秒后重试...")
                 time.sleep(2)
         except Exception as e:
             print(f"    第 {i+1} 次失败: {e}")
@@ -171,7 +166,7 @@ def crawl():
                 }
                 all_articles.append(article)
                 id_counter += 1
-                print(f"    ✓ {title[:40]}...")
+                print(f"    ✓ {title[:50]}...")
             except Exception as e:
                 print(f"    解析单条失败: {e}")
     
@@ -183,14 +178,11 @@ def crawl():
             seen.add(a["title"])
             unique.append(a)
     
-    # 按日期倒序
     unique.sort(key=lambda x: x["date"], reverse=True)
     
-    # 重新编号
     for i, a in enumerate(unique, 1):
         a["id"] = i
     
-    # 保存
     data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
     os.makedirs(data_dir, exist_ok=True)
     output_path = os.path.join(data_dir, "news.json")
