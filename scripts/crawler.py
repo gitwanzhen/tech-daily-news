@@ -23,17 +23,13 @@ RSSHUB_INSTANCES = [
     "https://rsshub.app",
 ]
 
-# ==================== 技术 RSS 源（保留稳定源） ====================
 RSS_SOURCES = [
     {"name": "阮一峰科技爱好者周刊", "url": "http://www.ruanyifeng.com/blog/atom.xml"},
     {"name": "开源中国", "url": "https://www.oschina.net/news/rss"},
     {"name": "掘金", "url": "https://juejin.cn/rss"},
     {"name": "SegmentFault", "url": "https://segmentfault.com/feeds"},
-    # InfoQ 和 CSDN 已移除（频繁失败）
 ]
 
-# ==================== 大模型厂商官方资讯源 ====================
-# 使用官方 RSS 优先，RSSHub 作为备选（当官方 RSS 不支持时）
 MODEL_SOURCES = [
     {
         "name": "OpenAI",
@@ -58,46 +54,18 @@ MODEL_SOURCES = [
     },
     {
         "name": "Meta AI",
-        # 官方无公开 RSS，仅用 RSSHub
         "rsshub_path": "/meta/ai",
         "category": "ai",
         "categoryName": "AI/大模型"
     },
     {
         "name": "Mistral AI",
-        # 官方无公开 RSS，仅用 RSSHub（路径可能不稳定，但保留）
         "rsshub_path": "/mistral/news",
         "category": "ai",
         "categoryName": "AI/大模型"
     },
-    # 以下厂商暂无稳定源，预留接口（可后续添加自定义解析）
-    # {
-    #     "name": "DeepSeek",
-    #     "rsshub_path": "/deepseek/news",  # 需确认 RSSHub 是否支持
-    #     "category": "ai",
-    #     "categoryName": "AI/大模型"
-    # },
-    # {
-    #     "name": "Qwen (阿里)",
-    #     "rsshub_path": "/alibaba/qwen",
-    #     "category": "ai",
-    #     "categoryName": "AI/大模型"
-    # },
-    # {
-    #     "name": "Kimi (月之暗面)",
-    #     "rsshub_path": "/moonshot/news",
-    #     "category": "ai",
-    #     "categoryName": "AI/大模型"
-    # },
-    # {
-    #     "name": "GLM (智谱)",
-    #     "rsshub_path": "/zhipu/news",
-    #     "category": "ai",
-    #     "categoryName": "AI/大模型"
-    # },
 ]
 
-# ==================== 热搜源 ====================
 HOT_SOURCES = [
     {"name": "微博热搜", "path": "/weibo/search/hot", "platform": "微博"},
     {"name": "知乎热榜", "path": "/zhihu/hotlist", "platform": "知乎"},
@@ -111,7 +79,7 @@ HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
 os.makedirs(DATA_DIR, exist_ok=True)
 
-# ==================== 工具函数（不变） ====================
+# ==================== 工具函数 ====================
 def clean_html(text):
     if not text: return ""
     text = re.sub(r'<[^>]+>', '', text)
@@ -121,6 +89,22 @@ def clean_html(text):
 def generate_summary(content, length=120):
     text = clean_html(content)
     return text[:length] + "..." if len(text) > length else text
+
+def extract_full_content(entry):
+    """提取完整的HTML内容（用于详情展示）"""
+    # 优先取 content 字段（通常是完整HTML）
+    if hasattr(entry, 'content') and entry.content:
+        if isinstance(entry.content, list) and len(entry.content) > 0:
+            return entry.content[0].value
+        else:
+            return entry.content
+    # 其次取 summary
+    if hasattr(entry, 'summary') and entry.summary:
+        return entry.summary
+    # 最后取 description
+    if hasattr(entry, 'description') and entry.description:
+        return entry.description
+    return ""
 
 def parse_date(entry):
     try:
@@ -183,8 +167,13 @@ def fetch_hot_api(platform_type, platform_name):
             hot = item.get("hot", "") or item.get("heat", "")
             summary = f"热度: {hot}" if hot else title
             items.append({
-                "title": title, "summary": summary, "category": "hot",
-                "categoryName": "🔥 热搜", "source": platform_name, "url": url
+                "title": title,
+                "summary": summary,
+                "full_content": summary,  # 热搜无全文，用摘要代替
+                "category": "hot",
+                "categoryName": "🔥 热搜",
+                "source": platform_name,
+                "url": url
             })
         return items
     except:
@@ -206,14 +195,12 @@ def fetch_model_news():
         print(f"\n[{src['name']}]")
         feed = None
 
-        # 优先尝试直接 RSS URL（如果存在）
         if src.get("rss_url"):
             print(f"  尝试直接 RSS: {src['rss_url']}")
             feed = fetch_feed(src["rss_url"], retries=2)
             if feed:
                 print(f"  直接 RSS 成功")
 
-        # 若失败且配置了 RSSHub 路径，则尝试 RSSHub
         if not feed and src.get("rsshub_path"):
             print(f"  尝试 RSSHub: {src['rsshub_path']}")
             feed = fetch_rsshub(src["rsshub_path"])
@@ -230,18 +217,21 @@ def fetch_model_news():
                 title = clean_html(entry.get("title", ""))
                 if not title: continue
                 link = entry.get("link", "")
-                content = entry.get("summary", entry.get("description", ""))
-                summary = generate_summary(content)
+                # 获取全文（保留HTML）
+                full_content = extract_full_content(entry)
+                # 生成纯文本摘要（用于列表）
+                summary = generate_summary(full_content) if full_content else title
                 date_str = parse_date(entry)
                 article = {
                     "title": title,
                     "summary": summary,
+                    "full_content": full_content,   # 新增字段
                     "category": "ai",
                     "categoryName": "AI/大模型",
                     "date": date_str,
                     "source": src["name"],
                     "url": link,
-                    "read_time": estimate_read_time(summary)
+                    "read_time": estimate_read_time(full_content or summary)
                 }
                 model_articles.append(article)
                 count += 1
@@ -273,9 +263,9 @@ def crawl():
                 title = clean_html(entry.get("title", ""))
                 if not title: continue
                 link = entry.get("link", "")
-                content = entry.get("summary", entry.get("description", ""))
-                summary = generate_summary(content)
-                # 只保留 AI 相关（关键词过滤）
+                full_content = extract_full_content(entry)
+                summary = generate_summary(full_content) if full_content else title
+                # 只保留 AI 相关
                 text = (title + summary).lower()
                 if not any(k in text for k in ["gpt", "llm", "大模型", "openai", "claude", "gemini", "ai", "人工智能", "deepseek", "llama", "agent", "rag"]):
                     continue
@@ -283,12 +273,13 @@ def crawl():
                 all_articles.append({
                     "title": title,
                     "summary": summary,
+                    "full_content": full_content,
                     "category": "ai",
                     "categoryName": "AI/大模型",
                     "date": date_str,
                     "source": src["name"],
                     "url": link,
-                    "read_time": estimate_read_time(summary)
+                    "read_time": estimate_read_time(full_content or summary)
                 })
                 count += 1
                 print(f"    ✓ {title[:40]}...")
@@ -321,18 +312,19 @@ def crawl():
                 title = clean_html(entry.get("title", ""))
                 if not title: continue
                 link = entry.get("link", "")
-                content = entry.get("summary", entry.get("description", ""))
-                summary = generate_summary(content) or title
+                full_content = extract_full_content(entry)
+                summary = generate_summary(full_content) if full_content else title
                 date_str = parse_date(entry)
                 all_articles.append({
                     "title": title,
                     "summary": summary,
+                    "full_content": full_content,
                     "category": "hot",
                     "categoryName": "🔥 热搜",
                     "date": date_str,
                     "source": src["platform"],
                     "url": link,
-                    "read_time": estimate_read_time(summary)
+                    "read_time": estimate_read_time(full_content or summary)
                 })
                 count += 1
                 print(f"    ✓ {title[:40]}...")
