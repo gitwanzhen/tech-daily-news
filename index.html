@@ -459,7 +459,7 @@
                 <button class="modal-close" onclick="closeModal()">&times;</button>
                 <div class="modal-meta-row">
                     <span class="tag" id="modalTag">分类</span>
-                    <span style="color: var(--text-secondary); font-size: 0.9rem;" id="modalDate">📅 日期</span>
+                    <span style="color: var(--text-secondary); font-size: 0.85rem;">${formatDate(article.date)}</span>
                 </div>
                 <div class="modal-title" id="modalTitle">标题</div>
             </div>
@@ -649,7 +649,7 @@
             // 填充弹窗内容
             document.getElementById('modalTag').textContent = article.categoryName;
             document.getElementById('modalTag').className = 'tag ' + article.category;
-            document.getElementById('modalDate').textContent = '📅 ' + article.date;
+            document.getElementById('modalDate').textContent = '📅 ' + formatDate(article.date);
             document.getElementById('modalTitle').textContent = article.title;
             document.getElementById('modalSource').textContent = article.source || '未知来源';
             document.getElementById('modalCategory').textContent = article.categoryName || '综合';
@@ -700,6 +700,17 @@
                 showToast('暂无链接可复制');
             }
         }
+
+        function formatDate(dateStr) {
+    if (!dateStr || dateStr === 'undefined') return '日期未知';
+    // 如果是今天的日期，显示"今天"
+    const today = new Date().toISOString().split('T')[0];
+    if (dateStr === today) return '今天';
+    // 如果是昨天，显示"昨天"
+    const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+    if (dateStr === yesterday) return '昨天';
+    return dateStr;
+}
 
         // ==================== 渲染 ====================
         function render() {
