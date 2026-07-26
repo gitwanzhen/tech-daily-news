@@ -28,5 +28,82 @@
     "date": "2026-07-22",
     "source": "SegmentFault",
     "url": "https://segmentfault.com/q/1010000048062682"
+  },
+  {
+    "title": "Building AI infrastructure with the Effingham County community",
+    "summary": "Project Camellia is a long-term datacenter project that OpenAI is designing and developing in Effingham County, Georgia....",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-22",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+    "read_time": 1,
+    "hot_score": 66
+  },
+  {
+    "title": "How news organizations are using AI to advance their vital missions",
+    "summary": "Empowering journalismEmpowering journalismGrowing audiences and enhancing reader experiencesStrengthening the business o...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-22",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/how-news-organizations-are-using-ai/",
+    "read_time": 1,
+    "hot_score": 53
+  },
+  {
+    "title": "Advancing the next era of national science",
+    "summary": "Our commitmentsOur commitmentsSupporting the Genesis MissionA long-term commitment to national scienceOur commitmentsSup...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-22",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/advancing-the-next-era-of-national-science/",
+    "read_time": 1,
+    "hot_score": 48
+  },
+  {
+    "title": "Introducing OpenAI Presence",
+    "summary": "Available today for voice and chat agentsAvailable today for voice and chat agentsProven in leading enterprisesBuilt for...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-22",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/introducing-openai-presence/",
+    "read_time": 1,
+    "hot_score": 86
+  },
+  {
+    "title": "NTT DATA Group cuts incident analysis to 30 minutes with Codex",
+    "summary": "Companywide ChatGPT Enterprise adoption creates the foundation for CodexCompanywide ChatGPT Enterprise adoption creates ...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-22",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/ntt-data/",
+    "read_time": 1,
+    "hot_score": 54
+  },
+  {
+    "title": "A research agenda for the Economic Futures Research Fund",
+    "summary": "We’re sharing the research agenda for the Anthropic Economic Futures Research Fund. We’re committing $200 million to the...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-22",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/economic-futures-research-fund-agenda",
+    "read_time": 1,
+    "hot_score": 38
+  },
+  {
+    "title": "Ask Claude about the Anthropic Economic Index",
+    "summary": "People have hard questions about AI and work: which jobs will change, which tasks are being automated, and what it means...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-22",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
+    "read_time": 1,
+    "hot_score": 83
   }
 ]

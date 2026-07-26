@@ -58,5 +58,16 @@
     "date": "2026-07-24",
     "source": "开源中国",
     "url": "https://www.oschina.net/news/478417"
+  },
+  {
+    "title": "Introducing Claude Opus 5",
+    "summary": "Claude Opus 5 is available today. It’s a thoughtful and proactive model that comes close to the frontier intelligence of...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-24",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/claude-opus-5",
+    "read_time": 1,
+    "hot_score": 83
   }
 ]

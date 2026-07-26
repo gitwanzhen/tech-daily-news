@@ -844,5 +844,71 @@
     "url": "https://search.bilibili.com/all?keyword=NOVA+BLG&from_source=webtop_search",
     "read_time": 1,
     "hot_score": 74
+  },
+  {
+    "title": "我用了三周Claude Code Skills——总结出5条铁律，第3条最反直觉",
+    "summary": "用了三周Claude Code Skills后总结的5条铁律：SKILL.md写法比选什么Skill重要10倍、3个精配好过20个全装、自己写10行比别人100行好用、Skills要串联不要各自为战",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-26",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7666360723081101355",
+    "read_time": 1,
+    "hot_score": 55
+  },
+  {
+    "title": "第9篇：《AI终于记住我是谁了：多轮对话的上下文记忆与压缩》",
+    "summary": "后端老鸟的类比：这不就是HTTP的无状态问题吗？ HTTP每次请求独立，我们用Session/Cookie来保持状态。AI对话也需要一个“Session”——这就是 ChatMemory（对话记忆）。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-26",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7666368669444292660",
+    "read_time": 1,
+    "hot_score": 69
+  },
+  {
+    "title": "四川九寨沟景区泥石流",
+    "summary": "四川九寨沟景区泥石流",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%9B%9B%E5%B7%9D%E4%B9%9D%E5%AF%A8%E6%B2%9F%E6%99%AF%E5%8C%BA%E6%B3%A5%E7%9F%B3%E6%B5%81",
+    "read_time": 1,
+    "hot_score": 73
+  },
+  {
+    "title": "奇瑞集团全球累计销量突破2000万",
+    "summary": "奇瑞集团全球累计销量突破2000万",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%A5%87%E7%91%9E%E9%9B%86%E5%9B%A2%E5%85%A8%E7%90%83%E7%B4%AF%E8%AE%A1%E9%94%80%E9%87%8F%E7%AA%81%E7%A0%B42000%E4%B8%87",
+    "read_time": 1,
+    "hot_score": 73
+  },
+  {
+    "title": "张凌赫回复付辛博",
+    "summary": "张凌赫回复付辛博",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%BC%A0%E5%87%8C%E8%B5%AB%E5%9B%9E%E5%A4%8D%E4%BB%98%E8%BE%9B%E5%8D%9A",
+    "read_time": 1,
+    "hot_score": 57
+  },
+  {
+    "title": "歌剧老师锐评歌手第十期",
+    "summary": "歌剧老师锐评歌手第十期",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-26",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E6%AD%8C%E5%89%A7%E8%80%81%E5%B8%88%E9%94%90%E8%AF%84%E6%AD%8C%E6%89%8B%E7%AC%AC%E5%8D%81%E6%9C%9F&from_source=webtop_search",
+    "read_time": 1,
+    "hot_score": 86
   }
 ]
