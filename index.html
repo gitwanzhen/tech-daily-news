@@ -33,7 +33,6 @@
             --theme-bg-start: #08080e;
             --theme-bg-end: #0f0f1a;
         }
-        /* 早报/晚报主题切换 (JS控制) */
         body.morning {
             --theme-bg-start: #0a0e1a;
             --theme-bg-end: #141c2a;
@@ -116,7 +115,6 @@
         .news-card.ai:hover .card-title { color:var(--color-ai); }
         .news-card.hot:hover .card-title { color:var(--color-hot); }
         .card-summary { font-size:13px; color:var(--text-tertiary); line-height:1.6; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
-        .card-summary.expanded { -webkit-line-clamp:unset; }
         .card-footer { display:flex; justify-content:space-between; align-items:center; margin-top:6px; flex-wrap:wrap; gap:6px; }
         .card-source { font-size:12px; color:var(--text-muted); display:flex; align-items:center; gap:4px; }
         .card-source .dot { width:4px; height:4px; border-radius:50%; background:#374151; }
@@ -130,7 +128,7 @@
         .read-status.read { background:var(--text-muted); border-color:var(--text-muted); }
         .card-summary .core { color:var(--color-ai); font-weight:500; }
 
-        /* ===== 默认紧凑模式（榨干） ===== */
+        /* ===== 默认紧凑模式 ===== */
         .compact .card-summary { display:none; }
         .compact .card-footer .hot-score { display:none; }
         .compact .card-title { font-size:14px; }
@@ -156,8 +154,38 @@
         .modal-meta-row { display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-bottom:6px; }
         .modal-title { font-size:1.4rem; font-weight:700; margin-bottom:14px; padding-right:40px; line-height:1.4; }
         .modal-body { padding:0 24px 24px; }
-        .modal-content-box { background:rgba(0,0,0,0.25); border-radius:14px; padding:18px 20px; margin-bottom:16px; border-left:3px solid var(--color-ai); }
-        .modal-content-box.hot-border { border-left-color:var(--color-hot); }
+
+        /* ===== 全文内容样式 ===== */
+        .modal-full-content {
+            background: rgba(0,0,0,0.2);
+            border-radius: 14px;
+            padding: 18px 20px;
+            margin-bottom: 16px;
+            border-left: 3px solid var(--color-ai);
+            max-height: 420px;
+            overflow-y: auto;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+        .modal-full-content.ai-border { border-left-color: var(--color-ai); }
+        .modal-full-content.hot-border { border-left-color: var(--color-hot); }
+        .modal-full-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 8px 0; }
+        .modal-full-content a { color: var(--color-ai); text-decoration: underline; }
+        .modal-full-content h1, .modal-full-content h2, .modal-full-content h3 { color: var(--text-primary); margin: 12px 0 6px; }
+        .modal-full-content p { margin: 6px 0; }
+        .modal-full-content pre { background: rgba(0,0,0,0.3); padding: 12px; border-radius: 8px; overflow-x: auto; }
+        .modal-full-content code { background: rgba(255,255,255,0.05); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+        .modal-full-content ul, .modal-full-content ol { padding-left: 20px; }
+
+        .modal-content-box {
+            background: rgba(0,0,0,0.25);
+            border-radius: 14px;
+            padding: 18px 20px;
+            margin-bottom: 16px;
+            border-left: 3px solid var(--color-ai);
+        }
+        .modal-content-box.hot-border { border-left-color: var(--color-hot); }
         .modal-summary-full { font-size:0.95rem; line-height:1.85; color:var(--text-secondary); }
         .modal-actions { display:flex; gap:8px; flex-wrap:wrap; }
         .modal-actions .btn { padding:8px 16px; font-size:13px; border-radius:10px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06); color:var(--text-secondary); cursor:pointer; transition:all var(--transition); font-weight:500; }
@@ -169,10 +197,8 @@
         .toast { position:fixed; bottom:40px; left:50%; transform:translateX(-50%) translateY(100px); background:rgba(16,16,24,0.92); border:1px solid rgba(255,255,255,0.06); color:var(--text-primary); padding:10px 24px; border-radius:14px; font-size:14px; z-index:2000; opacity:0; transition:all 0.35s cubic-bezier(0.16,1,0.3,1); pointer-events:none; backdrop-filter:blur(16px); }
         .toast.show { transform:translateX(-50%) translateY(0); opacity:1; }
 
-        /* ===== 空状态 ===== */
         .empty { text-align:center; padding:60px 20px; color:var(--text-muted); font-size:14px; }
 
-        /* ===== 响应式 ===== */
         @media (max-width:640px) {
             .brand { font-size:32px; }
             .stats-bar { gap:10px; font-size:11px; }
@@ -180,12 +206,13 @@
             .container { padding:20px 12px 40px; }
             .featured-card, .news-card { padding:14px; }
             .card-title { font-size:15px; }
+            .modal-full-content { max-height: 300px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- ===== Glow Orbs ===== -->
+    <!-- Glow Orbs -->
     <div class="glow-orb glow-orb-1"></div>
     <div class="glow-orb glow-orb-2"></div>
     <div class="glow-orb glow-orb-3"></div>
@@ -225,7 +252,6 @@
                 <input type="text" placeholder="搜索..." id="searchInput" oninput="onSearch()" />
             </div>
             <input type="date" id="datePicker" class="date-input-compact" />
-            <!-- 刷新按钮 -->
             <button class="icon-btn primary" id="updateBtn" onclick="updateData()" title="刷新">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9h-4m-9 9A9 9 0 0 1 3 12m9 9v-4"/>
@@ -233,11 +259,10 @@
             </button>
             <div class="mode-toggle">
                 <label><input type="checkbox" id="hideReadToggle" onchange="toggleHideRead()"> 隐藏已读</label>
-                <!-- 榨干选项已移除，默认使用紧凑模式 -->
             </div>
         </div>
 
-        <!-- Content (默认添加compact类) -->
+        <!-- Content (默认 compact) -->
         <div id="content-ai" class="compact"></div>
         <div id="content-hot" class="compact" style="display:none;"></div>
 
@@ -252,7 +277,7 @@
         </div>
     </div>
 
-    <!-- ===== 待消化池浮窗 ===== -->
+    <!-- ===== 待消化池 ===== -->
     <div class="digest-pool" id="digestPool">
         <div class="title">⏰ 待消化 <button class="clear-btn" onclick="clearDigest()">清空</button></div>
         <div class="count" id="digestCount">0</div>
@@ -272,7 +297,10 @@
                 <div class="modal-title" id="modalTitle">标题</div>
             </div>
             <div class="modal-body">
-                <div class="modal-content-box" id="modalContentBox">
+                <!-- 全文内容区域（优先） -->
+                <div class="modal-full-content" id="modalFullContent"></div>
+                <!-- 摘要备用区域 -->
+                <div class="modal-content-box" id="modalContentBox" style="display:none;">
                     <h3 style="font-size:0.75rem;color:var(--text-tertiary);margin-bottom:8px;text-transform:uppercase;letter-spacing:1.2px;">📄 核心摘要</h3>
                     <div class="modal-summary-full" id="modalSummary">摘要内容</div>
                 </div>
@@ -299,18 +327,15 @@
 
         let articles = [];
         let aiAll = [], hotAll = [];
-        let aiDisplayed = [], hotDisplayed = [];
         let aiPage = 0, hotPage = 0;
         let currentTab = 'ai';
         let currentDate = getTodayStr();
-        let searchTerm = '';
         let readIds = new Set();
         let digestIds = new Set();
         let currentModalId = null;
         let isRefreshing = false;
-        let isLoadingMore = false;
 
-        // 预置技术暗号
+        // 预置暗号
         const GEEK_CODES = [
             "Llama 4 的 200 万 token 上下文相当于让 AI 一次性读完《三体》三部曲还多出 40% 容量",
             "GPT-5 的代码生成准确率 92% 已超过人类初级工程师的平均水平 (约 85%)",
@@ -318,8 +343,6 @@
             "Claude 4 的思维链可视化让开发者发现模型在推理时会 '自我纠错' 平均 2.3 次",
             "DeepSeek V3 的 MoE 架构使得推理成本仅为 GPT-4 的 1/7",
         ];
-
-        // 摸鱼梗
         const FUNNY_STUFF = [
             { title: "AI 写的代码能跑，但注释全是 '// 我也不知道为什么这样写'", summary: "StackOverflow 2026 年度调查报告显示，37% 的开发者承认曾提交过 AI 生成的无法解释的代码。" },
             { title: "产品经理：'这个需求很简单，怎么实现我不管'  AI：'好的，我写了个 Agent 来自动实现'", summary: "某大厂内部流出的 Prompt 工程，让 AI 自动拆解需求并生成 PRD，产品经理集体沉默。" },
@@ -384,7 +407,6 @@
                 return await resp.json();
             } catch(e) { console.error(e); return []; }
         }
-
         async function loadIndex() {
             try {
                 const resp = await fetch(`${DATA_DIR}index.json`);
@@ -443,7 +465,6 @@
         function renderAll() {
             const containerAI = document.getElementById('content-ai');
             const containerHot = document.getElementById('content-hot');
-            // 分页处理
             const aiPageData = aiAll.slice(0, PAGE_SIZE);
             const hotPageData = hotAll.slice(0, PAGE_SIZE);
             if (aiPageData.length===0) containerAI.innerHTML = '<div class="empty">暂无 AI 资讯</div>';
@@ -471,16 +492,14 @@
                 }
                 containerHot.innerHTML = html;
             }
-            // 更新徽章
+            // badges & stats
             document.getElementById('badgeAI').textContent = aiAll.length;
             document.getElementById('badgeHot').textContent = hotAll.length;
-            // 统计
             document.getElementById('statTotal').textContent = articles.length;
             document.getElementById('statAI').textContent = aiAll.length;
             document.getElementById('statHot').textContent = hotAll.length;
             const now = getBeijingDate();
             document.getElementById('statTime').textContent = String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0');
-
             updateReadStatusUI();
             updateDigestUI();
             updateGeekCode();
@@ -515,14 +534,12 @@
                 pool.classList.remove('active');
             }
         }
-
         function addToDigestById(id) {
             if (digestIds.has(id)) digestIds.delete(id); else digestIds.add(id);
             saveDigestIds();
             updateDigestUI();
             showToast(digestIds.has(id)?'已加入待消化池':'已移除');
         }
-
         function clearDigest() {
             digestIds.clear();
             saveDigestIds();
@@ -562,10 +579,8 @@
             document.getElementById('content-ai').style.display = tab==='ai' ? 'block' : 'none';
             document.getElementById('content-hot').style.display = tab==='hot' ? 'block' : 'none';
         }
-
         function onSearch() {
             const term = document.getElementById('searchInput').value.trim().toLowerCase();
-            searchTerm = term;
             document.querySelectorAll('.news-card, .featured-card').forEach(el => {
                 const title = el.querySelector('.card-title')?.textContent?.toLowerCase() || '';
                 const summary = el.querySelector('.card-summary')?.textContent?.toLowerCase() || '';
@@ -601,12 +616,13 @@
         }
 
         // ========================================================================
-        //  MODAL
+        //  MODAL (核心修改：展示全文)
         // ========================================================================
         function openDetail(id) {
             const article = articles.find(a => a.id === id);
             if (!article) return;
             currentModalId = id;
+
             const tag = document.getElementById('modalTag');
             tag.textContent = article.categoryName || (article.category==='hot'?'🔥 热搜':'🤖 AI');
             tag.className = 'card-tag ' + (article.category||'ai');
@@ -614,9 +630,38 @@
             document.getElementById('modalDate').textContent = '📅 ' + formatDate(article.date);
             document.getElementById('modalReadTime').textContent = '⏱ ' + (article.read_time||estimateReadTime(article.summary)) + ' min';
             document.getElementById('modalTitle').textContent = article.title;
-            document.getElementById('modalSummary').textContent = article.summary || '暂无详细摘要';
-            const box = document.getElementById('modalContentBox');
-            box.className = 'modal-content-box ' + (article.category==='hot' ? 'hot-border' : '');
+
+            const fullContainer = document.getElementById('modalFullContent');
+            const summaryContainer = document.getElementById('modalContentBox');
+            const summaryText = document.getElementById('modalSummary');
+
+            // 重置样式
+            fullContainer.className = 'modal-full-content';
+
+            if (article.full_content && article.full_content.trim()) {
+                // 有全文：显示全文
+                let content = article.full_content;
+                // 简易防 XSS：移除 script 标签
+                content = content.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
+                fullContainer.innerHTML = content;
+                fullContainer.style.display = 'block';
+                summaryContainer.style.display = 'none';
+                // 添加边框颜色
+                if (article.category === 'hot') {
+                    fullContainer.classList.add('hot-border');
+                } else {
+                    fullContainer.classList.add('ai-border');
+                }
+            } else {
+                // 无全文：显示摘要
+                fullContainer.style.display = 'none';
+                summaryContainer.style.display = 'block';
+                summaryText.textContent = article.summary || '暂无详细摘要';
+                // 设置摘要边框
+                const box = document.getElementById('modalContentBox');
+                box.className = 'modal-content-box ' + (article.category==='hot' ? 'hot-border' : '');
+            }
+
             document.getElementById('detailModal').classList.add('active');
             document.body.style.overflow = 'hidden';
             markAsRead(id);
@@ -628,7 +673,7 @@
         function copyLink() { const a=articles.find(a=>a.id===currentModalId); if(a?.url) { navigator.clipboard.writeText(a.url).then(()=>showToast('链接已复制')).catch(()=>showToast('复制失败')); } else showToast('无链接'); }
 
         // ========================================================================
-        //  UPDATE DATA (trigger crawler)
+        //  UPDATE DATA
         // ========================================================================
         async function updateData() {
             if (isRefreshing) return;
