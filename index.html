@@ -17,6 +17,7 @@
             --primary: #58a6ff;
             --primary-hover: #79b8ff;
             --tag-ai: #ff7b72;
+            --tag-hot: #feca57;
         }
         
         body {
@@ -169,9 +170,12 @@
             font-weight: 600;
             padding: 4px 10px;
             border-radius: 6px;
-            background: rgba(255, 123, 114, 0.15);
-            color: var(--tag-ai);
+            background: rgba(88, 166, 255, 0.15);
+            color: var(--primary);
         }
+        
+        .tag.ai { background: rgba(255, 123, 114, 0.15); color: var(--tag-ai); }
+        .tag.hot { background: rgba(254, 202, 87, 0.15); color: var(--tag-hot); }
         
         .article-title {
             font-size: 1.25rem;
@@ -395,14 +399,15 @@
             <div class="today-date" id="todayDate">加载中...</div>
         </header>
         
-        <div class="controls">
+        <div class="controls" id="controlsArea">
             <input type="date" id="datePicker">
             <button class="btn" onclick="setToday()">回到今日</button>
             <button class="btn btn-primary" onclick="refreshNews()">🔄 换一批</button>
         </div>
         
         <nav class="nav">
-            <button class="active">AI/大模型</button>
+            <button class="active" onclick="showPage('ai', this)">AI/大模型</button>
+            <button onclick="showPage('hot', this)">🔥 热搜</button>
         </nav>
         
         <div id="content"></div>
@@ -413,7 +418,7 @@
             <div class="modal-header">
                 <button class="modal-close" onclick="closeModal()">&times;</button>
                 <div class="modal-meta-row">
-                    <span class="tag">AI/大模型</span>
+                    <span class="tag" id="modalTag">分类</span>
                     <span style="color: var(--text-secondary); font-size: 0.9rem;" id="modalDate">📅 日期</span>
                 </div>
                 <div class="modal-title" id="modalTitle">标题</div>
@@ -426,7 +431,7 @@
                     </div>
                     <div class="modal-info-item">
                         <div class="modal-info-label">分类</div>
-                        <div class="modal-info-value">AI/大模型</div>
+                        <div class="modal-info-value" id="modalCategory">--</div>
                     </div>
                 </div>
                 
@@ -473,6 +478,7 @@
 
         // ==================== 数据加载 ====================
         let articles = [];
+        let currentPage = 'ai';          // 'ai' 或 'hot'
         let currentDate = getTodayStr();
         let displayedArticles = [];
         let currentModalId = null;
@@ -502,24 +508,48 @@
             return dateStr;
         }
 
-        // ==================== 页面显示 ====================
+        // ==================== 页面切换 ====================
         function initDisplay() {
             filterAndRender();
         }
 
-        function filterAndRender() {
-            let filtered = articles.filter(a => a.category === 'ai');
-            const today = getTodayStr();
+        function showPage(page, btn) {
+            currentPage = page;
+            document.querySelectorAll('.nav button').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
             
-            if (currentDate === today) {
-                const todayArticles = filtered.filter(a => a.date === today);
-                if (todayArticles.length > 0) {
-                    displayedArticles = todayArticles;
-                } else {
-                    displayedArticles = filtered.slice(0, 10);
-                }
+            const controls = document.getElementById('controlsArea');
+            if (page === 'hot') {
+                controls.style.display = 'none';
             } else {
-                displayedArticles = filtered.filter(a => a.date === currentDate);
+                controls.style.display = 'flex';
+            }
+            
+            filterAndRender();
+        }
+
+        function filterAndRender() {
+            if (currentPage === 'hot') {
+                // 热搜：只显示 category 为 hot 的内容，按日期倒序
+                displayedArticles = articles
+                    .filter(a => a.category === 'hot')
+                    .sort((a, b) => b.date.localeCompare(a.date))
+                    .slice(0, 30);
+            } else {
+                // AI/大模型：只显示 AI 分类，受日期控制
+                let filtered = articles.filter(a => a.category === 'ai');
+                const today = getTodayStr();
+                
+                if (currentDate === today) {
+                    const todayArticles = filtered.filter(a => a.date === today);
+                    if (todayArticles.length > 0) {
+                        displayedArticles = todayArticles;
+                    } else {
+                        displayedArticles = filtered.slice(0, 10);
+                    }
+                } else {
+                    displayedArticles = filtered.filter(a => a.date === currentDate);
+                }
             }
             render();
         }
@@ -527,33 +557,54 @@
         function setToday() {
             currentDate = getTodayStr();
             document.getElementById('datePicker').value = currentDate;
-            filterAndRender();
+            if (currentPage === 'hot') {
+                const aiBtn = document.querySelector('.nav button:first-child');
+                showPage('ai', aiBtn);
+            } else {
+                filterAndRender();
+            }
         }
 
         document.getElementById('datePicker').addEventListener('change', (e) => {
             currentDate = e.target.value;
-            filterAndRender();
+            if (currentPage === 'hot') {
+                const aiBtn = document.querySelector('.nav button:first-child');
+                showPage('ai', aiBtn);
+            } else {
+                filterAndRender();
+            }
         });
 
         // ==================== 刷新功能 ====================
         function refreshNews() {
-            let pool = articles.filter(a => a.category === 'ai');
-            const today = getTodayStr();
-            
-            if (currentDate === today) {
-                const todayPool = pool.filter(a => a.date === today);
-                if (todayPool.length > 0) pool = todayPool;
+            if (currentPage === 'hot') {
+                // 热搜：从所有热搜中随机换一批
+                let pool = articles.filter(a => a.category === 'hot');
+                let available = pool.filter(a => !displayedArticles.some(d => d.id === a.id));
+                if (available.length < 3) available = pool;
+                
+                const shuffled = available.sort(() => 0.5 - Math.random());
+                displayedArticles = shuffled.slice(0, 10);
+                showToast('已刷新热搜推荐');
             } else {
-                pool = pool.filter(a => a.date === currentDate);
+                // AI：现有逻辑
+                let pool = articles.filter(a => a.category === 'ai');
+                const today = getTodayStr();
+                
+                if (currentDate === today) {
+                    const todayPool = pool.filter(a => a.date === today);
+                    if (todayPool.length > 0) pool = todayPool;
+                } else {
+                    pool = pool.filter(a => a.date === currentDate);
+                }
+                
+                let available = pool.filter(a => !displayedArticles.some(d => d.id === a.id));
+                if (available.length < 3) available = pool;
+                
+                const shuffled = available.sort(() => 0.5 - Math.random());
+                displayedArticles = shuffled.slice(0, 10);
+                showToast('已刷新，为您推荐新资讯');
             }
-            
-            let available = pool.filter(a => !displayedArticles.some(d => d.id === a.id));
-            if (available.length < 3) {
-                available = pool;
-            }
-            const shuffled = available.sort(() => 0.5 - Math.random());
-            displayedArticles = shuffled.slice(0, 10);
-            showToast('已刷新，为您推荐新资讯');
             render();
         }
 
@@ -564,9 +615,12 @@
             
             currentModalId = id;
             
+            document.getElementById('modalTag').textContent = article.categoryName || '综合';
+            document.getElementById('modalTag').className = 'tag ' + (article.category || 'ai');
             document.getElementById('modalDate').textContent = '📅 ' + formatDate(article.date);
             document.getElementById('modalTitle').textContent = article.title || '无标题';
             document.getElementById('modalSource').textContent = article.source || '未知来源';
+            document.getElementById('modalCategory').textContent = article.categoryName || '综合';
             document.getElementById('modalSummary').textContent = article.summary || '暂无详细内容';
             
             document.getElementById('detailModal').classList.add('active');
@@ -607,14 +661,17 @@
             const container = document.getElementById('content');
             
             if (displayedArticles.length === 0) {
-                container.innerHTML = '<div class="empty">暂无 AI 资讯<br><small style="color:var(--text-secondary)">每小时自动更新中...</small></div>';
+                const msg = currentPage === 'hot' 
+                    ? '暂无热搜数据<br><small style="color:var(--text-secondary)">每小时自动更新中...</small>'
+                    : '暂无 AI 资讯<br><small style="color:var(--text-secondary)">每小时自动更新中...</small>';
+                container.innerHTML = `<div class="empty">${msg}</div>`;
                 return;
             }
             
             container.innerHTML = displayedArticles.map(article => `
                 <div class="article-card" onclick="openDetail(${article.id})">
                     <div class="article-header">
-                        <span class="tag">AI/大模型</span>
+                        <span class="tag ${article.category || 'ai'}">${article.categoryName || '综合'}</span>
                         <span style="color: var(--text-secondary); font-size: 0.85rem;">${formatDate(article.date)}</span>
                     </div>
                     <div class="article-title">${article.title || '无标题'}</div>
@@ -631,7 +688,7 @@
             const toast = document.getElementById('toast');
             toast.textContent = msg;
             toast.classList.add('show');
-            setTimeout(() => toast.classList.remove('show'), 2000);
+            setTimeout(() => toast.classList.remove('show'), 2002);
         }
 
         // ESC 关闭弹窗
