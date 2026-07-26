@@ -45,8 +45,7 @@
             --color-brand-start: #f7a27a;
             --color-brand-end: #ffb07c;
         }
-        body { font-family: 'Inter', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height:1.6; -webkit-font-smoothing:antialiased; min-height:100vh; }
-        body { background: linear-gradient(145deg, var(--theme-bg-start), var(--theme-bg-end)); }
+        body { font-family: 'Inter', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height:1.6; -webkit-font-smoothing:antialiased; min-height:100vh; background: linear-gradient(145deg, var(--theme-bg-start), var(--theme-bg-end)); }
         ::-webkit-scrollbar { width:5px; }
         ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius:10px; }
         .container { max-width:740px; margin:0 auto; padding:30px 20px 60px; position:relative; z-index:1; }
@@ -93,69 +92,245 @@
         .icon-btn.spinning svg { animation:spin 0.9s linear infinite; }
         @keyframes spin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
 
-        /* ===== 模式切换 ===== */
         .mode-toggle { display:flex; gap:6px; align-items:center; font-size:12px; color:var(--text-muted); }
         .mode-toggle label { cursor:pointer; display:flex; align-items:center; gap:4px; }
 
         /* ===== 卡片 ===== */
-        .featured-card, .news-card { background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-card); padding:16px 18px 16px 22px; position:relative; overflow:hidden; cursor:pointer; transition:all var(--transition); margin-bottom:10px; }
-        .featured-card { background:linear-gradient(145deg, rgba(96,165,250,0.05), rgba(192,132,252,0.025)); border-color:rgba(96,165,250,0.1); }
-        .featured-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg, var(--color-ai), var(--color-brand-start), var(--color-brand-end)); background-size:200% 100%; animation:shimmer 3s ease-in-out infinite; }
+        .featured-card, .news-card {
+            background:var(--bg-surface);
+            border:1px solid var(--border-subtle);
+            border-radius:var(--radius-card);
+            padding:16px 18px 16px 22px;
+            position:relative;
+            overflow:hidden;
+            cursor:pointer;
+            transition:all var(--transition);
+            margin-bottom:10px;
+        }
+        .featured-card {
+            background:linear-gradient(145deg, rgba(96,165,250,0.05), rgba(192,132,252,0.025));
+            border-color:rgba(96,165,250,0.1);
+        }
+        .featured-card::before {
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            right:0;
+            height:3px;
+            background:linear-gradient(90deg, var(--color-ai), var(--color-brand-start), var(--color-brand-end));
+            background-size:200% 100%;
+            animation:shimmer 3s ease-in-out infinite;
+        }
         @keyframes shimmer { 0%,100%{background-position:0% 0%} 50%{background-position:100% 0%} }
-        .news-card::before { content:''; position:absolute; left:0; top:14px; bottom:14px; width:3px; border-radius:0 4px 4px 0; transition:all var(--transition); }
+        .news-card::before {
+            content:'';
+            position:absolute;
+            left:0;
+            top:14px;
+            bottom:14px;
+            width:3px;
+            border-radius:0 4px 4px 0;
+            transition:all var(--transition);
+        }
         .news-card.ai::before { background:linear-gradient(180deg, var(--color-ai), #3b82f6); }
         .news-card.hot::before { background:linear-gradient(180deg, var(--color-hot), #ea580c); }
-        .news-card:hover, .featured-card:hover { background:var(--bg-surface-hover); border-color:var(--border-visible); transform:translateY(-1px); box-shadow:var(--shadow-card); }
+        .news-card:hover, .featured-card:hover {
+            background:var(--bg-surface-hover);
+            border-color:var(--border-visible);
+            transform:translateY(-1px);
+            box-shadow:var(--shadow-card);
+        }
         .card-header { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; }
-        .card-tag { display:inline-flex; align-items:center; gap:4px; font-size:11px; font-weight:600; padding:2px 10px; border-radius:var(--radius-pill); flex-shrink:0; }
+        .card-tag {
+            display:inline-flex;
+            align-items:center;
+            gap:4px;
+            font-size:11px;
+            font-weight:600;
+            padding:2px 10px;
+            border-radius:var(--radius-pill);
+            flex-shrink:0;
+        }
         .card-tag.ai { background:var(--color-ai-dim); color:var(--color-ai); }
         .card-tag.hot { background:var(--color-hot-dim); color:var(--color-hot); }
         .card-date { font-size:12px; color:var(--text-muted); flex-shrink:0; }
-        .card-title { font-size:16px; font-weight:600; line-height:1.5; color:var(--text-primary); transition:color var(--transition); margin:4px 0; }
+        .card-title {
+            font-size:16px;
+            font-weight:600;
+            line-height:1.5;
+            color:var(--text-primary);
+            transition:color var(--transition);
+            margin:4px 0;
+        }
         .news-card.ai:hover .card-title { color:var(--color-ai); }
         .news-card.hot:hover .card-title { color:var(--color-hot); }
-        .card-summary { font-size:13px; color:var(--text-tertiary); line-height:1.6; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
-        .card-footer { display:flex; justify-content:space-between; align-items:center; margin-top:6px; flex-wrap:wrap; gap:6px; }
-        .card-source { font-size:12px; color:var(--text-muted); display:flex; align-items:center; gap:4px; }
+        .card-summary {
+            font-size:13px;
+            color:var(--text-tertiary);
+            line-height:1.6;
+            display:-webkit-box;
+            -webkit-line-clamp:2;
+            -webkit-box-orient:vertical;
+            overflow:hidden;
+        }
+        .card-footer {
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-top:6px;
+            flex-wrap:wrap;
+            gap:6px;
+        }
+        .card-source {
+            font-size:12px;
+            color:var(--text-muted);
+            display:flex;
+            align-items:center;
+            gap:4px;
+        }
         .card-source .dot { width:4px; height:4px; border-radius:50%; background:#374151; }
-        .hot-score { display:flex; align-items:center; gap:6px; font-size:12px; color:var(--text-muted); }
-        .hot-score .bar { width:50px; height:3px; background:rgba(255,255,255,0.06); border-radius:4px; overflow:hidden; }
-        .hot-score .bar .fill { height:100%; border-radius:4px; background:linear-gradient(90deg, var(--color-hot), #ea580c); transition:width 0.6s; }
+        .hot-score {
+            display:flex;
+            align-items:center;
+            gap:6px;
+            font-size:12px;
+            color:var(--text-muted);
+        }
+        .hot-score .bar {
+            width:50px;
+            height:3px;
+            background:rgba(255,255,255,0.06);
+            border-radius:4px;
+            overflow:hidden;
+        }
+        .hot-score .bar .fill {
+            height:100%;
+            border-radius:4px;
+            background:linear-gradient(90deg, var(--color-hot), #ea580c);
+            transition:width 0.6s;
+        }
         .card-actions { display:flex; gap:6px; }
-        .card-actions button { background:transparent; border:none; color:var(--text-muted); cursor:pointer; font-size:14px; padding:2px 4px; transition:color var(--transition); }
+        .card-actions button {
+            background:transparent;
+            border:none;
+            color:var(--text-muted);
+            cursor:pointer;
+            font-size:14px;
+            padding:2px 4px;
+            transition:color var(--transition);
+        }
         .card-actions button:hover { color:var(--text-secondary); }
-        .read-status { width:8px; height:8px; border-radius:50%; border:1.5px solid var(--text-muted); flex-shrink:0; background:transparent; transition:all var(--transition); }
+        .read-status {
+            width:8px;
+            height:8px;
+            border-radius:50%;
+            border:1.5px solid var(--text-muted);
+            flex-shrink:0;
+            background:transparent;
+            transition:all var(--transition);
+        }
         .read-status.read { background:var(--text-muted); border-color:var(--text-muted); }
         .card-summary .core { color:var(--color-ai); font-weight:500; }
 
-        /* ===== 默认紧凑模式 ===== */
+        /* ===== 紧凑模式 ===== */
         .compact .card-summary { display:none; }
         .compact .card-footer .hot-score { display:none; }
         .compact .card-title { font-size:14px; }
 
         /* ===== 隐藏已读 ===== */
-        .hide-read .news-card.read-item, .hide-read .featured-card.read-item { display:none; }
+        .hide-read .news-card.read-item,
+        .hide-read .featured-card.read-item { display:none; }
 
         /* ===== 待消化池 ===== */
-        .digest-pool { position:fixed; bottom:20px; right:20px; background:rgba(16,16,24,0.92); backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,0.06); border-radius:16px; padding:12px 16px; min-width:160px; box-shadow:0 12px 40px rgba(0,0,0,0.5); z-index:500; display:none; }
+        .digest-pool {
+            position:fixed;
+            bottom:20px;
+            right:20px;
+            background:rgba(16,16,24,0.92);
+            backdrop-filter:blur(12px);
+            border:1px solid rgba(255,255,255,0.06);
+            border-radius:16px;
+            padding:12px 16px;
+            min-width:160px;
+            box-shadow:0 12px 40px rgba(0,0,0,0.5);
+            z-index:500;
+            display:none;
+        }
         .digest-pool.active { display:block; }
         .digest-pool .title { font-size:12px; color:var(--text-muted); margin-bottom:4px; }
         .digest-pool .count { font-size:18px; font-weight:700; color:var(--text-primary); }
-        .digest-pool .clear-btn { background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:12px; float:right; }
+        .digest-pool .clear-btn {
+            background:none;
+            border:none;
+            color:var(--text-muted);
+            cursor:pointer;
+            font-size:12px;
+            float:right;
+        }
 
         /* ===== Modal ===== */
-        .modal-overlay { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center; padding:20px; backdrop-filter:blur(16px); }
+        .modal-overlay {
+            display:none;
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:rgba(0,0,0,0.7);
+            z-index:1000;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+            backdrop-filter:blur(16px);
+        }
         .modal-overlay.active { display:flex; }
-        .modal-content { background:linear-gradient(180deg, #14141c, #0e0e16); border:1px solid rgba(255,255,255,0.06); border-radius:24px; max-width:680px; width:100%; max-height:90vh; overflow-y:auto; position:relative; animation:slide-up 0.35s cubic-bezier(0.16,1,0.3,1); box-shadow:0 48px 96px rgba(0,0,0,0.5); }
+        .modal-content {
+            background:linear-gradient(180deg, #14141c, #0e0e16);
+            border:1px solid rgba(255,255,255,0.06);
+            border-radius:24px;
+            max-width:680px;
+            width:100%;
+            max-height:90vh;
+            overflow-y:auto;
+            position:relative;
+            animation:slide-up 0.35s cubic-bezier(0.16,1,0.3,1);
+            box-shadow:0 48px 96px rgba(0,0,0,0.5);
+        }
         @keyframes slide-up { from{transform:translateY(40px) scale(0.96); opacity:0} to{transform:translateY(0) scale(1); opacity:1} }
-        .modal-header { padding:24px 24px 0; position:sticky; top:0; background:linear-gradient(180deg, #14141c, #14141c 70%, transparent); z-index:10; padding-bottom:12px; }
-        .modal-close { position:absolute; top:14px; right:14px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06); color:var(--text-tertiary); font-size:20px; cursor:pointer; width:36px; height:36px; border-radius:10px; transition:all var(--transition); }
+        .modal-header {
+            padding:24px 24px 0;
+            position:sticky;
+            top:0;
+            background:linear-gradient(180deg, #14141c, #14141c 70%, transparent);
+            z-index:10;
+            padding-bottom:12px;
+        }
+        .modal-close {
+            position:absolute;
+            top:14px;
+            right:14px;
+            background:rgba(255,255,255,0.04);
+            border:1px solid rgba(255,255,255,0.06);
+            color:var(--text-tertiary);
+            font-size:20px;
+            cursor:pointer;
+            width:36px;
+            height:36px;
+            border-radius:10px;
+            transition:all var(--transition);
+        }
         .modal-close:hover { background:rgba(255,255,255,0.08); color:var(--text-primary); }
         .modal-meta-row { display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-bottom:6px; }
-        .modal-title { font-size:1.4rem; font-weight:700; margin-bottom:14px; padding-right:40px; line-height:1.4; }
+        .modal-title {
+            font-size:1.4rem;
+            font-weight:700;
+            margin-bottom:14px;
+            padding-right:40px;
+            line-height:1.4;
+        }
         .modal-body { padding:0 24px 24px; }
 
-        /* ===== 全文内容样式 ===== */
         .modal-full-content {
             background: rgba(0,0,0,0.2);
             border-radius: 14px;
@@ -179,25 +354,61 @@
         .modal-full-content ul, .modal-full-content ol { padding-left: 20px; }
 
         .modal-content-box {
-            background: rgba(0,0,0,0.25);
-            border-radius: 14px;
-            padding: 18px 20px;
-            margin-bottom: 16px;
-            border-left: 3px solid var(--color-ai);
+            background:rgba(0,0,0,0.25);
+            border-radius:14px;
+            padding:18px 20px;
+            margin-bottom:16px;
+            border-left:3px solid var(--color-ai);
         }
-        .modal-content-box.hot-border { border-left-color: var(--color-hot); }
+        .modal-content-box.hot-border { border-left-color:var(--color-hot); }
         .modal-summary-full { font-size:0.95rem; line-height:1.85; color:var(--text-secondary); }
+
         .modal-actions { display:flex; gap:8px; flex-wrap:wrap; }
-        .modal-actions .btn { padding:8px 16px; font-size:13px; border-radius:10px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06); color:var(--text-secondary); cursor:pointer; transition:all var(--transition); font-weight:500; }
+        .modal-actions .btn {
+            padding:8px 16px;
+            font-size:13px;
+            border-radius:10px;
+            background:rgba(255,255,255,0.04);
+            border:1px solid rgba(255,255,255,0.06);
+            color:var(--text-secondary);
+            cursor:pointer;
+            transition:all var(--transition);
+            font-weight:500;
+        }
         .modal-actions .btn:hover { background:rgba(255,255,255,0.08); }
-        .modal-actions .btn-primary { background:var(--color-ai-dim); border-color:rgba(96,165,250,0.15); color:var(--color-ai); }
+        .modal-actions .btn-primary {
+            background:var(--color-ai-dim);
+            border-color:rgba(96,165,250,0.15);
+            color:var(--color-ai);
+        }
         .modal-actions .btn-primary:hover { background:rgba(96,165,250,0.2); }
 
         /* ===== Toast ===== */
-        .toast { position:fixed; bottom:40px; left:50%; transform:translateX(-50%) translateY(100px); background:rgba(16,16,24,0.92); border:1px solid rgba(255,255,255,0.06); color:var(--text-primary); padding:10px 24px; border-radius:14px; font-size:14px; z-index:2000; opacity:0; transition:all 0.35s cubic-bezier(0.16,1,0.3,1); pointer-events:none; backdrop-filter:blur(16px); }
+        .toast {
+            position:fixed;
+            bottom:40px;
+            left:50%;
+            transform:translateX(-50%) translateY(100px);
+            background:rgba(16,16,24,0.92);
+            border:1px solid rgba(255,255,255,0.06);
+            color:var(--text-primary);
+            padding:10px 24px;
+            border-radius:14px;
+            font-size:14px;
+            z-index:2000;
+            opacity:0;
+            transition:all 0.35s cubic-bezier(0.16,1,0.3,1);
+            pointer-events:none;
+            backdrop-filter:blur(16px);
+        }
         .toast.show { transform:translateX(-50%) translateY(0); opacity:1; }
 
-        .empty { text-align:center; padding:60px 20px; color:var(--text-muted); font-size:14px; }
+        .empty {
+            text-align:center;
+            padding:60px 20px;
+            color:var(--text-muted);
+            font-size:14px;
+        }
 
         @media (max-width:640px) {
             .brand { font-size:32px; }
@@ -212,7 +423,7 @@
 </head>
 <body>
 
-    <!-- Glow Orbs -->
+    <!-- ===== Glow Orbs ===== -->
     <div class="glow-orb glow-orb-1"></div>
     <div class="glow-orb glow-orb-2"></div>
     <div class="glow-orb glow-orb-3"></div>
@@ -252,6 +463,9 @@
                 <input type="text" placeholder="搜索..." id="searchInput" oninput="onSearch()" />
             </div>
             <input type="date" id="datePicker" class="date-input-compact" />
+            <button class="icon-btn" onclick="setToday()" title="今日">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </button>
             <button class="icon-btn primary" id="updateBtn" onclick="updateData()" title="刷新">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9h-4m-9 9A9 9 0 0 1 3 12m9 9v-4"/>
@@ -297,9 +511,7 @@
                 <div class="modal-title" id="modalTitle">标题</div>
             </div>
             <div class="modal-body">
-                <!-- 全文内容区域（优先） -->
                 <div class="modal-full-content" id="modalFullContent"></div>
-                <!-- 摘要备用区域 -->
                 <div class="modal-content-box" id="modalContentBox" style="display:none;">
                     <h3 style="font-size:0.75rem;color:var(--text-tertiary);margin-bottom:8px;text-transform:uppercase;letter-spacing:1.2px;">📄 核心摘要</h3>
                     <div class="modal-summary-full" id="modalSummary">摘要内容</div>
@@ -335,17 +547,26 @@
         let currentModalId = null;
         let isRefreshing = false;
 
-        // 预置暗号
+        // 趣味内容（摸鱼指南）
+        const FUNNY_STUFF = [
+            {
+                title: "AI 写的代码能跑，但注释全是 '// 我也不知道为什么这样写'",
+                summary: "StackOverflow 2026 年度调查报告显示，37% 的开发者承认曾提交过 AI 生成的无法解释的代码。",
+                full_content: "<p>🤖 AI 生成的代码虽然能运行，但注释往往暴露了它的“不自信”。</p><p>报告显示，超过三分之一的开发者曾直接提交过连自己都看不懂的 AI 生成代码，而产品经理对此毫不知情。</p><p>🤣 这到底是效率革命，还是技术债务的狂欢？</p>"
+            },
+            {
+                title: "产品经理：'这个需求很简单，怎么实现我不管'  AI：'好的，我写了个 Agent 来自动实现'",
+                summary: "某大厂内部流出的 Prompt 工程，让 AI 自动拆解需求并生成 PRD，产品经理集体沉默。",
+                full_content: "<p>💡 当产品经理说“很简单”时，AI 默默生成了一个包含 47 个子任务的 Agent 流程。</p><p>最终交付物是一个 200 页的 PRD 和一份《产品经理职业危机白皮书》。</p><p>😅 据说该团队已全员转岗做 AI 伦理研究。</p>"
+            }
+        ];
+
         const GEEK_CODES = [
             "Llama 4 的 200 万 token 上下文相当于让 AI 一次性读完《三体》三部曲还多出 40% 容量",
             "GPT-5 的代码生成准确率 92% 已超过人类初级工程师的平均水平 (约 85%)",
             "Stable Diffusion 3.5 手部生成失败率从 37% 降至 6%，终于能画好手指了",
             "Claude 4 的思维链可视化让开发者发现模型在推理时会 '自我纠错' 平均 2.3 次",
             "DeepSeek V3 的 MoE 架构使得推理成本仅为 GPT-4 的 1/7",
-        ];
-        const FUNNY_STUFF = [
-            { title: "AI 写的代码能跑，但注释全是 '// 我也不知道为什么这样写'", summary: "StackOverflow 2026 年度调查报告显示，37% 的开发者承认曾提交过 AI 生成的无法解释的代码。" },
-            { title: "产品经理：'这个需求很简单，怎么实现我不管'  AI：'好的，我写了个 Agent 来自动实现'", summary: "某大厂内部流出的 Prompt 工程，让 AI 自动拆解需求并生成 PRD，产品经理集体沉默。" },
         ];
 
         // ========================================================================
@@ -375,8 +596,17 @@
             if (dateStr === yestStr) return '昨天';
             return dateStr;
         }
-        function escapeHtml(text) { if(!text)return ''; const d=document.createElement('div'); d.textContent=text; return d.innerHTML; }
-        function estimateReadTime(text) { if(!text)return 1; const words=text.replace(/\s/g,'').length; return Math.max(1, Math.round(words/120)); }
+        function escapeHtml(text) {
+            if (!text) return '';
+            const d = document.createElement('div');
+            d.textContent = text;
+            return d.innerHTML;
+        }
+        function estimateReadTime(text) {
+            if (!text) return 1;
+            const words = text.replace(/\s/g,'').length;
+            return Math.max(1, Math.round(words/120));
+        }
 
         // ========================================================================
         //  STORAGE
@@ -476,15 +706,47 @@
                 }
                 containerAI.innerHTML = html;
             }
-            if (hotPageData.length===0) containerHot.innerHTML = '<div class="empty">暂无热搜</div>';
-            else {
+            // 摸鱼指南：混入趣味内容
+            if (hotPageData.length===0) {
+                // 若没有热搜，则只显示趣味内容
                 let html = '';
-                const funs = [...FUNNY_STUFF];
-                const shuffled = funs.sort(()=>Math.random()-0.5).slice(0,2);
+                for (let i=0; i<FUNNY_STUFF.length; i++) {
+                    const fake = {
+                        id: -i-1,
+                        title: FUNNY_STUFF[i].title,
+                        summary: FUNNY_STUFF[i].summary,
+                        full_content: FUNNY_STUFF[i].full_content,
+                        category: 'hot',
+                        categoryName: '🎭 摸鱼',
+                        date: getTodayStr(),
+                        source: '神秘来源',
+                        url: '#',
+                        hot_score: 60+Math.floor(Math.random()*30),
+                        read_time: 1
+                    };
+                    html += renderCard(fake, i===0);
+                }
+                containerHot.innerHTML = html;
+            } else {
+                let html = '';
+                // 在真实热搜中插入趣味内容
+                const shuffled = [...FUNNY_STUFF].sort(()=>Math.random()-0.5).slice(0,2);
                 const hotCopy = [...hotPageData];
                 const insertIdx = Math.min(3, hotCopy.length);
                 for (let i=0; i<shuffled.length; i++) {
-                    const fake = { id: -i-1, title: shuffled[i].title, summary: shuffled[i].summary, category:'hot', categoryName:'🎭 摸鱼', date: getTodayStr(), source:'神秘来源', url:'#', hot_score: 60+Math.floor(Math.random()*30), read_time: 1 };
+                    const fake = {
+                        id: -i-1,
+                        title: shuffled[i].title,
+                        summary: shuffled[i].summary,
+                        full_content: shuffled[i].full_content,
+                        category: 'hot',
+                        categoryName: '🎭 摸鱼',
+                        date: getTodayStr(),
+                        source: '神秘来源',
+                        url: '#',
+                        hot_score: 60+Math.floor(Math.random()*30),
+                        read_time: 1
+                    };
                     hotCopy.splice(insertIdx+i, 0, fake);
                 }
                 for (let i=0; i<hotCopy.length; i++) {
@@ -492,7 +754,7 @@
                 }
                 containerHot.innerHTML = html;
             }
-            // badges & stats
+            // 更新徽章和统计
             document.getElementById('badgeAI').textContent = aiAll.length;
             document.getElementById('badgeHot').textContent = hotAll.length;
             document.getElementById('statTotal').textContent = articles.length;
@@ -500,6 +762,7 @@
             document.getElementById('statHot').textContent = hotAll.length;
             const now = getBeijingDate();
             document.getElementById('statTime').textContent = String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0');
+
             updateReadStatusUI();
             updateDigestUI();
             updateGeekCode();
@@ -534,12 +797,14 @@
                 pool.classList.remove('active');
             }
         }
+
         function addToDigestById(id) {
             if (digestIds.has(id)) digestIds.delete(id); else digestIds.add(id);
             saveDigestIds();
             updateDigestUI();
             showToast(digestIds.has(id)?'已加入待消化池':'已移除');
         }
+
         function clearDigest() {
             digestIds.clear();
             saveDigestIds();
@@ -578,7 +843,10 @@
             btn.classList.add('active');
             document.getElementById('content-ai').style.display = tab==='ai' ? 'block' : 'none';
             document.getElementById('content-hot').style.display = tab==='hot' ? 'block' : 'none';
+            // 重新渲染（因为切换时可能会改变内容）
+            renderAll();
         }
+
         function onSearch() {
             const term = document.getElementById('searchInput').value.trim().toLowerCase();
             document.querySelectorAll('.news-card, .featured-card').forEach(el => {
@@ -591,6 +859,13 @@
         // ========================================================================
         //  DATE PICKER
         // ========================================================================
+        async function setToday() {
+            currentDate = getTodayStr();
+            document.getElementById('datePicker').value = currentDate;
+            await loadAndRender(currentDate);
+            showToast('已回到今日');
+        }
+
         document.getElementById('datePicker').addEventListener('change', async (e) => {
             const date = e.target.value;
             if (date) {
@@ -616,13 +891,36 @@
         }
 
         // ========================================================================
-        //  MODAL (核心修改：展示全文)
+        //  MODAL (核心：支持趣味内容和真实文章)
         // ========================================================================
         function openDetail(id) {
-            const article = articles.find(a => a.id === id);
-            if (!article) return;
-            currentModalId = id;
+            // 先尝试从 articles 中查找
+            let article = articles.find(a => a.id === id);
+            // 如果没找到且 id 为负数，说明是趣味内容
+            if (!article && id < 0) {
+                const index = Math.abs(id) - 1; // -1 → 0, -2 → 1
+                const funny = FUNNY_STUFF[index];
+                if (funny) {
+                    article = {
+                        id: id,
+                        title: funny.title,
+                        summary: funny.summary,
+                        full_content: funny.full_content,
+                        category: 'hot',
+                        categoryName: '🎭 摸鱼',
+                        date: getTodayStr(),
+                        source: '神秘来源',
+                        url: '#',
+                        read_time: 1
+                    };
+                }
+            }
+            if (!article) {
+                showToast('未找到文章内容');
+                return;
+            }
 
+            currentModalId = id;
             const tag = document.getElementById('modalTag');
             tag.textContent = article.categoryName || (article.category==='hot'?'🔥 热搜':'🤖 AI');
             tag.className = 'card-tag ' + (article.category||'ai');
@@ -635,45 +933,50 @@
             const summaryContainer = document.getElementById('modalContentBox');
             const summaryText = document.getElementById('modalSummary');
 
-            // 重置样式
             fullContainer.className = 'modal-full-content';
 
             if (article.full_content && article.full_content.trim()) {
-                // 有全文：显示全文
                 let content = article.full_content;
-                // 简易防 XSS：移除 script 标签
+                // 简易防 XSS
                 content = content.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
                 fullContainer.innerHTML = content;
                 fullContainer.style.display = 'block';
                 summaryContainer.style.display = 'none';
-                // 添加边框颜色
                 if (article.category === 'hot') {
                     fullContainer.classList.add('hot-border');
                 } else {
                     fullContainer.classList.add('ai-border');
                 }
             } else {
-                // 无全文：显示摘要
                 fullContainer.style.display = 'none';
                 summaryContainer.style.display = 'block';
                 summaryText.textContent = article.summary || '暂无详细摘要';
-                // 设置摘要边框
                 const box = document.getElementById('modalContentBox');
                 box.className = 'modal-content-box ' + (article.category==='hot' ? 'hot-border' : '');
             }
 
             document.getElementById('detailModal').classList.add('active');
             document.body.style.overflow = 'hidden';
-            markAsRead(id);
+            // 如果是真实文章（id>0），标记已读
+            if (id > 0) markAsRead(id);
         }
 
         function closeModal(e) { if(e && e.target!==e.currentTarget) return; document.getElementById('detailModal').classList.remove('active'); document.body.style.overflow=''; currentModalId=null; updateReadStatusUI(); }
 
-        function openSource() { const a=articles.find(a=>a.id===currentModalId); if(a?.url) window.open(a.url,'_blank'); else showToast('无原文链接'); }
-        function copyLink() { const a=articles.find(a=>a.id===currentModalId); if(a?.url) { navigator.clipboard.writeText(a.url).then(()=>showToast('链接已复制')).catch(()=>showToast('复制失败')); } else showToast('无链接'); }
+        function openSource() {
+            const article = articles.find(a => a.id === currentModalId);
+            if (article?.url && article.url !== '#') window.open(article.url,'_blank');
+            else showToast('无原文链接');
+        }
+        function copyLink() {
+            const article = articles.find(a => a.id === currentModalId);
+            if (article?.url && article.url !== '#') {
+                navigator.clipboard.writeText(article.url).then(()=>showToast('链接已复制')).catch(()=>showToast('复制失败'));
+            } else showToast('无链接');
+        }
 
         // ========================================================================
-        //  UPDATE DATA
+        //  UPDATE DATA (trigger crawler)
         // ========================================================================
         async function updateData() {
             if (isRefreshing) return;
@@ -715,16 +1018,30 @@
             }
             currentDate = targetDate;
             await loadAndRender(targetDate);
-            setInterval(() => {
-                const now = getBeijingDate();
-                document.getElementById('liveStatus').textContent = '● '+String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0')+' 实时';
-            }, 10000);
+            // 绑定事件（使用全局监听）
+            document.getElementById('hideReadToggle').addEventListener('change', toggleHideRead);
+            document.getElementById('updateBtn').addEventListener('click', updateData);
+            document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
+            document.getElementById('detailModal').addEventListener('click', (e) => { if(e.target===e.currentTarget) closeModal(); });
+            document.getElementById('modalSourceBtn').addEventListener('click', openSource);
+            document.getElementById('modalCopyBtn').addEventListener('click', copyLink);
+            document.getElementById('modalReadToggleBtn').addEventListener('click', toggleReadStatus);
+            document.getElementById('modalDigestBtn').addEventListener('click', addToDigest);
+            document.getElementById('clearDigestBtn').addEventListener('click', clearDigest);
+            // 搜索
+            document.getElementById('searchInput').addEventListener('input', onSearch);
+            // 键盘快捷键
             document.addEventListener('keydown', (e) => {
                 if (e.target.tagName==='INPUT') return;
                 if (e.key==='Escape') closeModal();
                 if (e.key==='r' || e.key==='R') updateData();
                 if (e.key==='h' || e.key==='H') { const cb=document.getElementById('hideReadToggle'); cb.checked=!cb.checked; toggleHideRead(); }
             });
+            // 定时更新实时状态
+            setInterval(() => {
+                const now = getBeijingDate();
+                document.getElementById('liveStatus').textContent = '● '+String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0')+' 实时';
+            }, 10000);
         }
 
         init();
