@@ -407,7 +407,7 @@
         
         <nav class="nav">
             <button class="active" onclick="showPage('ai', this)">AI/大模型</button>
-            <button onclick="showPage('hot', this)">🔥 热搜</button>
+            <button onclick="showPage('hot', this)">☕ 轻松一下</button>
         </nav>
         
         <div id="content"></div>
@@ -585,7 +585,7 @@
                 
                 const shuffled = available.sort(() => 0.5 - Math.random());
                 displayedArticles = shuffled.slice(0, 10);
-                showToast('已刷新热搜推荐');
+                showToast('已刷新轻松一下');
             } else {
                 // AI：现有逻辑
                 let pool = articles.filter(a => a.category === 'ai');
