@@ -6,7 +6,7 @@ import time
 import requests
 from datetime import datetime, timezone, timedelta
 
-# RSS 源配置（保留所有源，但只提取 AI 相关内容）
+# ==================== 技术源（只保留AI）====================
 RSS_SOURCES = [
     {
         "name": "阮一峰科技爱好者周刊",
@@ -46,6 +46,31 @@ RSS_SOURCES = [
     }
 ]
 
+# ==================== 娱乐热搜源（各平台前十名）====================
+# 如果某个源被403，可以注释掉或换成其他RSSHub实例
+HOT_SOURCES = [
+    {
+        "name": "微博热搜",
+        "url": "https://rsshub.app/weibo/search/hot",
+        "platform": "微博"
+    },
+    {
+        "name": "知乎热榜",
+        "url": "https://rsshub.app/zhihu/hotlist",
+        "platform": "知乎"
+    },
+    {
+        "name": "豆瓣热门",
+        "url": "https://rsshub.app/douban/movie/playing",
+        "platform": "豆瓣"
+    },
+    {
+        "name": "哔哩哔哩热门",
+        "url": "https://rsshub.app/bilibili/hot-search",
+        "platform": "B站"
+    }
+]
+
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Accept': 'application/rss+xml, application/xml, text/xml, */*',
@@ -67,7 +92,7 @@ def generate_summary(content, length=120):
     return text
 
 def determine_category(title, summary):
-    """只判断是否为 AI/大模型，不是则返回空字符串表示跳过"""
+    """判断是否为AI内容"""
     text = (title + summary).lower()
     ai_keywords = [
         "gpt", "llm", "大模型", "openai", "claude", "gemini", "ai ", "人工智能",
@@ -79,7 +104,7 @@ def determine_category(title, summary):
     for word in ai_keywords:
         if word in text:
             return "ai"
-    return ""  # 非 AI，标记为跳过
+    return ""
 
 def parse_date(entry):
     try:
@@ -127,6 +152,11 @@ def crawl():
     all_articles = []
     id_counter = 1
     
+    # ==================== 第1步：抓技术源（只保留AI）====================
+    print("\n" + "="*40)
+    print("📡 开始抓取技术资讯")
+    print("="*40)
+    
     for source in RSS_SOURCES:
         print(f"\n[{source['name']}]")
         print(f"  URL: {source['url']}")
@@ -138,7 +168,7 @@ def crawl():
         
         print(f"  解析中...")
         ai_count = 0
-        for entry in feed.entries[:15]:  # 每个源多看几条，因为只取AI
+        for entry in feed.entries[:8]:
             try:
                 title = clean_html(entry.get("title", "无标题"))
                 if not title or title == "无标题":
@@ -148,10 +178,9 @@ def crawl():
                 content = entry.get("summary", entry.get("description", ""))
                 summary = generate_summary(content)
                 
-                # 只保留 AI 分类
                 cat = determine_category(title, summary)
                 if cat != "ai":
-                    continue  # 跳过非 AI 内容
+                    continue
                 
                 date_str = parse_date(entry)
                 
@@ -174,7 +203,59 @@ def crawl():
         
         print(f"  本源共提取 {ai_count} 条 AI 资讯")
     
-    # 去重
+    # ==================== 第2步：抓娱乐热搜（各平台前10）====================
+    print("\n" + "="*40)
+    print("🔥 开始抓取娱乐热搜")
+    print("="*40)
+    
+    for source in HOT_SOURCES:
+        print(f"\n[{source['name']}]")
+        print(f"  URL: {source['url']}")
+        
+        feed = fetch_feed(source["url"])
+        if not feed:
+            print(f"  ❌ 抓取失败，跳过")
+            continue
+        
+        print(f"  解析中...")
+        hot_count = 0
+        for entry in feed.entries[:10]:  # 每个平台只取前10条热搜
+            try:
+                title = clean_html(entry.get("title", "无标题"))
+                if not title or title == "无标题":
+                    continue
+                
+                link = entry.get("link", "")
+                
+                # 热搜的summary可能为空，用标题兜底
+                content = entry.get("summary", entry.get("description", ""))
+                summary = generate_summary(content)
+                if not summary:
+                    summary = title[:80] + "..." if len(title) > 80 else title
+                
+                date_str = parse_date(entry)
+                
+                article = {
+                    "id": id_counter,
+                    "title": title,
+                    "summary": summary,
+                    "category": "hot",
+                    "categoryName": "🔥 热搜",
+                    "date": date_str,
+                    "source": source["platform"],
+                    "url": link
+                }
+                all_articles.append(article)
+                id_counter += 1
+                hot_count += 1
+                print(f"    ✓ [热搜] {title[:50]}...")
+            except Exception as e:
+                print(f"    解析单条失败: {e}")
+        
+        print(f"  本源共提取 {hot_count} 条热搜")
+    
+    # ==================== 第3步：去重并合并旧数据 ====================
+    # 本次去重
     seen = set()
     unique = []
     for a in all_articles:
@@ -182,10 +263,7 @@ def crawl():
             seen.add(a["title"])
             unique.append(a)
     
-    # 只保留 AI（二次确认）
-    unique = [a for a in unique if a["category"] == "ai"]
-    
-    # 读取已有的旧数据
+    # 读取旧数据
     data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
     os.makedirs(data_dir, exist_ok=True)
     output_path = os.path.join(data_dir, "news.json")
@@ -198,44 +276,47 @@ def crawl():
                 old_articles = json.load(f)
             if old_articles:
                 max_id = max(a.get("id", 0) for a in old_articles)
-            print(f"  📂 读取旧数据 {len(old_articles)} 条，最大ID={max_id}")
+            print(f"\n  📂 读取旧数据 {len(old_articles)} 条，最大ID={max_id}")
         except Exception as e:
             print(f"  读取旧数据失败: {e}")
     
-    # 用旧数据的标题做去重判断
+    # 旧数据标题集合
     old_titles = {a["title"] for a in old_articles}
     
-    # 只保留本次真正新的数据
+    # 只保留真正新的数据
     truly_new = []
     for a in unique:
         if a["title"] not in old_titles:
             truly_new.append(a)
             old_titles.add(a["title"])
     
-    # 如果没抓到任何新数据，且旧数据存在，就不动文件
+    # 如果没新数据且旧数据存在，不写入
     if len(truly_new) == 0 and len(old_articles) > 0:
         print(f"\n{'='*40}")
         print(f"⚠️ 本次无新数据，保留原有 {len(old_articles)} 条")
         print(f"{'='*40}")
         return
     
-    # 给新数据分配 ID（接续旧数据）
+    # 给新数据分配ID
     for i, a in enumerate(truly_new, start=max_id + 1):
         a["id"] = i
     
-    # 合并：旧数据 + 新数据
+    # 合并
     all_combined = old_articles + truly_new
     
-    # 按日期倒序排列
+    # 按日期倒序
     all_combined.sort(key=lambda x: x.get("date", ""), reverse=True)
     
     # 写入
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(all_combined, f, ensure_ascii=False, indent=2)
     
+    ai_new = len([a for a in truly_new if a["category"] == "ai"])
+    hot_new = len([a for a in truly_new if a["category"] == "hot"])
+    
     print(f"\n{'='*40}")
-    print(f"✅ 本次新增 {len(truly_new)} 条 AI 资讯")
-    print(f"📚 累计共 {len(all_combined)} 条（旧{len(old_articles)} + 新{len(truly_new)}）")
+    print(f"✅ 本次新增 {len(truly_new)} 条（AI:{ai_new} + 热搜:{hot_new}）")
+    print(f"📚 累计共 {len(all_combined)} 条")
     print(f"📁 已保存到 {output_path}")
     print(f"{'='*40}")
 
