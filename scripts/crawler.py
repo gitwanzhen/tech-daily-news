@@ -8,7 +8,6 @@ import random
 import hashlib
 from datetime import datetime, timezone, timedelta
 from collections import defaultdict
-from bs4 import BeautifulSoup  # 新增
 
 # ==================== 配置 ====================
 RSSHUB_INSTANCES = [
@@ -32,11 +31,39 @@ RSS_SOURCES = [
 ]
 
 MODEL_SOURCES = [
-    {"name": "OpenAI", "rss_url": "https://openai.com/blog/rss.xml", "rsshub_path": "/openai/news"},
-    {"name": "Anthropic", "rss_url": "https://www.anthropic.com/blog.rss", "rsshub_path": "/anthropic/news"},
-    {"name": "Google AI", "rss_url": "https://ai.googleblog.com/feeds/posts/default", "rsshub_path": "/google/ai"},
-    {"name": "Meta AI", "rsshub_path": "/meta/ai"},
-    {"name": "Mistral AI", "rsshub_path": "/mistral/news"},
+    {
+        "name": "OpenAI",
+        "rss_url": "https://openai.com/blog/rss.xml",
+        "rsshub_path": "/openai/news",
+        "category": "ai",
+        "categoryName": "AI/大模型"
+    },
+    {
+        "name": "Anthropic",
+        "rss_url": "https://www.anthropic.com/blog.rss",
+        "rsshub_path": "/anthropic/news",
+        "category": "ai",
+        "categoryName": "AI/大模型"
+    },
+    {
+        "name": "Google AI",
+        "rss_url": "https://ai.googleblog.com/feeds/posts/default",
+        "rsshub_path": "/google/ai",
+        "category": "ai",
+        "categoryName": "AI/大模型"
+    },
+    {
+        "name": "Meta AI",
+        "rsshub_path": "/meta/ai",
+        "category": "ai",
+        "categoryName": "AI/大模型"
+    },
+    {
+        "name": "Mistral AI",
+        "rsshub_path": "/mistral/news",
+        "category": "ai",
+        "categoryName": "AI/大模型"
+    },
 ]
 
 HOT_SOURCES = [
@@ -63,55 +90,20 @@ def generate_summary(content, length=120):
     text = clean_html(content)
     return text[:length] + "..." if len(text) > length else text
 
-def fetch_full_html(url):
-    """尝试从文章页面提取完整HTML内容"""
-    try:
-        resp = requests.get(url, headers=HEADERS, timeout=15)
-        resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, 'lxml')
-        # 移除script和style
-        for tag in soup.find_all(['script', 'style']):
-            tag.decompose()
-        # 尝试多种文章容器选择器
-        selectors = [
-            'article', '.content', '.post-content', '.entry-content',
-            '.article-content', '.blog-content', '#content', '.main-content',
-            '.post', '.blog-post', '.article'
-        ]
-        for sel in selectors:
-            elem = soup.select_one(sel)
-            if elem:
-                # 返回内部HTML
-                return str(elem)
-        # 如果没有找到，返回body
-        if soup.body:
-            return str(soup.body)
-    except Exception as e:
-        print(f"    抓取全文失败 {url}: {e}")
-    return None
-
 def extract_full_content(entry):
+    """提取完整的HTML内容（用于详情展示）"""
     # 优先取 content 字段（通常是完整HTML）
     if hasattr(entry, 'content') and entry.content:
         if isinstance(entry.content, list) and len(entry.content) > 0:
             return entry.content[0].value
         else:
             return entry.content
-    
     # 其次取 summary
     if hasattr(entry, 'summary') and entry.summary:
-        summary = entry.summary
-        # 如果摘要很短（少于200字符），尝试获取全文
-        if len(clean_html(summary)) < 200 and hasattr(entry, 'link'):
-            full = fetch_full_html(entry.link)
-            if full:
-                return full
-        return summary
-    
+        return entry.summary
     # 最后取 description
     if hasattr(entry, 'description') and entry.description:
         return entry.description
-    
     return ""
 
 def parse_date(entry):
@@ -173,11 +165,18 @@ def fetch_hot_api(platform_type, platform_name):
             if not title: continue
             url = item.get("url", "") or item.get("link", "")
             hot = item.get("hot", "") or item.get("heat", "")
+            # 构造 summary 和 full_content
             summary = f"热度: {hot}" if hot else title
+            full_content = f"<p><strong>标题：</strong>{title}</p>"
+            if hot:
+                full_content += f"<p><strong>热度：</strong>🔥 {hot}</p>"
+            full_content += f"<p><strong>来源：</strong>{platform_name}</p>"
+            if url:
+                full_content += f"<p><a href='{url}' target='_blank'>查看原文</a></p>"
             items.append({
                 "title": title,
                 "summary": summary,
-                "full_content": summary,
+                "full_content": full_content,
                 "category": "hot",
                 "categoryName": "🔥 热搜",
                 "source": platform_name,
@@ -202,19 +201,23 @@ def fetch_model_news():
     for src in MODEL_SOURCES:
         print(f"\n[{src['name']}]")
         feed = None
+
         if src.get("rss_url"):
             print(f"  尝试直接 RSS: {src['rss_url']}")
             feed = fetch_feed(src["rss_url"], retries=2)
             if feed:
                 print(f"  直接 RSS 成功")
+
         if not feed and src.get("rsshub_path"):
             print(f"  尝试 RSSHub: {src['rsshub_path']}")
             feed = fetch_rsshub(src["rsshub_path"])
             if feed:
                 print(f"  RSSHub 成功")
+
         if not feed:
             print(f"  ❌ 抓取失败（跳过）")
             continue
+
         count = 0
         for entry in feed.entries[:8]:
             try:
@@ -294,7 +297,7 @@ def crawl():
     model_articles = fetch_model_news()
     all_articles.extend(model_articles)
 
-    # 3. 热搜
+    # 3. 热搜（核心修改：补全 summary 和 full_content）
     print("\n🔥 热搜")
     for src in HOT_SOURCES:
         print(f"\n[{src['name']}]")
@@ -316,8 +319,29 @@ def crawl():
                 link = entry.get("link", "")
                 full_content = extract_full_content(entry)
                 summary = generate_summary(full_content) if full_content else title
+
+                # ----- 新增：如果 summary 仍为空，使用标题 -----
+                if not summary or summary.strip() == '':
+                    summary = title
+
+                # ----- 新增：如果 full_content 为空或只有空标签，构造一个描述 -----
+                if not full_content or len(clean_html(full_content).strip()) < 5:
+                    # 构造包含标题、来源、热度的 HTML
+                    hot_value = compute_hot_score(title, src["platform"], parse_date(entry))
+                    full_content = f"""
+                    <div style="font-family: inherit;">
+                        <p><strong>标题：</strong>{title}</p>
+                        <p><strong>来源：</strong>{src["platform"]}</p>
+                        <p><strong>热度：</strong>🔥 {hot_value}</p>
+                        <p><strong>日期：</strong>{parse_date(entry)}</p>
+                        <p style="color: #808a99; font-size: 0.9rem; margin-top: 12px; border-top: 1px solid #374151; padding-top: 12px;">
+                            此热搜由 {src["platform"]} 提供，当前源未返回详细内容。
+                        </p>
+                    </div>
+                    """
+
                 date_str = parse_date(entry)
-                all_articles.append({
+                article = {
                     "title": title,
                     "summary": summary,
                     "full_content": full_content,
@@ -327,7 +351,8 @@ def crawl():
                     "source": src["platform"],
                     "url": link,
                     "read_time": estimate_read_time(full_content or summary)
-                })
+                }
+                all_articles.append(article)
                 count += 1
                 print(f"    ✓ {title[:40]}...")
             except Exception as e:
