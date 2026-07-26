@@ -1,1 +1,272 @@
-[]
+[
+  {
+    "id": 1,
+    "title": "别再把 Coding Agent 当智能补全了：SolonCode 想做的是数字员工",
+    "summary": "1. 先把痛点说清楚：补全会写下一行，但不会替你收尾 很多团队对 AI 编码的体验，其实还停在这一层： 敲到一半，下一行出现了； 写单测时，能补个方法骨架； 偶尔让聊天窗口「解释这段代码」，还算顺手。 这些能力有价值，但它们解决的是局部敲键...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-26",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/479611"
+  },
+  {
+    "id": 2,
+    "title": "tssh v0.1.26 已经发布，支持 trz/tsz 的 ssh 客户端",
+    "summary": "tssh v0.1.26 已经发布，支持 trz/tsz 的 ssh 客户端 此版本更新内容包括： 发布 v0.1.26 (Release v0.1.26) 本次发布为 SSH 多路复用 (Multiplexing) 和 UDP 会话管理带...",
+    "category": "opensource",
+    "categoryName": "开源",
+    "date": "2026-07-26",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/479481"
+  },
+  {
+    "id": 3,
+    "title": "🛡️ Web3 安全入门：新手防骗完全指南",
+    "summary": "Web3 安全核心：私钥助记词绝不外泄，识别钓鱼、杀猪盘、Rug Pull 等骗局，冷热钱包分层存储，定期清理授权，被骗立即止损追踪，宁可错过不乱点。",
+    "category": "security",
+    "categoryName": "安全",
+    "date": "2026-07-26",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7666344458288742434"
+  },
+  {
+    "id": 4,
+    "title": "🔐 Solidity 完全指南：关键语法解析与智能合约中的核心作用",
+    "summary": "Solidity 是面向 EVM 的静态类型智能合约语言，核心语法包括数据类型、函数修饰符、事件、继承等，用于定义资产规则与业务逻辑，是 Web3 去中心化应用的基础。",
+    "category": "opensource",
+    "categoryName": "开源",
+    "date": "2026-07-26",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7666344458288726050"
+  },
+  {
+    "id": 5,
+    "title": "响应式的Android身份验证架构",
+    "summary": "本文教你将身份验证视为一个响应式的加密数据流，以实现自动刷新和响应式导航的 Android 身份验证架构。",
+    "category": "mobile",
+    "categoryName": "移动开发",
+    "date": "2026-07-26",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7666343034913570866"
+  },
+  {
+    "id": 6,
+    "title": "AI股票小助手10-我用代码管住自己的手：一个普通人的市场观察笔记",
+    "summary": "我承认我用量化交易，但我用的不是它的速度，是它的纪律 一句摘要：我承认我用量化交易，但我用的不是它的速度，是它的纪律。这篇文章是我对量化交易这个现象的观察，加上我自己打算怎么用它的方法论。方法还没被验",
+    "category": "opensource",
+    "categoryName": "开源",
+    "date": "2026-07-26",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7666245761521254415"
+  },
+  {
+    "id": 7,
+    "title": "Opus5.0首测，瘫坐沙发！效果，时间，token皆无敌！",
+    "summary": "我本来觉得 Opus 4.8 -> 5.0 好像也没啥特别的，现在的模型已经看不太出差异了。但是当我测了第一个例子之后，大为震惊！ 这个震惊主要来自三个方面：效果、Token、时间！ 1、效果 我们先",
+    "category": "opensource",
+    "categoryName": "开源",
+    "date": "2026-07-26",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7665740209466032166"
+  },
+  {
+    "id": 8,
+    "title": "从 AI 的本质聊 AI 对组织的影响",
+    "summary": "这一轮 AI（LLM），引发了组织的变化，不限于裁员，裁员只是一个表象，根本的逻辑是组织里「信息如何流动」「决策如何形成」「责任如何落地」这些变了。我们所看到的多了一个写文案、写代码、做 PPT 的工",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-26",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7666354528841089033"
+  },
+  {
+    "id": 9,
+    "title": "第六章 图",
+    "summary": "图的基本概念 定义 图 G（Graph）由顶点集 V（Vertex）和边集 E（Edge）组成，记为 G = ( V, E ) ，其中 V(G) 表示图 G 中顶点的有限非空集；E(G) 表示图 G",
+    "category": "opensource",
+    "categoryName": "开源",
+    "date": "2026-07-26",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7666036247145922603"
+  },
+  {
+    "id": 10,
+    "title": "V053： 从 Git 回退到 AI 工程治理：Vibe Coding 的 Harness 工作流与质量阀门",
+    "summary": "从 Git 回退到 AI 工程治理：Vibe Coding 的 Harness 工作流与质量阀门 在传统开发中，Git 常被理解为“提交代码、拉分支、出了问题再回退”的工具。 进入 Vibe Codi",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-26",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7666217642173513762"
+  },
+  {
+    "id": 11,
+    "title": "VLOOK 2026.7～主题天花板级大焕新+幻灯片视图～好看好用 Markdown 主题包与排版增强插件",
+    "summary": "VLOOK:tm: 是针对 Typora（跨平台 Markdown 编辑器）的主题包和增强插件（针对导出的 HTML 文件)，旨在与众 Markdown 粉共创 Markdown 的自动化排版 2.0，在保持 Markdown 简洁性的基础...",
+    "category": "frontend",
+    "categoryName": "前端",
+    "date": "2026-07-25",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/479243"
+  },
+  {
+    "id": 12,
+    "title": "调问更新 7.12~7.25丨150+ 优质模板上线！选人更高效，体验再升级",
+    "summary": "DWSurvey 更新日志 调问重磅更新模板中心上线与组卷效率提升 坚持前后端代码 100% 开源助力企业建设自主可控的问卷调研系统 官网地址www.diaowen.net ➔ 源码下载Gitee 仓库 ➔ 各位小伙伴，我们的系统又迎来了重...",
+    "category": "opensource",
+    "categoryName": "开源",
+    "date": "2026-07-25",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/479214"
+  },
+  {
+    "id": 13,
+    "title": "WePush v5.0.6 已经发布，消息批量推送工具",
+    "summary": "WePush v5.0.6 已经发布，消息批量推送工具 此版本更新内容包括： ● 分析并优化界面EDT线程问题，提升UI响应稳定性 ● 性能优化，优化人群数据导入等场景 ● 修复SQLite不支持useGeneratedKeys的问题 ● ...",
+    "category": "opensource",
+    "categoryName": "开源",
+    "date": "2026-07-25",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/478906"
+  },
+  {
+    "id": 14,
+    "title": "vue3遇到一个无法理解的现象，有大佬帮忙指点一下吗？谢谢！！！？",
+    "summary": "vue3遇到一个无法理解的现象，有大佬帮忙指点一下吗，谢谢，有问了deepseek，它没有解答出来一、问题：页面一直显示的是18，预期应该是在1秒后显示100，可以直接在vue3官网的演练场实际测试出来，为什么刚好这种写法，会出现这个问题？...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-25",
+    "source": "SegmentFault",
+    "url": "https://segmentfault.com/q/1010000048073935"
+  },
+  {
+    "id": 15,
+    "title": "科技爱好者周刊（第 405 期）：资源，社会公平与算力",
+    "summary": "这里记录每周值得分享的科技内容，周五发布。...",
+    "category": "opensource",
+    "categoryName": "开源",
+    "date": "2026-07-24",
+    "source": "阮一峰科技爱好者周刊",
+    "url": "http://www.ruanyifeng.com/blog/2026/07/weekly-issue-405.html"
+  },
+  {
+    "id": 16,
+    "title": "图灵平台：万亿级轨迹数据的秒级检索实战",
+    "summary": "本文复盘我们如何用 ClickHouse + S2 地理编码 + 流式检索，在近 10 万亿轨迹点的底库上做到任意区域秒级可视化。既有存储引擎选型、地理索引设计的原理解析（第 5 节），也有一线踩出来的避坑经验（第 6 节）。适合关注海量数...",
+    "category": "opensource",
+    "categoryName": "开源",
+    "date": "2026-07-24",
+    "source": "开源中国",
+    "url": "https://my.oschina.net/u/4939618/blog/19726402"
+  },
+  {
+    "id": 17,
+    "title": "✨License Manager 软件授权管理系统 v1.2.1 发布-支持产品试用许可",
+    "summary": "产品创建支持试用开启，可设置试用时长 软件可自动获取试用许可证。 软件授权管理平台_License管理_许可证授权验证系统 | 雪松授权云",
+    "category": "opensource",
+    "categoryName": "开源",
+    "date": "2026-07-24",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/478529"
+  },
+  {
+    "id": 18,
+    "title": "新晋菲尔兹奖得主 Tsimerman 官宣加入 OpenAI",
+    "summary": "当地时间 7 月 23 日上午，2026 年国际数学家大会在费城开幕，本年度菲尔兹奖四位得主揭晓——邓煜、约翰·帕登、雅各布·齐默尔曼与王虹。其中邓煜、王虹成为菲尔兹奖自设立以来首批获此殊荣的中国籍数学家。 在赛后新闻发布会上，其中一位新科...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-24",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/478486"
+  },
+  {
+    "id": 19,
+    "title": "如何在科技前沿下构建去智环境并筛选意识体？",
+    "summary": "在我们现有的科技前沿条件下，如何去打造一个去智环境，在这个环境里生物只需要知道怎么生存但不能超过内定的特殊条件，除非成为意识体，即真正有思维的群体，或者说群体意识部分接轨和容纳，在这样的要求下，我们不能干涉，也不能让环境里的生物灭绝，如果达...",
+    "category": "opensource",
+    "categoryName": "开源",
+    "date": "2026-07-24",
+    "source": "SegmentFault",
+    "url": "https://segmentfault.com/q/1010000048068589"
+  },
+  {
+    "id": 20,
+    "title": "前端预览excel？",
+    "summary": "需要实现前端预览excel文件，我尝试了很多插件但都有一个问题，插入单元格内部的图片无法展示（浮动图片可正常展示）如图：请问有什么工具插件可以实现正常前端预览excel文件",
+    "category": "frontend",
+    "categoryName": "前端",
+    "date": "2026-07-23",
+    "source": "SegmentFault",
+    "url": "https://segmentfault.com/q/1010000048066566"
+  },
+  {
+    "id": 21,
+    "title": "生产环境功能偶发报错但日志无记录，如何排查这种\"静默失败\"问题？",
+    "summary": "我们有一个线上服务，某个功能在正常情况下运行稳定，但近期发现偶发性出现\"服务器异常\"的报错。目前已经排查了以下几点：代码未改动：近期没有发布新版本，代码逻辑没有变化服务器资源正常：CPU、内存、磁盘、网络均在正常水位应用日志无异常记录：报错...",
+    "category": "opensource",
+    "categoryName": "开源",
+    "date": "2026-07-23",
+    "source": "SegmentFault",
+    "url": "https://segmentfault.com/q/1010000048065973"
+  },
+  {
+    "id": 22,
+    "title": "免费科研AI工具哪款强（电脑平板通用推荐）？",
+    "summary": "有无好用的科研AI工具最好是免费的，可以在电脑、平板上使用的",
+    "category": "opensource",
+    "categoryName": "开源",
+    "date": "2026-07-23",
+    "source": "SegmentFault",
+    "url": "https://segmentfault.com/q/1010000048065659"
+  },
+  {
+    "id": 23,
+    "title": "django模板中嵌套iframe页面出现多此嵌套问题？",
+    "summary": "如题所述：页面首页默认一个iframe页面为首页，但打开时显示多次嵌套加载？这个什么原因，如何解决?",
+    "category": "opensource",
+    "categoryName": "开源",
+    "date": "2026-07-22",
+    "source": "SegmentFault",
+    "url": "https://segmentfault.com/q/1010000048063496"
+  },
+  {
+    "id": 24,
+    "title": "MySQL中DATE()函数为何导致百万级数据查询比BETWEEN慢几十倍？",
+    "summary": "在MySQL 中，为什么用 WHERE DATE(create_time) = '2026-07-22' 查询百万级数据比用 BETWEEN 慢几十倍？我看了下DATE()写法就是全表扫，BETWEEN就走索引，但我纳闷MySQL优化器咋这...",
+    "category": "backend",
+    "categoryName": "后端架构",
+    "date": "2026-07-22",
+    "source": "SegmentFault",
+    "url": "https://segmentfault.com/q/1010000048062697"
+  },
+  {
+    "id": 25,
+    "title": "学习爬虫应该如何规划路线？",
+    "summary": "请问各位大佬学习爬虫应该怎么规划自己的学习路径？我在网上找了挺多视频来看，现在只了解爬虫的基本原理，会request、selenium库的一点皮毛，XPath、CSS和正则都学了。然后现在在学习scrapy，是跟着思否上的一个帖子在练习。\n...",
+    "category": "frontend",
+    "categoryName": "前端",
+    "date": "2026-07-22",
+    "source": "SegmentFault",
+    "url": "https://segmentfault.com/q/1010000048062682"
+  },
+  {
+    "id": 26,
+    "title": "科技爱好者周刊（第 404 期）：你需要知道的 AI 内存知识",
+    "summary": "这里记录每周值得分享的科技内容，周五发布。...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-17",
+    "source": "阮一峰科技爱好者周刊",
+    "url": "http://www.ruanyifeng.com/blog/2026/07/weekly-issue-404.html"
+  },
+  {
+    "id": 27,
+    "title": "科技爱好者周刊（第 403 期）：为什么 Dropbox 不成功",
+    "summary": "这里记录每周值得分享的科技内容，周五发布。...",
+    "category": "opensource",
+    "categoryName": "开源",
+    "date": "2026-07-10",
+    "source": "阮一峰科技爱好者周刊",
+    "url": "http://www.ruanyifeng.com/blog/2026/07/weekly-issue-403.html"
+  }
+]
