@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechDaily - 技术人每日资讯</title>
+    <title>TechDaily AI - AI每日资讯</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
@@ -17,12 +17,6 @@
             --primary: #58a6ff;
             --primary-hover: #79b8ff;
             --tag-ai: #ff7b72;
-            --tag-frontend: #7ee787;
-            --tag-backend: #79c0ff;
-            --tag-mobile: #d2a8ff;
-            --tag-cloud: #ffa657;
-            --tag-security: #f778ba;
-            --tag-opensource: #a5d6ff;
         }
         
         body {
@@ -49,7 +43,7 @@
         h1 {
             font-size: 2rem;
             margin-bottom: 8px;
-            background: linear-gradient(90deg, var(--primary), var(--tag-cloud));
+            background: linear-gradient(90deg, var(--primary), var(--tag-ai));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -60,7 +54,6 @@
             margin-bottom: 12px;
         }
         
-        /* 新增：今日日期显示 */
         .today-date {
             display: inline-block;
             background: var(--surface);
@@ -153,31 +146,6 @@
             color: var(--text);
         }
         
-        .categories {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        
-        .cat-btn {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            color: var(--text-secondary);
-            padding: 6px 14px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 13px;
-            transition: all 0.2s;
-            font-family: inherit;
-        }
-        
-        .cat-btn:hover, .cat-btn.active {
-            background: var(--primary);
-            color: #fff;
-            border-color: var(--primary);
-        }
-        
         .article-card {
             background: var(--surface);
             border: 1px solid var(--border);
@@ -206,17 +174,9 @@
             font-weight: 600;
             padding: 4px 10px;
             border-radius: 6px;
-            background: rgba(88, 166, 255, 0.15);
-            color: var(--primary);
+            background: rgba(255, 123, 114, 0.15);
+            color: var(--tag-ai);
         }
-        
-        .tag.ai { background: rgba(255, 123, 114, 0.15); color: var(--tag-ai); }
-        .tag.frontend { background: rgba(126, 231, 135, 0.15); color: var(--tag-frontend); }
-        .tag.backend { background: rgba(121, 192, 255, 0.15); color: var(--tag-backend); }
-        .tag.mobile { background: rgba(210, 168, 255, 0.15); color: var(--tag-mobile); }
-        .tag.cloud { background: rgba(255, 166, 87, 0.15); color: var(--tag-cloud); }
-        .tag.security { background: rgba(247, 120, 186, 0.15); color: var(--tag-security); }
-        .tag.opensource { background: rgba(165, 214, 255, 0.15); color: var(--tag-opensource); }
         
         .article-title {
             font-size: 1.25rem;
@@ -435,9 +395,8 @@
 <body>
     <div class="container">
         <header>
-            <h1>TechDaily</h1>
-            <p class="subtitle">技术人每日必读资讯 · 每小时自动更新</p>
-            <!-- 新增：今日日期显示 -->
+            <h1>TechDaily AI</h1>
+            <p class="subtitle">AI / 大模型 / 人工智能 每日资讯</p>
             <div class="today-date" id="todayDate">加载中...</div>
         </header>
         
@@ -453,17 +412,6 @@
             <button onclick="showPage('favorites', this)">我的收藏</button>
         </nav>
         
-        <div class="categories" id="categoryFilters">
-            <button class="cat-btn active" onclick="filterCat('all', this)">全部</button>
-            <button class="cat-btn" onclick="filterCat('ai', this)">AI/大模型</button>
-            <button class="cat-btn" onclick="filterCat('frontend', this)">前端</button>
-            <button class="cat-btn" onclick="filterCat('backend', this)">后端架构</button>
-            <button class="cat-btn" onclick="filterCat('mobile', this)">移动开发</button>
-            <button class="cat-btn" onclick="filterCat('cloud', this)">云原生</button>
-            <button class="cat-btn" onclick="filterCat('security', this)">安全</button>
-            <button class="cat-btn" onclick="filterCat('opensource', this)">开源</button>
-        </div>
-        
         <div id="content"></div>
     </div>
 
@@ -472,7 +420,7 @@
             <div class="modal-header">
                 <button class="modal-close" onclick="closeModal()">&times;</button>
                 <div class="modal-meta-row">
-                    <span class="tag" id="modalTag">分类</span>
+                    <span class="tag">AI/大模型</span>
                     <span style="color: var(--text-secondary); font-size: 0.9rem;" id="modalDate">📅 日期</span>
                 </div>
                 <div class="modal-title" id="modalTitle">标题</div>
@@ -485,7 +433,7 @@
                     </div>
                     <div class="modal-info-item">
                         <div class="modal-info-label">分类</div>
-                        <div class="modal-info-value" id="modalCategory">--</div>
+                        <div class="modal-info-value">AI/大模型</div>
                     </div>
                 </div>
                 
@@ -510,7 +458,6 @@
         // ==================== 工具函数：获取北京时间 ====================
         function getBeijingDate() {
             const now = new Date();
-            // 强制转为北京时间（UTC+8）
             const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
             return new Date(utc + (3600000 * 8));
         }
@@ -535,7 +482,6 @@
         // ==================== 数据加载 ====================
         let articles = [];
         let currentPage = 'today';
-        let currentCategory = 'all';
         let currentDate = getTodayStr();
         let displayedArticles = [];
         let currentModalId = null;
@@ -620,14 +566,11 @@
             btn.classList.add('active');
             
             const controls = document.getElementById('controlsArea');
-            const cats = document.getElementById('categoryFilters');
             
             if (page === 'favorites') {
                 controls.style.display = 'none';
-                cats.style.display = 'none';
             } else {
                 controls.style.display = 'flex';
-                cats.style.display = 'flex';
             }
             
             if (page === 'today') {
@@ -664,13 +607,6 @@
             }
         });
 
-        function filterCat(cat, btn) {
-            currentCategory = cat;
-            document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            render();
-        }
-
         // ==================== 刷新功能 ====================
         function refreshNews() {
             const pool = currentPage === 'favorites' ? displayedArticles : articles;
@@ -680,7 +616,7 @@
             }
             const shuffled = available.sort(() => 0.5 - Math.random());
             displayedArticles = shuffled.slice(0, 10);
-            showToast('已刷新，为您推荐 10 条新资讯');
+            showToast('已刷新');
             render();
         }
 
@@ -691,12 +627,9 @@
             
             currentModalId = id;
             
-            document.getElementById('modalTag').textContent = article.categoryName || '综合';
-            document.getElementById('modalTag').className = 'tag ' + (article.category || 'opensource');
             document.getElementById('modalDate').textContent = '📅 ' + formatDate(article.date);
             document.getElementById('modalTitle').textContent = article.title || '无标题';
             document.getElementById('modalSource').textContent = article.source || '未知来源';
-            document.getElementById('modalCategory').textContent = article.categoryName || '综合';
             document.getElementById('modalSummary').textContent = article.summary || '暂无详细内容';
             
             updateModalFavBtn(id);
@@ -750,19 +683,15 @@
             const container = document.getElementById('content');
             let filtered = displayedArticles;
             
-            if (currentCategory !== 'all' && currentPage !== 'favorites') {
-                filtered = filtered.filter(a => a.category === currentCategory);
-            }
-            
             if (filtered.length === 0) {
-                container.innerHTML = '<div class="empty">暂无资讯<br><small style="color:var(--text-secondary)">每小时自动更新，或点击「换一批」试试</small></div>';
+                container.innerHTML = '<div class="empty">暂无 AI 资讯<br><small style="color:var(--text-secondary)">每小时自动更新中...</small></div>';
                 return;
             }
             
             container.innerHTML = filtered.map(article => `
                 <div class="article-card" onclick="openDetail(${article.id})">
                     <div class="article-header">
-                        <span class="tag ${article.category || 'opensource'}">${article.categoryName || '综合'}</span>
+                        <span class="tag">AI/大模型</span>
                         <span style="color: var(--text-secondary); font-size: 0.85rem;">${formatDate(article.date)}</span>
                     </div>
                     <div class="article-title">${article.title || '无标题'}</div>
@@ -791,11 +720,8 @@
         });
 
         // ==================== 页面初始化 ====================
-        // 关键：设置日期选择器和今日日期显示
         document.getElementById('datePicker').value = getTodayStr();
         document.getElementById('todayDate').textContent = getTodayDisplay();
-        
-        // 加载数据
         loadArticles();
     </script>
 </body>
