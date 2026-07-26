@@ -21,16 +21,6 @@
   },
   {
     "id": 3,
-    "title": "Mission Driver：Loop Engineering 的一种通用参考实现",
-    "summary": "第一部分：入门 一、问题：从 Vibe Coding 到自主运行 当前主流的 AI 辅助开发仍然是 Vibe Coding：人提示，AI 响应，人纠正，AI 再响应。这可称为 Human In The",
-    "category": "ai",
-    "categoryName": "AI/大模型",
-    "date": "2026-07-26",
-    "source": "掘金",
-    "url": "https://juejin.cn/post/7666367425407909938"
-  },
-  {
-    "id": 4,
     "title": "VLOOK 2026.7～主题天花板级大焕新+幻灯片视图～好看好用 Markdown 主题包与排版增强插件",
     "summary": "VLOOK:tm: 是针对 Typora（跨平台 Markdown 编辑器）的主题包和增强插件（针对导出的 HTML 文件)，旨在与众 Markdown 粉共创 Markdown 的自动化排版 2.0，在保持 Markdown 简洁性的基础...",
     "category": "frontend",
@@ -40,7 +30,7 @@
     "url": "https://www.oschina.net/news/479243"
   },
   {
-    "id": 5,
+    "id": 4,
     "title": "调问更新 7.12~7.25丨150+ 优质模板上线！选人更高效，体验再升级",
     "summary": "DWSurvey 更新日志 调问重磅更新模板中心上线与组卷效率提升 坚持前后端代码 100% 开源助力企业建设自主可控的问卷调研系统 官网地址www.diaowen.net ➔ 源码下载Gitee 仓库 ➔ 各位小伙伴，我们的系统又迎来了重...",
     "category": "opensource",
@@ -50,7 +40,7 @@
     "url": "https://www.oschina.net/news/479214"
   },
   {
-    "id": 6,
+    "id": 5,
     "title": "WePush v5.0.6 已经发布，消息批量推送工具",
     "summary": "WePush v5.0.6 已经发布，消息批量推送工具 此版本更新内容包括： ● 分析并优化界面EDT线程问题，提升UI响应稳定性 ● 性能优化，优化人群数据导入等场景 ● 修复SQLite不支持useGeneratedKeys的问题 ● ...",
     "category": "opensource",
@@ -60,7 +50,7 @@
     "url": "https://www.oschina.net/news/478906"
   },
   {
-    "id": 7,
+    "id": 6,
     "title": "以 AI 对抗 AI：构建越用越强的 Agent Runtime 安全防线｜AICon深圳",
     "summary": "点击查看原文>",
     "category": "ai",
@@ -70,7 +60,7 @@
     "url": "https://www.infoq.cn/article/fovd670ZuVMSMI7Z0zO4?utm_source=rss&utm_medium=article"
   },
   {
-    "id": 8,
+    "id": 7,
     "title": "GitHub Issues 大改造：用缓存和预取，让页面打开快了数倍",
     "summary": "点击查看原文>",
     "category": "opensource",
@@ -80,7 +70,7 @@
     "url": "https://www.infoq.cn/article/yDgq3fh4YxZM93u21Kr5?utm_source=rss&utm_medium=article"
   },
   {
-    "id": 9,
+    "id": 8,
     "title": "圆桌访谈：AI 创作场——当生成门槛降低，真正稀缺的是什么？",
     "summary": "点击查看原文>",
     "category": "ai",
@@ -90,47 +80,7 @@
     "url": "https://www.infoq.cn/video/rIOauXdfJLSyeIE1pbuQ?utm_source=rss&utm_medium=article"
   },
   {
-    "id": 10,
-    "title": "手搓一个零依赖的 Markdown 静态站点生成器，我学到了什么",
-    "summary": "拒绝臃肿框架，用 Node.js 标准库手搓一个零依赖静态博客生成器。深入剖析从 Markdown 解析到 CSS Token 系统的 6 个关键设计决策与踩坑复盘。",
-    "category": "frontend",
-    "categoryName": "前端",
-    "date": "2026-07-25",
-    "source": "掘金",
-    "url": "https://juejin.cn/post/7666036053727920163"
-  },
-  {
-    "id": 11,
-    "title": "AI 教程系列-TUI 应用开发教程14-技能系统与可扩展性",
-    "summary": "技能系统——介于命令和插件之间的插件化扩展架构 Skill接口设计（元数据+初始化+执行+清理四阶段生命周期） 技能注册表（注册/注销/查找）、调度器（同步/异步执行、超时控制） 外部技能加载器、权限",
-    "category": "ai",
-    "categoryName": "AI/大模型",
-    "date": "2026-07-25",
-    "source": "掘金",
-    "url": "https://juejin.cn/post/7665740209465458726"
-  },
-  {
-    "id": 12,
-    "title": "AI 教程系列-TUI 应用开发教程08-流式响应与动画",
-    "summary": "讲解终端动画核心原理（\\r回车符覆盖更新）与GUI动画的差异 重点实现打字机效果——大模型对话最核心的流式文本逐字渲染 涵盖Spinner动画大全（旋转/点阵/波浪/自定义字符集）和进度条实现 流式协",
-    "category": "ai",
-    "categoryName": "AI/大模型",
-    "date": "2026-07-25",
-    "source": "掘金",
-    "url": "https://juejin.cn/post/7665969355776114734"
-  },
-  {
-    "id": 13,
-    "title": "AI 教程系列-TUI 应用开发教程05-大模型对话界面设计",
-    "summary": "以用户场景驱动，梳理大模型对话UI的12项核心需求到具体UI表现 设计经典四分区布局——状态栏、消息历史区、输入区、帮助栏 构建六状态状态机模型覆盖响应式适配、终端安全色板、IME输入支持、无障碍设计",
-    "category": "ai",
-    "categoryName": "AI/大模型",
-    "date": "2026-07-25",
-    "source": "掘金",
-    "url": "https://juejin.cn/post/7666142463165890587"
-  },
-  {
-    "id": 14,
+    "id": 9,
     "title": "科技爱好者周刊（第 405 期）：资源，社会公平与算力",
     "summary": "这里记录每周值得分享的科技内容，周五发布。...",
     "category": "opensource",
@@ -140,7 +90,7 @@
     "url": "http://www.ruanyifeng.com/blog/2026/07/weekly-issue-405.html"
   },
   {
-    "id": 15,
+    "id": 10,
     "title": "图灵平台：万亿级轨迹数据的秒级检索实战",
     "summary": "本文复盘我们如何用 ClickHouse + S2 地理编码 + 流式检索，在近 10 万亿轨迹点的底库上做到任意区域秒级可视化。既有存储引擎选型、地理索引设计的原理解析（第 5 节），也有一线踩出来的避坑经验（第 6 节）。适合关注海量数...",
     "category": "opensource",
@@ -150,7 +100,7 @@
     "url": "https://my.oschina.net/u/4939618/blog/19726402"
   },
   {
-    "id": 16,
+    "id": 11,
     "title": "“因为AI不再招研究生了！”菲尔兹奖得主转身加盟OpenAI：数学家这份工作很难维持",
     "summary": "点击查看原文>",
     "category": "ai",
@@ -160,7 +110,7 @@
     "url": "https://www.infoq.cn/article/7rHl2bfzSq4kNVPQ9219?utm_source=rss&utm_medium=article"
   },
   {
-    "id": 17,
+    "id": 12,
     "title": "科技爱好者周刊（第 404 期）：你需要知道的 AI 内存知识",
     "summary": "这里记录每周值得分享的科技内容，周五发布。...",
     "category": "ai",
@@ -170,7 +120,7 @@
     "url": "http://www.ruanyifeng.com/blog/2026/07/weekly-issue-404.html"
   },
   {
-    "id": 18,
+    "id": 13,
     "title": "科技爱好者周刊（第 403 期）：为什么 Dropbox 不成功",
     "summary": "这里记录每周值得分享的科技内容，周五发布。...",
     "category": "opensource",
