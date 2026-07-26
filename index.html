@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechDaily AI - AI每日资讯</title>
+    <title>TechDaily - 技术人每日资讯</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
@@ -67,16 +67,60 @@
             margin-top: 8px;
         }
         
-        .controls {
+        /* ===== 外层页签导航 ===== */
+        .main-nav {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .main-nav button {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            padding: 14px 24px;
+            cursor: pointer;
+            font-size: 16px;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s;
+            font-family: inherit;
+            font-weight: 500;
+        }
+        
+        .main-nav button.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+        
+        .main-nav button:hover {
+            color: var(--text);
+        }
+        
+        /* ===== 页签内容区 ===== */
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        /* ===== 页签内控件行 ===== */
+        .tab-controls {
             display: flex;
             gap: 12px;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             flex-wrap: wrap;
             align-items: center;
+            padding: 16px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
         }
         
         input[type="date"] {
-            background: var(--surface);
+            background: var(--bg);
             border: 1px solid var(--border);
             color: var(--text);
             padding: 8px 12px;
@@ -87,7 +131,7 @@
         }
         
         .btn {
-            background: var(--surface);
+            background: var(--bg);
             border: 1px solid var(--border);
             color: var(--text-secondary);
             padding: 8px 16px;
@@ -112,34 +156,6 @@
         .btn-primary:hover {
             background: var(--primary-hover);
             color: #fff;
-        }
-        
-        .nav {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 25px;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .nav button {
-            background: none;
-            border: none;
-            color: var(--text-secondary);
-            padding: 12px 20px;
-            cursor: pointer;
-            font-size: 15px;
-            border-bottom: 2px solid transparent;
-            transition: all 0.2s;
-            font-family: inherit;
-        }
-        
-        .nav button.active {
-            color: var(--primary);
-            border-bottom-color: var(--primary);
-        }
-        
-        .nav button:hover {
-            color: var(--text);
         }
         
         .article-card {
@@ -382,8 +398,9 @@
         @media (max-width: 600px) {
             .container { padding: 15px; }
             h1 { font-size: 1.5rem; }
+            .main-nav button { padding: 12px 16px; font-size: 15px; }
+            .tab-controls { padding: 12px; }
             .article-card { padding: 18px; }
-            .nav button { padding: 10px 14px; font-size: 14px; }
             .modal-title { font-size: 1.2rem; }
             .modal-body { padding: 16px 20px 20px; }
             .modal-header { padding: 20px 20px 0; }
@@ -394,25 +411,38 @@
 <body>
     <div class="container">
         <header>
-            <h1>TechDaily AI</h1>
-            <p class="subtitle">AI / 大模型 / 人工智能 每日资讯</p>
+            <h1>TechDaily</h1>
+            <p class="subtitle">技术人每日必读资讯 · 每小时自动更新</p>
             <div class="today-date" id="todayDate">加载中...</div>
         </header>
         
-        <div class="controls" id="controlsArea">
-            <input type="date" id="datePicker">
-            <button class="btn" onclick="setToday()">回到今日</button>
-            <button class="btn btn-primary" onclick="refreshNews()">🔄 换一批</button>
-        </div>
-        
-        <nav class="nav">
-            <button class="active" onclick="showPage('ai', this)">AI/大模型</button>
-            <button onclick="showPage('hot', this)">☕ 轻松一下</button>
+        <!-- 外层页签导航 -->
+        <nav class="main-nav">
+            <button class="active" onclick="switchTab('ai', this)">AI/大模型</button>
+            <button onclick="switchTab('hot', this)">☕ 轻松一下</button>
         </nav>
         
-        <div id="content"></div>
+        <!-- AI/大模型 页签内容 -->
+        <div class="tab-content active" id="tab-ai">
+            <div class="tab-controls">
+                <input type="date" id="datePicker">
+                <button class="btn" onclick="setToday()">回到今日</button>
+                <button class="btn btn-primary" onclick="refreshAI()">🔄 换一批</button>
+            </div>
+            <div id="content-ai"></div>
+        </div>
+        
+        <!--  轻松一下 页签内容 -->
+        <div class="tab-content" id="tab-hot">
+            <div class="tab-controls">
+                <span style="color: var(--text-secondary); font-size: 14px;">看看今天发生了什么</span>
+                <button class="btn btn-primary" onclick="refreshHot()" style="margin-left: auto;">🔄 换一批</button>
+            </div>
+            <div id="content-hot"></div>
+        </div>
     </div>
 
+    <!-- 详情弹窗（共用） -->
     <div class="modal-overlay" id="detailModal" onclick="closeModal(event)">
         <div class="modal-content" onclick="event.stopPropagation()">
             <div class="modal-header">
@@ -478,9 +508,10 @@
 
         // ==================== 数据加载 ====================
         let articles = [];
-        let currentPage = 'ai';          // 'ai' 或 'hot'
+        let currentTab = 'ai';           // 'ai' 或 'hot'
         let currentDate = getTodayStr();
-        let displayedArticles = [];
+        let aiDisplayed = [];            // AI页签当前显示的
+        let hotDisplayed = [];           //  轻松一下页签当前显示的
         let currentModalId = null;
 
         async function loadArticles() {
@@ -488,11 +519,15 @@
                 const response = await fetch('data/news.json?t=' + Date.now());
                 const data = await response.json();
                 articles = data;
-                initDisplay();
+                // 初始化两个页签
+                renderAI();
+                renderHot();
             } catch (err) {
                 console.error('加载数据失败:', err);
-                document.getElementById('content').innerHTML = 
-                    '<div class="empty">数据加载失败，请稍后刷新重试<br><small style="color:var(--text-secondary)">每小时自动更新中...</small></div>';
+                document.getElementById('content-ai').innerHTML = 
+                    '<div class="empty">数据加载失败，请稍后刷新重试</div>';
+                document.getElementById('content-hot').innerHTML = 
+                    '<div class="empty">数据加载失败，请稍后刷新重试</div>';
             }
         }
 
@@ -508,104 +543,113 @@
             return dateStr;
         }
 
-        // ==================== 页面切换 ====================
-        function initDisplay() {
-            filterAndRender();
-        }
-
-        function showPage(page, btn) {
-            currentPage = page;
-            document.querySelectorAll('.nav button').forEach(b => b.classList.remove('active'));
+        // ==================== 页签切换 ====================
+        function switchTab(tab, btn) {
+            currentTab = tab;
+            
+            // 更新导航样式
+            document.querySelectorAll('.main-nav button').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             
-            const controls = document.getElementById('controlsArea');
-            if (page === 'hot') {
-                controls.style.display = 'none';
-            } else {
-                controls.style.display = 'flex';
-            }
-            
-            filterAndRender();
+            // 切换内容区
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.getElementById('tab-' + tab).classList.add('active');
         }
 
-        function filterAndRender() {
-            if (currentPage === 'hot') {
-                // 热搜：只显示 category 为 hot 的内容，按日期倒序
-                displayedArticles = articles
-                    .filter(a => a.category === 'hot')
-                    .sort((a, b) => b.date.localeCompare(a.date))
-                    .slice(0, 30);
-            } else {
-                // AI/大模型：只显示 AI 分类，受日期控制
-                let filtered = articles.filter(a => a.category === 'ai');
-                const today = getTodayStr();
-                
-                if (currentDate === today) {
-                    const todayArticles = filtered.filter(a => a.date === today);
-                    if (todayArticles.length > 0) {
-                        displayedArticles = todayArticles;
-                    } else {
-                        displayedArticles = filtered.slice(0, 10);
-                    }
+        // ==================== AI/大模型 页签逻辑 ====================
+        function renderAI() {
+            let filtered = articles.filter(a => a.category === 'ai');
+            const today = getTodayStr();
+            
+            if (currentDate === today) {
+                const todayArticles = filtered.filter(a => a.date === today);
+                if (todayArticles.length > 0) {
+                    aiDisplayed = todayArticles;
                 } else {
-                    displayedArticles = filtered.filter(a => a.date === currentDate);
+                    aiDisplayed = filtered.slice(0, 10);
                 }
+            } else {
+                aiDisplayed = filtered.filter(a => a.date === currentDate);
             }
-            render();
+            
+            renderList('content-ai', aiDisplayed);
         }
 
         function setToday() {
             currentDate = getTodayStr();
             document.getElementById('datePicker').value = currentDate;
-            if (currentPage === 'hot') {
-                const aiBtn = document.querySelector('.nav button:first-child');
-                showPage('ai', aiBtn);
-            } else {
-                filterAndRender();
-            }
+            renderAI();
+            showToast('已回到今日');
         }
 
         document.getElementById('datePicker').addEventListener('change', (e) => {
             currentDate = e.target.value;
-            if (currentPage === 'hot') {
-                const aiBtn = document.querySelector('.nav button:first-child');
-                showPage('ai', aiBtn);
-            } else {
-                filterAndRender();
-            }
+            renderAI();
         });
 
-        // ==================== 刷新功能 ====================
-        function refreshNews() {
-            if (currentPage === 'hot') {
-                // 热搜：从所有热搜中随机换一批
-                let pool = articles.filter(a => a.category === 'hot');
-                let available = pool.filter(a => !displayedArticles.some(d => d.id === a.id));
-                if (available.length < 3) available = pool;
-                
-                const shuffled = available.sort(() => 0.5 - Math.random());
-                displayedArticles = shuffled.slice(0, 10);
-                showToast('已刷新轻松一下');
+        function refreshAI() {
+            let pool = articles.filter(a => a.category === 'ai');
+            const today = getTodayStr();
+            
+            if (currentDate === today) {
+                const todayPool = pool.filter(a => a.date === today);
+                if (todayPool.length > 0) pool = todayPool;
             } else {
-                // AI：现有逻辑
-                let pool = articles.filter(a => a.category === 'ai');
-                const today = getTodayStr();
-                
-                if (currentDate === today) {
-                    const todayPool = pool.filter(a => a.date === today);
-                    if (todayPool.length > 0) pool = todayPool;
-                } else {
-                    pool = pool.filter(a => a.date === currentDate);
-                }
-                
-                let available = pool.filter(a => !displayedArticles.some(d => d.id === a.id));
-                if (available.length < 3) available = pool;
-                
-                const shuffled = available.sort(() => 0.5 - Math.random());
-                displayedArticles = shuffled.slice(0, 10);
-                showToast('已刷新，为您推荐新资讯');
+                pool = pool.filter(a => a.date === currentDate);
             }
-            render();
+            
+            let available = pool.filter(a => !aiDisplayed.some(d => d.id === a.id));
+            if (available.length < 3) available = pool;
+            
+            const shuffled = available.sort(() => 0.5 - Math.random());
+            aiDisplayed = shuffled.slice(0, 10);
+            renderList('content-ai', aiDisplayed);
+            showToast('已刷新 AI 资讯');
+        }
+
+        // ====================  轻松一下 页签逻辑 ====================
+        function renderHot() {
+            hotDisplayed = articles
+                .filter(a => a.category === 'hot')
+                .sort((a, b) => b.date.localeCompare(a.date))
+                .slice(0, 20);
+            
+            renderList('content-hot', hotDisplayed);
+        }
+
+        function refreshHot() {
+            let pool = articles.filter(a => a.category === 'hot');
+            let available = pool.filter(a => !hotDisplayed.some(d => d.id === a.id));
+            if (available.length < 3) available = pool;
+            
+            const shuffled = available.sort(() => 0.5 - Math.random());
+            hotDisplayed = shuffled.slice(0, 10);
+            renderList('content-hot', hotDisplayed);
+            showToast('已刷新轻松一下');
+        }
+
+        // ==================== 通用渲染 ====================
+        function renderList(containerId, list) {
+            const container = document.getElementById(containerId);
+            
+            if (list.length === 0) {
+                container.innerHTML = '<div class="empty">暂无数据<br><small style="color:var(--text-secondary)">每小时自动更新中...</small></div>';
+                return;
+            }
+            
+            container.innerHTML = list.map(article => `
+                <div class="article-card" onclick="openDetail(${article.id})">
+                    <div class="article-header">
+                        <span class="tag ${article.category || 'ai'}">${article.categoryName || '综合'}</span>
+                        <span style="color: var(--text-secondary); font-size: 0.85rem;">${formatDate(article.date)}</span>
+                    </div>
+                    <div class="article-title">${article.title || '无标题'}</div>
+                    <div class="article-summary">${article.summary || '暂无摘要'}</div>
+                    <div class="article-footer">
+                        <span>来源：${article.source || '未知'}</span>
+                    </div>
+                </div>
+            `).join('');
         }
 
         // ==================== 详情弹窗 ====================
@@ -656,39 +700,12 @@
             }
         }
 
-        // ==================== 渲染 ====================
-        function render() {
-            const container = document.getElementById('content');
-            
-            if (displayedArticles.length === 0) {
-                const msg = currentPage === 'hot' 
-                    ? '暂无热搜数据<br><small style="color:var(--text-secondary)">每小时自动更新中...</small>'
-                    : '暂无 AI 资讯<br><small style="color:var(--text-secondary)">每小时自动更新中...</small>';
-                container.innerHTML = `<div class="empty">${msg}</div>`;
-                return;
-            }
-            
-            container.innerHTML = displayedArticles.map(article => `
-                <div class="article-card" onclick="openDetail(${article.id})">
-                    <div class="article-header">
-                        <span class="tag ${article.category || 'ai'}">${article.categoryName || '综合'}</span>
-                        <span style="color: var(--text-secondary); font-size: 0.85rem;">${formatDate(article.date)}</span>
-                    </div>
-                    <div class="article-title">${article.title || '无标题'}</div>
-                    <div class="article-summary">${article.summary || '暂无摘要'}</div>
-                    <div class="article-footer">
-                        <span>来源：${article.source || '未知'}</span>
-                    </div>
-                </div>
-            `).join('');
-        }
-
         // ==================== 提示条 ====================
         function showToast(msg) {
             const toast = document.getElementById('toast');
             toast.textContent = msg;
             toast.classList.add('show');
-            setTimeout(() => toast.classList.remove('show'), 2002);
+            setTimeout(() => toast.classList.remove('show'), 2000);
         }
 
         // ESC 关闭弹窗
