@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechDaily - 技术人每日资讯</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechDaily · 技术人每日资讯</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        /* ===== Reset & Base ===== */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         :root {
-            --bg-primary: #0a0a0f;
-            --bg-card: rgba(255,255,255,0.025);
-            --bg-card-hover: rgba(255,255,255,0.04);
-            --border-card: rgba(255,255,255,0.05);
-            --border-card-hover: rgba(255,255,255,0.08);
-            --text-primary: #e5e7eb;
-            --text-secondary: #9ca3af;
-            --text-tertiary: #6b7280;
-            --text-muted: #4b5563;
+            --bg-primary: #08080e;
+            --bg-surface: rgba(255, 255, 255, 0.025);
+            --bg-surface-hover: rgba(255, 255, 255, 0.045);
+            --border-subtle: rgba(255, 255, 255, 0.05);
+            --border-visible: rgba(255, 255, 255, 0.07);
+            --text-primary: #e8eaed;
+            --text-secondary: #b0b8c4;
+            --text-tertiary: #808a99;
+            --text-muted: #4d5663;
             --color-ai: #60a5fa;
+            --color-ai-dim: rgba(96, 165, 250, 0.12);
             --color-hot: #f0883e;
+            --color-hot-dim: rgba(240, 136, 62, 0.12);
             --color-brand-start: #c084fc;
             --color-brand-mid: #60a5fa;
             --color-brand-end: #34d399;
             --radius-card: 16px;
             --radius-pill: 100px;
-            --radius-tab: 14px;
+            --radius-tab: 12px;
+            --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.25);
+            --transition: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -38,117 +53,174 @@
             overflow-x: hidden;
         }
 
-        .container {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 48px 20px 60px;
-            position: relative;
-            z-index: 1;
+        ::selection {
+            background: rgba(96, 165, 250, 0.25);
+            color: #fff;
         }
 
+        /* ===== Scrollbar ===== */
+        ::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        /* ===== Glow Orbs ===== */
         .glow-orb {
             position: fixed;
-            width: 400px;
-            height: 400px;
             border-radius: 50%;
-            filter: blur(120px);
-            opacity: 0.08;
+            filter: blur(140px);
             pointer-events: none;
             z-index: 0;
+            opacity: 0.06;
         }
         .glow-orb-1 {
+            width: 500px;
+            height: 500px;
             background: var(--color-brand-mid);
-            top: -100px;
+            top: -200px;
             left: 50%;
             transform: translateX(-50%);
         }
         .glow-orb-2 {
+            width: 400px;
+            height: 400px;
             background: var(--color-brand-start);
-            bottom: 10%;
+            bottom: 5%;
             right: -100px;
         }
+        .glow-orb-3 {
+            width: 300px;
+            height: 300px;
+            background: var(--color-brand-end);
+            bottom: 30%;
+            left: -100px;
+            opacity: 0.04;
+        }
 
+        /* ===== Container ===== */
+        .container {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ===== Pull Refresh ===== */
         .pull-refresh {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            height: 60px;
+            height: 56px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
+            gap: 10px;
             color: var(--text-tertiary);
             font-size: 13px;
+            font-weight: 500;
             z-index: 100;
-            transform: translateY(-60px);
+            transform: translateY(-56px);
             transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
             opacity: 0;
             pointer-events: none;
+            background: rgba(8, 8, 14, 0.6);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
         }
         .pull-refresh .pull-icon svg {
-            width: 18px;
-            height: 18px;
+            width: 20px;
+            height: 20px;
         }
         .pull-refresh.refreshing .pull-icon svg {
-            animation: spin 1s linear infinite;
+            animation: spin 0.9s linear infinite;
         }
 
+        /* ===== Header ===== */
         .header {
             text-align: center;
-            margin-bottom: 28px;
+            margin-bottom: 24px;
         }
         .brand {
-            font-size: 42px;
+            font-size: 44px;
             font-weight: 800;
             letter-spacing: -1.5px;
-            background: linear-gradient(135deg, var(--color-brand-start) 0%, var(--color-brand-mid) 50%, var(--color-brand-end) 100%);
+            background: linear-gradient(135deg, var(--color-brand-start) 0%, var(--color-brand-mid) 45%, var(--color-brand-end) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 8px;
+            margin-bottom: 4px;
+            line-height: 1.1;
         }
         .tagline {
             font-size: 14px;
             color: var(--text-tertiary);
             font-weight: 400;
-            letter-spacing: 0.5px;
-            margin-bottom: 16px;
+            letter-spacing: 0.4px;
+            margin-bottom: 14px;
         }
         .date-pill {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            background: rgba(96, 165, 250, 0.08);
-            border: 1px solid rgba(96, 165, 250, 0.15);
+            gap: 10px;
+            background: rgba(96, 165, 250, 0.06);
+            border: 1px solid rgba(96, 165, 250, 0.12);
             color: var(--color-ai);
-            padding: 8px 20px;
+            padding: 7px 22px 7px 18px;
             border-radius: var(--radius-pill);
             font-size: 13px;
             font-weight: 500;
             backdrop-filter: blur(10px);
+            transition: border-color 0.3s;
         }
         .date-pill .dot {
-            width: 6px;
-            height: 6px;
+            width: 8px;
+            height: 8px;
             background: var(--color-brand-end);
             border-radius: 50%;
-            animation: pulse 2s infinite;
+            animation: pulse-dot 2s infinite;
+            flex-shrink: 0;
         }
-        @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(0.8); }
+        .date-pill .dot.pulse-fast {
+            animation-duration: 1s;
+        }
+        @keyframes pulse-dot {
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.4;
+                transform: scale(0.75);
+            }
         }
         @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
+        /* ===== Stats Bar ===== */
         .stats-bar {
             display: flex;
             justify-content: center;
-            gap: 24px;
-            margin-bottom: 28px;
+            gap: 28px;
+            margin-bottom: 24px;
             font-size: 12px;
             color: var(--text-muted);
             flex-wrap: wrap;
@@ -157,78 +229,106 @@
             display: flex;
             align-items: center;
             gap: 6px;
+            background: rgba(255, 255, 255, 0.02);
+            padding: 4px 14px 4px 10px;
+            border-radius: var(--radius-pill);
+            border: 1px solid rgba(255, 255, 255, 0.03);
         }
         .stat-item .num {
             color: var(--text-secondary);
             font-weight: 600;
+            font-size: 13px;
+        }
+        .stat-item .label {
+            color: var(--text-muted);
+        }
+        .stat-item .emoji {
+            font-size: 14px;
         }
 
+        /* ===== Tab Control ===== */
         .tab-control {
             display: flex;
             justify-content: center;
-            margin-bottom: 24px;
+            margin-bottom: 22px;
         }
         .tab-inner {
             display: flex;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: rgba(255, 255, 255, 0.025);
+            border: 1px solid rgba(255, 255, 255, 0.05);
             border-radius: var(--radius-tab);
             padding: 4px;
             gap: 4px;
+            backdrop-filter: blur(8px);
         }
         .tab-btn {
-            padding: 10px 24px;
+            padding: 10px 26px;
             border-radius: 10px;
             font-size: 14px;
             font-weight: 500;
             color: var(--text-tertiary);
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all var(--transition);
             border: none;
             background: transparent;
             display: flex;
             align-items: center;
             gap: 8px;
             font-family: inherit;
+            position: relative;
         }
         .tab-btn:hover {
             color: var(--text-secondary);
             background: rgba(255, 255, 255, 0.03);
         }
         .tab-btn.active {
-            background: rgba(96, 165, 250, 0.12);
+            background: var(--color-ai-dim);
             color: var(--color-ai);
-            box-shadow: 0 2px 8px rgba(96, 165, 250, 0.08);
+            box-shadow: 0 2px 12px rgba(96, 165, 250, 0.08);
         }
         .tab-btn.hot.active {
-            background: rgba(240, 136, 62, 0.12);
+            background: var(--color-hot-dim);
             color: var(--color-hot);
-            box-shadow: 0 2px 8px rgba(240, 136, 62, 0.08);
+            box-shadow: 0 2px 12px rgba(240, 136, 62, 0.08);
+        }
+        .tab-btn .badge {
+            font-size: 10px;
+            background: rgba(255, 255, 255, 0.06);
+            padding: 0 8px;
+            border-radius: 100px;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .tab-btn.active .badge {
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--text-secondary);
         }
 
+        /* ===== Toolbar ===== */
         .toolbar {
             display: flex;
             gap: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
             align-items: center;
+            flex-wrap: wrap;
         }
         .search-box {
             flex: 1;
+            min-width: 160px;
             display: flex;
             align-items: center;
             gap: 10px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: rgba(255, 255, 255, 0.025);
+            border: 1px solid rgba(255, 255, 255, 0.05);
             border-radius: 12px;
             padding: 0 14px;
             height: 40px;
-            transition: all 0.3s ease;
-            min-width: 0;
+            transition: all var(--transition);
         }
         .search-box:focus-within {
-            border-color: rgba(96, 165, 250, 0.3);
-            background: rgba(255, 255, 255, 0.05);
-            box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.06);
+            border-color: rgba(96, 165, 250, 0.25);
+            background: rgba(255, 255, 255, 0.04);
+            box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.05);
         }
         .search-box svg {
             color: var(--text-muted);
@@ -246,76 +346,106 @@
         .search-box input::placeholder {
             color: var(--text-muted);
         }
+
         .date-input-compact {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: rgba(255, 255, 255, 0.025);
+            border: 1px solid rgba(255, 255, 255, 0.05);
             color: var(--text-secondary);
-            padding: 0 10px;
+            padding: 0 12px;
             border-radius: 10px;
             font-size: 13px;
             font-family: inherit;
             height: 40px;
             cursor: pointer;
             outline: none;
-            transition: all 0.3s ease;
+            transition: all var(--transition);
         }
         .date-input-compact:focus {
-            border-color: rgba(96, 165, 250, 0.3);
+            border-color: rgba(96, 165, 250, 0.25);
         }
+        .date-input-compact::-webkit-calendar-picker-indicator {
+            filter: invert(0.6);
+            cursor: pointer;
+        }
+
         .icon-btn {
             width: 40px;
             height: 40px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: rgba(255, 255, 255, 0.025);
+            border: 1px solid rgba(255, 255, 255, 0.05);
             border-radius: 10px;
             color: var(--text-tertiary);
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all var(--transition);
             flex-shrink: 0;
         }
         .icon-btn:hover {
-            background: rgba(255, 255, 255, 0.06);
+            background: rgba(255, 255, 255, 0.05);
             color: var(--text-secondary);
             transform: translateY(-1px);
         }
         .icon-btn:disabled {
-            opacity: 0.5;
+            opacity: 0.4;
             cursor: not-allowed;
             transform: none;
         }
         .icon-btn.primary {
-            background: rgba(96, 165, 250, 0.12);
-            border-color: rgba(96, 165, 250, 0.2);
+            background: var(--color-ai-dim);
+            border-color: rgba(96, 165, 250, 0.15);
             color: var(--color-ai);
         }
         .icon-btn.primary:hover {
             background: rgba(96, 165, 250, 0.2);
         }
         .icon-btn.hot-primary {
-            background: rgba(240, 136, 62, 0.1);
-            border-color: rgba(240, 136, 62, 0.2);
+            background: var(--color-hot-dim);
+            border-color: rgba(240, 136, 62, 0.15);
             color: var(--color-hot);
         }
         .icon-btn.hot-primary:hover {
             background: rgba(240, 136, 62, 0.2);
         }
         .icon-btn.spinning svg {
-            animation: spin 1s linear infinite;
+            animation: spin 0.9s linear infinite;
         }
 
+        /* ===== Keyboard Shortcuts Hint ===== */
+        .shortcuts-hint {
+            display: flex;
+            gap: 12px;
+            justify-content: flex-end;
+            font-size: 11px;
+            color: var(--text-muted);
+            padding: 0 4px 8px 0;
+            letter-spacing: 0.3px;
+            user-select: none;
+        }
+        .shortcuts-hint kbd {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2px 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            font-family: inherit;
+            color: var(--text-tertiary);
+            font-size: 10px;
+            font-weight: 600;
+        }
+
+        /* ===== Featured Card ===== */
         .featured-card {
-            background: linear-gradient(145deg, rgba(96, 165, 250, 0.06) 0%, rgba(192, 132, 252, 0.04) 100%);
-            border: 1px solid rgba(96, 165, 250, 0.12);
+            background: linear-gradient(145deg, rgba(96, 165, 250, 0.05) 0%, rgba(192, 132, 252, 0.025) 100%);
+            border: 1px solid rgba(96, 165, 250, 0.1);
             border-radius: 20px;
-            padding: 24px;
+            padding: 24px 26px;
             margin-bottom: 16px;
             position: relative;
             overflow: hidden;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all var(--transition);
+            backdrop-filter: blur(4px);
         }
         .featured-card::before {
             content: '';
@@ -324,31 +454,47 @@
             left: 0;
             right: 0;
             height: 3px;
-            background: linear-gradient(90deg, var(--color-ai), var(--color-brand-start));
+            background: linear-gradient(90deg, var(--color-ai), var(--color-brand-start), var(--color-brand-end));
+            background-size: 200% 100%;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+        @keyframes shimmer {
+            0%,
+            100% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 0%;
+            }
         }
         .featured-card:hover {
             transform: translateY(-2px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(96, 165, 250, 0.15);
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(96, 165, 250, 0.12);
+            border-color: rgba(96, 165, 250, 0.18);
         }
         .featured-badge {
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            background: rgba(96, 165, 250, 0.12);
+            background: var(--color-ai-dim);
             color: var(--color-ai);
             font-size: 11px;
             font-weight: 600;
-            padding: 4px 12px;
+            padding: 4px 14px 4px 12px;
             border-radius: var(--radius-pill);
-            margin-bottom: 14px;
+            margin-bottom: 12px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
+        .featured-badge svg {
+            width: 14px;
+            height: 14px;
+        }
         .featured-title {
-            font-size: 20px;
+            font-size: 21px;
             font-weight: 700;
-            line-height: 1.4;
-            color: #f3f4f6;
+            line-height: 1.35;
+            color: #f1f3f5;
             margin-bottom: 10px;
         }
         .featured-summary {
@@ -365,45 +511,60 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
         }
         .source-tag {
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            padding: 5px 12px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 5px 14px 5px 12px;
             border-radius: var(--radius-pill);
             font-size: 12px;
             color: var(--text-secondary);
+        }
+        .source-tag .dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--color-ai);
         }
         .featured-date {
             font-size: 12px;
             color: var(--text-muted);
         }
+        .featured-card .read-time {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-left: 4px;
+        }
 
+        /* ===== News Card ===== */
         .news-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-card);
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
             border-radius: var(--radius-card);
-            padding: 20px 20px 20px 24px;
+            padding: 18px 20px 18px 24px;
             position: relative;
             overflow: hidden;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all var(--transition);
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 8px;
+            margin-bottom: 10px;
         }
         .news-card::before {
             content: '';
             position: absolute;
             left: 0;
-            top: 16px;
-            bottom: 16px;
+            top: 14px;
+            bottom: 14px;
             width: 3px;
             border-radius: 0 4px 4px 0;
-            transition: all 0.3s ease;
+            transition: all var(--transition);
         }
         .news-card.ai::before {
             background: linear-gradient(180deg, var(--color-ai), #3b82f6);
@@ -412,58 +573,58 @@
             background: linear-gradient(180deg, var(--color-hot), #ea580c);
         }
         .news-card:hover {
-            background: var(--bg-card-hover);
-            border-color: var(--border-card-hover);
+            background: var(--bg-surface-hover);
+            border-color: var(--border-visible);
             transform: translateY(-1px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            box-shadow: var(--shadow-card);
         }
         .news-card:hover::before {
             width: 4px;
         }
-        .card-header {
+        .news-card .card-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             gap: 12px;
         }
-        .card-tag {
+        .news-card .card-tag {
             display: inline-flex;
             align-items: center;
             gap: 5px;
             font-size: 11px;
             font-weight: 600;
-            padding: 3px 10px;
+            padding: 2px 12px 2px 10px;
             border-radius: var(--radius-pill);
             flex-shrink: 0;
         }
-        .card-tag.ai {
-            background: rgba(96, 165, 250, 0.1);
+        .news-card .card-tag.ai {
+            background: var(--color-ai-dim);
             color: var(--color-ai);
         }
-        .card-tag.hot {
-            background: rgba(240, 136, 62, 0.1);
+        .news-card .card-tag.hot {
+            background: var(--color-hot-dim);
             color: var(--color-hot);
         }
-        .card-date {
+        .news-card .card-date {
             font-size: 12px;
             color: var(--text-muted);
             flex-shrink: 0;
-            margin-top: 2px;
+            margin-top: 1px;
         }
-        .card-title {
+        .news-card .card-title {
             font-size: 16px;
             font-weight: 600;
             line-height: 1.5;
             color: var(--text-primary);
-            transition: color 0.2s ease;
+            transition: color var(--transition);
         }
-        .news-card:hover .card-title {
+        .news-card.ai:hover .card-title {
             color: var(--color-ai);
         }
         .news-card.hot:hover .card-title {
             color: var(--color-hot);
         }
-        .card-summary {
+        .news-card .card-summary {
             font-size: 13px;
             color: var(--text-tertiary);
             line-height: 1.6;
@@ -472,46 +633,102 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
-        .card-footer {
+        .news-card .card-footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 4px;
+            flex-wrap: wrap;
+            gap: 6px;
         }
-        .card-source {
+        .news-card .card-source {
             font-size: 12px;
             color: var(--text-muted);
             display: flex;
             align-items: center;
             gap: 6px;
         }
-        .card-source-dot {
-            width: 5px;
-            height: 5px;
+        .news-card .card-source .dot {
+            width: 4px;
+            height: 4px;
             border-radius: 50%;
             background: #374151;
         }
-        .card-arrow {
+        .news-card .card-arrow {
             color: #374151;
-            transition: all 0.3s ease;
+            transition: all var(--transition);
+            flex-shrink: 0;
         }
         .news-card:hover .card-arrow {
             color: var(--text-tertiary);
             transform: translateX(3px);
         }
+        .news-card .heat-bar-wrap {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+        .news-card .heat-bar {
+            width: 50px;
+            height: 3px;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .news-card .heat-bar .fill {
+            height: 100%;
+            border-radius: 4px;
+            background: linear-gradient(90deg, var(--color-hot), #ea580c);
+            transition: width 0.6s ease;
+        }
+        .news-card .heat-label {
+            font-size: 11px;
+            color: var(--text-muted);
+            font-weight: 500;
+            min-width: 28px;
+            text-align: right;
+        }
+        .news-card .read-time-tag {
+            font-size: 11px;
+            color: var(--text-muted);
+            background: rgba(255, 255, 255, 0.04);
+            padding: 1px 10px;
+            border-radius: 100px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        .news-card .read-status {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            border: 1.5px solid var(--text-muted);
+            flex-shrink: 0;
+            transition: all var(--transition);
+            background: transparent;
+        }
+        .news-card .read-status.read {
+            background: var(--text-muted);
+            border-color: var(--text-muted);
+        }
 
+        /* ===== Load More ===== */
         .load-more {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
-            padding: 24px;
+            gap: 10px;
+            padding: 20px;
             color: var(--text-muted);
             font-size: 13px;
+            cursor: pointer;
+            transition: color var(--transition);
+        }
+        .load-more:hover {
+            color: var(--text-secondary);
         }
         .load-spinner {
-            width: 16px;
-            height: 16px;
+            width: 18px;
+            height: 18px;
             border: 2px solid var(--text-muted);
             border-top-color: var(--color-ai);
             border-radius: 50%;
@@ -519,10 +736,11 @@
         }
         .load-end {
             text-align: center;
-            padding: 24px;
+            padding: 20px;
             color: var(--text-muted);
             font-size: 12px;
-            opacity: 0.7;
+            opacity: 0.6;
+            letter-spacing: 0.5px;
         }
 
         .empty {
@@ -533,27 +751,44 @@
         }
         .empty small {
             color: var(--text-muted);
-            opacity: 0.7;
+            opacity: 0.6;
+            display: block;
+            margin-top: 6px;
         }
 
+        /* ===== Footer ===== */
         .footer {
             text-align: center;
             margin-top: 48px;
             padding-top: 24px;
-            border-top: 1px solid rgba(255, 255, 255, 0.04);
+            border-top: 1px solid rgba(255, 255, 255, 0.03);
         }
         .footer-text {
             font-size: 12px;
             color: #374151;
+            letter-spacing: 0.3px;
         }
 
+        /* ===== Tab Content ===== */
         .tab-content {
             display: none;
+            animation: fade-up 0.3s ease;
         }
         .tab-content.active {
             display: block;
         }
+        @keyframes fade-up {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
+        /* ===== Modal ===== */
         .modal-overlay {
             display: none;
             position: fixed;
@@ -561,46 +796,53 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.75);
+            background: rgba(0, 0, 0, 0.7);
             z-index: 1000;
             justify-content: center;
             align-items: center;
             padding: 20px;
-            backdrop-filter: blur(12px);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
         }
         .modal-overlay.active {
             display: flex;
         }
         .modal-content {
-            background: linear-gradient(180deg, #13131a 0%, #0f0f16 100%);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 20px;
+            background: linear-gradient(180deg, #14141c 0%, #0e0e16 100%);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 24px;
             max-width: 680px;
             width: 100%;
             max-height: 90vh;
             overflow-y: auto;
             position: relative;
-            animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-            box-shadow: 0 40px 80px rgba(0,0,0,0.5);
+            animation: slide-up 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 48px 96px rgba(0, 0, 0, 0.5);
         }
-        @keyframes slideUp {
-            from { transform: translateY(40px) scale(0.96); opacity: 0; }
-            to { transform: translateY(0) scale(1); opacity: 1; }
+        @keyframes slide-up {
+            from {
+                transform: translateY(40px) scale(0.96);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
         }
         .modal-header {
             padding: 28px 28px 0;
             position: sticky;
             top: 0;
-            background: linear-gradient(180deg, #13131a 0%, #13131a 80%, transparent 100%);
+            background: linear-gradient(180deg, #14141c 0%, #14141c 70%, transparent 100%);
             z-index: 10;
-            padding-bottom: 16px;
+            padding-bottom: 14px;
         }
         .modal-close {
             position: absolute;
             top: 16px;
-            right: 20px;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.08);
+            right: 18px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.06);
             color: var(--text-tertiary);
             font-size: 20px;
             cursor: pointer;
@@ -610,23 +852,23 @@
             align-items: center;
             justify-content: center;
             border-radius: 10px;
-            transition: all 0.2s;
+            transition: all var(--transition);
         }
         .modal-close:hover {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.08);
             color: var(--text-primary);
         }
         .modal-meta-row {
             display: flex;
             gap: 12px;
             align-items: center;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             flex-wrap: wrap;
         }
         .modal-title {
             font-size: 1.4rem;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
             padding-right: 40px;
             line-height: 1.4;
             color: var(--text-primary);
@@ -635,9 +877,9 @@
             padding: 0 28px 28px;
         }
         .modal-content-box {
-            background: rgba(0,0,0,0.25);
+            background: rgba(0, 0, 0, 0.25);
             border-radius: 14px;
-            padding: 22px;
+            padding: 20px 22px;
             margin-bottom: 20px;
             border-left: 3px solid var(--color-ai);
         }
@@ -645,39 +887,39 @@
             border-left-color: var(--color-hot);
         }
         .modal-content-box h3 {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: var(--text-tertiary);
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 1.2px;
             font-weight: 600;
         }
         .modal-summary-full {
-            font-size: 1rem;
-            line-height: 1.9;
+            font-size: 0.95rem;
+            line-height: 1.85;
             color: var(--text-secondary);
         }
         .modal-info-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 12px;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
         .modal-info-item {
-            background: rgba(0,0,0,0.2);
-            padding: 14px 18px;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
             border-radius: 12px;
-            border: 1px solid rgba(255,255,255,0.04);
+            border: 1px solid rgba(255, 255, 255, 0.03);
         }
         .modal-info-label {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             color: var(--text-muted);
-            margin-bottom: 4px;
+            margin-bottom: 2px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
         .modal-info-value {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             color: var(--text-primary);
             font-weight: 500;
         }
@@ -687,196 +929,275 @@
             flex-wrap: wrap;
         }
         .modal-actions .btn {
-            padding: 10px 18px;
-            font-size: 14px;
+            padding: 9px 18px;
+            font-size: 13px;
             border-radius: 10px;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.08);
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.06);
             color: var(--text-secondary);
             cursor: pointer;
             font-family: inherit;
-            transition: all 0.2s;
+            transition: all var(--transition);
             font-weight: 500;
         }
         .modal-actions .btn:hover {
-            background: rgba(255,255,255,0.08);
-            border-color: rgba(255,255,255,0.12);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.1);
             color: var(--text-primary);
         }
         .modal-actions .btn-primary {
-            background: rgba(96, 165, 250, 0.12);
-            border-color: rgba(96, 165, 250, 0.2);
+            background: var(--color-ai-dim);
+            border-color: rgba(96, 165, 250, 0.15);
             color: var(--color-ai);
         }
         .modal-actions .btn-primary:hover {
             background: rgba(96, 165, 250, 0.2);
         }
 
+        /* ===== Toast ===== */
         .toast {
             position: fixed;
             bottom: 40px;
             left: 50%;
             transform: translateX(-50%) translateY(100px);
-            background: rgba(19, 19, 26, 0.95);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(16, 16, 24, 0.92);
+            border: 1px solid rgba(255, 255, 255, 0.06);
             color: var(--text-primary);
-            padding: 12px 24px;
-            border-radius: 12px;
+            padding: 12px 28px;
+            border-radius: 14px;
             font-size: 14px;
             z-index: 2000;
             opacity: 0;
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
             pointer-events: none;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.5);
+            font-weight: 500;
         }
         .toast.show {
             transform: translateX(-50%) translateY(0);
             opacity: 1;
         }
 
+        /* ===== Responsive ===== */
         @media (max-width: 640px) {
-            .container { padding: 32px 16px 40px; }
-            .brand { font-size: 32px; }
-            .stats-bar { gap: 16px; font-size: 11px; }
-            .tab-btn { padding: 8px 16px; font-size: 13px; }
-            .toolbar { flex-wrap: wrap; }
-            .search-box { width: 100%; flex: none; }
-            .date-input-compact { flex: 1; }
-            .featured-title { font-size: 17px; }
-            .modal-title { font-size: 1.15rem; }
-            .modal-body { padding: 0 20px 20px; }
-            .modal-header { padding: 20px 20px 0; }
-            .modal-info-grid { grid-template-columns: 1fr; }
+            .container {
+                padding: 28px 14px 40px;
+            }
+            .brand {
+                font-size: 32px;
+            }
+            .stats-bar {
+                gap: 10px;
+                font-size: 11px;
+            }
+            .stat-item {
+                padding: 2px 10px 2px 8px;
+            }
+            .tab-btn {
+                padding: 8px 14px;
+                font-size: 13px;
+            }
+            .tab-btn .badge {
+                display: none;
+            }
+            .toolbar {
+                flex-wrap: wrap;
+            }
+            .search-box {
+                min-width: 120px;
+                flex: 1 1 100%;
+            }
+            .date-input-compact {
+                flex: 1;
+            }
+            .featured-card {
+                padding: 18px 18px;
+            }
+            .featured-title {
+                font-size: 17px;
+            }
+            .news-card {
+                padding: 14px 16px 14px 18px;
+            }
+            .news-card .card-title {
+                font-size: 15px;
+            }
+            .modal-title {
+                font-size: 1.15rem;
+            }
+            .modal-body {
+                padding: 0 18px 18px;
+            }
+            .modal-header {
+                padding: 20px 18px 0;
+            }
+            .modal-info-grid {
+                grid-template-columns: 1fr;
+            }
+            .shortcuts-hint {
+                display: none;
+            }
+            .news-card .heat-bar {
+                width: 32px;
+            }
+            .news-card .read-time-tag {
+                font-size: 10px;
+                padding: 0 8px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .stats-bar {
+                gap: 6px;
+                font-size: 10px;
+            }
+            .stat-item {
+                padding: 2px 6px 2px 4px;
+            }
+            .tab-btn {
+                padding: 6px 10px;
+                font-size: 12px;
+                gap: 4px;
+            }
+            .date-pill {
+                font-size: 12px;
+                padding: 5px 14px 5px 12px;
+            }
         }
     </style>
-<base target="_blank">
+    <base target="_blank" />
 </head>
 <body>
+
+    <!-- ===== Pull Refresh ===== -->
     <div class="pull-refresh" id="pullRefresh">
         <div class="pull-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                <polyline points="7 10 12 15 17 10"/>
-                <line x1="12" y1="15" x2="12" y2="3"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
         </div>
         <span class="pull-text" id="pullText">下拉刷新</span>
     </div>
 
+    <!-- ===== Glow Orbs ===== -->
     <div class="glow-orb glow-orb-1"></div>
     <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
 
-    <div class="container">
+    <!-- ===== Container ===== -->
+    <div class="container" id="app">
+
+        <!-- Header -->
         <div class="header">
             <div class="brand">TechDaily</div>
             <div class="tagline">技术人每日必读资讯 · 每小时自动更新</div>
             <div class="date-pill">
-                <span class="dot"></span>
+                <span class="dot pulse-fast" id="liveDot"></span>
                 <span id="todayDate">加载中...</span>
+                <span style="color:var(--text-muted);font-weight:400;font-size:11px;margin-left:2px;" id="liveStatus">● 实时</span>
             </div>
         </div>
 
+        <!-- Stats -->
         <div class="stats-bar" id="statsBar">
-            <div class="stat-item">
-                <span>📦</span>
-                <span>今日更新</span>
-                <span class="num" id="statTotal">0</span>
-                <span>条</span>
-            </div>
-            <div class="stat-item">
-                <span>🤖</span>
-                <span>AI 资讯</span>
-                <span class="num" id="statAI">0</span>
-                <span>条</span>
-            </div>
-            <div class="stat-item">
-                <span>🔥</span>
-                <span>全网热搜</span>
-                <span class="num" id="statHot">0</span>
-                <span>条</span>
-            </div>
-            <div class="stat-item">
-                <span>🕐</span>
-                <span>最后更新</span>
-                <span class="num" id="statTime">--:--</span>
-            </div>
+            <div class="stat-item"><span class="emoji">📦</span><span class="label">今日更新</span><span class="num" id="statTotal">0</span></div>
+            <div class="stat-item"><span class="emoji">🤖</span><span class="label">AI 资讯</span><span class="num" id="statAI">0</span></div>
+            <div class="stat-item"><span class="emoji">🔥</span><span class="label">全网热搜</span><span class="num" id="statHot">0</span></div>
+            <div class="stat-item"><span class="emoji">🕐</span><span class="label">最后更新</span><span class="num" id="statTime">--:--</span></div>
         </div>
 
+        <!-- Tabs -->
         <div class="tab-control">
             <div class="tab-inner">
-                <button class="tab-btn active" onclick="switchTab('ai', this)">
-                    <span>🤖</span>
-                    <span>AI / 大模型</span>
+                <button class="tab-btn active" data-tab="ai" onclick="switchTab('ai', this)">
+                    🤖 AI / 大模型
+                    <span class="badge" id="badgeAI">0</span>
                 </button>
-                <button class="tab-btn hot" onclick="switchTab('hot', this)">
-                    <span>🔥</span>
-                    <span>轻松一下</span>
+                <button class="tab-btn hot" data-tab="hot" onclick="switchTab('hot', this)">
+                    🔥 轻松一下
+                    <span class="badge" id="badgeHot">0</span>
                 </button>
             </div>
         </div>
 
+        <!-- Shortcuts Hint -->
+        <div class="shortcuts-hint">
+            <span><kbd>J</kbd> 下一条</span>
+            <span><kbd>K</kbd> 上一条</span>
+            <span><kbd>L</kbd> 打开详情</span>
+            <span><kbd>R</kbd> 刷新</span>
+        </div>
+
+        <!-- Tab: AI -->
         <div class="tab-content active" id="tab-ai">
             <div class="toolbar">
                 <div class="search-box">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <path d="m21 21-4.3-4.3"></path>
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
                     </svg>
-                    <input type="text" placeholder="搜索 AI 资讯关键词..." id="searchAI" oninput="onSearchAI()">
+                    <input type="text" placeholder="搜索 AI 资讯..." id="searchAI" oninput="onSearchAI()" />
                 </div>
-                <input type="date" id="datePicker" class="date-input-compact">
+                <input type="date" id="datePicker" class="date-input-compact" />
                 <button class="icon-btn" onclick="setToday()" title="回到今日">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                        <line x1="16" y1="2" x2="16" y2="6"></line>
-                        <line x1="8" y1="2" x2="8" y2="6"></line>
-                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
                     </svg>
                 </button>
-                <button class="icon-btn primary" id="updateBtnAI" onclick="updateData()" title="更新数据">
+                <button class="icon-btn primary" id="updateBtnAI" onclick="updateData()" title="刷新数据">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                        <polyline points="7 10 12 15 17 10"/>
-                        <line x1="12" y1="15" x2="12" y2="3"/>
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
                     </svg>
                 </button>
             </div>
             <div id="content-ai"></div>
         </div>
 
+        <!-- Tab: Hot -->
         <div class="tab-content" id="tab-hot">
             <div class="toolbar">
                 <div class="search-box">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <path d="m21 21-4.3-4.3"></path>
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
                     </svg>
-                    <input type="text" placeholder="搜索热搜关键词..." id="searchHot" oninput="onSearchHot()">
+                    <input type="text" placeholder="搜索热搜..." id="searchHot" oninput="onSearchHot()" />
                 </div>
-                <button class="icon-btn hot-primary" id="updateBtnHot" onclick="updateData()" title="更新数据">
+                <button class="icon-btn hot-primary" id="updateBtnHot" onclick="updateData()" title="刷新数据">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                        <polyline points="7 10 12 15 17 10"/>
-                        <line x1="12" y1="15" x2="12" y2="3"/>
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
                     </svg>
                 </button>
             </div>
             <div id="content-hot"></div>
         </div>
 
+        <!-- Footer -->
         <div class="footer">
             <div class="footer-text">TechDaily · 为技术人精选每一条资讯</div>
         </div>
     </div>
 
+    <!-- ===== Modal ===== -->
     <div class="modal-overlay" id="detailModal" onclick="closeModal(event)">
         <div class="modal-content" onclick="event.stopPropagation()">
             <div class="modal-header">
                 <button class="modal-close" onclick="closeModal()">&times;</button>
                 <div class="modal-meta-row">
-                    <span class="card-tag" id="modalTag" style="font-size:12px;padding:4px 12px;">分类</span>
-                    <span style="color: var(--text-muted); font-size: 0.85rem;" id="modalDate">📅 日期</span>
+                    <span class="card-tag" id="modalTag" style="font-size:12px;padding:4px 14px;">分类</span>
+                    <span style="color:var(--text-muted);font-size:0.85rem;" id="modalDate">📅 日期</span>
+                    <span style="color:var(--text-muted);font-size:0.85rem;" id="modalReadTime">⏱ 1 min read</span>
                 </div>
                 <div class="modal-title" id="modalTitle">标题</div>
             </div>
@@ -898,19 +1219,27 @@
                 <div class="modal-actions">
                     <button class="btn" onclick="copyLink()">📋 复制链接</button>
                     <button class="btn btn-primary" onclick="openSource()">↗ 阅读原文</button>
+                    <button class="btn" onclick="toggleReadStatus()">👁 标记已读</button>
                     <button class="btn" onclick="closeModal()">关闭</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- ===== Toast ===== -->
     <div class="toast" id="toast"></div>
 
     <script>
-        // ==================== 配置 ====================
+        // ========================================================================
+        //  CONFIG
+        // ========================================================================
         const PAGE_SIZE = 20;
+        const STORAGE_KEY_READ = 'techdaily_read_ids';
+        const STORAGE_KEY_FAV = 'techdaily_fav_ids';
 
-        // ==================== 状态 ====================
+        // ========================================================================
+        //  STATE
+        // ========================================================================
         let articles = [];
         let aiAll = [];
         let hotAll = [];
@@ -926,66 +1255,130 @@
         let isRefreshing = false;
         let isLoadingMore = false;
         let lastArticleIds = new Set();
+        let readIds = new Set();
+        let cardElements = [];
 
-        // ==================== 工具函数 ====================
+        // ========================================================================
+        //  UTILITY
+        // ========================================================================
         function escapeHtml(text) {
             if (!text) return '';
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
+            const d = document.createElement('div');
+            d.textContent = text;
+            return d.innerHTML;
         }
 
         function getBeijingDate() {
             const now = new Date();
-            const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
-            return new Date(utc + (3600000 * 8));
+            const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+            return new Date(utc + 3600000 * 8);
         }
 
         function getTodayStr() {
             const d = getBeijingDate();
-            const year = d.getFullYear();
-            const month = String(d.getMonth() + 1).padStart(2, '0');
-            const day = String(d.getDate()).padStart(2, '0');
-            return `${year}-${month}-${day}`;
+            return d.getFullYear() + '-' +
+                String(d.getMonth() + 1).padStart(2, '0') + '-' +
+                String(d.getDate()).padStart(2, '0');
         }
 
         function getTodayDisplay() {
             const d = getBeijingDate();
             const weekdays = ['日', '一', '二', '三', '四', '五', '六'];
-            const month = d.getMonth() + 1;
-            const day = d.getDate();
-            const week = weekdays[d.getDay()];
-            return `今天 ${month}月${day}日 星期${week}`;
+            return `今天 ${d.getMonth()+1}月${d.getDate()}日 星期${weekdays[d.getDay()]}`;
         }
 
         function formatDate(dateStr) {
             if (!dateStr || dateStr === 'undefined' || dateStr === 'null') return '日期未知';
             const today = getTodayStr();
-            const yesterday = new Date(getBeijingDate().getTime() - 86400000);
-            const yestStr = `${yesterday.getFullYear()}-${String(yesterday.getMonth()+1).padStart(2,'0')}-${String(yesterday.getDate()).padStart(2,'0')}`;
+            const y = getBeijingDate();
+            const yest = new Date(y.getTime() - 86400000);
+            const yestStr = yest.getFullYear() + '-' +
+                String(yest.getMonth() + 1).padStart(2, '0') + '-' +
+                String(yest.getDate()).padStart(2, '0');
             if (dateStr === today) return '今天';
             if (dateStr === yestStr) return '昨天';
             return dateStr;
         }
 
-        // ==================== 数据加载 ====================
+        function estimateReadTime(text) {
+            if (!text) return 1;
+            const words = text.replace(/\s/g, '').length;
+            return Math.max(1, Math.round(words / 120));
+        }
+
+        function generateHeat(id) {
+            // deterministic pseudo-heat based on id
+            const seed = (id * 9301 + 49297) % 233280;
+            return Math.round(30 + (seed / 233280) * 70);
+        }
+
+        function loadReadIds() {
+            try {
+                const raw = localStorage.getItem(STORAGE_KEY_READ);
+                if (raw) readIds = new Set(JSON.parse(raw));
+            } catch (_) { readIds = new Set(); }
+        }
+
+        function saveReadIds() {
+            try {
+                localStorage.setItem(STORAGE_KEY_READ, JSON.stringify([...readIds]));
+            } catch (_) {}
+        }
+
+        function markAsRead(id) {
+            readIds.add(id);
+            saveReadIds();
+            updateReadStatusUI();
+        }
+
+        function toggleReadStatus() {
+            if (currentModalId) {
+                const id = currentModalId;
+                if (readIds.has(id)) {
+                    readIds.delete(id);
+                } else {
+                    readIds.add(id);
+                }
+                saveReadIds();
+                updateReadStatusUI();
+                renderAITab();
+                renderHotTab();
+                showToast(readIds.has(id) ? '已标记为已读' : '已取消已读标记');
+            }
+        }
+
+        function updateReadStatusUI() {
+            document.querySelectorAll('.news-card, .featured-card').forEach(el => {
+                const id = parseInt(el.dataset.articleId);
+                if (!id) return;
+                const dot = el.querySelector('.read-status');
+                if (dot) {
+                    dot.classList.toggle('read', readIds.has(id));
+                }
+            });
+        }
+
+        // ========================================================================
+        //  DATA LOADING
+        // ========================================================================
         async function loadArticles(force = false) {
             try {
                 const url = 'data/news.json' + (force ? '?t=' + Date.now() : '');
-                const response = await fetch(url);
-                const data = await response.json();
+                const resp = await fetch(url);
+                if (!resp.ok) throw new Error('HTTP ' + resp.status);
+                const data = await resp.json();
 
                 const newIds = new Set(data.map(a => a.id));
-                const hasNewData = data.length > articles.length || 
-                                  [...newIds].some(id => !lastArticleIds.has(id));
+                const hasNew = data.length > articles.length ||
+                    [...newIds].some(id => !lastArticleIds.has(id));
 
                 articles = data;
                 lastArticleIds = newIds;
 
                 aiAll = articles.filter(a => a.category === 'ai')
-                                 .sort((a, b) => b.date.localeCompare(a.date) || b.id - a.id);
+                    .sort((a, b) => b.date.localeCompare(a.date) || b.id - a.id);
                 hotAll = articles.filter(a => a.category === 'hot')
-                                  .sort((a, b) => b.date.localeCompare(a.date) || b.id - a.id);
+                    .sort((a, b) => b.date.localeCompare(a.date) || b.id - a.id);
 
                 aiPage = 0;
                 hotPage = 0;
@@ -994,13 +1387,17 @@
                 renderAITab();
                 renderHotTab();
 
-                return hasNewData;
+                // update badges
+                document.getElementById('badgeAI').textContent = aiAll.length;
+                document.getElementById('badgeHot').textContent = hotAll.length;
+
+                return hasNew;
             } catch (err) {
                 console.error('加载数据失败:', err);
                 if (articles.length === 0) {
-                    document.getElementById('content-ai').innerHTML = 
+                    document.getElementById('content-ai').innerHTML =
                         '<div class="empty">数据加载失败，请稍后刷新重试</div>';
-                    document.getElementById('content-hot').innerHTML = 
+                    document.getElementById('content-hot').innerHTML =
                         '<div class="empty">数据加载失败，请稍后刷新重试</div>';
                 }
                 throw err;
@@ -1014,61 +1411,74 @@
             document.getElementById('statAI').textContent = todayArticles.filter(a => a.category === 'ai').length;
             document.getElementById('statHot').textContent = todayArticles.filter(a => a.category === 'hot').length;
             const now = getBeijingDate();
-            document.getElementById('statTime').textContent = 
-                `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
+            document.getElementById('statTime').textContent =
+                String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
         }
 
-        // ==================== 筛选 ====================
+        // ========================================================================
+        //  FILTERING
+        // ========================================================================
         function getAIFiltered() {
             let filtered = [...aiAll];
             const today = getTodayStr();
-
             if (currentDate === today) {
                 const todayArticles = filtered.filter(a => a.date === today);
                 if (todayArticles.length > 0) filtered = todayArticles;
             } else {
                 filtered = filtered.filter(a => a.date === currentDate);
             }
-
             if (aiSearch) {
-                filtered = filtered.filter(a => 
-                    (a.title && a.title.toLowerCase().includes(aiSearch)) ||
-                    (a.summary && a.summary.toLowerCase().includes(aiSearch))
+                const s = aiSearch.toLowerCase();
+                filtered = filtered.filter(a =>
+                    (a.title && a.title.toLowerCase().includes(s)) ||
+                    (a.summary && a.summary.toLowerCase().includes(s))
                 );
             }
-
             return filtered;
         }
 
         function getHotFiltered() {
             let filtered = [...hotAll];
-
             if (hotSearch) {
-                filtered = filtered.filter(a => 
-                    (a.title && a.title.toLowerCase().includes(hotSearch)) ||
-                    (a.summary && a.summary.toLowerCase().includes(hotSearch))
+                const s = hotSearch.toLowerCase();
+                filtered = filtered.filter(a =>
+                    (a.title && a.title.toLowerCase().includes(s)) ||
+                    (a.summary && a.summary.toLowerCase().includes(s))
                 );
             }
-
             return filtered;
         }
 
-        // ==================== 渲染 ====================
+        // ========================================================================
+        //  RENDER
+        // ========================================================================
         function renderFeaturedCard(article) {
+            const heat = article.heat || generateHeat(article.id);
+            const readTime = article.readTime || estimateReadTime(article.summary || article.title || '');
+            const isRead = readIds.has(article.id);
+            const summary = article.summary && article.summary.trim() && article.summary !== '......' ?
+                article.summary :
+                (article.title ? article.title.slice(0, 60) + '…' : '点击查看详情');
+
             return `
-                <div class="featured-card" onclick="openDetail(${article.id})">
+                <div class="featured-card" data-article-id="${article.id}" onclick="openDetail(${article.id})">
                     <div class="featured-badge">
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         今日头条
                     </div>
                     <div class="featured-title">${escapeHtml(article.title || '无标题')}</div>
-                    <div class="featured-summary">${escapeHtml(article.summary || '暂无摘要')}</div>
+                    <div class="featured-summary">${escapeHtml(summary)}</div>
                     <div class="featured-meta">
                         <span class="source-tag">
-                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                            <span class="dot"></span>
                             ${escapeHtml(article.source || '未知')}
+                            <span class="read-time">· ${readTime} min read</span>
                         </span>
-                        <span class="featured-date">${formatDate(article.date)}</span>
+                        <span style="display:flex;align-items:center;gap:10px;">
+                            <span class="heat-label" style="color:var(--text-muted);font-size:12px;">🔥 ${heat}</span>
+                            <span class="featured-date">${formatDate(article.date)}</span>
+                            <span class="read-status ${isRead ? 'read' : ''}" style="display:inline-block;"></span>
+                        </span>
                     </div>
                 </div>
             `;
@@ -1077,17 +1487,38 @@
         function renderNormalCard(article) {
             const catClass = article.category === 'hot' ? 'hot' : 'ai';
             const catName = article.categoryName || (article.category === 'hot' ? '🔥 热搜' : '🤖 AI');
+            const heat = article.heat || generateHeat(article.id);
+            const readTime = article.readTime || estimateReadTime(article.summary || article.title || '');
+            const isRead = readIds.has(article.id);
+            const summary = article.summary && article.summary.trim() && article.summary !== '......' ?
+                article.summary :
+                (article.title ? article.title.slice(0, 50) + '…' : '点击查看详情');
+
+            // heat bar width (30-95%)
+            const heatPct = Math.min(95, Math.max(30, 30 + (heat / 100) * 65));
+
             return `
-                <div class="news-card ${catClass}" onclick="openDetail(${article.id})">
+                <div class="news-card ${catClass}" data-article-id="${article.id}" onclick="openDetail(${article.id})">
                     <div class="card-header">
                         <span class="card-tag ${catClass}">${catName}</span>
-                        <span class="card-date">${formatDate(article.date)}</span>
+                        <span style="display:flex;align-items:center;gap:8px;">
+                            <span class="read-time-tag">${readTime} min</span>
+                            <span class="card-date">${formatDate(article.date)}</span>
+                            <span class="read-status ${isRead ? 'read' : ''}"></span>
+                        </span>
                     </div>
                     <div class="card-title">${escapeHtml(article.title || '无标题')}</div>
-                    <div class="card-summary">${escapeHtml(article.summary || '暂无摘要')}</div>
+                    <div class="card-summary">${escapeHtml(summary)}</div>
                     <div class="card-footer">
-                        <span class="card-source"><span class="card-source-dot"></span>${escapeHtml(article.source || '未知')}</span>
-                        <svg class="card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        <span class="card-source">
+                            <span class="dot"></span>
+                            ${escapeHtml(article.source || '未知')}
+                        </span>
+                        <span class="heat-bar-wrap">
+                            <span class="heat-label">🔥 ${heat}</span>
+                            <span class="heat-bar"><span class="fill" style="width:${heatPct}%;"></span></span>
+                            <svg class="card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </span>
                     </div>
                 </div>
             `;
@@ -1099,7 +1530,7 @@
             const pageData = aiDisplayed.slice(0, end);
 
             if (pageData.length === 0) {
-                container.innerHTML = '<div class="empty">暂无数据<br><small>每小时自动更新中...</small></div>';
+                container.innerHTML = '<div class="empty">暂无数据<br><small>每小时自动更新中…</small></div>';
                 return;
             }
 
@@ -1109,10 +1540,14 @@
             }
 
             if (aiDisplayed.length > PAGE_SIZE) {
-                html += '<div class="load-more" id="aiLoadMore"><div class="load-spinner"></div><span>加载更多...</span></div>';
+                html += `<div class="load-more" id="aiLoadMore" onclick="appendAIPage()">
+                            <div class="load-spinner"></div>
+                            <span>加载更多…</span>
+                        </div>`;
             }
 
             container.innerHTML = html;
+            updateReadStatusUI();
         }
 
         function appendAIPage() {
@@ -1126,8 +1561,8 @@
             const pageData = aiDisplayed.slice(start, end);
 
             const container = document.getElementById('content-ai');
-            const oldLoadMore = document.getElementById('aiLoadMore');
-            if (oldLoadMore) oldLoadMore.remove();
+            const old = document.getElementById('aiLoadMore');
+            if (old) old.remove();
 
             let html = '';
             for (let i = 0; i < pageData.length; i++) {
@@ -1135,7 +1570,10 @@
             }
 
             if (end < aiDisplayed.length) {
-                html += '<div class="load-more" id="aiLoadMore"><div class="load-spinner"></div><span>加载更多...</span></div>';
+                html += `<div class="load-more" id="aiLoadMore" onclick="appendAIPage()">
+                            <div class="load-spinner"></div>
+                            <span>加载更多…</span>
+                        </div>`;
             } else {
                 html += '<div class="load-end">— 已加载全部 —</div>';
             }
@@ -1143,6 +1581,7 @@
             container.insertAdjacentHTML('beforeend', html);
             aiPage = nextPage;
             isLoadingMore = false;
+            updateReadStatusUI();
         }
 
         function renderHotPage() {
@@ -1151,7 +1590,7 @@
             const pageData = hotDisplayed.slice(0, end);
 
             if (pageData.length === 0) {
-                container.innerHTML = '<div class="empty">暂无数据<br><small>每小时自动更新中...</small></div>';
+                container.innerHTML = '<div class="empty">暂无数据<br><small>每小时自动更新中…</small></div>';
                 return;
             }
 
@@ -1161,10 +1600,14 @@
             }
 
             if (hotDisplayed.length > PAGE_SIZE) {
-                html += '<div class="load-more" id="hotLoadMore"><div class="load-spinner"></div><span>加载更多...</span></div>';
+                html += `<div class="load-more" id="hotLoadMore" onclick="appendHotPage()">
+                            <div class="load-spinner"></div>
+                            <span>加载更多…</span>
+                        </div>`;
             }
 
             container.innerHTML = html;
+            updateReadStatusUI();
         }
 
         function appendHotPage() {
@@ -1178,8 +1621,8 @@
             const pageData = hotDisplayed.slice(start, end);
 
             const container = document.getElementById('content-hot');
-            const oldLoadMore = document.getElementById('hotLoadMore');
-            if (oldLoadMore) oldLoadMore.remove();
+            const old = document.getElementById('hotLoadMore');
+            if (old) old.remove();
 
             let html = '';
             for (let i = 0; i < pageData.length; i++) {
@@ -1187,7 +1630,10 @@
             }
 
             if (end < hotDisplayed.length) {
-                html += '<div class="load-more" id="hotLoadMore"><div class="load-spinner"></div><span>加载更多...</span></div>';
+                html += `<div class="load-more" id="hotLoadMore" onclick="appendHotPage()">
+                            <div class="load-spinner"></div>
+                            <span>加载更多…</span>
+                        </div>`;
             } else {
                 html += '<div class="load-end">— 已加载全部 —</div>';
             }
@@ -1195,6 +1641,7 @@
             container.insertAdjacentHTML('beforeend', html);
             hotPage = nextPage;
             isLoadingMore = false;
+            updateReadStatusUI();
         }
 
         function renderAITab() {
@@ -1209,13 +1656,19 @@
             renderHotPage();
         }
 
-        // ==================== 交互 ====================
+        // ========================================================================
+        //  INTERACTIONS
+        // ========================================================================
         function switchTab(tab, btn) {
             currentTab = tab;
             document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
             document.getElementById('tab-' + tab).classList.add('active');
+
+            // re-render if needed
+            if (tab === 'ai') renderAITab();
+            else renderHotTab();
         }
 
         function onSearchAI() {
@@ -1240,20 +1693,105 @@
             renderAITab();
         });
 
-        // ==================== 滚动加载 ====================
+        // ========================================================================
+        //  INFINITE SCROLL
+        // ========================================================================
+        let scrollLock = false;
         window.addEventListener('scroll', () => {
-            if (isLoadingMore) return;
-            const scrollTop = window.scrollY || document.documentElement.scrollTop;
-            const clientHeight = window.innerHeight;
-            const scrollHeight = document.documentElement.scrollHeight;
-
-            if (scrollTop + clientHeight >= scrollHeight - 150) {
+            if (scrollLock || isLoadingMore) return;
+            const st = window.scrollY || document.documentElement.scrollTop;
+            const ch = window.innerHeight;
+            const sh = document.documentElement.scrollHeight;
+            if (st + ch >= sh - 120) {
+                scrollLock = true;
+                setTimeout(() => { scrollLock = false; }, 300);
                 if (currentTab === 'ai') appendAIPage();
                 else if (currentTab === 'hot') appendHotPage();
             }
         });
 
-        // ==================== 下拉刷新 ====================
+        // ========================================================================
+        //  KEYBOARD SHORTCUTS
+        // ========================================================================
+        let focusedCardIndex = -1;
+
+        function getVisibleCards() {
+            const container = currentTab === 'ai' ?
+                document.getElementById('content-ai') :
+                document.getElementById('content-hot');
+            return container ? container.querySelectorAll('.news-card, .featured-card') : [];
+        }
+
+        function focusCard(index) {
+            const cards = getVisibleCards();
+            if (cards.length === 0) return;
+            if (index < 0) index = 0;
+            if (index >= cards.length) index = cards.length - 1;
+            focusedCardIndex = index;
+            cards.forEach((c, i) => {
+                c.style.outline = i === index ? '2px solid rgba(96,165,250,0.4)' : '';
+                c.style.outlineOffset = i === index ? '2px' : '';
+            });
+            if (cards[index]) {
+                cards[index].scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            const modal = document.getElementById('detailModal');
+            const isModalOpen = modal.classList.contains('active');
+
+            // ESC: close modal
+            if (e.key === 'Escape') {
+                if (isModalOpen) { closeModal(); return; }
+            }
+
+            // Shortcuts only when modal is closed
+            if (isModalOpen) return;
+
+            const target = e.target;
+            if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA') return;
+
+            const cards = getVisibleCards();
+
+            switch (e.key.toLowerCase()) {
+                case 'j':
+                    e.preventDefault();
+                    if (cards.length === 0) return;
+                    if (focusedCardIndex < 0) focusedCardIndex = -1;
+                    focusCard(focusedCardIndex + 1);
+                    break;
+                case 'k':
+                    e.preventDefault();
+                    if (cards.length === 0) return;
+                    if (focusedCardIndex < 0) focusedCardIndex = cards.length;
+                    focusCard(focusedCardIndex - 1);
+                    break;
+                case 'l':
+                    e.preventDefault();
+                    if (focusedCardIndex >= 0 && focusedCardIndex < cards.length) {
+                        const el = cards[focusedCardIndex];
+                        const id = parseInt(el.dataset.articleId);
+                        if (id) openDetail(id);
+                    }
+                    break;
+                case 'r':
+                    e.preventDefault();
+                    updateData();
+                    break;
+            }
+        });
+
+        // Click on body removes focus outline
+        document.addEventListener('click', () => {
+            const cards = getVisibleCards();
+            cards.forEach(c => { c.style.outline = ''; });
+            focusedCardIndex = -1;
+        });
+
+        // ========================================================================
+        //  PULL REFRESH
+        // ========================================================================
         const pullRefresh = document.getElementById('pullRefresh');
         const pullText = document.getElementById('pullText');
         let pullStartY = 0;
@@ -1271,28 +1809,22 @@
             if (diff > 0) {
                 pullDistance = diff;
                 const offset = Math.min(diff * 0.4, 100);
-                pullRefresh.style.transform = `translateY(${offset - 60}px)`;
+                pullRefresh.style.transform = `translateY(${offset - 56}px)`;
                 pullRefresh.style.opacity = Math.min(offset / 60, 1);
-
-                if (offset >= PULL_THRESHOLD) {
-                    pullText.textContent = '松开刷新';
-                } else {
-                    pullText.textContent = '下拉刷新';
-                }
+                pullText.textContent = offset >= PULL_THRESHOLD ? '松开刷新' : '下拉刷新';
             }
         }, { passive: true });
 
         document.addEventListener('touchend', () => {
             if (isRefreshing) return;
             const offset = Math.min(pullDistance * 0.4, 100);
-
             if (offset >= PULL_THRESHOLD) {
                 pullRefresh.style.transform = 'translateY(0)';
-                pullText.textContent = '刷新中...';
+                pullText.textContent = '刷新中…';
                 pullRefresh.classList.add('refreshing');
                 doRefresh();
             } else {
-                pullRefresh.style.transform = 'translateY(-60px)';
+                pullRefresh.style.transform = 'translateY(-56px)';
                 pullRefresh.style.opacity = '0';
             }
             pullDistance = 0;
@@ -1301,88 +1833,83 @@
         async function doRefresh() {
             if (isRefreshing) return;
             isRefreshing = true;
-
             try {
                 const hasNew = await loadArticles(true);
                 showToast(hasNew ? '已更新最新数据' : '已是最新数据');
-            } catch (err) {
+                updateReadStatusUI();
+            } catch (_) {
                 showToast('刷新失败，请重试');
             } finally {
                 isRefreshing = false;
-                pullRefresh.style.transform = 'translateY(-60px)';
+                pullRefresh.style.transform = 'translateY(-56px)';
                 pullRefresh.style.opacity = '0';
                 pullRefresh.classList.remove('refreshing');
                 pullText.textContent = '下拉刷新';
             }
         }
 
-        // ==================== 更新按钮 ====================
+        // ========================================================================
+        //  UPDATE DATA (manual)
+        // ========================================================================
         async function updateData() {
             if (isRefreshing) return;
             isRefreshing = true;
-
-            const visibleBtn = currentTab === 'ai' 
-                ? document.getElementById('updateBtnAI') 
-                : document.getElementById('updateBtnHot');
-
-            if (visibleBtn) {
-                visibleBtn.classList.add('spinning');
-                visibleBtn.disabled = true;
-            }
+            const btn = currentTab === 'ai' ?
+                document.getElementById('updateBtnAI') :
+                document.getElementById('updateBtnHot');
+            if (btn) { btn.classList.add('spinning');
+                btn.disabled = true; }
 
             try {
-                // 强制重新加载数据（适用于 GitHub Pages 静态站）
                 const hasNew = await loadArticles(true);
-                showToast(hasNew ? '已获取最新数据' : '暂无新数据，爬虫每小时自动运行');
-
-                // 如果你有触发爬虫的 API，取消下面注释并替换 URL
-                /*
-                await fetch('https://your-api.com/trigger-crawl', { 
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' }
-                });
-                await new Promise(r => setTimeout(r, 5000));
-                await loadArticles(true);
-                showToast('爬取完成，数据已更新');
-                */
-            } catch (err) {
+                showToast(hasNew ? '已获取最新数据' : '暂无新数据');
+                updateReadStatusUI();
+            } catch (_) {
                 showToast('更新失败，请稍后重试');
             } finally {
                 isRefreshing = false;
-                if (visibleBtn) {
-                    visibleBtn.classList.remove('spinning');
-                    visibleBtn.disabled = false;
-                }
+                if (btn) { btn.classList.remove('spinning');
+                    btn.disabled = false; }
             }
         }
 
-        // ==================== 详情弹窗 ====================
+        // ========================================================================
+        //  MODAL
+        // ========================================================================
         function openDetail(id) {
             const article = articles.find(a => a.id === id);
             if (!article) return;
-
             currentModalId = id;
 
             const tagEl = document.getElementById('modalTag');
-            tagEl.textContent = article.categoryName || '综合';
+            tagEl.textContent = article.categoryName || (article.category === 'hot' ? '🔥 热搜' : '🤖 AI');
             tagEl.className = 'card-tag ' + (article.category || 'ai');
             if (article.category === 'hot') {
-                tagEl.style.cssText = 'background:rgba(240,136,62,0.1);color:var(--color-hot);';
+                tagEl.style.cssText = 'background:var(--color-hot-dim);color:var(--color-hot);';
             } else {
-                tagEl.style.cssText = 'background:rgba(96,165,250,0.1);color:var(--color-ai);';
+                tagEl.style.cssText = 'background:var(--color-ai-dim);color:var(--color-ai);';
             }
 
+            const readTime = article.readTime || estimateReadTime(article.summary || article.title || '');
             document.getElementById('modalDate').textContent = '📅 ' + formatDate(article.date);
+            document.getElementById('modalReadTime').textContent = '⏱ ' + readTime + ' min read';
             document.getElementById('modalTitle').textContent = article.title || '无标题';
             document.getElementById('modalSource').textContent = article.source || '未知来源';
             document.getElementById('modalCategory').textContent = article.categoryName || '综合';
-            document.getElementById('modalSummary').textContent = article.summary || '暂无详细内容';
+
+            const summary = article.summary && article.summary.trim() && article.summary !== '......' ?
+                article.summary :
+                (article.title ? article.title + ' — 点击原文查看完整内容' : '暂无详细内容');
+            document.getElementById('modalSummary').textContent = summary;
 
             const box = document.getElementById('modalContentBox');
             box.className = 'modal-content-box ' + (article.category === 'hot' ? 'hot-border' : '');
 
             document.getElementById('detailModal').classList.add('active');
             document.body.style.overflow = 'hidden';
+
+            // mark as read when opened
+            markAsRead(id);
         }
 
         function closeModal(event) {
@@ -1390,6 +1917,7 @@
             document.getElementById('detailModal').classList.remove('active');
             document.body.style.overflow = '';
             currentModalId = null;
+            updateReadStatusUI();
         }
 
         function openSource() {
@@ -1404,33 +1932,61 @@
         function copyLink() {
             const article = articles.find(a => a.id === currentModalId);
             if (article && article.url) {
-                navigator.clipboard.writeText(article.url).then(() => {
-                    showToast('链接已复制到剪贴板');
-                }).catch(() => {
-                    showToast('复制失败，请手动复制');
-                });
+                navigator.clipboard.writeText(article.url)
+                    .then(() => showToast('链接已复制'))
+                    .catch(() => showToast('复制失败，请手动复制'));
             } else {
-                showToast('暂无链接可复制');
+                showToast('暂无链接');
             }
         }
 
-        // ==================== 提示条 ====================
+        // ========================================================================
+        //  TOAST
+        // ========================================================================
+        let toastTimer = null;
+
         function showToast(msg) {
             const toast = document.getElementById('toast');
             toast.textContent = msg;
             toast.classList.add('show');
-            setTimeout(() => toast.classList.remove('show'), 2000);
+            if (toastTimer) clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => toast.classList.remove('show'), 2200);
         }
 
-        // ESC 关闭弹窗
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeModal();
-        });
+        // ========================================================================
+        //  LIVE STATUS
+        // ========================================================================
+        function updateLiveStatus() {
+            const dot = document.getElementById('liveDot');
+            const status = document.getElementById('liveStatus');
+            if (dot) {
+                dot.style.animation = 'none';
+                void dot.offsetHeight;
+                dot.style.animation = 'pulse-dot 1.2s infinite';
+            }
+            const now = getBeijingDate();
+            const h = String(now.getHours()).padStart(2, '0');
+            const m = String(now.getMinutes()).padStart(2, '0');
+            if (status) status.textContent = '● ' + h + ':' + m + ' 实时';
+        }
 
-        // ==================== 页面初始化 ====================
-        document.getElementById('datePicker').value = getTodayStr();
-        document.getElementById('todayDate').textContent = getTodayDisplay();
-        loadArticles();
+        setInterval(updateLiveStatus, 10000);
+
+        // ========================================================================
+        //  INIT
+        // ========================================================================
+        (async function init() {
+            loadReadIds();
+            document.getElementById('datePicker').value = getTodayStr();
+            document.getElementById('todayDate').textContent = getTodayDisplay();
+            updateLiveStatus();
+            try {
+                await loadArticles(false);
+                updateReadStatusUI();
+            } catch (_) {
+                // already handled in loadArticles
+            }
+        })();
     </script>
 </body>
 </html>
