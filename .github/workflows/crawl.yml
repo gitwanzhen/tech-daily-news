@@ -31,6 +31,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add data/news.json
+          # 添加 data 目录下所有变更（包括日期文件、索引文件等）
+          git add data/
           git diff --cached --quiet || git commit -m "Update news $(date +%Y-%m-%d-%H:%M)"
           git push origin HEAD:${{ github.ref_name }}
