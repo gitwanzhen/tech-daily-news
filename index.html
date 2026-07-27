@@ -278,6 +278,11 @@
             padding:20px;
             color:var(--text-muted);
             font-size:13px;
+            cursor:pointer;
+            transition:color var(--transition);
+        }
+        .loading-more:hover {
+            color:var(--text-secondary);
         }
         .loading-more .spinner {
             display:inline-block;
@@ -419,6 +424,7 @@
         let isRefreshing = false;
         let isLoadingMore = false;
         let hasMoreAI = true, hasMoreHot = true;
+        let observer = null;
 
         const GEEK_CODES = [
             "Llama 4 的 200 万 token 上下文相当于让 AI 一次性读完《三体》三部曲还多出 40% 容量",
@@ -592,9 +598,9 @@
                     html += renderCard(aiPageData[i], featured, i);
                 }
                 if (hasMoreAI) {
-                    html += `<div class="loading-more" id="aiLoadingMore"><span class="spinner"></span>加载更多...</div>`;
+                    html += `<div class="loading-more" id="aiLoadingMore" data-tab="ai"><span class="spinner"></span>加载更多...</div>`;
                 } else {
-                    html += `<div class="loading-more" style="opacity:0.5;">— 已加载全部 —</div>`;
+                    html += `<div class="loading-more" style="opacity:0.5;cursor:default;">— 已加载全部 —</div>`;
                 }
                 containerAI.innerHTML = html;
             }
@@ -608,9 +614,9 @@
                     html += renderCard(hotPageData[i], i===0, i);
                 }
                 if (hasMoreHot) {
-                    html += `<div class="loading-more" id="hotLoadingMore"><span class="spinner"></span>加载更多...</div>`;
+                    html += `<div class="loading-more" id="hotLoadingMore" data-tab="hot"><span class="spinner"></span>加载更多...</div>`;
                 } else {
-                    html += `<div class="loading-more" style="opacity:0.5;">— 已加载全部 —</div>`;
+                    html += `<div class="loading-more" style="opacity:0.5;cursor:default;">— 已加载全部 —</div>`;
                 }
                 containerHot.innerHTML = html;
             }
@@ -632,45 +638,96 @@
             // 重置加载状态
             isLoadingMore = false;
 
-            // 立即检查是否需要加载更多（当内容不足一屏时）
+            // 重新设置观察器（延迟确保 DOM 渲染完成）
             setTimeout(() => {
-                checkAndLoadMore();
-            }, 100);
+                setupObserver();
+                // 额外检查：如果加载更多元素已经在视口中，手动触发
+                checkAndLoadIfVisible();
+            }, 150);
         }
 
         // ========================================================================
-        //  LOAD MORE (核心修复)
+        //  LOAD MORE 核心逻辑
         // ========================================================================
-        function checkAndLoadMore() {
+        function setupObserver() {
+            if (observer) {
+                observer.disconnect();
+                observer = null;
+            }
+
+            const loadMoreEl = currentTab === 'ai' ?
+                document.getElementById('aiLoadingMore') :
+                document.getElementById('hotLoadingMore');
+
+            if (!loadMoreEl) return;
+            if (loadMoreEl.style.opacity === '0.5') return; // 已全部加载
+
+            observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !isLoadingMore) {
+                        triggerLoadMore();
+                    }
+                });
+            }, {
+                rootMargin: '0px 0px 150px 0px' // 提前 150px 触发
+            });
+
+            observer.observe(loadMoreEl);
+        }
+
+        function checkAndLoadIfVisible() {
+            const loadMoreEl = currentTab === 'ai' ?
+                document.getElementById('aiLoadingMore') :
+                document.getElementById('hotLoadingMore');
+
+            if (!loadMoreEl) return;
+            if (loadMoreEl.style.opacity === '0.5') return;
+
+            const rect = loadMoreEl.getBoundingClientRect();
+            const isVisible = rect.top < window.innerHeight + 150;
+            if (isVisible && !isLoadingMore) {
+                triggerLoadMore();
+            }
+        }
+
+        function triggerLoadMore() {
             if (isLoadingMore) return;
-
-            const container = currentTab === 'ai' ? document.getElementById('content-ai') : document.getElementById('content-hot');
-            if (!container) return;
-
-            // 检查是否有更多数据
             const hasMore = currentTab === 'ai' ? hasMoreAI : hasMoreHot;
             if (!hasMore) return;
 
-            // 获取容器底部位置
-            const rect = container.getBoundingClientRect();
-            const containerBottom = rect.bottom;
-            const viewportHeight = window.innerHeight;
-
-            // 当容器底部在视口内或上方时触发加载（即容器内容已全部可见）
-            // 或者当距离底部小于 300px 时触发
-            if (containerBottom <= viewportHeight + 300) {
-                isLoadingMore = true;
-                if (currentTab === 'ai' && hasMoreAI) {
-                    aiPage++;
-                    renderAll();
-                } else if (currentTab === 'hot' && hasMoreHot) {
-                    hotPage++;
-                    renderAll();
-                } else {
-                    isLoadingMore = false;
-                }
+            isLoadingMore = true;
+            if (currentTab === 'ai' && hasMoreAI) {
+                aiPage++;
+                renderAll();
+            } else if (currentTab === 'hot' && hasMoreHot) {
+                hotPage++;
+                renderAll();
+            } else {
+                isLoadingMore = false;
             }
         }
+
+        // 点击加载更多（备选方案）
+        document.addEventListener('click', function(e) {
+            const loadMore = e.target.closest('.loading-more');
+            if (loadMore && loadMore.id && loadMore.style.opacity !== '0.5') {
+                triggerLoadMore();
+            }
+        });
+
+        // 滚动监听作为辅助检测
+        let scrollTimer = null;
+        window.addEventListener('scroll', function() {
+            if (scrollTimer) return;
+            scrollTimer = setTimeout(() => {
+                checkAndLoadIfVisible();
+                scrollTimer = null;
+            }, 200);
+        });
+
+        window.addEventListener('resize', function() {
+            setTimeout(checkAndLoadIfVisible, 300);
+        });
 
         // ========================================================================
         //  GEEK CODE
@@ -961,21 +1018,6 @@
             document.getElementById('modalReadToggleBtn').addEventListener('click', toggleReadStatus);
             document.getElementById('modalDigestBtn').addEventListener('click', addToDigest);
             document.getElementById('clearDigestBtn').addEventListener('click', clearDigest);
-
-            // 滚动加载（核心修复）
-            let scrollTimer = null;
-            window.addEventListener('scroll', () => {
-                if (scrollTimer) return;
-                scrollTimer = setTimeout(() => {
-                    checkAndLoadMore();
-                    scrollTimer = null;
-                }, 100);
-            });
-
-            // 窗口大小变化时也检查
-            window.addEventListener('resize', () => {
-                setTimeout(checkAndLoadMore, 200);
-            });
 
             // 键盘快捷键
             document.addEventListener('keydown', (e) => {
