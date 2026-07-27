@@ -1126,5 +1126,41 @@
     "url": "https://www.anthropic.com/news/cognizant-anthropic",
     "read_time": 26,
     "hot_score": 73
+  },
+  {
+    "title": "跟 AI 写代码越写越乱？我靠这套「Vibe Coding」思路彻底治好了幻觉屎山",
+    "summary": "说实话，那时候我觉得 AI 写代码也就这样 —— 看起来像模像样，一跑也能跑，真要维护起来比屎山还难下手。直到后来我翻到 Vibe Coding 的思路，才反应过来：不是 AI 不行，是我从根上就用错",
+    "full_content": "说实话，那时候我觉得 AI 写代码也就这样 —— 看起来像模像样，一跑也能跑，真要维护起来比屎山还难下手。直到后来我翻到 Vibe Coding 的思路，才反应过来：不是 AI 不行，是我从根上就用错",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-27",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7667093548291178496",
+    "read_time": 1,
+    "hot_score": 86
+  },
+  {
+    "title": "AI 评测系列（07）：自定义 Benchmark——从业务场景到评测集",
+    "summary": "公开 Benchmark 在三种情况下不够用：业务场景太特殊、数据不能出域、需要持续跟踪质量变化。本文讲完整的自定义 Benchmark 构建流程：场景定义→问题生成→ground_truth 标注",
+    "full_content": "公开 Benchmark 在三种情况下不够用：业务场景太特殊、数据不能出域、需要持续跟踪质量变化。本文讲完整的自定义 Benchmark 构建流程：场景定义→问题生成→ground_truth 标注",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-27",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7667023796480000054",
+    "read_time": 1,
+    "hot_score": 44
+  },
+  {
+    "title": "从零搭建 AI 日记助手：用 Milvus 向量数据库 + RAG 让机器读懂你的每一天",
+    "summary": "从零搭建 AI 日记助手：用 Milvus 向量数据库 + RAG 让机器读懂你的每一天 写在前面 如果你正在构建一个 AI Agent，你大概率绕不开一个基础设施——向量数据库。它不是替代 MySQ",
+    "full_content": "从零搭建 AI 日记助手：用 Milvus 向量数据库 + RAG 让机器读懂你的每一天 写在前面 如果你正在构建一个 AI Agent，你大概率绕不开一个基础设施——向量数据库。它不是替代 MySQ",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-27",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7667028246002188322",
+    "read_time": 1,
+    "hot_score": 94
   }
 ]
