@@ -754,5 +754,77 @@
     "url": "https://search.bilibili.com/all?keyword=%E8%83%A1%E5%BD%A6%E6%96%8C%E7%8C%AE%E5%94%B1%E8%9C%98%E8%9B%9B%E4%BE%A0%E4%B8%AD%E6%96%87%E6%8E%A8%E5%B9%BF%E6%9B%B2&from_source=webtop_search",
     "read_time": 1,
     "hot_score": 52
+  },
+  {
+    "title": "微服务退潮，单体回温：AI 时代，Java 后端需要一场 \"瘦身革命\"",
+    "summary": "移动互联网的黄金十年，微服务是毋庸置疑的主角。业务爆发式增长，需求今天提明天就要上线；企业疯狂扩招，技术团队从几十人膨胀到几百人。单体应用的代码库成了 万人坑，一次发布要协调十几个模块，回滚更是噩梦。于是，我们祭出了微服务 —— 按业务域拆...",
+    "full_content": "移动互联网的黄金十年，微服务是毋庸置疑的主角。业务爆发式增长，需求今天提明天就要上线；企业疯狂扩招，技术团队从几十人膨胀到几百人。单体应用的代码库成了 &quot;万人坑&quot;，一次发布要协调十几个模块，回滚更是噩梦。于是，我们祭出了微服务 —— 按业务域拆分、独立部署、团队自治，用技术契约替代人际协调，用物理边界...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-27",
+    "source": "开源中国",
+    "url": "https://my.oschina.net/u/2385344/blog/19727454",
+    "read_time": 1,
+    "hot_score": 85
+  },
+  {
+    "title": ":fire: 审批通知渠道现支持按标题远程搜索：开源无代码 / 低代码平台 NocoBase",
+    "summary": "汇总一周产品更新日志，最新发布可前往我们的博客查看。 NocoBase 目前更新包括三个分支：main、next 和 develop。 version.png main：截至目前最稳定的版本，推荐安装此版本。 next：包含即将发布的新功能...",
+    "full_content": "汇总一周产品更新日志，最新发布可前往我们的博客查看。 NocoBase 目前更新包括三个分支：main、next 和 develop。 version.png main：截至目前最稳定的版本，推荐安装此版本。 next：包含即将发布的新功能，经过初步测试的版本，可能存在部分已知或未知问题。主要面向测试用户，用于收集反馈和进一步优化功能。适合愿意...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-27",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/480662",
+    "read_time": 1,
+    "hot_score": 51
+  },
+  {
+    "title": "How AI is expanding what people do at work",
+    "summary": "New OpenAI research shows how AI is expanding what workers do, with ChatGPT users taking on tasks across roles and resha...",
+    "full_content": "New OpenAI research shows how AI is expanding what workers do, with ChatGPT users taking on tasks across roles and reshaping job boundaries.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-27",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
+    "read_time": 1,
+    "hot_score": 58
+  },
+  {
+    "title": "57岁处级干部每天11点准时脱岗",
+    "summary": "57岁处级干部每天11点准时脱岗",
+    "full_content": "57岁处级干部每天11点准时脱岗",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-27",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D57%E5%B2%81%E5%A4%84%E7%BA%A7%E5%B9%B2%E9%83%A8%E6%AF%8F%E5%A4%A911%E7%82%B9%E5%87%86%E6%97%B6%E8%84%B1%E5%B2%97",
+    "read_time": 1,
+    "hot_score": 48
+  },
+  {
+    "title": "新浪娱乐转公开可见对话袁一琦",
+    "summary": "新浪娱乐转公开可见对话袁一琦",
+    "full_content": "新浪娱乐转公开可见对话袁一琦",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-27",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%96%B0%E6%B5%AA%E5%A8%B1%E4%B9%90%E8%BD%AC%E5%85%AC%E5%BC%80%E5%8F%AF%E8%A7%81%E5%AF%B9%E8%AF%9D%E8%A2%81%E4%B8%80%E7%90%A6",
+    "read_time": 1,
+    "hot_score": 32
+  },
+  {
+    "title": "突然理解一生要出片的女人了",
+    "summary": "突然理解一生要出片的女人了",
+    "full_content": "突然理解一生要出片的女人了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-07-27",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%AA%81%E7%84%B6%E7%90%86%E8%A7%A3%E4%B8%80%E7%94%9F%E8%A6%81%E5%87%BA%E7%89%87%E7%9A%84%E5%A5%B3%E4%BA%BA%E4%BA%86",
+    "read_time": 1,
+    "hot_score": 52
   }
 ]
