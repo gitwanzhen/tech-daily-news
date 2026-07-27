@@ -6,7 +6,7 @@
     <title>TechDaily · 技术人每日资讯</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <style>
-        /* ===== 完整样式，与上一版保持一致 ===== */
+        /* ===== 全局重置 & 变量 ===== */
         * { margin:0; padding:0; box-sizing:border-box; }
         :root {
             --bg-primary: #08080e;
@@ -81,13 +81,40 @@
             transition:all var(--transition);
             margin-bottom:10px;
         }
-        .featured-card { background:linear-gradient(145deg, rgba(96,165,250,0.05), rgba(192,132,252,0.025)); border-color:rgba(96,165,250,0.1); }
-        .featured-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg, var(--color-ai), var(--color-brand-start), var(--color-brand-end)); background-size:200% 100%; animation:shimmer 3s ease-in-out infinite; }
+        .featured-card {
+            background:linear-gradient(145deg, rgba(96,165,250,0.05), rgba(192,132,252,0.025));
+            border-color:rgba(96,165,250,0.1);
+        }
+        .featured-card::before {
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            right:0;
+            height:3px;
+            background:linear-gradient(90deg, var(--color-ai), var(--color-brand-start), var(--color-brand-end));
+            background-size:200% 100%;
+            animation:shimmer 3s ease-in-out infinite;
+        }
         @keyframes shimmer { 0%,100%{background-position:0% 0%} 50%{background-position:100% 0%} }
-        .news-card::before { content:''; position:absolute; left:0; top:14px; bottom:14px; width:3px; border-radius:0 4px 4px 0; transition:all var(--transition); }
+        .news-card::before {
+            content:'';
+            position:absolute;
+            left:0;
+            top:14px;
+            bottom:14px;
+            width:3px;
+            border-radius:0 4px 4px 0;
+            transition:all var(--transition);
+        }
         .news-card.ai::before { background:linear-gradient(180deg, var(--color-ai), #3b82f6); }
         .news-card.hot::before { background:linear-gradient(180deg, var(--color-hot), #ea580c); }
-        .news-card:hover, .featured-card:hover { background:var(--bg-surface-hover); border-color:var(--border-visible); transform:translateY(-1px); box-shadow:var(--shadow-card); }
+        .news-card:hover, .featured-card:hover {
+            background:var(--bg-surface-hover);
+            border-color:var(--border-visible);
+            transform:translateY(-1px);
+            box-shadow:var(--shadow-card);
+        }
         .card-header { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; }
         .card-tag { display:inline-flex; align-items:center; gap:4px; font-size:11px; font-weight:600; padding:2px 10px; border-radius:var(--radius-pill); flex-shrink:0; }
         .card-tag.ai { background:var(--color-ai-dim); color:var(--color-ai); }
@@ -252,6 +279,17 @@
             color:var(--text-muted);
             font-size:13px;
         }
+        .loading-more .spinner {
+            display:inline-block;
+            width:16px;
+            height:16px;
+            border:2px solid var(--text-muted);
+            border-top-color:var(--color-ai);
+            border-radius:50%;
+            animation:spin 0.8s linear infinite;
+            vertical-align:middle;
+            margin-right:8px;
+        }
         @media (max-width:640px) {
             .brand { font-size:32px; }
             .stats-bar { gap:10px; font-size:11px; }
@@ -316,8 +354,6 @@
         <div id="content-ai" class="compact"></div>
         <div id="content-hot" class="compact" style="display:none;"></div>
 
-        <!-- 加载更多提示（由 JS 动态添加） -->
-
         <div id="geekCode" style="margin-top:20px; padding:12px 16px; background:rgba(255,255,255,0.02); border-radius:12px; border:1px solid rgba(255,255,255,0.04); font-size:13px; color:var(--text-tertiary); display:none;">
             <span style="font-weight:600; color:var(--text-secondary);">🧠 今日技术暗号：</span>
             <span id="geekText"></span>
@@ -374,14 +410,14 @@
 
         let articles = [];
         let aiAll = [], hotAll = [];
-        let aiPage = 0, hotPage = 0;        // 当前加载的页数（从0开始）
+        let aiPage = 0, hotPage = 0;
         let currentTab = 'ai';
         let currentDate = getTodayStr();
         let readIds = new Set();
         let digestIds = new Set();
         let currentArticle = null;
         let isRefreshing = false;
-        let isLoadingMore = false;           // 防止重复加载
+        let isLoadingMore = false;
         let hasMoreAI = true, hasMoreHot = true;
 
         const GEEK_CODES = [
@@ -556,7 +592,7 @@
                     html += renderCard(aiPageData[i], featured, i);
                 }
                 if (hasMoreAI) {
-                    html += `<div class="loading-more" id="aiLoadingMore">加载更多...</div>`;
+                    html += `<div class="loading-more" id="aiLoadingMore"><span class="spinner"></span>加载更多...</div>`;
                 } else {
                     html += `<div class="loading-more" style="opacity:0.5;">— 已加载全部 —</div>`;
                 }
@@ -572,7 +608,7 @@
                     html += renderCard(hotPageData[i], i===0, i);
                 }
                 if (hasMoreHot) {
-                    html += `<div class="loading-more" id="hotLoadingMore">加载更多...</div>`;
+                    html += `<div class="loading-more" id="hotLoadingMore"><span class="spinner"></span>加载更多...</div>`;
                 } else {
                     html += `<div class="loading-more" style="opacity:0.5;">— 已加载全部 —</div>`;
                 }
@@ -592,23 +628,37 @@
             updateReadStatusUI();
             updateDigestUI();
             updateGeekCode();
-            // 滚动加载状态重置
+
+            // 重置加载状态
             isLoadingMore = false;
+
+            // 立即检查是否需要加载更多（当内容不足一屏时）
+            setTimeout(() => {
+                checkAndLoadMore();
+            }, 100);
         }
 
         // ========================================================================
-        //  LOAD MORE (滚动加载)
+        //  LOAD MORE (核心修复)
         // ========================================================================
-        function loadMoreIfNeeded() {
+        function checkAndLoadMore() {
             if (isLoadingMore) return;
+
             const container = currentTab === 'ai' ? document.getElementById('content-ai') : document.getElementById('content-hot');
             if (!container) return;
 
-            // 检查是否到底部（距离底部小于 200px）
+            // 检查是否有更多数据
+            const hasMore = currentTab === 'ai' ? hasMoreAI : hasMoreHot;
+            if (!hasMore) return;
+
+            // 获取容器底部位置
             const rect = container.getBoundingClientRect();
-            const bottom = rect.bottom;
+            const containerBottom = rect.bottom;
             const viewportHeight = window.innerHeight;
-            if (bottom - viewportHeight < 200) {
+
+            // 当容器底部在视口内或上方时触发加载（即容器内容已全部可见）
+            // 或者当距离底部小于 300px 时触发
+            if (containerBottom <= viewportHeight + 300) {
                 isLoadingMore = true;
                 if (currentTab === 'ai' && hasMoreAI) {
                     aiPage++;
@@ -696,7 +746,6 @@
         // ========================================================================
         function switchTab(tab, btn) {
             currentTab = tab;
-            // 重置页码（切换时重置，以便重新加载）
             aiPage = 0;
             hotPage = 0;
             hasMoreAI = true;
@@ -913,15 +962,19 @@
             document.getElementById('modalDigestBtn').addEventListener('click', addToDigest);
             document.getElementById('clearDigestBtn').addEventListener('click', clearDigest);
 
-            // 滚动加载（节流）
-            let scrollTimeout = false;
+            // 滚动加载（核心修复）
+            let scrollTimer = null;
             window.addEventListener('scroll', () => {
-                if (scrollTimeout) return;
-                scrollTimeout = true;
-                requestAnimationFrame(() => {
-                    loadMoreIfNeeded();
-                    scrollTimeout = false;
-                });
+                if (scrollTimer) return;
+                scrollTimer = setTimeout(() => {
+                    checkAndLoadMore();
+                    scrollTimer = null;
+                }, 100);
+            });
+
+            // 窗口大小变化时也检查
+            window.addEventListener('resize', () => {
+                setTimeout(checkAndLoadMore, 200);
             });
 
             // 键盘快捷键
