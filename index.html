@@ -6,7 +6,7 @@
     <title>TechDaily · 技术人每日资讯</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <style>
-        /* ===== 完整样式 ===== */
+        /* ===== 样式 ===== */
         * { margin:0; padding:0; box-sizing:border-box; }
         :root {
             --bg-primary: #08080e;
@@ -49,7 +49,6 @@
         .date-pill { display:inline-flex; align-items:center; gap:10px; background:rgba(96,165,250,0.06); border:1px solid rgba(96,165,250,0.12); color:var(--color-ai); padding:6px 18px 6px 14px; border-radius:var(--radius-pill); font-size:13px; font-weight:500; backdrop-filter:blur(10px); }
         .date-pill .dot { width:8px; height:8px; background:var(--color-brand-end); border-radius:50%; animation:pulse-dot 1.2s infinite; }
         @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.4;transform:scale(0.75)} }
-        /* 统计栏已完全删除 */
         .tab-control { display:flex; justify-content:center; margin-bottom:16px; }
         .tab-inner { display:flex; background:rgba(255,255,255,0.025); border:1px solid rgba(255,255,255,0.05); border-radius:var(--radius-tab); padding:4px; gap:4px; backdrop-filter:blur(8px); }
         .tab-btn { padding:8px 20px; border-radius:10px; font-size:14px; font-weight:500; color:var(--text-tertiary); cursor:pointer; transition:all var(--transition); border:none; background:transparent; display:flex; align-items:center; gap:6px; font-family:inherit; }
@@ -87,7 +86,16 @@
         .news-card.hot::before { background:linear-gradient(180deg, var(--color-hot), #ea580c); }
         .news-card:hover, .featured-card:hover { background:var(--bg-surface-hover); border-color:var(--border-visible); transform:translateY(-1px); box-shadow:var(--shadow-card); }
         .card-header { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; }
-        .card-tag { display:inline-flex; align-items:center; gap:4px; font-size:11px; font-weight:600; padding:2px 10px; border-radius:var(--radius-pill); flex-shrink:0; }
+        .card-tag {
+            display:inline-flex;
+            align-items:center;
+            gap:4px;
+            font-size:11px;
+            font-weight:600;
+            padding:2px 10px;
+            border-radius:var(--radius-pill);
+            flex-shrink:0;
+        }
         .card-tag.ai { background:var(--color-ai-dim); color:var(--color-ai); }
         .card-tag.hot { background:var(--color-hot-dim); color:var(--color-hot); }
         .card-date { font-size:12px; color:var(--text-muted); flex-shrink:0; }
@@ -100,6 +108,9 @@
             margin:4px 0;
             position:relative;
             padding-left:28px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
         }
         .card-title .index {
             position:absolute;
@@ -109,6 +120,13 @@
             color:var(--text-muted);
             font-size:14px;
             opacity:0.6;
+        }
+        .card-title .source-inline {
+            font-size:12px;
+            color:var(--text-muted);
+            flex-shrink:0;
+            margin-left:12px;
+            font-weight:400;
         }
         .read-title {
             color: var(--text-muted) !important;
@@ -121,16 +139,11 @@
         .news-card.ai:hover .read-title { color:var(--color-ai) !important; text-decoration-color:var(--color-ai); }
         .news-card.hot:hover .read-title { color:var(--color-hot) !important; text-decoration-color:var(--color-hot); }
         .card-summary { font-size:13px; color:var(--text-tertiary); line-height:1.6; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
-        .card-footer { display:flex; justify-content:space-between; align-items:center; margin-top:6px; flex-wrap:wrap; gap:6px; }
-        .card-source { font-size:12px; color:var(--text-muted); display:flex; align-items:center; gap:4px; }
-        .card-source .dot { width:4px; height:4px; border-radius:50%; background:#374151; }
+        .card-footer { display:flex; justify-content:flex-end; align-items:center; margin-top:6px; flex-wrap:wrap; gap:6px; }
+        /* 移除了 source，只保留热度 */
         .hot-score { display:flex; align-items:center; gap:6px; font-size:12px; color:var(--text-muted); }
         .hot-score .bar { width:50px; height:3px; background:rgba(255,255,255,0.06); border-radius:4px; overflow:hidden; }
         .hot-score .bar .fill { height:100%; border-radius:4px; background:linear-gradient(90deg, var(--color-hot), #ea580c); transition:width 0.6s; }
-        /* 卡片操作按钮（仅保留需要的，已移除稍后读） */
-        .card-actions { display:flex; gap:6px; }
-        .card-actions button { background:transparent; border:none; color:var(--text-muted); cursor:pointer; font-size:14px; padding:2px 4px; transition:color var(--transition); }
-        .card-actions button:hover { color:var(--text-secondary); }
         .read-status { width:8px; height:8px; border-radius:50%; border:1.5px solid var(--text-muted); flex-shrink:0; background:transparent; transition:all var(--transition); }
         .read-status.read { background:var(--text-muted); border-color:var(--text-muted); }
         .card-summary .core { color:var(--color-ai); font-weight:500; }
@@ -139,7 +152,6 @@
         .compact .card-title { font-size:14px; }
         .hide-read .news-card.read-item,
         .hide-read .featured-card.read-item { display:none; }
-        /* 待消化池已完全删除 */
         .modal-overlay {
             display:none;
             position:fixed;
@@ -209,7 +221,6 @@
         .modal-actions .btn:hover { background:rgba(255,255,255,0.08); }
         .modal-actions .btn-primary { background:var(--color-ai-dim); border-color:rgba(96,165,250,0.15); color:var(--color-ai); }
         .modal-actions .btn-primary:hover { background:rgba(96,165,250,0.2); }
-        /* 模态框中已删除“稍后读”按钮，只保留复制、原文、标记已读 */
         .toast {
             position:fixed;
             bottom:40px;
@@ -240,7 +251,7 @@
             .tab-btn { padding:6px 12px; font-size:13px; }
             .container { padding:20px 12px 40px; }
             .featured-card, .news-card { padding:14px; }
-            .card-title { font-size:15px; padding-left:24px; }
+            .card-title { font-size:15px; padding-left:24px; flex-wrap:wrap; }
             .card-title .index { font-size:12px; }
             .modal-full-content { max-height: 300px; }
             .date-count { font-size:11px; }
@@ -265,7 +276,7 @@
             </div>
         </div>
 
-        <!-- 统计栏已完全删除 -->
+        <!-- 统计栏已删除 -->
 
         <div class="tab-control">
             <div class="tab-inner">
@@ -303,8 +314,6 @@
         </div>
     </div>
 
-    <!-- 待消化池已完全删除 -->
-
     <!-- ===== Modal ===== -->
     <div class="modal-overlay" id="detailModal" onclick="closeModal(event)">
         <div class="modal-content" onclick="event.stopPropagation()">
@@ -327,7 +336,6 @@
                     <button class="btn" onclick="copyLink()">📋 复制链接</button>
                     <button class="btn btn-primary" onclick="openSource()">↗ 阅读原文</button>
                     <button class="btn" onclick="toggleReadStatus()">👁 标记已读</button>
-                    <!-- “稍后读”按钮已删除 -->
                 </div>
             </div>
         </div>
@@ -454,8 +462,9 @@
             const hot = article.hot_score || 30;
             const readTime = article.read_time || estimateReadTime(article.summary || article.title);
             const summary = article.summary && article.summary.trim() ? article.summary : (article.title ? article.title.slice(0,60)+'…' : '点击查看详情');
+            // 去掉 emoji 图标
             const catClass = article.category === 'hot' ? 'hot' : 'ai';
-            const catName = article.categoryName || (article.category==='hot' ? '🔥 热搜' : '🤖 AI');
+            const catName = article.category === 'hot' ? '热搜' : 'AI/大模型';
 
             const indexHtml = (index !== null) ? `<span class="index">${index+1}.</span>` : '';
             const readTitleClass = isRead ? 'read-title' : '';
@@ -481,15 +490,17 @@
                             </span>
                         </div>`;
             }
-            html += `<div class="card-title ${readTitleClass}">${indexHtml}${escapeHtml(article.title)}</div>`;
+            // 标题行：左侧序号+标题，右侧来源
+            html += `<div class="card-title ${readTitleClass}">
+                        <span>${indexHtml}${escapeHtml(article.title)}</span>
+                        <span class="source-inline">· ${escapeHtml(article.source||'未知')}</span>
+                    </div>`;
             html += `<div class="card-summary"><span class="core">💡 核心：</span>${escapeHtml(summary)}</div>`;
             html += `<div class="card-footer">
-                        <span class="card-source"><span class="dot"></span>${escapeHtml(article.source||'未知')}</span>
                         <span class="hot-score">
                             <span>🔥 ${hot}</span>
                             <span class="bar"><span class="fill" style="width:${Math.min(100, 30+hot*0.7)}%;"></span></span>
                         </span>
-                        <!-- 卡片上已删除稍后读按钮 -->
                     </div>`;
             html += `</div>`;
             return html;
@@ -681,7 +692,8 @@
         function showModal(article) {
             currentArticle = article;
             const tag = document.getElementById('modalTag');
-            tag.textContent = article.categoryName || (article.category==='hot'?'🔥 热搜':'🤖 AI');
+            // 去掉 emoji
+            tag.textContent = article.category === 'hot' ? '热搜' : (article.categoryName || 'AI/大模型');
             tag.className = 'card-tag ' + (article.category||'ai');
             tag.style.cssText = article.category==='hot' ? 'background:var(--color-hot-dim);color:var(--color-hot);' : 'background:var(--color-ai-dim);color:var(--color-ai);';
             document.getElementById('modalDate').textContent = '📅 ' + formatDate(article.date);
