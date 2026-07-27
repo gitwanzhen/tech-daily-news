@@ -6,7 +6,7 @@
     <title>TechDaily · 技术人每日资讯</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <style>
-        /* ===== 样式 ===== */
+        /* ===== 样式与上一版一致 ===== */
         * { margin:0; padding:0; box-sizing:border-box; }
         :root {
             --bg-primary: #08080e;
@@ -140,7 +140,6 @@
         .news-card.hot:hover .read-title { color:var(--color-hot) !important; text-decoration-color:var(--color-hot); }
         .card-summary { font-size:13px; color:var(--text-tertiary); line-height:1.6; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
         .card-footer { display:flex; justify-content:flex-end; align-items:center; margin-top:6px; flex-wrap:wrap; gap:6px; }
-        /* 移除了 source，只保留热度 */
         .hot-score { display:flex; align-items:center; gap:6px; font-size:12px; color:var(--text-muted); }
         .hot-score .bar { width:50px; height:3px; background:rgba(255,255,255,0.06); border-radius:4px; overflow:hidden; }
         .hot-score .bar .fill { height:100%; border-radius:4px; background:linear-gradient(90deg, var(--color-hot), #ea580c); transition:width 0.6s; }
@@ -276,12 +275,10 @@
             </div>
         </div>
 
-        <!-- 统计栏已删除 -->
-
         <div class="tab-control">
             <div class="tab-inner">
-                <button class="tab-btn active" data-tab="ai" onclick="switchTab('ai', this)">🤖 AI / 大模型 <span class="badge" id="badgeAI">0</span></button>
-                <button class="tab-btn hot" data-tab="hot" onclick="switchTab('hot', this)">🔥 摸鱼指南 <span class="badge" id="badgeHot">0</span></button>
+                <button class="tab-btn active" data-tab="ai" onclick="switchTab('ai', this)">AI / 大模型 <span class="badge" id="badgeAI">0</span></button>
+                <button class="tab-btn hot" data-tab="hot" onclick="switchTab('hot', this)">摸鱼指南 <span class="badge" id="badgeHot">0</span></button>
             </div>
         </div>
 
@@ -462,7 +459,6 @@
             const hot = article.hot_score || 30;
             const readTime = article.read_time || estimateReadTime(article.summary || article.title);
             const summary = article.summary && article.summary.trim() ? article.summary : (article.title ? article.title.slice(0,60)+'…' : '点击查看详情');
-            // 去掉 emoji 图标
             const catClass = article.category === 'hot' ? 'hot' : 'ai';
             const catName = article.category === 'hot' ? '热搜' : 'AI/大模型';
 
@@ -490,7 +486,6 @@
                             </span>
                         </div>`;
             }
-            // 标题行：左侧序号+标题，右侧来源
             html += `<div class="card-title ${readTitleClass}">
                         <span>${indexHtml}${escapeHtml(article.title)}</span>
                         <span class="source-inline">· ${escapeHtml(article.source||'未知')}</span>
@@ -551,20 +546,20 @@
 
             updateReadStatusUI();
             updateGeekCode();
+            // 重置加载锁
             isLoadingMore = false;
         }
 
         // ========================================================================
-        //  LOAD MORE
+        //  LOAD MORE (使用全局滚动检测)
         // ========================================================================
         function loadMoreIfNeeded() {
             if (isLoadingMore) return;
-            const container = currentTab === 'ai' ? document.getElementById('content-ai') : document.getElementById('content-hot');
-            if (!container) return;
-            const rect = container.getBoundingClientRect();
-            const bottom = rect.bottom;
-            const viewportHeight = window.innerHeight;
-            if (bottom - viewportHeight < 200) {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            // 当滚动到底部附近（离底部小于 150px）时触发加载
+            if (scrollTop + windowHeight >= documentHeight - 150) {
                 isLoadingMore = true;
                 if (currentTab === 'ai' && hasMoreAI) {
                     aiPage++;
@@ -692,7 +687,6 @@
         function showModal(article) {
             currentArticle = article;
             const tag = document.getElementById('modalTag');
-            // 去掉 emoji
             tag.textContent = article.category === 'hot' ? '热搜' : (article.categoryName || 'AI/大模型');
             tag.className = 'card-tag ' + (article.category||'ai');
             tag.style.cssText = article.category==='hot' ? 'background:var(--color-hot-dim);color:var(--color-hot);' : 'background:var(--color-ai-dim);color:var(--color-ai);';
@@ -836,7 +830,7 @@
             document.getElementById('modalCopyBtn').addEventListener('click', copyLink);
             document.getElementById('modalReadToggleBtn').addEventListener('click', toggleReadStatus);
 
-            // 滚动加载
+            // 滚动加载（使用节流）
             let scrollTimeout = false;
             window.addEventListener('scroll', () => {
                 if (scrollTimeout) return;
