@@ -10,9 +10,11 @@ let observer = null;
 export function initScrollControls() {
     // 返回顶部按钮
     const backBtn = document.getElementById('backToTop');
-    backBtn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+    if (backBtn) {
+        // 移除可能的旧监听器（避免重复绑定）
+        backBtn.removeEventListener('click', scrollToTop);
+        backBtn.addEventListener('click', scrollToTop);
+    }
 
     // 滚动滑块
     initSlider();
@@ -23,15 +25,23 @@ export function initScrollControls() {
         updateScrollThumb();
     });
 
-    // 初始更新
+    // 初始状态更新
     updateBackToTop();
     setTimeout(updateScrollThumb, 100);
 }
 
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 function updateBackToTop() {
     const btn = document.getElementById('backToTop');
-    if (window.scrollY > 300) btn.classList.add('visible');
-    else btn.classList.remove('visible');
+    if (!btn) return;
+    if (window.scrollY > 300) {
+        btn.classList.add('visible');
+    } else {
+        btn.classList.remove('visible');
+    }
 }
 
 function initSlider() {
@@ -61,7 +71,8 @@ function startDrag(e) {
     isDragging = true;
     dragStartY = e.clientY;
     dragStartScroll = window.scrollY;
-    thumb.style.cursor = 'grabbing';
+    const thumb = document.getElementById('scrollSliderThumb');
+    if (thumb) thumb.style.cursor = 'grabbing';
     document.body.style.userSelect = 'none';
 }
 function startDragTouch(e) {
@@ -88,6 +99,7 @@ function moveDragTouch(e) {
 function applyDragDelta(deltaY) {
     const track = document.getElementById('scrollSliderTrack');
     const thumb = document.getElementById('scrollSliderThumb');
+    if (!track || !thumb) return;
     const trackHeight = track.offsetHeight;
     const thumbHeight = thumb.offsetHeight;
     const maxDelta = trackHeight - thumbHeight;
@@ -111,12 +123,15 @@ function updateScrollThumb() {
     if (!thumb || !container) return;
     const scrollTop = window.scrollY;
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const trackHeight = container.querySelector('.scroll-slider-track')?.offsetHeight || 200;
+    const track = container.querySelector('.scroll-slider-track');
+    if (!track) return;
+    const trackHeight = track.offsetHeight;
     const thumbHeight = thumb.offsetHeight || 40;
     const maxTop = trackHeight - thumbHeight;
     if (docHeight <= 0) { thumb.style.top = '0px'; return; }
     const progress = Math.min(scrollTop / docHeight, 1);
     thumb.style.top = (progress * maxTop) + 'px';
+    // 当页面高度超过视口高度 80% 时显示滑块
     if (docHeight > window.innerHeight * 0.8) {
         container.classList.add('visible');
     } else {
@@ -152,10 +167,10 @@ function loadMore() {
     if (state.currentTab === 'ai') {
         state.aiPage++;
         renderAll();
-        setupObserver(); // 重新绑定
+        setupObserver();
     } else {
         state.hotPage++;
         renderAll();
-        setupObserver(); // 重新绑定
+        setupObserver();
     }
 }
