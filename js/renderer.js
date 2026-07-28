@@ -96,7 +96,6 @@ export function renderAll() {
     state.isLoadingMore = false;
 }
 
-// ===== 更新已读状态 UI =====
 export function updateReadStatusUI() {
     document.querySelectorAll('.news-card, .featured-card').forEach(el => {
         const id = parseInt(el.dataset.id);
@@ -110,7 +109,6 @@ export function updateReadStatusUI() {
     });
 }
 
-// ===== 技术暗号 =====
 const GEEK_CODES = [
     "Llama 4 的 200 万 token 上下文相当于让 AI 一次性读完《三体》三部曲还多出 40% 容量",
     "GPT-5 的代码生成准确率 92% 已超过人类初级工程师的平均水平 (约 85%)",
