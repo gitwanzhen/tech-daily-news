@@ -19,7 +19,6 @@ export async function loadAndRender(dateStr) {
     state.hasMoreAI = true;
     state.hasMoreHot = true;
     renderAll();
-    // 重新绑定滚动加载观察器
     setupObserver();
     document.getElementById('todayDate').textContent = dateStr === getTodayStr() ? getTodayDisplay() : formatDate(dateStr);
     document.getElementById('datePicker').value = dateStr;
