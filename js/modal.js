@@ -17,10 +17,8 @@ export function initModal() {
     document.addEventListener('keydown', (e) => { if(e.key==='Escape') closeModal(); });
 
     copyBtn.addEventListener('click', copyLink);
-    sourceBtn.addEventListener('click, openSource);
+    sourceBtn.addEventListener('click', openSource);
     readToggleBtn.addEventListener('click', toggleReadStatus);
-
-    // 卡片点击委托（由app.js处理）
 }
 
 export function openModal(article) {
@@ -77,13 +75,12 @@ export function openModal(article) {
     // 标记已读
     if (article.id) {
         state.readIds.add(article.id);
-        // 保存到 localStorage 在 app.js 中处理
         if (window.saveReadIds) window.saveReadIds();
         updateReadStatusUI();
     }
 }
 
-function closeModal() {
+export function closeModal() {
     document.getElementById('detailModal').classList.remove('active');
     document.body.style.overflow = '';
     currentArticle = null;
