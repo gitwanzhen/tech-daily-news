@@ -66,6 +66,20 @@
         </div>
     </div>
 
+    <!-- ===== 新增：返回顶部按钮 ===== -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()" title="返回顶部">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </button>
+
+    <!-- ===== 新增：自定义滚动滑块 ===== -->
+    <div class="scroll-slider-container" id="scrollSliderContainer">
+        <div class="scroll-slider-track" id="scrollSliderTrack">
+            <div class="scroll-slider-thumb" id="scrollSliderThumb"></div>
+        </div>
+    </div>
+
     <!-- Modal -->
     <div class="modal-overlay" id="detailModal" onclick="closeModal(event)">
         <div class="modal-content" onclick="event.stopPropagation()">
