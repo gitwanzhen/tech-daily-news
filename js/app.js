@@ -1,11 +1,11 @@
 // ===== 入口：组装所有模块 =====
-import { state, getTodayStr, getTodayDisplay, formatDate } from './state.js';
-import { loadArticlesByDate, loadIndex } from './api.js';
-import { renderAll, updateReadStatusUI } from './renderer.js';
+import { state, getTodayStr } from './state.js';
+import { loadIndex } from './api.js';
+import { loadAndRender } from './actions.js';
 import { initUI } from './ui.js';
 import { initModal } from './modal.js';
 import { initScrollControls, setupObserver } from './scroll.js';
-import { showToast, generateStableId } from './utils.js';
+import { showToast } from './utils.js';
 
 // 保存已读ID到localStorage
 function loadReadIds() {
@@ -20,29 +20,6 @@ window.saveReadIds = function() {
     } catch(_) {}
 };
 loadReadIds();
-
-// 加载并渲染指定日期
-export async function loadAndRender(dateStr) {
-    let data = await loadArticlesByDate(dateStr);
-    data = data.map(article => {
-        if (!article.id) article.id = generateStableId(article);
-        return article;
-    });
-    state.articles = data;
-    state.aiAll = state.articles.filter(a => a.category === 'ai').sort((a,b) => b.id - a.id);
-    state.hotAll = state.articles.filter(a => a.category === 'hot').sort((a,b) => b.id - a.id);
-    state.aiPage = 0;
-    state.hotPage = 0;
-    state.hasMoreAI = true;
-    state.hasMoreHot = true;
-    renderAll();
-    // 重新绑定滚动加载
-    setupObserver();
-    document.getElementById('todayDate').textContent = dateStr === getTodayStr() ? getTodayDisplay() : formatDate(dateStr);
-    document.getElementById('datePicker').value = dateStr;
-    const hour = new Date().getHours();
-    document.body.className = (hour >= 6 && hour < 18) ? 'morning' : 'evening';
-}
 
 // 初始化
 async function init() {
@@ -77,7 +54,6 @@ async function init() {
             if (encoded) {
                 try {
                     const article = JSON.parse(decodeURIComponent(encoded));
-                    // 打开模态框
                     import('./modal.js').then(module => module.openModal(article));
                 } catch(e) {
                     showToast('数据解析失败');
