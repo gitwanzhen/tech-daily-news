@@ -7,30 +7,26 @@ let dragStartY = 0;
 let dragStartScroll = 0;
 let observer = null;
 
+// 挂载全局函数供 onclick 调用
+window.scrollToTop = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 export function initScrollControls() {
-    // 返回顶部按钮
     const backBtn = document.getElementById('backToTop');
     if (backBtn) {
-        backBtn.removeEventListener('click', scrollToTop);
-        backBtn.addEventListener('click', scrollToTop);
+        backBtn.removeEventListener('click', window.scrollToTop);
+        backBtn.addEventListener('click', window.scrollToTop);
     }
 
-    // 滚动滑块
     initSlider();
-
-    // 滚动监听
     window.addEventListener('scroll', function() {
         updateBackToTop();
         updateScrollThumb();
     });
 
-    // 初始状态更新
     updateBackToTop();
     setTimeout(updateScrollThumb, 100);
-}
-
-function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function updateBackToTop() {
@@ -137,7 +133,6 @@ function updateScrollThumb() {
     }
 }
 
-// ===== 加载更多（IntersectionObserver） =====
 export function setupObserver() {
     if (observer) { observer.disconnect(); observer = null; }
     const container = state.currentTab === 'ai' ? document.getElementById('content-ai') : document.getElementById('content-hot');
