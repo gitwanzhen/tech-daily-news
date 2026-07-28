@@ -72,7 +72,6 @@ export function openModal(article) {
 
     document.getElementById('detailModal').classList.add('active');
     document.body.style.overflow = 'hidden';
-    // 标记已读
     if (article.id) {
         state.readIds.add(article.id);
         if (window.saveReadIds) window.saveReadIds();
