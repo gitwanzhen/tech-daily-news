@@ -1,6 +1,6 @@
 // ===== 渲染引擎 =====
-import { state } from './state.js';
-import { formatDate, escapeHtml, estimateReadTime, generateStableId } from './utils.js';
+import { state, formatDate } from './state.js';
+import { escapeHtml, estimateReadTime, generateStableId } from './utils.js';
 
 export function renderCard(article, featured=false, index=null) {
     if (!article.id) article.id = generateStableId(article);
