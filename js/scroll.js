@@ -1,11 +1,11 @@
 // ===== 滚动控制：返回顶部、滑块、加载更多 =====
 import { state } from './state.js';
 import { renderAll } from './renderer.js';
-import { showToast } from './utils.js';
 
 let isDragging = false;
 let dragStartY = 0;
 let dragStartScroll = 0;
+let observer = null;
 
 export function initScrollControls() {
     // 返回顶部按钮
@@ -21,7 +21,6 @@ export function initScrollControls() {
     window.addEventListener('scroll', function() {
         updateBackToTop();
         updateScrollThumb();
-        // 加载更多（由 IntersectionObserver 处理，这里只做辅助）
     });
 
     // 初始更新
@@ -126,7 +125,6 @@ function updateScrollThumb() {
 }
 
 // ===== 加载更多（IntersectionObserver） =====
-let observer = null;
 export function setupObserver() {
     if (observer) { observer.disconnect(); observer = null; }
     const container = state.currentTab === 'ai' ? document.getElementById('content-ai') : document.getElementById('content-hot');
@@ -151,10 +149,13 @@ function loadMore() {
     if (state.currentTab === 'ai' && !state.hasMoreAI) return;
     if (state.currentTab === 'hot' && !state.hasMoreHot) return;
     state.isLoadingMore = true;
-    if (state.currentTab === 'ai') { state.aiPage++; renderAll(); }
-    else { state.hotPage++; renderAll(); }
-    // 重新绑定观察器（在renderAll中会调用setupObserver）
+    if (state.currentTab === 'ai') {
+        state.aiPage++;
+        renderAll();
+        setupObserver(); // 重新绑定
+    } else {
+        state.hotPage++;
+        renderAll();
+        setupObserver(); // 重新绑定
+    }
 }
-
-// 在 renderAll 后重新绑定
-// 在 app.js 中调用 setupObserver 在 renderAll 之后
