@@ -44,7 +44,7 @@ async function init() {
     // 初始化UI
     initUI();
     initModal();
-    initScrollControls();
+    initScrollControls();  // 确保调用
 
     // 卡片点击委托（打开模态框）
     document.addEventListener('click', function(e) {
