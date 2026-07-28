@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechDaily · 技术人每日资讯</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-    <!-- CSS 模块 -->
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
@@ -62,8 +61,8 @@
         <div class="footer">TechDaily · 为技术人精选每一条资讯</div>
     </div>
 
-    <!-- 返回顶部按钮（已移除 onclick） -->
-    <button class="back-to-top" id="backToTop" title="返回顶部">
+    <!-- 返回顶部按钮 -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()" title="返回顶部">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="18 15 12 9 6 15"/>
         </svg>
@@ -80,7 +79,8 @@
     <div class="modal-overlay" id="detailModal">
         <div class="modal-content">
             <div class="modal-header">
-                <button class="modal-close">&times;</button>
+                <!-- 关闭按钮添加 id -->
+                <button class="modal-close" id="modalCloseBtn">&times;</button>
                 <div class="modal-meta-row">
                     <span class="card-tag" id="modalTag">分类</span>
                     <span class="modal-date" id="modalDate">📅 日期</span>
