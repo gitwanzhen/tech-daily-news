@@ -11,7 +11,6 @@ export function initScrollControls() {
     // 返回顶部按钮
     const backBtn = document.getElementById('backToTop');
     if (backBtn) {
-        // 移除可能的旧监听器（避免重复绑定）
         backBtn.removeEventListener('click', scrollToTop);
         backBtn.addEventListener('click', scrollToTop);
     }
@@ -131,7 +130,6 @@ function updateScrollThumb() {
     if (docHeight <= 0) { thumb.style.top = '0px'; return; }
     const progress = Math.min(scrollTop / docHeight, 1);
     thumb.style.top = (progress * maxTop) + 'px';
-    // 当页面高度超过视口高度 80% 时显示滑块
     if (docHeight > window.innerHeight * 0.8) {
         container.classList.add('visible');
     } else {
