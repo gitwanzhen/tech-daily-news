@@ -1534,5 +1534,65 @@
     "url": "https://search.bilibili.com/all?keyword=%E8%9C%98%E8%9B%9B%E4%BE%A0%E6%96%B0%E8%A7%92%E8%89%B2%E7%9B%98%E7%82%B9&from_source=webtop_search",
     "read_time": 1,
     "hot_score": 94
+  },
+  {
+    "title": "我用 Claude Code 后，编码效率翻 3 倍。但更值钱的是别的。",
+    "summary": "用了半年Claude Code，编码效率翻3倍。但真正值钱的是任务拆解、决策、业务理解——这些AI给不了，是10年积累。",
+    "full_content": "用了半年Claude Code，编码效率翻3倍。但真正值钱的是任务拆解、决策、业务理解——这些AI给不了，是10年积累。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-28",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7667045310732468251",
+    "read_time": 1,
+    "hot_score": 97
+  },
+  {
+    "title": "Claude code tools 研究系列-开篇（AskUserQuestion）",
+    "summary": "之前研究过 claude code 的设计，用 Java 写了一个乞丐版的 claude code 开源地址 jooj 。Claude code 的 tools 都设计的非常精巧。所以想逐个研究一下。",
+    "full_content": "之前研究过 claude code 的设计，用 Java 写了一个乞丐版的 claude code 开源地址 jooj 。Claude code 的 tools 都设计的非常精巧。所以想逐个研究一下。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-28",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7667440437863874560",
+    "read_time": 1,
+    "hot_score": 35
+  },
+  {
+    "title": "给知识库网站接入AI问答",
+    "summary": "基于 Docusaurus/Hono/ChromaDB/deepseek 的个人知识库 RAG 落地全流程：文档切片、向量化、增量灌库、SSE 流式问答、移动端兼容、Nginx安全收口与RAG评估",
+    "full_content": "基于 Docusaurus/Hono/ChromaDB/deepseek 的个人知识库 RAG 落地全流程：文档切片、向量化、增量灌库、SSE 流式问答、移动端兼容、Nginx安全收口与RAG评估",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-28",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7667465942311665715",
+    "read_time": 1,
+    "hot_score": 42
+  },
+  {
+    "title": "React useState 深度解析：异步更新、闭包陷阱与惰性初始化的底层逻辑",
+    "summary": "深入拆解React useState的异步更新机制、闭包陷阱成因与函数式更新解法，详解惰性初始化与Fragment的设计哲学，配合计数器与用户列表两个实战案例，彻底搞懂Hooks带头大哥的底层逻辑。",
+    "full_content": "深入拆解React useState的异步更新机制、闭包陷阱成因与函数式更新解法，详解惰性初始化与Fragment的设计哲学，配合计数器与用户列表两个实战案例，彻底搞懂Hooks带头大哥的底层逻辑。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-28",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7667465942311567411",
+    "read_time": 1,
+    "hot_score": 93
+  },
+  {
+    "title": "Vibe Coding 实战指南：先规划再编码，用胶水思维告别 AI 幻觉代码",
+    "summary": "拆解Vibe Coding三步法：先规划再编码划定边界，胶水编程复用成熟方案减少幻觉，元方法论让AI自我进化。以React+TS+Tailwind待办清单为实战案例，演示AI协作编程完整流程。",
+    "full_content": "拆解Vibe Coding三步法：先规划再编码划定边界，胶水编程复用成熟方案减少幻觉，元方法论让AI自我进化。以React+TS+Tailwind待办清单为实战案例，演示AI协作编程完整流程。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-28",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7667468802851258394",
+    "read_time": 1,
+    "hot_score": 86
   }
 ]
