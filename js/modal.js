@@ -12,9 +12,19 @@ export function initModal() {
     const sourceBtn = document.getElementById('modalSourceBtn');
     const readToggleBtn = document.getElementById('modalReadToggleBtn');
 
+    // 检查元素是否存在，避免空指针
+    if (!modal || !closeBtn || !copyBtn || !sourceBtn || !readToggleBtn) {
+        console.error('Modal elements missing, check ids in HTML');
+        return;
+    }
+
     closeBtn.addEventListener('click', closeModal);
-    modal.addEventListener('click', (e) => { if(e.target===e.currentTarget) closeModal(); });
-    document.addEventListener('keydown', (e) => { if(e.key==='Escape') closeModal(); });
+    modal.addEventListener('click', (e) => {
+        if (e.target === e.currentTarget) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+    });
 
     copyBtn.addEventListener('click', copyLink);
     sourceBtn.addEventListener('click', openSource);
@@ -25,10 +35,12 @@ export function openModal(article) {
     currentArticle = article;
     const tag = document.getElementById('modalTag');
     tag.textContent = article.category === 'hot' ? '热搜' : (article.categoryName || 'AI/大模型');
-    tag.className = 'card-tag ' + (article.category||'ai');
-    tag.style.cssText = article.category==='hot' ? 'background:var(--color-hot-dim);color:var(--color-hot);' : 'background:var(--color-ai-dim);color:var(--color-ai);';
+    tag.className = 'card-tag ' + (article.category || 'ai');
+    tag.style.cssText = article.category === 'hot' 
+        ? 'background:var(--color-hot-dim);color:var(--color-hot);' 
+        : 'background:var(--color-ai-dim);color:var(--color-ai);';
     document.getElementById('modalDate').textContent = '📅 ' + formatDate(article.date);
-    document.getElementById('modalReadTime').textContent = '⏱ ' + (article.read_time||estimateReadTime(article.summary)) + ' min';
+    document.getElementById('modalReadTime').textContent = '⏱ ' + (article.read_time || estimateReadTime(article.summary)) + ' min';
     document.getElementById('modalTitle').textContent = article.title;
 
     const fullContainer = document.getElementById('modalFullContent');
@@ -52,7 +64,9 @@ export function openModal(article) {
         const source = article.source || '未知来源';
         const date = formatDate(article.date);
         const url = article.url || '#';
-        const summary = article.summary && article.summary.trim() ? `<p><strong>摘要：</strong>${escapeHtml(article.summary)}</p>` : '';
+        const summary = article.summary && article.summary.trim() 
+            ? `<p><strong>摘要：</strong>${escapeHtml(article.summary)}</p>` 
+            : '';
         fullContainer.innerHTML = `
             <div style="padding: 8px 0;">
                 <p style="font-size:1.1rem; font-weight:600; color:var(--text-primary); margin-bottom:8px;">📌 热搜详情</p>
@@ -87,24 +101,34 @@ export function closeModal() {
 }
 
 function openSource() {
-    if (currentArticle?.url && currentArticle.url !== '#') window.open(currentArticle.url,'_blank');
-    else showToast('无原文链接');
+    if (currentArticle?.url && currentArticle.url !== '#') {
+        window.open(currentArticle.url, '_blank');
+    } else {
+        showToast('无原文链接');
+    }
 }
 
 function copyLink() {
     if (currentArticle?.url && currentArticle.url !== '#') {
-        navigator.clipboard.writeText(currentArticle.url).then(()=>showToast('链接已复制')).catch(()=>showToast('复制失败'));
-    } else showToast('无链接');
+        navigator.clipboard.writeText(currentArticle.url)
+            .then(() => showToast('链接已复制'))
+            .catch(() => showToast('复制失败'));
+    } else {
+        showToast('无链接');
+    }
 }
 
 function toggleReadStatus() {
     if (currentArticle) {
         const id = currentArticle.id;
-        if (state.readIds.has(id)) state.readIds.delete(id);
-        else state.readIds.add(id);
+        if (state.readIds.has(id)) {
+            state.readIds.delete(id);
+        } else {
+            state.readIds.add(id);
+        }
         if (window.saveReadIds) window.saveReadIds();
         updateReadStatusUI();
         renderAll();
-        showToast(state.readIds.has(id)?'已标记已读':'取消已读');
+        showToast(state.readIds.has(id) ? '已标记已读' : '取消已读');
     }
 }
