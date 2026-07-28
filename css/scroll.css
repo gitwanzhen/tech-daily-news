@@ -1,1 +1,71 @@
 
+/* ===== 返回顶部按钮 ===== */
+.back-to-top {
+    position:fixed;
+    bottom:90px;
+    right:20px;
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:rgba(16,16,24,0.85);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.08);
+    color:var(--text-secondary);
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    transform:translateY(20px) scale(0.8);
+    transition:all 0.3s cubic-bezier(0.16,1,0.3,1);
+    z-index:100;
+    box-shadow:0 4px 20px rgba(0,0,0,0.3);
+}
+.back-to-top.visible { opacity:1; transform:translateY(0) scale(1); }
+.back-to-top:hover { background:rgba(40,40,56,0.9); border-color:rgba(255,255,255,0.15); color:var(--text-primary); transform:translateY(-2px) scale(1.05); }
+.back-to-top:active { transform:scale(0.92); }
+
+/* ===== 滚动滑块 ===== */
+.scroll-slider-container {
+    position:fixed;
+    right:6px;
+    top:50%;
+    transform:translateY(-50%);
+    width:4px;
+    height:200px;
+    z-index:99;
+    opacity:0;
+    transition:opacity 0.4s ease;
+}
+.scroll-slider-container.visible { opacity:1; }
+.scroll-slider-track {
+    position:relative;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,0.04);
+    border-radius:4px;
+    cursor:pointer;
+}
+.scroll-slider-thumb {
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    width:6px;
+    height:40px;
+    border-radius:4px;
+    background:rgba(255,255,255,0.15);
+    cursor:grab;
+    transition:background 0.2s, height 0.2s;
+}
+.scroll-slider-thumb:hover { background:rgba(255,255,255,0.25); }
+.scroll-slider-thumb:active { cursor:grabbing; background:rgba(255,255,255,0.35); height:44px; }
+
+@media (max-width:768px) {
+    .scroll-slider-container { right:4px; width:3px; height:120px; }
+    .scroll-slider-thumb { width:5px; height:30px; }
+    .back-to-top { bottom:80px; right:12px; width:38px; height:38px; }
+    .back-to-top svg { width:16px; height:16px; }
+}
+@media (max-width:480px) {
+    .scroll-slider-container { display:none; }
+}
