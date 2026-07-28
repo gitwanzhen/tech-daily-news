@@ -17,6 +17,11 @@ let isLoadingMore = false;
 let hasMoreAI = true, hasMoreHot = true;
 let observer = null;
 
+// ===== 新增：滚动滑块状态 =====
+let isDragging = false;
+let dragStartY = 0;
+let dragStartScroll = 0;
+
 const GEEK_CODES = [
     "Llama 4 的 200 万 token 上下文相当于让 AI 一次性读完《三体》三部曲还多出 40% 容量",
     "GPT-5 的代码生成准确率 92% 已超过人类初级工程师的平均水平 (约 85%)",
@@ -201,6 +206,8 @@ function renderAll() {
     updateGeekCode();
     isLoadingMore = false;
     setupObserver();
+    // ===== 新增：渲染完成后更新滚动滑块 =====
+    updateScrollThumb();
 }
 
 // ========================================================================
@@ -436,6 +443,132 @@ function showToast(msg) {
 }
 
 // ========================================================================
+//  ===== 新增：返回顶部按钮逻辑 =====
+// ========================================================================
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function updateBackToTopButton() {
+    const btn = document.getElementById('backToTop');
+    if (!btn) return;
+    if (window.scrollY > 300) {
+        btn.classList.add('visible');
+    } else {
+        btn.classList.remove('visible');
+    }
+}
+
+// ========================================================================
+//  ===== 新增：自定义滚动滑块逻辑 =====
+// ========================================================================
+function updateScrollThumb() {
+    const thumb = document.getElementById('scrollSliderThumb');
+    const container = document.getElementById('scrollSliderContainer');
+    if (!thumb || !container) return;
+
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const containerHeight = container.querySelector('.scroll-slider-track')?.offsetHeight || 200;
+    const thumbHeight = thumb.offsetHeight || 40;
+    const maxTop = containerHeight - thumbHeight;
+
+    if (docHeight <= 0) {
+        thumb.style.top = '0px';
+        return;
+    }
+
+    const progress = Math.min(scrollTop / docHeight, 1);
+    thumb.style.top = (progress * maxTop) + 'px';
+
+    // 显示/隐藏滑块容器
+    if (docHeight > window.innerHeight * 0.8) {
+        container.classList.add('visible');
+    } else {
+        container.classList.remove('visible');
+    }
+}
+
+function initScrollSlider() {
+    const track = document.getElementById('scrollSliderTrack');
+    const thumb = document.getElementById('scrollSliderThumb');
+    const container = document.getElementById('scrollSliderContainer');
+    if (!track || !thumb || !container) return;
+
+    // 点击轨道跳转
+    track.addEventListener('click', function(e) {
+        const rect = track.getBoundingClientRect();
+        const y = e.clientY - rect.top;
+        const pct = y / rect.height;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        window.scrollTo({ top: pct * docHeight, behavior: 'smooth' });
+    });
+
+    // 拖拽滑块
+    thumb.addEventListener('mousedown', function(e) {
+        e.preventDefault();
+        isDragging = true;
+        dragStartY = e.clientY;
+        dragStartScroll = window.scrollY;
+        thumb.style.cursor = 'grabbing';
+        document.body.style.userSelect = 'none';
+    });
+
+    // 触摸事件支持
+    thumb.addEventListener('touchstart', function(e) {
+        e.preventDefault();
+        isDragging = true;
+        const touch = e.touches[0];
+        dragStartY = touch.clientY;
+        dragStartScroll = window.scrollY;
+        document.body.style.userSelect = 'none';
+    }, { passive: false });
+
+    document.addEventListener('mousemove', function(e) {
+        if (!isDragging) return;
+        e.preventDefault();
+        const deltaY = e.clientY - dragStartY;
+        const trackHeight = track.offsetHeight;
+        const thumbHeight = thumb.offsetHeight;
+        const maxDelta = trackHeight - thumbHeight;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const pct = Math.max(0, Math.min(1, (deltaY / maxDelta) + (dragStartScroll / docHeight)));
+        window.scrollTo({ top: pct * docHeight });
+    });
+
+    document.addEventListener('touchmove', function(e) {
+        if (!isDragging) return;
+        e.preventDefault();
+        const touch = e.touches[0];
+        const deltaY = touch.clientY - dragStartY;
+        const trackHeight = track.offsetHeight;
+        const thumbHeight = thumb.offsetHeight;
+        const maxDelta = trackHeight - thumbHeight;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const pct = Math.max(0, Math.min(1, (deltaY / maxDelta) + (dragStartScroll / docHeight)));
+        window.scrollTo({ top: pct * docHeight });
+    }, { passive: false });
+
+    document.addEventListener('mouseup', function() {
+        if (isDragging) {
+            isDragging = false;
+            thumb.style.cursor = 'grab';
+            document.body.style.userSelect = '';
+        }
+    });
+
+    document.addEventListener('touchend', function() {
+        if (isDragging) {
+            isDragging = false;
+            document.body.style.userSelect = '';
+        }
+    });
+
+    // 窗口resize时更新
+    window.addEventListener('resize', updateScrollThumb);
+}
+
+// ========================================================================
 //  INIT
 // ========================================================================
 async function init() {
@@ -479,6 +612,18 @@ async function init() {
         const now = getBeijingDate();
         document.getElementById('liveStatus').textContent = '更新于 '+String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0');
     }, 10000);
+
+    // ===== 新增：初始化滚动相关 =====
+    // 返回顶部按钮
+    window.addEventListener('scroll', function() {
+        updateBackToTopButton();
+        updateScrollThumb();
+    });
+    // 初始化滑块
+    initScrollSlider();
+    // 初始更新
+    updateBackToTopButton();
+    setTimeout(updateScrollThumb, 100);
 }
 
 init();
