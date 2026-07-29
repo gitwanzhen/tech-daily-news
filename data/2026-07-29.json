@@ -1618,5 +1618,41 @@
     "url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
     "read_time": 1,
     "hot_score": 91
+  },
+  {
+    "title": "火山引擎混合云 veStack 智算平台 Day0 适配 Kimi K3",
+    "summary": "月之暗面Kimi K3发布，火山引擎veStack快速适配，支持企业本地安全部署1M长文本能力。平台组件覆盖模型推理、Agent开发管理，获评IDC智能体基础设施第一，兼顾AI创新与数据安全。",
+    "full_content": "月之暗面Kimi K3发布，火山引擎veStack快速适配，支持企业本地安全部署1M长文本能力。平台组件覆盖模型推理、Agent开发管理，获评IDC智能体基础设施第一，兼顾AI创新与数据安全。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-29",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7667849988994613282",
+    "read_time": 1,
+    "hot_score": 32
+  },
+  {
+    "title": "我发现了开发者AI产品营收的新方向",
+    "summary": "灵光一现的赚钱想法 最近在做3D数字人项目的过程中，我越来越强烈地感受到：AI 的下一阶段，不只是更会思考，而是更会交互。于是，一个AI赚钱的新方向逐渐在我脑海中清晰起来。 中国有近3亿老年人，独居、",
+    "full_content": "灵光一现的赚钱想法 最近在做3D数字人项目的过程中，我越来越强烈地感受到：AI 的下一阶段，不只是更会思考，而是更会交互。于是，一个AI赚钱的新方向逐渐在我脑海中清晰起来。 中国有近3亿老年人，独居、",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-29",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7667498977625260084",
+    "read_time": 1,
+    "hot_score": 81
+  },
+  {
+    "title": "我们把 26 个接口自动化场景接进了 Agent，效果真是没想到！！",
+    "summary": "事情是这样的。 一次看起来不大的互动业务调整，改动可能就那么一点点。 但真正开始测试后，事情会迅速膨胀。 主播、普通用户、新用户，不同角色要测。 普通礼物、盲盒类礼物、抽奖、榜单联动，不同互动类型要测",
+    "full_content": "事情是这样的。 一次看起来不大的互动业务调整，改动可能就那么一点点。 但真正开始测试后，事情会迅速膨胀。 主播、普通用户、新用户，不同角色要测。 普通礼物、盲盒类礼物、抽奖、榜单联动，不同互动类型要测",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-29",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7667778542090371081",
+    "read_time": 1,
+    "hot_score": 76
   }
 ]
