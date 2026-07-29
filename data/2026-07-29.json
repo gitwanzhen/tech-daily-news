@@ -1606,5 +1606,17 @@
     "url": "https://openai.com/index/chatgpt-for-academic-researchers",
     "read_time": 1,
     "hot_score": 41
+  },
+  {
+    "title": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
+    "summary": "GPT-5.6 improves AI efficiency across models, inference, and agentic workflows, helping deliver more useful intelligence...",
+    "full_content": "GPT-5.6 improves AI efficiency across models, inference, and agentic workflows, helping deliver more useful intelligence per dollar.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-29",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+    "read_time": 1,
+    "hot_score": 91
   }
 ]
