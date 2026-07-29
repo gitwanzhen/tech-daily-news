@@ -1594,5 +1594,77 @@
     "url": "https://juejin.cn/post/7667468802851258394",
     "read_time": 1,
     "hot_score": 86
+  },
+  {
+    "title": "uniTerm v1.6 发布：超轻量全能开源终端，新增 K8s 与容器管理、AI 技能与命令",
+    "summary": "uniTerm 是一款轻量级一站式终端软件，安装包不到 10MB，支持 SSH、RDP、VNC、SFTP、数据库、Kubernetes 等 20 余种协议，内置可自主执行的 AI Agent，能规划并执行多轮 Shell 命令。 本次 v1...",
+    "full_content": "uniTerm 是一款轻量级一站式终端软件，安装包不到 10MB，支持 SSH、RDP、VNC、SFTP、数据库、Kubernetes 等 20 余种协议，内置可自主执行的 AI Agent，能规划并执行多轮 Shell 命令。 本次 v1.6.0 是继文件传输、远程桌面、数据库之后的又一次能力扩容：正式引入 Kubernetes 与容器管理；同时让 AI 能力从「执行命令」升...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-28",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/481563/uniterm-1-6-released",
+    "read_time": 1,
+    "hot_score": 82
+  },
+  {
+    "title": "从单一向量到多路召回：RAG 混合检索的工程实践",
+    "summary": "生产级 RAG 是七步管线：查询改写 → 稠密检索 → 稀疏检索 → RRF 融合 → LLM 重排序 → 租户过滤 → 返回结果。每一步都在解决一个具体问题。",
+    "full_content": "生产级 RAG 是七步管线：查询改写 → 稠密检索 → 稀疏检索 → RRF 融合 → LLM 重排序 → 租户过滤 → 返回结果。每一步都在解决一个具体问题。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-28",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7667468802851127322",
+    "read_time": 1,
+    "hot_score": 85
+  },
+  {
+    "title": "长命令运行时，Agent 怎样继续处理其他工作",
+    "summary": "设想 Agent 正在初始化一个前端项目。 它需要执行依赖安装，还要检查 package.json、阅读构建脚本、确认环境变量。依赖安装可能需要几分钟，读取配置文件只需要几毫秒，若所有工具调用都同步执",
+    "full_content": "设想 Agent 正在初始化一个前端项目。 它需要执行依赖安装，还要检查 package.json、阅读构建脚本、确认环境变量。依赖安装可能需要几分钟，读取配置文件只需要几毫秒，若所有工具调用都同步执",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-28",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7667440984385355817",
+    "read_time": 1,
+    "hot_score": 39
+  },
+  {
+    "title": "SQL Workbench 0.3.0：给数据库插件加 AI，难的不是接上模型",
+    "summary": "做完 SQL Workbench 的 MVP 后，我原本没有打算这么快碰 AI。 当时的路线很朴素：先把连接、Schema、SQL 编辑、查询结果和导出这些基础工作流做稳，再慢慢补查询历史、View",
+    "full_content": "做完 SQL Workbench 的 MVP 后，我原本没有打算这么快碰 AI。 当时的路线很朴素：先把连接、Schema、SQL 编辑、查询结果和导出这些基础工作流做稳，再慢慢补查询历史、View",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-28",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7667450155558469682",
+    "read_time": 1,
+    "hot_score": 56
+  },
+  {
+    "title": "🏯 从零搭建《天龙八部》RAG 智能问答系统 — 完整实战学习日志",
+    "summary": "🏯 从零搭建《天龙八部》RAG 智能问答系统 — 完整实战学习日志 📖 一、项目概览 这个项目做了什么？ 我们把金庸经典武侠小说《天龙八部》（约 150 万字的 EPUB 电子书）变成了一本\"可对话的",
+    "full_content": "🏯 从零搭建《天龙八部》RAG 智能问答系统 — 完整实战学习日志 📖 一、项目概览 这个项目做了什么？ 我们把金庸经典武侠小说《天龙八部》（约 150 万字的 EPUB 电子书）变成了一本\"可对话的",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-28",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7667390528321847348",
+    "read_time": 1,
+    "hot_score": 54
+  },
+  {
+    "title": "AinoWork v2.0：AI 记忆与计划模式的 Harness 工程实践",
+    "summary": "AinoWork v2.0 不是功能堆叠，而是一次对 Harness 工程深度的重新思考——不做 RAG 做\"回忆\"，不写死流程用弱限制，让模型能力真正发挥出来。",
+    "full_content": "AinoWork v2.0 不是功能堆叠，而是一次对 Harness 工程深度的重新思考——不做 RAG 做\"回忆\"，不写死流程用弱限制，让模型能力真正发挥出来。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-28",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7667459437679984682",
+    "read_time": 1,
+    "hot_score": 79
   }
 ]
