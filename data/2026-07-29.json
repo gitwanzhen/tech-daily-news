@@ -1654,5 +1654,17 @@
     "url": "https://juejin.cn/post/7667778542090371081",
     "read_time": 1,
     "hot_score": 76
+  },
+  {
+    "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
+    "summary": "How two API settings improved GPT-5.6 performance on ARC-AGI-3, boosting scores and efficiency by retaining reasoning an...",
+    "full_content": "How two API settings improved GPT-5.6 performance on ARC-AGI-3, boosting scores and efficiency by retaining reasoning and enabling compaction.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-29",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+    "read_time": 1,
+    "hot_score": 71
   }
 ]
