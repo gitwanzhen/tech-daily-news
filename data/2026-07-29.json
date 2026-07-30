@@ -1666,5 +1666,17 @@
     "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
     "read_time": 1,
     "hot_score": 71
+  },
+  {
+    "title": "把AI长期记忆测试从手动验证换成pytest，2天揪出11个隐藏Bug",
+    "summary": "凌晨1:37，同事在群里发了个截图：AI助手把用户三个月前的过敏史当成了今天的新症状，建议“立即停药”。我后背一凉——这是我们长期记忆模块上线后最严重的事故。 事后复盘，根因是记忆去重逻辑有一个边界",
+    "full_content": "凌晨1:37，同事在群里发了个截图：AI助手把用户三个月前的过敏史当成了今天的新症状，建议“立即停药”。我后背一凉——这是我们长期记忆模块上线后最严重的事故。 事后复盘，根因是记忆去重逻辑有一个边界",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-29",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7667779444728971316",
+    "read_time": 1,
+    "hot_score": 80
   }
 ]
