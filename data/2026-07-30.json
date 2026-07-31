@@ -1774,5 +1774,17 @@
     "url": "https://juejin.cn/post/7668156693868970038",
     "read_time": 1,
     "hot_score": 31
+  },
+  {
+    "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
+    "summary": "avatarin uses OpenAI’s GPT-Realtime to give Yamada Denki shoppers 24/7 multilingual support. In two weeks, 30,000 people...",
+    "full_content": "avatarin uses OpenAI’s GPT-Realtime to give Yamada Denki shoppers 24/7 multilingual support. In two weeks, 30,000 people used the agent and 92% of survey responses were positive.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-30",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/avatarin",
+    "read_time": 1,
+    "hot_score": 70
   }
 ]
