@@ -1822,5 +1822,65 @@
     "url": "https://search.bilibili.com/all?keyword=%E5%A6%82%E4%BD%95%E8%AF%84%E4%BB%B7%E5%A5%A5%E7%99%BB%E5%B7%85%E5%B3%B0%E5%AE%9E%E5%8A%9B&from_source=webtop_search",
     "read_time": 1,
     "hot_score": 57
+  },
+  {
+    "title": "Agentic AI 工程实战",
+    "summary": "从 LLM 到 Agentic AI:范式演进的完整脉络 大模型的\"能用\"与\"好用\"之间,还隔着一道工程鸿沟 过去两年,大语言模型几乎一夜之间进入开发者视野,Chat Completions 接口三行",
+    "full_content": "从 LLM 到 Agentic AI:范式演进的完整脉络 大模型的\"能用\"与\"好用\"之间,还隔着一道工程鸿沟 过去两年,大语言模型几乎一夜之间进入开发者视野,Chat Completions 接口三行",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-31",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7668524314757349385",
+    "read_time": 1,
+    "hot_score": 84
+  },
+  {
+    "title": "从 0 到 1：Milvus + 大模型打造私人记忆知识库",
+    "summary": "从一个笨想法开始 最开始我想的很简单：日记存在 MySQL 里，不就完了？ 标题、内容、日期、心情标签，全是结构化的，CRUD 一把梭。然后用户问 \"我最近做了什么让我感到快乐的事情\"，我就…… 我就",
+    "full_content": "从一个笨想法开始 最开始我想的很简单：日记存在 MySQL 里，不就完了？ 标题、内容、日期、心情标签，全是结构化的，CRUD 一把梭。然后用户问 \"我最近做了什么让我感到快乐的事情\"，我就…… 我就",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-31",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7668547554774220840",
+    "read_time": 1,
+    "hot_score": 36
+  },
+  {
+    "title": "数据库问题不用再找专家，问 DBCopilot 就行 —— 一图看懂你的数据库 AI 副驾",
+    "summary": "火山引擎推出 DBCopilot 数据库智能助手，支持自然语言交互实现 “一句话查库”，可自动生成 SQL、图表与运维工单。产品分为智能交互、运维管控，覆盖数据库开发、诊断、运维全流程，降低操作门槛。",
+    "full_content": "火山引擎推出 DBCopilot 数据库智能助手，支持自然语言交互实现 “一句话查库”，可自动生成 SQL、图表与运维工单。产品分为智能交互、运维管控，覆盖数据库开发、诊断、运维全流程，降低操作门槛。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-31",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7668555305819652111",
+    "read_time": 1,
+    "hot_score": 42
+  },
+  {
+    "title": "每日一个开源项目（第171篇）：Harness Handbook - 给 AI Agent 的 Harness 代码库生成一本可导航的行为手册",
+    "summary": "引言 这是\"每日一个开源项目\"系列的第171篇文章。今天的主角是 Harness Handbook——一个把 AI Agent Harness 代码库转换成可导航行为手册的工具",
+    "full_content": "引言 这是\"每日一个开源项目\"系列的第171篇文章。今天的主角是 Harness Handbook——一个把 AI Agent Harness 代码库转换成可导航行为手册的工具",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-31",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7668540866240643122",
+    "read_time": 1,
+    "hot_score": 99
+  },
+  {
+    "title": "Disrupting a Criminal Scam Operation",
+    "summary": "OpenAI disrupted a Cambodia-based scam operation using ChatGPT to support investment, romance, gambling, and impersonati...",
+    "full_content": "OpenAI disrupted a Cambodia-based scam operation using ChatGPT to support investment, romance, gambling, and impersonation schemes.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-31",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
+    "read_time": 1,
+    "hot_score": 36
   }
 ]
