@@ -1750,5 +1750,29 @@
     "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
     "read_time": 151,
     "hot_score": 95
+  },
+  {
+    "title": "Linode接口及默认防火墙现已全面开放使用",
+    "summary": "Akamai云平台通过Linode接口和默认防火墙功能实现了网络管理的现代化升级。Linode接口允许用户在实例层面直接配置VPC、公网和VLAN连接，实现动态应用更改且通常无需重启。",
+    "full_content": "Akamai云平台通过Linode接口和默认防火墙功能实现了网络管理的现代化升级。Linode接口允许用户在实例层面直接配置VPC、公网和VLAN连接，实现动态应用更改且通常无需重启。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-30",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7668199817592946738",
+    "read_time": 1,
+    "hot_score": 87
+  },
+  {
+    "title": "RAG 回答错了，问题到底出在召回、重排，还是生成？",
+    "summary": "最近几天，我一直在学习 RAG。 我已经知道，文档需要先清洗、切片，再通过 Embedding 模型向量化并写入向量数据库。用户提问后，系统检索相关片段，把片段和问题一起交给 LLM，才形成完整的 R",
+    "full_content": "最近几天，我一直在学习 RAG。 我已经知道，文档需要先清洗、切片，再通过 Embedding 模型向量化并写入向量数据库。用户提问后，系统检索相关片段，把片段和问题一起交给 LLM，才形成完整的 R",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-07-30",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7668156693868970038",
+    "read_time": 1,
+    "hot_score": 31
   }
 ]
