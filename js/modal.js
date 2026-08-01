@@ -67,20 +67,21 @@ export function openModal(article) {
         const summary = article.summary && article.summary.trim() 
             ? `<p><strong>摘要：</strong>${escapeHtml(article.summary)}</p>` 
             : '';
-        fullContainer.innerHTML = sanitizeHtml(`
-            <div style="padding: 8px 0;">
-                <p style="font-size:1.1rem; font-weight:600; color:var(--text-primary); margin-bottom:8px;">📌 热搜详情</p>
-                <p><strong>标题：</strong>${escapeHtml(article.title)}</p>
-                <p><strong>来源：</strong>${escapeHtml(source)}</p>
-                <p><strong>热度：</strong>🔥 ${hot}</p>
-                <p><strong>日期：</strong>${date}</p>
-                ${summary}
-                ${url && url !== '#' ? `<p><strong>链接：</strong><a href="${url}" target="_blank">查看原文</a></p>` : ''}
-                <p style="margin-top:12px; color:var(--text-muted); font-size:0.9rem; border-top:1px solid var(--border-subtle); padding-top:12px;">
-                    ⚠️ 当前数据源未提供完整文章内容，以上为摘要信息。
-                </p>
-            </div>
-        `;
+        const linkHtml = (url && url !== '#')
+            ? `<p><strong>链接：</strong><a href="${escapeHtml(url)}" target="_blank" rel="noopener">查看原文</a></p>`
+            : '';
+        const parts = [];
+        parts.push('<div style="padding: 8px 0;">');
+        parts.push('<p style="font-size:1.1rem; font-weight:600; color:var(--text-primary); margin-bottom:8px;">📌 热搜详情</p>');
+        parts.push('<p><strong>标题：</strong>' + escapeHtml(article.title) + '</p>');
+        parts.push('<p><strong>来源：</strong>' + escapeHtml(source) + '</p>');
+        parts.push('<p><strong>热度：</strong>🔥 ' + hot + '</p>');
+        parts.push('<p><strong>日期：</strong>' + date + '</p>');
+        if (summary) parts.push(summary);
+        if (linkHtml) parts.push(linkHtml);
+        parts.push('<p style="margin-top:12px; color:var(--text-muted); font-size:0.9rem; border-top:1px solid var(--border-subtle); padding-top:12px;">⚠️ 当前数据源未提供完整文章内容，以上为摘要信息。</p>');
+        parts.push('</div>');
+        fullContainer.innerHTML = sanitizeHtml(parts.join(''));
         fullContainer.classList.add(article.category === 'hot' ? 'hot-border' : 'ai-border');
     }
 
