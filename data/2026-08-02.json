@@ -72,6 +72,18 @@
     "id": "df7fafb20737fe0c"
   },
   {
+    "title": "749局前传有多离谱",
+    "summary": "749局前传有多离谱",
+    "full_content": "749局前传有多离谱<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-02",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=749%E5%B1%80%E5%89%8D%E4%BC%A0%E6%9C%89%E5%A4%9A%E7%A6%BB%E8%B0%B1&from_source=webtop_search",
+    "read_time": 1,
+    "id": "e21a8f4c36f10c86"
+  },
+  {
     "title": "气象局称发生超强厄尔尼诺概率在增大",
     "summary": "气象局称发生超强厄尔尼诺概率在增大",
     "full_content": "气象局称发生超强厄尔尼诺概率在增大",
@@ -250,5 +262,77 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%8F%91%E7%8E%B0%E8%B5%9A%E9%92%B1%E6%96%B9%E5%BC%8F%E5%AF%B9%E4%BA%BA%E5%BD%B1%E5%93%8D%E5%BE%88%E5%A4%A7",
     "read_time": 1,
     "id": "a78612293da8cc2f"
+  },
+  {
+    "title": "热爱奔赴白药双护",
+    "summary": "热爱奔赴白药双护",
+    "full_content": "热爱奔赴白药双护",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-02",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%83%AD%E7%88%B1%E5%A5%94%E8%B5%B4%E7%99%BD%E8%8D%AF%E5%8F%8C%E6%8A%A4",
+    "read_time": 1,
+    "id": "a4eec6275d816a5e"
+  },
+  {
+    "title": "08｜韧性：一套接口接三家 API —— LLMProvider",
+    "summary": "0. 一个让我换模型换到崩溃的下午 我第一次给 catbuddy 接 DeepSeek 的时候，信心满满——不就是再调一个 API 嘛。 结果一跑就炸。Claude 的 system prompt 是",
+    "full_content": "0. 一个让我换模型换到崩溃的下午 我第一次给 catbuddy 接 DeepSeek 的时候，信心满满——不就是再调一个 API 嘛。 结果一跑就炸。Claude 的 system prompt 是",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-02",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7668692837795725347",
+    "read_time": 1,
+    "id": "a1c881c91527b31f"
+  },
+  {
+    "title": "大模型技术 模型调用结果解析 概述",
+    "summary": "在 LangChain 的开发流程中，模型调用结果解析（Output Parsers） 是至关重要的一环。 大模型生成的原始输出通常是长篇文本或特定的对象（如 AIMessage），但在实际业务中，我",
+    "full_content": "在 LangChain 的开发流程中，模型调用结果解析（Output Parsers） 是至关重要的一环。 大模型生成的原始输出通常是长篇文本或特定的对象（如 AIMessage），但在实际业务中，我",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-02",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7668610212342464527",
+    "read_time": 1,
+    "id": "e74266abb2428622"
+  },
+  {
+    "title": "大模型技术 Ollama 概述",
+    "summary": "如果说 LangChain 是构建 AI 应用的“大脑框架”，那么 Ollama 就是让这个大脑在你的本地电脑上跑起来的“发动机”。 一、 什么是 Ollama？ Ollama 是一个开源的本地大模型",
+    "full_content": "如果说 LangChain 是构建 AI 应用的“大脑框架”，那么 Ollama 就是让这个大脑在你的本地电脑上跑起来的“发动机”。 一、 什么是 Ollama？ Ollama 是一个开源的本地大模型",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-02",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7668704642685059112",
+    "read_time": 1,
+    "id": "34d6061dd7cef833"
+  },
+  {
+    "title": "DeepResearchSystem 0x06：LLM as Judge",
+    "summary": "iOS App上线之前要测试，那么 Agent 迭代上线前怎么保证质量呢？和传统的测试有何区别？这一章就揭开 LLM as Judge的神秘面纱，为我们的 Agent 设计和实现 Judge 模块。",
+    "full_content": "iOS App上线之前要测试，那么 Agent 迭代上线前怎么保证质量呢？和传统的测试有何区别？这一章就揭开 LLM as Judge的神秘面纱，为我们的 Agent 设计和实现 Judge 模块。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-02",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7668889968384737306",
+    "read_time": 1,
+    "id": "398b21efc74f6a84"
+  },
+  {
+    "title": "02｜50 行跑通一个 Agent Loop：harness 的最小内核",
+    "summary": "别被「上千行」吓到 很多人看 Agent 框架的源码，第一反应是「这也太复杂了」。catbuddy 的核心循环加上各种治理逻辑确实上千行。但我想告诉你一个让人安心的事实： Agent Loop 的内核",
+    "full_content": "别被「上千行」吓到 很多人看 Agent 框架的源码，第一反应是「这也太复杂了」。catbuddy 的核心循环加上各种治理逻辑确实上千行。但我想告诉你一个让人安心的事实： Agent Loop 的内核",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-02",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7668610212342333455",
+    "read_time": 1,
+    "id": "0f8ff0af415ea213"
   }
 ]
