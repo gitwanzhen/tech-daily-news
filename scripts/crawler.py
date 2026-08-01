@@ -31,39 +31,11 @@ RSS_SOURCES = [
 ]
 
 MODEL_SOURCES = [
-    {
-        "name": "OpenAI",
-        "rss_url": "https://openai.com/blog/rss.xml",
-        "rsshub_path": "/openai/news",
-        "category": "ai",
-        "categoryName": "AI/大模型"
-    },
-    {
-        "name": "Anthropic",
-        "rss_url": "https://www.anthropic.com/blog.rss",
-        "rsshub_path": "/anthropic/news",
-        "category": "ai",
-        "categoryName": "AI/大模型"
-    },
-    {
-        "name": "Google AI",
-        "rss_url": "https://ai.googleblog.com/feeds/posts/default",
-        "rsshub_path": "/google/ai",
-        "category": "ai",
-        "categoryName": "AI/大模型"
-    },
-    {
-        "name": "Meta AI",
-        "rsshub_path": "/meta/ai",
-        "category": "ai",
-        "categoryName": "AI/大模型"
-    },
-    {
-        "name": "Mistral AI",
-        "rsshub_path": "/mistral/news",
-        "category": "ai",
-        "categoryName": "AI/大模型"
-    },
+    {"name": "OpenAI", "rss_url": "https://openai.com/blog/rss.xml", "rsshub_path": "/openai/news"},
+    {"name": "Anthropic", "rss_url": "https://www.anthropic.com/blog.rss", "rsshub_path": "/anthropic/news"},
+    {"name": "Google AI", "rss_url": "https://ai.googleblog.com/feeds/posts/default", "rsshub_path": "/google/ai"},
+    {"name": "Meta AI", "rsshub_path": "/meta/ai"},
+    {"name": "Mistral AI", "rsshub_path": "/mistral/news"},
 ]
 
 HOT_SOURCES = [
@@ -91,7 +63,6 @@ def generate_summary(content, length=120):
     return text[:length] + "..." if len(text) > length else text
 
 def extract_full_content(entry):
-    """提取完整的HTML内容（用于详情展示）"""
     if hasattr(entry, 'content') and entry.content:
         if isinstance(entry.content, list) and len(entry.content) > 0:
             return entry.content[0].value
@@ -242,13 +213,50 @@ def fetch_model_news():
         print(f"  共抓取 {count} 条")
     return model_articles
 
+# ==================== 构建全局已存在标题集合 ====================
+def build_existing_titles():
+    """
+    读取 data/ 目录下所有日期 JSON 文件（以及旧的 news.json），
+    返回一个集合，元素为 (title, source) 元组，用于跨日期去重。
+    """
+    existing = set()
+    # 1. 检查旧的 news.json
+    old_file = os.path.join(DATA_DIR, "news.json")
+    if os.path.exists(old_file):
+        try:
+            with open(old_file, 'r', encoding='utf-8') as f:
+                old_data = json.load(f)
+            for item in old_data:
+                title = item.get("title")
+                source = item.get("source")
+                if title and source:
+                    existing.add((title, source))
+        except Exception as e:
+            print(f"读取 news.json 失败: {e}")
+
+    # 2. 遍历所有日期文件
+    for fname in os.listdir(DATA_DIR):
+        if fname.endswith(".json") and fname not in ["index.json", "news.json"]:
+            file_path = os.path.join(DATA_DIR, fname)
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                for item in data:
+                    title = item.get("title")
+                    source = item.get("source")
+                    if title and source:
+                        existing.add((title, source))
+            except Exception as e:
+                print(f"读取 {fname} 失败: {e}")
+    return existing
+
 # ==================== 主爬虫 ====================
 def crawl():
     print("\n" + "="*40)
     print("📡 开始抓取资讯")
     print("="*40)
 
-    all_articles = []
+    all_articles = []  # 本次抓取的所有新文章（尚未去重）
 
     # 1. 技术源
     print("\n📡 技术资讯")
@@ -266,6 +274,7 @@ def crawl():
                 link = entry.get("link", "")
                 full_content = extract_full_content(entry)
                 summary = generate_summary(full_content) if full_content else title
+                # 只保留 AI 相关
                 text = (title + summary).lower()
                 if not any(k in text for k in ["gpt", "llm", "大模型", "openai", "claude", "gemini", "ai", "人工智能", "deepseek", "llama", "agent", "rag"]):
                     continue
@@ -314,10 +323,9 @@ def crawl():
                 link = entry.get("link", "")
                 full_content = extract_full_content(entry)
                 summary = generate_summary(full_content) if full_content else title
-
                 if not summary or summary.strip() == '':
                     summary = title
-
+                # 如果 full_content 为空或只有空标签，构造描述
                 if not full_content or len(clean_html(full_content).strip()) < 5:
                     hot_value = compute_hot_score(title, src["platform"], parse_date(entry))
                     full_content = f"""
@@ -331,9 +339,8 @@ def crawl():
                         </p>
                     </div>
                     """
-
                 date_str = parse_date(entry)
-                article = {
+                all_articles.append({
                     "title": title,
                     "summary": summary,
                     "full_content": full_content,
@@ -343,34 +350,40 @@ def crawl():
                     "source": src["platform"],
                     "url": link,
                     "read_time": estimate_read_time(full_content or summary)
-                }
-                all_articles.append(article)
+                })
                 count += 1
                 print(f"    ✓ {title[:40]}...")
             except Exception as e:
                 print(f"    解析失败: {e}")
         print(f"  共抓取 {count} 条")
 
-    # 4. 去重
-    seen = set()
-    unique = []
+    # 4. 全局去重（基于所有历史数据）
+    print("\n🔄 正在加载历史数据用于去重...")
+    existing_titles = build_existing_titles()
+    print(f"  已加载 {len(existing_titles)} 条历史记录")
+
+    # 过滤掉已经在历史中存在的条目
+    new_unique = []
     for a in all_articles:
         key = (a["title"], a["source"])
-        if key not in seen:
-            seen.add(key)
-            a["hot_score"] = compute_hot_score(a["title"], a["source"], a["date"])
-            unique.append(a)
+        if key not in existing_titles:
+            new_unique.append(a)
+        else:
+            print(f"  跳过重复: {a['title'][:40]}... ({a['source']})")
 
-    if not unique:
-        print("\n⚠️ 无新内容")
+    print(f"\n  抓取总数: {len(all_articles)}，去重后新增: {len(new_unique)}")
+
+    if not new_unique:
+        print("\n⚠️ 无新内容（全部已在历史中出现）")
         clean_old_files()
         return
 
-    # 5. 按日期分组存储
+    # 5. 按日期分组
     grouped = defaultdict(list)
-    for art in unique:
+    for art in new_unique:
         grouped[art["date"]].append(art)
 
+    # 6. 写入日期文件（此时新条目保证不与历史重复，但同一天内仍可能重复，需二次去重）
     total_new = 0
     for date_str, articles in grouped.items():
         file_path = os.path.join(DATA_DIR, f"{date_str}.json")
@@ -378,20 +391,23 @@ def crawl():
         if os.path.exists(file_path):
             with open(file_path, 'r', encoding='utf-8') as f:
                 old = json.load(f)
+        # 与当天现有数据去重
         old_titles = {(a["title"], a["source"]) for a in old}
         new_entries = [a for a in articles if (a["title"], a["source"]) not in old_titles]
         if new_entries:
             combined = old + new_entries
-            combined.sort(key=lambda x: x.get("date", ""))
+            combined.sort(key=lambda x: (x.get("date", ""), x.get("source", "")))
             with open(file_path, 'w', encoding='utf-8') as f:
                 json.dump(combined, f, ensure_ascii=False, indent=2)
             total_new += len(new_entries)
             print(f"📝 {date_str}.json 新增 {len(new_entries)} 条")
+        else:
+            print(f"📝 {date_str}.json 无新增（当天已存在）")
 
-    # 6. 更新索引
+    # 7. 更新索引
     update_index()
 
-    # 7. 清理旧文件（保留30天）
+    # 8. 清理旧文件（保留30天）
     clean_old_files()
 
     print(f"\n✅ 本次新增 {total_new} 条")
@@ -433,7 +449,7 @@ def clean_old_files(days=30):
                 continue
 
 if __name__ == "__main__":
-    # 迁移旧数据（首次运行）
+    # 首次运行迁移旧 news.json（如果有）
     old_file = os.path.join(DATA_DIR, "news.json")
     if os.path.exists(old_file) and not any(f.endswith(".json") and f not in ["index.json", "news.json"] for f in os.listdir(DATA_DIR)):
         print("迁移旧数据...")
