@@ -19,12 +19,42 @@ export function initUI() {
             state.hasMoreHot = true;
             document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
             this.classList.add('active');
-            document.getElementById('content-ai').style.display = tab==='ai' ? 'block' : 'none';
-            document.getElementById('content-hot').style.display = tab==='hot' ? 'block' : 'none';
+            const aiEl = document.getElementById('content-ai');
+            const hotEl = document.getElementById('content-hot');
+            const hotTabs = document.getElementById('hotSourceTabs');
+            if (tab === 'ai') {
+                aiEl.style.display = 'block';
+                hotEl.style.display = 'none';
+                if (hotTabs) hotTabs.style.display = 'none';
+            } else {
+                aiEl.style.display = 'none';
+                hotEl.style.display = 'block';
+                if (hotTabs) hotTabs.style.display = 'flex';
+            }
             renderAll();
             setupObserver();
         });
     });
+
+    // 摸鱼指南：来源切换页签（全部 / 各来源）
+    const hotTabsEl = document.getElementById('hotSourceTabs');
+    if (hotTabsEl) {
+        hotTabsEl.addEventListener('click', function(e) {
+            const btn = e.target.closest('.hs-tab');
+            if (!btn) return;
+            const src = btn.dataset.source;
+            if (src === state.hotSourceTab) return;
+            state.hotSourceTab = src;
+            hotTabsEl.querySelectorAll('.hs-tab').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            state.hotPage = 0;
+            state.hasMoreHot = true;
+            state.hotGroupRendered = {};
+            renderAll();
+            setupObserver();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 
     // 日期选择器
     document.getElementById('datePicker').addEventListener('change', async (e) => {

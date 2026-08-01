@@ -13,6 +13,14 @@ export const state = {
     isLoadingMore: false,
     lastUpdated: null,
     observer: null,
+    // 摸鱼指南（热搜）按来源分组展示所需状态
+    hotOrdered: [],        // 拍平后的分组数组，元素带 groupStart 标记
+    hotGroupCounts: {},    // 各来源条数 { source: count }
+    hotGroupOrder: [],     // 展示顺序（固定顺序 + 未知来源追加）
+    hotGroupRendered: {},  // 各来源已渲染条数（用于跨页组内序号连续）
+    hotBySource: {},       // 按来源分组的原始数组（无 groupStart），用于来源切换页签
+    hotSourceOrder: [],    // 来源展示顺序（页签顺序）
+    hotSourceTab: 'all',   // 当前来源页签：'all' 或具体来源名
 };
 
 export function getTodayStr() {

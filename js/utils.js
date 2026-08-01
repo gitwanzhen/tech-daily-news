@@ -1,4 +1,12 @@
 // ===== 工具函数 =====
+// 来源元信息：图标 + 强调色（用于摸鱼指南按来源分组展示）
+export const SOURCE_META = {
+    '微博': { icon: '🔥', color: '#ff8200' },
+    'B站': { icon: '📺', color: '#fb7299' },
+    '豆瓣': { icon: '📚', color: '#2e963f' },
+    '其他': { icon: '📌', color: 'var(--color-ai)' },
+};
+
 export function escapeHtml(text) {
     if (text === null || text === undefined) return '';
     return String(text)

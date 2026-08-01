@@ -94,3 +94,82 @@
 /* ===== 模式 ===== */
 .hide-read .news-card.read-item,
 .hide-read .featured-card.read-item { display:none; }
+
+/* ===== 摸鱼指南：按来源分组 ===== */
+.source-group-header {
+    position: sticky;
+    top: 53px;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 14px 0 8px;
+    padding: 8px 14px;
+    background: var(--bg-card);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    border-left: 4px solid var(--sg-color, var(--color-ai));
+    border-radius: 10px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+.source-group-header .sg-icon { font-size: 16px; line-height: 1; }
+.source-group-header .sg-name { flex: 1; font-size: 14px; }
+.source-group-header .sg-count {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--sg-color, var(--color-ai));
+    border-radius: 10px;
+    padding: 1px 9px;
+}
+.source-group-header:first-child { margin-top: 4px; }
+
+/* ===== 摸鱼指南：来源切换页签 ===== */
+.hot-source-tabs {
+    position: sticky;
+    top: 0;
+    z-index: 6;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 0 10px;
+    margin-bottom: 2px;
+    background: rgba(8,8,14,0.72);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-subtle);
+}
+.hs-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-surface);
+    color: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+.hs-tab:hover { color: var(--text-primary); border-color: var(--border-visible); }
+.hs-tab.active {
+    color: #fff;
+    background: linear-gradient(135deg, var(--color-ai), var(--color-brand-start));
+    border-color: transparent;
+    box-shadow: 0 4px 14px rgba(96,165,250,0.25);
+}
+.hs-tab .hs-icon { font-size: 14px; line-height: 1; }
+.hs-tab .hs-count {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 0 7px;
+    border-radius: var(--radius-pill);
+    background: rgba(255,255,255,0.1);
+}
+.hs-tab.active .hs-count { background: rgba(255,255,255,0.22); }
+
+/* 热搜序号更醒目 */
+.news-card.hot .card-title .index { opacity: 1; color: var(--color-hot); font-weight: 700; }
+

@@ -1,6 +1,6 @@
 // ===== 滚动控制：返回顶部、滑块、加载更多 =====
 import { state } from './state.js';
-import { renderAll, renderCard, updateReadStatusUI } from './renderer.js';
+import { renderAll, renderCard, renderHotSlice, updateReadStatusUI, getHotListForView, renderFlatHot } from './renderer.js';
 
 let isDragging = false;
 let dragStartY = 0;
@@ -160,7 +160,9 @@ function loadMore() {
     state.isLoadingMore = true;
 
     const PAGE_SIZE = 20;
-    const all = isAI ? state.aiAll : state.hotAll;
+    let all;
+    if (isAI) all = state.aiAll;
+    else { const v = getHotListForView(); all = v.all; }
     const page = isAI ? state.aiPage : state.hotPage;
     const start = page * PAGE_SIZE;
     const end = Math.min((page + 1) * PAGE_SIZE, all.length);
@@ -171,8 +173,13 @@ function loadMore() {
     if (oldLoading) oldLoading.remove();
 
     let html = '';
-    for (let i = 0; i < slice.length; i++) {
-        html += renderCard(slice[i], page === 0 && i === 0, start + i);
+    if (isAI) {
+        for (let i = 0; i < slice.length; i++) {
+            html += renderCard(slice[i], page === 0 && i === 0, start + i);
+        }
+    } else {
+        if (state.hotSourceTab === 'all') html = renderHotSlice(slice);
+        else html = renderFlatHot(slice, start);
     }
     container.insertAdjacentHTML('beforeend', html);
 

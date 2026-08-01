@@ -1,8 +1,8 @@
 // ===== 渲染引擎 =====
 import { state, formatDate } from './state.js';
-import { escapeHtml, estimateReadTime, generateStableId } from './utils.js';
+import { escapeHtml, estimateReadTime, generateStableId, SOURCE_META } from './utils.js';
 
-export function renderCard(article, featured=false, index=null) {
+export function renderCard(article, featured=false, index=null, hideSource=false) {
     if (!article.id) article.id = generateStableId(article);
     const isRead = state.readIds.has(article.id);
     const hot = article.hot_score || 30;
@@ -37,7 +37,7 @@ export function renderCard(article, featured=false, index=null) {
     }
     html += `<div class="card-title ${readTitleClass}">
                 <span>${indexHtml}${escapeHtml(article.title)}</span>
-                <span class="source-inline">· ${escapeHtml(article.source||'未知')}</span>
+                ${hideSource ? '' : `<span class="source-inline">· ${escapeHtml(article.source||'未知')}</span>`}
             </div>`;
     html += `<div class="card-summary"><span class="core">💡 核心：</span>${escapeHtml(summary)}</div>`;
     html += `<div class="card-footer">
@@ -50,19 +50,86 @@ export function renderCard(article, featured=false, index=null) {
     return html;
 }
 
+// 渲染一组（已切片）热搜：遇 groupStart 插入来源分组头，组内序号连续（跨页连续）
+export function renderHotSlice(slice) {
+    let html = '';
+    for (let i = 0; i < slice.length; i++) {
+        const a = slice[i];
+        const src = a.source || '其他';
+        if (a.groupStart) {
+            const meta = SOURCE_META[src] || SOURCE_META['其他'];
+            const count = state.hotGroupCounts[src] || 0;
+            html += `<div class="source-group-header" data-source="${escapeHtml(src)}" style="--sg-color:${meta.color}">`
+                + `<span class="sg-icon">${meta.icon}</span>`
+                + `<span class="sg-name">${escapeHtml(src)}</span>`
+                + `<span class="sg-count">${count}</span>`
+                + `</div>`;
+            state.hotGroupRendered[src] = 0;
+        }
+        const gi = state.hotGroupRendered[src] || 0;
+        html += renderCard(a, false, gi, true);
+        state.hotGroupRendered[src] = gi + 1;
+    }
+    return html;
+}
+
+// 单来源（页签筛选）扁平渲染：全局连续序号 1..N
+export function renderFlatHot(slice, startIndex) {
+    let html = '';
+    for (let i = 0; i < slice.length; i++) {
+        html += renderCard(slice[i], false, startIndex + i, true);
+    }
+    return html;
+}
+
+// 当前来源页签对应的数据视图
+export function getHotListForView() {
+    if (state.hotSourceTab === 'all') return { all: state.hotOrdered, grouped: true };
+    return { all: state.hotBySource[state.hotSourceTab] || [], grouped: false };
+}
+
+// 渲染摸鱼指南的来源切换页签（全部 + 各来源，带数量）
+export function renderHotSourceTabs() {
+    const el = document.getElementById('hotSourceTabs');
+    if (!el) return;
+    const order = state.hotSourceOrder || [];
+    const tabs = [];
+    for (const s of order) {
+        if (s && s !== '其他') tabs.push(s);
+    }
+    if ((state.hotGroupCounts['其他'] || 0) > 0) tabs.push('其他');
+    if (tabs.length === 0) tabs.push('全部');  // 无任何来源数据时的兜底
+    let html = '';
+    for (const t of tabs) {
+        const isAll = t === '全部';
+        const key = isAll ? 'all' : t;
+        const active = (isAll && state.hotSourceTab === 'all') || (!isAll && state.hotSourceTab === t);
+        const meta = isAll ? { icon: '📋', color: 'var(--color-ai)' } : (SOURCE_META[t] || SOURCE_META['其他']);
+        const count = isAll ? state.hotAll.length : (state.hotGroupCounts[t] || 0);
+        html += `<button class="hs-tab ${active?'active':''}" data-source="${escapeHtml(key)}">`
+            + `<span class="hs-icon">${meta.icon}</span>`
+            + `<span class="hs-name">${escapeHtml(t)}</span>`
+            + `<span class="hs-count">${count}</span>`
+            + `</button>`;
+    }
+    el.innerHTML = html;
+}
+
 export function renderAll() {
     const containerAI = document.getElementById('content-ai');
     const containerHot = document.getElementById('content-hot');
 
     const PAGE_SIZE = 20;
+    state.hotPage = 0; state.aiPage = 0;  // renderAll 只渲染首屏，后续交给 loadMore 分页
     const aiLimit = Math.min((state.aiPage + 1) * PAGE_SIZE, state.aiAll.length);
-    const hotLimit = Math.min((state.hotPage + 1) * PAGE_SIZE, state.hotAll.length);
+    const { all: hotViewAll, grouped: hotGrouped } = getHotListForView();
+    const hotLimit = Math.min((state.hotPage + 1) * PAGE_SIZE, hotViewAll.length);
 
     const aiPageData = state.aiAll.slice(0, aiLimit);
-    const hotPageData = state.hotAll.slice(0, hotLimit);
+    const hotPageData = hotViewAll.slice(0, hotLimit);
 
     state.hasMoreAI = aiLimit < state.aiAll.length;
-    state.hasMoreHot = hotLimit < state.hotAll.length;
+    state.hasMoreHot = hotLimit < hotViewAll.length;
 
     if (aiPageData.length===0) {
         containerAI.innerHTML = '<div class="empty">暂无 AI 资讯</div>';
@@ -79,10 +146,8 @@ export function renderAll() {
     if (hotPageData.length===0) {
         containerHot.innerHTML = '<div class="empty">暂无热搜</div>';
     } else {
-        let html = '';
-        for (let i=0; i<hotPageData.length; i++) {
-            html += renderCard(hotPageData[i], i===0, i);
-        }
+        state.hotGroupRendered = {};
+        let html = hotGrouped ? renderHotSlice(hotPageData) : renderFlatHot(hotPageData, 0);
         html += state.hasMoreHot ? `<div class="loading-more" id="hotLoadingMore">加载更多...</div>` : `<div class="loading-more" style="opacity:0.5;">— 已加载全部 —</div>`;
         containerHot.innerHTML = html;
     }
@@ -93,6 +158,7 @@ export function renderAll() {
 
     updateReadStatusUI();
     updateGeekCode();
+    state.hotPage = 1; state.aiPage = 1;  // 首屏已渲染，loadMore 应从第二页起，避免重复前 20 条
     state.isLoadingMore = false;
 }
 
