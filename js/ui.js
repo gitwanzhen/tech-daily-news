@@ -4,6 +4,7 @@ import { state, getTodayStr } from './state.js';
 import { renderAll, updateReadStatusUI } from './renderer.js';
 import { setupObserver } from './scroll.js';
 import { loadAndRender } from './actions.js';
+import { loadIndex } from './api.js';
 import { showToast } from './utils.js';
 
 export function initUI() {
@@ -50,17 +51,22 @@ export function initUI() {
         document.getElementById('content-hot').classList.toggle('hide-read', checked);
     });
 
-    // 刷新按钮
+    // 刷新按钮：对比 index.json 的真实更新时间，有新版才重载数据
     document.getElementById('updateBtn').addEventListener('click', async function() {
         if (window.isRefreshing) return;
         window.isRefreshing = true;
         this.classList.add('spinning');
         this.disabled = true;
         try {
-            showToast('正在触发爬虫更新...');
-            await new Promise(r => setTimeout(r, 2000));
-            await loadAndRender(state.currentDate);
-            showToast('数据已刷新 (实际需触发Action)');
+            const idx = await loadIndex();
+            const meta = idx[state.currentDate];
+            const latest = meta ? meta.updated : null;
+            if (state.lastUpdated && latest && state.lastUpdated === latest) {
+                showToast('已是最新（' + (latest ? latest.slice(11) : '') + '）');
+            } else {
+                await loadAndRender(state.currentDate);
+                showToast('已刷新数据');
+            }
         } catch(e) {
             showToast('刷新失败');
         } finally {

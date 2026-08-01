@@ -11,6 +11,7 @@ export const state = {
     hasMoreAI: true,
     hasMoreHot: true,
     isLoadingMore: false,
+    lastUpdated: null,
     observer: null,
 };
 

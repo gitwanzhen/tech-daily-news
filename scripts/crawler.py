@@ -48,6 +48,10 @@ HOT_SOURCES = [
 API_TYPE_MAP = {"微博": "weibo", "知乎": "zhihu", "B站": "bilihot"}
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
 
+# AI 过滤：英文用词边界匹配（避免 "ai" 命中 available/main/email 等），中文用全词匹配
+AI_EN_PATTERN = re.compile(r"(?i)\b(gpt|llm|rag|agent|ai|openai|claude|gemini|deepseek|llama|mistral|chatgpt|copilot|transformer|diffusion|neural|gpt4|gpt5)\b")
+AI_ZH_KEYWORDS = ["大模型", "人工智能", "机器学习", "深度学习", "智能体", "神经网络", "生成式"]
+
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
 os.makedirs(DATA_DIR, exist_ok=True)
 
@@ -61,6 +65,15 @@ def clean_html(text):
 def generate_summary(content, length=120):
     text = clean_html(content)
     return text[:length] + "..." if len(text) > length else text
+
+def cap_content(text, limit=1800):
+    """限制正文长度，避免单条 full_content 过大导致 data 文件膨胀。"""
+    if not text:
+        return text
+    text = text.strip()
+    if len(text) > limit:
+        text = text[:limit].rstrip() + "…"
+    return text
 
 def extract_full_content(entry):
     if hasattr(entry, 'content') and entry.content:
@@ -191,7 +204,7 @@ def fetch_model_news():
                 title = clean_html(entry.get("title", ""))
                 if not title: continue
                 link = entry.get("link", "")
-                full_content = extract_full_content(entry)
+                full_content = cap_content(extract_full_content(entry))
                 summary = generate_summary(full_content) if full_content else title
                 date_str = parse_date(entry)
                 article = {
@@ -272,11 +285,11 @@ def crawl():
                 title = clean_html(entry.get("title", ""))
                 if not title: continue
                 link = entry.get("link", "")
-                full_content = extract_full_content(entry)
+                full_content = cap_content(extract_full_content(entry))
                 summary = generate_summary(full_content) if full_content else title
-                # 只保留 AI 相关
-                text = (title + summary).lower()
-                if not any(k in text for k in ["gpt", "llm", "大模型", "openai", "claude", "gemini", "ai", "人工智能", "deepseek", "llama", "agent", "rag"]):
+                # 只保留 AI 相关（英文词边界 + 中文全词，避免误判）
+                text = title + " " + summary
+                if not (AI_EN_PATTERN.search(text) or any(z in text for z in AI_ZH_KEYWORDS)):
                     continue
                 date_str = parse_date(entry)
                 all_articles.append({
@@ -321,7 +334,7 @@ def crawl():
                 title = clean_html(entry.get("title", ""))
                 if not title: continue
                 link = entry.get("link", "")
-                full_content = extract_full_content(entry)
+                full_content = cap_content(extract_full_content(entry))
                 summary = generate_summary(full_content) if full_content else title
                 if not summary or summary.strip() == '':
                     summary = title
@@ -343,7 +356,7 @@ def crawl():
                 all_articles.append({
                     "title": title,
                     "summary": summary,
-                    "full_content": full_content,
+                    "full_content": cap_content(full_content),
                     "category": "hot",
                     "categoryName": "🔥 热搜",
                     "date": date_str,

@@ -1,6 +1,6 @@
 // ===== 滚动控制：返回顶部、滑块、加载更多 =====
 import { state } from './state.js';
-import { renderAll } from './renderer.js';
+import { renderAll, renderCard, updateReadStatusUI } from './renderer.js';
 
 let isDragging = false;
 let dragStartY = 0;
@@ -154,16 +154,38 @@ export function setupObserver() {
 
 function loadMore() {
     if (state.isLoadingMore) return;
-    if (state.currentTab === 'ai' && !state.hasMoreAI) return;
-    if (state.currentTab === 'hot' && !state.hasMoreHot) return;
+    const isAI = state.currentTab === 'ai';
+    if (isAI && !state.hasMoreAI) return;
+    if (!isAI && !state.hasMoreHot) return;
     state.isLoadingMore = true;
-    if (state.currentTab === 'ai') {
-        state.aiPage++;
-        renderAll();
-        setupObserver();
-    } else {
-        state.hotPage++;
-        renderAll();
-        setupObserver();
+
+    const PAGE_SIZE = 20;
+    const all = isAI ? state.aiAll : state.hotAll;
+    const page = isAI ? state.aiPage : state.hotPage;
+    const start = page * PAGE_SIZE;
+    const end = Math.min((page + 1) * PAGE_SIZE, all.length);
+    const slice = all.slice(start, end);
+
+    const container = isAI ? document.getElementById('content-ai') : document.getElementById('content-hot');
+    const oldLoading = container.querySelector('.loading-more');
+    if (oldLoading) oldLoading.remove();
+
+    let html = '';
+    for (let i = 0; i < slice.length; i++) {
+        html += renderCard(slice[i], page === 0 && i === 0, start + i);
     }
+    container.insertAdjacentHTML('beforeend', html);
+
+    if (isAI) state.aiPage++; else state.hotPage++;
+    const hasMore = end < all.length;
+    if (isAI) state.hasMoreAI = hasMore; else state.hasMoreHot = hasMore;
+
+    container.insertAdjacentHTML('beforeend',
+        hasMore
+            ? '<div class="loading-more" id="' + (isAI ? 'aiLoadingMore' : 'hotLoadingMore') + '">加载更多...</div>'
+            : '<div class="loading-more" style="opacity:0.5;">— 已加载全部 —</div>');
+
+    updateReadStatusUI();
+    state.isLoadingMore = false;
+    setupObserver();
 }

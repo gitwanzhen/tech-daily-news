@@ -33,14 +33,6 @@ async function init() {
     state.currentDate = targetDate;
     await loadAndRender(targetDate);
 
-    // 设置实时状态
-    const now = new Date();
-    document.getElementById('liveStatus').textContent = '更新于 '+String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0');
-    setInterval(() => {
-        const now = new Date();
-        document.getElementById('liveStatus').textContent = '更新于 '+String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0');
-    }, 10000);
-
     // 初始化UI
     initUI();
     initModal();

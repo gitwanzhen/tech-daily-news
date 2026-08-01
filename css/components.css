@@ -92,8 +92,5 @@
 .read-status.read { background:var(--text-muted); border-color:var(--text-muted); }
 
 /* ===== 模式 ===== */
-.compact .card-summary { display:none; }
-.compact .card-footer .hot-score { display:none; }
-.compact .card-title { font-size:14px; }
 .hide-read .news-card.read-item,
 .hide-read .featured-card.read-item { display:none; }

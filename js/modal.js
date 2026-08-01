@@ -1,6 +1,6 @@
 // ===== 模态框逻辑 =====
 import { state, formatDate } from './state.js';
-import { escapeHtml, estimateReadTime, showToast } from './utils.js';
+import { escapeHtml, estimateReadTime, showToast, sanitizeHtml } from './utils.js';
 import { renderAll, updateReadStatusUI } from './renderer.js';
 
 let currentArticle = null;
@@ -53,7 +53,7 @@ export function openModal(article) {
     if (stripped.length > 0) hasValidContent = true;
 
     if (hasValidContent) {
-        fullContainer.innerHTML = contentHtml;
+        fullContainer.innerHTML = sanitizeHtml(contentHtml);
         fullContainer.style.display = 'block';
         summaryContainer.style.display = 'none';
         fullContainer.classList.add(article.category === 'hot' ? 'hot-border' : 'ai-border');
@@ -67,7 +67,7 @@ export function openModal(article) {
         const summary = article.summary && article.summary.trim() 
             ? `<p><strong>摘要：</strong>${escapeHtml(article.summary)}</p>` 
             : '';
-        fullContainer.innerHTML = `
+        fullContainer.innerHTML = sanitizeHtml(`
             <div style="padding: 8px 0;">
                 <p style="font-size:1.1rem; font-weight:600; color:var(--text-primary); margin-bottom:8px;">📌 热搜详情</p>
                 <p><strong>标题：</strong>${escapeHtml(article.title)}</p>
@@ -128,7 +128,6 @@ function toggleReadStatus() {
         }
         if (window.saveReadIds) window.saveReadIds();
         updateReadStatusUI();
-        renderAll();
         showToast(state.readIds.has(id) ? '已标记已读' : '取消已读');
     }
 }
