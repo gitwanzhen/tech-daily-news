@@ -1044,6 +1044,66 @@
     "id": "7096d96007e47036"
   },
   {
+    "title": "重温习近平的强军嘱托",
+    "summary": "重温习近平的强军嘱托",
+    "full_content": "重温习近平的强军嘱托",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-02",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%87%8D%E6%B8%A9%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%9A%84%E5%BC%BA%E5%86%9B%E5%98%B1%E6%89%98",
+    "read_time": 1,
+    "id": "9fabbb41b34eec65"
+  },
+  {
+    "title": "中国预警机独立指挥空中战场",
+    "summary": "中国预警机独立指挥空中战场",
+    "full_content": "中国预警机独立指挥空中战场",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-02",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%B8%AD%E5%9B%BD%E9%A2%84%E8%AD%A6%E6%9C%BA%E7%8B%AC%E7%AB%8B%E6%8C%87%E6%8C%A5%E7%A9%BA%E4%B8%AD%E6%88%98%E5%9C%BA",
+    "read_time": 1,
+    "id": "36453d34fdbfbe30"
+  },
+  {
+    "title": "上京东买美食大赛冠军同款菜",
+    "summary": "上京东买美食大赛冠军同款菜",
+    "full_content": "上京东买美食大赛冠军同款菜",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-02",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%B8%8A%E4%BA%AC%E4%B8%9C%E4%B9%B0%E7%BE%8E%E9%A3%9F%E5%A4%A7%E8%B5%9B%E5%86%A0%E5%86%9B%E5%90%8C%E6%AC%BE%E8%8F%9C",
+    "read_time": 1,
+    "id": "2103f940f0a303a6"
+  },
+  {
+    "title": "蔡徐坤太帅了",
+    "summary": "蔡徐坤太帅了",
+    "full_content": "蔡徐坤太帅了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-02",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%94%A1%E5%BE%90%E5%9D%A4%E5%A4%AA%E5%B8%85%E4%BA%86",
+    "read_time": 1,
+    "id": "10a90a9f4a47dd0f"
+  },
+  {
+    "title": "TheShy被强吻",
+    "summary": "TheShy被强吻",
+    "full_content": "TheShy被强吻",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-02",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3DTheShy%E8%A2%AB%E5%BC%BA%E5%90%BB",
+    "read_time": 1,
+    "id": "505c73d4311fbcbc"
+  },
+  {
     "title": "08｜韧性：一套接口接三家 API —— LLMProvider",
     "summary": "0. 一个让我换模型换到崩溃的下午 我第一次给 catbuddy 接 DeepSeek 的时候，信心满满——不就是再调一个 API 嘛。 结果一跑就炸。Claude 的 system prompt 是",
     "full_content": "0. 一个让我换模型换到崩溃的下午 我第一次给 catbuddy 接 DeepSeek 的时候，信心满满——不就是再调一个 API 嘛。 结果一跑就炸。Claude 的 system prompt 是",
@@ -1126,5 +1186,53 @@
     "url": "https://juejin.cn/post/7668933720747638834",
     "read_time": 1,
     "id": "b3cb1e236bcdc3a2"
+  },
+  {
+    "title": "oh-my-pi工程级AI编码工使用体验",
+    "summary": "用 oh-my-pi 跑了半个月多模块改造。AI 幻觉大幅减少，准确率提高了很多；可以配置多种模型，复杂编码和轻量调研自动分流；任务执行很丝滑，结果全部结构化展示。",
+    "full_content": "用 oh-my-pi 跑了半个月多模块改造。AI 幻觉大幅减少，准确率提高了很多；可以配置多种模型，复杂编码和轻量调研自动分流；任务执行很丝滑，结果全部结构化展示。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-02",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7669204808297250826",
+    "read_time": 1,
+    "id": "46fd06865cd082f4"
+  },
+  {
+    "title": "开源项目第173期：AI For Beginners — 微软出品的 12 周 24 课 AI 完整课程",
+    "summary": "引言 这是「每日一个开源项目」系列的第 173 篇。今天的项目是 AI For Beginners —— 微软开源的系统性 AI 入门课程，12 周、24 课，覆盖从经典符号 AI 到现代深度学习",
+    "full_content": "引言 这是「每日一个开源项目」系列的第 173 篇。今天的项目是 AI For Beginners —— 微软开源的系统性 AI 入门课程，12 周、24 课，覆盖从经典符号 AI 到现代深度学习",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-02",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7669036838767673363",
+    "read_time": 1,
+    "id": "0ef9919d5dca9ae6"
+  },
+  {
+    "title": "LLM智能路由实践：通过 Harness 工程节约模型成本",
+    "summary": "1. 为什么需要智能路由 很多 Agent 系统把模型选择交给用户：在发起任务前，用户先从模型列表中挑选一个模型。",
+    "full_content": "1. 为什么需要智能路由 很多 Agent 系统把模型选择交给用户：在发起任务前，用户先从模型列表中挑选一个模型。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-02",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7668963586064269364",
+    "read_time": 1,
+    "id": "82b1f2d46bedd5cc"
+  },
+  {
+    "title": "SEO 页面怎么生成",
+    "summary": "很多独立开发者做 SEO 页面时，会直接想到“批量生成很多页面”。 但 SEO 页面不是把关键词塞进模板，也不是用 AI 一口气生成几千篇文章。真正能长期工作的 SEO 页面，必须同时满足两个条件：搜",
+    "full_content": "很多独立开发者做 SEO 页面时，会直接想到“批量生成很多页面”。 但 SEO 页面不是把关键词塞进模板，也不是用 AI 一口气生成几千篇文章。真正能长期工作的 SEO 页面，必须同时满足两个条件：搜",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-02",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7669058712006541331",
+    "read_time": 1,
+    "id": "134048ecfff097b5"
   }
 ]
