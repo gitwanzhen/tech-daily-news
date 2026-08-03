@@ -1150,5 +1150,41 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%81%8B%E4%B8%8E%E6%B7%B1%E7%A9%BA%E6%95%96%E5%B0%B9%E4%B8%8B%E7%BA%BF%E4%BA%89%E8%AE%AE",
     "read_time": 1,
     "id": "8952c73f510a10cb"
+  },
+  {
+    "title": "从算力到智能体，面向 Agentic AI 的基础设施演进",
+    "summary": "本文基于 2026 Agentic AI 超级智能体系统架构峰会演讲，系统阐述了阿里云 PAI 平台如何围绕算力、推理与场景三条主线构建面向 Agentic AI 的全栈基础设施。",
+    "full_content": "本文基于 2026 Agentic AI 超级智能体系统架构峰会演讲，系统阐述了阿里云 PAI 平台如何围绕算力、推理与场景三条主线构建面向 Agentic AI 的全栈基础设施。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-03",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7669620584251686964",
+    "read_time": 1,
+    "id": "cba742f9a2975133"
+  },
+  {
+    "title": "EMR Serverless Spark AI Function 的双维降本实践",
+    "summary": "EMR Serverless Spark AI Function把大模型能力带入用户熟悉的 SQL 与 DataFrame 工作流，同时让Spark能够理解 AI 调用是一种昂贵、需要治理的外部计算。",
+    "full_content": "EMR Serverless Spark AI Function把大模型能力带入用户熟悉的 SQL 与 DataFrame 工作流，同时让Spark能够理解 AI 调用是一种昂贵、需要治理的外部计算。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-03",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7669788995433529371",
+    "read_time": 1,
+    "id": "f76b5775c70b17f8"
+  },
+  {
+    "title": "开源项目第174期：AirLLM — 4GB 显存跑 70B，8GB 跑 405B，3.7GB 跑 2.8 万亿参数的 Kimi K3",
+    "summary": "引言 这是「每日一个开源项目」系列的第 174 篇。今天的项目是 AirLLM —— 一个让消费级 GPU 运行工业级大模型的 Python 库，4G显存可以跑kimi k3",
+    "full_content": "引言 这是「每日一个开源项目」系列的第 174 篇。今天的项目是 AirLLM —— 一个让消费级 GPU 运行工业级大模型的 Python 库，4G显存可以跑kimi k3",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-03",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7669690604403130419",
+    "read_time": 1,
+    "id": "64291daca789ceca"
   }
 ]
