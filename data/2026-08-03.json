@@ -384,6 +384,66 @@
     "id": "82668caa9c3a5a46"
   },
   {
+    "title": "EDG瓦第二赛段长沙VLOG",
+    "summary": "EDG瓦第二赛段长沙VLOG",
+    "full_content": "EDG瓦第二赛段长沙VLOG<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-03",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=EDG%E7%93%A6%E7%AC%AC%E4%BA%8C%E8%B5%9B%E6%AE%B5%E9%95%BF%E6%B2%99VLOG&from_source=webtop_search",
+    "read_time": 1,
+    "id": "8603fe353c413098"
+  },
+  {
+    "title": "MiniMax H3正式开源",
+    "summary": "MiniMax H3正式开源",
+    "full_content": "MiniMax H3正式开源<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-03",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=MiniMax+H3%E6%AD%A3%E5%BC%8F%E5%BC%80%E6%BA%90&from_source=webtop_search",
+    "read_time": 1,
+    "id": "dd2807b61bea5ab2"
+  },
+  {
+    "title": "记者暗访牛蛙加工厂曝光乱象",
+    "summary": "记者暗访牛蛙加工厂曝光乱象",
+    "full_content": "记者暗访牛蛙加工厂曝光乱象<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-03",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E8%AE%B0%E8%80%85%E6%9A%97%E8%AE%BF%E7%89%9B%E8%9B%99%E5%8A%A0%E5%B7%A5%E5%8E%82%E6%9B%9D%E5%85%89%E4%B9%B1%E8%B1%A1&from_source=webtop_search",
+    "read_time": 1,
+    "id": "0e3c451c1b3a4f20"
+  },
+  {
+    "title": "UP主正经翻唱中国人能飞",
+    "summary": "UP主正经翻唱中国人能飞",
+    "full_content": "UP主正经翻唱中国人能飞<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-03",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=UP%E4%B8%BB%E6%AD%A3%E7%BB%8F%E7%BF%BB%E5%94%B1%E4%B8%AD%E5%9B%BD%E4%BA%BA%E8%83%BD%E9%A3%9E&from_source=webtop_search",
+    "read_time": 1,
+    "id": "63f26d4328967bcc"
+  },
+  {
+    "title": "蜘蛛侠观影后极限作画",
+    "summary": "蜘蛛侠观影后极限作画",
+    "full_content": "蜘蛛侠观影后极限作画<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-03",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E8%9C%98%E8%9B%9B%E4%BE%A0%E8%A7%82%E5%BD%B1%E5%90%8E%E6%9E%81%E9%99%90%E4%BD%9C%E7%94%BB&from_source=webtop_search",
+    "read_time": 1,
+    "id": "70cf123d08f8da6a"
+  },
+  {
     "title": "SparkX 企业智能体平台 2.0 版本发布",
     "summary": "SparkX企业智能体平台2.0版本震撼发布，本次更新为完全重构版本。并带来了如下的特性： 模型任选：基于 LangChain4j 统一封装，接入 OpenAI 兼容标准接口，几乎覆盖市面上所有主流大模型——不限于官方服务，也支持 Olla...",
     "full_content": "SparkX企业智能体平台2.0版本震撼发布，本次更新为完全重构版本。并带来了如下的特性： 模型任选：基于 LangChain4j 统一封装，接入 OpenAI 兼容标准接口，几乎覆盖市面上所有主流大模型——不限于官方服务，也支持 Ollama 等自建模型。 RAG 索引增强：自研多路检索管线，向量 + 关键词混合检索，多通道 RRF 融合 + 父子...",
@@ -454,6 +514,18 @@
     "url": "https://www.oschina.net/news/486304",
     "read_time": 1,
     "id": "2ad9128ff8384df4"
+  },
+  {
+    "title": "Zadig v5.0 发布：AI 发布专员与 AI 审查专员上线",
+    "summary": "我们团队这几天最大的卡点不是 AI 写得不够好，是 AI 写得太好了。 好到审查排期从两天的活儿拖成了五天。PR 一堆起来没人敢合，发布窗口推了又推。好到合进 main 分支的代码，我们自己都没看完。 这事不是个例。GitLab 调研过 1...",
+    "full_content": "我们团队这几天最大的卡点不是 AI 写得不够好，是 AI 写得太好了。 好到审查排期从两天的活儿拖成了五天。PR 一堆起来没人敢合，发布窗口推了又推。好到合进 main 分支的代码，我们自己都没看完。 这事不是个例。GitLab 调研过 1528 名开发者，85% 说 AI 把瓶颈从写代码转移到了审代码。 写代码有人替你干了。但审代码、...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-03",
+    "source": "开源中国",
+    "url": "https://my.oschina.net/koderover/blog/19732505",
+    "read_time": 1,
+    "id": "b2be17ae018cd7b4"
   },
   {
     "title": "河南三支一扶案件查实作弊",
@@ -970,5 +1042,113 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%9C%8D%E4%BB%99%E5%A7%91%20%E5%82%80%E5%84%A1",
     "read_time": 1,
     "id": "8065a3b741378a1b"
+  },
+  {
+    "title": "深入学习领会习近平党建思想",
+    "summary": "深入学习领会习近平党建思想",
+    "full_content": "深入学习领会习近平党建思想",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-03",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%B7%B1%E5%85%A5%E5%AD%A6%E4%B9%A0%E9%A2%86%E4%BC%9A%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%85%9A%E5%BB%BA%E6%80%9D%E6%83%B3",
+    "read_time": 1,
+    "id": "703d56009bc2de80"
+  },
+  {
+    "title": "DeepSeek一天消耗了8万亿",
+    "summary": "DeepSeek一天消耗了8万亿",
+    "full_content": "DeepSeek一天消耗了8万亿",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-03",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3DDeepSeek%E4%B8%80%E5%A4%A9%E6%B6%88%E8%80%97%E4%BA%868%E4%B8%87%E4%BA%BF",
+    "read_time": 1,
+    "id": "174572d5d52f9370"
+  },
+  {
+    "title": "孙颖莎回应缺席发布仪式",
+    "summary": "孙颖莎回应缺席发布仪式",
+    "full_content": "孙颖莎回应缺席发布仪式",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-03",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%AD%99%E9%A2%96%E8%8E%8E%E5%9B%9E%E5%BA%94%E7%BC%BA%E5%B8%AD%E5%8F%91%E5%B8%83%E4%BB%AA%E5%BC%8F",
+    "read_time": 1,
+    "id": "c8c6458e724514d5"
+  },
+  {
+    "title": "21.54亿元支持防灾救灾",
+    "summary": "21.54亿元支持防灾救灾",
+    "full_content": "21.54亿元支持防灾救灾",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-03",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D21.54%E4%BA%BF%E5%85%83%E6%94%AF%E6%8C%81%E9%98%B2%E7%81%BE%E6%95%91%E7%81%BE",
+    "read_time": 1,
+    "id": "b8adf0decc6b4e50"
+  },
+  {
+    "title": "亚运会",
+    "summary": "亚运会",
+    "full_content": "<div style=\"font-family: inherit;\">\n                        <p><strong>标题：</strong>亚运会</p>\n                        <p><strong>来源：</strong>微博</p>\n                        <p><strong>热度：</strong>🔥 84</p>\n                        <p><strong>日期：</strong>2026-08-03</p>\n                        <p style=\"color: #808a99; font-size: 0.9rem; margin-top: 12px; border-top: 1px solid #374151; padding-top: 12px;\">\n                            此热搜由 微博 提供，当前源未返回详细内容。\n                        </p>\n                    </div>",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-03",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%BA%9A%E8%BF%90%E4%BC%9A",
+    "read_time": 1,
+    "id": "0b724632d342751d"
+  },
+  {
+    "title": "女子阻止男友吸烟起冲突将其捅死",
+    "summary": "女子阻止男友吸烟起冲突将其捅死",
+    "full_content": "女子阻止男友吸烟起冲突将其捅死",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-03",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%A5%B3%E5%AD%90%E9%98%BB%E6%AD%A2%E7%94%B7%E5%8F%8B%E5%90%B8%E7%83%9F%E8%B5%B7%E5%86%B2%E7%AA%81%E5%B0%86%E5%85%B6%E6%8D%85%E6%AD%BB",
+    "read_time": 1,
+    "id": "815819f517d338e0"
+  },
+  {
+    "title": "峨眉山景区辟谣禁止343斤网红进入",
+    "summary": "峨眉山景区辟谣禁止343斤网红进入",
+    "full_content": "峨眉山景区辟谣禁止343斤网红进入",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-03",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%B3%A8%E7%9C%89%E5%B1%B1%E6%99%AF%E5%8C%BA%E8%BE%9F%E8%B0%A3%E7%A6%81%E6%AD%A2343%E6%96%A4%E7%BD%91%E7%BA%A2%E8%BF%9B%E5%85%A5",
+    "read_time": 1,
+    "id": "818ccedaabc66d93"
+  },
+  {
+    "title": "AI短剧女主60秒广告报价25万8",
+    "summary": "AI短剧女主60秒广告报价25万8",
+    "full_content": "AI短剧女主60秒广告报价25万8",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-03",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3DAI%E7%9F%AD%E5%89%A7%E5%A5%B3%E4%B8%BB60%E7%A7%92%E5%B9%BF%E5%91%8A%E6%8A%A5%E4%BB%B725%E4%B8%878",
+    "read_time": 1,
+    "id": "8d36ba2b547d4a0c"
+  },
+  {
+    "title": "恋与深空敖尹下线争议",
+    "summary": "恋与深空敖尹下线争议",
+    "full_content": "恋与深空敖尹下线争议",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-03",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%81%8B%E4%B8%8E%E6%B7%B1%E7%A9%BA%E6%95%96%E5%B0%B9%E4%B8%8B%E7%BA%BF%E4%BA%89%E8%AE%AE",
+    "read_time": 1,
+    "id": "8952c73f510a10cb"
   }
 ]
