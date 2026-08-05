@@ -1186,5 +1186,29 @@
     "url": "https://juejin.cn/post/7670386923397464114",
     "read_time": 1,
     "id": "667be2fe53ad502f"
+  },
+  {
+    "title": "我把《天龙八部》塞进向量数据库后，终于搞懂了 RAG 到底是个啥",
+    "summary": "一切从一个 \"搜不到\" 开始 最开始我想的很简单：不就是把书的内容复制粘贴给大模型吗？ 然后我就傻眼了。《天龙八部》全书一百多万字，GPT 的上下文窗口再大也塞不下啊。而且就算塞得下，每次提问都传一百",
+    "full_content": "一切从一个 \"搜不到\" 开始 最开始我想的很简单：不就是把书的内容复制粘贴给大模型吗？ 然后我就傻眼了。《天龙八部》全书一百多万字，GPT 的上下文窗口再大也塞不下啊。而且就算塞得下，每次提问都传一百",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-05",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7670420251288895531",
+    "read_time": 1,
+    "id": "b6f1f54cba4b13ae"
+  },
+  {
+    "title": "开源项目第176期：Better Harness — 不审查 diff，审查工作流本身，给 AI 编程 Agent 的五维评估框架",
+    "summary": "引言 这是「每日一个开源项目」系列的第 176 篇。今天的项目是 Better Harness —— QoderAI 出品的开源评估工具，分析 AI 编程 Agent 的工作流，而不只是看它生成的代码",
+    "full_content": "引言 这是「每日一个开源项目」系列的第 176 篇。今天的项目是 Better Harness —— QoderAI 出品的开源评估工具，分析 AI 编程 Agent 的工作流，而不只是看它生成的代码",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-05",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7670447258459013166",
+    "read_time": 1,
+    "id": "9a4e25eebbeec887"
   }
 ]
