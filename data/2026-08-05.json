@@ -456,6 +456,18 @@
     "id": "8eb579da7c20fcd8"
   },
   {
+    "title": "跨平台桌面版开发工具箱 Kairoa 1.1.23 发布：升级文件转 Markdown 引擎，移除外部字体依赖",
+    "summary": "Kairoa 是一款现代化跨平台开发者工具箱，集成了哈希计算、时间转换、JSON 格式化、REST 客户端、WebSocket 调试、AI 对话、各类加解密与网络诊断等 40+ 实用功能。 更新内容 文件转 Markdown 引擎升级：将底...",
+    "full_content": "Kairoa 是一款现代化跨平台开发者工具箱，集成了哈希计算、时间转换、JSON 格式化、REST 客户端、WebSocket 调试、AI 对话、各类加解密与网络诊断等 40+ 实用功能。 更新内容 文件转 Markdown 引擎升级：将底层转换库 @covoyage/file2md 升级至 v1.0.3，带来更精准的文档解析能力，覆盖 PDF、DOCX、XLSX、XLS、PPTX、EPU...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-05",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/488378",
+    "read_time": 1,
+    "id": "20c3b8d42bfb994a"
+  },
+  {
     "title": "卫星互联网低轨23组卫星发射成功",
     "summary": "卫星互联网低轨23组卫星发射成功",
     "full_content": "卫星互联网低轨23组卫星发射成功",
