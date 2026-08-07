@@ -432,6 +432,42 @@
     "id": "d6a50546130408d5"
   },
   {
+    "title": "向鹏0-3张本智和",
+    "summary": "向鹏0-3张本智和",
+    "full_content": "向鹏0-3张本智和<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E5%90%91%E9%B9%8F0-3%E5%BC%A0%E6%9C%AC%E6%99%BA%E5%92%8C&from_source=webtop_search",
+    "read_time": 1,
+    "id": "a0a6964e1560b14f"
+  },
+  {
+    "title": "NCT WISH唱中文版彼得潘",
+    "summary": "NCT WISH唱中文版彼得潘",
+    "full_content": "NCT WISH唱中文版彼得潘<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20240304/fbb6ffcfd09815bd66290b6b7bde1196/OBQYPHMTcv.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=NCT+WISH%E5%94%B1%E4%B8%AD%E6%96%87%E7%89%88%E5%BD%BC%E5%BE%97%E6%BD%98&from_source=webtop_search",
+    "read_time": 1,
+    "id": "ae080468e6e807ca"
+  },
+  {
+    "title": "EDG TEC",
+    "summary": "EDG TEC",
+    "full_content": "EDG TEC<br /><img src=\"https://i0.hdslb.com/bfs/activity-plat/static/20251027/aafcb8031fd171c428daaa9b45867226/VaxAnHMq6w.gif\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=EDG+TEC&from_source=webtop_search",
+    "read_time": 1,
+    "id": "55e04dafec736870"
+  },
+  {
     "title": "How HSP GRUPPE builds AI capabilities for tax advisory",
     "summary": "Discover how HSP GRUPPE uses ChatGPT Enterprise to boost productivity, improve work quality, and create more capacity fo...",
     "full_content": "Discover how HSP GRUPPE uses ChatGPT Enterprise to boost productivity, improve work quality, and create more capacity for tax advisory and client service.",
@@ -550,6 +586,42 @@
     "url": "https://www.oschina.net/news/489989",
     "read_time": 1,
     "id": "96ffe674ce67cf50"
+  },
+  {
+    "title": "OpenAI 宣布为 GPT-5.6 Sol 调优，并让免费用户无限用 Luna",
+    "summary": "OpenAI 今天更新了 ChatGPT 的模型矩阵，包含两个重要变化：GPT-5.6 Sol 调优了回复风格和事实准确性，GPT-5.6 Luna 对免费用户开放了无限文本聊天和一个Think按钮。 先说重点数据。 在新的内部评估中，金融...",
+    "full_content": "OpenAI 今天更新了 ChatGPT 的模型矩阵，包含两个重要变化：GPT-5.6 Sol 调优了回复风格和事实准确性，GPT-5.6 Luna 对免费用户开放了无限文本聊天和一个&quot;Think&quot;按钮。 先说重点数据。 在新的内部评估中，金融、医疗和法律三类需要事实准确性的 prompt 上，GPT-5.6 Luna 的回复包含至少一个事实错误的概率比 GPT-5.5 In...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-07",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/490138/improving-gpt-5-6-sol-in-chatgpt",
+    "read_time": 1,
+    "id": "a137cb6b52568fc4"
+  },
+  {
+    "title": "许多顶级实验室的人现在几乎不读论文了",
+    "summary": "「许多顶级实验室的人现在几乎不读论文了，而且他们认为 ICLR/ICML/NeurIPS 充斥着大量过度宣传和欺诈。」 OpenAI 研究员 Keller Jordan 这条推文引发了广泛讨论。他不是在说风凉话，他是说出了一个圈内人尽皆知但...",
+    "full_content": "「许多顶级实验室的人现在几乎不读论文了，而且他们认为 ICLR/ICML/NeurIPS 充斥着大量过度宣传和欺诈。」 OpenAI 研究员 Keller Jordan 这条推文引发了广泛讨论。他不是在说风凉话，他是说出了一个圈内人尽皆知但很少公开捅破的事实。 Jordan 随后补充了一句软化声明：「我不认为这些会议上大部分论文都在过度宣传或造假...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-07",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/490131",
+    "read_time": 1,
+    "id": "f09417866622b6b0"
+  },
+  {
+    "title": "xAI 前工程师评现代 AI 领域最重要 Top3 开源项目",
+    "summary": "Flash Attention 2 可能比我们所有人都活得久。 这句话不是来自某个技术博客，而是出自 Hieu Pham 的一条推文。Hieu Pham 是谁？他是 xAI 的早期工程师之一，在 Grok 训练基础设施团队工作过。近日他在 ...",
+    "full_content": "Flash Attention 2 可能比我们所有人都活得久。 这句话不是来自某个技术博客，而是出自 Hieu Pham 的一条推文。Hieu Pham 是谁？他是 xAI 的早期工程师之一，在 Grok 训练基础设施团队工作过。近日他在 X 上发了一条帖子，列出了他认为现代 AI 领域最重要的三个开源项目。 第一个名字毫无悬念：Flash Attention 2。 Hieu...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-07",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/490119",
+    "read_time": 1,
+    "id": "7a622e9d21405dda"
   },
   {
     "title": "总书记高度重视防汛救灾工作",
@@ -1090,6 +1162,54 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%9B%9D%E7%BB%BC%E8%89%BA%E5%9B%A0%E8%BE%9B%E8%8A%B7%E8%95%BE%E5%BB%B6%E6%92%AD",
     "read_time": 1,
     "id": "0a07bdcc33f59c12"
+  },
+  {
+    "title": "三支一扶作弊案",
+    "summary": "三支一扶作弊案",
+    "full_content": "三支一扶作弊案",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%B8%89%E6%94%AF%E4%B8%80%E6%89%B6%E4%BD%9C%E5%BC%8A%E6%A1%88",
+    "read_time": 1,
+    "id": "f76f0372ba2f2da2"
+  },
+  {
+    "title": "歌手总决赛",
+    "summary": "歌手总决赛",
+    "full_content": "歌手总决赛",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%AD%8C%E6%89%8B%E6%80%BB%E5%86%B3%E8%B5%9B",
+    "read_time": 1,
+    "id": "1d3dc1afbd915de1"
+  },
+  {
+    "title": "时差再大也要等一个好消息",
+    "summary": "时差再大也要等一个好消息",
+    "full_content": "时差再大也要等一个好消息",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%97%B6%E5%B7%AE%E5%86%8D%E5%A4%A7%E4%B9%9F%E8%A6%81%E7%AD%89%E4%B8%80%E4%B8%AA%E5%A5%BD%E6%B6%88%E6%81%AF",
+    "read_time": 1,
+    "id": "6d634838e0ff0660"
+  },
+  {
+    "title": "国乒男单横滨冠军赛全军覆没",
+    "summary": "国乒男单横滨冠军赛全军覆没",
+    "full_content": "国乒男单横滨冠军赛全军覆没",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%9B%BD%E4%B9%92%E7%94%B7%E5%8D%95%E6%A8%AA%E6%BB%A8%E5%86%A0%E5%86%9B%E8%B5%9B%E5%85%A8%E5%86%9B%E8%A6%86%E6%B2%A1",
+    "read_time": 1,
+    "id": "417c58131364abfe"
   },
   {
     "title": "用 Claude Agent SDK 干掉 LangGraph 之后，我的金融研报 Agent 终于不崩了",
