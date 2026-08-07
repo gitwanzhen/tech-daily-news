@@ -588,6 +588,18 @@
     "id": "04dbcdd1e1d91c0f"
   },
   {
+    "title": "Responding to the next frontier of critical cyber capabilities",
+    "summary": "OpenAI is sharing preliminary cybersecurity evaluations for Astra and the steps we’re taking to strengthen safeguards an...",
+    "full_content": "OpenAI is sharing preliminary cybersecurity evaluations for Astra and the steps we’re taking to strengthen safeguards and security controls.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-07",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+    "read_time": 1,
+    "id": "93f793ec8172b713"
+  },
+  {
     "title": "马斯克 AI 百科项目 Grokipedia 被曝数月未更新",
     "summary": "埃隆·马斯克推出的AI百科项目 Grokipedia 被曝长期停止内容更新，未能实现其作为“AI版维基百科”替代品的目标。 据 Lawfare 最新调查，自今年4月以来，Grokipedia 页面更新功能基本停滞，过去三个月内没有任何条目完...",
     "full_content": "埃隆·马斯克推出的AI百科项目 Grokipedia 被曝长期停止内容更新，未能实现其作为“AI版维基百科”替代品的目标。 据 Lawfare 最新调查，自今年4月以来，Grokipedia 页面更新功能基本停滞，过去三个月内没有任何条目完成更新，用户提交的编辑请求也长期处于待处理状态。 Grokipedia 于去年底上线，定位为由人工智能生成内...",
@@ -1522,6 +1534,30 @@
     "url": "https://juejin.cn/post/7670923314496438318",
     "read_time": 1,
     "id": "0b35fec77b624337"
+  },
+  {
+    "title": "AI 培训现场翻车后的应急方案设计：从工具选型到教学流程的系统化思考",
+    "summary": "导语 8 月 5 日，我在丽水为近 20 位企业主开展了一场 AI 培训。现场遭遇学员全员未携带电脑的情况，凭借\"三端齐全\"的工具选型策略和结构化教学流程，成功将课程从电脑实操切换为手机教学，原定 1",
+    "full_content": "导语 8 月 5 日，我在丽水为近 20 位企业主开展了一场 AI 培训。现场遭遇学员全员未携带电脑的情况，凭借\"三端齐全\"的工具选型策略和结构化教学流程，成功将课程从电脑实操切换为手机教学，原定 1",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-07",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7671107024913203234",
+    "read_time": 1,
+    "id": "9bed9ddc53da3604"
+  },
+  {
+    "title": "自研 IM 还是选择第三方 SDK？企业开发者应该如何权衡？",
+    "summary": "对于很多有即时通讯模块的项目来说，即时通讯（IM）并不是核心业务，却几乎决定了用户体验。 无论是企业办公、在线教育、社交、直播还是 AI 应用，聊天能力通常都需要支持： 单聊、群聊、聊天室 消息同步",
+    "full_content": "对于很多有即时通讯模块的项目来说，即时通讯（IM）并不是核心业务，却几乎决定了用户体验。 无论是企业办公、在线教育、社交、直播还是 AI 应用，聊天能力通常都需要支持： 单聊、群聊、聊天室 消息同步",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-07",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7671189079686709257",
+    "read_time": 1,
+    "id": "32c5045f7d201951"
   },
   {
     "title": "冬旅人",
