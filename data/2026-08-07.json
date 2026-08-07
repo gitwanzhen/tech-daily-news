@@ -336,6 +336,42 @@
     "id": "29ebe5047a34cf6a"
   },
   {
+    "title": "AG TE",
+    "summary": "AG TE",
+    "full_content": "AG TE<br /><img src=\"https://i0.hdslb.com/bfs/activity-plat/static/20251027/aafcb8031fd171c428daaa9b45867226/VaxAnHMq6w.gif\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=AG+TE&from_source=webtop_search",
+    "read_time": 1,
+    "id": "64d3926d749db5c4"
+  },
+  {
+    "title": "台风白海豚再度快速增强",
+    "summary": "台风白海豚再度快速增强",
+    "full_content": "台风白海豚再度快速增强<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E5%8F%B0%E9%A3%8E%E7%99%BD%E6%B5%B7%E8%B1%9A%E5%86%8D%E5%BA%A6%E5%BF%AB%E9%80%9F%E5%A2%9E%E5%BC%BA&from_source=webtop_search",
+    "read_time": 1,
+    "id": "1ca33983efdb997b"
+  },
+  {
+    "title": "VCTCN绷得住挑战",
+    "summary": "VCTCN绷得住挑战",
+    "full_content": "VCTCN绷得住挑战<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20240304/fbb6ffcfd09815bd66290b6b7bde1196/OBQYPHMTcv.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=VCTCN%E7%BB%B7%E5%BE%97%E4%BD%8F%E6%8C%91%E6%88%98&from_source=webtop_search",
+    "read_time": 1,
+    "id": "44e8f5a660830a41"
+  },
+  {
     "title": "马斯克 AI 百科项目 Grokipedia 被曝数月未更新",
     "summary": "埃隆·马斯克推出的AI百科项目 Grokipedia 被曝长期停止内容更新，未能实现其作为“AI版维基百科”替代品的目标。 据 Lawfare 最新调查，自今年4月以来，Grokipedia 页面更新功能基本停滞，过去三个月内没有任何条目完...",
     "full_content": "埃隆·马斯克推出的AI百科项目 Grokipedia 被曝长期停止内容更新，未能实现其作为“AI版维基百科”替代品的目标。 据 Lawfare 最新调查，自今年4月以来，Grokipedia 页面更新功能基本停滞，过去三个月内没有任何条目完成更新，用户提交的编辑请求也长期处于待处理状态。 Grokipedia 于去年底上线，定位为由人工智能生成内...",
@@ -394,6 +430,42 @@
     "url": "https://www.oschina.net/news/489765/seimi-render-1-1-0-released",
     "read_time": 1,
     "id": "56bdfa61cce95a1e"
+  },
+  {
+    "title": "AMD 收购 AI 芯片创企 Taalas，旨在将模型权重刻进芯片以提升推理性能",
+    "summary": "Llama 3.1 8B 跑出每秒 16960 个 token。不是 GPU 集群，是一颗芯片。 AMD 在 8 月 6 日收盘后宣布收购多伦多芯片初创公司 Taalas，交易预计 2026 年 Q4 完成，金额未披露。Taalas 202...",
+    "full_content": "Llama 3.1 8B 跑出每秒 16960 个 token。不是 GPU 集群，是一颗芯片。 AMD 在 8 月 6 日收盘后宣布收购多伦多芯片初创公司 Taalas，交易预计 2026 年 Q4 完成，金额未披露。Taalas 2023 年才成立，做的事情听起来像芯片行业的异端：把 AI 模型的权重直接刻进硅片，而不是存在 HBM 或别的内存里。 Taalas 管这种芯片叫 MS...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-07",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/489939/amd-acquires-ai-chip-startup-taala",
+    "read_time": 1,
+    "id": "fd2cf82ae638951b"
+  },
+  {
+    "title": "GitHub 再次爆发大规模服务降级",
+    "summary": "8 月 6 日，GitHub Actions 和 Pages 再次大规模服务降级，Actions 完全不可用超过 5 小时，webhook 停发，连自托管 runner 也因调度层故障无法工作。Pages、Copilot code revi...",
+    "full_content": "8 月 6 日，GitHub Actions 和 Pages 再次大规模服务降级，Actions 完全不可用超过 5 小时，webhook 停发，连自托管 runner 也因调度层故障无法工作。Pages、Copilot code review、Copilot coding agent 全部受影响。从检测到完全恢复，大约 12 小时。 这是 2026 年 8 月的第六起事故，其中四起与 AI/Copilot 服务相关。...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-07",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/489898",
+    "read_time": 1,
+    "id": "c3bb419d5943a6fe"
+  },
+  {
+    "title": "Prime Agent 开源发布：一个能自我改进的编程 Agent，ARC-AGI 3 超越人类专家基线",
+    "summary": "Prime Intellect 发布了 Prime Agent，一个开源的编程 Agent Harness，核心设计围绕两个抽象：Recursive Language Model（RLM）和 Continual Harness。在 ARC-...",
+    "full_content": "Prime Intellect 发布了 Prime Agent，一个开源的编程 Agent Harness，核心设计围绕两个抽象：Recursive Language Model（RLM）和 Continual Harness。在 ARC-AGI 3 基准测试上，Prime Agent + Opus 5 的组合达到了 95.5% RHAE Best@1，超过了 ARC 报告的人类专家基线 95.4%。 不是又一个 coding agent 包装器 Prime Ag...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-07",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/489878/primeintellect-prime-agent",
+    "read_time": 1,
+    "id": "2a49209ed4743abb"
   },
   {
     "title": "总书记高度重视防汛救灾工作",
@@ -742,6 +814,90 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3Dai%E6%BC%AB%E5%89%A7%E7%94%B7%E4%B8%BB%E5%94%AF%E4%B8%80%E5%A1%8C%E6%88%BF%E6%96%B9%E5%BC%8F%E8%A2%AB%E6%89%BE%E5%88%B0%E4%BA%86",
     "read_time": 1,
     "id": "fd7dd0498051d789"
+  },
+  {
+    "title": "夯实基础开新局",
+    "summary": "夯实基础开新局",
+    "full_content": "夯实基础开新局",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%A4%AF%E5%AE%9E%E5%9F%BA%E7%A1%80%E5%BC%80%E6%96%B0%E5%B1%80",
+    "read_time": 1,
+    "id": "0d7d8d1f03552e22"
+  },
+  {
+    "title": "最尊重立秋的城市出现了",
+    "summary": "最尊重立秋的城市出现了",
+    "full_content": "最尊重立秋的城市出现了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%9C%80%E5%B0%8A%E9%87%8D%E7%AB%8B%E7%A7%8B%E7%9A%84%E5%9F%8E%E5%B8%82%E5%87%BA%E7%8E%B0%E4%BA%86",
+    "read_time": 1,
+    "id": "adea81dea4f9a0cd"
+  },
+  {
+    "title": "河南三支一扶考试存在规模性组织作弊犯罪",
+    "summary": "河南三支一扶考试存在规模性组织作弊犯罪",
+    "full_content": "河南三支一扶考试存在规模性组织作弊犯罪",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%B2%B3%E5%8D%97%E4%B8%89%E6%94%AF%E4%B8%80%E6%89%B6%E8%80%83%E8%AF%95%E5%AD%98%E5%9C%A8%E8%A7%84%E6%A8%A1%E6%80%A7%E7%BB%84%E7%BB%87%E4%BD%9C%E5%BC%8A%E7%8A%AF%E7%BD%AA",
+    "read_time": 1,
+    "id": "8901b04074597265"
+  },
+  {
+    "title": "前7个月货物贸易进出口超30万亿元",
+    "summary": "前7个月货物贸易进出口超30万亿元",
+    "full_content": "前7个月货物贸易进出口超30万亿元",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%89%8D7%E4%B8%AA%E6%9C%88%E8%B4%A7%E7%89%A9%E8%B4%B8%E6%98%93%E8%BF%9B%E5%87%BA%E5%8F%A3%E8%B6%8530%E4%B8%87%E4%BA%BF%E5%85%83",
+    "read_time": 1,
+    "id": "db06c3a9752b19c0"
+  },
+  {
+    "title": "曝念相思停拍换男主",
+    "summary": "曝念相思停拍换男主",
+    "full_content": "曝念相思停拍换男主",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%9B%9D%E5%BF%B5%E7%9B%B8%E6%80%9D%E5%81%9C%E6%8B%8D%E6%8D%A2%E7%94%B7%E4%B8%BB",
+    "read_time": 1,
+    "id": "acdf81c96a0de583"
+  },
+  {
+    "title": "真正伤胃的不是辣椒是高盐",
+    "summary": "真正伤胃的不是辣椒是高盐",
+    "full_content": "真正伤胃的不是辣椒是高盐",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%9C%9F%E6%AD%A3%E4%BC%A4%E8%83%83%E7%9A%84%E4%B8%8D%E6%98%AF%E8%BE%A3%E6%A4%92%E6%98%AF%E9%AB%98%E7%9B%90",
+    "read_time": 1,
+    "id": "999079d52ecf2f79"
+  },
+  {
+    "title": "清融在线求剧透九门",
+    "summary": "清融在线求剧透九门",
+    "full_content": "清融在线求剧透九门",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%B8%85%E8%9E%8D%E5%9C%A8%E7%BA%BF%E6%B1%82%E5%89%A7%E9%80%8F%E4%B9%9D%E9%97%A8",
+    "read_time": 1,
+    "id": "bf098bd41119c3d8"
   },
   {
     "title": "用 Claude Agent SDK 干掉 LangGraph 之后，我的金融研报 Agent 终于不崩了",
