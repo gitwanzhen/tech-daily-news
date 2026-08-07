@@ -1212,6 +1212,78 @@
     "id": "417c58131364abfe"
   },
   {
+    "title": "乐享全民健身共筑健康中国",
+    "summary": "乐享全民健身共筑健康中国",
+    "full_content": "乐享全民健身共筑健康中国",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%B9%90%E4%BA%AB%E5%85%A8%E6%B0%91%E5%81%A5%E8%BA%AB%E5%85%B1%E7%AD%91%E5%81%A5%E5%BA%B7%E4%B8%AD%E5%9B%BD",
+    "read_time": 1,
+    "id": "2b485aeb75dc93ed"
+  },
+  {
+    "title": "暑期档票房超80亿",
+    "summary": "暑期档票房超80亿",
+    "full_content": "暑期档票房超80亿",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%9A%91%E6%9C%9F%E6%A1%A3%E7%A5%A8%E6%88%BF%E8%B6%8580%E4%BA%BF",
+    "read_time": 1,
+    "id": "c004df4b94a4eaa7"
+  },
+  {
+    "title": "黄子弘凡好稳",
+    "summary": "黄子弘凡好稳",
+    "full_content": "黄子弘凡好稳",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%BB%84%E5%AD%90%E5%BC%98%E5%87%A1%E5%A5%BD%E7%A8%B3",
+    "read_time": 1,
+    "id": "9b91916114ed187f"
+  },
+  {
+    "title": "毛阿敏 我是大姐",
+    "summary": "毛阿敏 我是大姐",
+    "full_content": "毛阿敏 我是大姐",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%AF%9B%E9%98%BF%E6%95%8F%20%E6%88%91%E6%98%AF%E5%A4%A7%E5%A7%90",
+    "read_time": 1,
+    "id": "4667466dccc25677"
+  },
+  {
+    "title": "微博文化交流之夜泰国站倒计时1天",
+    "summary": "微博文化交流之夜泰国站倒计时1天",
+    "full_content": "微博文化交流之夜泰国站倒计时1天",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%BE%AE%E5%8D%9A%E6%96%87%E5%8C%96%E4%BA%A4%E6%B5%81%E4%B9%8B%E5%A4%9C%E6%B3%B0%E5%9B%BD%E7%AB%99%E5%80%92%E8%AE%A1%E6%97%B61%E5%A4%A9",
+    "read_time": 1,
+    "id": "6016da7da46e64d9"
+  },
+  {
+    "title": "iPhone18Pro起售或破万",
+    "summary": "iPhone18Pro起售或破万",
+    "full_content": "iPhone18Pro起售或破万",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-07",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3DiPhone18Pro%E8%B5%B7%E5%94%AE%E6%88%96%E7%A0%B4%E4%B8%87",
+    "read_time": 1,
+    "id": "24564d2a012a6ebe"
+  },
+  {
     "title": "用 Claude Agent SDK 干掉 LangGraph 之后，我的金融研报 Agent 终于不崩了",
     "summary": "前段时间我在搞一个金融研报自动生成的项目，用 LangGraph 配合 qwen3-max 搭的。想法挺美好，让 Agent 自动去抓三家公司的三年财务报表，算指标，画图表，最后组装成一份完整研报。",
     "full_content": "前段时间我在搞一个金融研报自动生成的项目，用 LangGraph 配合 qwen3-max 搭的。想法挺美好，让 Agent 自动去抓三家公司的三年财务报表，算指标，画图表，最后组装成一份完整研报。",
@@ -1222,6 +1294,18 @@
     "url": "https://juejin.cn/post/7670974075053391924",
     "read_time": 1,
     "id": "06d676e82ad87dce"
+  },
+  {
+    "title": "我和 Claude Code 一起写了一本介绍 Claude Code 原理的书",
+    "summary": "前言 · 从“帮我修个 bug”到生产级 Agent 打开 Claude Code，输入一句： 接下来发生的事情，看起来很自然：Claude 搜索代码、读取文件、修改实现、运行测试；遇到失败会调整方案",
+    "full_content": "前言 · 从“帮我修个 bug”到生产级 Agent 打开 Claude Code，输入一句： 接下来发生的事情，看起来很自然：Claude 搜索代码、读取文件、修改实现、运行测试；遇到失败会调整方案",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-07",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7670923314496438318",
+    "read_time": 1,
+    "id": "0b35fec77b624337"
   },
   {
     "title": "冬旅人",
