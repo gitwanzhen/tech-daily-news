@@ -1337,5 +1337,29 @@
     "url": "https://juejin.cn/post/7670739142733381672",
     "read_time": 1,
     "id": "96d2bb7ce743f094"
+  },
+  {
+    "title": "基于阿里云EMR Serverless StarRocks AI Function和混合检索，构建智驾训练数据管理平台",
+    "summary": "通过 StarRocks AI Function，把视觉大模型能力以 SQL 函数的形式嵌入数据链路，构建图像挂载→场景理解→结构化打标+向量化→混合检索圈选→检索后打标→回写训练集\"的全链路闭环。",
+    "full_content": "通过 StarRocks AI Function，把视觉大模型能力以 SQL 函数的形式嵌入数据链路，构建图像挂载→场景理解→结构化打标+向量化→混合检索圈选→检索后打标→回写训练集\"的全链路闭环。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-06",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7670730474109059114",
+    "read_time": 1,
+    "id": "46fb297747ca0a69"
+  },
+  {
+    "title": "LLM 多租户 Quota 工程实践：Token 配额、用量预警与自动熔断的生产设计",
+    "summary": "从大客户 CTO 发怒邮件说起：Provider rate limit 不等于 Tenant Quota，本文设计多租户 Token 配额系统，涵盖两阶段计数、三层配额架构、分级告警熔断与软降级策略，附完整 Redis 实现代码与 5 个生...",
+    "full_content": "从大客户 CTO 发怒邮件说起：Provider rate limit 不等于 Tenant Quota，本文设计多租户 Token 配额系统，涵盖两阶段计数、三层配额架构、分级告警熔断与软降级策略，附完整 Redis 实现代码与 5 个生产踩坑。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-06",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7670369856132874267",
+    "read_time": 1,
+    "id": "d6122a202f75a832"
   }
 ]
