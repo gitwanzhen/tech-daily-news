@@ -708,6 +708,30 @@
     "id": "02ae73dec0144710"
   },
   {
+    "title": "任意网页划词 AI 问答：不用切换标签页的效率秘诀",
+    "summary": "看英文技术文档的时候，你是怎么查生词的？ 我猜大多数人的流程是：选中单词 → Ctrl+C → 切到翻译标签页 → Ctrl+V → 看翻译 → 切回原文。遇到不懂的代码片段，再切到 ChatGPT 问一下。来回切换几次，思路早断了。 今天...",
+    "full_content": "看英文技术文档的时候，你是怎么查生词的？ 我猜大多数人的流程是：选中单词 → Ctrl+C → 切到翻译标签页 → Ctrl+V → 看翻译 → 切回原文。遇到不懂的代码片段，再切到 ChatGPT 问一下。来回切换几次，思路早断了。 今天介绍的开源 Chrome 扩展 AI Helper，有一个划词浮动工具栏功能，能让你在任意网页选中文本就直接...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-08",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/490842",
+    "read_time": 1,
+    "id": "c0157b7b6f4ed181"
+  },
+  {
+    "title": "为什么要开发又一个 AI 浏览器插件",
+    "summary": "说实话，每次有人问我市面上已经有 Monica、Sider、Copilot for Chrome 这些 AI 浏览器插件了，你为什么还要再做一个，我都觉得这个问题问得好。 因为我自己也是从用户变成开发者的。 现有产品的天花板 我用过不少 A...",
+    "full_content": "说实话，每次有人问我&quot;市面上已经有 Monica、Sider、Copilot for Chrome 这些 AI 浏览器插件了，你为什么还要再做一个&quot;，我都觉得这个问题问得好。 因为我自己也是从用户变成开发者的。 现有产品的天花板 我用过不少 AI 浏览器插件。刚开始觉得都挺好——选中一段文字，弹出解释；写邮件时帮你润色；看英文网页给你翻译摘...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-08",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/490838",
+    "read_time": 1,
+    "id": "67bff734c4ae5571"
+  },
+  {
     "title": "民用航空发展十五五规划",
     "summary": "民用航空发展十五五规划",
     "full_content": "民用航空发展十五五规划",
@@ -1522,6 +1546,54 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D2026%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%94%B5%E7%AB%9E%E4%B8%96%E4%BF%B1%E6%9D%AF",
     "read_time": 1,
     "id": "6067bbb2436ee6ac"
+  },
+  {
+    "title": "只有小时候发烧才有这种感觉",
+    "summary": "只有小时候发烧才有这种感觉",
+    "full_content": "只有小时候发烧才有这种感觉",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-08",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%8F%AA%E6%9C%89%E5%B0%8F%E6%97%B6%E5%80%99%E5%8F%91%E7%83%A7%E6%89%8D%E6%9C%89%E8%BF%99%E7%A7%8D%E6%84%9F%E8%A7%89",
+    "read_time": 1,
+    "id": "cab6d06056b53aeb"
+  },
+  {
+    "title": "微博文化之夜之这是谁",
+    "summary": "微博文化之夜之这是谁",
+    "full_content": "微博文化之夜之这是谁",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-08",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%BE%AE%E5%8D%9A%E6%96%87%E5%8C%96%E4%B9%8B%E5%A4%9C%E4%B9%8B%E8%BF%99%E6%98%AF%E8%B0%81",
+    "read_time": 1,
+    "id": "8e4a7cac4eeb612b"
+  },
+  {
+    "title": "爷爷不泡茶 店员打人",
+    "summary": "爷爷不泡茶 店员打人",
+    "full_content": "爷爷不泡茶 店员打人",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-08",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%88%B7%E7%88%B7%E4%B8%8D%E6%B3%A1%E8%8C%B6%20%E5%BA%97%E5%91%98%E6%89%93%E4%BA%BA",
+    "read_time": 1,
+    "id": "5acfaabd63d6598c"
+  },
+  {
+    "title": "陈伟霆说我还以为去了成毅的演唱会",
+    "summary": "陈伟霆说我还以为去了成毅的演唱会",
+    "full_content": "陈伟霆说我还以为去了成毅的演唱会",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-08",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%99%88%E4%BC%9F%E9%9C%86%E8%AF%B4%E6%88%91%E8%BF%98%E4%BB%A5%E4%B8%BA%E5%8E%BB%E4%BA%86%E6%88%90%E6%AF%85%E7%9A%84%E6%BC%94%E5%94%B1%E4%BC%9A",
+    "read_time": 1,
+    "id": "9bc147eb083efbea"
   },
   {
     "title": "漫话火山 Milvus｜为 Agent、RAG 、语义搜索而生，AI 时代的极致性价比之选",
