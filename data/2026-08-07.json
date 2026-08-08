@@ -1560,6 +1560,42 @@
     "id": "32c5045f7d201951"
   },
   {
+    "title": "LLM Streaming 背压工程实践：慢客户端、断流重连与服务端缓冲区的生产设计",
+    "summary": "生产 LLM 应用中 SSE streaming 的背压问题全解析：慢客户端缓冲区管理、客户端断开 abort 上游、Nginx proxy_buffering 配置、断流重连与 last-event-id 机制，附完整 TypeScrip...",
+    "full_content": "生产 LLM 应用中 SSE streaming 的背压问题全解析：慢客户端缓冲区管理、客户端断开 abort 上游、Nginx proxy_buffering 配置、断流重连与 last-event-id 机制，附完整 TypeScript 代码与监控 checklist。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-07",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7670792732446162985",
+    "read_time": 1,
+    "id": "6d228f47d033413c"
+  },
+  {
+    "title": "国产版“Claude Code”也支持电脑控制了，kimi也是越用越爽了！",
+    "summary": "我发现现在最像 Claude Code 的是 Kimi Code 了。根据最新消息，它也双端支持电脑操作了（Computer Use）！然后配上一个可以对标 Claude 的多模态模型 K3！ 就闭环",
+    "full_content": "我发现现在最像 Claude Code 的是 Kimi Code 了。根据最新消息，它也双端支持电脑操作了（Computer Use）！然后配上一个可以对标 Claude 的多模态模型 K3！ 就闭环",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-07",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7670809937196089378",
+    "read_time": 1,
+    "id": "90f15108334d8e29"
+  },
+  {
+    "title": "开源项目第178期：OptMem — 426 个 token 的提示词，给 AI Agent 跨会话的持久记忆",
+    "summary": "引言 这是「每日一个开源项目」系列的第 178 篇。今天的项目是 OptMem —— Victor Taelin（HigherOrderCO 创始人）写的一个极简 AI Agent 持久记忆工具",
+    "full_content": "引言 这是「每日一个开源项目」系列的第 178 篇。今天的项目是 OptMem —— Victor Taelin（HigherOrderCO 创始人）写的一个极简 AI Agent 持久记忆工具",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-07",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7671100905954263076",
+    "read_time": 1,
+    "id": "d98332b608f93211"
+  },
+  {
     "title": "冬旅人",
     "summary": "标题：冬旅人评分：0片长：90分钟制片国家/地区：中国大陆导演：鲁丹主演：那地尔·法提合 / 热发提·卡利穆夫 / 王乙",
     "full_content": "标题：冬旅人<br />评分：0<br />片长：90分钟<br />制片国家/地区：中国大陆<br />导演：鲁丹<br />主演：那地尔·法提合 / 热发提·卡利穆夫 / 王乙<br /><img src=\"https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2934520026.webp\" />",
