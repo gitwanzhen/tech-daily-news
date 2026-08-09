@@ -336,6 +336,66 @@
     "id": "941b43fbfa69265b"
   },
   {
+    "title": "人眼为何会近视",
+    "summary": "人眼为何会近视",
+    "full_content": "人眼为何会近视<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-09",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E4%BA%BA%E7%9C%BC%E4%B8%BA%E4%BD%95%E4%BC%9A%E8%BF%91%E8%A7%86&from_source=webtop_search",
+    "read_time": 1,
+    "id": "fdf8d7941075b3a2"
+  },
+  {
+    "title": "TT TES",
+    "summary": "TT TES",
+    "full_content": "TT TES<br /><img src=\"https://i0.hdslb.com/bfs/activity-plat/static/20251027/aafcb8031fd171c428daaa9b45867226/VaxAnHMq6w.gif\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-09",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=TT+TES&from_source=webtop_search",
+    "read_time": 1,
+    "id": "40f2ec328b461b50"
+  },
+  {
+    "title": "BLG经理谈Bin和Flandre",
+    "summary": "BLG经理谈Bin和Flandre",
+    "full_content": "BLG经理谈Bin和Flandre<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-09",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=BLG%E7%BB%8F%E7%90%86%E8%B0%88Bin%E5%92%8CFlandre&from_source=webtop_search",
+    "read_time": 1,
+    "id": "000ebeb84b12739c"
+  },
+  {
+    "title": "LOL近期赛事焦点汇总",
+    "summary": "LOL近期赛事焦点汇总",
+    "full_content": "LOL近期赛事焦点汇总<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-09",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=LOL%E8%BF%91%E6%9C%9F%E8%B5%9B%E4%BA%8B%E7%84%A6%E7%82%B9%E6%B1%87%E6%80%BB&from_source=webtop_search",
+    "read_time": 1,
+    "id": "831567b06a633e0f"
+  },
+  {
+    "title": "IG 2-0 LNG赛后数据",
+    "summary": "IG 2-0 LNG赛后数据",
+    "full_content": "IG 2-0 LNG赛后数据<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-09",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=IG+2-0+LNG%E8%B5%9B%E5%90%8E%E6%95%B0%E6%8D%AE&from_source=webtop_search",
+    "read_time": 1,
+    "id": "3dd9ee8f6e4cddc5"
+  },
+  {
     "title": "开源终端 uniTerm v1.7.0 发布：补齐最后一块拼图，新增 X11 支持，覆盖 27 种协议",
     "summary": "uniTerm 是一款轻量级一站式终端软件，Windows 版本安装包仅 14MB。整合终端、文件传输、远程桌面、数据库客户端、容器等 5 大类协议于一身；内置可自主执行的 AI Agent，能规划并执行多轮 Shell 命令。 本次 v1...",
     "full_content": "uniTerm 是一款轻量级一站式终端软件，Windows 版本安装包仅 14MB。整合终端、文件传输、远程桌面、数据库客户端、容器等 5 大类协议于一身；内置可自主执行的 AI Agent，能规划并执行多轮 Shell 命令。 本次 v1.7.0 补齐了 uniTerm 终端软件的最后一块拼图——内置 X11 Server 支持，累积支持协议达到 27 种。从此，你可...",
@@ -346,6 +406,18 @@
     "url": "https://www.oschina.net/news/491248",
     "read_time": 1,
     "id": "40a05071d807f9db"
+  },
+  {
+    "title": "HeteroFlow 异构算力调度平台于 2026 年 8 月 8 日推理服务正式发布",
+    "summary": "HeteroFlow v2 推理服务的解决方案正式上线 HeteroFlow v2 是一款开源的异构算力调度平台，本次发布的推理服务功能针对上述三大痛点提供完整解决方案： ** 一句话总结：**用一套 OpenAI 兼容 API，统一调度 ...",
+    "full_content": "HeteroFlow v2 推理服务的解决方案正式上线 HeteroFlow v2 是一款开源的异构算力调度平台，本次发布的推理服务功能针对上述三大痛点提供完整解决方案： **&gt; 一句话总结：**用一套 OpenAI 兼容 API，统一调度 9 种厂商 GPU × 5 种推理引擎，原生支持多租户、计费、扩缩容、热加载。 三、核心能力详解1. OpenAI API 100% ...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-09",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/491395",
+    "read_time": 1,
+    "id": "e78ed4668e680a3d"
   },
   {
     "title": "殡仪馆回应情侣平潭拍日出坠崖",
@@ -924,6 +996,42 @@
     "id": "da4375b841bd304a"
   },
   {
+    "title": "上海市要求及时果断停课停工",
+    "summary": "上海市要求及时果断停课停工",
+    "full_content": "上海市要求及时果断停课停工",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-09",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%B8%8A%E6%B5%B7%E5%B8%82%E8%A6%81%E6%B1%82%E5%8F%8A%E6%97%B6%E6%9E%9C%E6%96%AD%E5%81%9C%E8%AF%BE%E5%81%9C%E5%B7%A5",
+    "read_time": 1,
+    "id": "d305e107c7d3cc71"
+  },
+  {
+    "title": "刘耀文百花奖人没到但感言到了",
+    "summary": "刘耀文百花奖人没到但感言到了",
+    "full_content": "刘耀文百花奖人没到但感言到了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-09",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%88%98%E8%80%80%E6%96%87%E7%99%BE%E8%8A%B1%E5%A5%96%E4%BA%BA%E6%B2%A1%E5%88%B0%E4%BD%86%E6%84%9F%E8%A8%80%E5%88%B0%E4%BA%86",
+    "read_time": 1,
+    "id": "e36b3ae2a24d7cdb"
+  },
+  {
+    "title": "小巷人家披荆斩棘团建",
+    "summary": "小巷人家披荆斩棘团建",
+    "full_content": "小巷人家披荆斩棘团建",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-09",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%B0%8F%E5%B7%B7%E4%BA%BA%E5%AE%B6%E6%8A%AB%E8%8D%86%E6%96%A9%E6%A3%98%E5%9B%A2%E5%BB%BA",
+    "read_time": 1,
+    "id": "d32c077311984c81"
+  },
+  {
     "title": "Skills 撞车了，Agent 怎么选",
     "summary": "你团队 8 个人装了三套 deploy skill。一声'上线'，Alice 的跳测试、Bob 的跑全 CI、项目的跑标准 prod —— 没人知道是哪个赢了。今天把这事讲透。",
     "full_content": "你团队 8 个人装了三套 deploy skill。一声'上线'，Alice 的跳测试、Bob 的跑全 CI、项目的跑标准 prod —— 没人知道是哪个赢了。今天把这事讲透。",
@@ -1078,5 +1186,17 @@
     "url": "https://juejin.cn/post/7671607298587000851",
     "read_time": 1,
     "id": "9abae4984c2bd917"
+  },
+  {
+    "title": "用 WorkBuddy / Codex + Obsidian 搭建自生长的个人知识库实战",
+    "summary": "这是苍何的第 576 篇原创！ 大家好，我是苍何。 和朋友半开玩笑的说，如果没有 AI，我最想做的是知识管理博主。 但老实说，卢曼卡片盒、PARA 分类法、双链笔记，这些方法论，分享起来也没那么有意思",
+    "full_content": "这是苍何的第 576 篇原创！ 大家好，我是苍何。 和朋友半开玩笑的说，如果没有 AI，我最想做的是知识管理博主。 但老实说，卢曼卡片盒、PARA 分类法、双链笔记，这些方法论，分享起来也没那么有意思",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-09",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7671867883983896618",
+    "read_time": 1,
+    "id": "c330af9b3baab683"
   }
 ]
