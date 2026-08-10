@@ -1536,6 +1536,30 @@
     "id": "9a152080964baf04"
   },
   {
+    "title": "刘耀文看到易烊千玺拿影帝的反应",
+    "summary": "刘耀文看到易烊千玺拿影帝的反应",
+    "full_content": "刘耀文看到易烊千玺拿影帝的反应",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-10",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%88%98%E8%80%80%E6%96%87%E7%9C%8B%E5%88%B0%E6%98%93%E7%83%8A%E5%8D%83%E7%8E%BA%E6%8B%BF%E5%BD%B1%E5%B8%9D%E7%9A%84%E5%8F%8D%E5%BA%94",
+    "read_time": 1,
+    "id": "7c2d2fd50dfdd520"
+  },
+  {
+    "title": "陈思诚在家里气哭了",
+    "summary": "陈思诚在家里气哭了",
+    "full_content": "陈思诚在家里气哭了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-10",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%99%88%E6%80%9D%E8%AF%9A%E5%9C%A8%E5%AE%B6%E9%87%8C%E6%B0%94%E5%93%AD%E4%BA%86",
+    "read_time": 1,
+    "id": "f840f630e7e4943d"
+  },
+  {
     "title": "我做了一个多 Agent 智能协作软件：让 AI 不再单打独斗",
     "summary": "好久没有发文章了，我最近在开发一个多 Agent 智能协同软件——TeamAgentX。 目前整个项目已经基本成型，所以想用这篇文章跟大家分享一下",
     "full_content": "好久没有发文章了，我最近在开发一个多 Agent 智能协同软件——TeamAgentX。 目前整个项目已经基本成型，所以想用这篇文章跟大家分享一下",
@@ -1618,5 +1642,65 @@
     "url": "https://juejin.cn/post/7672041758376656902",
     "read_time": 1,
     "id": "e241a57cbe14f294"
+  },
+  {
+    "title": "RAG 实战教程（一）：RAG 工作原理与完整流程——分片、索引、召回、重排和生成",
+    "summary": "从这一篇开始，我们正式进入 RAG 系列教程。相比简单的知识库 Demo，真实项目更关注检索是否准确、回答是否可靠，以及整个链路如何稳定运行。本文将从原理到代码，带你跑通完整 RAG 流程。",
+    "full_content": "从这一篇开始，我们正式进入 RAG 系列教程。相比简单的知识库 Demo，真实项目更关注检索是否准确、回答是否可靠，以及整个链路如何稳定运行。本文将从原理到代码，带你跑通完整 RAG 流程。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-10",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7671475529255370762",
+    "read_time": 1,
+    "id": "1973ffb7fc7bdff5"
+  },
+  {
+    "title": "毕业老学长给我留的最后一句话是：“AI 写的，别挂我名。” 我直接 神(Seed Evolving) 来！助我！",
+    "summary": "“AI 写的，别挂我名。”一句话，让我重新思考 AI 在科研里的边界。所以我做了一个让 AI 每条科研数据都必须带证据的工具。想聊聊 AI 在科研里，到底该怎么让人真正敢信、敢用、敢负责。",
+    "full_content": "“AI 写的，别挂我名。”一句话，让我重新思考 AI 在科研里的边界。所以我做了一个让 AI 每条科研数据都必须带证据的工具。想聊聊 AI 在科研里，到底该怎么让人真正敢信、敢用、敢负责。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-10",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7672244196403216447",
+    "read_time": 1,
+    "id": "2dcfa6f456d5cfa1"
+  },
+  {
+    "title": "从零在浏览器里跑 DeepSeek-R1：WebGPU + Transformer.js 全链路实战",
+    "summary": "从零在浏览器跑 DeepSeek-R1：WebGPU + Transformer.js 全链路源码解析 前言 大家好，我是一名前端开发者。最近参考GitHub做了一个项目——在浏览器里本地运行 Dee",
+    "full_content": "从零在浏览器跑 DeepSeek-R1：WebGPU + Transformer.js 全链路源码解析 前言 大家好，我是一名前端开发者。最近参考GitHub做了一个项目——在浏览器里本地运行 Dee",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-10",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7671475529255321610",
+    "read_time": 1,
+    "id": "96b2e78c98d7b597"
+  },
+  {
+    "title": "在夏令营带学生从0到1做 Agent，我更确定了三件事",
+    "summary": "在夏令营带学生从0到1做了一轮 Agent，我也重新想清楚了几件事：搭建其实不难，难的是问题定义、Harness，以及从“能跑”走向真正可用。",
+    "full_content": "在夏令营带学生从0到1做了一轮 Agent，我也重新想清楚了几件事：搭建其实不难，难的是问题定义、Harness，以及从“能跑”走向真正可用。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-10",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7672220244557070345",
+    "read_time": 1,
+    "id": "9a5cd2987c996d5a"
+  },
+  {
+    "title": "浅析大模型推理十二篇之KV Cache",
+    "summary": "想象一个用户打开一个网站，这个网站有 logo、CSS 文件、JavaScript 文件、字体和图片。 如果没有缓存，用户每次访问新页面时，浏览器都要从服务器重新下载同一个 logo、同一份 CSS、",
+    "full_content": "想象一个用户打开一个网站，这个网站有 logo、CSS 文件、JavaScript 文件、字体和图片。 如果没有缓存，用户每次访问新页面时，浏览器都要从服务器重新下载同一个 logo、同一份 CSS、",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-10",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7672215917044858943",
+    "read_time": 1,
+    "id": "17ed172f754ee8e7"
   }
 ]
