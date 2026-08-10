@@ -120,6 +120,18 @@
     "id": "e942e31908b04e76"
   },
   {
+    "title": "大模型为什么每次回答都不一样？一文搞懂 Temperature、Top K 与 Top P",
+    "summary": "这篇文章不把参数当成几个孤立的旋钮，而是从一次 Token 选择出发，看看它们分别改变了什么，最后再用一个 LangChain.js 小实验观察低温与高温输出的差别。",
+    "full_content": "这篇文章不把参数当成几个孤立的旋钮，而是从一次 Token 选择出发，看看它们分别改变了什么，最后再用一个 LangChain.js 小实验观察低温与高温输出的差别。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-11",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7671475529255436298",
+    "read_time": 1,
+    "id": "7f77105bc0836850"
+  },
+  {
     "title": "欢迎来龙餐馆",
     "summary": "标题：欢迎来龙餐馆评分：0片长：140分钟制片国家/地区：中国大陆导演：文牧野主演：沈腾 / 蒋奇明 / 奥马尔·谢里夫",
     "full_content": "标题：欢迎来龙餐馆<br />评分：0<br />片长：140分钟<br />制片国家/地区：中国大陆<br />导演：文牧野<br />主演：沈腾 / 蒋奇明 / 奥马尔·谢里夫<br /><img src=\"https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2934698009.webp\" />",
