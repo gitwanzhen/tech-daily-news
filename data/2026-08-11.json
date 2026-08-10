@@ -168,6 +168,18 @@
     "id": "bddbe9fb7f145253"
   },
   {
+    "title": "哥伦比亚发生7.5级地震",
+    "summary": "哥伦比亚发生7.5级地震",
+    "full_content": "哥伦比亚发生7.5级地震",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%93%A5%E4%BC%A6%E6%AF%94%E4%BA%9A%E5%8F%91%E7%94%9F7.5%E7%BA%A7%E5%9C%B0%E9%9C%87",
+    "read_time": 1,
+    "id": "4da33fccfad6d9ec"
+  },
+  {
     "title": "大模型为什么每次回答都不一样？一文搞懂 Temperature、Top K 与 Top P",
     "summary": "这篇文章不把参数当成几个孤立的旋钮，而是从一次 Token 选择出发，看看它们分别改变了什么，最后再用一个 LangChain.js 小实验观察低温与高温输出的差别。",
     "full_content": "这篇文章不把参数当成几个孤立的旋钮，而是从一次 Token 选择出发，看看它们分别改变了什么，最后再用一个 LangChain.js 小实验观察低温与高温输出的差别。",
