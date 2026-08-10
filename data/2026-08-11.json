@@ -144,6 +144,18 @@
     "id": "d994d8eff6b3e70d"
   },
   {
+    "title": "阎鹤祥挑战大众5S质检标准",
+    "summary": "阎鹤祥挑战大众5S质检标准",
+    "full_content": "阎鹤祥挑战大众5S质检标准",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%98%8E%E9%B9%A4%E7%A5%A5%E6%8C%91%E6%88%98%E5%A4%A7%E4%BC%975S%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86",
+    "read_time": 1,
+    "id": "16fc1198b90ee994"
+  },
+  {
     "title": "大模型为什么每次回答都不一样？一文搞懂 Temperature、Top K 与 Top P",
     "summary": "这篇文章不把参数当成几个孤立的旋钮，而是从一次 Token 选择出发，看看它们分别改变了什么，最后再用一个 LangChain.js 小实验观察低温与高温输出的差别。",
     "full_content": "这篇文章不把参数当成几个孤立的旋钮，而是从一次 Token 选择出发，看看它们分别改变了什么，最后再用一个 LangChain.js 小实验观察低温与高温输出的差别。",
