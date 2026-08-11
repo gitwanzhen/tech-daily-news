@@ -168,6 +168,78 @@
     "id": "608171c781602105"
   },
   {
+    "title": "欢迎来龙餐馆观后感",
+    "summary": "欢迎来龙餐馆观后感",
+    "full_content": "欢迎来龙餐馆观后感<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E6%AC%A2%E8%BF%8E%E6%9D%A5%E9%BE%99%E9%A4%90%E9%A6%86%E8%A7%82%E5%90%8E%E6%84%9F&from_source=webtop_search",
+    "read_time": 1,
+    "id": "f89226680e7e2c6f"
+  },
+  {
+    "title": "韩股或将步入反弹",
+    "summary": "韩股或将步入反弹",
+    "full_content": "韩股或将步入反弹<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E9%9F%A9%E8%82%A1%E6%88%96%E5%B0%86%E6%AD%A5%E5%85%A5%E5%8F%8D%E5%BC%B9&from_source=webtop_search",
+    "read_time": 1,
+    "id": "3d15fc87fd6fdd0e"
+  },
+  {
+    "title": "曝巴萨将签下罗德里",
+    "summary": "曝巴萨将签下罗德里",
+    "full_content": "曝巴萨将签下罗德里<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E6%9B%9D%E5%B7%B4%E8%90%A8%E5%B0%86%E7%AD%BE%E4%B8%8B%E7%BD%97%E5%BE%B7%E9%87%8C&from_source=webtop_search",
+    "read_time": 1,
+    "id": "3c6a65cb5535f5f3"
+  },
+  {
+    "title": "赵露思澳门演唱会全记录",
+    "summary": "赵露思澳门演唱会全记录",
+    "full_content": "赵露思澳门演唱会全记录<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E8%B5%B5%E9%9C%B2%E6%80%9D%E6%BE%B3%E9%97%A8%E6%BC%94%E5%94%B1%E4%BC%9A%E5%85%A8%E8%AE%B0%E5%BD%95&from_source=webtop_search",
+    "read_time": 1,
+    "id": "53d854b540b7ac49"
+  },
+  {
+    "title": "歌手大结局Reaction",
+    "summary": "歌手大结局Reaction",
+    "full_content": "歌手大结局Reaction<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E6%AD%8C%E6%89%8B%E5%A4%A7%E7%BB%93%E5%B1%80Reaction&from_source=webtop_search",
+    "read_time": 1,
+    "id": "1bc60cbf48d65eb9"
+  },
+  {
+    "title": "倪虹洁的上海不是演的",
+    "summary": "倪虹洁的上海不是演的",
+    "full_content": "倪虹洁的上海不是演的<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E5%80%AA%E8%99%B9%E6%B4%81%E7%9A%84%E4%B8%8A%E6%B5%B7%E4%B8%8D%E6%98%AF%E6%BC%94%E7%9A%84&from_source=webtop_search",
+    "read_time": 1,
+    "id": "06e220bd664798cf"
+  },
+  {
     "title": "What building an AI-native finance function taught me",
     "summary": "OpenAI CFO Sarah Friar shares five lessons for building an AI-native finance function, from automated forecasting to str...",
     "full_content": "OpenAI CFO Sarah Friar shares five lessons for building an AI-native finance function, from automated forecasting to stronger controls and AI ROI.",
@@ -178,6 +250,18 @@
     "url": "https://openai.com/index/building-an-ai-native-finance-function",
     "read_time": 1,
     "id": "1b4a121cfec6e61f"
+  },
+  {
+    "title": "通过知识截止日期，反向推断 AI 模型的真实训练时间线",
+    "summary": "开发者写了一篇博客，通过分析 Claude 和 GPT 系列模型的知识截止日期，来推断它们的实际预训练时间线。方法很简单：问模型一系列事件发生在什么时候，看它知道什么、不知道什么，从中画出知识边界。 结果发现了一些有趣的模式。模型的知识截止...",
+    "full_content": "开发者写了一篇博客，通过分析 Claude 和 GPT 系列模型的知识截止日期，来推断它们的实际预训练时间线。方法很简单：问模型一系列事件发生在什么时候，看它知道什么、不知道什么，从中画出知识边界。 结果发现了一些有趣的模式。模型的知识截止日期并不总是与官方给出的版本号匹配——有时一个模型声称是某个版本，但知识...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-11",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/492855/exploring-claudegpt-knowledge-cutoffs",
+    "read_time": 1,
+    "id": "f5cdc5ba53ac71ea"
   },
   {
     "title": "中国黑科技圈粉老外",
@@ -573,6 +657,66 @@
     "id": "2e0d36424837af68"
   },
   {
+    "title": "真正的顶级友谊这种分寸感",
+    "summary": "真正的顶级友谊这种分寸感",
+    "full_content": "真正的顶级友谊这种分寸感",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%9C%9F%E6%AD%A3%E7%9A%84%E9%A1%B6%E7%BA%A7%E5%8F%8B%E8%B0%8A%E8%BF%99%E7%A7%8D%E5%88%86%E5%AF%B8%E6%84%9F",
+    "read_time": 1,
+    "id": "f0c9b421385f80e0"
+  },
+  {
+    "title": "胖东来公布2起侵犯员工人格尊严案例",
+    "summary": "胖东来公布2起侵犯员工人格尊严案例",
+    "full_content": "胖东来公布2起侵犯员工人格尊严案例",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%83%96%E4%B8%9C%E6%9D%A5%E5%85%AC%E5%B8%832%E8%B5%B7%E4%BE%B5%E7%8A%AF%E5%91%98%E5%B7%A5%E4%BA%BA%E6%A0%BC%E5%B0%8A%E4%B8%A5%E6%A1%88%E4%BE%8B",
+    "read_time": 1,
+    "id": "a7e956d77c5469b1"
+  },
+  {
+    "title": "龙餐馆灯塔预测票房35亿",
+    "summary": "龙餐馆灯塔预测票房35亿",
+    "full_content": "龙餐馆灯塔预测票房35亿",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%BE%99%E9%A4%90%E9%A6%86%E7%81%AF%E5%A1%94%E9%A2%84%E6%B5%8B%E7%A5%A8%E6%88%BF35%E4%BA%BF",
+    "read_time": 1,
+    "id": "fa5d678ec055b611"
+  },
+  {
+    "title": "她说世界",
+    "summary": "她说世界",
+    "full_content": "<div style=\"font-family: inherit;\">\n                        <p><strong>标题：</strong>她说世界</p>\n                        <p><strong>来源：</strong>微博</p>\n                        <p><strong>热度：</strong>🔥 69</p>\n                        <p><strong>日期：</strong>2026-08-11</p>\n                        <p style=\"color: #808a99; font-size: 0.9rem; margin-top: 12px; border-top: 1px solid #374151; padding-top: 12px;\">\n                            此热搜由 微博 提供，当前源未返回详细内容。\n                        </p>\n                    </div>",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%A5%B9%E8%AF%B4%E4%B8%96%E7%95%8C",
+    "read_time": 1,
+    "id": "abb6ee47b7d163c7"
+  },
+  {
+    "title": "C罗年薪19亿足坛断档第一",
+    "summary": "C罗年薪19亿足坛断档第一",
+    "full_content": "C罗年薪19亿足坛断档第一",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3DC%E7%BD%97%E5%B9%B4%E8%96%AA19%E4%BA%BF%E8%B6%B3%E5%9D%9B%E6%96%AD%E6%A1%A3%E7%AC%AC%E4%B8%80",
+    "read_time": 1,
+    "id": "737d9d847c691fe9"
+  },
+  {
     "title": "大模型为什么每次回答都不一样？一文搞懂 Temperature、Top K 与 Top P",
     "summary": "这篇文章不把参数当成几个孤立的旋钮，而是从一次 Token 选择出发，看看它们分别改变了什么，最后再用一个 LangChain.js 小实验观察低温与高温输出的差别。",
     "full_content": "这篇文章不把参数当成几个孤立的旋钮，而是从一次 Token 选择出发，看看它们分别改变了什么，最后再用一个 LangChain.js 小实验观察低温与高温输出的差别。",
@@ -583,6 +727,18 @@
     "url": "https://juejin.cn/post/7671475529255436298",
     "read_time": 1,
     "id": "7f77105bc0836850"
+  },
+  {
+    "title": "光本位联合文心快码打造面向光电芯片研发的全栈AI Agent Lightmate",
+    "summary": "光本位和文心快码一起做这件事，就是为了把研发人员的时间， 还给更有价值的事情。当AI重构了原本低效繁琐的流程，开发者就能把更多精力放到架构创新和方案探索上。",
+    "full_content": "光本位和文心快码一起做这件事，就是为了把研发人员的时间， 还给更有价值的事情。当AI重构了原本低效繁琐的流程，开发者就能把更多精力放到架构创新和方案探索上。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-11",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7672323647885426723",
+    "read_time": 1,
+    "id": "52db3225d61bd2ad"
   },
   {
     "title": "欢迎来龙餐馆",
