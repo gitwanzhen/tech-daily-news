@@ -1317,6 +1317,42 @@
     "id": "8bc7a2a81e434f03"
   },
   {
+    "title": "哪吒获奖台下嘉宾反应冷淡原因",
+    "summary": "哪吒获奖台下嘉宾反应冷淡原因",
+    "full_content": "哪吒获奖台下嘉宾反应冷淡原因",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%93%AA%E5%90%92%E8%8E%B7%E5%A5%96%E5%8F%B0%E4%B8%8B%E5%98%89%E5%AE%BE%E5%8F%8D%E5%BA%94%E5%86%B7%E6%B7%A1%E5%8E%9F%E5%9B%A0",
+    "read_time": 1,
+    "id": "7b2385a846986bff"
+  },
+  {
+    "title": "恢复生命力只需要一些低成本爱好",
+    "summary": "恢复生命力只需要一些低成本爱好",
+    "full_content": "恢复生命力只需要一些低成本爱好",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%81%A2%E5%A4%8D%E7%94%9F%E5%91%BD%E5%8A%9B%E5%8F%AA%E9%9C%80%E8%A6%81%E4%B8%80%E4%BA%9B%E4%BD%8E%E6%88%90%E6%9C%AC%E7%88%B1%E5%A5%BD",
+    "read_time": 1,
+    "id": "f4f44e4d528faf17"
+  },
+  {
+    "title": "娜扎上户口的时候名字多打字了",
+    "summary": "娜扎上户口的时候名字多打字了",
+    "full_content": "娜扎上户口的时候名字多打字了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%A8%9C%E6%89%8E%E4%B8%8A%E6%88%B7%E5%8F%A3%E7%9A%84%E6%97%B6%E5%80%99%E5%90%8D%E5%AD%97%E5%A4%9A%E6%89%93%E5%AD%97%E4%BA%86",
+    "read_time": 1,
+    "id": "bdddb1898237e98f"
+  },
+  {
     "title": "大模型为什么每次回答都不一样？一文搞懂 Temperature、Top K 与 Top P",
     "summary": "这篇文章不把参数当成几个孤立的旋钮，而是从一次 Token 选择出发，看看它们分别改变了什么，最后再用一个 LangChain.js 小实验观察低温与高温输出的差别。",
     "full_content": "这篇文章不把参数当成几个孤立的旋钮，而是从一次 Token 选择出发，看看它们分别改变了什么，最后再用一个 LangChain.js 小实验观察低温与高温输出的差别。",
@@ -1399,6 +1435,42 @@
     "url": "https://juejin.cn/post/7672695343738454052",
     "read_time": 1,
     "id": "7ee27991dc8ede5b"
+  },
+  {
+    "title": "代码库知识库系列（13）：评测——怎么知道知识库够不够好",
+    "summary": "知识库建好了，然后呢？Recall@5 是 RAG 评测的惯用指标，但代码库知识库的检索目标和普通文档 RAG 有本质差异：一篇博客找到相关段落就够了，而代码检索的'正确'是精确到函数级别的定位。",
+    "full_content": "知识库建好了，然后呢？Recall@5 是 RAG 评测的惯用指标，但代码库知识库的检索目标和普通文档 RAG 有本质差异：一篇博客找到相关段落就够了，而代码检索的'正确'是精确到函数级别的定位。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-11",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7672697930416308239",
+    "read_time": 1,
+    "id": "3815e0b19c259508"
+  },
+  {
+    "title": "把 AI 视频的钱花在刀刃上，不是每一刀上",
+    "summary": "好创意很少一次成型，\"低规格生成 + AI MediaKit 画质增强\" 把高清投入后移到最终被选中的版本上，前期轻量试错，后期精准交付，让投入花在刀刃上。",
+    "full_content": "好创意很少一次成型，\"低规格生成 + AI MediaKit 画质增强\" 把高清投入后移到最终被选中的版本上，前期轻量试错，后期精准交付，让投入花在刀刃上。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-11",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7672692746055516206",
+    "read_time": 1,
+    "id": "eacc648489bd64a9"
+  },
+  {
+    "title": "大模型参数存储格式揭秘：BF不是男朋友",
+    "summary": "大模型的参数一般都用 BF16 存储。BF16 是一种浮点数格式，那它到底是怎么存数据的？今天，我们就来扒一扒浮点数那些精妙设计——小数点会漂移、前导位能省则省，一路看到 BF16 上位的真相",
+    "full_content": "大模型的参数一般都用 BF16 存储。BF16 是一种浮点数格式，那它到底是怎么存数据的？今天，我们就来扒一扒浮点数那些精妙设计——小数点会漂移、前导位能省则省，一路看到 BF16 上位的真相",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-11",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7672691134662000667",
+    "read_time": 1,
+    "id": "42d83423c77f5a8f"
   },
   {
     "title": "欢迎来龙餐馆",
