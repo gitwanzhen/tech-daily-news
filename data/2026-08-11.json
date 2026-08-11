@@ -1737,6 +1737,30 @@
     "id": "d76b26e80131d010"
   },
   {
+    "title": "智能体环路工程实战",
+    "summary": "为什么 Agent 必须被「环路化」,而不是只写一个 prompt 整套课程把 Agent 工程的核心矛盾归结为一句话:单次 prompt 不可能让 Agent 可靠地完成所有任务。",
+    "full_content": "为什么 Agent 必须被「环路化」,而不是只写一个 prompt 整套课程把 Agent 工程的核心矛盾归结为一句话:单次 prompt 不可能让 Agent 可靠地完成所有任务。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-11",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7672691134678794278",
+    "read_time": 1,
+    "id": "34bdd28bcb658fa3"
+  },
+  {
+    "title": "实测7套 Code Agent组合：最终效果，真不只取决于模型",
+    "summary": "前几天，我刚分享过一个观点：个人想真正驾驭智能体，关键不只是模型，还要给它搭好一套干活的环境，也就是 Harness。 理论讲了一堆，但是一直缺少个实践案例的说明。 这次正好一起测试下。",
+    "full_content": "前几天，我刚分享过一个观点：个人想真正驾驭智能体，关键不只是模型，还要给它搭好一套干活的环境，也就是 Harness。 理论讲了一堆，但是一直缺少个实践案例的说明。 这次正好一起测试下。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-11",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7672682802169085990",
+    "read_time": 1,
+    "id": "351851405e326745"
+  },
+  {
     "title": "欢迎来龙餐馆",
     "summary": "标题：欢迎来龙餐馆评分：0片长：140分钟制片国家/地区：中国大陆导演：文牧野主演：沈腾 / 蒋奇明 / 奥马尔·谢里夫",
     "full_content": "标题：欢迎来龙餐馆<br />评分：0<br />片长：140分钟<br />制片国家/地区：中国大陆<br />导演：文牧野<br />主演：沈腾 / 蒋奇明 / 奥马尔·谢里夫<br /><img src=\"https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2934698009.webp\" />",
