@@ -552,6 +552,18 @@
     "id": "1b4a121cfec6e61f"
   },
   {
+    "title": "Testing ads in ChatGPT",
+    "summary": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy pr...",
+    "full_content": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-11",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/testing-ads-in-chatgpt",
+    "read_time": 1,
+    "id": "16251d7b149eacdc"
+  },
+  {
     "title": "使用 Codex进行大型项目重构时速度过慢，如何优化 AI 编程工作流？",
     "summary": "各位大佬好，最近在尝试使用 AI 辅助重构一个比较老的项目，目前整体流程是使用Codex 进行。目前我的工作流大概如下：首先使用主 Agent（gpt-5.6-sol）分析整个项目，梳理架构，并拆分重构任务；根据分析结果制定任务清单；主Ag...",
     "full_content": "<p>各位大佬好，最近在尝试使用 AI 辅助重构一个比较老的项目，目前整体流程是使用Codex 进行。</p><p>目前我的工作流大概如下：</p><p>首先使用主 Agent（gpt-5.6-sol）分析整个项目，梳理架构，并拆分重构任务；<br />根据分析结果制定任务清单；<br />主Agent和子 Agent（gpt-5.6-Terra）并行执行任务；<br />大任务完成后，通过 open-code-review 进行 Diff 审查；<br />小任务完成后，让子 Agent 进行一次审查；<br />Review 阶段目前统一使用OpenCodeReview这个项目（gpt-5.6-Terra）</p><p>目前遇到的主要问题是：</p><p>整体开发速度非常慢，其中最大的瓶颈感觉是在代码审查阶段：</p><p>每次 open-code-review 都需要消耗大量时间；<br />Terra 模型速度较慢，一个 Diff 审查经常需要等待很久；<br />由于重构任务本身周期较长，大量时间花费在等待 AI Review，而不是实际修改代码。</p><p>所以想请教一下各位：</p><p>大型项目 AI 重构时，你们一般采用什么样的 Agent 工作流？<br />Code Review 这一环节如何设计，才能兼顾质量和速度？<br />有没有比较成熟的 Codex / Claude Code / Cursor 这类 AI 编程 Agent 工作流可以参考？</p><p>希望听听各位大佬的实践经验。</p>",
