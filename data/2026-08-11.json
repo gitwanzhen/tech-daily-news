@@ -1521,6 +1521,54 @@
     "id": "167ca05191349dbb"
   },
   {
+    "title": "忙到晕倒炸鸡店员工已结算工资离职",
+    "summary": "忙到晕倒炸鸡店员工已结算工资离职",
+    "full_content": "忙到晕倒炸鸡店员工已结算工资离职",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%BF%99%E5%88%B0%E6%99%95%E5%80%92%E7%82%B8%E9%B8%A1%E5%BA%97%E5%91%98%E5%B7%A5%E5%B7%B2%E7%BB%93%E7%AE%97%E5%B7%A5%E8%B5%84%E7%A6%BB%E8%81%8C",
+    "read_time": 1,
+    "id": "da336bf9b10b494d"
+  },
+  {
+    "title": "樊振东WTT冠军榜位列第二",
+    "summary": "樊振东WTT冠军榜位列第二",
+    "full_content": "樊振东WTT冠军榜位列第二",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%A8%8A%E6%8C%AF%E4%B8%9CWTT%E5%86%A0%E5%86%9B%E6%A6%9C%E4%BD%8D%E5%88%97%E7%AC%AC%E4%BA%8C",
+    "read_time": 1,
+    "id": "4e5d8f88d673de87"
+  },
+  {
+    "title": "龙餐馆豆瓣开分8.4",
+    "summary": "龙餐馆豆瓣开分8.4",
+    "full_content": "龙餐馆豆瓣开分8.4",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%BE%99%E9%A4%90%E9%A6%86%E8%B1%86%E7%93%A3%E5%BC%80%E5%88%868.4",
+    "read_time": 1,
+    "id": "8669dfce10a0ce8c"
+  },
+  {
+    "title": "曝刺棠女主换成杨超越了",
+    "summary": "曝刺棠女主换成杨超越了",
+    "full_content": "曝刺棠女主换成杨超越了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-11",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%9B%9D%E5%88%BA%E6%A3%A0%E5%A5%B3%E4%B8%BB%E6%8D%A2%E6%88%90%E6%9D%A8%E8%B6%85%E8%B6%8A%E4%BA%86",
+    "read_time": 1,
+    "id": "a3d2f1347670f51a"
+  },
+  {
     "title": "大模型为什么每次回答都不一样？一文搞懂 Temperature、Top K 与 Top P",
     "summary": "这篇文章不把参数当成几个孤立的旋钮，而是从一次 Token 选择出发，看看它们分别改变了什么，最后再用一个 LangChain.js 小实验观察低温与高温输出的差别。",
     "full_content": "这篇文章不把参数当成几个孤立的旋钮，而是从一次 Token 选择出发，看看它们分别改变了什么，最后再用一个 LangChain.js 小实验观察低温与高温输出的差别。",
