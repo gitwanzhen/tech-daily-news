@@ -540,6 +540,18 @@
     "id": "143a56c3831ed960"
   },
   {
+    "title": "How RingCentral builds AI-native work from engineering to ops",
+    "summary": "See how RingCentral uses ChatGPT Work and Codex to accelerate AI product development and centralize operational intellig...",
+    "full_content": "See how RingCentral uses ChatGPT Work and Codex to accelerate AI product development and centralize operational intelligence across engineering and operations.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-12",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/ringcentral",
+    "read_time": 1,
+    "id": "dc35058bee54bda2"
+  },
+  {
     "title": "AI 编程助手能写代码，但提个 PR 还是得靠人点网页——Gitee CLI 想解决这件事",
     "summary": "AI 编程助手已经很能写代码了。Claude Code、Codex、OpenCode 都可以读懂你的仓库、改好一个 Bug、补上一段测试。 但当任务走到「把这个分支提个 PR」「顺手建个仓库」「把这批 issue 归档」时，它们往往就卡住了...",
     "full_content": "AI 编程助手已经很能写代码了。Claude Code、Codex、OpenCode 都可以读懂你的仓库、改好一个 Bug、补上一段测试。 但当任务走到「把这个分支提个 PR」「顺手建个仓库」「把这批 issue 归档」时，它们往往就卡住了——网页界面点不动，裸调 REST API 又要记住一堆端点、鉴权和分页规则。 Gitee CLI 正在补上这「最后一公里...",
