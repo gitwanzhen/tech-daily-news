@@ -288,6 +288,78 @@
     "id": "a9d994ebe035c6ec"
   },
   {
+    "title": "在 Windows 上管理多个 Claude Code / Codex 终端：Termexo 的 PTY、会话恢复与模型切换设计",
+    "summary": "当 Windows 上同时跑着几个 Claude Code、Codex 终端时，“窗口能不能并排” 其实只是第一层问题。更难的是知道哪个 Agent 正在等待输入、哪个需要授权、哪个已经结束，以及怎样可靠地回到原来的原生会话。",
+    "full_content": "当 Windows 上同时跑着几个 Claude Code、Codex 终端时，“窗口能不能并排” 其实只是第一层问题。更难的是知道哪个 Agent 正在等待输入、哪个需要授权、哪个已经结束，以及怎样可靠地回到原来的原生会话。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-12",
+    "source": "开源中国",
+    "url": "https://my.oschina.net/gemron/blog/19737026",
+    "read_time": 1,
+    "id": "b3359a95ddcf5c44"
+  },
+  {
+    "title": "谷歌力撑 Go ，称其为 AI 辅助软件工程的理想编程语言",
+    "summary": "当 AI 帮你写代码时，你选什么语言？Google 的答案是 Go——不是因为它好写，而是因为它好读、好审、好维护。 Google 官方博客发表了一篇立场鲜明的文章，论证 Go 是 AI 辅助软件工程的理想语言。逻辑很直接：当 AI 成为你...",
+    "full_content": "当 AI 帮你写代码时，你选什么语言？Google 的答案是 Go——不是因为它好写，而是因为它好读、好审、好维护。 Google 官方博客发表了一篇立场鲜明的文章，论证 Go 是 AI 辅助软件工程的理想语言。逻辑很直接：当 AI 成为你团队里那个&quot;有点莽撞但产出极高的队友&quot;时，软件工程的瓶颈从&quot;写代码&quot;变成了&quot;审代码&quot;。Go 从设计之...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-12",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/501900/go-is-an-ideal-language-for-ai-assisted-software-engineering",
+    "read_time": 1,
+    "id": "ec2e16e118278857"
+  },
+  {
+    "title": "黄仁勋的豪赌：当 AI 算力成为可投资的资产类别",
+    "summary": "英伟达正试图把 AI 工厂变成一种新的资产类别——就像铁路、电网、数据中心一样，可以打包成金融产品卖给机构投资者。 黄仁勋在 X 上宣布与 Apollo、BlackRock、Blackstone、Brookfield、Goldman Sac...",
+    "full_content": "英伟达正试图把 AI 工厂变成一种新的资产类别——就像铁路、电网、数据中心一样，可以打包成金融产品卖给机构投资者。 黄仁勋在 X 上宣布与 Apollo、BlackRock、Blackstone、Brookfield、Goldman Sachs 和 KKR 合作，目标是撬动超过 5000 亿美元的第三方资本来建设 AI 基础设施。英伟达自己承担最高 25% 的残值担保——换...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-12",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/501899/nvidias-risky-business",
+    "read_time": 1,
+    "id": "e25f151314292662"
+  },
+  {
+    "title": "Manus 离开 Meta，重回独立运营",
+    "summary": "2025 年 12 月被 Meta 收购的通用 AI Agent 公司 Manus，即将重回独立公司运营。从被收购到独立，不到 8 个月。 Manus 在官方博客中发布了一份给用户的说明，措辞直接：作为我们从 Meta 分离、回归独立运营的...",
+    "full_content": "2025 年 12 月被 Meta 收购的通用 AI Agent 公司 Manus，即将重回独立公司运营。从被收购到独立，不到 8 个月。 Manus 在官方博客中发布了一份给用户的说明，措辞直接：&quot;作为我们从 Meta 分离、回归独立运营的一部分，部分用户在 2025 年 12 月 29 日之后生成的数据将在 8 月 23 日至 24 日被删除。&quot; 被删除的数据来自特...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-12",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/501898",
+    "read_time": 1,
+    "id": "04ac741999d7db5e"
+  },
+  {
+    "title": "Grok Bot 正式官宣 —— SpaceXAI 也下场做 AI 同事了",
+    "summary": "马斯克旗下 AI 公司 SpaceXAI 发布了 Grok Bot（目前处于 Early Beta 阶段）——一个专注于“干活”而非聊天的 AI 产品。 和 ChatGPT 或 Claude 的对话框不同，Grok Bot 的设计目标是像一...",
+    "full_content": "马斯克旗下 AI 公司 SpaceXAI 发布了 Grok Bot（目前处于 Early Beta 阶段）——一个专注于“干活”而非聊天的 AI 产品。 和 ChatGPT 或 Claude 的对话框不同，Grok Bot 的设计目标是像一个同事一样接管你的工作流。它可以登录你的 Zendesk 处理客服队列，学习你做周报的流程然后自动执行，多个 Bot 在同一个线程里互相传...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-12",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/501897/x-ai-grok-bot",
+    "read_time": 1,
+    "id": "c47407fe4eb9a8a7"
+  },
+  {
+    "title": "梁文锋身价一年暴涨 3850%，登顶全球亿万富豪增速榜首",
+    "summary": "10亿美元变成395亿美元，只用了一年。 海外金融研究机构 BestBrokers 基于福布斯实时富豪榜数据（2025年7月27日至2026年7月27日）发布了一份全球亿万富翁财富涨幅排名。DeepSeek 创始人梁文锋以 3850% 的年...",
+    "full_content": "10亿美元变成395亿美元，只用了一年。 海外金融研究机构 BestBrokers 基于福布斯实时富豪榜数据（2025年7月27日至2026年7月27日）发布了一份全球亿万富翁财富涨幅排名。DeepSeek 创始人梁文锋以 3850% 的年度财富增长率拿下全球第一，把第二名甩开了三倍多。 梁文锋 2025 年净资产为 10 亿美元，截至 2026 年统计节点已暴...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-12",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/501895",
+    "read_time": 1,
+    "id": "66ee28931d077abe"
+  },
+  {
     "title": "新势力销冠零跑6万级新车A05上市",
     "summary": "新势力销冠零跑6万级新车A05上市",
     "full_content": "新势力销冠零跑6万级新车A05上市",
@@ -648,6 +720,90 @@
     "id": "d4aef5c6cc8b4c4c"
   },
   {
+    "title": "武大靖出任中国短道速滑队主教练",
+    "summary": "武大靖出任中国短道速滑队主教练",
+    "full_content": "武大靖出任中国短道速滑队主教练",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-12",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%AD%A6%E5%A4%A7%E9%9D%96%E5%87%BA%E4%BB%BB%E4%B8%AD%E5%9B%BD%E7%9F%AD%E9%81%93%E9%80%9F%E6%BB%91%E9%98%9F%E4%B8%BB%E6%95%99%E7%BB%83",
+    "read_time": 1,
+    "id": "33a3c899752814d3"
+  },
+  {
+    "title": "商务部启动应急响应保障灾区物资供应",
+    "summary": "商务部启动应急响应保障灾区物资供应",
+    "full_content": "商务部启动应急响应保障灾区物资供应",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-12",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%95%86%E5%8A%A1%E9%83%A8%E5%90%AF%E5%8A%A8%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E4%BF%9D%E9%9A%9C%E7%81%BE%E5%8C%BA%E7%89%A9%E8%B5%84%E4%BE%9B%E5%BA%94",
+    "read_time": 1,
+    "id": "d1c0e31522eb912a"
+  },
+  {
+    "title": "原来姚安娜是艺名",
+    "summary": "原来姚安娜是艺名",
+    "full_content": "原来姚安娜是艺名",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-12",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%8E%9F%E6%9D%A5%E5%A7%9A%E5%AE%89%E5%A8%9C%E6%98%AF%E8%89%BA%E5%90%8D",
+    "read_time": 1,
+    "id": "2b8859978a18625a"
+  },
+  {
+    "title": "龙餐馆差评被批文化殖民心态",
+    "summary": "龙餐馆差评被批文化殖民心态",
+    "full_content": "龙餐馆差评被批文化殖民心态",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-12",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%BE%99%E9%A4%90%E9%A6%86%E5%B7%AE%E8%AF%84%E8%A2%AB%E6%89%B9%E6%96%87%E5%8C%96%E6%AE%96%E6%B0%91%E5%BF%83%E6%80%81",
+    "read_time": 1,
+    "id": "6ef988cef682b5da"
+  },
+  {
+    "title": "股民称中签宇树不敢发朋友圈",
+    "summary": "股民称中签宇树不敢发朋友圈",
+    "full_content": "股民称中签宇树不敢发朋友圈",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-12",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%82%A1%E6%B0%91%E7%A7%B0%E4%B8%AD%E7%AD%BE%E5%AE%87%E6%A0%91%E4%B8%8D%E6%95%A2%E5%8F%91%E6%9C%8B%E5%8F%8B%E5%9C%88",
+    "read_time": 1,
+    "id": "068b43663609320c"
+  },
+  {
+    "title": "蔡徐坤丸美品牌全球代言人",
+    "summary": "蔡徐坤丸美品牌全球代言人",
+    "full_content": "蔡徐坤丸美品牌全球代言人",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-12",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%94%A1%E5%BE%90%E5%9D%A4%E4%B8%B8%E7%BE%8E%E5%93%81%E7%89%8C%E5%85%A8%E7%90%83%E4%BB%A3%E8%A8%80%E4%BA%BA",
+    "read_time": 1,
+    "id": "d9e367bd451022d8"
+  },
+  {
+    "title": "邵兵 退赛",
+    "summary": "邵兵 退赛",
+    "full_content": "邵兵 退赛",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-12",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%82%B5%E5%85%B5%20%E9%80%80%E8%B5%9B",
+    "read_time": 1,
+    "id": "3f45472ea15153f4"
+  },
+  {
     "title": "DeepResearchSystem 0x08：KB 知识记忆",
     "summary": "这一章为 DeepResearchSystem 增加基于 Milvus 的 KB知识记忆，避免 Agent 出现知识断层，每次 运行都得从零开始沉淀。一个拥有记忆的 Agent 想想都刺激。啊哈哈..",
     "full_content": "这一章为 DeepResearchSystem 增加基于 Milvus 的 KB知识记忆，避免 Agent 出现知识断层，每次 运行都得从零开始沉淀。一个拥有记忆的 Agent 想想都刺激。啊哈哈..",
@@ -706,5 +862,41 @@
     "url": "https://juejin.cn/post/7672781762593898523",
     "read_time": 1,
     "id": "dda8b9667fc72e4c"
+  },
+  {
+    "title": "RAG 检索为什么需要 Hybrid Search？从 Dense、BM25 到 Reranker",
+    "summary": "RAG 检索并非只有向量搜索。Dense Embedding 擅长理解语义，BM25 擅长匹配关键词，二者结合形成 Hybrid Search，可以兼顾语义与精确匹配。",
+    "full_content": "RAG 检索并非只有向量搜索。Dense Embedding 擅长理解语义，BM25 擅长匹配关键词，二者结合形成 Hybrid Search，可以兼顾语义与精确匹配。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-12",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7672746776848744489",
+    "read_time": 1,
+    "id": "d65b70c3c607dd49"
+  },
+  {
+    "title": "Claude Code - 26 效率三件套：cc-switch 切模型 · codeburn 算成本 · claude-hud 看状态",
+    "summary": "一、这套工具解决什么问题？ 如果你每天重度使用 Claude Code 写代码，大概率会遇到下面这些场景： 场景 1：模型切换全靠手改环境变量 今天想用官网 Opus 写复杂重构，明天想切到火山引擎的",
+    "full_content": "一、这套工具解决什么问题？ 如果你每天重度使用 Claude Code 写代码，大概率会遇到下面这些场景： 场景 1：模型切换全靠手改环境变量 今天想用官网 Opus 写复杂重构，明天想切到火山引擎的",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-12",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7672941585504452662",
+    "read_time": 1,
+    "id": "1812e7009a899d0a"
+  },
+  {
+    "title": "kimi-code 深度掌握系列文章-终端里的 Agent 界面:CLI/TUI 架构（十五）",
+    "summary": "1. 应用架构概览 1.1 定位与入口 apps/kimi-code 是 kimi-code 系统的主应用入口。它不是引擎、不是 SDK、不是协议层——它是用户直接交互的那一层，负责把引擎的能力从终端",
+    "full_content": "1. 应用架构概览 1.1 定位与入口 apps/kimi-code 是 kimi-code 系统的主应用入口。它不是引擎、不是 SDK、不是协议层——它是用户直接交互的那一层，负责把引擎的能力从终端",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-12",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7672941585503813686",
+    "read_time": 1,
+    "id": "f16b28e860ecc606"
   }
 ]
