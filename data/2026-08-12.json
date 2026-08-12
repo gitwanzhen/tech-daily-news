@@ -1462,5 +1462,41 @@
     "url": "https://juejin.cn/post/7672981090315583540",
     "read_time": 1,
     "id": "86c12b6d5238793f"
+  },
+  {
+    "title": "浅析大模型推理十二篇之关键指标",
+    "summary": "前两篇分别讲了 Prefill / Decode 两阶段，以及 KV Cache 如何用「空间换时间」避免重复计算。理解机制之后，下一步是：怎么衡量一个推理系统好不好？",
+    "full_content": "前两篇分别讲了 Prefill / Decode 两阶段，以及 KV Cache 如何用「空间换时间」避免重复计算。理解机制之后，下一步是：怎么衡量一个推理系统好不好？",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-12",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7672996833275494410",
+    "read_time": 1,
+    "id": "6fd159f88eee070b"
+  },
+  {
+    "title": "【寒草呈献】当巴菲特走进 AI 投研助手",
+    "summary": "关于投资 从 2024 年 924 行情以来，中国 A 股的投资人增加了许多，我也是其中一个。在真金白银的操练中也感受颇多，包括： 一切皆周期 题材即故事 ... 当然最关键的还是【买股票就是买公司】",
+    "full_content": "关于投资 从 2024 年 924 行情以来，中国 A 股的投资人增加了许多，我也是其中一个。在真金白银的操练中也感受颇多，包括： 一切皆周期 题材即故事 ... 当然最关键的还是【买股票就是买公司】",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-12",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7673127544186617890",
+    "read_time": 1,
+    "id": "537096eb7a5abe2e"
+  },
+  {
+    "title": "模型许可证：OpenRAIL-M、LLaMA、Apache 2.0 的真实区别",
+    "summary": "Are model weights code, data, or a new object? OpenRAIL-M vs LLaMA vs Apache 2.0 in practice.",
+    "full_content": "Are model weights code, data, or a new object? OpenRAIL-M vs LLaMA vs Apache 2.0 in practice.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-12",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7673009882846789651",
+    "read_time": 1,
+    "id": "3e9fa2cb4531da42"
   }
 ]
