@@ -672,6 +672,18 @@
     "id": "24f18d797b52d233"
   },
   {
+    "title": "MothX v1.1.82 已经发布，单文件的 code agent 工具",
+    "summary": "MothX v1.1.82 已经发布，单文件的 code agent 工具。 更新日志 Unreleased v1.1.82 ✨ 新功能 交互式 TUI 国际化 settings.json 新增 tuilang 配置，支持 auto、zh ...",
+    "full_content": "MothX v1.1.82 已经发布，单文件的 code agent 工具。 更新日志 Unreleased v1.1.82 ✨ 新功能 交互式 TUI 国际化 settings.json 新增 tuilang 配置，支持 auto、zh 和 en。auto 仅在 UTC+08:00 使用中文；/settings 菜单支持全局/项目保存范围，修改成功后立即生效。 无论选择哪种界面语言，slash 命令语法始终保持英文...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-11",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/495042",
+    "read_time": 1,
+    "id": "f075ccb7fcf1bf66"
+  },
+  {
     "title": "中国黑科技圈粉老外",
     "summary": "中国黑科技圈粉老外",
     "full_content": "中国黑科技圈粉老外",
