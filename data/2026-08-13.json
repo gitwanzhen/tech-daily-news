@@ -348,6 +348,66 @@
     "id": "766e3638c9a83191"
   },
   {
+    "title": "TT BLG",
+    "summary": "TT BLG",
+    "full_content": "TT BLG<br /><img src=\"https://i0.hdslb.com/bfs/activity-plat/static/20251027/aafcb8031fd171c428daaa9b45867226/VaxAnHMq6w.gif\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-13",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=TT+BLG&from_source=webtop_search",
+    "read_time": 1,
+    "id": "17485a457e633ce2"
+  },
+  {
+    "title": "龙餐馆原型人物聊真实中东",
+    "summary": "龙餐馆原型人物聊真实中东",
+    "full_content": "龙餐馆原型人物聊真实中东<br /><img src=\"https://i0.hdslb.com/bfs/activity-plat/static/20251027/aafcb8031fd171c428daaa9b45867226/VaxAnHMq6w.gif\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-13",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E9%BE%99%E9%A4%90%E9%A6%86%E5%8E%9F%E5%9E%8B%E4%BA%BA%E7%89%A9%E8%81%8A%E7%9C%9F%E5%AE%9E%E4%B8%AD%E4%B8%9C&from_source=webtop_search",
+    "read_time": 1,
+    "id": "b4d38809d800c843"
+  },
+  {
+    "title": "跟着TXT乱闯上海",
+    "summary": "跟着TXT乱闯上海",
+    "full_content": "跟着TXT乱闯上海<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-13",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E8%B7%9F%E7%9D%80TXT%E4%B9%B1%E9%97%AF%E4%B8%8A%E6%B5%B7&from_source=webtop_search",
+    "read_time": 1,
+    "id": "c2255b15a38695e9"
+  },
+  {
+    "title": "KSG 济南RW侠",
+    "summary": "KSG 济南RW侠",
+    "full_content": "KSG 济南RW侠<br /><img src=\"https://i0.hdslb.com/bfs/activity-plat/static/20251027/aafcb8031fd171c428daaa9b45867226/VaxAnHMq6w.gif\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-13",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=KSG+%E6%B5%8E%E5%8D%97RW%E4%BE%A0&from_source=webtop_search",
+    "read_time": 1,
+    "id": "378073573329662f"
+  },
+  {
+    "title": "DeepSeek API确认涨价",
+    "summary": "DeepSeek API确认涨价",
+    "full_content": "DeepSeek API确认涨价<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-13",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=DeepSeek+API%E7%A1%AE%E8%AE%A4%E6%B6%A8%E4%BB%B7&from_source=webtop_search",
+    "read_time": 1,
+    "id": "e87ad5b8dc892444"
+  },
+  {
     "title": "DeepSeek V4 Pro 正式版 API 上线，增强 Agent 能力",
     "summary": "DeepSeek团队昨晚在社群宣布，DeepSeek V4 Pro正式版已经更新至API，调用模型名不变。新版本增强了Agent能力，支持Responses API和Codex接入。 DeepSeek V4 Pro正式版基准测试显示，其在终...",
     "full_content": "DeepSeek团队昨晚在社群宣布，DeepSeek V4 Pro正式版已经更新至API，调用模型名不变。新版本增强了Agent能力，支持Responses API和Codex接入。 DeepSeek V4 Pro正式版基准测试显示，其在终端Agent测试Terminal Bench的得分为87.9分，逼近Fable 5的88.0分。在AI安全智能体评测基准CyberGym、以及在高难度的智能体评测基准...",
@@ -394,6 +454,30 @@
     "url": "https://www.oschina.net/news/501921/grok-4-6-benchmarks-and-analysis",
     "read_time": 1,
     "id": "2f32aa4bfcf48cc2"
+  },
+  {
+    "title": "DeepSeek-V4-Pro 正式版上线",
+    "summary": "DeepSeek V4 Pro 正式版已发布。 当前，DeepSeek V4 Pro 正式版已同步在 APP、网页端和 API 更新上线。用户可以通过 APP 或网页端选择“专家模式”使用全新的 V4 Pro 正式版模型， API 模型名不...",
+    "full_content": "DeepSeek V4 Pro 正式版已发布。 当前，DeepSeek V4 Pro 正式版已同步在 APP、网页端和 API 更新上线。用户可以通过 APP 或网页端选择“专家模式”使用全新的 V4 Pro 正式版模型， API 模型名不变，其他更新细节详见 DeepSeek API 官方接口文档。 Agent 能力大幅提升 正式版 DeepSeek V4 Pro 增强了 Agent 能力，在生产环...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-13",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/501923",
+    "read_time": 1,
+    "id": "8b1c290b1d830608"
+  },
+  {
+    "title": "Zed 推出多人协作 AI 编程环境 “Delta”",
+    "summary": "Zed编辑器团队正式发布了Delta，一个面向AI Agent编程的多人协作环境。这标志着Zed从最好的代码编写工具进入了最好的代码讨论工具的第二阶段战略。 Delta的核心理念是将代码和对话保持连接。与传统的基于commit的代码审查平台...",
+    "full_content": "Zed编辑器团队正式发布了Delta，一个面向AI Agent编程的多人协作环境。这标志着Zed从&quot;最好的代码编写工具&quot;进入了&quot;最好的代码讨论工具&quot;的第二阶段战略。 Delta的核心理念是将代码和对话保持连接。与传统的基于commit的代码审查平台不同，Delta允许开发者在工作树的任意一行代码上添加评论，这些评论会随着代码的演变而保持...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-13",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/501922",
+    "read_time": 1,
+    "id": "985b94f46580017e"
   },
   {
     "title": "Lululemon劲敌来中国了",
@@ -922,5 +1006,113 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%BA%94%E5%85%AC",
     "read_time": 1,
     "id": "9482cf4554141ec8"
+  },
+  {
+    "title": "总书记心系国家公园",
+    "summary": "总书记心系国家公园",
+    "full_content": "总书记心系国家公园",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-13",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%80%BB%E4%B9%A6%E8%AE%B0%E5%BF%83%E7%B3%BB%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD",
+    "read_time": 1,
+    "id": "517eded088fa293e"
+  },
+  {
+    "title": "砸30万补课到700分最后上了职校",
+    "summary": "砸30万补课到700分最后上了职校",
+    "full_content": "砸30万补课到700分最后上了职校",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-13",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%A0%B830%E4%B8%87%E8%A1%A5%E8%AF%BE%E5%88%B0700%E5%88%86%E6%9C%80%E5%90%8E%E4%B8%8A%E4%BA%86%E8%81%8C%E6%A0%A1",
+    "read_time": 1,
+    "id": "ab1d203552600232"
+  },
+  {
+    "title": "五公站姐出图",
+    "summary": "五公站姐出图",
+    "full_content": "五公站姐出图",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-13",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%BA%94%E5%85%AC%E7%AB%99%E5%A7%90%E5%87%BA%E5%9B%BE",
+    "read_time": 1,
+    "id": "d4b91ff1607d0dd0"
+  },
+  {
+    "title": "碳排放权交易市场成交量破9亿吨",
+    "summary": "碳排放权交易市场成交量破9亿吨",
+    "full_content": "碳排放权交易市场成交量破9亿吨",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-13",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%A2%B3%E6%8E%92%E6%94%BE%E6%9D%83%E4%BA%A4%E6%98%93%E5%B8%82%E5%9C%BA%E6%88%90%E4%BA%A4%E9%87%8F%E7%A0%B49%E4%BA%BF%E5%90%A8",
+    "read_time": 1,
+    "id": "9428614f925bdedd"
+  },
+  {
+    "title": "王橹杰对着蓝粉海偷笑",
+    "summary": "王橹杰对着蓝粉海偷笑",
+    "full_content": "王橹杰对着蓝粉海偷笑",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-13",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%8E%8B%E6%A9%B9%E6%9D%B0%E5%AF%B9%E7%9D%80%E8%93%9D%E7%B2%89%E6%B5%B7%E5%81%B7%E7%AC%91",
+    "read_time": 1,
+    "id": "ae0ec5b18f059e10"
+  },
+  {
+    "title": "魏子宸好帅",
+    "summary": "魏子宸好帅",
+    "full_content": "魏子宸好帅",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-13",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%AD%8F%E5%AD%90%E5%AE%B8%E5%A5%BD%E5%B8%85",
+    "read_time": 1,
+    "id": "7bc58b7ca356f395"
+  },
+  {
+    "title": "破局 难听",
+    "summary": "破局 难听",
+    "full_content": "破局 难听",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-13",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%A0%B4%E5%B1%80%20%E9%9A%BE%E5%90%AC",
+    "read_time": 1,
+    "id": "10e539f16d3adc0c"
+  },
+  {
+    "title": "亏50万股民借钱缴款中签宇树",
+    "summary": "亏50万股民借钱缴款中签宇树",
+    "full_content": "亏50万股民借钱缴款中签宇树",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-13",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%BA%8F50%E4%B8%87%E8%82%A1%E6%B0%91%E5%80%9F%E9%92%B1%E7%BC%B4%E6%AC%BE%E4%B8%AD%E7%AD%BE%E5%AE%87%E6%A0%91",
+    "read_time": 1,
+    "id": "156dad79374a9782"
+  },
+  {
+    "title": "罗氏虾自助吃12只回本太爽了",
+    "summary": "罗氏虾自助吃12只回本太爽了",
+    "full_content": "罗氏虾自助吃12只回本太爽了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-13",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%BD%97%E6%B0%8F%E8%99%BE%E8%87%AA%E5%8A%A9%E5%90%8312%E5%8F%AA%E5%9B%9E%E6%9C%AC%E5%A4%AA%E7%88%BD%E4%BA%86",
+    "read_time": 1,
+    "id": "4adc6581d2cfef31"
   }
 ]
