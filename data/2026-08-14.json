@@ -12,6 +12,18 @@
     "id": "e8947f103100b503"
   },
   {
+    "title": "曝Stew疑似加入EDG",
+    "summary": "曝Stew疑似加入EDG",
+    "full_content": "曝Stew疑似加入EDG<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221213/eaf2dd702d7cc14d8d9511190245d057/lrx9rnKo24.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-14",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E6%9B%9DStew%E7%96%91%E4%BC%BC%E5%8A%A0%E5%85%A5EDG&from_source=webtop_search",
+    "read_time": 1,
+    "id": "bcd8264d37a85fa9"
+  },
+  {
     "title": "胖东来闭店一天整条街都没人出摊",
     "summary": "胖东来闭店一天整条街都没人出摊",
     "full_content": "胖东来闭店一天整条街都没人出摊",
@@ -142,6 +154,66 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3DWTT%E6%AC%A7%E6%B4%B2%E5%A4%A7%E6%BB%A1%E8%B4%AF%E7%91%9E%E5%85%B8%E7%AB%992026",
     "read_time": 1,
     "id": "945cb22331d190b4"
+  },
+  {
+    "title": "我人生的存在感和意义",
+    "summary": "我人生的存在感和意义",
+    "full_content": "我人生的存在感和意义",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-14",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%88%91%E4%BA%BA%E7%94%9F%E7%9A%84%E5%AD%98%E5%9C%A8%E6%84%9F%E5%92%8C%E6%84%8F%E4%B9%89",
+    "read_time": 1,
+    "id": "bc6d740167187a12"
+  },
+  {
+    "title": "DeepSeek 昨晚刚开源了 Harness：附万少的2 万字保姆级教程",
+    "summary": "DeepSeek 昨晚刚开源了 Harness：附万少的2 万字保姆级教程 就在昨天（8 月 13 日），DeepSeek 正式发布首款 Agent 产品 DeepSeek Harness（dsh），",
+    "full_content": "DeepSeek 昨晚刚开源了 Harness：附万少的2 万字保姆级教程 就在昨天（8 月 13 日），DeepSeek 正式发布首款 Agent 产品 DeepSeek Harness（dsh），",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-14",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7673390412729614390",
+    "read_time": 1,
+    "id": "987e63eda1c2add6"
+  },
+  {
+    "title": "我为 DeepSeek Harness 写了一个 dsh-apple-mode 插件",
+    "summary": "DeepSeek Harness 终于在千呼万唤中推出了公开测试版。我也是第一时间下载体验了一下，并最终开发了一个 dsh-apple-mode 插件，以更好的适配 iOS/Apple 开发。",
+    "full_content": "DeepSeek Harness 终于在千呼万唤中推出了公开测试版。我也是第一时间下载体验了一下，并最终开发了一个 dsh-apple-mode 插件，以更好的适配 iOS/Apple 开发。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-14",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7673417756021080102",
+    "read_time": 1,
+    "id": "8039cfc694a41b27"
+  },
+  {
+    "title": "连 agent loop 自己都是插件，拆开 DeepSeek 新开源的 harness 底座",
+    "summary": "DeepSeek 开源的 dsh 把模型适配、工具、会话日志甚至 agent 循环本身都做成可替换插件，底层是借用机器人生态的 Cordis 框架，拆开看它的可逆效果和能力缝隙设计。",
+    "full_content": "DeepSeek 开源的 dsh 把模型适配、工具、会话日志甚至 agent 循环本身都做成可替换插件，底层是借用机器人生态的 Cordis 框架，拆开看它的可逆效果和能力缝隙设计。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-14",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7673400662704898098",
+    "read_time": 1,
+    "id": "e691e09809a07bd6"
+  },
+  {
+    "title": "DeepSeek Harness 速览：“一切皆插件”意味着什么",
+    "summary": "从 “Everything is a Plugin” 出发，速览 DeepSeek Harness 的插件化架构：Cordis 的服务、依赖注入、事件分发与可逆副作用，并亲手写一个企业微信通知插件..",
+    "full_content": "从 “Everything is a Plugin” 出发，速览 DeepSeek Harness 的插件化架构：Cordis 的服务、依赖注入、事件分发与可逆副作用，并亲手写一个企业微信通知插件..",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-14",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7673436957741039631",
+    "read_time": 1,
+    "id": "129e47c5b19e88d0"
   },
   {
     "title": "奥德赛",
