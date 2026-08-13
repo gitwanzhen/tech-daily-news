@@ -552,6 +552,18 @@
     "id": "dc35058bee54bda2"
   },
   {
+    "title": "在 AI 时代，中文的底层编码到底需不需要被重新发明？",
+    "summary": "目前所有中文 AI 模型（无论 GPT、Llama 还是国产大模型）处理汉字的底层方式，本质上都是把汉字当做一个「编号」（Unicode 码点），或者拆成 BPE 子词。模型看到的「一」（U+4E00）和「丁」（U+4E01），在数学上没有...",
+    "full_content": "<p>目前所有中文 AI 模型（无论 GPT、Llama 还是国产大模型）处理汉字的底层方式，本质上都是把汉字当做一个「编号」（Unicode 码点），或者拆成 BPE 子词。模型看到的「一」（U+4E00）和「丁」（U+4E01），在数学上没有任何结构关系——它俩的编码仅差 1，但字形完全不同；而「一」和「贰」的编码相差巨大，但结构上却都含有「一」的部件。</p><p>汉字本身有明确的部件、笔画、结构关系。我想确认的核心问题是：<strong>在 AI 时代，中文的底层编码到底需不需要被重新发明？</strong> 也就是说，我们是否应该在 Unicode/BPE 之上，建立一层可计算的、包含汉字结构信息的中文编码层，而不是继续让模型把汉字当成无结构编号？</p><p>为此我设计了一套 32 位中文结构编码（CNBE-32），把每个汉字拆成 5 个字段：</p><table><thead><tr><th>字段</th><th>位数</th><th>含义</th></tr></thead><tbody><tr><td>radix</td><td>8 bit</td><td>部首（如「亻」「木」「氵」）</td></tr><tr><td>strokes</td><td>5 bit</td><td>笔画数（1-32）</td></tr><tr><td>struct</td><td>4 bit</td><td>结构类型（左右/上下/包围/独体等）</td></tr><tr><td>index</td><td>11 bit</td><td>同结构字内的序号</td></tr><tr><td>ext</td><td>4 bit</td><td>扩展标记</td></tr></tbody></table><p>核心思想：相近结构的汉字，在编码空间里距离也近。项目已开源：<a href=\"https://link.segmentfault.com/?enc=1vsQwQTqwhOoOXP2Va%2F86Q%3D%3D.s0pSFQp2FYGqMbq%2BhV3ZucCMOGfQZdOWp7kMFTUi%2Fw%2BJkB5RRN%2FCWTYhd18mVDxja6nwzlEfoeqG1YqpiJw7gZ79OyYowY%2FMnjUUat1nreg%3D\" rel=\"nofollow\">CNBE-32-Chinese-Native-Binary-Encoding</a>。</p><h2>已完成的核心实验</h2><p>我用完全相同的 Transformer 模型，唯一区别是输入编码不同：</p><table><thead><tr><th>编码方式</th><th>模型</th><th>next-token 准确率</th><th>备注</th></tr></thead><tbody><tr><td>Unicode</td><td>8 层 Dense</td><td>0.001%</td><td>基本等于随机猜</td></tr><tr><td>CNBE-32</td><td>8 层 Dense</td><td>2.61%</td><td>同样模型，2600 倍提升</td></tr><tr><td>CNBE-32</td><td>128 专家 MoE</td><td>22.96%</td><td>结构路由，进一步放大</td></tr></tbody></table><p>其中「结构类型」（左右/上下/包围等）的预测准确率达到 43%（随机基线约 6.7%）。</p><p>其他工程事实：</p><ul><li>用正规出版物（非互联网爬虫）构建了 51.4 亿字符、三重去重、15 分类的语料库，CJK 覆盖率 99.9996%，已通过 A+ 级自动质量校准。</li><li>CNBE 的五层实现（Python/C/Rust/Verilog/RISC-V）全部 PASS，Linux 内核已在 QEMU/OpenSBI 下启动。</li><li>数学基础已验证：伪度量边界、分配格、3D 前缀和 1500x 加速。</li></ul><h2>想请教的子问题</h2><ol><li>方向本身是否有价值？让 AI 直接学习汉字的结构信息，而不是把汉字当成无结构…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-12",
+    "source": "SegmentFault",
+    "url": "https://segmentfault.com/q/1010000048152826",
+    "read_time": 8,
+    "id": "1e71f54c5b889e3f"
+  },
+  {
     "title": "AI 编程助手能写代码，但提个 PR 还是得靠人点网页——Gitee CLI 想解决这件事",
     "summary": "AI 编程助手已经很能写代码了。Claude Code、Codex、OpenCode 都可以读懂你的仓库、改好一个 Bug、补上一段测试。 但当任务走到「把这个分支提个 PR」「顺手建个仓库」「把这批 issue 归档」时，它们往往就卡住了...",
     "full_content": "AI 编程助手已经很能写代码了。Claude Code、Codex、OpenCode 都可以读懂你的仓库、改好一个 Bug、补上一段测试。 但当任务走到「把这个分支提个 PR」「顺手建个仓库」「把这批 issue 归档」时，它们往往就卡住了——网页界面点不动，裸调 REST API 又要记住一堆端点、鉴权和分页规则。 Gitee CLI 正在补上这「最后一公里...",
