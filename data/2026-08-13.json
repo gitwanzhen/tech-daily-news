@@ -516,6 +516,18 @@
     "id": "b66fa57c04f1c3a8"
   },
   {
+    "title": "The builder’s guide to GPT‑5.6",
+    "summary": "Learn how startups use GPT-5.6 to build faster, more cost-efficient AI agents with smarter model selection and new Respo...",
+    "full_content": "Learn how startups use GPT-5.6 to build faster, more cost-efficient AI agents with smarter model selection and new Responses API capabilities.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-13",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
+    "read_time": 1,
+    "id": "3e500ccae6c75743"
+  },
+  {
     "title": "DeepSeek V4 Pro 正式版 API 上线，增强 Agent 能力",
     "summary": "DeepSeek团队昨晚在社群宣布，DeepSeek V4 Pro正式版已经更新至API，调用模型名不变。新版本增强了Agent能力，支持Responses API和Codex接入。 DeepSeek V4 Pro正式版基准测试显示，其在终...",
     "full_content": "DeepSeek团队昨晚在社群宣布，DeepSeek V4 Pro正式版已经更新至API，调用模型名不变。新版本增强了Agent能力，支持Responses API和Codex接入。 DeepSeek V4 Pro正式版基准测试显示，其在终端Agent测试Terminal Bench的得分为87.9分，逼近Fable 5的88.0分。在AI安全智能体评测基准CyberGym、以及在高难度的智能体评测基准...",
