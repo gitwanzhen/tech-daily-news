@@ -288,6 +288,30 @@
     "id": "6b776e31632a8cb8"
   },
   {
+    "title": "得物知识问答：复合检索 Agent 的系统设计实践",
+    "summary": "知识问答的核心挑战是准确率和质量。一个回答要准确，需要：查得全（召回率），查得准（精准度），理解得对（多模态），看得对（权限隔离）。这些能力不是堆功能就能实现的，需要一个强大的 Agent 运行时来支撑。",
+    "full_content": "知识问答的核心挑战是准确率和质量。一个回答要准确，需要：查得全（召回率），查得准（精准度），理解得对（多模态），看得对（权限隔离）。这些能力不是堆功能就能实现的，需要一个强大的 Agent 运行时来支撑。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-14",
+    "source": "开源中国",
+    "url": "https://my.oschina.net/u/5783135/blog/19738367",
+    "read_time": 1,
+    "id": "165917b78dd783a2"
+  },
+  {
+    "title": "Visual Studio Code 1.133 发布",
+    "summary": "Visual Studio Code 1.133 版本现已发布。此版本为用户提供了更灵活的 Claude 会话体验，让长篇对话更易于跟进，并能在用户工作时实时刷新本地 HTML 预览。 更改 Claude 会话的模型供应商：在不重新配置 a...",
+    "full_content": "Visual Studio Code 1.133 版本现已发布。此版本为用户提供了更灵活的 Claude 会话体验，让长篇对话更易于跟进，并能在用户工作时实时刷新本地 HTML 预览。 更改 Claude 会话的模型供应商：在不重新配置 agent host 的情况下，在回合之间切换供应商。 无需登录 GitHub 即可使用 Agent 窗口：当无法登录 GitHub 时，可使用...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-14",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/501932/vs-code-1-133-released",
+    "read_time": 1,
+    "id": "a4c2a28d3358f293"
+  },
+  {
     "title": "胖东来闭店一天整条街都没人出摊",
     "summary": "胖东来闭店一天整条街都没人出摊",
     "full_content": "胖东来闭店一天整条街都没人出摊",
@@ -732,6 +756,78 @@
     "id": "4f291e43a77d2efa"
   },
   {
+    "title": "胖东来涨租房东不种地摘果子",
+    "summary": "胖东来涨租房东不种地摘果子",
+    "full_content": "胖东来涨租房东不种地摘果子",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-14",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%83%96%E4%B8%9C%E6%9D%A5%E6%B6%A8%E7%A7%9F%E6%88%BF%E4%B8%9C%E4%B8%8D%E7%A7%8D%E5%9C%B0%E6%91%98%E6%9E%9C%E5%AD%90",
+    "read_time": 1,
+    "id": "cec8cd78cca335c1"
+  },
+  {
+    "title": "3到5年内社保走向全额实缴",
+    "summary": "3到5年内社保走向全额实缴",
+    "full_content": "3到5年内社保走向全额实缴",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-14",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D3%E5%88%B05%E5%B9%B4%E5%86%85%E7%A4%BE%E4%BF%9D%E8%B5%B0%E5%90%91%E5%85%A8%E9%A2%9D%E5%AE%9E%E7%BC%B4",
+    "read_time": 1,
+    "id": "d55244680b1ba953"
+  },
+  {
+    "title": "6图看美丽中国建设十五五规划",
+    "summary": "6图看美丽中国建设十五五规划",
+    "full_content": "6图看美丽中国建设十五五规划",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-14",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D6%E5%9B%BE%E7%9C%8B%E7%BE%8E%E4%B8%BD%E4%B8%AD%E5%9B%BD%E5%BB%BA%E8%AE%BE%E5%8D%81%E4%BA%94%E4%BA%94%E8%A7%84%E5%88%92",
+    "read_time": 1,
+    "id": "67dec6730697ed6c"
+  },
+  {
+    "title": "终于懂了亲人离世是一生的潮湿",
+    "summary": "终于懂了亲人离世是一生的潮湿",
+    "full_content": "终于懂了亲人离世是一生的潮湿",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-14",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%BB%88%E4%BA%8E%E6%87%82%E4%BA%86%E4%BA%B2%E4%BA%BA%E7%A6%BB%E4%B8%96%E6%98%AF%E4%B8%80%E7%94%9F%E7%9A%84%E6%BD%AE%E6%B9%BF",
+    "read_time": 1,
+    "id": "9aca7bbcf05a881b"
+  },
+  {
+    "title": "谢霆锋认为糖拌西红柿不能拿来比赛",
+    "summary": "谢霆锋认为糖拌西红柿不能拿来比赛",
+    "full_content": "谢霆锋认为糖拌西红柿不能拿来比赛",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-14",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%B0%A2%E9%9C%86%E9%94%8B%E8%AE%A4%E4%B8%BA%E7%B3%96%E6%8B%8C%E8%A5%BF%E7%BA%A2%E6%9F%BF%E4%B8%8D%E8%83%BD%E6%8B%BF%E6%9D%A5%E6%AF%94%E8%B5%9B",
+    "read_time": 1,
+    "id": "d2b3de08cc8bb7b3"
+  },
+  {
+    "title": "微小说获奖作品有点东西",
+    "summary": "微小说获奖作品有点东西",
+    "full_content": "微小说获奖作品有点东西",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-14",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%BE%AE%E5%B0%8F%E8%AF%B4%E8%8E%B7%E5%A5%96%E4%BD%9C%E5%93%81%E6%9C%89%E7%82%B9%E4%B8%9C%E8%A5%BF",
+    "read_time": 1,
+    "id": "c948b82f30c998cb"
+  },
+  {
     "title": "DeepSeek 昨晚刚开源了 Harness：附万少的2 万字保姆级教程",
     "summary": "DeepSeek 昨晚刚开源了 Harness：附万少的2 万字保姆级教程 就在昨天（8 月 13 日），DeepSeek 正式发布首款 Agent 产品 DeepSeek Harness（dsh），",
     "full_content": "DeepSeek 昨晚刚开源了 Harness：附万少的2 万字保姆级教程 就在昨天（8 月 13 日），DeepSeek 正式发布首款 Agent 产品 DeepSeek Harness（dsh），",
@@ -850,6 +946,30 @@
     "url": "https://juejin.cn/post/7673460898809380891",
     "read_time": 1,
     "id": "4324f60a6bb7910c"
+  },
+  {
+    "title": "一个潜伏3天半才爆的bug-从502到Too-many-open-files的排查记录",
+    "summary": "一个潜伏 3 天半才爆的 bug：从 502 到 Too many open files 的排查记录 上周五下午，正准备收拾东西下班，群里突然炸了——线上 AI 对话全挂，用户疯狂反馈 502。 打开",
+    "full_content": "一个潜伏 3 天半才爆的 bug：从 502 到 Too many open files 的排查记录 上周五下午，正准备收拾东西下班，群里突然炸了——线上 AI 对话全挂，用户疯狂反馈 502。 打开",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-14",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7673522589588389942",
+    "read_time": 1,
+    "id": "3e61276bfaad1411"
+  },
+  {
+    "title": "不上悲观锁也不上 Redis：一个 AI 平台的钱包并发是怎么搞的",
+    "summary": "不上悲观锁也不上 Redis：一个 AI 平台的钱包并发是怎么搞的 事情是这样的。 我们这个 AI 平台有套\"星源值\"积分钱包，用户充值换星源值，调模型的时候按 token 扣。本来挺简单一事——查余",
+    "full_content": "不上悲观锁也不上 Redis：一个 AI 平台的钱包并发是怎么搞的 事情是这样的。 我们这个 AI 平台有套\"星源值\"积分钱包，用户充值换星源值，调模型的时候按 token 扣。本来挺简单一事——查余",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-14",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7673690348011946020",
+    "read_time": 1,
+    "id": "49e8a183f3efca0b"
   },
   {
     "title": "奥德赛",
