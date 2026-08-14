@@ -528,6 +528,18 @@
     "id": "3e500ccae6c75743"
   },
   {
+    "title": "如何判断 OpenAI 兼容接口是否静默忽略 temperature 等请求参数？",
+    "summary": "如何判断 OpenAI 兼容接口是否静默忽略 temperature 等请求参数？我在测试一些兼容 OpenAI SDK 的大模型 API。目前遇到一个判断问题：部分接口收到不支持的参数时会直接报错，但也可能正常返回 200，无法确认参数是...",
+    "full_content": "<p>如何判断 OpenAI 兼容接口是否静默忽略 temperature 等请求参数？</p><p>我在测试一些兼容 OpenAI SDK 的大模型 API。</p><p>目前遇到一个判断问题：部分接口收到不支持的参数时会直接报错，但也可能正常返回 <code>200</code>，无法确认参数是实际生效，还是被网关静默忽略。</p><p>例如下面的代码分别使用 <code>temperature=0</code> 和 <code>temperature=1</code>，对同一个提示词重复请求：</p><pre><code class=\"python\">import os\nfrom collections import Counter\nfrom openai import OpenAI\n\nclient = OpenAI(\n    api_key=os.environ[&quot;TEST_API_KEY&quot;],\n    base_url=os.environ[&quot;TEST_BASE_URL&quot;],\n)\n\nMODEL = os.environ[&quot;TEST_MODEL&quot;]\nPROMPT = &quot;生成一个不超过 12 个字的科幻小说标题，只输出标题&quot;\n\n\ndef run_test(temperature: float, repeat: int = 20):\n    outputs = []\n\n    for _ in range(repeat):\n        response = client.chat.completions.create(\n            model=MODEL,\n            messages=[\n                {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: PROMPT}\n            ],\n            temperature=temperature,\n        )\n\n        outputs.append(\n            response.choices[0].message.content.strip()\n        )\n\n    return Counter(outputs)\n\n\nprint(&quot;temperature=0&quot;)\nprint(run_test(0))\n\nprint(&quot;temperature=1&quot;)\nprint(run_test(1))</code></pre><p>目前想到的办法是比较两组结果的重复率和多样性，但感觉这个方法不够严谨：</p><ol><li>模型即使设置为 <code>temperature=0</code>，是否仍可能出现不完全确定的输出？</li><li>不同底层模型对 <code>temperature</code> 的响应程度可能不同，怎样设置对照实验比较合适？</li><li>如果接口返回 <code>200</code>，是否有办法从请求日志、响应字段或其他行为判断参数已被网关转发？</li><li>除了统计输出差异，有没有更适合自动化兼容测试的办法？</li><li>对 <code>top_p</code>、<code>stop</code>、<code>response_format</code> 等参数，应该分别采用什么可观测指标？</li></ol><p>我的目标是建立一套可以重复运行的 OpenAI 兼容接口测试，而不是只根据单次请求是否成功判断兼容性。</p><p>希望最终能够区分三种情况：</p><pre><code class=\"text\">参数正常生效\n参数被明确拒绝\n请求成功，但参数可能被静默忽略</code></pre><p>想请教一下，工程上通常怎样验证这类参数是否真正生效？</p>",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-13",
+    "source": "SegmentFault",
+    "url": "https://segmentfault.com/q/1010000048158559",
+    "read_time": 8,
+    "id": "6fc1a380e192cbac"
+  },
+  {
     "title": "DeepSeek V4 Pro 正式版 API 上线，增强 Agent 能力",
     "summary": "DeepSeek团队昨晚在社群宣布，DeepSeek V4 Pro正式版已经更新至API，调用模型名不变。新版本增强了Agent能力，支持Responses API和Codex接入。 DeepSeek V4 Pro正式版基准测试显示，其在终...",
     "full_content": "DeepSeek团队昨晚在社群宣布，DeepSeek V4 Pro正式版已经更新至API，调用模型名不变。新版本增强了Agent能力，支持Responses API和Codex接入。 DeepSeek V4 Pro正式版基准测试显示，其在终端Agent测试Terminal Bench的得分为87.9分，逼近Fable 5的88.0分。在AI安全智能体评测基准CyberGym、以及在高难度的智能体评测基准...",
