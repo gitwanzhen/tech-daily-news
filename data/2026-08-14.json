@@ -1620,6 +1620,30 @@
     "id": "49e8a183f3efca0b"
   },
   {
+    "title": "数据库作为 LLM 记忆体：语义缓存、RAG 与一致性",
+    "summary": "把数据库当 LLM 长期记忆：GPTCache、MemGPT、向量记忆与事实记忆如何分工。本文给出用 pgvector 与触发器做会话级一致性语义缓存的系统视角，并讨论 RAG 场景下的一致性坑。",
+    "full_content": "把数据库当 LLM 长期记忆：GPTCache、MemGPT、向量记忆与事实记忆如何分工。本文给出用 pgvector 与触发器做会话级一致性语义缓存的系统视角，并讨论 RAG 场景下的一致性坑。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-14",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7673780779495571462",
+    "read_time": 1,
+    "id": "b4316f5ee7ae1ef1"
+  },
+  {
+    "title": "LLM 训练全景：Pre-train、SFT、RLHF、DPO 与蒸馏",
+    "summary": "以工程视角串联现代 LLM 四阶段训练栈：预训练、中训、SFT 与对齐。覆盖数据、Tokenizer、优化器、精度、Scaling Law 与代表性训练框架，方便对照自己的训练与微调管线。",
+    "full_content": "以工程视角串联现代 LLM 四阶段训练栈：预训练、中训、SFT 与对齐。覆盖数据、Tokenizer、优化器、精度、Scaling Law 与代表性训练框架，方便对照自己的训练与微调管线。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-14",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7673808492396101668",
+    "read_time": 1,
+    "id": "03c0949ed441d1aa"
+  },
+  {
     "title": "奥德赛",
     "summary": "标题：奥德赛评分：8.3片长：173分钟制片国家/地区：美国 英国导演：克里斯托弗·诺兰主演：马特·达蒙 / 汤姆·霍兰德 / 安妮·海瑟薇",
     "full_content": "标题：奥德赛<br />评分：8.3<br />片长：173分钟<br />制片国家/地区：美国 英国<br />导演：克里斯托弗·诺兰<br />主演：马特·达蒙 / 汤姆·霍兰德 / 安妮·海瑟薇<br /><img src=\"https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2933569626.webp\" />",
