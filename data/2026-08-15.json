@@ -1803,6 +1803,54 @@
     "id": "58225ed3d6d2bd30"
   },
   {
+    "title": "我按下“发送”之后：DeepSeek Harness 如何把一次请求变成 1,177 个增量片段",
+    "summary": "基于真实 DeepSeek Harness 请求，结合页面、Session 日志与源码，拆解 POST、模型 SSE、WebSocket 三段链路，以及 1,177 个增量的记录、广播、渲染与恢复。",
+    "full_content": "基于真实 DeepSeek Harness 请求，结合页面、Session 日志与源码，拆解 POST、模型 SSE、WebSocket 三段链路，以及 1,177 个增量的记录、广播、渲染与恢复。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-15",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7673875524200300590",
+    "read_time": 1,
+    "id": "3d23c59c8db36f2f"
+  },
+  {
+    "title": "深度解读 Anthropic 多智能体报告：更强的模型 ≠ 更好的协调",
+    "summary": "这篇《Patterns and problems in emerging multiagent systems》来自 Anthropic 前沿红队（Frontier Red Team），它不是搭建教程",
+    "full_content": "这篇《Patterns and problems in emerging multiagent systems》来自 Anthropic 前沿红队（Frontier Red Team），它不是搭建教程",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-15",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7673873492522172470",
+    "read_time": 1,
+    "id": "cc7c76bb41a70dd1"
+  },
+  {
+    "title": "WorkBuddy 资料库架构解析：MD + CSV + HTML 三种载体的\"流水线\"设计",
+    "summary": "导语 WorkBuddy 新推出的资料库功能，本质不是\"多了一块网盘\"，而是一套 AI 原生的产物协作体系。它用 MD、CSV、HTML 三种载体把\"内容、数据、呈现\"拆开管理，通过互相引用实现\"改一",
+    "full_content": "导语 WorkBuddy 新推出的资料库功能，本质不是\"多了一块网盘\"，而是一套 AI 原生的产物协作体系。它用 MD、CSV、HTML 三种载体把\"内容、数据、呈现\"拆开管理，通过互相引用实现\"改一",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-15",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7674030633674833956",
+    "read_time": 1,
+    "id": "398b55ec7ce60ca2"
+  },
+  {
+    "title": "给 DeepSeek Harness 装个\"应用商店\"：一条命令，595 个插件随你逛",
+    "summary": "给 DeepSeek Harness 装个\"应用商店\"：一条命令，595 个插件随你逛 　　你有没有过这样的时刻：想让 AI 助手多一个能力，比如换个皮肤、加个记忆、接个数据库，结果翻遍 GitHub",
+    "full_content": "给 DeepSeek Harness 装个\"应用商店\"：一条命令，595 个插件随你逛 　　你有没有过这样的时刻：想让 AI 助手多一个能力，比如换个皮肤、加个记忆、接个数据库，结果翻遍 GitHub",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-15",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7673978658780332083",
+    "read_time": 1,
+    "id": "5e2619888c86ff74"
+  },
+  {
     "title": "牛来",
     "summary": "标题：牛来评分：0片长：86分钟制片国家/地区：中国大陆导演：信雨萌主演：信雨萌 / 孙丽芳",
     "full_content": "标题：牛来<br />评分：0<br />片长：86分钟<br />制片国家/地区：中国大陆<br />导演：信雨萌<br />主演：信雨萌 / 孙丽芳<br /><img src=\"https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2934945600.webp\" />",
