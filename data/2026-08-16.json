@@ -1630,5 +1630,17 @@
     "url": "https://juejin.cn/post/7674260258122973218",
     "read_time": 1,
     "id": "c29fe18d8052d6d7"
+  },
+  {
+    "title": "别再被 AI 骗了：我把腾讯云 4 个 Skill 做成了个「AI 打假侦探」，过程的一个小配置坑惨了我",
+    "summary": "AI 打假侦探（ai-truth-detective） 眼见不一定为实。调用腾讯云 AI 生成识别能力，检测图片 / 文本 / 视频「是人做的，还是 AI 做的」，输出结构化的验真报告。",
+    "full_content": "AI 打假侦探（ai-truth-detective） 眼见不一定为实。调用腾讯云 AI 生成识别能力，检测图片 / 文本 / 视频「是人做的，还是 AI 做的」，输出结构化的验真报告。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-16",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7674215005011951654",
+    "read_time": 1,
+    "id": "2d024150c1a2280a"
   }
 ]
