@@ -408,6 +408,18 @@
     "id": "f10e796407145a2e"
   },
   {
+    "title": "专访菲尔兹奖得主邓煜",
+    "summary": "专访菲尔兹奖得主邓煜",
+    "full_content": "专访菲尔兹奖得主邓煜<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-16",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E4%B8%93%E8%AE%BF%E8%8F%B2%E5%B0%94%E5%85%B9%E5%A5%96%E5%BE%97%E4%B8%BB%E9%82%93%E7%85%9C&from_source=webtop_search",
+    "read_time": 1,
+    "id": "29dbfadf2bf3eded"
+  },
+  {
     "title": "如何深入学习使用 claude 和codex、qwen 、deepseek harness这类的编辑器？",
     "summary": "如何深入学习使用 claude 和codex、qwen 、deepseek harness这类的编辑器？目前只是入门呢感受只是初步使用，大家有没有具体的符合你业务方向学习路劲可以分享呢！希望是可以流程化，自动化，做更多的事情！",
     "full_content": "<p>如何深入学习使用 claude 和codex、qwen 、deepseek harness这类的编辑器？<br />目前只是入门呢感受只是初步使用，<br />大家有没有具体的符合你业务方向学习路劲可以分享呢！<br />希望是可以流程化，自动化，做更多的事情！</p>",
@@ -1296,6 +1308,54 @@
     "id": "cbea340dd17a7567"
   },
   {
+    "title": "四代跳Attention",
+    "summary": "四代跳Attention",
+    "full_content": "四代跳Attention",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-16",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%9B%9B%E4%BB%A3%E8%B7%B3Attention",
+    "read_time": 1,
+    "id": "9686f6f5e6d7698f"
+  },
+  {
+    "title": "孙楠 降维打击",
+    "summary": "孙楠 降维打击",
+    "full_content": "孙楠 降维打击",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-16",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%AD%99%E6%A5%A0%20%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB",
+    "read_time": 1,
+    "id": "ba814d167d938843"
+  },
+  {
+    "title": "王橹杰 虚拟",
+    "summary": "王橹杰 虚拟",
+    "full_content": "王橹杰 虚拟",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-16",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%8E%8B%E6%A9%B9%E6%9D%B0%20%E8%99%9A%E6%8B%9F",
+    "read_time": 1,
+    "id": "76554e660c741388"
+  },
+  {
+    "title": "张本智和4比3松岛辉空",
+    "summary": "张本智和4比3松岛辉空",
+    "full_content": "张本智和4比3松岛辉空",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-16",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%BC%A0%E6%9C%AC%E6%99%BA%E5%92%8C4%E6%AF%943%E6%9D%BE%E5%B2%9B%E8%BE%89%E7%A9%BA",
+    "read_time": 1,
+    "id": "0019201a54b5bf73"
+  },
+  {
     "title": "Google｜LangExtract 源码静态评测：从 90 个 Python 文件看大模型结构化信息抽取工程基础",
     "summary": "Google｜LangExtract 源码静态评测：从 90 个 Python 文件看大模型结构化信息抽取工程基础 摘要 langextract 是一个面向大模型信息抽取场景的 Python 项目。",
     "full_content": "Google｜LangExtract 源码静态评测：从 90 个 Python 文件看大模型结构化信息抽取工程基础 摘要 langextract 是一个面向大模型信息抽取场景的 Python 项目。",
@@ -1426,5 +1486,17 @@
     "url": "https://juejin.cn/post/7674101873055662120",
     "read_time": 1,
     "id": "9bc1de39a750de7e"
+  },
+  {
+    "title": "Claude Code 如何恢复一段会话",
+    "summary": "一段 Claude Code 会话做到一半，关掉终端，之后再运行 claude --continue，通常还能接着做。终端里的旧消息会重新出现，能恢复的 agent 配置、Git worktree 等",
+    "full_content": "一段 Claude Code 会话做到一半，关掉终端，之后再运行 claude --continue，通常还能接着做。终端里的旧消息会重新出现，能恢复的 agent 配置、Git worktree 等",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-16",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7674461849706283059",
+    "read_time": 1,
+    "id": "1fa6f706f62616f3"
   }
 ]
