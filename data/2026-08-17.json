@@ -756,6 +756,18 @@
     "id": "2205702cb9c5472b"
   },
   {
+    "title": "Pi 的上下文压缩如何工作？",
+    "summary": "你和 AI 编程助手聊了 30 轮。突然，它报错了。不是你的代码有问题，是对话历史太长，token 超过了上下文窗口限制。 这是所有 LLM 编程助手都必须面对的问题。Earendil 官方博客最近发表了一篇技术文章，详细解释他们的编码助手...",
+    "full_content": "你和 AI 编程助手聊了 30 轮。突然，它报错了。不是你的代码有问题，是对话历史太长，token 超过了上下文窗口限制。 这是所有 LLM 编程助手都必须面对的问题。Earendil 官方博客最近发表了一篇技术文章，详细解释他们的编码助手 Pi 是如何处理这个问题的——通过一个叫「compaction」的机制。 两个选择，都不完美 当上下...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-17",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/501967/compaction-in-pi",
+    "read_time": 1,
+    "id": "1bcd8e9fa38a2140"
+  },
+  {
     "title": "盗墓笔记",
     "summary": "盗墓笔记",
     "full_content": "<div style=\"font-family: inherit;\">\n                        <p><strong>标题：</strong>盗墓笔记</p>\n                        <p><strong>来源：</strong>微博</p>\n                        <p><strong>热度：</strong>🔥 87</p>\n                        <p><strong>日期：</strong>2026-08-17</p>\n                        <p style=\"color: #808a99; font-size: 0.9rem; margin-top: 12px; border-top: 1px solid #374151; padding-top: 12px;\">\n                            此热搜由 微博 提供，当前源未返回详细内容。\n                        </p>\n                    </div>",
@@ -1582,6 +1594,102 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%8D%8F%E5%92%8C%E5%8C%BB%E7%94%9F%E7%A0%B4%E8%A7%A322%E5%B9%B4%E6%95%B0%E5%AD%A6%E9%9A%BE%E9%A2%98%E8%AE%BA%E6%96%87%E8%A2%AB%E6%89%92",
     "read_time": 1,
     "id": "87e4a6cee39e76c5"
+  },
+  {
+    "title": "大批AI博主停更了",
+    "summary": "大批AI博主停更了",
+    "full_content": "大批AI博主停更了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-17",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%A4%A7%E6%89%B9AI%E5%8D%9A%E4%B8%BB%E5%81%9C%E6%9B%B4%E4%BA%86",
+    "read_time": 1,
+    "id": "ea94643af8042de3"
+  },
+  {
+    "title": "建议大家开车一定要专心",
+    "summary": "建议大家开车一定要专心",
+    "full_content": "建议大家开车一定要专心",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-17",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%BB%BA%E8%AE%AE%E5%A4%A7%E5%AE%B6%E5%BC%80%E8%BD%A6%E4%B8%80%E5%AE%9A%E8%A6%81%E4%B8%93%E5%BF%83",
+    "read_time": 1,
+    "id": "e25768763196afa9"
+  },
+  {
+    "title": "前7个月国民经济总体平稳向新向优",
+    "summary": "前7个月国民经济总体平稳向新向优",
+    "full_content": "前7个月国民经济总体平稳向新向优",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-17",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%89%8D7%E4%B8%AA%E6%9C%88%E5%9B%BD%E6%B0%91%E7%BB%8F%E6%B5%8E%E6%80%BB%E4%BD%93%E5%B9%B3%E7%A8%B3%E5%90%91%E6%96%B0%E5%90%91%E4%BC%98",
+    "read_time": 1,
+    "id": "9d11d0a5fe3e82e9"
+  },
+  {
+    "title": "只有中国人才能识别的加密暗号",
+    "summary": "只有中国人才能识别的加密暗号",
+    "full_content": "只有中国人才能识别的加密暗号",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-17",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%8F%AA%E6%9C%89%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%89%8D%E8%83%BD%E8%AF%86%E5%88%AB%E7%9A%84%E5%8A%A0%E5%AF%86%E6%9A%97%E5%8F%B7",
+    "read_time": 1,
+    "id": "e5b6186fca59cdd5"
+  },
+  {
+    "title": "今天市场暴涨原因",
+    "summary": "今天市场暴涨原因",
+    "full_content": "今天市场暴涨原因",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-17",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%BB%8A%E5%A4%A9%E5%B8%82%E5%9C%BA%E6%9A%B4%E6%B6%A8%E5%8E%9F%E5%9B%A0",
+    "read_time": 1,
+    "id": "9db01d0c9a005227"
+  },
+  {
+    "title": "817飞猪送稻米重逢礼共赴狂欢",
+    "summary": "817飞猪送稻米重逢礼共赴狂欢",
+    "full_content": "817飞猪送稻米重逢礼共赴狂欢",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-17",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D817%E9%A3%9E%E7%8C%AA%E9%80%81%E7%A8%BB%E7%B1%B3%E9%87%8D%E9%80%A2%E7%A4%BC%E5%85%B1%E8%B5%B4%E7%8B%82%E6%AC%A2",
+    "read_time": 1,
+    "id": "1d9abca95c425dc9"
+  },
+  {
+    "title": "汪苏泷内场没几个人挥荧光棒的",
+    "summary": "汪苏泷内场没几个人挥荧光棒的",
+    "full_content": "汪苏泷内场没几个人挥荧光棒的",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-17",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%B1%AA%E8%8B%8F%E6%B3%B7%E5%86%85%E5%9C%BA%E6%B2%A1%E5%87%A0%E4%B8%AA%E4%BA%BA%E6%8C%A5%E8%8D%A7%E5%85%89%E6%A3%92%E7%9A%84",
+    "read_time": 1,
+    "id": "2ff03cf49de7f501"
+  },
+  {
+    "title": "花开锦绣",
+    "summary": "花开锦绣",
+    "full_content": "<div style=\"font-family: inherit;\">\n                        <p><strong>标题：</strong>花开锦绣</p>\n                        <p><strong>来源：</strong>微博</p>\n                        <p><strong>热度：</strong>🔥 83</p>\n                        <p><strong>日期：</strong>2026-08-17</p>\n                        <p style=\"color: #808a99; font-size: 0.9rem; margin-top: 12px; border-top: 1px solid #374151; padding-top: 12px;\">\n                            此热搜由 微博 提供，当前源未返回详细内容。\n                        </p>\n                    </div>",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-17",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%8A%B1%E5%BC%80%E9%94%A6%E7%BB%A3",
+    "read_time": 1,
+    "id": "34e054457fe1606f"
   },
   {
     "title": "第1章：认识 DeepSeek Harness——一个插件化的 Agent Runtime 平台",
