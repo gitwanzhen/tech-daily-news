@@ -1642,5 +1642,101 @@
     "url": "https://juejin.cn/post/7674215005011951654",
     "read_time": 1,
     "id": "2d024150c1a2280a"
+  },
+  {
+    "title": "卷积神经网络 CNN 是什么？为什么适合处理图像？",
+    "summary": "你上次训练模型，调了半天正则化参数，过拟合终于压下去了。 然后产品经理跑过来问你：能不能加个功能，让模型自动识别用户上传的图片里有没有猫？ 正则化搞定了\"防止模型死记硬背\"的问题。",
+    "full_content": "你上次训练模型，调了半天正则化参数，过拟合终于压下去了。 然后产品经理跑过来问你：能不能加个功能，让模型自动识别用户上传的图片里有没有猫？ 正则化搞定了\"防止模型死记硬背\"的问题。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-16",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7674130372750721066",
+    "read_time": 1,
+    "id": "c63a84b6bc825208"
+  },
+  {
+    "title": "DeepSeek Harness (DSH) 插件机制解析：一切皆插件的 Agent 运行时",
+    "summary": "深入解析 DeepSeek Harness (dsh) 的插件机制：基于 vendored Cordis 4.0 的六层架构、Context Proxy 的 get 陷阱、Fiber 生命周期状态机、",
+    "full_content": "深入解析 DeepSeek Harness (dsh) 的插件机制：基于 vendored Cordis 4.0 的六层架构、Context Proxy 的 get 陷阱、Fiber 生命周期状态机、",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-16",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7674341421633503259",
+    "read_time": 1,
+    "id": "ea12e24a0b1c558f"
+  },
+  {
+    "title": "DeepSeek Harness 来了！从用户界面分析DSH",
+    "summary": "2026年8月13日，DeepSeek 正式发布了他们的首款 Agent 类产品，DeepSeek Harness（DSH），并且是以一个开源的姿态展示了了自己的产品，截至今天，已经斩获了125k s",
+    "full_content": "2026年8月13日，DeepSeek 正式发布了他们的首款 Agent 类产品，DeepSeek Harness（DSH），并且是以一个开源的姿态展示了了自己的产品，截至今天，已经斩获了125k s",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-16",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7674156176319217706",
+    "read_time": 1,
+    "id": "5d563970cfd5a086"
+  },
+  {
+    "title": "DeepSeek Harness (DSH) 实战：架构、模式与插件化开发",
+    "summary": "Agent = Model + Harness(现代 AI 设计逻辑) + 一切皆插件(底层基于 **Cordis**)",
+    "full_content": "Agent = Model + Harness(现代 AI 设计逻辑) + 一切皆插件(底层基于 **Cordis**)",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-16",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7674103602086707243",
+    "read_time": 1,
+    "id": "b98c19a3787bad35"
+  },
+  {
+    "title": "一文讲透 AI 绘画 Prompt 工程：从原理到可复用的方法论",
+    "summary": "Prompt 常被当成\"咒语\"——多加几个 masterpiece, best quality 就能出好图。但如果拆开看文本到图像模型的工作机制，会发现 prompt 效果的好坏其实是可以工程化分析的",
+    "full_content": "Prompt 常被当成\"咒语\"——多加几个 masterpiece, best quality 就能出好图。但如果拆开看文本到图像模型的工作机制，会发现 prompt 效果的好坏其实是可以工程化分析的",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-16",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7674224061837983778",
+    "read_time": 1,
+    "id": "ffca60680f6f7af2"
+  },
+  {
+    "title": "MinerU：把文档变成大模型能\"读\"的样子",
+    "summary": "在大模型落地的一年又一年里，有一个环节始终绕不开：你的知识库不是 Markdown，而是成千上万份 PDF。论文、财报、合同、招标书、扫描件——双栏排版、跨页表格、公式、页眉页脚混杂其中。直接把 PD",
+    "full_content": "在大模型落地的一年又一年里，有一个环节始终绕不开：你的知识库不是 Markdown，而是成千上万份 PDF。论文、财报、合同、招标书、扫描件——双栏排版、跨页表格、公式、页眉页脚混杂其中。直接把 PD",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-16",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7674145872716939264",
+    "read_time": 1,
+    "id": "fd7671fe873245dd"
+  },
+  {
+    "title": "我把 DeepSeek Harness 每次会话的账单拆开看了一遍，第一个请求占了 52%",
+    "summary": "DeepSeek 缓存未命中比命中贵 50 倍。第一个请求按未命中价付整个前缀，占账单 52%，一半是从没调用过的工具 schema。32 次实测，关掉后省 7% 到 42%，测试验过交付物不变。",
+    "full_content": "DeepSeek 缓存未命中比命中贵 50 倍。第一个请求按未命中价付整个前缀，占账单 52%，一半是从没调用过的工具 schema。32 次实测，关掉后省 7% 到 42%，测试验过交付物不变。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-16",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7674145872716840960",
+    "read_time": 1,
+    "id": "eb72dad14bf61d9a"
+  },
+  {
+    "title": "Agent Harness 从原理到实战：大模型不干活，全靠智能体运行框架在撑",
+    "summary": "大模型只会回答，不会干活。本文讲透 Agent Harness（智能体运行框架）：工具调用循环、上下文管理、权限模型，看看到底是谁在替模型干活。",
+    "full_content": "大模型只会回答，不会干活。本文讲透 Agent Harness（智能体运行框架）：工具调用循环、上下文管理、权限模型，看看到底是谁在替模型干活。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-16",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7674103602086559787",
+    "read_time": 1,
+    "id": "25967c15d0079fbb"
   }
 ]
