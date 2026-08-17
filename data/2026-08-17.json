@@ -2074,5 +2074,29 @@
     "url": "https://juejin.cn/post/7674686524113862706",
     "read_time": 1,
     "id": "cbe4469b81366432"
+  },
+  {
+    "title": "Agent Team 实践(一): 如何构建跨 Harness 的统一 Runtime",
+    "summary": "这是一个系列文章，大概六篇，讨论的是我的开源项目 Pragma 在构建多 Agent 系统过程中遇到的六个核心问题。从一个长期运行的 Agent 系统需要具备的工程能力出发：执行环境如何替换，上下文如",
+    "full_content": "这是一个系列文章，大概六篇，讨论的是我的开源项目 Pragma 在构建多 Agent 系统过程中遇到的六个核心问题。从一个长期运行的 Agent 系统需要具备的工程能力出发：执行环境如何替换，上下文如",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-17",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7674870309704368143",
+    "read_time": 1,
+    "id": "6979e5d6d7e5069c"
+  },
+  {
+    "title": "DeepSeek Harness 源码实战第2章：Cordis——驱动 dsh 的插件引擎",
+    "summary": "插件框架不是给前端用的吗？dsh 整个 Agent 运行时都跑在插件引擎上。 如果你做过前端开发，可能用过 webpack 的 plugin 系统或者 VS Code 的扩展机制。但 dsh 的插件引",
+    "full_content": "插件框架不是给前端用的吗？dsh 整个 Agent 运行时都跑在插件引擎上。 如果你做过前端开发，可能用过 webpack 的 plugin 系统或者 VS Code 的扩展机制。但 dsh 的插件引",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-17",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7674862491856863275",
+    "read_time": 1,
+    "id": "fd81beffcb0dd34e"
   }
 ]
