@@ -1512,6 +1512,42 @@
     "id": "dabf31d58681c19f"
   },
   {
+    "title": "公积金 强制缴纳",
+    "summary": "公积金 强制缴纳",
+    "full_content": "公积金 强制缴纳",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-18",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%85%AC%E7%A7%AF%E9%87%91%20%E5%BC%BA%E5%88%B6%E7%BC%B4%E7%BA%B3",
+    "read_time": 1,
+    "id": "40c46f7ae58a36f3"
+  },
+  {
+    "title": "七夕",
+    "summary": "七夕",
+    "full_content": "<div style=\"font-family: inherit;\">\n                        <p><strong>标题：</strong>七夕</p>\n                        <p><strong>来源：</strong>微博</p>\n                        <p><strong>热度：</strong>🔥 44</p>\n                        <p><strong>日期：</strong>2026-08-18</p>\n                        <p style=\"color: #808a99; font-size: 0.9rem; margin-top: 12px; border-top: 1px solid #374151; padding-top: 12px;\">\n                            此热搜由 微博 提供，当前源未返回详细内容。\n                        </p>\n                    </div>",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-18",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%B8%83%E5%A4%95",
+    "read_time": 1,
+    "id": "f778bcb12ea029fe"
+  },
+  {
+    "title": "打过四价九价HPV疫苗不用再打双价",
+    "summary": "打过四价九价HPV疫苗不用再打双价",
+    "full_content": "打过四价九价HPV疫苗不用再打双价",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-18",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%89%93%E8%BF%87%E5%9B%9B%E4%BB%B7%E4%B9%9D%E4%BB%B7HPV%E7%96%AB%E8%8B%97%E4%B8%8D%E7%94%A8%E5%86%8D%E6%89%93%E5%8F%8C%E4%BB%B7",
+    "read_time": 1,
+    "id": "494554252337db83"
+  },
+  {
     "title": "DeepSeek Harness插件开发实战教程：我让它自己写了一个 arXiv 搜索插件",
     "summary": "如何开发一个 DeepSeek Harness 插件 前面聊 DeepSeek Harness 的时候，我提到过一句： 这东西最有意思的地方，就是**「一切皆插件」**。 模型是一块，工具是一块，能力",
     "full_content": "如何开发一个 DeepSeek Harness 插件 前面聊 DeepSeek Harness 的时候，我提到过一句： 这东西最有意思的地方，就是**「一切皆插件」**。 模型是一块，工具是一块，能力",
@@ -1678,5 +1714,41 @@
     "url": "https://juejin.cn/post/7675216417545371674",
     "read_time": 1,
     "id": "0ec78f5d964a9e29"
+  },
+  {
+    "title": "AI 项目上线：折腾 Cloudflare，真香也藏不少坑",
+    "summary": "用 AI 做了些小项目。很自然就会有需要：直接挂到网上，给别人直接看，或者自己随时打开。 买服务器做部署，对这种个人小网站，又有点重。到处一看，很多人推荐 Cloudflare。真香但也藏不少坑。",
+    "full_content": "用 AI 做了些小项目。很自然就会有需要：直接挂到网上，给别人直接看，或者自己随时打开。 买服务器做部署，对这种个人小网站，又有点重。到处一看，很多人推荐 Cloudflare。真香但也藏不少坑。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-18",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675210883259121704",
+    "read_time": 1,
+    "id": "0144699e303ec5ab"
+  },
+  {
+    "title": "开源项目第190期：claude-video — 给 Claude 装上「眼睛」看视频，一条命令分析 YouTube/Loom/本地视频",
+    "summary": "引言 这是「每日一个开源项目」系列的第 190 篇。今天的项目是 claude-video ——让claude真正看懂视频",
+    "full_content": "引言 这是「每日一个开源项目」系列的第 190 篇。今天的项目是 claude-video ——让claude真正看懂视频",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-18",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675083276399427593",
+    "read_time": 1,
+    "id": "8fe20e3ded23c831"
+  },
+  {
+    "title": "AI 整合：为什么平台将胜出，而产品组合将瓦解",
+    "summary": "作者：来自 Elastic Jesse Sladek 随着企业将 AI 推向生产环境，他们正遭遇一个难以突破的上限：传统数据基础设施。AI 放大了零散 IT 战略中的裂缝，暴露出由各种拼凑在一起的点解",
+    "full_content": "作者：来自 Elastic Jesse Sladek 随着企业将 AI 推向生产环境，他们正遭遇一个难以突破的上限：传统数据基础设施。AI 放大了零散 IT 战略中的裂缝，暴露出由各种拼凑在一起的点解",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-18",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675216417545928730",
+    "read_time": 1,
+    "id": "ec6f1b297f733014"
   }
 ]
