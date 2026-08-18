@@ -696,6 +696,18 @@
     "id": "48f9d5cfe56c266b"
   },
   {
+    "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
+    "summary": "Asana used OpenAI Codex to replace an outdated testing system in two weeks, completing work expected to take five years ...",
+    "full_content": "Asana used OpenAI Codex to replace an outdated testing system in two weeks, completing work expected to take five years for about $12K.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-18",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/asana",
+    "read_time": 1,
+    "id": "eaf7eab1e8f78770"
+  },
+  {
     "title": "GitHub 宕机超过 7 小时，AI 编码狂潮把基础设施压垮了",
     "summary": "2026 年 8 月 17 日，周一，中国时间晚上 9:40 左右，GitHub 开始大面积宕机。 这次宕机持续了超过 7 个小时，直到 8 月 18 日凌晨 5:15（北京时间）才宣告完全恢复。受影响的服务覆盖了 GitHub 几乎全部核...",
     "full_content": "2026 年 8 月 17 日，周一，中国时间晚上 9:40 左右，GitHub 开始大面积宕机。 这次宕机持续了超过 7 个小时，直到 8 月 18 日凌晨 5:15（北京时间）才宣告完全恢复。受影响的服务覆盖了 GitHub 几乎全部核心功能：网站、API、Pull Request、Actions、Webhooks、Issues、Git Operations，以及 GitHub Copilot。 这是 Gi...",
