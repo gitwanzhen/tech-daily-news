@@ -1344,6 +1344,30 @@
     "id": "075aebb0e4bab669"
   },
   {
+    "title": "习近平同厄瓜多尔总统诺沃亚会谈",
+    "summary": "习近平同厄瓜多尔总统诺沃亚会谈",
+    "full_content": "习近平同厄瓜多尔总统诺沃亚会谈",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-18",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%90%8C%E5%8E%84%E7%93%9C%E5%A4%9A%E5%B0%94%E6%80%BB%E7%BB%9F%E8%AF%BA%E6%B2%83%E4%BA%9A%E4%BC%9A%E8%B0%88",
+    "read_time": 1,
+    "id": "1dc74f5306124924"
+  },
+  {
+    "title": "曝披荆斩棘小考直播",
+    "summary": "曝披荆斩棘小考直播",
+    "full_content": "曝披荆斩棘小考直播",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-18",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%9B%9D%E6%8A%AB%E8%8D%86%E6%96%A9%E6%A3%98%E5%B0%8F%E8%80%83%E7%9B%B4%E6%92%AD",
+    "read_time": 1,
+    "id": "097b99b6aef693c5"
+  },
+  {
     "title": "DeepSeek Harness插件开发实战教程：我让它自己写了一个 arXiv 搜索插件",
     "summary": "如何开发一个 DeepSeek Harness 插件 前面聊 DeepSeek Harness 的时候，我提到过一句： 这东西最有意思的地方，就是**「一切皆插件」**。 模型是一块，工具是一块，能力",
     "full_content": "如何开发一个 DeepSeek Harness 插件 前面聊 DeepSeek Harness 的时候，我提到过一句： 这东西最有意思的地方，就是**「一切皆插件」**。 模型是一块，工具是一块，能力",
@@ -1462,5 +1486,53 @@
     "url": "https://juejin.cn/post/7674840998541983790",
     "read_time": 1,
     "id": "93fd19af3adfecfd"
+  },
+  {
+    "title": "我受够了复制报错去问 AI，花一下午给控制台做了个调试助手",
+    "summary": "花一下午做了个 Chrome 插件：自动捕获控制台报错，一键打包堆栈和上下文问 AI，还能直连 API 让 AI 当场诊断。四个真实踩坑全记录，附报错提问速查表。",
+    "full_content": "花一下午做了个 Chrome 插件：自动捕获控制台报错，一键打包堆栈和上下文问 AI，还能直连 API 让 AI 当场诊断。四个真实踩坑全记录，附报错提问速查表。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-18",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675149266009587750",
+    "read_time": 1,
+    "id": "c8ef459664e416b5"
+  },
+  {
+    "title": "Hermes Desktop 重磅更新，Bot Mode 正式上线——把你的 AI 变成一支可协作的专属团队",
+    "summary": "Hermes 的 Bot Mode 把 AI 从聊天框变成了一支团队：每个 Bot 有专长、有记忆，能协作、能定时干活。作者建了三个 Bot 一起写文章，体验了从「自己干」到「带团队」的转变。",
+    "full_content": "Hermes 的 Bot Mode 把 AI 从聊天框变成了一支团队：每个 Bot 有专长、有记忆，能协作、能定时干活。作者建了三个 Bot 一起写文章，体验了从「自己干」到「带团队」的转变。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-18",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675200722893701126",
+    "read_time": 1,
+    "id": "b747ca93f2baf722"
+  },
+  {
+    "title": "你瘦不下来但大模型可以：量化原理了解一下",
+    "summary": "此量化不是搞钱的量化，是大模型「瘦身」的秘诀。本期聚焦 GPTQ / AWQ / llama.cpp 等主流量化方案的底层基石——对称 INT4 / INT8 量化原理。从 scale 怎么算、到浮点",
+    "full_content": "此量化不是搞钱的量化，是大模型「瘦身」的秘诀。本期聚焦 GPTQ / AWQ / llama.cpp 等主流量化方案的底层基石——对称 INT4 / INT8 量化原理。从 scale 怎么算、到浮点",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-18",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675181079705206838",
+    "read_time": 1,
+    "id": "058c46624b21bb9f"
+  },
+  {
+    "title": "构建无障碍组件之Menu and Menubar Pattern",
+    "summary": "Menubar 是 ARIA 最复杂的 Pattern：←→ 导航、↑↓ 切层、子菜单开合三维交织。AI 时代不用菜单？复杂化后它会以动态生成的形式回归。",
+    "full_content": "Menubar 是 ARIA 最复杂的 Pattern：←→ 导航、↑↓ 切层、子菜单开合三维交织。AI 时代不用菜单？复杂化后它会以动态生成的形式回归。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-18",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675216417545371674",
+    "read_time": 1,
+    "id": "0ec78f5d964a9e29"
   }
 ]
