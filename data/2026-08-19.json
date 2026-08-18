@@ -12,6 +12,18 @@
     "id": "7b48099111163c83"
   },
   {
+    "title": "美林肯号水兵压力有多大",
+    "summary": "美林肯号水兵压力有多大",
+    "full_content": "美林肯号水兵压力有多大<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-19",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E7%BE%8E%E6%9E%97%E8%82%AF%E5%8F%B7%E6%B0%B4%E5%85%B5%E5%8E%8B%E5%8A%9B%E6%9C%89%E5%A4%9A%E5%A4%A7&from_source=webtop_search",
+    "read_time": 1,
+    "id": "f8b9bab12e2b0c29"
+  },
+  {
     "title": "谢谢你 我的宝藏医生",
     "summary": "谢谢你 我的宝藏医生",
     "full_content": "谢谢你 我的宝藏医生",
@@ -82,5 +94,113 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%AC%AC%E4%BA%8C%E4%BB%A3%E5%AE%B6%E5%BA%AD%E6%97%97%E8%88%B0%E5%A5%95%E5%A2%83X9%E9%A2%84%E5%94%AE30%E4%B8%87%E8%B5%B7",
     "read_time": 1,
     "id": "580be91ce9cf85a6"
+  },
+  {
+    "title": "做事千万不要有状态洁癖",
+    "summary": "做事千万不要有状态洁癖",
+    "full_content": "做事千万不要有状态洁癖",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-19",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%81%9A%E4%BA%8B%E5%8D%83%E4%B8%87%E4%B8%8D%E8%A6%81%E6%9C%89%E7%8A%B6%E6%80%81%E6%B4%81%E7%99%96",
+    "read_time": 1,
+    "id": "974cad8d34fbc505"
+  },
+  {
+    "title": "现在该不该换手机",
+    "summary": "现在该不该换手机",
+    "full_content": "现在该不该换手机",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-19",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%8E%B0%E5%9C%A8%E8%AF%A5%E4%B8%8D%E8%AF%A5%E6%8D%A2%E6%89%8B%E6%9C%BA",
+    "read_time": 1,
+    "id": "ab8841492dba1955"
+  },
+  {
+    "title": "爱奇艺第二季度收入62.9亿元",
+    "summary": "爱奇艺第二季度收入62.9亿元",
+    "full_content": "爱奇艺第二季度收入62.9亿元",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-19",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%88%B1%E5%A5%87%E8%89%BA%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%BA%A6%E6%94%B6%E5%85%A562.9%E4%BA%BF%E5%85%83",
+    "read_time": 1,
+    "id": "dc546780afd58c85"
+  },
+  {
+    "title": "火山 PostgreSQL Serverless × 飞书妙搭：把 AI 装进数据库，一句话唤醒数据智能",
+    "summary": "火山云PostgreSQL Serverless深度对接飞书妙搭，内置AI函数实现库内AI闭环，依托AIFunction与pgvector，用SQL即可做语义分析，可用于人才搜索、评论洞察。",
+    "full_content": "火山云PostgreSQL Serverless深度对接飞书妙搭，内置AI函数实现库内AI闭环，依托AIFunction与pgvector，用SQL即可做语义分析，可用于人才搜索、评论洞察。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-19",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675200141356466239",
+    "read_time": 1,
+    "id": "dadac6282cf47a80"
+  },
+  {
+    "title": "DeepSeek Harness 插件：HTML 实时可视化编辑",
+    "summary": "上周 DeepSeek Harness 发布，我就给 DSH 做了一个插件：HTML Workbench。一句话生成 HTML 之后，可以在侧边栏随时预览；不仅能随时预览，还可以随手微调页面",
+    "full_content": "上周 DeepSeek Harness 发布，我就给 DSH 做了一个插件：HTML Workbench。一句话生成 HTML 之后，可以在侧边栏随时预览；不仅能随时预览，还可以随手微调页面",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-19",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675247670898032692",
+    "read_time": 1,
+    "id": "5b1bbe890f22710b"
+  },
+  {
+    "title": "Pi 的上下文压缩，到底是怎么工作的？",
+    "summary": "只要在 Pi、Claude Code 或 Codex 里连续写过一段时间的代码，大概率都见过一个词： Compaction。 中文可以把它理解成“上下文压缩”。 很多人第一次看到这个提示，可能会以为，",
+    "full_content": "只要在 Pi、Claude Code 或 Codex 里连续写过一段时间的代码，大概率都见过一个词： Compaction。 中文可以把它理解成“上下文压缩”。 很多人第一次看到这个提示，可能会以为，",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-19",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675220071702560818",
+    "read_time": 1,
+    "id": "264b5a1ec53d60c8"
+  },
+  {
+    "title": "机器人总动员",
+    "summary": "标题：机器人总动员评分：9.3片长：98分钟制片国家/地区：美国导演：安德鲁·斯坦顿主演：本·贝尔特 / 艾丽莎·奈特 / 杰夫·格尔林",
+    "full_content": "标题：机器人总动员<br />评分：9.3<br />片长：98分钟<br />制片国家/地区：美国<br />导演：安德鲁·斯坦顿<br />主演：本·贝尔特 / 艾丽莎·奈特 / 杰夫·格尔林<br /><img src=\"https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2934742160.webp\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-19",
+    "source": "豆瓣",
+    "url": "https://movie.douban.com/subject/2131459",
+    "read_time": 1,
+    "id": "79eedde62744898d"
+  },
+  {
+    "title": "不想失去你",
+    "summary": "标题：不想失去你评分：0片长：93分钟制片国家/地区：中国大陆导演：郑润奇主演：黄曦彦 / 张祎曈 / 郑润奇",
+    "full_content": "标题：不想失去你<br />评分：0<br />片长：93分钟<br />制片国家/地区：中国大陆<br />导演：郑润奇<br />主演：黄曦彦 / 张祎曈 / 郑润奇<br /><img src=\"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2934833857.webp\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-19",
+    "source": "豆瓣",
+    "url": "https://movie.douban.com/subject/36779597",
+    "read_time": 1,
+    "id": "94d3723803da176a"
+  },
+  {
+    "title": "空枪",
+    "summary": "标题：空枪评分：0片长：160分钟制片国家/地区：中国大陆 中国香港导演：韩延主演：朱一龙 / 檀健次 / 梁家辉",
+    "full_content": "标题：空枪<br />评分：0<br />片长：160分钟<br />制片国家/地区：中国大陆 中国香港<br />导演：韩延<br />主演：朱一龙 / 檀健次 / 梁家辉<br /><img src=\"https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2934946788.webp\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-19",
+    "source": "豆瓣",
+    "url": "https://movie.douban.com/subject/37508847",
+    "read_time": 1,
+    "id": "eeb1d6084cca8653"
   }
 ]

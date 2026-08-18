@@ -1762,5 +1762,29 @@
     "url": "https://juejin.cn/post/7675216417545928730",
     "read_time": 1,
     "id": "ec6f1b297f733014"
+  },
+  {
+    "title": "DeepSeek Harness 源码实战第3章：Profile / Bundle / Patch——dsh 的装配系统",
+    "summary": "DeepSeek Harness 源码实战第3章：Profile / Bundle / Patch——dsh 的装配系统 改一行配置，整个产品的形态就变了。 上一章我们讲了 Cordis 插件引擎，知",
+    "full_content": "DeepSeek Harness 源码实战第3章：Profile / Bundle / Patch——dsh 的装配系统 改一行配置，整个产品的形态就变了。 上一章我们讲了 Cordis 插件引擎，知",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-18",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675200722894274566",
+    "read_time": 1,
+    "id": "d25b9b0d70142a41"
+  },
+  {
+    "title": "独立工具的流量到底从哪来：Direct、Referral 与 AI 引荐的崛起",
+    "summary": "我们拆解了 Turbo0 目录里 454 个产品的流量来源结构，发现真正能测到、也最稳的增长信号，不是搜索也不是社媒，而是最不起眼的『direct（直达）流量』。",
+    "full_content": "我们拆解了 Turbo0 目录里 454 个产品的流量来源结构，发现真正能测到、也最稳的增长信号，不是搜索也不是社媒，而是最不起眼的『direct（直达）流量』。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-18",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675299245081493544",
+    "read_time": 1,
+    "id": "ab2fb0c817b788d9"
   }
 ]
