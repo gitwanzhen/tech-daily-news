@@ -1810,5 +1810,17 @@
     "url": "https://juejin.cn/post/7675299245081493544",
     "read_time": 1,
     "id": "ab2fb0c817b788d9"
+  },
+  {
+    "title": "DeepSeek Harness 全景可观测实践",
+    "summary": "AI 编码 Agent 真正跑起任务后，问题往往不再是“它有没有完成”，而是：这一轮为什么花了 47 秒？时间卡在模型还是工具？失败后重试了几次？Token 消耗来自主 Agent 还是 Subage",
+    "full_content": "AI 编码 Agent 真正跑起任务后，问题往往不再是“它有没有完成”，而是：这一轮为什么花了 47 秒？时间卡在模型还是工具？失败后重试了几次？Token 消耗来自主 Agent 还是 Subage",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-18",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675210883258335272",
+    "read_time": 1,
+    "id": "878452069ccd9b04"
   }
 ]
