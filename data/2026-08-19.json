@@ -2184,6 +2184,66 @@
     "id": "58f13bd8d3868913"
   },
   {
+    "title": "一招教你在 Codex 中开启 1M 上下文",
+    "summary": "今天早上，我看 tibo 发了一条推文。 他告诉大家，现在你可以使用 1M 上下文窗口了，并且给出了两种设置方式。 我相信不少小伙伴看到这个都爽飞了。1M 上下文拿到现在的大模型环境中，那还叫个事儿？",
+    "full_content": "今天早上，我看 tibo 发了一条推文。 他告诉大家，现在你可以使用 1M 上下文窗口了，并且给出了两种设置方式。 我相信不少小伙伴看到这个都爽飞了。1M 上下文拿到现在的大模型环境中，那还叫个事儿？",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-19",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675182497022836770",
+    "read_time": 1,
+    "id": "e1fe665a40b4475f"
+  },
+  {
+    "title": "AI 成本复盘！5 个月后的真实使用情况（附账单）",
+    "summary": "复盘 5 个月之后的 AI 工具成本。面对涨价后 DeepSeek 与其他 AI 工具我的降本策略。希望能给你启发。",
+    "full_content": "复盘 5 个月之后的 AI 工具成本。面对涨价后 DeepSeek 与其他 AI 工具我的降本策略。希望能给你启发。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-19",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675272903249297427",
+    "read_time": 1,
+    "id": "099c019e83cece2a"
+  },
+  {
+    "title": "Pi Agent 深度解析：开源极简终端 AI 编码代理的终极指南",
+    "summary": "Pi Agent 是开源极简终端AI编码代理，418行代码支持15+模型切换与树状历史。通过扩展系统深度定制，适合追求可控性与嵌入场景。",
+    "full_content": "Pi Agent 是开源极简终端AI编码代理，418行代码支持15+模型切换与树状历史。通过扩展系统深度定制，适合追求可控性与嵌入场景。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-19",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675383652746264628",
+    "read_time": 1,
+    "id": "2fc94ccb6183cafe"
+  },
+  {
+    "title": "Qwen3.8-27B 接入 DSH 全流程实测：写代码、跑长任务，都没问题",
+    "summary": "我把 Qwen3.8-27B 接进了 DeepSeek Harness Qwen3.8-27B 开源之后，我第一反应，不是先去看跑分。 而是：能不能把它塞进 DSH 里。 模型单独跑起来，顶多算一个会",
+    "full_content": "我把 Qwen3.8-27B 接进了 DeepSeek Harness Qwen3.8-27B 开源之后，我第一反应，不是先去看跑分。 而是：能不能把它塞进 DSH 里。 模型单独跑起来，顶多算一个会",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-19",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675340767079481385",
+    "read_time": 1,
+    "id": "0db1a453a40b92c1"
+  },
+  {
+    "title": "GitHub 3.5k Star 之后，Ragent AI 框架新版本来了",
+    "summary": "这次 1.1.0 是继 1.0.x 之后的首个功能版本，不是小修小补，是检索架构、文档 Chunk、Prompt 管理等核心模块的系统性升级。从“能用”往“好用、可控、可追溯”推进",
+    "full_content": "这次 1.1.0 是继 1.0.x 之后的首个功能版本，不是小修小补，是检索架构、文档 Chunk、Prompt 管理等核心模块的系统性升级。从“能用”往“好用、可控、可追溯”推进",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-19",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675288419879813171",
+    "read_time": 1,
+    "id": "df353650fc65dc5d"
+  },
+  {
     "title": "机器人总动员",
     "summary": "标题：机器人总动员评分：9.3片长：98分钟制片国家/地区：美国导演：安德鲁·斯坦顿主演：本·贝尔特 / 艾丽莎·奈特 / 杰夫·格尔林",
     "full_content": "标题：机器人总动员<br />评分：9.3<br />片长：98分钟<br />制片国家/地区：美国<br />导演：安德鲁·斯坦顿<br />主演：本·贝尔特 / 艾丽莎·奈特 / 杰夫·格尔林<br /><img src=\"https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2934742160.webp\" />",
