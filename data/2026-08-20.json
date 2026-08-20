@@ -720,6 +720,18 @@
     "id": "6213ce5ceef3e2f9"
   },
   {
+    "title": "Introducing AI Futures",
+    "summary": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, ...",
+    "full_content": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-20",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/introducing-ai-futures",
+    "read_time": 1,
+    "id": "2e8bfa2782e5fd18"
+  },
+  {
     "title": "OpenRouter 加入 Stripe，「LLM 的 Stripe」真的成了 Stripe 的一部分",
     "summary": "OpenRouter 卖了个好价钱。去年被传 Stripe 以超 70 亿美元收购的 AI 模型路由平台，今天正式官宣加入 Stripe。 对，就是那个常年被开发者称为Stripe for LLMs的公司，现在真的成了 Stripe 的一部...",
     "full_content": "OpenRouter 卖了个好价钱。去年被传 Stripe 以超 70 亿美元收购的 AI 模型路由平台，今天正式官宣加入 Stripe。 对，就是那个常年被开发者称为&quot;Stripe for LLMs&quot;的公司，现在真的成了 Stripe 的一部分。 OpenRouter 的体量远超大多数人的直觉：每天处理 10+ 万亿 tokens，覆盖 400+ 个 AI 模型，服务超过 1000 万开发者和...",
