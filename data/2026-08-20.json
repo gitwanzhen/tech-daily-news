@@ -1596,6 +1596,42 @@
     "id": "7dfc12a03c2ea754"
   },
   {
+    "title": "致孕妇误服液体医生被停职",
+    "summary": "致孕妇误服液体医生被停职",
+    "full_content": "致孕妇误服液体医生被停职",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-20",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%87%B4%E5%AD%95%E5%A6%87%E8%AF%AF%E6%9C%8D%E6%B6%B2%E4%BD%93%E5%8C%BB%E7%94%9F%E8%A2%AB%E5%81%9C%E8%81%8C",
+    "read_time": 1,
+    "id": "d897e0419404efb5"
+  },
+  {
+    "title": "王安宇赵今麦脸颊吻",
+    "summary": "王安宇赵今麦脸颊吻",
+    "full_content": "王安宇赵今麦脸颊吻",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-20",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%8E%8B%E5%AE%89%E5%AE%87%E8%B5%B5%E4%BB%8A%E9%BA%A6%E8%84%B8%E9%A2%8A%E5%90%BB",
+    "read_time": 1,
+    "id": "8d8e46e20c9bff0f"
+  },
+  {
+    "title": "医院能办结婚证了",
+    "summary": "医院能办结婚证了",
+    "full_content": "医院能办结婚证了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-20",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%8C%BB%E9%99%A2%E8%83%BD%E5%8A%9E%E7%BB%93%E5%A9%9A%E8%AF%81%E4%BA%86",
+    "read_time": 1,
+    "id": "17b75d97a909051a"
+  },
+  {
     "title": "吴恩达看了1万份招聘启事 总结出AI时代最值钱的4项技能",
     "summary": "事情是这样的。 昨晚摸鱼刷推，看到吴恩达发了一条长得离谱的推文，一千多个英文单词，配了一张图，叫The AI Engineering Skills Map，AI工程技能图谱。 我读了两遍，把图存了下来",
     "full_content": "事情是这样的。 昨晚摸鱼刷推，看到吴恩达发了一条长得离谱的推文，一千多个英文单词，配了一张图，叫The AI Engineering Skills Map，AI工程技能图谱。 我读了两遍，把图存了下来",
@@ -1894,5 +1930,41 @@
     "url": "https://juejin.cn/post/7675953324324651023",
     "read_time": 1,
     "id": "d2f9e4bdfe48a915"
+  },
+  {
+    "title": "别急着加 llms.txt：企业官网面向 AI 搜索的工程清单",
+    "summary": "别急着加 llms.txt：企业官网面向 AI 搜索的工程清单 工程场景与决策冲突 最近做企业官网方案，很容易遇到一个决策冲突：业务方希望尽快“适配 AI 搜索”，开发团队于是开始讨论 llms.tx",
+    "full_content": "别急着加 llms.txt：企业官网面向 AI 搜索的工程清单 工程场景与决策冲突 最近做企业官网方案，很容易遇到一个决策冲突：业务方希望尽快“适配 AI 搜索”，开发团队于是开始讨论 llms.tx",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-20",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676092674902278186",
+    "read_time": 1,
+    "id": "29a615b22d1c2688"
+  },
+  {
+    "title": "从零开发一个 Coding Agent（十三）：实现安全的 read 文件读取工具",
+    "summary": "本篇文章是《从零开发一个 Coding Agent》系列第十三篇。 上一篇中，我们已经完成了 CLI、print 模式和 JSONL 模式。现在用户可以从命令行向 Agent 提问，Agent 也可以",
+    "full_content": "本篇文章是《从零开发一个 Coding Agent》系列第十三篇。 上一篇中，我们已经完成了 CLI、print 模式和 JSONL 模式。现在用户可以从命令行向 Agent 提问，Agent 也可以",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-20",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676098169944047643",
+    "read_time": 1,
+    "id": "fe793ff887e80a8d"
+  },
+  {
+    "title": "从零开发一个 Coding Agent（十二）：实现版本化 JSONL 与真实 CLI 入口",
+    "summary": "本篇文章是《从零开发一个 Coding Agent》系列第十二篇。在前两篇中，我们已经完成了 CLI 参数解析和 print 模式： print 模式适合人直接阅读，但脚本和其他程序往往需要更多信息。",
+    "full_content": "本篇文章是《从零开发一个 Coding Agent》系列第十二篇。在前两篇中，我们已经完成了 CLI 参数解析和 print 模式： print 模式适合人直接阅读，但脚本和其他程序往往需要更多信息。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-20",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676091857219076134",
+    "read_time": 1,
+    "id": "6af5a05337c35e44"
   }
 ]
