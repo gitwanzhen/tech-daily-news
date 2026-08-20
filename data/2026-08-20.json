@@ -2014,5 +2014,29 @@
     "url": "https://juejin.cn/post/7676091857219076134",
     "read_time": 1,
     "id": "6af5a05337c35e44"
+  },
+  {
+    "title": "一行行拆解 agent-loop：AI Agent 的\"思考循环\"到底是怎么转的",
+    "summary": "第5章：Turn / Step 循环——agent-loop 源码拆解 一次模型请求里藏着十几个事件、四种分发模式、一个状态机和一套并发调度器。 上一章我们看了 Session 日志的数据结构，知道了",
+    "full_content": "第5章：Turn / Step 循环——agent-loop 源码拆解 一次模型请求里藏着十几个事件、四种分发模式、一个状态机和一套并发调度器。 上一章我们看了 Session 日志的数据结构，知道了",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-20",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676104122001195051",
+    "read_time": 1,
+    "id": "1e7bacc3984e3f37"
+  },
+  {
+    "title": "告别 Vibe Coding！SDD 规范驱动开发实战：从文档到代码的 AI 开发新范式",
+    "summary": "一、Vibe Coding 的痛：第一天起飞，第二天返工 Vibe Coding（氛围编程）很上头——打开 Claude Code、Cursor 这些 AI Agent，对着聊天窗口疯狂下任务： AI",
+    "full_content": "一、Vibe Coding 的痛：第一天起飞，第二天返工 Vibe Coding（氛围编程）很上头——打开 Claude Code、Cursor 这些 AI Agent，对着聊天窗口疯狂下任务： AI",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-20",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676106666290921524",
+    "read_time": 1,
+    "id": "ce1a4a654bde9434"
   }
 ]
