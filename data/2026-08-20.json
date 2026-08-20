@@ -588,6 +588,18 @@
     "id": "0614d65dfed44cb5"
   },
   {
+    "title": "Vercel 发布 fx：Zig 语言实现的轻量 Agent，能直接在浏览器里跑",
+    "summary": "Vercel 今天开源了一个新的编码 agent，名字叫 fx。它的二进制文件只有 6.39MB，用 Zig 编写，能在浏览器里跑，冷启动 10 微秒。 它不是一个IDE in the terminal式的重型 TUI。团队说得很清楚——f...",
+    "full_content": "Vercel 今天开源了一个新的编码 agent，名字叫 fx。它的二进制文件只有 6.39MB，用 Zig 编写，能在浏览器里跑，冷启动 10 微秒。 它不是一个&quot;IDE in the terminal&quot;式的重型 TUI。团队说得很清楚——fx 的输出风格更接近 Unix shell，而不是 IDE。用最少的系统 prompt、最少的工具、最少的 I/O 来完成工作。 这个定位很有...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-20",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502038/vercel-fx",
+    "read_time": 1,
+    "id": "c786e00f3ae6a59e"
+  },
+  {
     "title": "苏翊鸣七夕晒9图",
     "summary": "苏翊鸣七夕晒9图",
     "full_content": "苏翊鸣七夕晒9图",
@@ -1222,6 +1234,30 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%AE%B8%E5%AE%B6%E5%8D%B0%E8%BF%9D%E6%B3%95%E6%89%80%E5%BE%97%E8%BF%BD%E7%BC%B4%E4%B8%8D%E8%B6%B3%E9%83%A8%E5%88%86%E8%B4%A3%E4%BB%A4%E9%80%80%E8%B5%94",
     "read_time": 1,
     "id": "d1572b27c45b752b"
+  },
+  {
+    "title": "AI开始报警抓人了",
+    "summary": "AI开始报警抓人了",
+    "full_content": "AI开始报警抓人了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-20",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3DAI%E5%BC%80%E5%A7%8B%E6%8A%A5%E8%AD%A6%E6%8A%93%E4%BA%BA%E4%BA%86",
+    "read_time": 1,
+    "id": "6be6941d6cc25838"
+  },
+  {
+    "title": "房东赶走怀孕租客称借死不借生",
+    "summary": "房东赶走怀孕租客称借死不借生",
+    "full_content": "房东赶走怀孕租客称借死不借生",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-20",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%88%BF%E4%B8%9C%E8%B5%B6%E8%B5%B0%E6%80%80%E5%AD%95%E7%A7%9F%E5%AE%A2%E7%A7%B0%E5%80%9F%E6%AD%BB%E4%B8%8D%E5%80%9F%E7%94%9F",
+    "read_time": 1,
+    "id": "f2b453ccf14d4de5"
   },
   {
     "title": "吴恩达看了1万份招聘启事 总结出AI时代最值钱的4项技能",
