@@ -252,6 +252,42 @@
     "id": "32b72f82a7cbcfb3"
   },
   {
+    "title": "许家印被判处无期徒刑",
+    "summary": "许家印被判处无期徒刑",
+    "full_content": "许家印被判处无期徒刑<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-20",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E8%AE%B8%E5%AE%B6%E5%8D%B0%E8%A2%AB%E5%88%A4%E5%A4%84%E6%97%A0%E6%9C%9F%E5%BE%92%E5%88%91&from_source=webtop_search",
+    "read_time": 1,
+    "id": "f7098c51f5bf0616"
+  },
+  {
+    "title": "UP主带逛世界机器人大会",
+    "summary": "UP主带逛世界机器人大会",
+    "full_content": "UP主带逛世界机器人大会<br /><img src=\"https://i0.hdslb.com/bfs/activity-plat/static/20251027/aafcb8031fd171c428daaa9b45867226/VaxAnHMq6w.gif\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-20",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=UP%E4%B8%BB%E5%B8%A6%E9%80%9B%E4%B8%96%E7%95%8C%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E4%BC%9A&from_source=webtop_search",
+    "read_time": 1,
+    "id": "ad1a93839d79c809"
+  },
+  {
+    "title": "足球如何从游戏变成千亿生意",
+    "summary": "足球如何从游戏变成千亿生意",
+    "full_content": "足球如何从游戏变成千亿生意<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-20",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E8%B6%B3%E7%90%83%E5%A6%82%E4%BD%95%E4%BB%8E%E6%B8%B8%E6%88%8F%E5%8F%98%E6%88%90%E5%8D%83%E4%BA%BF%E7%94%9F%E6%84%8F&from_source=webtop_search",
+    "read_time": 1,
+    "id": "00ddfba7ae547fa8"
+  },
+  {
     "title": "Offering Zero Data Retention for frontier models",
     "summary": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI s...",
     "full_content": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy.",
@@ -286,6 +322,18 @@
     "url": "https://www.oschina.net/news/502017",
     "read_time": 1,
     "id": "ec7361f3bb71f836"
+  },
+  {
+    "title": "GitHub Copilot 的自动修复把 Snowflake 的 Jira 搞穿了",
+    "summary": "Wiz Research 的红队 Agent 搞了个大新闻：它用完全自主的方式，通过 GitHub Actions 模板注入漏洞，拿下了 Snowflake 的内部 Jira 实例。 更让人不安的是，这个漏洞的引入者不是人类开发者，而是 G...",
+    "full_content": "Wiz Research 的红队 Agent 搞了个大新闻：它用完全自主的方式，通过 GitHub Actions 模板注入漏洞，拿下了 Snowflake 的内部 Jira 实例。 更让人不安的是，这个漏洞的引入者不是人类开发者，而是 GitHub Copilot 的 Autofix 功能。 攻击链条 Snowflake 的某个仓库里有一个 GitHub Actions workflow，用 issues.event_n...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-20",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502024/wiz-red-agent-snowflake-copilot-cicd-bug",
+    "read_time": 1,
+    "id": "56333c1300031e0f"
   },
   {
     "title": "苏翊鸣七夕晒9图",
@@ -598,6 +646,66 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%88%91%E5%AE%B6%E9%82%A3%E9%97%BA%E5%A5%B3",
     "read_time": 1,
     "id": "52097291fb9fbb80"
+  },
+  {
+    "title": "许家印一审被判无期",
+    "summary": "许家印一审被判无期",
+    "full_content": "许家印一审被判无期",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-20",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%AE%B8%E5%AE%B6%E5%8D%B0%E4%B8%80%E5%AE%A1%E8%A2%AB%E5%88%A4%E6%97%A0%E6%9C%9F",
+    "read_time": 1,
+    "id": "2764fa83247f700e"
+  },
+  {
+    "title": "恒大集团被罚88.2亿元",
+    "summary": "恒大集团被罚88.2亿元",
+    "full_content": "恒大集团被罚88.2亿元",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-20",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%81%92%E5%A4%A7%E9%9B%86%E5%9B%A2%E8%A2%AB%E7%BD%9A88.2%E4%BA%BF%E5%85%83",
+    "read_time": 1,
+    "id": "95d9986f3da15f42"
+  },
+  {
+    "title": "12377湖北开麦了",
+    "summary": "12377湖北开麦了",
+    "full_content": "12377湖北开麦了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-20",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D12377%E6%B9%96%E5%8C%97%E5%BC%80%E9%BA%A6%E4%BA%86",
+    "read_time": 1,
+    "id": "ce69680e9ecbb379"
+  },
+  {
+    "title": "兄妹恋和姐弟恋真的不一样",
+    "summary": "兄妹恋和姐弟恋真的不一样",
+    "full_content": "兄妹恋和姐弟恋真的不一样",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-20",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%85%84%E5%A6%B9%E6%81%8B%E5%92%8C%E5%A7%90%E5%BC%9F%E6%81%8B%E7%9C%9F%E7%9A%84%E4%B8%8D%E4%B8%80%E6%A0%B7",
+    "read_time": 1,
+    "id": "8e08adc5d2bb28b0"
+  },
+  {
+    "title": "网友一句话飞猪帮帮真的给红包了",
+    "summary": "网友一句话飞猪帮帮真的给红包了",
+    "full_content": "网友一句话飞猪帮帮真的给红包了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-20",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%BD%91%E5%8F%8B%E4%B8%80%E5%8F%A5%E8%AF%9D%E9%A3%9E%E7%8C%AA%E5%B8%AE%E5%B8%AE%E7%9C%9F%E7%9A%84%E7%BB%99%E7%BA%A2%E5%8C%85%E4%BA%86",
+    "read_time": 1,
+    "id": "b01e238c1ec50d6f"
   },
   {
     "title": "吴恩达看了1万份招聘启事 总结出AI时代最值钱的4项技能",
