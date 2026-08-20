@@ -900,6 +900,18 @@
     "id": "83af5d528363dccc"
   },
   {
+    "title": "AI 换台电脑就失忆？我们自己写了个开源项目解决它",
+    "summary": "大家好，我们是 agentctxsync（Agent Context Sync）的作者，道荣和露。这个项目最近开源了，写篇文章介绍一下，顺便记录一下做这个东西的过程。 起因很简单，我们俩都是 AI 工具的重度用户，Hermes、Codex、...",
+    "full_content": "大家好，我们是 agentctxsync（Agent Context Sync）的作者，道荣和露。这个项目最近开源了，写篇文章介绍一下，顺便记录一下做这个东西的过程。 起因很简单，我们俩都是 AI 工具的重度用户，Hermes、Codex、opencode 换着用。用得越多，越被一个问题困扰：AI 的记忆是&quot;绑设备&quot;的。 白天在公司电脑上跟 AI 聊了一下午，上...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-19",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502011",
+    "read_time": 1,
+    "id": "5a533d53e891c48e"
+  },
+  {
     "title": "谢谢你 我的宝藏医生",
     "summary": "谢谢你 我的宝藏医生",
     "full_content": "谢谢你 我的宝藏医生",
