@@ -1716,6 +1716,66 @@
     "id": "1595558f825f4b60"
   },
   {
+    "title": "临沂爆炸事故1死2失联",
+    "summary": "临沂爆炸事故1死2失联",
+    "full_content": "临沂爆炸事故1死2失联",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%B8%B4%E6%B2%82%E7%88%86%E7%82%B8%E4%BA%8B%E6%95%851%E6%AD%BB2%E5%A4%B1%E8%81%94",
+    "read_time": 1,
+    "id": "c955845cf6ef648e"
+  },
+  {
+    "title": "赵长江称智界RX新能源操控天花板",
+    "summary": "赵长江称智界RX新能源操控天花板",
+    "full_content": "赵长江称智界RX新能源操控天花板",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%B5%B5%E9%95%BF%E6%B1%9F%E7%A7%B0%E6%99%BA%E7%95%8CRX%E6%96%B0%E8%83%BD%E6%BA%90%E6%93%8D%E6%8E%A7%E5%A4%A9%E8%8A%B1%E6%9D%BF",
+    "read_time": 1,
+    "id": "7146ca708ddcc110"
+  },
+  {
+    "title": "临沂爆炸 捕鱼爆炸物",
+    "summary": "临沂爆炸 捕鱼爆炸物",
+    "full_content": "临沂爆炸 捕鱼爆炸物",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%B8%B4%E6%B2%82%E7%88%86%E7%82%B8%20%E6%8D%95%E9%B1%BC%E7%88%86%E7%82%B8%E7%89%A9",
+    "read_time": 1,
+    "id": "7853a6cc41ed53bf"
+  },
+  {
+    "title": "世界杯决赛禁赛处罚出炉",
+    "summary": "世界杯决赛禁赛处罚出炉",
+    "full_content": "世界杯决赛禁赛处罚出炉",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%B8%96%E7%95%8C%E6%9D%AF%E5%86%B3%E8%B5%9B%E7%A6%81%E8%B5%9B%E5%A4%84%E7%BD%9A%E5%87%BA%E7%82%89",
+    "read_time": 1,
+    "id": "fe7b564038857c30"
+  },
+  {
+    "title": "大众5S国民家轿国民价",
+    "summary": "大众5S国民家轿国民价",
+    "full_content": "大众5S国民家轿国民价",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%A4%A7%E4%BC%975S%E5%9B%BD%E6%B0%91%E5%AE%B6%E8%BD%BF%E5%9B%BD%E6%B0%91%E4%BB%B7",
+    "read_time": 1,
+    "id": "30d4ac66a72573fd"
+  },
+  {
     "title": "goose项目全面解析：一只开源的智能鹅如何帮你干活",
     "summary": "如果你还没听说过goose，简单说它就是一个能在你电脑上跑起来的通用型AI智能体。不只是写代码，写作、搜集资料、跑自动化脚本、分析数据，只要你说得清楚要做什么，它都能接手去干。这篇文章会带你从头到尾摸",
     "full_content": "如果你还没听说过goose，简单说它就是一个能在你电脑上跑起来的通用型AI智能体。不只是写代码，写作、搜集资料、跑自动化脚本、分析数据，只要你说得清楚要做什么，它都能接手去干。这篇文章会带你从头到尾摸",
@@ -1870,5 +1930,41 @@
     "url": "https://juejin.cn/post/7676295909912838153",
     "read_time": 1,
     "id": "e2c9ab8accbab708"
+  },
+  {
+    "title": "DeepSeek Harness 源码实战：从 pre-execute 到 post-execute：AI Agent 调用工具时背后发生了什么",
+    "summary": "第6章：工具执行流水线——pre-execute 到 post-execute 模型说「帮我读文件」，但读之前要查权限，读之后要检查结果，中间还要处理超时和重试。 上一章我们看了 agent-loop",
+    "full_content": "第6章：工具执行流水线——pre-execute 到 post-execute 模型说「帮我读文件」，但读之前要查权限，读之后要检查结果，中间还要处理超时和重试。 上一章我们看了 agent-loop",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-21",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676324001992163347",
+    "read_time": 1,
+    "id": "23d7b5b1249c5008"
+  },
+  {
+    "title": "可逆不是逆向运行：DeepSeek Harness 架构的数学本质",
+    "summary": "Cordis中的可逆指的不是逆向运行，而是逆转对运行时结构空间的变更——如果把这种变更看作是副作用，则Cordis并不是在管控一切副作用，而只是某种特殊的、影响到多个插件复合交互的副作用。",
+    "full_content": "Cordis中的可逆指的不是逆向运行，而是逆转对运行时结构空间的变更——如果把这种变更看作是副作用，则Cordis并不是在管控一切副作用，而只是某种特殊的、影响到多个插件复合交互的副作用。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-21",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676368141744881664",
+    "read_time": 1,
+    "id": "e0dee1ad4c208c6a"
+  },
+  {
+    "title": "DeepSeek Harness 插件开发实战：从最小插件到自动化日报",
+    "summary": "DeepSeek Harness 插件开发实战：从最小插件到自动化日报 导语 DeepSeek 开源的 Harness（代号\"黑色鲸鱼\"）不是新模型，而是给大模型套在外面的\"执行层\"。核心口号\"一切皆",
+    "full_content": "DeepSeek Harness 插件开发实战：从最小插件到自动化日报 导语 DeepSeek 开源的 Harness（代号\"黑色鲸鱼\"）不是新模型，而是给大模型套在外面的\"执行层\"。核心口号\"一切皆",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-21",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676350945481457714",
+    "read_time": 1,
+    "id": "d8cf37153cb2acb0"
   }
 ]
