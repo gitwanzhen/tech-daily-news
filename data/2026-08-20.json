@@ -792,6 +792,30 @@
     "id": "c786e00f3ae6a59e"
   },
   {
+    "title": "Kairoa v1.1.24 发布：开发者工具箱新增 SAML 解码器与日期差计算器",
+    "summary": "Kairoa 是一款跨平台开发者桌面工具箱，把日常开发里高频用到的哈希计算、编解码、REST API 客户端、WebSocket 测试、AI 聊天、网络诊断等 30 余种工具聚合到一个应用里，数据全部本地处理，开箱即用。支持 Windows...",
+    "full_content": "Kairoa 是一款跨平台开发者桌面工具箱，把日常开发里高频用到的哈希计算、编解码、REST API 客户端、WebSocket 测试、AI 聊天、网络诊断等 30 余种工具聚合到一个应用里，数据全部本地处理，开箱即用。支持 Windows、macOS 和 Linux。 本次 v1.1.24 版本主要带来以下更新： 新增工具 SAML 解码器：面向做身份认证（SSO）...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-20",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502042",
+    "read_time": 1,
+    "id": "b110b2b2480ea06c"
+  },
+  {
+    "title": "开源终端 uniTerm v1.8.0 发布：新增 SOCKS5 隧道、密钥库等 50 余项功能更新，仅 14MB 覆盖 27 种协议",
+    "summary": "uniTerm 是一款轻量级一站式终端软件，Windows 版本安装包仅 14MB。整合终端、文件传输、远程桌面、数据库客户端、容器等 5 大类协议于一身；内置可自主执行的 AI Agent，能规划并执行多轮 Shell 命令。 本次 v1...",
+    "full_content": "uniTerm 是一款轻量级一站式终端软件，Windows 版本安装包仅 14MB。整合终端、文件传输、远程桌面、数据库客户端、容器等 5 大类协议于一身；内置可自主执行的 AI Agent，能规划并执行多轮 Shell 命令。 本次 v1.8.0 是一次大规模集中更新，累计 50 余项功能、改进与修复。重点新增 SSH 密钥库（Vault）与 SOCKS5 / HTT...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-20",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502041",
+    "read_time": 1,
+    "id": "10155a738b0b76e3"
+  },
+  {
     "title": "苏翊鸣七夕晒9图",
     "summary": "苏翊鸣七夕晒9图",
     "full_content": "苏翊鸣七夕晒9图",
@@ -2050,5 +2074,41 @@
     "url": "https://juejin.cn/post/7676106666290921524",
     "read_time": 1,
     "id": "ce1a4a654bde9434"
+  },
+  {
+    "title": "MCP SDK v2 迁移别只改依赖：先把 FastMCP 3/4 拆成两条测试线",
+    "summary": "Pydantic AI 2.29.0 支持 FastMCP 3/4 后，如何锁依赖、盘能力、分 Tasks 并用失败关闭门禁保留回滚？本文给出四阶段清单与 7 个本地样本。",
+    "full_content": "Pydantic AI 2.29.0 支持 FastMCP 3/4 后，如何锁依赖、盘能力、分 Tasks 并用失败关闭门禁保留回滚？本文给出四阶段清单与 7 个本地样本。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-20",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676104122001211435",
+    "read_time": 1,
+    "id": "df3c3ccc441d183b"
+  },
+  {
+    "title": "从 Vibe Coding 到 SDD：让 AI 写代码之前，先把话说清楚",
+    "summary": "从 Vibe Coding 到 SDD：让 AI 写代码之前，先把话说清楚 一、先说说那个\"第一个月\" 用 AI 写代码的人，大概都经历过同一条曲线： 第一天：效率起飞。",
+    "full_content": "从 Vibe Coding 到 SDD：让 AI 写代码之前，先把话说清楚 一、先说说那个\"第一个月\" 用 AI 写代码的人，大概都经历过同一条曲线： 第一天：效率起飞。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-20",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676106666291003444",
+    "read_time": 1,
+    "id": "d451e19df2e3a8d3"
+  },
+  {
+    "title": "15.LangChain 1.0+ 第三篇：LangSmith——给 AI 应用装上监控台.发布清单",
+    "summary": "LangSmith 是 LangChain 官方调试监控平台，本文讲清 4 个环境变量接入方式、三大功能板块，以及用run_name/tags/metadata 给每次调用",
+    "full_content": "LangSmith 是 LangChain 官方调试监控平台，本文讲清 4 个环境变量接入方式、三大功能板块，以及用run_name/tags/metadata 给每次调用",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-20",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676098231411884070",
+    "read_time": 1,
+    "id": "40f64f34f4a071f4"
   }
 ]
