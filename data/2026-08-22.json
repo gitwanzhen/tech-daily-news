@@ -228,6 +228,54 @@
     "id": "ae7c4880eb31d43b"
   },
   {
+    "title": "开学上拼多多买立白 香到没朋友",
+    "summary": "开学上拼多多买立白 香到没朋友",
+    "full_content": "开学上拼多多买立白 香到没朋友",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-22",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%BC%80%E5%AD%A6%E4%B8%8A%E6%8B%BC%E5%A4%9A%E5%A4%9A%E4%B9%B0%E7%AB%8B%E7%99%BD%20%E9%A6%99%E5%88%B0%E6%B2%A1%E6%9C%8B%E5%8F%8B",
+    "read_time": 1,
+    "id": "dc464fad6478bb3a"
+  },
+  {
+    "title": "外国网友怀疑中国农村是AI",
+    "summary": "外国网友怀疑中国农村是AI",
+    "full_content": "外国网友怀疑中国农村是AI",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-22",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%A4%96%E5%9B%BD%E7%BD%91%E5%8F%8B%E6%80%80%E7%96%91%E4%B8%AD%E5%9B%BD%E5%86%9C%E6%9D%91%E6%98%AFAI",
+    "read_time": 1,
+    "id": "2cbd99b9e7aa2b92"
+  },
+  {
+    "title": "电影大唐妖探今日上映",
+    "summary": "电影大唐妖探今日上映",
+    "full_content": "电影大唐妖探今日上映",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-22",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%94%B5%E5%BD%B1%E5%A4%A7%E5%94%90%E5%A6%96%E6%8E%A2%E4%BB%8A%E6%97%A5%E4%B8%8A%E6%98%A0",
+    "read_time": 1,
+    "id": "24b006818f510c18"
+  },
+  {
+    "title": "购票后未上车视为放弃席位使用权",
+    "summary": "购票后未上车视为放弃席位使用权",
+    "full_content": "购票后未上车视为放弃席位使用权",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-22",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%B4%AD%E7%A5%A8%E5%90%8E%E6%9C%AA%E4%B8%8A%E8%BD%A6%E8%A7%86%E4%B8%BA%E6%94%BE%E5%BC%83%E5%B8%AD%E4%BD%8D%E4%BD%BF%E7%94%A8%E6%9D%83",
+    "read_time": 1,
+    "id": "77a7f06eb5c8c8f6"
+  },
+  {
     "title": "TLS for DeepSeek Harness 可观测实践：从系统总览到会话复盘",
     "summary": "本文介绍火山引擎日志服务 TLS 为 DSH 开发的可观测插件，将模型请求、工具调用转为 OpenTelemetry Trace 上报 TLS，无需修改 DSH 代码。",
     "full_content": "本文介绍火山引擎日志服务 TLS 为 DSH 开发的可观测插件，将模型请求、工具调用转为 OpenTelemetry Trace 上报 TLS，无需修改 DSH 代码。",
@@ -250,6 +298,18 @@
     "url": "https://juejin.cn/post/7676421336273797183",
     "read_time": 1,
     "id": "16fc0d480fb2e06d"
+  },
+  {
+    "title": "让大模型思考，让小模型执行：在 Elastic Workflows 中拆分 LLM 成本",
+    "summary": "作者：来自 Elastic Jeffrey Rengifo 构建一个 Elastic workflow，将数据样本发送给大模型，由大模型提出分类标签。人工审核确认后，再由小模型将这些标签应用于整个数据",
+    "full_content": "作者：来自 Elastic Jeffrey Rengifo 构建一个 Elastic workflow，将数据样本发送给大模型，由大模型提出分类标签。人工审核确认后，再由小模型将这些标签应用于整个数据",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-22",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676392949266120730",
+    "read_time": 1,
+    "id": "871fd48f40a6834b"
   },
   {
     "title": "大唐妖探",
