@@ -288,6 +288,66 @@
     "id": "db4bbf6f66efbd54"
   },
   {
+    "title": "EDG TT",
+    "summary": "EDG TT",
+    "full_content": "EDG TT<br /><img src=\"https://i0.hdslb.com/bfs/activity-plat/static/20251027/aafcb8031fd171c428daaa9b45867226/VaxAnHMq6w.gif\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=EDG+TT&from_source=webtop_search",
+    "read_time": 1,
+    "id": "2e869a9154a6c24a"
+  },
+  {
+    "title": "UP主老王谈出演龙餐馆",
+    "summary": "UP主老王谈出演龙餐馆",
+    "full_content": "UP主老王谈出演龙餐馆<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=UP%E4%B8%BB%E8%80%81%E7%8E%8B%E8%B0%88%E5%87%BA%E6%BC%94%E9%BE%99%E9%A4%90%E9%A6%86&from_source=webtop_search",
+    "read_time": 1,
+    "id": "d416a7a0fbbd4ee5"
+  },
+  {
+    "title": "李大霄提醒美股泡沫或已爆破",
+    "summary": "李大霄提醒美股泡沫或已爆破",
+    "full_content": "李大霄提醒美股泡沫或已爆破<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221213/eaf2dd702d7cc14d8d9511190245d057/lrx9rnKo24.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E6%9D%8E%E5%A4%A7%E9%9C%84%E6%8F%90%E9%86%92%E7%BE%8E%E8%82%A1%E6%B3%A1%E6%B2%AB%E6%88%96%E5%B7%B2%E7%88%86%E7%A0%B4&from_source=webtop_search",
+    "read_time": 1,
+    "id": "dbea3362ea63b537"
+  },
+  {
+    "title": "259专访apEX谈EWC对手",
+    "summary": "259专访apEX谈EWC对手",
+    "full_content": "259专访apEX谈EWC对手<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=259%E4%B8%93%E8%AE%BFapEX%E8%B0%88EWC%E5%AF%B9%E6%89%8B&from_source=webtop_search",
+    "read_time": 1,
+    "id": "b8b2ef5fd78bd983"
+  },
+  {
+    "title": "Liquid Falcons",
+    "summary": "Liquid Falcons",
+    "full_content": "Liquid Falcons<br /><img src=\"https://i0.hdslb.com/bfs/activity-plat/static/20251027/aafcb8031fd171c428daaa9b45867226/VaxAnHMq6w.gif\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=Liquid+Falcons&from_source=webtop_search",
+    "read_time": 1,
+    "id": "dd8d2a2d628281d7"
+  },
+  {
     "title": "GitHub 8 月 17 日宕机复盘，负载均衡配置错误引爆重试风暴",
     "summary": "8 月 17 日，GitHub 宕机了 7 小时 47 分钟。影响范围不只是 github.com 打不开。认证系统瘫痪、Actions 中断、Pull Request 和 Issue 不可用、Copilot 也挂了。 官方事后分析了故障原...",
     "full_content": "8 月 17 日，GitHub 宕机了 7 小时 47 分钟。影响范围不只是 github.com 打不开。认证系统瘫痪、Actions 中断、Pull Request 和 Issue 不可用、Copilot 也挂了。 官方事后分析了故障原因：负载均衡配置错误触发了客户端的重试风暴。故障发生时，负载均衡的错误配置导致部分请求处理不当，客户端在收到错误响应后发起大量...",
@@ -346,6 +406,18 @@
     "url": "https://my.oschina.net/u/4487475/blog/19745346",
     "read_time": 1,
     "id": "a7e434b9ff77b9d4"
+  },
+  {
+    "title": "中美 AI 差距正在消失。不是预测，是正在发生的事。",
+    "summary": "Bloomberg Businessweek 8 月 20 日发了一篇数据量极大的专题报道，标题直白：US Lead in the AI Race With China Is Rapidly Narrowing。文章拉了十几张图表，从模型能...",
+    "full_content": "Bloomberg Businessweek 8 月 20 日发了一篇数据量极大的专题报道，标题直白：US Lead in the AI Race With China Is Rapidly Narrowing。文章拉了十几张图表，从模型能力、成本、下载量、区域市场份额等维度做了对比。 几个关键数据： Moonshot 的 Kimi K3 在 Artificial Analysis 综合基准上追平了 Anthropic 的 Fabl...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-21",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502059/2026-us-china-ai-race",
+    "read_time": 1,
+    "id": "b4959c9d8279b333"
   },
   {
     "title": "中国铁路加速驶入AI赋能新阶段",
@@ -862,6 +934,78 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%83%A1%E9%94%A1%E8%BF%9B%E8%A6%81%E6%B1%82%E5%BC%A0%E4%B8%B9%E4%B8%B9%E9%81%93%E6%AD%89",
     "read_time": 1,
     "id": "fb49251babbe0b90"
+  },
+  {
+    "title": "现在就出发",
+    "summary": "现在就出发",
+    "full_content": "现在就出发",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%8E%B0%E5%9C%A8%E5%B0%B1%E5%87%BA%E5%8F%91",
+    "read_time": 1,
+    "id": "d2fab0cc9faec5b8"
+  },
+  {
+    "title": "自驾游国家级攻略来了",
+    "summary": "自驾游国家级攻略来了",
+    "full_content": "自驾游国家级攻略来了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%87%AA%E9%A9%BE%E6%B8%B8%E5%9B%BD%E5%AE%B6%E7%BA%A7%E6%94%BB%E7%95%A5%E6%9D%A5%E4%BA%86",
+    "read_time": 1,
+    "id": "754c87764a1ab568"
+  },
+  {
+    "title": "中餐厅给张雅琪配了时钟后期",
+    "summary": "中餐厅给张雅琪配了时钟后期",
+    "full_content": "中餐厅给张雅琪配了时钟后期",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%B8%AD%E9%A4%90%E5%8E%85%E7%BB%99%E5%BC%A0%E9%9B%85%E7%90%AA%E9%85%8D%E4%BA%86%E6%97%B6%E9%92%9F%E5%90%8E%E6%9C%9F",
+    "read_time": 1,
+    "id": "e4ecac10557d6a68"
+  },
+  {
+    "title": "安踏品牌前CEO徐阳离职迁居美国",
+    "summary": "安踏品牌前CEO徐阳离职迁居美国",
+    "full_content": "安踏品牌前CEO徐阳离职迁居美国",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%AE%89%E8%B8%8F%E5%93%81%E7%89%8C%E5%89%8DCEO%E5%BE%90%E9%98%B3%E7%A6%BB%E8%81%8C%E8%BF%81%E5%B1%85%E7%BE%8E%E5%9B%BD",
+    "read_time": 1,
+    "id": "a0a21a212b09a7d6"
+  },
+  {
+    "title": "V金九刊三套高定",
+    "summary": "V金九刊三套高定",
+    "full_content": "V金九刊三套高定",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3DV%E9%87%91%E4%B9%9D%E5%88%8A%E4%B8%89%E5%A5%97%E9%AB%98%E5%AE%9A",
+    "read_time": 1,
+    "id": "4a210d6d6c7642a5"
+  },
+  {
+    "title": "癌症疫苗价格",
+    "summary": "癌症疫苗价格",
+    "full_content": "癌症疫苗价格",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%99%8C%E7%97%87%E7%96%AB%E8%8B%97%E4%BB%B7%E6%A0%BC",
+    "read_time": 1,
+    "id": "c25ff3aaa06356ae"
   },
   {
     "title": "goose项目全面解析：一只开源的智能鹅如何帮你干活",
