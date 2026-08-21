@@ -432,6 +432,66 @@
     "id": "5eb1b04097169c6e"
   },
   {
+    "title": "外交部就日本议员计划访华答问",
+    "summary": "外交部就日本议员计划访华答问",
+    "full_content": "外交部就日本议员计划访华答问<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E5%A4%96%E4%BA%A4%E9%83%A8%E5%B0%B1%E6%97%A5%E6%9C%AC%E8%AE%AE%E5%91%98%E8%AE%A1%E5%88%92%E8%AE%BF%E5%8D%8E%E7%AD%94%E9%97%AE&from_source=webtop_search",
+    "read_time": 1,
+    "id": "26588ddfe6fce93d"
+  },
+  {
+    "title": "蜜雪冰城雪王新动画开播",
+    "summary": "蜜雪冰城雪王新动画开播",
+    "full_content": "蜜雪冰城雪王新动画开播<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E8%9C%9C%E9%9B%AA%E5%86%B0%E5%9F%8E%E9%9B%AA%E7%8E%8B%E6%96%B0%E5%8A%A8%E7%94%BB%E5%BC%80%E6%92%AD&from_source=webtop_search",
+    "read_time": 1,
+    "id": "efd3f3869e23df93"
+  },
+  {
+    "title": "Cecilia宋妍霏来B站啦",
+    "summary": "Cecilia宋妍霏来B站啦",
+    "full_content": "Cecilia宋妍霏来B站啦<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=Cecilia%E5%AE%8B%E5%A6%8D%E9%9C%8F%E6%9D%A5B%E7%AB%99%E5%95%A6&from_source=webtop_search",
+    "read_time": 1,
+    "id": "fb2d9fc563e01b88"
+  },
+  {
+    "title": "Spirit VISION",
+    "summary": "Spirit VISION",
+    "full_content": "Spirit VISION<br /><img src=\"https://i0.hdslb.com/bfs/activity-plat/static/20251027/aafcb8031fd171c428daaa9b45867226/VaxAnHMq6w.gif\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=Spirit+VISION&from_source=webtop_search",
+    "read_time": 1,
+    "id": "c140deba7365cb40"
+  },
+  {
+    "title": "南通Hero久竞 KSG",
+    "summary": "南通Hero久竞 KSG",
+    "full_content": "南通Hero久竞 KSG<br /><img src=\"https://i0.hdslb.com/bfs/activity-plat/static/20251027/aafcb8031fd171c428daaa9b45867226/VaxAnHMq6w.gif\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E5%8D%97%E9%80%9AHero%E4%B9%85%E7%AB%9E+KSG&from_source=webtop_search",
+    "read_time": 1,
+    "id": "7cbf0e606435492f"
+  },
+  {
     "title": "GitHub 8 月 17 日宕机复盘，负载均衡配置错误引爆重试风暴",
     "summary": "8 月 17 日，GitHub 宕机了 7 小时 47 分钟。影响范围不只是 github.com 打不开。认证系统瘫痪、Actions 中断、Pull Request 和 Issue 不可用、Copilot 也挂了。 官方事后分析了故障原...",
     "full_content": "8 月 17 日，GitHub 宕机了 7 小时 47 分钟。影响范围不只是 github.com 打不开。认证系统瘫痪、Actions 中断、Pull Request 和 Issue 不可用、Copilot 也挂了。 官方事后分析了故障原因：负载均衡配置错误触发了客户端的重试风暴。故障发生时，负载均衡的错误配置导致部分请求处理不当，客户端在收到错误响应后发起大量...",
@@ -502,6 +562,42 @@
     "url": "https://www.oschina.net/news/502059/2026-us-china-ai-race",
     "read_time": 1,
     "id": "b4959c9d8279b333"
+  },
+  {
+    "title": ":fire: SolonCode 是不是国产化替代 ClaudeCode 的优选？",
+    "summary": "安全审计、代码脱敏、数据本地化，是国内企业换掉 ClaudeCode（或任何海外 AI 编码助手）的三条真实理由。但「能换」和「换得舒服」之间，还隔着很多具体细节——安装、配置、模型选择、代码理解能力、与既有工程线的兼容性，一项项都比较清楚...",
+    "full_content": "安全审计、代码脱敏、数据本地化，是国内企业换掉 ClaudeCode（或任何海外 AI 编码助手）的三条真实理由。但「能换」和「换得舒服」之间，还隔着很多具体细节——安装、配置、模型选择、代码理解能力、与既有工程线的兼容性，一项项都比较清楚，才能判断谁才是「最优」。 本文不喊口号，逐条对照，结论在最后。 二、Sol...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-21",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502066",
+    "read_time": 1,
+    "id": "9aa2f33aa1f37dce"
+  },
+  {
+    "title": "DeepSeek V4-Flash 补上视觉能力，多模态 Agent 接近 Opus 4.8",
+    "summary": "DeepSeek 今天给 V4-Flash 补上了视觉能力。 新模型叫 DeepSeek-V4-Flash-Vision-Exp，一个实验性质的版本，已通过 deepseek-v4-flash-vision-exp 这个 model id ...",
+    "full_content": "DeepSeek 今天给 V4-Flash 补上了视觉能力。 新模型叫 DeepSeek-V4-Flash-Vision-Exp，一个实验性质的版本，已通过 deepseek-v4-flash-vision-exp 这个 model id 在 DeepSeek API 平台上开放调用。 纯文本不降级，视觉大幅跃升 最关键的指标：在纯文本能力（Agent、推理、世界知识等）上，Vision-Exp 与 V4-Flash 正式版...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-21",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502065",
+    "read_time": 1,
+    "id": "71a1aeeb2f15c3ec"
+  },
+  {
+    "title": "开源语义切片利器 Pragmatic Chunker 发布：一条命令打通 RAG 检索全链路",
+    "summary": "面向 RAG 场景的语义化文件切片与向量入库工具，Java 17 构建，从切片到检索一气呵成。 一、背景：RAG 落地的第一道门槛 检索增强生成（RAG，Retrieval-Augmented Generation）已经成为企业把私有文档、...",
+    "full_content": "面向 RAG 场景的语义化文件切片与向量入库工具，Java 17 构建，从切片到检索一气呵成。 一、背景：RAG 落地的第一道门槛 检索增强生成（RAG，Retrieval-Augmented Generation）已经成为企业把私有文档、代码库接入大模型的标配方案。但真正动手落地时，开发者往往要自己拼接一条并不轻松的流水线：切分 → 向量化 → 入库...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-21",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502058",
+    "read_time": 1,
+    "id": "eb375e28c27e2ca5"
   },
   {
     "title": "中国铁路加速驶入AI赋能新阶段",
@@ -1164,6 +1260,66 @@
     "id": "eadd930fca16adce"
   },
   {
+    "title": "临沂爆炸",
+    "summary": "临沂爆炸",
+    "full_content": "<div style=\"font-family: inherit;\">\n                        <p><strong>标题：</strong>临沂爆炸</p>\n                        <p><strong>来源：</strong>微博</p>\n                        <p><strong>热度：</strong>🔥 34</p>\n                        <p><strong>日期：</strong>2026-08-21</p>\n                        <p style=\"color: #808a99; font-size: 0.9rem; margin-top: 12px; border-top: 1px solid #374151; padding-top: 12px;\">\n                            此热搜由 微博 提供，当前源未返回详细内容。\n                        </p>\n                    </div>",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%B8%B4%E6%B2%82%E7%88%86%E7%82%B8",
+    "read_time": 1,
+    "id": "1ec46cc10f4ed573"
+  },
+  {
+    "title": "新世代BMW iX3 26.99万起",
+    "summary": "新世代BMW iX3 26.99万起",
+    "full_content": "新世代BMW iX3 26.99万起",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%96%B0%E4%B8%96%E4%BB%A3BMW%20iX3%2026.99%E4%B8%87%E8%B5%B7",
+    "read_time": 1,
+    "id": "a358b1e65f024269"
+  },
+  {
+    "title": "LV将彻底退出贵州市场",
+    "summary": "LV将彻底退出贵州市场",
+    "full_content": "LV将彻底退出贵州市场",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3DLV%E5%B0%86%E5%BD%BB%E5%BA%95%E9%80%80%E5%87%BA%E8%B4%B5%E5%B7%9E%E5%B8%82%E5%9C%BA",
+    "read_time": 1,
+    "id": "d245321dbf4967a4"
+  },
+  {
+    "title": "青春快乐岛",
+    "summary": "青春快乐岛",
+    "full_content": "青春快乐岛",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%9D%92%E6%98%A5%E5%BF%AB%E4%B9%90%E5%B2%9B",
+    "read_time": 1,
+    "id": "c9532b35323c4bfb"
+  },
+  {
+    "title": "丁禹兮柯淳新剧状态",
+    "summary": "丁禹兮柯淳新剧状态",
+    "full_content": "丁禹兮柯淳新剧状态",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%B8%81%E7%A6%B9%E5%85%AE%E6%9F%AF%E6%B7%B3%E6%96%B0%E5%89%A7%E7%8A%B6%E6%80%81",
+    "read_time": 1,
+    "id": "9be8a224a186ee99"
+  },
+  {
     "title": "goose项目全面解析：一只开源的智能鹅如何帮你干活",
     "summary": "如果你还没听说过goose，简单说它就是一个能在你电脑上跑起来的通用型AI智能体。不只是写代码，写作、搜集资料、跑自动化脚本、分析数据，只要你说得清楚要做什么，它都能接手去干。这篇文章会带你从头到尾摸",
     "full_content": "如果你还没听说过goose，简单说它就是一个能在你电脑上跑起来的通用型AI智能体。不只是写代码，写作、搜集资料、跑自动化脚本、分析数据，只要你说得清楚要做什么，它都能接手去干。这篇文章会带你从头到尾摸",
@@ -1282,5 +1438,17 @@
     "url": "https://juejin.cn/post/7676229058380480553",
     "read_time": 1,
     "id": "c3e3f177417eee49"
+  },
+  {
+    "title": "钱包顶不住了：从 FRP 内网穿透本地 Ollama 到 DeepSeek Harness 多模型实战全记录",
+    "summary": "本地ollama部署大模型体验极差，deepseek harness 缓存命中率高达99%！值得体验！",
+    "full_content": "本地ollama部署大模型体验极差，deepseek harness 缓存命中率高达99%！值得体验！",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-21",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676295909912641545",
+    "read_time": 1,
+    "id": "4d69a04ca1619deb"
   }
 ]

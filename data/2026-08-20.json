@@ -2110,5 +2110,29 @@
     "url": "https://juejin.cn/post/7676098231411884070",
     "read_time": 1,
     "id": "40f64f34f4a071f4"
+  },
+  {
+    "title": "代码洁癖患者会喜欢的几款 CLI 小工具",
+    "summary": "本文介绍了一位代码洁癖重患的前端开发者赖以生存的帮助保证工程洁癖的 CLI 小工具，即使在 AI 开发工具盛行的时代，它们仍然是不可多得的提效神器。",
+    "full_content": "本文介绍了一位代码洁癖重患的前端开发者赖以生存的帮助保证工程洁癖的 CLI 小工具，即使在 AI 开发工具盛行的时代，它们仍然是不可多得的提效神器。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-20",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675671057672437775",
+    "read_time": 1,
+    "id": "3d153bb99baa1a4a"
+  },
+  {
+    "title": "Show me your works & token -稀土掘金上线内测作品广场和用量统计",
+    "summary": "过去很多年，程序员之间有一句很酷的话： Show me your code. 代码是作品，也是名片。 你写过什么、解决过什么问题，往往比简历上的几句话更有说服力。 但这两年，AI 把很多事情重新改写了",
+    "full_content": "过去很多年，程序员之间有一句很酷的话： Show me your code. 代码是作品，也是名片。 你写过什么、解决过什么问题，往往比简历上的几句话更有说服力。 但这两年，AI 把很多事情重新改写了",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-20",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7675992325912887315",
+    "read_time": 1,
+    "id": "f02717c4bf277288"
   }
 ]
