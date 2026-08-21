@@ -576,6 +576,54 @@
     "id": "8710d8d584464be6"
   },
   {
+    "title": "终末地雪凇幽梦版本前瞻预告",
+    "summary": "终末地雪凇幽梦版本前瞻预告",
+    "full_content": "终末地雪凇幽梦版本前瞻预告<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221213/eaf2dd702d7cc14d8d9511190245d057/lrx9rnKo24.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E7%BB%88%E6%9C%AB%E5%9C%B0%E9%9B%AA%E5%87%87%E5%B9%BD%E6%A2%A6%E7%89%88%E6%9C%AC%E5%89%8D%E7%9E%BB%E9%A2%84%E5%91%8A&from_source=webtop_search",
+    "read_time": 1,
+    "id": "c443ff050a2cd173"
+  },
+  {
+    "title": "TES BLG",
+    "summary": "TES BLG",
+    "full_content": "TES BLG<br /><img src=\"https://i0.hdslb.com/bfs/activity-plat/static/20251027/aafcb8031fd171c428daaa9b45867226/VaxAnHMq6w.gif\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=TES+BLG&from_source=webtop_search",
+    "read_time": 1,
+    "id": "b8503b6b7892e248"
+  },
+  {
+    "title": "黑神话钟馗主角到底是谁",
+    "summary": "黑神话钟馗主角到底是谁",
+    "full_content": "黑神话钟馗主角到底是谁<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E9%BB%91%E7%A5%9E%E8%AF%9D%E9%92%9F%E9%A6%97%E4%B8%BB%E8%A7%92%E5%88%B0%E5%BA%95%E6%98%AF%E8%B0%81&from_source=webtop_search",
+    "read_time": 1,
+    "id": "ed9b24a471710eab"
+  },
+  {
+    "title": "披荆斩棘2026一公舞台陪看",
+    "summary": "披荆斩棘2026一公舞台陪看",
+    "full_content": "披荆斩棘2026一公舞台陪看<br /><img src=\"https://i0.hdslb.com/bfs/activity-plat/static/20251027/aafcb8031fd171c428daaa9b45867226/VaxAnHMq6w.gif\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E6%8A%AB%E8%8D%86%E6%96%A9%E6%A3%982026%E4%B8%80%E5%85%AC%E8%88%9E%E5%8F%B0%E9%99%AA%E7%9C%8B&from_source=webtop_search",
+    "read_time": 1,
+    "id": "49633e996ecc5505"
+  },
+  {
     "title": "GitHub 8 月 17 日宕机复盘，负载均衡配置错误引爆重试风暴",
     "summary": "8 月 17 日，GitHub 宕机了 7 小时 47 分钟。影响范围不只是 github.com 打不开。认证系统瘫痪、Actions 中断、Pull Request 和 Issue 不可用、Copilot 也挂了。 官方事后分析了故障原...",
     "full_content": "8 月 17 日，GitHub 宕机了 7 小时 47 分钟。影响范围不只是 github.com 打不开。认证系统瘫痪、Actions 中断、Pull Request 和 Issue 不可用、Copilot 也挂了。 官方事后分析了故障原因：负载均衡配置错误触发了客户端的重试风暴。故障发生时，负载均衡的错误配置导致部分请求处理不当，客户端在收到错误响应后发起大量...",
@@ -682,6 +730,18 @@
     "url": "https://www.oschina.net/news/502058",
     "read_time": 1,
     "id": "eb375e28c27e2ca5"
+  },
+  {
+    "title": "开源连接器网关 OpenConnector：让 AI Agent 安全调用 1000+ SaaS 服务",
+    "summary": "Open-Connector 是一个面向 AI Agent 和应用开发者的开源连接器网关。项目旨在解决 AI Agent 接入外部 SaaS 服务时普遍存在的认证管理、权限控制、接口适配和运行审计等问题。 OpenConnector 可以将...",
+    "full_content": "Open-Connector 是一个面向 AI Agent 和应用开发者的开源连接器网关。项目旨在解决 AI Agent 接入外部 SaaS 服务时普遍存在的认证管理、权限控制、接口适配和运行审计等问题。 OpenConnector 可以将用户已经使用的应用账号连接到统一运行时，并向 Agent 暴露标准化的 Actions。项目目前提供覆盖 GitHub、Gmail、Notion、...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-21",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502067/oomol-lab-open-connector",
+    "read_time": 1,
+    "id": "e63d2dbba84d0dcf"
   },
   {
     "title": "中国铁路加速驶入AI赋能新阶段",
@@ -1464,6 +1524,66 @@
     "id": "920020707cc12dd9"
   },
   {
+    "title": "特仑苏会员日大馈赠",
+    "summary": "特仑苏会员日大馈赠",
+    "full_content": "特仑苏会员日大馈赠",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%89%B9%E4%BB%91%E8%8B%8F%E4%BC%9A%E5%91%98%E6%97%A5%E5%A4%A7%E9%A6%88%E8%B5%A0",
+    "read_time": 1,
+    "id": "52784a3c335dc37a"
+  },
+  {
+    "title": "小沈阳摔了",
+    "summary": "小沈阳摔了",
+    "full_content": "小沈阳摔了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%B0%8F%E6%B2%88%E9%98%B3%E6%91%94%E4%BA%86",
+    "read_time": 1,
+    "id": "ac523aaf23312ad2"
+  },
+  {
+    "title": "这就是伯牙子期",
+    "summary": "这就是伯牙子期",
+    "full_content": "这就是伯牙子期",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%BF%99%E5%B0%B1%E6%98%AF%E4%BC%AF%E7%89%99%E5%AD%90%E6%9C%9F",
+    "read_time": 1,
+    "id": "4918cea826fd243d"
+  },
+  {
+    "title": "离了曾辉谁逗我笑",
+    "summary": "离了曾辉谁逗我笑",
+    "full_content": "离了曾辉谁逗我笑",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%A6%BB%E4%BA%86%E6%9B%BE%E8%BE%89%E8%B0%81%E9%80%97%E6%88%91%E7%AC%91",
+    "read_time": 1,
+    "id": "6b97142b978bb4ba"
+  },
+  {
+    "title": "春山境大结局",
+    "summary": "春山境大结局",
+    "full_content": "春山境大结局",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-21",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%98%A5%E5%B1%B1%E5%A2%83%E5%A4%A7%E7%BB%93%E5%B1%80",
+    "read_time": 1,
+    "id": "4ba71a977312853a"
+  },
+  {
     "title": "goose项目全面解析：一只开源的智能鹅如何帮你干活",
     "summary": "如果你还没听说过goose，简单说它就是一个能在你电脑上跑起来的通用型AI智能体。不只是写代码，写作、搜集资料、跑自动化脚本、分析数据，只要你说得清楚要做什么，它都能接手去干。这篇文章会带你从头到尾摸",
     "full_content": "如果你还没听说过goose，简单说它就是一个能在你电脑上跑起来的通用型AI智能体。不只是写代码，写作、搜集资料、跑自动化脚本、分析数据，只要你说得清楚要做什么，它都能接手去干。这篇文章会带你从头到尾摸",
@@ -1594,5 +1714,29 @@
     "url": "https://juejin.cn/post/7676295909912641545",
     "read_time": 1,
     "id": "4d69a04ca1619deb"
+  },
+  {
+    "title": "分享一下最近做的AI记账 App | 欢迎体验",
+    "summary": "自己做了个 AI 记账 App「妙蛙记账」。支持自然语言记账和查询。Web 和 Android 都能用。",
+    "full_content": "自己做了个 AI 记账 App「妙蛙记账」。支持自然语言记账和查询。Web 和 Android 都能用。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-21",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676350503684816923",
+    "read_time": 1,
+    "id": "f611559ef40d7bc1"
+  },
+  {
+    "title": "设计 Skill 系统，这 3 个坑我替你踩过了",
+    "summary": "Skill 你写过不少，但 Agent 内部是怎么用它的，你可能从来没看过。这篇将会带你深入分析 Skill 的秘密",
+    "full_content": "Skill 你写过不少，但 Agent 内部是怎么用它的，你可能从来没看过。这篇将会带你深入分析 Skill 的秘密",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-21",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676295909912838153",
+    "read_time": 1,
+    "id": "e2c9ab8accbab708"
   }
 ]
