@@ -528,6 +528,42 @@
     "id": "ec5293822149d0e5"
   },
   {
+    "title": "NIP IG",
+    "summary": "NIP IG",
+    "full_content": "NIP IG<br /><img src=\"https://i0.hdslb.com/bfs/activity-plat/static/20251027/aafcb8031fd171c428daaa9b45867226/VaxAnHMq6w.gif\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-22",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=NIP+IG&from_source=webtop_search",
+    "read_time": 1,
+    "id": "6c72657b56317fc9"
+  },
+  {
+    "title": "开学末日宿舍完结篇",
+    "summary": "开学末日宿舍完结篇",
+    "full_content": "开学末日宿舍完结篇<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221117/eaf2dd702d7cc14d8d9511190245d057/EeuqbMwao9.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-22",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E5%BC%80%E5%AD%A6%E6%9C%AB%E6%97%A5%E5%AE%BF%E8%88%8D%E5%AE%8C%E7%BB%93%E7%AF%87&from_source=webtop_search",
+    "read_time": 1,
+    "id": "b1542a93a2010ba8"
+  },
+  {
+    "title": "收容100位粉丝到MC存档",
+    "summary": "收容100位粉丝到MC存档",
+    "full_content": "收容100位粉丝到MC存档<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-22",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E6%94%B6%E5%AE%B9100%E4%BD%8D%E7%B2%89%E4%B8%9D%E5%88%B0MC%E5%AD%98%E6%A1%A3&from_source=webtop_search",
+    "read_time": 1,
+    "id": "3f579ba874107bdb"
+  },
+  {
     "title": "北大确认韦东奕卖书账号为本人",
     "summary": "北大确认韦东奕卖书账号为本人",
     "full_content": "北大确认韦东奕卖书账号为本人",
@@ -1164,6 +1200,54 @@
     "id": "555b5f60488ee2f1"
   },
   {
+    "title": "甲醛白菜 工人癌症风险",
+    "summary": "甲醛白菜 工人癌症风险",
+    "full_content": "甲醛白菜 工人癌症风险",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-22",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%94%B2%E9%86%9B%E7%99%BD%E8%8F%9C%20%E5%B7%A5%E4%BA%BA%E7%99%8C%E7%97%87%E9%A3%8E%E9%99%A9",
+    "read_time": 1,
+    "id": "fef9f65e1d6c8d4b"
+  },
+  {
+    "title": "那英演唱会",
+    "summary": "那英演唱会",
+    "full_content": "那英演唱会",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-22",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%82%A3%E8%8B%B1%E6%BC%94%E5%94%B1%E4%BC%9A",
+    "read_time": 1,
+    "id": "24ee2ec9c0d7be43"
+  },
+  {
+    "title": "甲醛白菜流向哪里",
+    "summary": "甲醛白菜流向哪里",
+    "full_content": "甲醛白菜流向哪里",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-22",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%94%B2%E9%86%9B%E7%99%BD%E8%8F%9C%E6%B5%81%E5%90%91%E5%93%AA%E9%87%8C",
+    "read_time": 1,
+    "id": "1fd2060872719509"
+  },
+  {
+    "title": "亚运会电子竞技项目国家队成立",
+    "summary": "亚运会电子竞技项目国家队成立",
+    "full_content": "亚运会电子竞技项目国家队成立",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-22",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%BA%9A%E8%BF%90%E4%BC%9A%E7%94%B5%E5%AD%90%E7%AB%9E%E6%8A%80%E9%A1%B9%E7%9B%AE%E5%9B%BD%E5%AE%B6%E9%98%9F%E6%88%90%E7%AB%8B",
+    "read_time": 1,
+    "id": "bbc059eb8a528c37"
+  },
+  {
     "title": "TLS for DeepSeek Harness 可观测实践：从系统总览到会话复盘",
     "summary": "本文介绍火山引擎日志服务 TLS 为 DSH 开发的可观测插件，将模型请求、工具调用转为 OpenTelemetry Trace 上报 TLS，无需修改 DSH 代码。",
     "full_content": "本文介绍火山引擎日志服务 TLS 为 DSH 开发的可观测插件，将模型请求、工具调用转为 OpenTelemetry Trace 上报 TLS，无需修改 DSH 代码。",
@@ -1354,6 +1438,66 @@
     "url": "https://juejin.cn/post/7676421336285741099",
     "read_time": 1,
     "id": "c29fca9d0d0d3f1e"
+  },
+  {
+    "title": "让 AI 帮你拆分一个功能需求：页面、接口、数据和测试任务怎么分",
+    "summary": "当我们拿到一个新需求时，最容易出现两种情况： 需求很短，不知道第一步该做什么。 一上来就让 AI 生成全部代码，结果文件很多、逻辑很乱，自己也不知道应该从哪里检查。 例如，产品同学说： 这句话看起来很",
+    "full_content": "当我们拿到一个新需求时，最容易出现两种情况： 需求很短，不知道第一步该做什么。 一上来就让 AI 生成全部代码，结果文件很多、逻辑很乱，自己也不知道应该从哪里检查。 例如，产品同学说： 这句话看起来很",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-22",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676472733135437839",
+    "read_time": 1,
+    "id": "8eca4d025ebaedcd"
+  },
+  {
+    "title": "给 DeepSeek Harness Web 写了一个美化插件",
+    "summary": "DeepSeek Harness（DSH）dsh web换背景插件，支持两种模式，全屏或者分栏，极简方式，没有其他功能",
+    "full_content": "DeepSeek Harness（DSH）dsh web换背景插件，支持两种模式，全屏或者分栏，极简方式，没有其他功能",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-22",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676421336286068779",
+    "read_time": 1,
+    "id": "946db5d19cf67548"
+  },
+  {
+    "title": "LangChain 源码解析：HumanInTheLoopMiddleware 如何实现 Agent 人机协同",
+    "summary": "HumanInTheLoopMiddleware是LangChain提供的一个中间件，能够让用户参与到agent的执行当中。 HumanInTheLoopMiddleware给agent提供一种能力，",
+    "full_content": "HumanInTheLoopMiddleware是LangChain提供的一个中间件，能够让用户参与到agent的执行当中。 HumanInTheLoopMiddleware给agent提供一种能力，",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-22",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676694450111201289",
+    "read_time": 1,
+    "id": "d62154044fc272f1"
+  },
+  {
+    "title": "实测 OpenConnector：给 Agent 接 SaaS，别再把 Token 塞进环境变量",
+    "summary": "给 Agent 接 GitHub、Gmail、Slack 或 Notion，最容易的做法是什么？ 把 token 塞进环境变量，给模型注册几个函数，几分钟就能跑起来。 但只要继续往前走一步——第二个用",
+    "full_content": "给 Agent 接 GitHub、Gmail、Slack 或 Notion，最容易的做法是什么？ 把 token 塞进环境变量，给模型注册几个函数，几分钟就能跑起来。 但只要继续往前走一步——第二个用",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-22",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676404079283748900",
+    "read_time": 1,
+    "id": "adb5bdac32551988"
+  },
+  {
+    "title": "Agent 办事失败兜底技术实现方案：从失败模型到生产级容错体系",
+    "summary": "1. 引言：为什么 Agent 失败兜底是生产化的第一道门槛 在 Demo 阶段，一个基于大模型的 Agent 只要能“跑通”一个任务，就足以赢得掌声。但在生产环境中，Agent 真正要面对的是不确定",
+    "full_content": "1. 引言：为什么 Agent 失败兜底是生产化的第一道门槛 在 Demo 阶段，一个基于大模型的 Agent 只要能“跑通”一个任务，就足以赢得掌声。但在生产环境中，Agent 真正要面对的是不确定",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-22",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676406157015875624",
+    "read_time": 1,
+    "id": "e4540edc05357acf"
   },
   {
     "title": "大唐妖探",
