@@ -1966,5 +1966,17 @@
     "url": "https://juejin.cn/post/7676350945481457714",
     "read_time": 1,
     "id": "d8cf37153cb2acb0"
+  },
+  {
+    "title": "DeepSeek Harness 从 0 开始：10 Hooks 模块（钩子协议）",
+    "summary": "DeepSeek Harness 从 0 开始：10 Hooks 模块（钩子协议） 核心问题：框架和 hooks 插件怎么通信？ 回顾整个系列，我们多次遇到「拦截点」：事件系统篇的洋葱模型、Tools",
+    "full_content": "DeepSeek Harness 从 0 开始：10 Hooks 模块（钩子协议） 核心问题：框架和 hooks 插件怎么通信？ 回顾整个系列，我们多次遇到「拦截点」：事件系统篇的洋葱模型、Tools",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-21",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676350503684915227",
+    "read_time": 1,
+    "id": "5e31c4079b192af5"
   }
 ]
