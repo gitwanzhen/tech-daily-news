@@ -2088,6 +2088,42 @@
     "id": "c7006252cd0d7ff6"
   },
   {
+    "title": "手把手：把 Remotion 封装成 DeepSeek Harness 插件，一句话让 AI 出视频",
+    "summary": "导语 DeepSeek Harness 的口号是\"一切皆插件\"。昨天我写了篇教程教大家给 Harness 写文字插件，有朋友问：能不能让 AI 直接出视频？ 答案是可以。本文从零开始，把 Remoti",
+    "full_content": "导语 DeepSeek Harness 的口号是\"一切皆插件\"。昨天我写了篇教程教大家给 Harness 写文字插件，有朋友问：能不能让 AI 直接出视频？ 答案是可以。本文从零开始，把 Remoti",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-22",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676446740678459430",
+    "read_time": 1,
+    "id": "2bf850e7bad76815"
+  },
+  {
+    "title": "ZGI 发布治理：同一个 Agent 服务多个入口",
+    "summary": "同一个 Agent 可通过 WebApp、内部应用、API 和计划任务提供服务，共用模型、知识、Skills 与 Workflow。每个入口仍需单独设置身份、输入、权限、超时和结果回执。",
+    "full_content": "同一个 Agent 可通过 WebApp、内部应用、API 和计划任务提供服务，共用模型、知识、Skills 与 Workflow。每个入口仍需单独设置身份、输入、权限、超时和结果回执。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-22",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676833259251073034",
+    "read_time": 1,
+    "id": "8cfdf8ea85aa5fd2"
+  },
+  {
+    "title": "ZGI 批量测试：上线前验证 Agent",
+    "summary": "Agent 上线前需要用一组真实任务批量检查答案、工具调用、流程状态和业务副作用。测试样本应同时覆盖正常输入、缺失信息、越权请求和外部接口异常，并为每类任务设置可判断的通过标准。",
+    "full_content": "Agent 上线前需要用一组真实任务批量检查答案、工具调用、流程状态和业务副作用。测试样本应同时覆盖正常输入、缺失信息、越权请求和外部接口异常，并为每类任务设置可判断的通过标准。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-22",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676709710489878538",
+    "read_time": 1,
+    "id": "7077b5c86546a451"
+  },
+  {
     "title": "大唐妖探",
     "summary": "标题：大唐妖探评分：0片长：117分钟制片国家/地区：中国大陆导演：程腾 黄珉主演：雷淞然 / 张呈 / 蔡海婷",
     "full_content": "标题：大唐妖探<br />评分：0<br />片长：117分钟<br />制片国家/地区：中国大陆<br />导演：程腾 黄珉<br />主演：雷淞然 / 张呈 / 蔡海婷<br /><img src=\"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2934719657.webp\" />",
