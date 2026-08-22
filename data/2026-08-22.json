@@ -936,6 +936,42 @@
     "id": "9161700c8f19ddf9"
   },
   {
+    "title": "晋江作者大会淮上",
+    "summary": "晋江作者大会淮上",
+    "full_content": "晋江作者大会淮上",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-22",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%99%8B%E6%B1%9F%E4%BD%9C%E8%80%85%E5%A4%A7%E4%BC%9A%E6%B7%AE%E4%B8%8A",
+    "read_time": 1,
+    "id": "3cb2c09ccafd1ca5"
+  },
+  {
+    "title": "巫哲首次公开露脸",
+    "summary": "巫哲首次公开露脸",
+    "full_content": "巫哲首次公开露脸",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-22",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%B7%AB%E5%93%B2%E9%A6%96%E6%AC%A1%E5%85%AC%E5%BC%80%E9%9C%B2%E8%84%B8",
+    "read_time": 1,
+    "id": "9716f87280c42b6f"
+  },
+  {
+    "title": "白血病不再是不治之症",
+    "summary": "白血病不再是不治之症",
+    "full_content": "白血病不再是不治之症",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-22",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%99%BD%E8%A1%80%E7%97%85%E4%B8%8D%E5%86%8D%E6%98%AF%E4%B8%8D%E6%B2%BB%E4%B9%8B%E7%97%87",
+    "read_time": 1,
+    "id": "fe4ac4a9c9db714c"
+  },
+  {
     "title": "TLS for DeepSeek Harness 可观测实践：从系统总览到会话复盘",
     "summary": "本文介绍火山引擎日志服务 TLS 为 DSH 开发的可观测插件，将模型请求、工具调用转为 OpenTelemetry Trace 上报 TLS，无需修改 DSH 代码。",
     "full_content": "本文介绍火山引擎日志服务 TLS 为 DSH 开发的可观测插件，将模型请求、工具调用转为 OpenTelemetry Trace 上报 TLS，无需修改 DSH 代码。",
@@ -1114,6 +1150,18 @@
     "url": "https://juejin.cn/post/7676398131043434506",
     "read_time": 1,
     "id": "e3ad874007515d24"
+  },
+  {
+    "title": "DSH harness 中的上下文管理探秘",
+    "summary": "Agent 记忆管理：上下文管理 + 长期记忆 0. 记忆管理的两层结构 记忆管理分两层，按\"数据存在哪里\"划分： 层 数据位置 生命周期 代表技术 短期 / 工作记忆 模型上下文窗口内 单次会话 t",
+    "full_content": "Agent 记忆管理：上下文管理 + 长期记忆 0. 记忆管理的两层结构 记忆管理分两层，按\"数据存在哪里\"划分： 层 数据位置 生命周期 代表技术 短期 / 工作记忆 模型上下文窗口内 单次会话 t",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-22",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676421336285741099",
+    "read_time": 1,
+    "id": "c29fca9d0d0d3f1e"
   },
   {
     "title": "大唐妖探",
