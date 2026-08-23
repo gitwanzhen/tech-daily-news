@@ -552,6 +552,30 @@
     "id": "4bd8616dd77ea3f7"
   },
   {
+    "title": "多国印度移民拒签率飙升",
+    "summary": "多国印度移民拒签率飙升",
+    "full_content": "多国印度移民拒签率飙升",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-23",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%A4%9A%E5%9B%BD%E5%8D%B0%E5%BA%A6%E7%A7%BB%E6%B0%91%E6%8B%92%E7%AD%BE%E7%8E%87%E9%A3%99%E5%8D%87",
+    "read_time": 1,
+    "id": "171a223b37cbb9d2"
+  },
+  {
+    "title": "小狗洗澡洗得太干净主人不敢认",
+    "summary": "小狗洗澡洗得太干净主人不敢认",
+    "full_content": "小狗洗澡洗得太干净主人不敢认",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-23",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%B0%8F%E7%8B%97%E6%B4%97%E6%BE%A1%E6%B4%97%E5%BE%97%E5%A4%AA%E5%B9%B2%E5%87%80%E4%B8%BB%E4%BA%BA%E4%B8%8D%E6%95%A2%E8%AE%A4",
+    "read_time": 1,
+    "id": "475489e44fc05316"
+  },
+  {
     "title": "Code Agent 解剖（08）：一个任务太复杂，怎么拆给子 agent 做？",
     "summary": "深入 MyCodeAgent 的子 agent 机制：Task 工具、RuntimeProfile 沙箱约束、SubagentLauncher 完整执行链路、结构化结果合约。",
     "full_content": "深入 MyCodeAgent 的子 agent 机制：Task 工具、RuntimeProfile 沙箱约束、SubagentLauncher 完整执行链路、结构化结果合约。",
@@ -574,5 +598,41 @@
     "url": "https://juejin.cn/post/7676901441974632474",
     "read_time": 1,
     "id": "2607c8d35e9c51a8"
+  },
+  {
+    "title": "先让 AI 出方案，再让它写代码：新手也能使用的设计习惯",
+    "summary": "前一篇文章中，我们学习了如何让 AI 帮助拆分一个功能需求。 我们把“商品列表增加搜索和分类筛选”拆成了： 页面任务。 接口任务。 数据任务。 测试任务。 拆分需求之后，还有一个很容易被忽略的步骤：",
+    "full_content": "前一篇文章中，我们学习了如何让 AI 帮助拆分一个功能需求。 我们把“商品列表增加搜索和分类筛选”拆成了： 页面任务。 接口任务。 数据任务。 测试任务。 拆分需求之后，还有一个很容易被忽略的步骤：",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-23",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676498957654081536",
+    "read_time": 1,
+    "id": "6a1ff236a44dfd60"
+  },
+  {
+    "title": "DeepSeek还是“睁眼瞎” ，最新视觉模型测试！",
+    "summary": "DeepSeek 涨价之后，我的余额扛不住了！ 然后 DeepSeek 视觉模型又来了，看来还得冲一波。今天这篇重点来看一下它这个 Vision 体验版效果如何！ DS 有原生视觉模型了，这可是大事情",
+    "full_content": "DeepSeek 涨价之后，我的余额扛不住了！ 然后 DeepSeek 视觉模型又来了，看来还得冲一波。今天这篇重点来看一下它这个 Vision 体验版效果如何！ DS 有原生视觉模型了，这可是大事情",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-23",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676635687798177846",
+    "read_time": 1,
+    "id": "479ff4741a0c808d"
+  },
+  {
+    "title": "0 后端 · 0 数据库 · 0 备案：用 AI 两天搓出的股票管理系统，开源了",
+    "summary": "记账式管仓位——建仓、加仓、止盈、止损，每笔留痕，再算出当前持仓和浮动盈亏。这种小工具最省事的做法不是去租云服务器、装数据库、写一套后端 CRUD，而是……直接把飞书多维表格当数据库。",
+    "full_content": "记账式管仓位——建仓、加仓、止盈、止损，每笔留痕，再算出当前持仓和浮动盈亏。这种小工具最省事的做法不是去租云服务器、装数据库、写一套后端 CRUD，而是……直接把飞书多维表格当数据库。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-23",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7676685155130966025",
+    "read_time": 1,
+    "id": "0a9d7e75821fa0a1"
   }
 ]
