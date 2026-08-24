@@ -1044,6 +1044,58 @@
     "id": "0b1cb9378b90bb93"
   },
   {
+    "title": "央视曝光隔空猥亵",
+    "summary": "热度: 151.8万",
+    "full_content": "<p><strong>标题：</strong>央视曝光隔空猥亵</p><p><strong>热度：</strong>🔥 151.8万</p><p><strong>来源：</strong>微博</p><p><a href='https://s.weibo.com/weibo?q=央视曝光隔空猥亵&amp;Refer=index' target='_blank' rel='noopener'>查看原文</a></p>",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-24",
+    "source": "微博",
+    "url": "https://s.weibo.com/weibo?q=央视曝光隔空猥亵&Refer=index",
+    "hot_score": null,
+    "read_time": 1,
+    "id": "2f42fdf91b8273e7"
+  },
+  {
+    "title": "扶老人遭索赔店主儿子说到此为止吧",
+    "summary": "热度: 102.3万",
+    "full_content": "<p><strong>标题：</strong>扶老人遭索赔店主儿子说到此为止吧</p><p><strong>热度：</strong>🔥 102.3万</p><p><strong>来源：</strong>微博</p><p><a href='https://s.weibo.com/weibo?q=扶老人遭索赔店主儿子说到此为止吧&amp;Refer=index' target='_blank' rel='noopener'>查看原文</a></p>",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-24",
+    "source": "微博",
+    "url": "https://s.weibo.com/weibo?q=扶老人遭索赔店主儿子说到此为止吧&Refer=index",
+    "hot_score": null,
+    "read_time": 1,
+    "id": "6d8ce379eaf5dd47"
+  },
+  {
+    "title": "广西洪水",
+    "summary": "热度: 79.4万",
+    "full_content": "<p><strong>标题：</strong>广西洪水</p><p><strong>热度：</strong>🔥 79.4万</p><p><strong>来源：</strong>微博</p><p><a href='https://s.weibo.com/weibo?q=广西洪水&amp;Refer=index' target='_blank' rel='noopener'>查看原文</a></p>",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-24",
+    "source": "微博",
+    "url": "https://s.weibo.com/weibo?q=广西洪水&Refer=index",
+    "hot_score": null,
+    "read_time": 1,
+    "id": "53035c70c78c6783"
+  },
+  {
+    "title": "东方甄选薪酬少发4个亿",
+    "summary": "热度: 55.9万",
+    "full_content": "<p><strong>标题：</strong>东方甄选薪酬少发4个亿</p><p><strong>热度：</strong>🔥 55.9万</p><p><strong>来源：</strong>微博</p><p><a href='https://s.weibo.com/weibo?q=东方甄选薪酬少发4个亿&amp;Refer=index' target='_blank' rel='noopener'>查看原文</a></p>",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-24",
+    "source": "微博",
+    "url": "https://s.weibo.com/weibo?q=东方甄选薪酬少发4个亿&Refer=index",
+    "hot_score": null,
+    "read_time": 1,
+    "id": "2f81d347b24e0f7f"
+  },
+  {
     "title": "给大模型装上\"手\"：三分钟看懂 AI Agent 的 Tool 工具调用",
     "summary": "在 AI Agent 中，Tool（工具）就是让大模型能够执行具体操作的“函数”。LLM 负责“思考要做什么”，Tool 负责“真正去做”。 Tool 和普通函数的区别是它多了一层“给 LLM 使用”",
     "full_content": "在 AI Agent 中，Tool（工具）就是让大模型能够执行具体操作的“函数”。LLM 负责“思考要做什么”，Tool 负责“真正去做”。 Tool 和普通函数的区别是它多了一层“给 LLM 使用”",
@@ -1174,5 +1226,77 @@
     "url": "https://juejin.cn/post/7677033757719281699",
     "read_time": 1,
     "id": "d090f9549ea800be"
+  },
+  {
+    "title": "从 SDD 到可交付：我如何用规范驱动 AI 做出一个 Chrome 翻译插件",
+    "summary": "我为什么开始反思 Vibe Coding 刚接触 AI Coding Agent 时，最容易上手的方式是直接输入一句：“帮我做一个用户认证系统。”",
+    "full_content": "我为什么开始反思 Vibe Coding 刚接触 AI Coding Agent 时，最容易上手的方式是直接输入一句：“帮我做一个用户认证系统。”",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-24",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7677159752017379369",
+    "read_time": 1,
+    "id": "0bfc004d489d48b7"
+  },
+  {
+    "title": "从 Vue 到万物：AI 加速下的前端开发者全栈进化论【第五课】",
+    "summary": "Day 5 | 真实项目实战：用 AI 从 0 到 1 搭一个事故分析系统 这一天不一样——这是真正的全栈 前四天学的所有东西，今天要串联起来。我们用事故分析系统的真实架构，完整走一遍开发流程。 这不",
+    "full_content": "Day 5 | 真实项目实战：用 AI 从 0 到 1 搭一个事故分析系统 这一天不一样——这是真正的全栈 前四天学的所有东西，今天要串联起来。我们用事故分析系统的真实架构，完整走一遍开发流程。 这不",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-24",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7677397089273806888",
+    "read_time": 1,
+    "id": "db02f64a0309e80f"
+  },
+  {
+    "title": "从 Vue 到万物：AI 加速下的前端开发者全栈进化论【第四课】",
+    "summary": "Day 4 | API 设计 & 全栈串联：前端和后端终于\"对话\"了 API 设计的核心原则（前端开发者的视角） 前端写 API 调用，天然理解 HTTP 请求。但\"设计\" API 是什么感觉？ 想象",
+    "full_content": "Day 4 | API 设计 & 全栈串联：前端和后端终于\"对话\"了 API 设计的核心原则（前端开发者的视角） 前端写 API 调用，天然理解 HTTP 请求。但\"设计\" API 是什么感觉？ 想象",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-24",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7677399274037198882",
+    "read_time": 1,
+    "id": "669cb79cf8e508cc"
+  },
+  {
+    "title": "从 Vue 到万物：AI 加速下的前端开发者全栈进化论【第三课】",
+    "summary": "Day 3 | MySQL + 数据库设计：前端视角看不到的世界 前端的数据世界 vs 后端的数据世界 前端开发者每天和数据打交道，但数据是这样的： 后端眼里同一份数据，是这样的： 前端一个对象，后端",
+    "full_content": "Day 3 | MySQL + 数据库设计：前端视角看不到的世界 前端的数据世界 vs 后端的数据世界 前端开发者每天和数据打交道，但数据是这样的： 后端眼里同一份数据，是这样的： 前端一个对象，后端",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-24",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7677253624130027572",
+    "read_time": 1,
+    "id": "9b6e3f92abd5bb8a"
+  },
+  {
+    "title": "从 Vue 到万物：AI 加速下的前端开发者全栈进化论【第二课】",
+    "summary": "Day 2 | Java + Spring Boot：前端人看懂后端的第一步 为什么是 Java？为什么是 Spring Boot？ 前端开发者选后端语言，往往在 Java / Node.js / G",
+    "full_content": "Day 2 | Java + Spring Boot：前端人看懂后端的第一步 为什么是 Java？为什么是 Spring Boot？ 前端开发者选后端语言，往往在 Java / Node.js / G",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-24",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7677397089273774120",
+    "read_time": 1,
+    "id": "7e1b0e5cbc65ccbb"
+  },
+  {
+    "title": "从 Vue 到万物：AI 加速下的前端开发者全栈进化论【第一课】",
+    "summary": "Day 1 | 前端转全栈的思维切换：你以为在学后端，其实你在学系统 你不是\"学后端\"，你是学\"系统\" 大多数前端开发者转型全栈，第一步就错了——他们把后端当成\"又一门语言/框架\"来学，像学 Vue3",
+    "full_content": "Day 1 | 前端转全栈的思维切换：你以为在学后端，其实你在学系统 你不是\"学后端\"，你是学\"系统\" 大多数前端开发者转型全栈，第一步就错了——他们把后端当成\"又一门语言/框架\"来学，像学 Vue3",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-24",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7677399274037166114",
+    "read_time": 1,
+    "id": "ce1eb18e859381b2"
   }
 ]
