@@ -156,6 +156,42 @@
     "id": "e861a3c606a6b01b"
   },
   {
+    "title": "Spirit TI15夺冠复盘",
+    "summary": "Spirit TI15夺冠复盘",
+    "full_content": "Spirit TI15夺冠复盘<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-25",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=Spirit+TI15%E5%A4%BA%E5%86%A0%E5%A4%8D%E7%9B%98&from_source=webtop_search",
+    "read_time": 1,
+    "id": "1bb9b854648d5245"
+  },
+  {
+    "title": "郑钦文时隔14个月大满贯赢球",
+    "summary": "郑钦文时隔14个月大满贯赢球",
+    "full_content": "郑钦文时隔14个月大满贯赢球<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-25",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E9%83%91%E9%92%A6%E6%96%87%E6%97%B6%E9%9A%9414%E4%B8%AA%E6%9C%88%E5%A4%A7%E6%BB%A1%E8%B4%AF%E8%B5%A2%E7%90%83&from_source=webtop_search",
+    "read_time": 1,
+    "id": "34562d9c06bf1ddc"
+  },
+  {
+    "title": "富勒姆2-3切尔西",
+    "summary": "富勒姆2-3切尔西",
+    "full_content": "富勒姆2-3切尔西<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-25",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E5%AF%8C%E5%8B%92%E5%A7%862-3%E5%88%87%E5%B0%94%E8%A5%BF&from_source=webtop_search",
+    "read_time": 1,
+    "id": "792ddd4e7252af1e"
+  },
+  {
     "title": "闭源模型生成图片的随机性怎么控制？",
     "summary": "同样的提示词，想从众多图片中选出满意的人脸，但是即梦、gpt-images2等都是基于第一次生成的人脸反复修改，相似度极高，这个问题怎么破",
     "full_content": "<p>同样的提示词，想从众多图片中选出满意的人脸，但是即梦、gpt-images2等都是基于第一次生成的人脸反复修改，相似度极高，这个问题怎么破</p>",
@@ -166,6 +202,30 @@
     "url": "https://segmentfault.com/q/1010000048201681",
     "read_time": 1,
     "id": "d2794f4866d5de11"
+  },
+  {
+    "title": "【AI 报表】JimuReport v2.5.1 版本发布，免费开源的 AI 报表工具",
+    "summary": "项目介绍 真正的 AI 报表来了，一句话描述需求，AI 自动生成报表与数据大屏，支持对话式修改报表；同时提供类 Excel 拖拽设计器，兼容 30 余种数据源，轻松应对各类复杂报表场景 :sparkles: 积木报表是一款免费的数据可视化报...",
+    "full_content": "项目介绍 真正的 AI 报表来了，一句话描述需求，AI 自动生成报表与数据大屏，支持对话式修改报表；同时提供类 Excel 拖拽设计器，兼容 30 余种数据源，轻松应对各类复杂报表场景 :sparkles: 积木报表是一款免费的数据可视化报表工具，集报表、打印、大屏、仪表盘于一体，像搭积木一样完全在线设计。分两大模块：JimuRep...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-25",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502104",
+    "read_time": 1,
+    "id": "2b3dd8583cb1d26a"
+  },
+  {
+    "title": "开放报名 | 上海开源软件应用创新大赛openKylin专属赛题",
+    "summary": "2026年，大模型智能体正快速走出实验室，广泛落地于办公、研发、个人助理等各类场景。而长期、稳定、可控的记忆能力，已然成为决定智能体实际使用体验与落地价值的核心关键。对于智能体而言，用户偏好、操作路径、常用模板等固定有效信息需要长效留存，但...",
+    "full_content": "2026年，大模型智能体正快速走出实验室，广泛落地于办公、研发、个人助理等各类场景。而长期、稳定、可控的记忆能力，已然成为决定智能体实际使用体验与落地价值的核心关键。对于智能体而言，用户偏好、操作路径、常用模板等固定有效信息需要长效留存，但临时会话信息、隐私敏感内容、风险指令则需要精准过滤规避。记忆能...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-25",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502103",
+    "read_time": 1,
+    "id": "7f5065e590dc24e9"
   },
   {
     "title": "湖北长阳通报韩红基金会救护车",
@@ -406,6 +466,78 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%87%91%E6%99%A8%E6%88%91%E4%B8%8D%E6%98%AF%E8%BF%AA%E4%B8%BD%E7%83%AD%E5%B7%B4",
     "read_time": 1,
     "id": "26b141b7d46ae190"
+  },
+  {
+    "title": "树立重实干重实绩的选人用人导向",
+    "summary": "树立重实干重实绩的选人用人导向",
+    "full_content": "树立重实干重实绩的选人用人导向",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-25",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%A0%91%E7%AB%8B%E9%87%8D%E5%AE%9E%E5%B9%B2%E9%87%8D%E5%AE%9E%E7%BB%A9%E7%9A%84%E9%80%89%E4%BA%BA%E7%94%A8%E4%BA%BA%E5%AF%BC%E5%90%91",
+    "read_time": 1,
+    "id": "bd2afcc7a9acb4a4"
+  },
+  {
+    "title": "德芙文案 翻车",
+    "summary": "德芙文案 翻车",
+    "full_content": "德芙文案 翻车",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-25",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%BE%B7%E8%8A%99%E6%96%87%E6%A1%88%20%E7%BF%BB%E8%BD%A6",
+    "read_time": 1,
+    "id": "929ac04b19e609b6"
+  },
+  {
+    "title": "神23乘组天宫vlog上新",
+    "summary": "神23乘组天宫vlog上新",
+    "full_content": "神23乘组天宫vlog上新",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-25",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%A5%9E23%E4%B9%98%E7%BB%84%E5%A4%A9%E5%AE%ABvlog%E4%B8%8A%E6%96%B0",
+    "read_time": 1,
+    "id": "c2eb289dbe6c8c54"
+  },
+  {
+    "title": "千夜奇谭官宣",
+    "summary": "千夜奇谭官宣",
+    "full_content": "千夜奇谭官宣",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-25",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%8D%83%E5%A4%9C%E5%A5%87%E8%B0%AD%E5%AE%98%E5%AE%A3",
+    "read_time": 1,
+    "id": "e59bb45d72b65a1c"
+  },
+  {
+    "title": "电影八仙",
+    "summary": "电影八仙",
+    "full_content": "<div style=\"font-family: inherit;\">\n                        <p><strong>标题：</strong>电影八仙</p>\n                        <p><strong>来源：</strong>微博</p>\n                        <p><strong>热度：</strong>🔥 57</p>\n                        <p><strong>日期：</strong>2026-08-25</p>\n                        <p style=\"color: #808a99; font-size: 0.9rem; margin-top: 12px; border-top: 1px solid #374151; padding-top: 12px;\">\n                            此热搜由 微博 提供，当前源未返回详细内容。\n                        </p>\n                    </div>",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-25",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%94%B5%E5%BD%B1%E5%85%AB%E4%BB%99",
+    "read_time": 1,
+    "id": "d631940fd2a99577"
+  },
+  {
+    "title": "韩剧史上最好的男主交替场面",
+    "summary": "韩剧史上最好的男主交替场面",
+    "full_content": "韩剧史上最好的男主交替场面",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-25",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%9F%A9%E5%89%A7%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A5%BD%E7%9A%84%E7%94%B7%E4%B8%BB%E4%BA%A4%E6%9B%BF%E5%9C%BA%E9%9D%A2",
+    "read_time": 1,
+    "id": "27b1e4e5a0f57c65"
   },
   {
     "title": "知芽 Notebook Skill 的可信研究执行层：从检索到引用校验的工程拆解",
