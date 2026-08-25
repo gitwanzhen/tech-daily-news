@@ -936,6 +936,18 @@
     "id": "6fc113b368905685"
   },
   {
+    "title": "全能型 Agent covo-agent v0.0.7 发布：TUI 新增 LLM 内联自动补全",
+    "summary": "covo-agent 是一个运行在终端里的通用型 AI Agent，提供 general 与 code 两种工作模式，面向日常知识工作、软件开发、自动化与外部系统协作等场景。项目使用 Go 编写，采用 AGPL-3.0 开源协议。 项目简介...",
+    "full_content": "covo-agent 是一个运行在终端里的通用型 AI Agent，提供 general 与 code 两种工作模式，面向日常知识工作、软件开发、自动化与外部系统协作等场景。项目使用 Go 编写，采用 AGPL-3.0 开源协议。 项目简介 covo-agent 通过交互式 TUI 提供完整的终端工作流，核心能力包括： 多种运行方式：交互式 TUI、单次输出（--onesh...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-24",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502100",
+    "read_time": 1,
+    "id": "70dce483a0d4cf88"
+  },
+  {
     "title": "韩红基金会救护车供应商大门紧闭",
     "summary": "韩红基金会救护车供应商大门紧闭",
     "full_content": "韩红基金会救护车供应商大门紧闭",
