@@ -396,6 +396,18 @@
     "id": "b19957279e992d0a"
   },
   {
+    "title": "Disrupting a new covert influence campaign from Russia",
+    "summary": "OpenAI banned Russia-origin accounts using AI to promote a fake Israel-based think tank and a “sovereignty” index praisi...",
+    "full_content": "OpenAI banned Russia-origin accounts using AI to promote a fake Israel-based think tank and a “sovereignty” index praising Russia and criticizing the West.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-25",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+    "read_time": 1,
+    "id": "5bd6315049a12924"
+  },
+  {
     "title": "闭源模型生成图片的随机性怎么控制？",
     "summary": "同样的提示词，想从众多图片中选出满意的人脸，但是即梦、gpt-images2等都是基于第一次生成的人脸反复修改，相似度极高，这个问题怎么破",
     "full_content": "<p>同样的提示词，想从众多图片中选出满意的人脸，但是即梦、gpt-images2等都是基于第一次生成的人脸反复修改，相似度极高，这个问题怎么破</p>",
@@ -454,6 +466,18 @@
     "url": "https://www.oschina.net/news/502109",
     "read_time": 1,
     "id": "902138a4ec448b4b"
+  },
+  {
+    "title": "从GPU池化到节省token，上海开源大赛「智算云赛道」情报公开",
+    "summary": "2026 上海开源软件应用创新大赛正火热报名中，本次大赛由开源中国主办，总奖池 100 万，设 AI+工业软件、智算云、开源 AI 工具三个赛道。 其中「智算云」这条赛道，面向用云加速、简化或稳定 AI 运行的开源项目。从底层的异构算力调度...",
+    "full_content": "2026 上海开源软件应用创新大赛正火热报名中，本次大赛由开源中国主办，总奖池 100 万，设 AI+工业软件、智算云、开源 AI 工具三个赛道。 其中「智算云」这条赛道，面向用云加速、简化或稳定 AI 运行的开源项目。从底层的异构算力调度、GPU 池化、分布式训练，到上层的 AI 应用开发平台、模型部署服务、Serverless 推理、...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-25",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502117",
+    "read_time": 1,
+    "id": "4cf4b2fb815e0bd7"
   },
   {
     "title": "湖北长阳通报韩红基金会救护车",
@@ -976,6 +1000,42 @@
     "id": "74065b9e57e7ec0a"
   },
   {
+    "title": "网传爱情公寓回归季阵容",
+    "summary": "网传爱情公寓回归季阵容",
+    "full_content": "网传爱情公寓回归季阵容",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-25",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%BD%91%E4%BC%A0%E7%88%B1%E6%83%85%E5%85%AC%E5%AF%93%E5%9B%9E%E5%BD%92%E5%AD%A3%E9%98%B5%E5%AE%B9",
+    "read_time": 1,
+    "id": "122be652b51ed5b6"
+  },
+  {
+    "title": "肖战金鹰掉提",
+    "summary": "肖战金鹰掉提",
+    "full_content": "肖战金鹰掉提",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-25",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%82%96%E6%88%98%E9%87%91%E9%B9%B0%E6%8E%89%E6%8F%90",
+    "read_time": 1,
+    "id": "993195be610032d3"
+  },
+  {
+    "title": "宁波致1死4伤车祸司机突发疾病",
+    "summary": "宁波致1死4伤车祸司机突发疾病",
+    "full_content": "宁波致1死4伤车祸司机突发疾病",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-25",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%AE%81%E6%B3%A2%E8%87%B41%E6%AD%BB4%E4%BC%A4%E8%BD%A6%E7%A5%B8%E5%8F%B8%E6%9C%BA%E7%AA%81%E5%8F%91%E7%96%BE%E7%97%85",
+    "read_time": 1,
+    "id": "42858e2e6d41ec82"
+  },
+  {
     "title": "知芽 Notebook Skill 的可信研究执行层：从检索到引用校验的工程拆解",
     "summary": "知芽 Notebook Skill 的可信研究执行层：从检索到引用校验的工程拆解 当豆包周活 1.55 亿并成为 AI 超级入口，开发者面对的技术问题不只是“模型能不能回答”，还包括：答案中的论文是否",
     "full_content": "知芽 Notebook Skill 的可信研究执行层：从检索到引用校验的工程拆解 当豆包周活 1.55 亿并成为 AI 超级入口，开发者面对的技术问题不只是“模型能不能回答”，还包括：答案中的论文是否",
@@ -1130,6 +1190,42 @@
     "url": "https://juejin.cn/post/7677525375590629391",
     "read_time": 1,
     "id": "3bf9e049db7206d1"
+  },
+  {
+    "title": "Agent几种不同的执行方式",
+    "summary": "🧩 Agent 执行的核心方式 以下是Agent的主要执行方式对比： 执行方式 方法名 类型 核心特点与适用场景 同步调用 invoke() 同步 最基础的调用方式。传入单个输入，程序会阻塞直到Age",
+    "full_content": "🧩 Agent 执行的核心方式 以下是Agent的主要执行方式对比： 执行方式 方法名 类型 核心特点与适用场景 同步调用 invoke() 同步 最基础的调用方式。传入单个输入，程序会阻塞直到Age",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-25",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7677675037639065600",
+    "read_time": 1,
+    "id": "5fbb1d88cbe7db0a"
+  },
+  {
+    "title": "Spring Boot 3.2+ 新特性、Spring AI 核心架构与 API Key 安全管理技术文档",
+    "summary": "Spring Boot 3.2+ 新特性、Spring AI 核心架构与 API Key 安全管理技术文档 一、Spring Boot 3.2+ 核心新特性 Spring Boot 3.2 是一次以\"",
+    "full_content": "Spring Boot 3.2+ 新特性、Spring AI 核心架构与 API Key 安全管理技术文档 一、Spring Boot 3.2+ 核心新特性 Spring Boot 3.2 是一次以\"",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-25",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7677771411976978467",
+    "read_time": 1,
+    "id": "4459f9a991fca673"
+  },
+  {
+    "title": "Apache Maka：解决 AI 最大痛点，对话工具调用全部本地有据可查",
+    "summary": "Apache 基金会孵化中的一个 AI 代理运行时项目，核心理念是：你跟 AI 的每一次对话、每一次工具调用、每一个决策，都应该被记录下来，存在你自己的机器上，而不是云端。",
+    "full_content": "Apache 基金会孵化中的一个 AI 代理运行时项目，核心理念是：你跟 AI 的每一次对话、每一次工具调用、每一个决策，都应该被记录下来，存在你自己的机器上，而不是云端。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-25",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7677628658031771698",
+    "read_time": 1,
+    "id": "bc0c7e4ebffe558a"
   },
   {
     "title": "爸爸咪呀",
