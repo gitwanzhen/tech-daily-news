@@ -648,6 +648,18 @@
     "id": "5bd6315049a12924"
   },
   {
+    "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
+    "summary": "Jalapeño is a custom inference chip from OpenAI that delivers faster, more power-efficient AI inference, with higher thr...",
+    "full_content": "Jalapeño is a custom inference chip from OpenAI that delivers faster, more power-efficient AI inference, with higher throughput and lower latency for modern models.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-25",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/jalapeno-first-results",
+    "read_time": 1,
+    "id": "31f9b254385b9128"
+  },
+  {
     "title": "闭源模型生成图片的随机性怎么控制？",
     "summary": "同样的提示词，想从众多图片中选出满意的人脸，但是即梦、gpt-images2等都是基于第一次生成的人脸反复修改，相似度极高，这个问题怎么破",
     "full_content": "<p>同样的提示词，想从众多图片中选出满意的人脸，但是即梦、gpt-images2等都是基于第一次生成的人脸反复修改，相似度极高，这个问题怎么破</p>",
@@ -1516,6 +1528,30 @@
     "id": "207815c186bb4ffe"
   },
   {
+    "title": "13岁上海女孩靠AI三天赚1.8万元",
+    "summary": "13岁上海女孩靠AI三天赚1.8万元",
+    "full_content": "13岁上海女孩靠AI三天赚1.8万元",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-25",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D13%E5%B2%81%E4%B8%8A%E6%B5%B7%E5%A5%B3%E5%AD%A9%E9%9D%A0AI%E4%B8%89%E5%A4%A9%E8%B5%9A1.8%E4%B8%87%E5%85%83",
+    "read_time": 1,
+    "id": "6af06ee02458c948"
+  },
+  {
+    "title": "刘亦菲掉提金鹰奖最佳女主",
+    "summary": "刘亦菲掉提金鹰奖最佳女主",
+    "full_content": "刘亦菲掉提金鹰奖最佳女主",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-25",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%88%98%E4%BA%A6%E8%8F%B2%E6%8E%89%E6%8F%90%E9%87%91%E9%B9%B0%E5%A5%96%E6%9C%80%E4%BD%B3%E5%A5%B3%E4%B8%BB",
+    "read_time": 1,
+    "id": "06e461e5ce045a85"
+  },
+  {
     "title": "知芽 Notebook Skill 的可信研究执行层：从检索到引用校验的工程拆解",
     "summary": "知芽 Notebook Skill 的可信研究执行层：从检索到引用校验的工程拆解 当豆包周活 1.55 亿并成为 AI 超级入口，开发者面对的技术问题不只是“模型能不能回答”，还包括：答案中的论文是否",
     "full_content": "知芽 Notebook Skill 的可信研究执行层：从检索到引用校验的工程拆解 当豆包周活 1.55 亿并成为 AI 超级入口，开发者面对的技术问题不只是“模型能不能回答”，还包括：答案中的论文是否",
@@ -1706,6 +1742,18 @@
     "url": "https://juejin.cn/post/7677628658031771698",
     "read_time": 1,
     "id": "bc0c7e4ebffe558a"
+  },
+  {
+    "title": "ZGI 运行日志：还原任务与节点状态",
+    "summary": "智能体任务失败后，排查需要从整次运行下钻到具体节点，核对状态、耗时、前序关系、输入输出与错误信息。任务级和节点级记录连在一起，才能还原中断位置及影响范围。",
+    "full_content": "智能体任务失败后，排查需要从整次运行下钻到具体节点，核对状态、耗时、前序关系、输入输出与错误信息。任务级和节点级记录连在一起，才能还原中断位置及影响范围。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-25",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7677814079651807282",
+    "read_time": 1,
+    "id": "d8868d84c20583ba"
   },
   {
     "title": "爸爸咪呀",
