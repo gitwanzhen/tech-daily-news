@@ -552,6 +552,30 @@
     "id": "4cf4b2fb815e0bd7"
   },
   {
+    "title": "Linus Torvalds 的“地狱级调试”：AI 帮了大忙，但也多次准备放弃",
+    "summary": "Linus Torvalds 自己提交了一个 Intel Xe 内核图形驱动的补丁。这件事本身就不常见——Linux 图形驱动补丁通常不经过他手。 但真正让这次提交引人注目的，是 Linus 在 commit message 里写下的一段话...",
+    "full_content": "Linus Torvalds 自己提交了一个 Intel Xe 内核图形驱动的补丁。这件事本身就不常见——Linux 图形驱动补丁通常不经过他手。 但真正让这次提交引人注目的，是 Linus 在 commit message 里写下的一段话： &gt;&gt; 这是一次地狱级的调试（debug session from hell），AI 帮我做了大量粗活，帮了很大的忙。 &gt; &gt; 我想叫它不知疲倦的...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-25",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502120/linus-torvalds-debug-ai",
+    "read_time": 1,
+    "id": "cc29685aca0b0078"
+  },
+  {
+    "title": "Go Agent 框架 covonaut v1.0.8 发布：新增行内补全与多后端可观测性支持",
+    "summary": "covonaut 是一款使用 Go 语言编写的生产级 AI Agent 框架。框架提供了完整的 Agent 能力，包括智能体执行循环、工具系统与中间件、MCP 工具桥接、多 Agent 协作（Handoff）、DAG/Pregel 双模式图...",
+    "full_content": "covonaut 是一款使用 Go 语言编写的生产级 AI Agent 框架。框架提供了完整的 Agent 能力，包括智能体执行循环、工具系统与中间件、MCP 工具桥接、多 Agent 协作（Handoff）、DAG/Pregel 双模式图引擎、工作流编排、会话管理与分支、HTTP 服务，以及一套无第三方依赖的终端 UI（TUI）。模型接入方面支持 OpenAI、DeepSee...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-25",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502119",
+    "read_time": 1,
+    "id": "3738b0648cbb4d9d"
+  },
+  {
     "title": "湖北长阳通报韩红基金会救护车",
     "summary": "湖北长阳通报韩红基金会救护车",
     "full_content": "湖北长阳通报韩红基金会救护车",
@@ -1142,6 +1166,30 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%88%B1%E6%83%85%E5%85%AC%E5%AF%93%20%E7%8E%8B%E5%86%A0",
     "read_time": 1,
     "id": "86c0b04b4c6bd2f4"
+  },
+  {
+    "title": "警方确认失联中国女生无韩出境记录",
+    "summary": "警方确认失联中国女生无韩出境记录",
+    "full_content": "警方确认失联中国女生无韩出境记录",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-25",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%AD%A6%E6%96%B9%E7%A1%AE%E8%AE%A4%E5%A4%B1%E8%81%94%E4%B8%AD%E5%9B%BD%E5%A5%B3%E7%94%9F%E6%97%A0%E9%9F%A9%E5%87%BA%E5%A2%83%E8%AE%B0%E5%BD%95",
+    "read_time": 1,
+    "id": "1abf8f1cd0bd3c87"
+  },
+  {
+    "title": "原来大家都是这样防止被套话的",
+    "summary": "原来大家都是这样防止被套话的",
+    "full_content": "原来大家都是这样防止被套话的",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-25",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%8E%9F%E6%9D%A5%E5%A4%A7%E5%AE%B6%E9%83%BD%E6%98%AF%E8%BF%99%E6%A0%B7%E9%98%B2%E6%AD%A2%E8%A2%AB%E5%A5%97%E8%AF%9D%E7%9A%84",
+    "read_time": 1,
+    "id": "eb9a5ac1b9336582"
   },
   {
     "title": "知芽 Notebook Skill 的可信研究执行层：从检索到引用校验的工程拆解",
