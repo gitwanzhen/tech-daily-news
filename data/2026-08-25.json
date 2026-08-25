@@ -1,5 +1,17 @@
 [
   {
+    "title": "Funding better evaluations of AI’s impact on wellbeing",
+    "summary": "We’re launching a $5 million grant program to fund independent research into how AI impacts users’ wellbeing. The progra...",
+    "full_content": "<article><div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__hero\"><div class=\"PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper\"><div class=\"Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-module__WyGOtq__aspect-wide Illustration-module-scss-module__WyGOtq__padding-lg Illustration-module-scss-module__WyGOtq__radius-lg bg-heather\"><div class=\"Illustration-module-scss-module__WyGOtq__inner\"><img alt=\"Funding better evaluations of AI’s impact on wellbeing\" class=\"\" height=\"1000\" src=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/f6a742f45bdb584cdffd3f00d54751b12bbee2ba-1000x1000.svg\" width=\"1000\" /></div></div></div></div><div class=\"page-wrapper\"><article><div class=\"\"><div class=\"Body-module-scss-module__z40yvW__body\"><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">We’re launching a $5 million grant program to fund independent research into how AI impacts users’ wellbeing. The program will provide direct funding, access to our models, and technical support to grantees building open-source evaluations that help the AI industry measure how our models affect those who use them. Grantees will work fully independently, and will publish their work as open-source projects that any developer can make use of.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">AI systems have become central to how many people work, learn, and solve problems. They’ve also become conversational partners and can be <a href=\"https://www.anthropic.com/news/how-people-use-claude-for-support-advice-and-companionship\">sources of emotional support</a> during difficult times. But as an industry, we are still working towards developing clear standards for how models should behave in th…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-25",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/wellbeing-research-grants",
+    "read_time": 10,
+    "id": "2bd96a69eff19fdd"
+  },
+  {
     "title": "VCTCN第二赛段季后赛数据雷达图",
     "summary": "VCTCN第二赛段季后赛数据雷达图",
     "full_content": "VCTCN第二赛段季后赛数据雷达图<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
@@ -658,6 +670,18 @@
     "url": "https://openai.com/index/jalapeno-first-results",
     "read_time": 1,
     "id": "31f9b254385b9128"
+  },
+  {
+    "title": "The full stack behind abundant intelligence",
+    "summary": "OpenAI CFO Sarah Friar explains how advances across chips, compute, models, and products compound to deliver more useful...",
+    "full_content": "OpenAI CFO Sarah Friar explains how advances across chips, compute, models, and products compound to deliver more useful intelligence at greater scale and lower cost.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-25",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
+    "read_time": 1,
+    "id": "1c0de2ab32295e46"
   },
   {
     "title": "闭源模型生成图片的随机性怎么控制？",
@@ -1754,6 +1778,18 @@
     "url": "https://juejin.cn/post/7677814079651807282",
     "read_time": 1,
     "id": "d8868d84c20583ba"
+  },
+  {
+    "title": "Vibe Coding 上头之后，我开始用 SDD 给 AI 编程加一张“施工图”",
+    "summary": "第一次用 AI Coding Agent 写项目，体验往往非常爽。 你只需要说一句： 几分钟后，目录建好了，接口写好了，页面也能打开。两千行代码摆在面前，仿佛一个下午就完成了过去一周的工作。 但继续开",
+    "full_content": "第一次用 AI Coding Agent 写项目，体验往往非常爽。 你只需要说一句： 几分钟后，目录建好了，接口写好了，页面也能打开。两千行代码摆在面前，仿佛一个下午就完成了过去一周的工作。 但继续开",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-25",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7677878351721431050",
+    "read_time": 1,
+    "id": "2d93a26b411b649c"
   },
   {
     "title": "爸爸咪呀",
