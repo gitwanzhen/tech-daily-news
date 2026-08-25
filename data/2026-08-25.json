@@ -684,6 +684,18 @@
     "id": "1c0de2ab32295e46"
   },
   {
+    "title": "Introducing the Admin plugin for ChatGPT Work and Codex",
+    "summary": "Use the Admin plugin for ChatGPT Work and Codex to analyze workspace usage, manage members and permissions, adjust limit...",
+    "full_content": "Use the Admin plugin for ChatGPT Work and Codex to analyze workspace usage, manage members and permissions, adjust limits, and act on admin requests.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-25",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/introducing-admin-plugin",
+    "read_time": 1,
+    "id": "bbe7f12da309c369"
+  },
+  {
     "title": "闭源模型生成图片的随机性怎么控制？",
     "summary": "同样的提示词，想从众多图片中选出满意的人脸，但是即梦、gpt-images2等都是基于第一次生成的人脸反复修改，相似度极高，这个问题怎么破",
     "full_content": "<p>同样的提示词，想从众多图片中选出满意的人脸，但是即梦、gpt-images2等都是基于第一次生成的人脸反复修改，相似度极高，这个问题怎么破</p>",
