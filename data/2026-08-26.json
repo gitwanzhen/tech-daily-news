@@ -624,6 +624,18 @@
     "id": "042d004afab5443b"
   },
   {
+    "title": "How loveholidays is making everyone a builder with Codex",
+    "summary": "Discover how loveholidays uses OpenAI Codex to make software development accessible across the business, helping teams t...",
+    "full_content": "Discover how loveholidays uses OpenAI Codex to make software development accessible across the business, helping teams turn ideas into products faster.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-26",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/loveholidays",
+    "read_time": 1,
+    "id": "d8bbd65ee6442256"
+  },
+  {
     "title": "从导航工具到AI基础设施，上海开源大赛百度地图命题公布",
     "summary": "2026 年的 AI 正在吞噬一切，在线地图也在经历身份转变。 过去地图只是导航工具，现在已然成为 AI 时代的基础设施，给智能体和大模型应用提供位置感知能力。智能定位、路线规划、时空数据这些能力，正在从“给 App 调用”变成“给 AI ...",
     "full_content": "2026 年的 AI 正在吞噬一切，在线地图也在经历身份转变。 过去地图只是导航工具，现在已然成为 AI 时代的基础设施，给智能体和大模型应用提供位置感知能力。智能定位、路线规划、时空数据这些能力，正在从“给 App 调用”变成“给 AI 调用”。这个转变背后，是两个真实的需求场景。 一个是工业场景。工业数字化让工业园区...",
@@ -634,6 +646,54 @@
     "url": "https://www.oschina.net/news/502131",
     "read_time": 1,
     "id": "1b59dabe3eb5b51d"
+  },
+  {
+    "title": "“05 后”开发者两周建起 20K Star 的开源项目社区",
+    "summary": "要说本月技术人朋友圈里最火的东西，横空出世的 DeepSeek Harness 当之无愧。不少朋友都在 DSH 刚出来的那晚通宵把玩，各大开源技术交流群热闹非凡，基于 DSH 的二创项目很快攻占各平台趋势热榜。 但 DSH 官方版本要装 N...",
+    "full_content": "要说本月技术人朋友圈里最火的东西，横空出世的 DeepSeek Harness 当之无愧。不少朋友都在 DSH 刚出来的那晚通宵把玩，各大开源技术交流群热闹非凡，基于 DSH 的二创项目很快攻占各平台趋势热榜。 但 DSH 官方版本要装 Node.js，要从命令行启动本地服务，要处理一堆环境问题，很多普通用户想试试，卡在第一步就放弃了。就...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-26",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502135",
+    "read_time": 1,
+    "id": "0eafd309bec61ffd"
+  },
+  {
+    "title": "DeepSeek 今年前七个月营收约 4.75 亿元",
+    "summary": "5000 亿。 这是 DeepSeek 第二轮融资的投前估值。按当前汇率，约合 740 亿美元。一家成立不到三年的公司，正在以这个数字向资本市场递出投名状。 据《南华早报》和 The Information 从知情人士处获得的消息，Deep...",
+    "full_content": "5000 亿。 这是 DeepSeek 第二轮融资的投前估值。按当前汇率，约合 740 亿美元。一家成立不到三年的公司，正在以这个数字向资本市场递出投名状。 据《南华早报》和 The Information 从知情人士处获得的消息，DeepSeek 正接近完成新一轮约 500 亿元人民币的融资，预计 8 月底前关闭。老股东 Monolith、拾象资本和宁德时代...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-26",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502134",
+    "read_time": 1,
+    "id": "fc3b47bd3cce80cc"
+  },
+  {
+    "title": "PHASE-Tree｜为长线 AI 角色构建可演化的人格骨架",
+    "summary": "今年 6 月，NVIDIA 在 Unreal Fest 2026 公布了面向 Unreal Engine 5 的本地 AI 角色工具，并展示了将 NPC 的角色设定与具体表演过程分开的工作流，让角色能够根据现场情况行动和回应，同时保持角色一...",
+    "full_content": "今年 6 月，NVIDIA 在 Unreal Fest 2026 公布了面向 Unreal Engine 5 的本地 AI 角色工具，并展示了将 NPC 的角色设定与具体表演过程分开的工作流，让角色能够根据现场情况行动和回应，同时保持角色一致性。 当 AI 角色进入真实游戏运行时，一句台词通常会同时受到多组信号影响。 Quest Flag 记录任务已经推进到哪个分支...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-26",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502133",
+    "read_time": 1,
+    "id": "d1e4963b8b753335"
+  },
+  {
+    "title": "PHASE-Tree｜CPC 不只要会聊、会打，还要会成长：AI 队友的状态演化难题",
+    "summary": "今年 6 月，KRAFTON 与 NVIDIA 将 PUBG Ally 带入公开 Beta。这名 AI 队友能记住玩家偏好的武器、常去的跳点和过往战绩，并在下一局继续使用这些信息。跨局记忆已经进入真实游戏测试，背后的开发团队则需要进一步回答...",
+    "full_content": "今年 6 月，KRAFTON 与 NVIDIA 将 PUBG Ally 带入公开 Beta。这名 AI 队友能记住玩家偏好的武器、常去的跳点和过往战绩，并在下一局继续使用这些信息。跨局记忆已经进入真实游戏测试，背后的开发团队则需要进一步回答，角色记得过去以后，它的立场和说话方式会不会跟着经历变化？ 假设我们在一段长线游戏剧情里。 一名年...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-26",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502132",
+    "read_time": 1,
+    "id": "41ccd648fd0c16c1"
   },
   {
     "title": "蔡徐坤代言 起亚全新赛图斯上市",
@@ -1309,6 +1369,78 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%AD%99%E5%8D%83%E7%AC%AC%E4%B8%80%E9%9B%86%E7%A9%BF%E7%9A%84%E5%81%87%E5%90%8D%E7%89%8C",
     "read_time": 1,
     "id": "7ac92eaa20750090"
+  },
+  {
+    "title": "1组数据案例解读上半年中国经济",
+    "summary": "1组数据案例解读上半年中国经济",
+    "full_content": "1组数据案例解读上半年中国经济",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D1%E7%BB%84%E6%95%B0%E6%8D%AE%E6%A1%88%E4%BE%8B%E8%A7%A3%E8%AF%BB%E4%B8%8A%E5%8D%8A%E5%B9%B4%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E",
+    "read_time": 1,
+    "id": "8b0c75250b8a54ba"
+  },
+  {
+    "title": "你的第一个个人机器人",
+    "summary": "你的第一个个人机器人",
+    "full_content": "你的第一个个人机器人",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E4%B8%AA%E4%BA%BA%E6%9C%BA%E5%99%A8%E4%BA%BA",
+    "read_time": 1,
+    "id": "4d94938adc4395dd"
+  },
+  {
+    "title": "尼泊尔北部山洪致近400人失联",
+    "summary": "尼泊尔北部山洪致近400人失联",
+    "full_content": "尼泊尔北部山洪致近400人失联",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%B0%BC%E6%B3%8A%E5%B0%94%E5%8C%97%E9%83%A8%E5%B1%B1%E6%B4%AA%E8%87%B4%E8%BF%91400%E4%BA%BA%E5%A4%B1%E8%81%94",
+    "read_time": 1,
+    "id": "5aace6e32be92091"
+  },
+  {
+    "title": "年轻人真的把多运动听进去了",
+    "summary": "年轻人真的把多运动听进去了",
+    "full_content": "年轻人真的把多运动听进去了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9C%9F%E7%9A%84%E6%8A%8A%E5%A4%9A%E8%BF%90%E5%8A%A8%E5%90%AC%E8%BF%9B%E5%8E%BB%E4%BA%86",
+    "read_time": 1,
+    "id": "d9ed10dbb27c1e42"
+  },
+  {
+    "title": "爱情公寓官方换头像",
+    "summary": "爱情公寓官方换头像",
+    "full_content": "爱情公寓官方换头像",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%88%B1%E6%83%85%E5%85%AC%E5%AF%93%E5%AE%98%E6%96%B9%E6%8D%A2%E5%A4%B4%E5%83%8F",
+    "read_time": 1,
+    "id": "f45f00bb59fcd2ee"
+  },
+  {
+    "title": "刘翔晒2004年雅典奥运会号码布",
+    "summary": "刘翔晒2004年雅典奥运会号码布",
+    "full_content": "刘翔晒2004年雅典奥运会号码布",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-26",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%88%98%E7%BF%94%E6%99%922004%E5%B9%B4%E9%9B%85%E5%85%B8%E5%A5%A5%E8%BF%90%E4%BC%9A%E5%8F%B7%E7%A0%81%E5%B8%83",
+    "read_time": 1,
+    "id": "e9e4f5de9d7da596"
   },
   {
     "title": "AI 应用的可观测性设计：从 OpenTelemetry GenAI 语义约定到生产级落地架构",
