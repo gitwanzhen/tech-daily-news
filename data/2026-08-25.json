@@ -804,6 +804,18 @@
     "id": "0d266a65808c0b41"
   },
   {
+    "title": "告别背命令：Pragmatic AI Shell 把自然语言带进日常终端操作",
+    "summary": "用自然语言驱动终端，Pragmatic AI Shell 让运维排障说话就行 还在为记不住 lsof、awk、find 的参数写法头疼？还在 ps + netstat + 文档之间来回切换？Pragmatic AI Shell（smartc...",
+    "full_content": "用自然语言驱动终端，Pragmatic AI Shell 让运维排障&quot;说话就行&quot; 还在为记不住 lsof、awk、find 的参数写法头疼？还在 ps + netstat + 文档之间来回切换？Pragmatic AI Shell（smartcli） 试图改变这一切——你只需要用自然语言描述意图，它替你生成命令，安全过滤后确认执行，全程可审计。 一句话介绍 你说人话，它出命令...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-25",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502123",
+    "read_time": 1,
+    "id": "ee4b9ad90722206d"
+  },
+  {
     "title": "湖北长阳通报韩红基金会救护车",
     "summary": "湖北长阳通报韩红基金会救护车",
     "full_content": "湖北长阳通报韩红基金会救护车",
