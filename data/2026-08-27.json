@@ -118,5 +118,53 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%B0%8F%E5%A4%A9%E6%89%8D%E8%BF%98%E8%A6%81%E9%80%BC%E7%96%AF%E5%A4%9A%E5%B0%91%E5%AE%B6%E9%95%BF",
     "read_time": 1,
     "id": "a11d8418f08a8077"
+  },
+  {
+    "title": "惠英红回应郭晓婷长得像",
+    "summary": "惠英红回应郭晓婷长得像",
+    "full_content": "惠英红回应郭晓婷长得像",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-27",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%83%A0%E8%8B%B1%E7%BA%A2%E5%9B%9E%E5%BA%94%E9%83%AD%E6%99%93%E5%A9%B7%E9%95%BF%E5%BE%97%E5%83%8F",
+    "read_time": 1,
+    "id": "8ff0da90857ccfba"
+  },
+  {
+    "title": "吉隆口岸仍处于失联状态",
+    "summary": "吉隆口岸仍处于失联状态",
+    "full_content": "吉隆口岸仍处于失联状态",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-08-27",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%90%89%E9%9A%86%E5%8F%A3%E5%B2%B8%E4%BB%8D%E5%A4%84%E4%BA%8E%E5%A4%B1%E8%81%94%E7%8A%B6%E6%80%81",
+    "read_time": 1,
+    "id": "1d565b061c5348e0"
+  },
+  {
+    "title": "从“听得懂”到“干得了”：工业大模型落地工厂的三层进化路线",
+    "summary": "未来衡量一个工业大模型的关键，也许不再只是“模型有多大、参数有多少”，而是一个更加朴素的问题： 它到底能不能在真实的工厂里，把事情做好。",
+    "full_content": "未来衡量一个工业大模型的关键，也许不再只是“模型有多大、参数有多少”，而是一个更加朴素的问题： 它到底能不能在真实的工厂里，把事情做好。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-27",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7678237761569210377",
+    "read_time": 1,
+    "id": "af98bf7a321e9010"
+  },
+  {
+    "title": "GLM-5.3-Flash 发布：追平 Opus 4.8 的智力，1/40 的价格，跑在国产芯片上",
+    "summary": "智谱开源 GLM-5.3-Flash：320B-A18B 原生多模态模型，AA 智能指数追平 Claude Opus 4.8，限时折扣价约其 1/40，推理流量全部跑在国产芯片上。",
+    "full_content": "智谱开源 GLM-5.3-Flash：320B-A18B 原生多模态模型，AA 智能指数追平 Claude Opus 4.8，限时折扣价约其 1/40，推理流量全部跑在国产芯片上。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-27",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7678214547980582952",
+    "read_time": 1,
+    "id": "180d7c8920f49a2d"
   }
 ]
