@@ -1,5 +1,29 @@
 [
   {
+    "title": "Previewing the Model Hardware Standard",
+    "summary": "We’re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely op...",
+    "full_content": "<article><div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__hero\"></div><div class=\"page-wrapper\"><article><div class=\"\"><div class=\"Body-module-scss-module__z40yvW__body\"><div class=\"Body-module-scss-module__z40yvW__media-column Body-module-scss-module__z40yvW__inline\"><div class=\"Video-module-scss-module__qJNyFq__post-wrapper\"><figure class=\"Video-module-scss-module__qJNyFq__post-video-container\"><!--$!--><!--/$--></figure></div></div><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">We’re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers. MHS enables AI agents to operate multiple lab and manufacturing instruments, such as microscopes, liquid handlers, and robotic arms, in parallel, and perform intricate tasks ranging from routine drug discovery experiments to laser calibration on a quantum computer. The development of MHS began as a collaboration between Anthropic and <a href=\"https://www.hhmi.org/research/janelia\" rel=\"noopener noreferrer\" target=\"_blank\">HHMI Janelia Research Campus</a>.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">It typically takes a lab or manufacturing facility weeks, if not months, to set up and integrate their hardware. Most devices don’t communicate with each other, instead requiring specialists to build bespoke integrations. MHS reduces this integration work to hours or minutes. And by incorporating AI into these tools, MHS also helps researchers and engineers more readily orchestrate autonomous, round-the-clock experiments and workflows, with agents able to reason through each step in an experiment,…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-27",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+    "read_time": 9,
+    "id": "71a01a86eaeb1bbe"
+  },
+  {
+    "title": "Expanding our support for scientists",
+    "summary": "As Claude becomes increasingly capable at scientific research, we are focusing on building products and programs to supp...",
+    "full_content": "<article><div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__hero\"><div class=\"PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper\"><div class=\"Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-module__WyGOtq__aspect-wide Illustration-module-scss-module__WyGOtq__padding-lg Illustration-module-scss-module__WyGOtq__radius-lg bg-olive\"><div class=\"Illustration-module-scss-module__WyGOtq__inner\"><img alt=\" Expanding our support for scientists\" class=\"\" height=\"1000\" src=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/46e4aa7ea208ed440d5bd9e9e3a0ee66bc336ff1-1000x1000.svg\" width=\"1000\" /></div></div></div></div><div class=\"page-wrapper\"><article><div class=\"\"><div class=\"Body-module-scss-module__z40yvW__body\"><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">As Claude becomes increasingly capable at scientific research, we are focusing on building products and programs to support the research community. In June, we launched <a href=\"https://www.anthropic.com/news/claude-science-ai-workbench\">Claude Science</a>, a product that integrates the tools that researchers most commonly use, produces auditable artifacts, and provides flexible access to computing resources. We have also continued to broaden our <a href=\"https://www.anthropic.com/news/ai-for-science-program\">AI for Science program</a>, which provides free credits to researchers working on high-impact scientific projects. </p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Starting today, we are announcing a significant expansion of these efforts. We are opening 10,000 seats for scientists around the world to access Claude subscriptions for free and at discounted rates for one year through our new…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-27",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/expanding-support-for-scientists",
+    "read_time": 10,
+    "id": "29c00dacad10cb79"
+  },
+  {
     "title": "西藏吉隆泥石流已致3死265失联",
     "summary": "西藏吉隆泥石流已致3死265失联",
     "full_content": "西藏吉隆泥石流已致3死265失联<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221213/eaf2dd702d7cc14d8d9511190245d057/lrx9rnKo24.png\" />",
@@ -250,6 +274,18 @@
     "url": "https://openai.com/index/expanding-our-presence-in-brazil",
     "read_time": 1,
     "id": "250ea25ba377eba7"
+  },
+  {
+    "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
+    "summary": "A randomized study of more than 1,000 students examines ChatGPT, critical thinking, originality, and student performance...",
+    "full_content": "A randomized study of more than 1,000 students examines ChatGPT, critical thinking, originality, and student performance on a real-world university assignment.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-27",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+    "read_time": 1,
+    "id": "5250e71c3d45fa8a"
   },
   {
     "title": "Agent 协作工作空间 Lody 开源：共享、隔离与持久化",
@@ -670,5 +706,29 @@
     "url": "https://juejin.cn/post/7678533346700541988",
     "read_time": 1,
     "id": "89e13bdbac7aeeec"
+  },
+  {
+    "title": "Agent总出错，什么时候才该训练模型？",
+    "summary": "一个电商客服 Agent 上线后，连续出了三种问题：退货政策答成了去年的版本；查询订单时没有调用物流接口；用户要求退款时，它又直接执行了操作。 当出现这些情况后，有些团队的第一反应是：“模型不够聪明，",
+    "full_content": "一个电商客服 Agent 上线后，连续出了三种问题：退货政策答成了去年的版本；查询订单时没有调用物流接口；用户要求退款时，它又直接执行了操作。 当出现这些情况后，有些团队的第一反应是：“模型不够聪明，",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-27",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7678618274795733043",
+    "read_time": 1,
+    "id": "f2cec82c851bf892"
+  },
+  {
+    "title": "ZGI 记忆隔离：多人共用不串号",
+    "summary": "同一智能体服务多人时，长期记忆需要绑定明确的用户范围。ZGI Agent Memory 使用命名 Slot 保存有限内容，并按账户或终端用户标识读写，降低偏好、项目背景和长期指令交叉复用的风险。",
+    "full_content": "同一智能体服务多人时，长期记忆需要绑定明确的用户范围。ZGI Agent Memory 使用命名 Slot 保存有限内容，并按账户或终端用户标识读写，降低偏好、项目背景和长期指令交叉复用的风险。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-27",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7678556373495447595",
+    "read_time": 1,
+    "id": "108b5d824bd6dd68"
   }
 ]
