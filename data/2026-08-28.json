@@ -192,6 +192,18 @@
     "id": "c52ca6e63c176dd4"
   },
   {
+    "title": "Supporting Thailand’s next generation of AI startups",
+    "summary": "OpenAI and Thailand’s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI...",
+    "full_content": "OpenAI and Thailand’s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI prototypes into trusted products.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-28",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
+    "read_time": 1,
+    "id": "8a2a589ad9966828"
+  },
+  {
     "title": "内核跃迁，智能原生 | openKylin 3.0 正式发布",
     "summary": "万亿Token免费送 OpenAtom openKylin（以下简称openKylin）3.0 版本正式发布！本次版本升级，openKylin 将系统内核跨代升级至 Linux 7.0，完成 180 余个核心组件全面迭代；构建智能体开放底座...",
     "full_content": "万亿Token免费送 OpenAtom openKylin（以下简称&quot;openKylin&quot;）3.0 版本正式发布！本次版本升级，openKylin 将系统内核跨代升级至 Linux 7.0，完成 180 余个核心组件全面迭代；构建智能体开放底座，让 AI 贯穿系统全链路；隔空手势、语音输入、屏幕朗读等多模态交互革新；场景覆盖从智能桌面延伸至移动端、服务器等全场景。...",
@@ -202,6 +214,54 @@
     "url": "https://www.oschina.net/news/502168",
     "read_time": 1,
     "id": "e57148a1cdd16cfd"
+  },
+  {
+    "title": "🔥 新增 DeepSeek V4 Flash，支持推理续调与联网搜索：开源 AI 无代码平台 NocoBase",
+    "summary": "汇总一周产品更新日志，最新发布可前往我们的博客查看。 NocoBase 目前更新包括三个分支： main、next 和 develop。** main： 截至目前最稳定的版本，推荐安装此版本。 next： 包含即将发布的新功能，经过初步测试...",
+    "full_content": "汇总一周产品更新日志，最新发布可前往我们的博客查看。 NocoBase 目前更新包括三个分支： main、next 和 develop。** main： 截至目前最稳定的版本，推荐安装此版本。 next： 包含即将发布的新功能，经过初步测试的版本，可能存在部分已知或未知问题。主要面向测试用户，用于收集反馈和进一步优化功能。适合愿意提前体验...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-28",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502182",
+    "read_time": 1,
+    "id": "40fc4b58f6ace637"
+  },
+  {
+    "title": "给 AI 以“情感”，魔珐科技寻找有活人感的 Agent 作品",
+    "summary": "大模型技术普及到今天，AI 应用的交互形态反而显得有点缺少“人情味”。大部分 AI 产品停留在文本对话框或单向语音播报，没有形象、没有表情、没有肢体表达，冷冰冰的界面很难传递温度和信任感。展厅讲解、情感陪伴、教育科普、文旅导览、人形机器人陪...",
+    "full_content": "大模型技术普及到今天，AI 应用的交互形态反而显得有点缺少“人情味”。大部分 AI 产品停留在文本对话框或单向语音播报，没有形象、没有表情、没有肢体表达，冷冰冰的界面很难传递温度和信任感。展厅讲解、情感陪伴、教育科普、文旅导览、人形机器人陪伴这些场景，要的是一个能说话、有表情、会动作、能实时回应的“人”...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-28",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502174",
+    "read_time": 1,
+    "id": "4927822ef83f6b7f"
+  },
+  {
+    "title": "产品更新｜Memmy 支持 Linux 啦！",
+    "summary": "v1.1.1 已正式发布，Linux CLI 安装资源已上线 ～ 大家千呼万唤的，Memmy 正式支持 Linux 啦！ 很多开发者的 AI 工作发生在终端里：在本地工作站处理项目，在远程开发环境中运行 Agent，或在 Linux 服务器...",
+    "full_content": "v1.1.1 已正式发布，Linux CLI 安装资源已上线 ～ 大家千呼万唤的，Memmy 正式支持 Linux 啦！ 很多开发者的 AI 工作发生在终端里：在本地工作站处理项目，在远程开发环境中运行 Agent，或在 Linux 服务器上持续执行任务。项目背景、过去的排查过程、常用偏好和已经验证过的方案，会随着一次次会话逐渐积累。 这次 Linu...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-28",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502173",
+    "read_time": 1,
+    "id": "212551eb654ecdf7"
+  },
+  {
+    "title": "【AI 智能运维平台】本周更新：APM应用性能监测功能正式发布，性能瓶颈一目了然",
+    "summary": "Blueking Lite 是一个 AI First 的轻量版运维产品，具有部署资源要求低、使用成本低、渐进式体验等特点，为运维管理员提供日常运维中的必备工具。 :hammer_and_wrench: 系统管理 • 安全策略支持 OTP 白...",
+    "full_content": "Blueking Lite 是一个 AI First 的轻量版运维产品，具有部署资源要求低、使用成本低、渐进式体验等特点，为运维管理员提供日常运维中的必备工具。 :hammer_and_wrench: 系统管理 • 安全策略支持 OTP 白名单 • 用户管理支持OTP解绑 • AD 用户同步支持配置多个拉取 DN :desktop_computer: 节点管理 • Windows 远程安装...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-28",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502170",
+    "read_time": 1,
+    "id": "810aab78232ed2c6"
   },
   {
     "title": "赵心童登顶世界第一",
@@ -418,6 +478,30 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%90%89%E9%9A%86%E5%8F%A3%E5%B2%B8%E6%95%91%E6%8F%B4%E4%BB%BB%E5%8A%A1%E6%9A%82%E7%BC%93",
     "read_time": 1,
     "id": "685a33733b96ebc6"
+  },
+  {
+    "title": "用 AI 打造高品质 Web 应用",
+    "summary": "一份面向 2026 年初 AI 工程师群体的内部调研显示,受访者将\"AI 生成的产物能否直接用于生产\"列为头号焦虑,占比远高于\"AI 会不会取代我\"。这恰好对应 Vibe Coding 的核心命题",
+    "full_content": "一份面向 2026 年初 AI 工程师群体的内部调研显示,受访者将\"AI 生成的产物能否直接用于生产\"列为头号焦虑,占比远高于\"AI 会不会取代我\"。这恰好对应 Vibe Coding 的核心命题",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-28",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7678975240299216948",
+    "read_time": 1,
+    "id": "41beaa5856c66070"
+  },
+  {
+    "title": "用 AI 辅助代码审查：提交前检查什么",
+    "summary": "提交代码之前，你通常会做几件事： 看一遍修改的代码。 运行项目和测试。 检查有没有遗漏的功能。 等待同事进行 Code Review。 现在，我们还可以增加一个步骤： AI 可以帮助我们发现一些容易忽",
+    "full_content": "提交代码之前，你通常会做几件事： 看一遍修改的代码。 运行项目和测试。 检查有没有遗漏的功能。 等待同事进行 Code Review。 现在，我们还可以增加一个步骤： AI 可以帮助我们发现一些容易忽",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-28",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7678983000215470126",
+    "read_time": 1,
+    "id": "3ed5e201981c0cef"
   },
   {
     "title": "肖申克的救赎",
