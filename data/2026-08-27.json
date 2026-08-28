@@ -288,6 +288,18 @@
     "id": "5250e71c3d45fa8a"
   },
   {
+    "title": "我搭建的神经网络代码哪里出了问题？",
+    "summary": "有人能帮忙看一下我自定义的卷积神经网络的代码哪里出了问题吗，我想做的是图像分类，循环的过程中验证集的损失值越来越大而且accuracy一直在0.1徘徊（我是小白真的不知道怎么办了）#调用库\nimport numpy as np\n\nimpor...",
+    "full_content": "<p>有人能帮忙看一下我自定义的卷积神经网络的代码哪里出了问题吗，我想做的是图像分类，循环的过程中验证集的损失值越来越大而且accuracy一直在0.1徘徊（我是小白真的不知道怎么办了）</p><pre><code class=\"python\">#调用库\nimport numpy as np\n\nimport matplotlib.pyplot as plt  #画图\n  \nfrom PIL import Image #读图\nimport os\nimport splitfolders  #自动划分数据集\nfrom tensorflow.keras.preprocessing.image import ImageDataGenerator\nfrom tensorflow.keras.models import Sequential\nfrom tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout\nfrom tensorflow.keras.optimizers import Adam\n\nfrom sklearn.metrics import confusion_matrix,classification_report\nimport seaborn as sns\n#数据集划分\n\ninput_folder=r&quot;D:\\machine learning\\rename_picture&quot;\noutput_folder=r&quot;D:\\machine learning\\split_picture&quot;\n\nsplitfolders.ratio(input_folder,output=output_folder,seed=123,ratio=(0.8,0.2))  #123固定每次划分一致\n\ntrain_path=output_folder+r&quot;\\train&quot;\nval_path=output_folder+r&quot;\\val&quot;\n#处理读取数据\n\nimg_size=(128,128)\nbatch_size=32\n\n#归一化像素\ntrain_datagen=ImageDataGenerator(rescale=1./255,\n                                 rotation_range=15,\n                                 width_shift_range=0.1,\n                                 height_shift_range=0.1,\n                                 zoom_range=0.1,\n                                 horizontal_flip=True)\nval_datagen=ImageDataGenerator(rescale=1./255)\n\n#统一尺寸\ntrain_generator=train_datagen.flow_from_directory(train_path,\n                                                  target_size=img_size,batch_size=batch_size,\n                                                  class_mode=&quot;categorical&quot;,shuffle=True)\nval_generator=val_datagen.flow_from_directory(val_path,\n                                              target_size=img_size,batch_size=batch_size,\n                                              class_mode=&quot;categorical&quot;…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-27",
+    "source": "SegmentFault",
+    "url": "https://segmentfault.com/q/1010000048218350",
+    "read_time": 8,
+    "id": "1f0242f519bc42ee"
+  },
+  {
     "title": "Agent 协作工作空间 Lody 开源：共享、隔离与持久化",
     "summary": "Agent 的对话、运行状态和代码改动是团队协作的新战场，但混乱也是。Lody 的开源版本试图解决这个问题。 Lody 定位是 Coding Agent 协作工作空间，8 月 26 日正式开源了 CLI 和本地桌面端。简单说，它把散在不同成...",
     "full_content": "Agent 的对话、运行状态和代码改动是团队协作的新战场，但混乱也是。Lody 的开源版本试图解决这个问题。 Lody 定位是 Coding Agent 协作工作空间，8 月 26 日正式开源了 CLI 和本地桌面端。简单说，它把散在不同成员、Agent 和机器里的会话、运行状态与代码改动集中到一个空间中。团队成员可以直接打开彼此的会话继续讨论...",
