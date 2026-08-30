@@ -646,5 +646,41 @@
     "url": "https://juejin.cn/post/7679053043288735750",
     "read_time": 1,
     "id": "1810a73e7121b700"
+  },
+  {
+    "title": "AI 范式越迁：使用 XXL-BOOT SKILL 实现一句话直生业务",
+    "summary": "随着大模型编程助手的成熟，业务交付范式正在被重塑。从「一行 SQL 生成代码」到「一句需求直生业务」——业务开发正式进入 AI 范式新时代。",
+    "full_content": "随着大模型编程助手的成熟，业务交付范式正在被重塑。从「一行 SQL 生成代码」到「一句需求直生业务」——业务开发正式进入 AI 范式新时代。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-30",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7679618338583183370",
+    "read_time": 1,
+    "id": "a255806486202cf6"
+  },
+  {
+    "title": "XXL-BOOT v2.1.0 发布：React 全新上线 · 全栈 TypeScript · AI+SKILL 驱动开发",
+    "summary": "围绕「**前端工程全面 TypeScript 化**」「**React 全新前端版本交付**」「**AI + SKILL 驱动开发**」三大核心亮点展开，让中后台业务开发从此进入 AI 辅助时代。",
+    "full_content": "围绕「**前端工程全面 TypeScript 化**」「**React 全新前端版本交付**」「**AI + SKILL 驱动开发**」三大核心亮点展开，让中后台业务开发从此进入 AI 辅助时代。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-30",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7679458659610607666",
+    "read_time": 1,
+    "id": "2c2f27c6f9377fe3"
+  },
+  {
+    "title": "ZGI 文件产物：生成报告后怎样交付",
+    "summary": "智能体生成报告、表格或图片后，交付环节还要处理任务归属、访问权限、出口和保留时间，ZGI 的文件对象与运行记录可帮助把产物接回业务流程。",
+    "full_content": "智能体生成报告、表格或图片后，交付环节还要处理任务归属、访问权限、出口和保留时间，ZGI 的文件对象与运行记录可帮助把产物接回业务流程。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-30",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7679623224678465578",
+    "read_time": 1,
+    "id": "7e0923ed2ffc9823"
   }
 ]
