@@ -584,5 +584,29 @@
     "url": "https://juejin.cn/post/7679998325379334196",
     "read_time": 1,
     "id": "d7cff47d631c4efd"
+  },
+  {
+    "title": "danci 项目（三）：从 JSON 数据到 AI Coding，真实项目里的数据清洗、Prompt 和工程规范",
+    "summary": "一、几千个单词不可能手工录入 一个单词学习系统可能需要： 这些数据加起来可能有几千甚至上万个单词。 如果后台管理员一个个录入，显然不现实。 因此更合理的方法是寻找已有的开放数据源。 例如： 这时候任务",
+    "full_content": "一、几千个单词不可能手工录入 一个单词学习系统可能需要： 这些数据加起来可能有几千甚至上万个单词。 如果后台管理员一个个录入，显然不现实。 因此更合理的方法是寻找已有的开放数据源。 例如： 这时候任务",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-31",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7680066396043280430",
+    "read_time": 1,
+    "id": "51f6cc3fe9e55acb"
+  },
+  {
+    "title": "SDD 文档驱动开发实战：从 proposal 到 tasks 再到 AI 编码的完整工作流",
+    "summary": "以Chrome英文翻译插件为案例，详解SDD文档驱动开发：proposal定需求、design定架构、tasks拆任务、AI严格按任务编码，文档先行让AI辅助开发有据可依、可追溯、可回退。",
+    "full_content": "以Chrome英文翻译插件为案例，详解SDD文档驱动开发：proposal定需求、design定架构、tasks拆任务、AI严格按任务编码，文档先行让AI辅助开发有据可依、可追溯、可回退。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-31",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7680043958140125238",
+    "read_time": 1,
+    "id": "102dfcb0eb46a90a"
   }
 ]
