@@ -1,5 +1,17 @@
 [
   {
+    "title": "Improving our alignment and security efforts",
+    "summary": "…",
+    "full_content": "<article><div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__hero\"><div class=\"PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper\"><div class=\"Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-module__WyGOtq__aspect-wide Illustration-module-scss-module__WyGOtq__padding-lg Illustration-module-scss-module__WyGOtq__radius-lg bg-cactus\"><div class=\"Illustration-module-scss-module__WyGOtq__inner\"><img alt=\"Improving our alignment and security efforts\" class=\"\" height=\"1000\" src=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/6905c83d0735e1bc430025fdd1748d1406079036-1000x1000.svg\" width=\"1000\" /></div></div></div></div><div class=\"page-wrapper\"><article><div class=\"ArticleDetail-module-scss-module__YVTUHa__grid\"><div class=\"ArticleDetail-module-scss-module__YVTUHa__sidebar-container\"><aside class=\"page-wrapper Sidebar-module-scss-module__5Xbtsq__sidebar contentFadeUp\"><button class=\"Sidebar-module-scss-module__5Xbtsq__sidebar-toggle\" type=\"button\"><span><svg class=\"Icon-module-scss-module__lqbdHG__icon\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M3.25 17.75v-1.5h17.5v1.5H3.25Zm0-5.2v-1.5h17.5v1.5H3.25Zm0-5.175v-1.5h17.5v1.5H3.25Z\" fill=\"#141413\"></path></svg></span></button><button class=\"Sidebar-module-scss-module__5Xbtsq__sidebar-button\"><span class=\"caption bold\"></span><span><svg class=\"Icon-module-scss-module__lqbdHG__icon\" height=\"5\" viewBox=\"0 0 8 5\" width=\"8\" xmlns=\"http://www.w3.org/2000/svg\">…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-31",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+    "read_time": 8,
+    "id": "843c3223ec85cac9"
+  },
+  {
     "title": "国家动物博物馆强烈谴责",
     "summary": "国家动物博物馆强烈谴责",
     "full_content": "国家动物博物馆强烈谴责<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221213/eaf2dd702d7cc14d8d9511190245d057/lrx9rnKo24.png\" />",
@@ -264,6 +276,18 @@
     "id": "7aa1f68e6fa52f19"
   },
   {
+    "title": "Polimill builds Japan's next-generation public AI infrastructure",
+    "summary": "Polimill uses OpenAI GPT models and Codex to help municipalities search and use administrative knowledge while accelerat...",
+    "full_content": "Polimill uses OpenAI GPT models and Codex to help municipalities search and use administrative knowledge while accelerating development.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-31",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/polimill",
+    "read_time": 1,
+    "id": "6489dfdc164c07c2"
+  },
+  {
     "title": "MateClaw 2.2.0 发布：可插拔 Agent Runtime、持久任务恢复与 A2A 互联",
     "summary": "MateClaw 2.2.0 稳定版已于 2026 年 8 月 29 日发布。本次版本将员工身份与执行引擎解耦，引入 Native / DeepSeek Harness 双运行时、可跨请求与后端重启恢复的 Persistent Goal，以...",
     "full_content": "MateClaw 2.2.0 稳定版已于 2026 年 8 月 29 日发布。本次版本将员工身份与执行引擎解耦，引入 Native / DeepSeek Harness 双运行时、可跨请求与后端重启恢复的 Persistent Goal，以及双向 A2A 能力；同时继续加固 2.1.0 引入的 Team Run、交付物完成门与工作空间边界。 MateClaw 是一个基于 Spring Boot 的开源 AI Age...",
@@ -286,6 +310,18 @@
     "url": "https://www.oschina.net/news/502219/openai-huggingface",
     "read_time": 1,
     "id": "ed7c7c9cd96f232c"
+  },
+  {
+    "title": "全能型 covo-agent v0.1.0 发布：流式输出与 TUI 使用同一套渲染引擎",
+    "summary": "关于 covo-agent covo-agent 是基于 covonaut 框架开发的运行在终端里的通用型 AI Agent，提供 general 与 code 两种工作模式，覆盖日常知识工作、软件开发、自动化、持久上下文管理与外部系统协作...",
+    "full_content": "关于 covo-agent covo-agent 是基于 covonaut 框架开发的运行在终端里的通用型 AI Agent，提供 general 与 code 两种工作模式，覆盖日常知识工作、软件开发、自动化、持久上下文管理与外部系统协作几个方向。项目以 Go 编写（Go 1.25.0 起），采用 AGPL-3.0 协议开源。 v0.1.0 更新要点 1. 渲染链路统一：流式输出与 TU...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-08-31",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502228",
+    "read_time": 1,
+    "id": "1882c7238e140e28"
   },
   {
     "title": "女排 朱婷",
