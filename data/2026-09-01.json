@@ -1,5 +1,17 @@
 [
   {
+    "title": "Developing Enterprise Frontier Safeguards with our customers",
+    "summary": "Today we’re announcing Enterprise Frontier Safeguards (EFS), a solution that combines the privacy of zero data retention...",
+    "full_content": "<article><div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__hero\"><div class=\"PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper\"><div class=\"Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-module__WyGOtq__aspect-wide Illustration-module-scss-module__WyGOtq__padding-lg Illustration-module-scss-module__WyGOtq__radius-lg bg-sky\"><div class=\"Illustration-module-scss-module__WyGOtq__inner\"><img alt=\"Developing Enterprise Frontier Safeguards with our customers\" class=\"\" height=\"1000\" src=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/60d57c0d0bf031e140de678692f7c3ef2d885ce3-1000x1000.svg\" width=\"1000\" /></div></div></div></div><div class=\"page-wrapper\"><article><div class=\"\"><div class=\"Body-module-scss-module__z40yvW__body\"><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Today we’re announcing Enterprise Frontier Safeguards (EFS), a solution that combines the privacy of zero data retention (ZDR) with state-of-the-art safeguards for detecting misuse. EFS works by storing data in cloud infrastructure controlled by the customer, not Anthropic. EFS will be rolling out to customers in phases, starting later this fall. To make the transition smooth, eligible customers will receive ZDR on Fable 5 and Fable 5.1 until EFS is ready.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">We developed EFS in close collaboration with more than 100 customers in industries like financial services, healthcare, manufacturing, telecom, law, retail, and the public sector, and with our cloud partners at Amazon Web Services, Google Cloud, and Microsoft Azure.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">EFS will be supported on Claude Co…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-01",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+    "read_time": 10,
+    "id": "5e9e9070228921ee"
+  },
+  {
     "title": "长鑫毛利率超过海力士美光",
     "summary": "长鑫毛利率超过海力士美光",
     "full_content": "长鑫毛利率超过海力士美光<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
@@ -442,6 +454,30 @@
     "url": "https://search.bilibili.com/all?keyword=%E7%BA%AF%E6%89%8B%E6%90%93%E5%88%9D%E9%9F%B3%E7%94%9F%E8%B4%BA%E5%AE%9A%E6%A0%BC%E5%8A%A8%E7%94%BB&from_source=webtop_search",
     "read_time": 1,
     "id": "6ddc7fb579a182ad"
+  },
+  {
+    "title": "Path to Astra: critical capabilities and frontier safeguards",
+    "summary": "Astra is the first OpenAI model to meet the Critical cybersecurity capability threshold under the Preparedness Framework...",
+    "full_content": "Astra is the first OpenAI model to meet the Critical cybersecurity capability threshold under the Preparedness Framework, with stronger safeguards for release.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-01",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/path-to-astra",
+    "read_time": 1,
+    "id": "c931d0b3b7dbf27f"
+  },
+  {
+    "title": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+    "summary": "ChatGPT can now connect to trusted healthcare data, helping clinicians securely access patient context, medical research...",
+    "full_content": "ChatGPT can now connect to trusted healthcare data, helping clinicians securely access patient context, medical research, and more.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-01",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
+    "read_time": 1,
+    "id": "56641fe0291483b6"
   },
   {
     "title": "OrcaTerm 更新了",
