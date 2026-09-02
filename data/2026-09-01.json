@@ -480,6 +480,18 @@
     "id": "56641fe0291483b6"
   },
   {
+    "title": "How law firm Gilbert + Tobin governs and scales AI with OpenAI",
+    "summary": "See how Gilbert + Tobin combines CEO-led commitment, rigorous governance, and human accountability to scale ChatGPT Ente...",
+    "full_content": "See how Gilbert + Tobin combines CEO-led commitment, rigorous governance, and human accountability to scale ChatGPT Enterprise and Codex across the firm.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-01",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/gilbert-tobin",
+    "read_time": 1,
+    "id": "8e955ff5c0050eaa"
+  },
+  {
     "title": "OrcaTerm 更新了",
     "summary": "我最近体验腾讯云 OrcaTerm 后，比较有感觉。 以前处理服务器问题，流程很碎： 打开 SSH → 想命令 → 搜答案 → 复制日志给 AI → 再复制命令回终端。 现在我会直接在 OrcaTerm 里说需求。 比如： 帮我分析磁盘空间...",
     "full_content": "我最近体验腾讯云 OrcaTerm 后，比较有感觉。 以前处理服务器问题，流程很碎： 打开 SSH → 想命令 → 搜答案 → 复制日志给 AI → 再复制命令回终端。 现在我会直接在 OrcaTerm 里说需求。 比如： 帮我分析磁盘空间，定位占用大的目录。 AI 会结合当前终端会话给出排查思路和命令；我确认目标机器、命令内容后再执行。终...",
