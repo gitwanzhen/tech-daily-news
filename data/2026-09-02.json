@@ -480,6 +480,18 @@
     "id": "4be3ed23a721c092"
   },
   {
+    "title": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT",
+    "summary": "ATV Big Air Tour uses ChatGPT Work to speed up marketing, merchandising, and more. It even turned merchandise photos int...",
+    "full_content": "ATV Big Air Tour uses ChatGPT Work to speed up marketing, merchandising, and more. It even turned merchandise photos into an inventory website in 15 minutes.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-02",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/atv-big-air-tour",
+    "read_time": 1,
+    "id": "21f8b896917eb3e7"
+  },
+  {
     "title": "缓存读取价砍 75%：Fable 5.1 真正想卖的不是跑分",
     "summary": "每百万 token 的缓存读取价格，从 1 美元降到 0.25 美元，降幅 75%。 这是 Claude Fable 5.1 发布里最不起眼、也最值钱的一个数字。它躺在定价表最偏僻的角落，不如那些基准测试榜单显眼，却决定了 agent 跑长...",
     "full_content": "每百万 token 的缓存读取价格，从 1 美元降到 0.25 美元，降幅 75%。 这是 Claude Fable 5.1 发布里最不起眼、也最值钱的一个数字。它躺在定价表最偏僻的角落，不如那些基准测试榜单显眼，却决定了 agent 跑长任务时真正的成本。 标准输入、输出价格没动，还是每百万 token 10 美元和 50 美元。Anthropic 只动了缓存读取...",
