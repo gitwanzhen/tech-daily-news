@@ -348,6 +348,54 @@
     "id": "afffe1eb63e63583"
   },
   {
+    "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
+    "summary": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, trainin...",
+    "full_content": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-03",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/daybreak-for-frontline-defenders",
+    "read_time": 1,
+    "id": "30eec5aa5b07636a"
+  },
+  {
+    "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
+    "summary": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by near...",
+    "full_content": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-03",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/legora-financial-statement-review-with-astra",
+    "read_time": 1,
+    "id": "d54e7a3a2a7435ba"
+  },
+  {
+    "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
+    "summary": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual ...",
+    "full_content": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-03",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/playco-game-prototyping-with-astra",
+    "read_time": 1,
+    "id": "9a8f1e3af0e06d97"
+  },
+  {
+    "title": "Safety overview: GPT-6 Astra",
+    "summary": "GPT-6 Astra is our most capable broadly deployed model and our first to reach the Critical level of cybersecurity capabi...",
+    "full_content": "GPT-6 Astra is our most capable broadly deployed model and our first to reach the Critical level of cybersecurity capability under our Preparedness Framework.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-03",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/safety-overview-gpt-6-astra",
+    "read_time": 1,
+    "id": "af3b8492cad02c17"
+  },
+  {
     "title": "Meta 这个百万级上下文模型，用数据换折扣，差价 21 倍",
     "summary": "Meta 最新 AI 大模型 Muse Spark 1.3 把上下文窗口拉到了 100 万 token，定价分了两档，差价超过 10 倍。 Meta 的新模型定位很明确：长周期、多步骤的 agentic workflow。能处理视频、图片和...",
     "full_content": "Meta 最新 AI 大模型 Muse Spark 1.3 把上下文窗口拉到了 100 万 token，定价分了两档，差价超过 10 倍。 Meta 的新模型定位很明确：长周期、多步骤的 agentic workflow。能处理视频、图片和文档的多模态感知，工具调用一阶成功率比前代更高，代码能力在多个评测中「与前沿持平」。 定价策略值得细看。Muse Spark 1.3 分...",
@@ -982,5 +1030,41 @@
     "url": "https://juejin.cn/post/7681142626944499766",
     "read_time": 1,
     "id": "e796781a888843e1"
+  },
+  {
+    "title": "天才陨落了！三大 AI 集体不可用！",
+    "summary": "晚上正在使用 GPT 的时候发现不可用了，然后鱼头在重启电脑 N 次之后终于意识到可能是它挂了，就去查这到底是为什么，在查的过程中发现不仅仅是 GPT，连 Claude，Grok 都挂了。",
+    "full_content": "晚上正在使用 GPT 的时候发现不可用了，然后鱼头在重启电脑 N 次之后终于意识到可能是它挂了，就去查这到底是为什么，在查的过程中发现不仅仅是 GPT，连 Claude，Grok 都挂了。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-03",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7681160462331772969",
+    "read_time": 1,
+    "id": "f92349adeb75096d"
+  },
+  {
+    "title": "直播半小时，我聊了聊 Agent 最常见的 3 个疑问",
+    "summary": "Agent专场：它提升的是'目标→结果'效率，价值在释放注意力与扩大能力范围。哪些工作适合交出去？不看难易，看能否稳定完成、结果能否验证、出错能否控制，还得算清一笔'委托账'。",
+    "full_content": "Agent专场：它提升的是'目标→结果'效率，价值在释放注意力与扩大能力范围。哪些工作适合交出去？不看难易，看能否稳定完成、结果能否验证、出错能否控制，还得算清一笔'委托账'。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-03",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7681160462331691049",
+    "read_time": 1,
+    "id": "ce8f00ee9f4fbcc6"
+  },
+  {
+    "title": "为什么每个人最终都会使用 Agent？从 LLM 到 Agent，看懂 AI 为什么一定会走向执行时代",
+    "summary": "为什么每个人最终都会使用 Agent？从 LLM 到 Agent，看懂 AI 为什么一定会走向执行时代 作者：吴佳浩Alben 撰稿时间：2026.8.2 更新时间：2026.8.4 引言：一个所有人",
+    "full_content": "为什么每个人最终都会使用 Agent？从 LLM 到 Agent，看懂 AI 为什么一定会走向执行时代 作者：吴佳浩Alben 撰稿时间：2026.8.2 更新时间：2026.8.4 引言：一个所有人",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-03",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7681140706262859839",
+    "read_time": 1,
+    "id": "0b015b96b5b069a8"
   }
 ]
