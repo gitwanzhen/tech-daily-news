@@ -1176,6 +1176,66 @@
     "id": "fe8a9c8e3efc0ce9"
   },
   {
+    "title": "AGI 时代终于来了！",
+    "summary": "OpenAI 发布 GPT-6-Astra，多项科学、数学、终端、医疗与网络安全基准刷新纪录。本文梳理它的能力跃迁、开放节奏，以及为什么这次可能是 Agent 时代的重要拐点。",
+    "full_content": "OpenAI 发布 GPT-6-Astra，多项科学、数学、终端、医疗与网络安全基准刷新纪录。本文梳理它的能力跃迁、开放节奏，以及为什么这次可能是 Agent 时代的重要拐点。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-04",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7681369174616162347",
+    "read_time": 1,
+    "id": "bee74178d98c78c5"
+  },
+  {
+    "title": "好玩系列：训练一个神经网络模型指导小孩玩游戏2-大局观教练",
+    "summary": "“循着错误的思考方向得不到正确的答案”，AI不会就是不会。 在上一篇博客中，我们得到了一个求解器只能网络，这一篇和诸位一起实现“直接进行大局观指导”的神经网络...",
+    "full_content": "“循着错误的思考方向得不到正确的答案”，AI不会就是不会。 在上一篇博客中，我们得到了一个求解器只能网络，这一篇和诸位一起实现“直接进行大局观指导”的神经网络...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-04",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7681544111435513898",
+    "read_time": 1,
+    "id": "9f7762ed38668fb8"
+  },
+  {
+    "title": "Gemini锐评GPT6：我要泼冷水扒底裤！",
+    "summary": "都说同行是仇家啊，这次换“Gemini” 来发表对GPT6的看法了！ Gemini现在被称为“最路边的一条”，没想到的是Gemini3.8Flash，在DISS别人这方面还挺强的。 喷了GPT6，还喷",
+    "full_content": "都说同行是仇家啊，这次换“Gemini” 来发表对GPT6的看法了！ Gemini现在被称为“最路边的一条”，没想到的是Gemini3.8Flash，在DISS别人这方面还挺强的。 喷了GPT6，还喷",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-04",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7681489628256616482",
+    "read_time": 1,
+    "id": "9fcde8da61c7f518"
+  },
+  {
+    "title": "Agent Memory 进阶：用 LLM 总结压缩上下文，告别\"金鱼记忆\"",
+    "summary": "上一篇 《一文搞懂 Agent Memory 管理》 我们聊了 Memory 的三种截断策略：消息数量截断、Token 数量截断、总结压缩。但上一篇对\"总结压缩\"只放了一段伪代码，很多同学看完还",
+    "full_content": "上一篇 《一文搞懂 Agent Memory 管理》 我们聊了 Memory 的三种截断策略：消息数量截断、Token 数量截断、总结压缩。但上一篇对\"总结压缩\"只放了一段伪代码，很多同学看完还",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-04",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7681584870728515630",
+    "read_time": 1,
+    "id": "024b2091e41f8a6b"
+  },
+  {
+    "title": "从跨域到 WebSocket：前端跨域方案、SSE 与双向实时通信详解",
+    "summary": "在前端开发中，“跨域”几乎是绕不开的话题。 刚开始学习跨域时，我们通常会接触 CORS、Nginx 反向代理、JSONP 等方案；但随着业务逐渐涉及实时聊天、消息推送、大模型流式输出，又会接触 SSE",
+    "full_content": "在前端开发中，“跨域”几乎是绕不开的话题。 刚开始学习跨域时，我们通常会接触 CORS、Nginx 反向代理、JSONP 等方案；但随着业务逐渐涉及实时聊天、消息推送、大模型流式输出，又会接触 SSE",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-04",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7681498389521268745",
+    "read_time": 1,
+    "id": "0446f7fea34612e4"
+  },
+  {
     "title": "杀死比尔：血色全传",
     "summary": "标题：杀死比尔：血色全传评分：8.7片长：276分钟(中国大陆)制片国家/地区：美国导演：昆汀·塔伦蒂诺主演：乌玛·瑟曼 / 刘玉玲 / 薇薇卡·福克斯",
     "full_content": "标题：杀死比尔：血色全传<br />评分：8.7<br />片长：276分钟(中国大陆)<br />制片国家/地区：美国<br />导演：昆汀·塔伦蒂诺<br />主演：乌玛·瑟曼 / 刘玉玲 / 薇薇卡·福克斯<br /><img src=\"https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2933745954.webp\" />",
