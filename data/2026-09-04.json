@@ -1236,6 +1236,30 @@
     "id": "0446f7fea34612e4"
   },
   {
+    "title": "从 Scope State 到 Guardrails：Workrun 如何为 Agent 工作流建立安全边界",
+    "summary": "Workrun通过 Scope State 控制Agent可见数据，并用 Guardrails 与Tool State Binding保护敏感信息，让多Agent工作流在协作时保持最小权限和可追踪性。",
+    "full_content": "Workrun通过 Scope State 控制Agent可见数据，并用 Guardrails 与Tool State Binding保护敏感信息，让多Agent工作流在协作时保持最小权限和可追踪性。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-04",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7681202345804988416",
+    "read_time": 1,
+    "id": "d6fa7ff8b16233a5"
+  },
+  {
+    "title": "Agent Framework（3）：看懂它到底在运行什么",
+    "summary": "第一次看到 Microsoft Agent Framework 的时候，很容易产生一种错觉：它好像只是把各种 Agent 能力整理成了一套比较完整的 API。 于是我们看到 AIAgent",
+    "full_content": "第一次看到 Microsoft Agent Framework 的时候，很容易产生一种错觉：它好像只是把各种 Agent 能力整理成了一套比较完整的 API。 于是我们看到 AIAgent",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-04",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7681557075590316083",
+    "read_time": 1,
+    "id": "f29c30dde0cca605"
+  },
+  {
     "title": "杀死比尔：血色全传",
     "summary": "标题：杀死比尔：血色全传评分：8.7片长：276分钟(中国大陆)制片国家/地区：美国导演：昆汀·塔伦蒂诺主演：乌玛·瑟曼 / 刘玉玲 / 薇薇卡·福克斯",
     "full_content": "标题：杀死比尔：血色全传<br />评分：8.7<br />片长：276分钟(中国大陆)<br />制片国家/地区：美国<br />导演：昆汀·塔伦蒂诺<br />主演：乌玛·瑟曼 / 刘玉玲 / 薇薇卡·福克斯<br /><img src=\"https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2933745954.webp\" />",
