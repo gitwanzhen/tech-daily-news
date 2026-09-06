@@ -1054,5 +1054,41 @@
     "url": "https://juejin.cn/post/7681985571749183515",
     "read_time": 1,
     "id": "5436c461dd11c2f6"
+  },
+  {
+    "title": "FDE：从系统落地工程师，演变为企业 AI 能力的知识架构师",
+    "summary": "本文探讨了AI时代前线部署工程师(FDE)的角色演变，指出其核心职责已从系统部署转变为构建企业AI知识架构。文章分析了企业AI落地面临的核心困境——知识难以复用，导致每个项目都需从头开始。真正的FDE",
+    "full_content": "本文探讨了AI时代前线部署工程师(FDE)的角色演变，指出其核心职责已从系统部署转变为构建企业AI知识架构。文章分析了企业AI落地面临的核心困境——知识难以复用，导致每个项目都需从头开始。真正的FDE",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-06",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7682069529204768811",
+    "read_time": 1,
+    "id": "36939d40a304a35c"
+  },
+  {
+    "title": "从 OpenClaw、Codex 到 Hermes，看懂 AI Agent 架构为什么正在收敛",
+    "summary": "本文探讨了AI Agent架构的演化趋势，指出随着复杂度增加，Agent框架正在向操作系统形态收敛。文章分析了OpenClaw、Codex和Hermes三个独立发展的项目，发现它们最终都形成了相似的架",
+    "full_content": "本文探讨了AI Agent架构的演化趋势，指出随着复杂度增加，Agent框架正在向操作系统形态收敛。文章分析了OpenClaw、Codex和Hermes三个独立发展的项目，发现它们最终都形成了相似的架",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-06",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7682069529204736043",
+    "read_time": 1,
+    "id": "537edba053e1abcd"
+  },
+  {
+    "title": "GPT-6单价变成2.5倍，写代码却未必更贵",
+    "summary": "大家好，我是孟健。 OpenAI新发的GPT-6 Astra，API单价是前代的2.5倍。但Artificial Analysis在9月3日的Coding Agent Index评测发现：Astra",
+    "full_content": "大家好，我是孟健。 OpenAI新发的GPT-6 Astra，API单价是前代的2.5倍。但Artificial Analysis在9月3日的Coding Agent Index评测发现：Astra",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-06",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7682069529204686891",
+    "read_time": 1,
+    "id": "8a8c8fe66863f03d"
   }
 ]
