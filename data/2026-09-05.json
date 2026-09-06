@@ -420,6 +420,30 @@
     "id": "ba27d27bcad30a88"
   },
   {
+    "title": "伏羲智能决策平台第一版发布",
+    "summary": "企业级 DMN 决策自动化平台，全栈 Rust 实现。用户以自然语言描述业务规则，系统通过 LLM 智能体生成结构化 DSL，经多层校验后编译为标准 DMN 1.5 XML，并提供完整的版本管理、业务验收、发布运行和数据分析能力。 核心特性...",
+    "full_content": "企业级 DMN 决策自动化平台，全栈 Rust 实现。用户以自然语言描述业务规则，系统通过 LLM 智能体生成结构化 DSL，经多层校验后编译为标准 DMN 1.5 XML，并提供完整的版本管理、业务验收、发布运行和数据分析能力。 核心特性 智能建模 自然语言驱动：无需掌握 DSL、DMN 或 FEEL 语法，直接用业务语言描述决策逻辑 阶段化工...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-05",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502330",
+    "read_time": 1,
+    "id": "3a3e2a00232c9199"
+  },
+  {
+    "title": "仅 14MB 的开源一站式智能终端 uniTerm v1.9 发布：新增 Elasticsearch、WSLC 容器、Raw TCP 与文件/监控边栏，支持协议突破 30 种",
+    "summary": "uniTerm 是一款轻量级一站式终端软件，Windows 版本安装包仅 14MB。整合终端、文件传输、远程桌面、数据库客户端、容器等 5 大类协议于一身；内置可自主执行的 AI Agent，能规划并执行多轮 Shell 命令。 v1.9 ...",
+    "full_content": "uniTerm 是一款轻量级一站式终端软件，Windows 版本安装包仅 14MB。整合终端、文件传输、远程桌面、数据库客户端、容器等 5 大类协议于一身；内置可自主执行的 AI Agent，能规划并执行多轮 Shell 命令。 v1.9 带来了一次集中升级：新增 ElasticSearch、WSLC 容器、Raw TCP 三种协议，支持协议总数突破 30 种；新增文件 ...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-05",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502328",
+    "read_time": 1,
+    "id": "26c26c7a13d13197"
+  },
+  {
     "title": "花少2嘉宾干活表",
     "summary": "花少2嘉宾干活表",
     "full_content": "花少2嘉宾干活表",
