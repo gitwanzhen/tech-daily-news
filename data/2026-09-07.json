@@ -1138,5 +1138,65 @@
     "url": "https://juejin.cn/post/7682684241834065920",
     "read_time": 1,
     "id": "811e1c0e9e36f5d5"
+  },
+  {
+    "title": "大模型格式化输出",
+    "summary": "如果只是和用户聊天，大模型返回自然语言就够了。 但程序更希望拿到： 而不是： 这就是结构化输出要解决的问题： 一、最简单的方法：要求模型返回 JSON 可以直接在 Prompt 中写： 模型可能返回：",
+    "full_content": "如果只是和用户聊天，大模型返回自然语言就够了。 但程序更希望拿到： 而不是： 这就是结构化输出要解决的问题： 一、最简单的方法：要求模型返回 JSON 可以直接在 Prompt 中写： 模型可能返回：",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-07",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7682668965594054666",
+    "read_time": 1,
+    "id": "5990149a19df6f9d"
+  },
+  {
+    "title": "讲透 SSE：从流式响应到 LangChain model.stream()",
+    "summary": "大模型回答问题时，如果等整段内容全部生成完再返回，用户会经历明显的等待。 因此聊天应用通常采用流式输出： 现在使用 LangChain，实现已经非常简单： 但要真正理解这几行代码，还得知道底层发生了什",
+    "full_content": "大模型回答问题时，如果等整段内容全部生成完再返回，用户会经历明显的等待。 因此聊天应用通常采用流式输出： 现在使用 LangChain，实现已经非常简单： 但要真正理解这几行代码，还得知道底层发生了什",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-07",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7682659072475627529",
+    "read_time": 1,
+    "id": "55fc455bfc3b03f8"
+  },
+  {
+    "title": "律师最贵的不是知识，是时间：哪些工作真的可以先交给 Agent？",
+    "summary": "律师大量时间耗在合同逐条核对、重复问答、案例检索上。ZGI通过Workflow做合同初筛、内部知识库做带来源的问答、Skills沉淀办案经验，让律师只做判断，不查材料。",
+    "full_content": "律师大量时间耗在合同逐条核对、重复问答、案例检索上。ZGI通过Workflow做合同初筛、内部知识库做带来源的问答、Skills沉淀办案经验，让律师只做判断，不查材料。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-07",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7682656946978340915",
+    "read_time": 1,
+    "id": "fea790ecb6b1f4ad"
+  },
+  {
+    "title": "AI 研究偏好模型",
+    "summary": "研究偏好模型：Agentic AI 工程的新原语 在 2026 年的 Agentic AI 工程实践中，研究偏好模型正在成为一种新的编排原语。",
+    "full_content": "研究偏好模型：Agentic AI 工程的新原语 在 2026 年的 Agentic AI 工程实践中，研究偏好模型正在成为一种新的编排原语。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-07",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7682710321413046318",
+    "read_time": 1,
+    "id": "1cba775ab4fe4a14"
+  },
+  {
+    "title": "销售团队最缺的不是另一个 AI，而是有人把跟进这件事一直做下去",
+    "summary": "销售大量时间耗在\"别忘了跟进\"上，而非真正的客户沟通。ZGI通过Workflow将邮件回复后的查询、判断、记录、分流自动化，并沉淀优秀销售经验为可复用Skill，让Agent持续跟进，销售回归客户。",
+    "full_content": "销售大量时间耗在\"别忘了跟进\"上，而非真正的客户沟通。ZGI通过Workflow将邮件回复后的查询、判断、记录、分流自动化，并沉淀优秀销售经验为可复用Skill，让Agent持续跟进，销售回归客户。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-07",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7682668965593825290",
+    "read_time": 1,
+    "id": "5b7c718babed9cd6"
   }
 ]
