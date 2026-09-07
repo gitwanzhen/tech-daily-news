@@ -408,6 +408,18 @@
     "id": "08d94691e993196e"
   },
   {
+    "title": "袋鼠数据库工具 v9.8.1 版已上线",
+    "summary": "袋鼠数据库工具 是一款 AI 驱动的热门数据库系统客户端(MariaDB / MongoDB / MySQL / Oracle / PostgreSQL / Redis / SQLite / SQLServer / …) ，支持建表、查询、...",
+    "full_content": "袋鼠数据库工具 是一款 AI 驱动的热门数据库系统客户端(MariaDB / MongoDB / MySQL / Oracle / PostgreSQL / Redis / SQLite / SQLServer / …) ，支持建表、查询、模型、同步、导入导出等功能，支持 Windows / Mac / Linux 等操作系统，致力于打造一款好用、好玩、开发友好的开发者工具。 新特性或修复的缺陷列表 增加云...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-06",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502332",
+    "read_time": 1,
+    "id": "22f62d90aa030a15"
+  },
+  {
     "title": "习近平主席中亚中东之旅难忘瞬间",
     "summary": "习近平主席中亚中东之旅难忘瞬间",
     "full_content": "习近平主席中亚中东之旅难忘瞬间",
@@ -1090,5 +1102,17 @@
     "url": "https://juejin.cn/post/7682069529204686891",
     "read_time": 1,
     "id": "8a8c8fe66863f03d"
+  },
+  {
+    "title": "构建无障碍组件之Landmarks Pattern",
+    "summary": "无需一行 JavaScript，用对 HTML 标签，就能让页面结构对辅助技术与 AI Agent 全面开放——Landmarks：无障碍实践中成本最低、收益最高的“无招胜有招”。",
+    "full_content": "无需一行 JavaScript，用对 HTML 标签，就能让页面结构对辅助技术与 AI Agent 全面开放——Landmarks：无障碍实践中成本最低、收益最高的“无招胜有招”。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-06",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7682314741113749531",
+    "read_time": 1,
+    "id": "ffaa4af738a415de"
   }
 ]
