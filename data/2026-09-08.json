@@ -372,6 +372,42 @@
     "id": "8c676d139375cae9"
   },
   {
+    "title": "Introducing ChatGPT Images 2.5",
+    "summary": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that be...",
+    "full_content": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-08",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+    "read_time": 1,
+    "id": "c76ec6f9b7b6e08c"
+  },
+  {
+    "title": "On the Navier–Stokes Millennium Prize Problem",
+    "summary": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal p...",
+    "full_content": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-08",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/navier-stokes-solution",
+    "read_time": 1,
+    "id": "4b61789c249a93a6"
+  },
+  {
+    "title": "1Password increases engineering productivity 21% with Codex",
+    "summary": "Engineers at 1Password use Codex to rapidly build new features and internal tools, reaching production-readiness while m...",
+    "full_content": "Engineers at 1Password use Codex to rapidly build new features and internal tools, reaching production-readiness while maintaining rigorous security policies.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-08",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/1password",
+    "read_time": 1,
+    "id": "fddf04f3238ae789"
+  },
+  {
     "title": "DataBuff v0.1.9 发布 · SkyWalking 8.x 接入 + LLM 凭据加固",
     "summary": "DataBuff 是一款面向云原生与微服务场景的开源 AI Native OpenTelemetry APM，采用 OTLP 标准接入、Apache Doris 统一存储，Web 端提供拓扑 / Trace / 指标与多 Agent 排障。...",
     "full_content": "DataBuff 是一款面向云原生与微服务场景的开源 AI Native OpenTelemetry APM，采用 OTLP 标准接入、Apache Doris 统一存储，Web 端提供拓扑 / Trace / 指标与多 Agent 排障。项目已在 OSCHINA 软件库收录：https://www.oschina.net/p/databuff 今天，DataBuff 正式发布 v0.1.9。相对 v0.1.8 共 10 个提交，没有 Schema 迁...",
