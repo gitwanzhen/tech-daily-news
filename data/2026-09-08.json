@@ -336,6 +336,42 @@
     "id": "a79b9a47e827eb64"
   },
   {
+    "title": "The Work Now Within Reach",
+    "summary": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more ec...",
+    "full_content": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-08",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/the-work-now-within-reach",
+    "read_time": 1,
+    "id": "6c888c96caded64b"
+  },
+  {
+    "title": "Funding grants for new research into AI and teen development",
+    "summary": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen develo...",
+    "full_content": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-08",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/teen-development-research-grants",
+    "read_time": 1,
+    "id": "c34d7a764f86c6e9"
+  },
+  {
+    "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+    "summary": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, ...",
+    "full_content": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-08",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+    "read_time": 1,
+    "id": "8c676d139375cae9"
+  },
+  {
     "title": "DataBuff v0.1.9 发布 · SkyWalking 8.x 接入 + LLM 凭据加固",
     "summary": "DataBuff 是一款面向云原生与微服务场景的开源 AI Native OpenTelemetry APM，采用 OTLP 标准接入、Apache Doris 统一存储，Web 端提供拓扑 / Trace / 指标与多 Agent 排障。...",
     "full_content": "DataBuff 是一款面向云原生与微服务场景的开源 AI Native OpenTelemetry APM，采用 OTLP 标准接入、Apache Doris 统一存储，Web 端提供拓扑 / Trace / 指标与多 Agent 排障。项目已在 OSCHINA 软件库收录：https://www.oschina.net/p/databuff 今天，DataBuff 正式发布 v0.1.9。相对 v0.1.8 共 10 个提交，没有 Schema 迁...",
@@ -1030,6 +1066,42 @@
     "url": "https://juejin.cn/post/7683020866854633482",
     "read_time": 1,
     "id": "df945a717bb94740"
+  },
+  {
+    "title": "AI Agent 的安全围栏：DeepSeek Harness 沙箱隔离策略全解析",
+    "summary": "第13章：沙箱与执行安全——进程隔离策略与平台实现 agent 能跑命令、能写文件——但这意味着它也能删库、能泄密、能执行恶意代码。一个没有安全边界的 coding agent 是定时炸弹。 dsh",
+    "full_content": "第13章：沙箱与执行安全——进程隔离策略与平台实现 agent 能跑命令、能写文件——但这意味着它也能删库、能泄密、能执行恶意代码。一个没有安全边界的 coding agent 是定时炸弹。 dsh",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-08",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7682996048726687759",
+    "read_time": 1,
+    "id": "4d572dec3218e74b"
+  },
+  {
+    "title": "大模型的权重到底怎么用？拆开一个 token 的生成过程",
+    "summary": "我们已经知道，大模型里有很多参数，训练时会调整它们，平常聊天时通常不会。 但这还没回答一个最直观的问题： 一堆固定的数字，怎么就能变成一句新话？ “经过注意力、FFN，最后预测下一个 token”这句",
+    "full_content": "我们已经知道，大模型里有很多参数，训练时会调整它们，平常聊天时通常不会。 但这还没回答一个最直观的问题： 一堆固定的数字，怎么就能变成一句新话？ “经过注意力、FFN，最后预测下一个 token”这句",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-08",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7683051207535476742",
+    "read_time": 1,
+    "id": "7ead244fb1ae4f60"
+  },
+  {
+    "title": "你的 Agent 有 1000 万上下文，为什么第 50 轮就开始失忆？",
+    "summary": "隐含的承诺是：记忆是一个容量问题，而容量正在被解决。 它没有。NVIDIA 的 RULER 基准测得有效上下文大约只有标称值的 50%–65%；Chroma 的\"上下文腐烂\"（context rot）",
+    "full_content": "隐含的承诺是：记忆是一个容量问题，而容量正在被解决。 它没有。NVIDIA 的 RULER 基准测得有效上下文大约只有标称值的 50%–65%；Chroma 的\"上下文腐烂\"（context rot）",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-08",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7682996048726589455",
+    "read_time": 1,
+    "id": "5f5a5f71653cd987"
   },
   {
     "title": "歌声缘何慢半拍",
