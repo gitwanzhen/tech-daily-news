@@ -120,6 +120,30 @@
     "id": "6e3cf1efaead9d9a"
   },
   {
+    "title": "DataBuff v0.1.9 发布 · SkyWalking 8.x 接入 + LLM 凭据加固",
+    "summary": "DataBuff 是一款面向云原生与微服务场景的开源 AI Native OpenTelemetry APM，采用 OTLP 标准接入、Apache Doris 统一存储，Web 端提供拓扑 / Trace / 指标与多 Agent 排障。...",
+    "full_content": "DataBuff 是一款面向云原生与微服务场景的开源 AI Native OpenTelemetry APM，采用 OTLP 标准接入、Apache Doris 统一存储，Web 端提供拓扑 / Trace / 指标与多 Agent 排障。项目已在 OSCHINA 软件库收录：https://www.oschina.net/p/databuff 今天，DataBuff 正式发布 v0.1.9。相对 v0.1.8 共 10 个提交，没有 Schema 迁...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-08",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502370",
+    "read_time": 1,
+    "id": "35d2f996998376db"
+  },
+  {
+    "title": "AgentOS 上新！基于 openKylin 3.0 的全面进化",
+    "summary": "2026年9月7日，OpenAtom openKylin（以下简称openKylin）社区正式推送 openKylin 3.0 AgentOS新一轮更新。本次更新以提高智能体任务完成可靠性为核心，集中修复了系统智能体、CUA（桌面操作智能体...",
+    "full_content": "2026年9月7日，OpenAtom openKylin（以下简称&quot;openKylin&quot;）社区正式推送 openKylin 3.0 AgentOS新一轮更新。本次更新以提高智能体任务完成可靠性为核心，集中修复了系统智能体、CUA（桌面操作智能体）、统一模型推理服务、智能体运行时的数十项可靠性缺陷。此外，新增了语音交互、人机智能协同等实用功能，覆盖任务管理、...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-08",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502369",
+    "read_time": 1,
+    "id": "b5fa3b426d428e95"
+  },
+  {
     "title": "书写中埃友好历史新篇",
     "summary": "书写中埃友好历史新篇",
     "full_content": "书写中埃友好历史新篇",
@@ -336,6 +360,78 @@
     "id": "a53c20ff5568587b"
   },
   {
+    "title": "莱巴金娜说跟郑钦文打是艰难的对决",
+    "summary": "莱巴金娜说跟郑钦文打是艰难的对决",
+    "full_content": "莱巴金娜说跟郑钦文打是艰难的对决",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-09-08",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%8E%B1%E5%B7%B4%E9%87%91%E5%A8%9C%E8%AF%B4%E8%B7%9F%E9%83%91%E9%92%A6%E6%96%87%E6%89%93%E6%98%AF%E8%89%B0%E9%9A%BE%E7%9A%84%E5%AF%B9%E5%86%B3",
+    "read_time": 1,
+    "id": "3d4cbc3b966364fc"
+  },
+  {
+    "title": "联合国发布了新版世界地图",
+    "summary": "联合国发布了新版世界地图",
+    "full_content": "联合国发布了新版世界地图",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-09-08",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%81%94%E5%90%88%E5%9B%BD%E5%8F%91%E5%B8%83%E4%BA%86%E6%96%B0%E7%89%88%E4%B8%96%E7%95%8C%E5%9C%B0%E5%9B%BE",
+    "read_time": 1,
+    "id": "17a717d8eddc99f5"
+  },
+  {
+    "title": "郑钦文获470积分和78万美元奖金",
+    "summary": "郑钦文获470积分和78万美元奖金",
+    "full_content": "郑钦文获470积分和78万美元奖金",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-09-08",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%83%91%E9%92%A6%E6%96%87%E8%8E%B7470%E7%A7%AF%E5%88%86%E5%92%8C78%E4%B8%87%E7%BE%8E%E5%85%83%E5%A5%96%E9%87%91",
+    "read_time": 1,
+    "id": "3ac1f444d80f8a84"
+  },
+  {
+    "title": "低保户追星",
+    "summary": "低保户追星",
+    "full_content": "低保户追星",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-09-08",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%BD%8E%E4%BF%9D%E6%88%B7%E8%BF%BD%E6%98%9F",
+    "read_time": 1,
+    "id": "cdadce2df80f974d"
+  },
+  {
+    "title": "张凌赫 张张有标准",
+    "summary": "张凌赫 张张有标准",
+    "full_content": "张凌赫 张张有标准",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-09-08",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%BC%A0%E5%87%8C%E8%B5%AB%20%E5%BC%A0%E5%BC%A0%E6%9C%89%E6%A0%87%E5%87%86",
+    "read_time": 1,
+    "id": "35966425042adec4"
+  },
+  {
+    "title": "张家齐录完我家那闺女就搬家了",
+    "summary": "张家齐录完我家那闺女就搬家了",
+    "full_content": "张家齐录完我家那闺女就搬家了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-09-08",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%BC%A0%E5%AE%B6%E9%BD%90%E5%BD%95%E5%AE%8C%E6%88%91%E5%AE%B6%E9%82%A3%E9%97%BA%E5%A5%B3%E5%B0%B1%E6%90%AC%E5%AE%B6%E4%BA%86",
+    "read_time": 1,
+    "id": "6ada2c92bbea6e02"
+  },
+  {
     "title": "大模型的温度到底是什么？从 token 采样讲到量化",
     "summary": "前面，我们从零训练了一个小语言模型，也看到了它怎么一步步生成文字。 接着就遇到了一个很容易混淆的参数：temperature，温度。 有人把它叫作“创意参数”：温度低，回答稳定；温度高，回答发散。于是",
     "full_content": "前面，我们从零训练了一个小语言模型，也看到了它怎么一步步生成文字。 接着就遇到了一个很容易混淆的参数：temperature，温度。 有人把它叫作“创意参数”：温度低，回答稳定；温度高，回答发散。于是",
@@ -358,6 +454,18 @@
     "url": "https://juejin.cn/post/7682663370556014646",
     "read_time": 1,
     "id": "a808489450c83e0c"
+  },
+  {
+    "title": "面试官皱眉：\"你懂 Vibe Coding，那你说superpowers和grill-me怎么选？\"，我：\"小孩才做选择，我全都要！\"",
+    "summary": "面试官：你简历上写了\"熟练使用 AI 编程工具\"，那我问你，superpowers 和 grill-me 你怎么选？我：这俩又不是竞品，选什么选？",
+    "full_content": "面试官：你简历上写了\"熟练使用 AI 编程工具\"，那我问你，superpowers 和 grill-me 你怎么选？我：这俩又不是竞品，选什么选？",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-08",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7682695183460974632",
+    "read_time": 1,
+    "id": "ee1905afcba02bcb"
   },
   {
     "title": "歌声缘何慢半拍",
