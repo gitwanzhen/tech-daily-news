@@ -1126,5 +1126,41 @@
     "url": "https://juejin.cn/post/7683074444562415643",
     "read_time": 1,
     "id": "ad892c663b683f49"
+  },
+  {
+    "title": "什么是 RAG？如何用 RAG 实现一个用户记忆？",
+    "summary": "什么是 RAG？不是再接一套向量库。Postgres + pgvector、GLM 分片，下一轮请求召回后写进 systemPrompt。一篇看完：用户记忆怎么在 prompt 上跑通",
+    "full_content": "什么是 RAG？不是再接一套向量库。Postgres + pgvector、GLM 分片，下一轮请求召回后写进 systemPrompt。一篇看完：用户记忆怎么在 prompt 上跑通",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-09",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7683339702867542058",
+    "read_time": 1,
+    "id": "87e609e36de54aba"
+  },
+  {
+    "title": "Embabel 上手：Java Agent 是怎么干活的",
+    "summary": "一、Agent 与 Embabel 概览 1.什么是 Agent Agent（智能体）不是“回答问题的大模型”，而是一个能够围绕目标持续执行任务的软件系统。 一个完整的 Agent 通常包含： •目标",
+    "full_content": "一、Agent 与 Embabel 概览 1.什么是 Agent Agent（智能体）不是“回答问题的大模型”，而是一个能够围绕目标持续执行任务的软件系统。 一个完整的 Agent 通常包含： •目标",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-09",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7683375626494361640",
+    "read_time": 1,
+    "id": "0719d707e5e4fa64"
+  },
+  {
+    "title": "同一个 Blender 建模，Claude 两个模型都翻车，GPT-6 一次过",
+    "summary": "同一个 Blender 建模任务，Claude Opus 5 和 Fable 5.1 先后翻车，GPT-6 建出来的倒像那么回事。火柴人游戏 MVP 开发第三篇，附全过程截图。",
+    "full_content": "同一个 Blender 建模任务，Claude Opus 5 和 Fable 5.1 先后翻车，GPT-6 建出来的倒像那么回事。火柴人游戏 MVP 开发第三篇，附全过程截图。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-09",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7683394933152956456",
+    "read_time": 1,
+    "id": "1d23ec14b8bbc4c0"
   }
 ]
