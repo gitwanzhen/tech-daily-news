@@ -432,6 +432,18 @@
     "id": "dc8c3baa32f27c68"
   },
   {
+    "title": "The AI policy window is open. We need to act.",
+    "summary": "Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy...",
+    "full_content": "Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-09",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/ai-policy-window",
+    "read_time": 1,
+    "id": "e50720e57461212f"
+  },
+  {
     "title": "大模型 API 里的 Token 到底是怎么算的？",
     "summary": "最近在使用 DeepSeek、GPT、Claude、Gemini 这类大模型 API，发现 API 计费基本都是按照 Token 来计算的。想问下大家实际开发时，一般是怎么理解和计算 Token 的？比如一段中文、英文代码分别大概会占多少 ...",
     "full_content": "<p>最近在使用 DeepSeek、GPT、Claude、Gemini 这类大模型 API，发现 API 计费基本都是按照 Token 来计算的。</p><p>想问下大家实际开发时，一般是怎么理解和计算 Token 的？</p><p>比如一段中文、英文代码分别大概会占多少 Token？输入 Token 和输出 Token 又是怎么计算的？<br />有没有比较方便的 Token 统计工具推荐？</p><p>希望搞清楚中文、英文、代码等不同内容的 Token 消耗差异，以及有没有方便的 Token 统计工具。</p>",
@@ -514,6 +526,18 @@
     "url": "https://www.oschina.net/news/502395",
     "read_time": 1,
     "id": "16f5e9df74462885"
+  },
+  {
+    "title": "Termexo v0.8.5 发布：自带 ConPTY，改善旧版 Windows 终端兼容性",
+    "summary": "Termexo v0.8.5 已发布。Termexo 是 MIT 开源的 Windows 多 Agent 工作台，统一管理 Claude Code、Codex CLI、OpenCode 和真实终端。本版重点改善 Windows 终端兼容性与...",
+    "full_content": "Termexo v0.8.5 已发布。Termexo 是 MIT 开源的 Windows 多 Agent 工作台，统一管理 Claude Code、Codex CLI、OpenCode 和真实终端。本版重点改善 Windows 终端兼容性与运行时诊断。本文由项目维护者提供，AI 根据正式发布说明整理。 随包提供 ConPTY 此前使用系统自带的 ConPTY，部分旧版 Windows 会在输入转换时丢失 ...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-09",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502398",
+    "read_time": 1,
+    "id": "e36958740bb87f3b"
   },
   {
     "title": "习近平同英国首相伯纳姆通电话",
