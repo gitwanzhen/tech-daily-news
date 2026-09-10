@@ -396,6 +396,30 @@
     "id": "aa2ea623e7d1a173"
   },
   {
+    "title": "Introducing ChatGPT for Financial Services",
+    "summary": "Introducing ChatGPT for Financial Services, combining built-in financial data and GPT-6 Astra for research, modeling, an...",
+    "full_content": "Introducing ChatGPT for Financial Services, combining built-in financial data and GPT-6 Astra for research, modeling, and client-ready materials.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-10",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/introducing-chatgpt-financial-services",
+    "read_time": 1,
+    "id": "3f77446f0e44a8a2"
+  },
+  {
+    "title": "Build more natural voice experiences with GPT‑Live‑1 in the API",
+    "summary": "GPT‑Live‑1 brings natural, full-duplex voice conversations to the API, with stronger instruction following, custom voice...",
+    "full_content": "GPT‑Live‑1 brings natural, full-duplex voice conversations to the API, with stronger instruction following, custom voices, and telephony support.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-10",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+    "read_time": 1,
+    "id": "031421652db5e34f"
+  },
+  {
     "title": "个人开发者接大模型 API 做“套壳/包装工具”，现在还能赚到钱吗？",
     "summary": "看到很多独立开发者做 AI 图像去背景、AI 文案生成、AI 变现小工具。想问问大家，在各大厂商原生 API 功能越来越强的今天，个人做这种轻量级的 AI 工具，核心壁垒到底在哪里？是看流量运营还是看特定场景的极致体验？(我的感觉核心壁垒还...",
     "full_content": "<p>看到很多独立开发者做 AI 图像去背景、AI 文案生成、AI 变现小工具。想问问大家，在各大厂商原生 API 功能越来越强的今天，个人做这种轻量级的 AI 工具，核心壁垒到底在哪里？<br />是看流量运营还是看特定场景的极致体验？(我的感觉核心壁垒还是在流量上面)</p>",
@@ -1114,5 +1138,77 @@
     "url": "https://juejin.cn/post/7683731487178407972",
     "read_time": 1,
     "id": "e0ede8f23cb51760"
+  },
+  {
+    "title": "玩遍各种 Agent 后，我反而开始认真研究豆包和飞书",
+    "summary": "最近我突然开始认真研究豆包和飞书了，这件事情放在我自己身上其实还有点反差，因为过去很长一段时间我都在折腾各种国外的 Agent，Claude Code、Codex、各种 Vibe Coding 工具，",
+    "full_content": "最近我突然开始认真研究豆包和飞书了，这件事情放在我自己身上其实还有点反差，因为过去很长一段时间我都在折腾各种国外的 Agent，Claude Code、Codex、各种 Vibe Coding 工具，",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-10",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7683813142959472640",
+    "read_time": 1,
+    "id": "56264a28192e7fc4"
+  },
+  {
+    "title": "Hermes Agent 进阶：获得一个共同成长的长期记忆伙伴",
+    "summary": "你有没有想过把你的Agent打造成一个可以陪你成长，自动沉淀永远在升级的系统，我在前不久就突然冒出这么一个想法，想让我的Hermes可以缓慢的陪我一起成长。 这个想法不是单纯的依赖于Hermes自带的",
+    "full_content": "你有没有想过把你的Agent打造成一个可以陪你成长，自动沉淀永远在升级的系统，我在前不久就突然冒出这么一个想法，想让我的Hermes可以缓慢的陪我一起成长。 这个想法不是单纯的依赖于Hermes自带的",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-10",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7683804372278460416",
+    "read_time": 1,
+    "id": "b779a6b5c4ead7c4"
+  },
+  {
+    "title": "用 Node.js 复刻 Codex Astra 的终端星光",
+    "summary": "用 Node.js 复刻 Codex Astra 的终端星光 Codex 选中 gpt-6-astra 后，输入区域会出现一些淡淡的光点。它们停在原地，各自亮起，又慢慢隐进背景。 这类动画容易写得太吵",
+    "full_content": "用 Node.js 复刻 Codex Astra 的终端星光 Codex 选中 gpt-6-astra 后，输入区域会出现一些淡淡的光点。它们停在原地，各自亮起，又慢慢隐进背景。 这类动画容易写得太吵",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-10",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7683539970712830006",
+    "read_time": 1,
+    "id": "491870d9e0d1f5db"
+  },
+  {
+    "title": "💫 给金鱼建图书馆（下）：Milvus 向量数据库，让 AI 拥有长期记忆",
+    "summary": "一、为什么需要向量数据库？ 上篇的三种管理策略各有短板： 策略 问题 截断 老消息直接扔，信息全丢 总结 压缩后有信息损失，细节保不住 文件 存了全量，但搜索靠关键词匹配，\"我做什么工作\"匹配不到\"数",
+    "full_content": "一、为什么需要向量数据库？ 上篇的三种管理策略各有短板： 策略 问题 截断 老消息直接扔，信息全丢 总结 压缩后有信息损失，细节保不住 文件 存了全量，但搜索靠关键词匹配，\"我做什么工作\"匹配不到\"数",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-10",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7683753471716606006",
+    "read_time": 1,
+    "id": "ecfe027f75aa4486"
+  },
+  {
+    "title": "[Agent Memory / 强化学习] MemPO源码学习笔记 ---（1）--- 总体",
+    "summary": "[Agent Memory / 强化学习] MemPO源码学习笔记 ---（1）--- 总体 0x00 概要 0x01 基础 & 背景 1.1 用RL训练记忆系统的要点 1.2 主要难点 1.3 主要",
+    "full_content": "[Agent Memory / 强化学习] MemPO源码学习笔记 ---（1）--- 总体 0x00 概要 0x01 基础 & 背景 1.1 用RL训练记忆系统的要点 1.2 主要难点 1.3 主要",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-10",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7683751335721320463",
+    "read_time": 1,
+    "id": "8cf8d0dc87d9236d"
+  },
+  {
+    "title": "DeepSeek Harness 系列（02）：万物皆插件——Cordis 核心设计深度解读",
+    "summary": "dsh 的所有能力都建立在 Cordis 插件框架之上。这篇文章结合真实源码，深度解读 Cordis 五个核心机制：Plugin、Context、Service、Event、Effect",
+    "full_content": "dsh 的所有能力都建立在 Cordis 插件框架之上。这篇文章结合真实源码，深度解读 Cordis 五个核心机制：Plugin、Context、Service、Event、Effect",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-10",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7683539970712731702",
+    "read_time": 1,
+    "id": "34907f0eeb7d0e73"
   }
 ]
