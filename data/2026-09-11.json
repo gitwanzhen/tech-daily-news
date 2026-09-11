@@ -432,6 +432,18 @@
     "id": "8e610a2233c8a93e"
   },
   {
+    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+    "summary": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion Ch...",
+    "full_content": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-11",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+    "read_time": 1,
+    "id": "ebb4b1b0f1245e5c"
+  },
+  {
     "title": "AIGCPanel v2.3.0 API 开放 + 全工具双语，AIGCPanel 变得「可编程」",
     "summary": "所有 AI 能力变成 HTTP 接口。每个工具都支持中英双语切换。失败的任务可以继续，不用从头再来。 AIGCPanel 是一款跨平台的 AI 数字人桌面应用，涵盖声音合成与克隆、口型同步数字人生成、25+ 音视频处理工具和智能直播。之前所...",
     "full_content": "所有 AI 能力变成 HTTP 接口。每个工具都支持中英双语切换。失败的任务可以继续，不用从头再来。 AIGCPanel 是一款跨平台的 AI 数字人桌面应用，涵盖声音合成与克隆、口型同步数字人生成、25+ 音视频处理工具和智能直播。之前所有操作都在图形界面里完成，v2.3.0 给这套能力加了一层 HTTP 接口。就像给普通的桌面软件装了...",
@@ -1124,5 +1136,53 @@
     "url": "https://juejin.cn/post/7684094585053773834",
     "read_time": 1,
     "id": "c0fc9d8c40e8b7dd"
+  },
+  {
+    "title": "我做了一个 Chrome 扩展，把 YouTube 播放列表批量变成 AI 可读的本地 Markdown",
+    "summary": "现在的 AI 已经很擅长总结、分类和问答，但在真正使用它整理知识时，我经常卡在更前面的一步： 怎样把散落在视频里的内容，变成 AI 可以稳定读取的资料？ 我平时会在 YouTube 上看课程、访谈和播",
+    "full_content": "现在的 AI 已经很擅长总结、分类和问答，但在真正使用它整理知识时，我经常卡在更前面的一步： 怎样把散落在视频里的内容，变成 AI 可以稳定读取的资料？ 我平时会在 YouTube 上看课程、访谈和播",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-11",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7684157530612138010",
+    "read_time": 1,
+    "id": "29236a6e6dd03923"
+  },
+  {
+    "title": "多人共用一个 key，缓存命中率会不会因此降低？",
+    "summary": "团队刚把一堆 AI 调用并到一个大模型推理套餐上，月底账单摊开，有人拍桌子：\"是不是咱们这么多人共用一个 key，把缓存命中率搞崩了？\" 这话对一半，错一半。 对的是，多人共用套餐确实可能把命中率拉下",
+    "full_content": "团队刚把一堆 AI 调用并到一个大模型推理套餐上，月底账单摊开，有人拍桌子：\"是不是咱们这么多人共用一个 key，把缓存命中率搞崩了？\" 这话对一半，错一半。 对的是，多人共用套餐确实可能把命中率拉下",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-11",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7684080641567916047",
+    "read_time": 1,
+    "id": "7ff536069999354c"
+  },
+  {
+    "title": "鬼故事 ！DeepSeek4.1 比Opus5 GPT5.6还强！",
+    "summary": "我已经给大家预警过了，没想到 DeepSeek V4.1 Flash 发布之后，还是被吹上天了！ 一个 Flash 居然打败 GPT-5.6 和 Opus 5 等旗舰模型了，有点聊斋的味道了！ 这个事",
+    "full_content": "我已经给大家预警过了，没想到 DeepSeek V4.1 Flash 发布之后，还是被吹上天了！ 一个 Flash 居然打败 GPT-5.6 和 Opus 5 等旗舰模型了，有点聊斋的味道了！ 这个事",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-11",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7684080599314038818",
+    "read_time": 1,
+    "id": "c033b828f7df31da"
+  },
+  {
+    "title": "一天一个开源项目（第214篇）：AstronRPA —— 科大讯飞开源的企业级 RPA + AI Agent 自动化平台",
+    "summary": "AstronRPA 是科大讯飞开源的企业级桌面 RPA 平台，300+ 预置组件覆盖浏览器、GUI、Excel/Word/PDF、图像识别、AI 服务，与 Astron Agent 双向集成实现\"推理",
+    "full_content": "AstronRPA 是科大讯飞开源的企业级桌面 RPA 平台，300+ 预置组件覆盖浏览器、GUI、Excel/Word/PDF、图像识别、AI 服务，与 Astron Agent 双向集成实现\"推理",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-11",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7684019326370611263",
+    "read_time": 1,
+    "id": "8b7b32deb533dcde"
   }
 ]
