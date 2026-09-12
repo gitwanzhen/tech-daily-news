@@ -130,5 +130,53 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%8B%BC%E9%98%9F%20%E9%81%97%E6%86%BE",
     "read_time": 1,
     "id": "a3ad6f2a1146f690"
+  },
+  {
+    "title": "AI短剧 成瘾",
+    "summary": "AI短剧 成瘾",
+    "full_content": "AI短剧 成瘾",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-09-13",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3DAI%E7%9F%AD%E5%89%A7%20%E6%88%90%E7%98%BE",
+    "read_time": 1,
+    "id": "5e912953ddca44d3"
+  },
+  {
+    "title": "吃得越狠老得越慢",
+    "summary": "吃得越狠老得越慢",
+    "full_content": "吃得越狠老得越慢",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-09-13",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%90%83%E5%BE%97%E8%B6%8A%E7%8B%A0%E8%80%81%E5%BE%97%E8%B6%8A%E6%85%A2",
+    "read_time": 1,
+    "id": "b29438094808af6c"
+  },
+  {
+    "title": "孙心然美网青少年冠军",
+    "summary": "孙心然美网青少年冠军",
+    "full_content": "孙心然美网青少年冠军",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-09-13",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%AD%99%E5%BF%83%E7%84%B6%E7%BE%8E%E7%BD%91%E9%9D%92%E5%B0%91%E5%B9%B4%E5%86%A0%E5%86%9B",
+    "read_time": 1,
+    "id": "6e9eaea84d5d1960"
+  },
+  {
+    "title": "智能体开发环境ADE浅析，编程工具的下一次范式跃迁",
+    "summary": "如果你最近关注开发者社区的动态，大概会频繁撞见一个新词——ADE，全称Agentic Development Environment，中文常译为智能体开发环境。这个词的走红并非偶然，它标志着编程工具正",
+    "full_content": "如果你最近关注开发者社区的动态，大概会频繁撞见一个新词——ADE，全称Agentic Development Environment，中文常译为智能体开发环境。这个词的走红并非偶然，它标志着编程工具正",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-13",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7684207558064701480",
+    "read_time": 1,
+    "id": "80a73728d3b98164"
   }
 ]

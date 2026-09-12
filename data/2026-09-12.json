@@ -1008,6 +1008,54 @@
     "id": "931d173458b0c185"
   },
   {
+    "title": "DeepSeek 这波操作很凶",
+    "summary": "9 月 10 日那天，DeepSeek 悄悄把一项价格调到了 0.02 元——比之前便宜了 60%。 很多人看到这条，随手划走，心想\"又降价\"。但这次降价不是促销，是结果。真正发生的事藏在 AI 的\"",
+    "full_content": "9 月 10 日那天，DeepSeek 悄悄把一项价格调到了 0.02 元——比之前便宜了 60%。 很多人看到这条，随手划走，心想\"又降价\"。但这次降价不是促销，是结果。真正发生的事藏在 AI 的\"",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-12",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7684154085232017443",
+    "read_time": 1,
+    "id": "c4ece9124fc31066"
+  },
+  {
+    "title": "一条高质量编程 Prompt，应该包含什么？",
+    "summary": "开篇 不少开发者把 AI 编程效果不好，归结为“自己不会写 Prompt”。 于是开始寻找： 万能编程 Prompt。 高级角色设定。 超长提示词模板。 让 AI 一次生成完整项目的咒语。 但在真实开",
+    "full_content": "开篇 不少开发者把 AI 编程效果不好，归结为“自己不会写 Prompt”。 于是开始寻找： 万能编程 Prompt。 高级角色设定。 超长提示词模板。 让 AI 一次生成完整项目的咒语。 但在真实开",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-12",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7684463933719167003",
+    "read_time": 1,
+    "id": "9e73c2ecef39fa18"
+  },
+  {
+    "title": "120+ 个 Agent Skill 管不过来？我造了套「包管理器」：仓库是源，链接是安装",
+    "summary": "skillctl 六个工具按痛点长成：初始化、安装、同步、汇聚、体检、提交推送，全部幂等可重跑，断链和锁不一致能一键安全修复。",
+    "full_content": "skillctl 六个工具按痛点长成：初始化、安装、同步、汇聚、体检、提交推送，全部幂等可重跑，断链和锁不一致能一键安全修复。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-12",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7684228650582278150",
+    "read_time": 1,
+    "id": "e10ca8d604db87dc"
+  },
+  {
+    "title": "看清 Claude Code 的用量与文件变更",
+    "summary": "汇总多次会话、多台机器上的 Claude Code 用量，结合对话、工具调用和文件差异，看清智能体做了什么、修改了什么，以及消耗了哪些资源。",
+    "full_content": "汇总多次会话、多台机器上的 Claude Code 用量，结合对话、工具调用和文件差异，看清智能体做了什么、修改了什么，以及消耗了哪些资源。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-12",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7684215630454964276",
+    "read_time": 1,
+    "id": "275f225a2ef175bf"
+  },
+  {
     "title": "我想留在你身边",
     "summary": "标题：我想留在你身边评分：0片长：111分钟制片国家/地区：中国大陆导演：相国强主演：毕雯珺 / 何蓝逗 / 王砚辉",
     "full_content": "标题：我想留在你身边<br />评分：0<br />片长：111分钟<br />制片国家/地区：中国大陆<br />导演：相国强<br />主演：毕雯珺 / 何蓝逗 / 王砚辉<br /><img src=\"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935129542.webp\" />",
