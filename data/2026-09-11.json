@@ -540,6 +540,30 @@
     "id": "5371a4b27b910d29"
   },
   {
+    "title": "Termexo v0.8.7 发布：换用 avt 解析器，修复终端空白与重绘阻塞",
+    "summary": "官网工作台截图（v0.8.0 界面示意，非本版新增功能截图）。 我是 Termexo 的维护者。Termexo 是 MIT 开源的 Windows 工作台，用于集中使用 Claude Code、Codex 和 OpenCode。 v0.8....",
+    "full_content": "官网工作台截图（v0.8.0 界面示意，非本版新增功能截图）。 我是 Termexo 的维护者。Termexo 是 MIT 开源的 Windows 工作台，用于集中使用 Claude Code、Codex 和 OpenCode。 v0.8.7 聚焦终端可靠性：Agent 明明还在运行，界面却空白并显示“已停止”，这样的故障比普通显示错乱更影响工作。本次修复了宽字符与窗口缩窄共...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-11",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502429",
+    "read_time": 1,
+    "id": "bdb23c250b313c21"
+  },
+  {
+    "title": "全能 Go Agent 框架 Covonaut v1.1.2 发布：终端对话加入旁问与三档输出",
+    "summary": "Covonaut 是面向生产环境的 Go Agent 框架，纯 Go 实现，以 MIT 协议开源。覆盖 Agent 开发的完整链路：Agent Loop（含上下文自动压缩、指数退避重试）、工具系统、多 Agent 交接、图引擎（DAG 与 ...",
+    "full_content": "Covonaut 是面向生产环境的 Go Agent 框架，纯 Go 实现，以 MIT 协议开源。覆盖 Agent 开发的完整链路：Agent Loop（含上下文自动压缩、指数退避重试）、工具系统、多 Agent 交接、图引擎（DAG 与 Pregel 两种执行模型）、会话树、可观测性，以及 A2A（Agent-to-Agent）、ACP（Agent Client Protocol）、AG-UI（Agent-U...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-11",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502428",
+    "read_time": 1,
+    "id": "caa0078a5c5b1092"
+  },
+  {
     "title": "习近平对青岛货轮火灾作出重要指示",
     "summary": "习近平对青岛货轮火灾作出重要指示",
     "full_content": "习近平对青岛货轮火灾作出重要指示",
