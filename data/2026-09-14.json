@@ -324,6 +324,18 @@
     "id": "b84e9e643014a800"
   },
   {
+    "title": "How Fyxer built an AI executive assistant people trust",
+    "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’...",
+    "full_content": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-14",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/fyxer",
+    "read_time": 1,
+    "id": "2318750699794a8e"
+  },
+  {
     "title": "Casdoor v4 发布：控制台全面重写，内置 MCP Server 与 Agent 鉴权，项目已收录进 CNCF 全景图",
     "summary": "开源身份认证与访问管理平台 Casdoor 于 2026 年 9 月 1 日发布 v4.0，截至 9 月 9 日已迭代至 v4.3。此外，该项目已于 2026 年 2 月 22 日收录进 CNCF 云原生全景图，位于 Provisionin...",
     "full_content": "开源身份认证与访问管理平台 Casdoor 于 2026 年 9 月 1 日发布 v4.0，截至 9 月 9 日已迭代至 v4.3。此外，该项目已于 2026 年 2 月 22 日收录进 CNCF 云原生全景图，位于 Provisioning 板块的 Security & Compliance 分类。 Casdoor 由 Casbin 社区开发，采用 Go 与 React 编写，遵循 Apache 2.0 协议，目前在 GitHub...",
@@ -879,5 +891,29 @@
     "url": "https://juejin.cn/post/7685238126570405915",
     "read_time": 1,
     "id": "39f275a76de0f313"
+  },
+  {
+    "title": "别急着上 Agentic RAG：先用 LangGraph 把最小 RAG 跑明白",
+    "summary": "前段时间刚把 LangGraph 的基础流程过了一遍。 State、Node、Edge、Conditional Edge…… 单独看这些概念其实并不难，但学完之后很容易产生一个问题： 这次我拿 RAG",
+    "full_content": "前段时间刚把 LangGraph 的基础流程过了一遍。 State、Node、Edge、Conditional Edge…… 单独看这些概念其实并不难，但学完之后很容易产生一个问题： 这次我拿 RAG",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-14",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7685202974937464872",
+    "read_time": 1,
+    "id": "7773a05b2eee73be"
+  },
+  {
+    "title": "LangGraph 进阶：Command + Send 动态控制流、并行 Map-Reduce 实战与踩坑",
+    "summary": "初学 LangGraph 时，最先接触的是静态条件分支 add_conditional_edges。这种方式在编译期定义图的分支规则，ReAct Agent 循环就用它，图结构清晰、Mermaid 可",
+    "full_content": "初学 LangGraph 时，最先接触的是静态条件分支 add_conditional_edges。这种方式在编译期定义图的分支规则，ReAct Agent 循环就用它，图结构清晰、Mermaid 可",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-14",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7685261744722968627",
+    "read_time": 1,
+    "id": "44db0c9eb7ed4e03"
   }
 ]
