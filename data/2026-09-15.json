@@ -1148,5 +1148,41 @@
     "url": "https://juejin.cn/post/7685320540698361899",
     "read_time": 1,
     "id": "7340a61edaa426d3"
+  },
+  {
+    "title": "LangGraph 1.2+ 新特性：set_node_defaults，批量统一节点策略",
+    "summary": "前言 在用 LangGraph 开发 Agent 图的时候，经常会遇到一个痛点：图里面十几个节点，大部分都需要配置重试、超时、异常捕获。 如果每个 add_node 都手动写一遍 retry_poli",
+    "full_content": "前言 在用 LangGraph 开发 Agent 图的时候，经常会遇到一个痛点：图里面十几个节点，大部分都需要配置重试、超时、异常捕获。 如果每个 add_node 都手动写一遍 retry_poli",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-15",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7685656497388961843",
+    "read_time": 1,
+    "id": "07b718e0b92f67b0"
+  },
+  {
+    "title": "一图看懂 ADrive 跨产品协作实践：文件通了，Agent 就通了",
+    "summary": "火山引擎 ADrive 依托 ADrive CLI 搭建 Agent 统一文件协作空间，以 48 小时视频项目演示多 Agent 接力创作，高危操作人工确认，附接入方法。",
+    "full_content": "火山引擎 ADrive 依托 ADrive CLI 搭建 Agent 统一文件协作空间，以 48 小时视频项目演示多 Agent 接力创作，高危操作人工确认，附接入方法。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-15",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7685644889095733299",
+    "read_time": 1,
+    "id": "99cbf8ff83ec8915"
+  },
+  {
+    "title": "从 RAG 到 Agentic RAG：第一步，让模型决定「要不要检索」",
+    "summary": "普通 RAG 通常只有一条固定流水线：用户提问 → 向量检索 → 拼接上下文 → LLM 生成答案。它能工作，却不会判断。这篇从一个最基础的 RAG 出发，用 LangGraph 加入问题路由，让模型",
+    "full_content": "普通 RAG 通常只有一条固定流水线：用户提问 → 向量检索 → 拼接上下文 → LLM 生成答案。它能工作，却不会判断。这篇从一个最基础的 RAG 出发，用 LangGraph 加入问题路由，让模型",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-15",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7685648064543031342",
+    "read_time": 1,
+    "id": "a9e32fe3e23bb707"
   }
 ]
