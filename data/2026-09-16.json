@@ -588,6 +588,18 @@
     "id": "99d80cec0a917ba8"
   },
   {
+    "title": "covo-agent v1.0.0 发布，基于 covonaut 框架的通用型Agent迎来正式版",
+    "summary": "我们很高兴地宣布，基于 covonaut 框架的终端 AI Agent 项目 covo-agent 正式发布 v1.0.0。 covo-agent 是一个用 Go 编写的通用型 AI Agent，体验可以说是市面上最好的之一，完全可以替代 ...",
+    "full_content": "我们很高兴地宣布，基于 covonaut 框架的终端 AI Agent 项目 covo-agent 正式发布 v1.0.0。 covo-agent 是一个用 Go 编写的通用型 AI Agent，体验可以说是市面上最好的之一，完全可以替代 Claude Code、Codex Cli 等同类产品，运行在终端里，提供 general 与 code 两种模式，覆盖日常知识工作、软件开发与自动化等各种场...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-16",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502531",
+    "read_time": 1,
+    "id": "858a50e4ec5fd0b6"
+  },
+  {
     "title": "习近平南亚之行三大成果",
     "summary": "习近平南亚之行三大成果",
     "full_content": "习近平南亚之行三大成果",
