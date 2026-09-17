@@ -1,5 +1,17 @@
 [
   {
+    "title": "Introducing the Life Sciences Verification Program",
+    "summary": "Today, we are introducing the Life Sciences Verification Program (LSVP), which gives life science professionals access t...",
+    "full_content": "<article><div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__hero\"><div class=\"PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper\"><div class=\"Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-module__WyGOtq__aspect-wide Illustration-module-scss-module__WyGOtq__padding-lg Illustration-module-scss-module__WyGOtq__radius-lg bg-cactus\"><div class=\"Illustration-module-scss-module__WyGOtq__inner\"><img alt=\"Introducing the Life Sciences Verification Program\" class=\"\" height=\"1000\" src=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/d6058e0db8e477dc782dacae46e2ec6663d165d9-1000x1000.svg\" width=\"1000\" /></div></div></div></div><div class=\"page-wrapper\"><article><div class=\"\"><div class=\"Body-module-scss-module__z40yvW__body\"><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Today, we are introducing the Life Sciences Verification Program (LSVP), which gives life science professionals access to our Mythos, Opus, and Sonnet models with a refined set of safeguards more permissive for biology-related work. We have already onboarded dozens of organizations through an early access program, and are now opening applications to the broader life science community (<a href=\"https://claude.com/form/life-sciences-verification-program\">apply here</a>). The program is launching in beta, initially for teams and institutions. We will continue to improve the program and expand access to individual Pro and Max plans over time.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">The LSVP is designed to enable life science professionals to use our models across a wide range of tasks that are currently blocked in our generally-available Fable models, like drug discovery, research biol…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-17",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/life-sciences-verification-program",
+    "read_time": 10,
+    "id": "c71245ef57d4e35f"
+  },
+  {
     "title": "iPhone18 Pro性能分析",
     "summary": "iPhone18 Pro性能分析",
     "full_content": "iPhone18 Pro性能分析<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221213/eaf2dd702d7cc14d8d9511190245d057/lrx9rnKo24.png\" />",
@@ -322,6 +334,18 @@
     "url": "https://openai.com/index/model-misalignment-reporting-framework",
     "read_time": 1,
     "id": "1be7a08560a952c3"
+  },
+  {
+    "title": "Introducing Astra for Law",
+    "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grad...",
+    "full_content": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-17",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/astra-for-law",
+    "read_time": 1,
+    "id": "a99e443ad7e82e6c"
   },
   {
     "title": "小米把 MiMo 2.6 的后训练过程实时直播出来了",
@@ -718,5 +742,65 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%9B%BD%E4%B9%923%E5%B0%8F%E6%97%B6vs%E6%97%A5%E4%B9%9230%E5%88%86%E9%92%9F%E5%BE%80%E8%BF%94%E9%80%9A%E5%8B%A4",
     "read_time": 1,
     "id": "be52db01b96677dc"
+  },
+  {
+    "title": "AI Coding 时代下，我的技术面试实践分享",
+    "summary": "从年初到现在，大家在 AI Coding 时代的工作方式已经有了很大变化，我作为面试官进行了多场面试。在这个过程中也尝试调整了一些面试方式。",
+    "full_content": "从年初到现在，大家在 AI Coding 时代的工作方式已经有了很大变化，我作为面试官进行了多场面试。在这个过程中也尝试调整了一些面试方式。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-17",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7686389996108480562",
+    "read_time": 1,
+    "id": "6363f593f21a7584"
+  },
+  {
+    "title": "小黑插图 Skill:从 11.7k star 的 Codex 专属，到 Claude Code 能用的平替",
+    "summary": "11.7k star 的小黑配图 Skill 只能用 Codex？拆解出图流程，手把手教你用平替 character-illustrations 在 Claude Code 本地渲染 SVG 插图。",
+    "full_content": "11.7k star 的小黑配图 Skill 只能用 Codex？拆解出图流程，手把手教你用平替 character-illustrations 在 Claude Code 本地渲染 SVG 插图。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-17",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7686389996108464178",
+    "read_time": 1,
+    "id": "cba93e60fdb19ca1"
+  },
+  {
+    "title": "不写出来的思考：把 Transformer 的层循环起来，是第三条 scaling 轴还是省错了地方？",
+    "summary": "一、两个默认出口，各自在机制上必然收费 先说清楚这条路到底想要什么。 现在的语言模型想做多步串行计算，默认只有两个出口： 第二条收费值得展开。模型内部\"想\"一个概念，是一长串连续的数，可以同时压着好几",
+    "full_content": "一、两个默认出口，各自在机制上必然收费 先说清楚这条路到底想要什么。 现在的语言模型想做多步串行计算，默认只有两个出口： 第二条收费值得展开。模型内部\"想\"一个概念，是一长串连续的数，可以同时压着好几",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-17",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7686341072617177126",
+    "read_time": 1,
+    "id": "a4b27492d17b3ded"
+  },
+  {
+    "title": "[Agent Memory / 强化学习] MemPO源码学习笔记 --- （3）--- Rollout思路",
+    "summary": "[Agent Memory / 强化学习] MemPO源码学习笔记 --- （3）--- Rollout思路 0x00 概要 0x01 Rollout 主要内容 1.1 时间线 1.2 纯 Rollo",
+    "full_content": "[Agent Memory / 强化学习] MemPO源码学习笔记 --- （3）--- Rollout思路 0x00 概要 0x01 Rollout 主要内容 1.1 时间线 1.2 纯 Rollo",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-17",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7686394441276637230",
+    "read_time": 1,
+    "id": "8308580d3b9f326b"
+  },
+  {
+    "title": "如何看待GPT-6在UP主众测中碾压夺冠？它是现在最强大模型吗？",
+    "summary": "前言 9月16日，B站「AI无限竞技场」正式上线，首期大模型测评榜单同步公布。 GPT-6 Astra在10位UP主的测评中拿下榜首，获得榜首次数冠军。 榜单前五名中，国产大模型占据三席。 消息一出，",
+    "full_content": "前言 9月16日，B站「AI无限竞技场」正式上线，首期大模型测评榜单同步公布。 GPT-6 Astra在10位UP主的测评中拿下榜首，获得榜首次数冠军。 榜单前五名中，国产大模型占据三席。 消息一出，",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-17",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7686347234725068843",
+    "read_time": 1,
+    "id": "4b13b05c0c31e071"
   }
 ]
