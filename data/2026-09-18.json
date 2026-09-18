@@ -216,6 +216,54 @@
     "id": "9260a1d20a7281a1"
   },
   {
+    "title": "为什么所有App都能借钱给你",
+    "summary": "为什么所有App都能借钱给你",
+    "full_content": "为什么所有App都能借钱给你<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-09-18",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E4%B8%BA%E4%BB%80%E4%B9%88%E6%89%80%E6%9C%89App%E9%83%BD%E8%83%BD%E5%80%9F%E9%92%B1%E7%BB%99%E4%BD%A0&from_source=webtop_search",
+    "read_time": 1,
+    "id": "f49c88aec1dd2d43"
+  },
+  {
+    "title": ":tada: 批量主机管理软件 WGCLOUD v3.7.0 正式发布",
+    "summary": "WGCLOUD 是一款集成度较高的分布式运维监控平台，具有集群监控，易部署、易上手使用、轻量、高效、自动化等特点，server 端基于 springboot 开发，agent 端使用 go 编写。核心模块包括：主机系统信息监控，CPU 监控...",
+    "full_content": "WGCLOUD 是一款集成度较高的分布式运维监控平台，具有集群监控，易部署、易上手使用、轻量、高效、自动化等特点，server 端基于 springboot 开发，agent 端使用 go 编写。核心模块包括：主机系统信息监控，CPU 监控，CPU 温度监控，内存监控，网络流量监控，磁盘 IO 监控，磁盘空间监测，系统负载监控，硬盘 smart 健康检...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-18",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502558",
+    "read_time": 1,
+    "id": "5356de233220ac74"
+  },
+  {
+    "title": "浏览器 AI 助手新增定时任务、页面调试工具与侧边栏作用域模式",
+    "summary": "开源 Chrome 浏览器 AI 助手扩展 AI Helper 近日迎来一波密集更新，先后上线了定时任务调度、基于 Chrome DevTools Protocol 的页面调试工具 debug_page、侧边栏作用域模式（全局 / 标签页绑...",
+    "full_content": "开源 Chrome 浏览器 AI 助手扩展 AI Helper 近日迎来一波密集更新，先后上线了定时任务调度、基于 Chrome DevTools Protocol 的页面调试工具 debug_page、侧边栏作用域模式（全局 / 标签页绑定）三大核心能力，并配套改进了聊天面板的历史定位与时间戳体验。 AI Helper 是一个采用 MIT 许可证开源的浏览器智能助手扩展，...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-18",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502557",
+    "read_time": 1,
+    "id": "9914f2bcb40f46f1"
+  },
+  {
+    "title": "OwnCode 0.1.14 发布：安全优先的本地 AI 编程工具",
+    "summary": "OwnCode 是一款面向开发者的桌面端 AI 编程工具。与传统在线编程助手不同，OwnCode 从设计之初就将安全与隐私放在首位，帮助开发者更安心地使用 AI 提升开发效率。 本次发布的 0.1.12 版本重点完善了本地代码工作区、会话管...",
+    "full_content": "OwnCode 是一款面向开发者的桌面端 AI 编程工具。与传统在线编程助手不同，OwnCode 从设计之初就将安全与隐私放在首位，帮助开发者更安心地使用 AI 提升开发效率。 本次发布的 0.1.12 版本重点完善了本地代码工作区、会话管理和界面体验，并新增浅色主题。 核心特性 敏感信息自动脱敏 在代码、配置文件和项目内容发送给大...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-18",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502555",
+    "read_time": 1,
+    "id": "0e3f4435788eb11a"
+  },
+  {
     "title": "总书记引领科技强国路",
     "summary": "总书记引领科技强国路",
     "full_content": "总书记引领科技强国路",
@@ -382,5 +430,101 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%8A%92%E6%9E%9C%E7%BB%99%E7%99%BD%E9%B9%BF%E7%9A%84%E5%AE%9A%E4%BD%8D%E6%98%AF%E5%9B%BD%E6%B0%91%E5%A5%B3%E4%B8%BB",
     "read_time": 1,
     "id": "a31abc99aafcd600"
+  },
+  {
+    "title": "918鸣笛",
+    "summary": "918鸣笛",
+    "full_content": "918鸣笛",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-09-18",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D918%E9%B8%A3%E7%AC%9B",
+    "read_time": 1,
+    "id": "c6d79bf46bf9b3e6"
+  },
+  {
+    "title": "每个中国人都不能忘记九一八",
+    "summary": "每个中国人都不能忘记九一八",
+    "full_content": "每个中国人都不能忘记九一八",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-09-18",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%AF%8F%E4%B8%AA%E4%B8%AD%E5%9B%BD%E4%BA%BA%E9%83%BD%E4%B8%8D%E8%83%BD%E5%BF%98%E8%AE%B0%E4%B9%9D%E4%B8%80%E5%85%AB",
+    "read_time": 1,
+    "id": "5c5a0ef60a99f63d"
+  },
+  {
+    "title": "GEO终于有标准了",
+    "summary": "GEO终于有标准了",
+    "full_content": "GEO终于有标准了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-09-18",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3DGEO%E7%BB%88%E4%BA%8E%E6%9C%89%E6%A0%87%E5%87%86%E4%BA%86",
+    "read_time": 1,
+    "id": "2453f0a0d1ed40d3"
+  },
+  {
+    "title": "九一八事变",
+    "summary": "九一八事变",
+    "full_content": "九一八事变",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-09-18",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E4%B9%9D%E4%B8%80%E5%85%AB%E4%BA%8B%E5%8F%98",
+    "read_time": 1,
+    "id": "2c16ca13b1b33e7a"
+  },
+  {
+    "title": "小猫寄养五天以为主人不要它了",
+    "summary": "小猫寄养五天以为主人不要它了",
+    "full_content": "小猫寄养五天以为主人不要它了",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-09-18",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%B0%8F%E7%8C%AB%E5%AF%84%E5%85%BB%E4%BA%94%E5%A4%A9%E4%BB%A5%E4%B8%BA%E4%B8%BB%E4%BA%BA%E4%B8%8D%E8%A6%81%E5%AE%83%E4%BA%86",
+    "read_time": 1,
+    "id": "6fcba88a534ce96a"
+  },
+  {
+    "title": "王楚钦因病毒性生病没打澳门冠军赛",
+    "summary": "王楚钦因病毒性生病没打澳门冠军赛",
+    "full_content": "王楚钦因病毒性生病没打澳门冠军赛",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-09-18",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%8E%8B%E6%A5%9A%E9%92%A6%E5%9B%A0%E7%97%85%E6%AF%92%E6%80%A7%E7%94%9F%E7%97%85%E6%B2%A1%E6%89%93%E6%BE%B3%E9%97%A8%E5%86%A0%E5%86%9B%E8%B5%9B",
+    "read_time": 1,
+    "id": "2172de18c81f0376"
+  },
+  {
+    "title": "UFO高速飞过墨西哥城上空",
+    "summary": "UFO高速飞过墨西哥城上空",
+    "full_content": "UFO高速飞过墨西哥城上空",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-09-18",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3DUFO%E9%AB%98%E9%80%9F%E9%A3%9E%E8%BF%87%E5%A2%A8%E8%A5%BF%E5%93%A5%E5%9F%8E%E4%B8%8A%E7%A9%BA",
+    "read_time": 1,
+    "id": "73ef706fdf5ffd3d"
+  },
+  {
+    "title": "妈妈嘱咐双胞胎一个别惹事一个别怂",
+    "summary": "妈妈嘱咐双胞胎一个别惹事一个别怂",
+    "full_content": "妈妈嘱咐双胞胎一个别惹事一个别怂",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-09-18",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%A6%88%E5%A6%88%E5%98%B1%E5%92%90%E5%8F%8C%E8%83%9E%E8%83%8E%E4%B8%80%E4%B8%AA%E5%88%AB%E6%83%B9%E4%BA%8B%E4%B8%80%E4%B8%AA%E5%88%AB%E6%80%82",
+    "read_time": 1,
+    "id": "b70ee5dbb56f6ce3"
   }
 ]

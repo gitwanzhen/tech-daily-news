@@ -348,6 +348,18 @@
     "id": "a99e443ad7e82e6c"
   },
   {
+    "title": "How Cooley is accelerating IPO work with ChatGPT",
+    "summary": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlie...",
+    "full_content": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-17",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/cooley-gopublic",
+    "read_time": 1,
+    "id": "e268b158afb837ba"
+  },
+  {
     "title": "小米把 MiMo 2.6 的后训练过程实时直播出来了",
     "summary": "小米 MiMo 大模型团队在官网上挂了一个后训练实时数据面板，正在“公开裸奔”地训练 MiMo 2.6——团队认为 RL 是实现 AI 自我改进的最具可扩展路径之一，将逐步开源训练细节，并提供实时训练仪表盘以展示进展。 打开 mimo.xi...",
     "full_content": "小米 MiMo 大模型团队在官网上挂了一个后训练实时数据面板，正在“公开裸奔”地训练 MiMo 2.6——团队认为 RL 是实现 AI 自我改进的最具可扩展路径之一，将逐步开源训练细节，并提供实时训练仪表盘以展示进展。 打开 mimo.xiaomi.com/rl/，你能看到两个模型——pro 和 flash——当前跑到第几步、每一步接受了多少样本、花...",
