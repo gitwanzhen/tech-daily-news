@@ -1,5 +1,17 @@
 [
   {
+    "title": "Partnering with Accenture on embedded evaluation",
+    "summary": "We're partnering with Accenture on independent evaluation of frontier AI. This is an important step toward the commitmen...",
+    "full_content": "<article><div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__hero\"></div><div class=\"page-wrapper\"><article><div class=\"\"><div class=\"Body-module-scss-module__z40yvW__body\"><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">We're partnering with Accenture on independent evaluation of frontier AI. This is an important step toward the commitment, made in our CEO’s <a href=\"https://darioamodei.com/post/we-must-pace-the-frontier\">essay</a> “We Must Pace the Frontier,” to embed evaluators within Anthropic.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">The partnership will be led by Faculty, Accenture’s specialist AI business, and will include evaluating and red-teaming models, conducting alignment assessments, and testing model safeguards. Accenture helps businesses and governments deploy AI across many industries. Their understanding of how enterprises use AI in practice informs their safety approach, and they will bring that perspective to evaluating our models.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Anthropic and Accenture each expect to invest at least $1 billion in building capacity in this area over the next five years.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Embedded evaluation is new, and many of the details about how it will operate are still being worked out. Unlike today’s external evaluators, embedded evaluators will work inside AI companies, with access comparable to an employee's. That access allows them to watch models take shape in training, follow the decisions that govern how those models are built and deployed, and speak directly to employees. From this vantage point, embedded evaluator…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-18",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+    "read_time": 10,
+    "id": "02baaf3c371a8e5f"
+  },
+  {
     "title": "南医大学生坠亡事件谣言为何汹涌",
     "summary": "南医大学生坠亡事件谣言为何汹涌",
     "full_content": "南医大学生坠亡事件谣言为何汹涌<br />",
