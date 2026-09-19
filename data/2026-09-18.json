@@ -588,6 +588,18 @@
     "id": "829f23d7725ae774"
   },
   {
+    "title": "别再让 Agent 裸连数据库了：如何用 MCP + 语义网关解决 NL2SQL 幻觉与权限失控",
+    "summary": "在 2026 年，给 AI Agent（Cursor、Claude Desktop、Dify、Coze 等）外挂一个数据库连接，已经成为很多开发者的标配操作。从简单的官方 SQLite/MySQL MCP 到各种通用客户端扩展，让大模型“直...",
+    "full_content": "在 2026 年，给 AI Agent（Cursor、Claude Desktop、Dify、Coze 等）外挂一个数据库连接，已经成为很多开发者的标配操作。从简单的官方 SQLite/MySQL MCP 到各种通用客户端扩展，让大模型“直接查库”的门槛被降得极低。 然而，一旦进入真实业务场景，大部分团队很快就会撞上两堵高墙： 语义幻觉严重：大模型根本不懂企业...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-18",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502591",
+    "read_time": 1,
+    "id": "f067fbdac6ed6d9f"
+  },
+  {
     "title": "总书记引领科技强国路",
     "summary": "总书记引领科技强国路",
     "full_content": "总书记引领科技强国路",
