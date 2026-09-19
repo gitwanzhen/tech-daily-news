@@ -456,6 +456,18 @@
     "id": "6d6f4ae53f520d1e"
   },
   {
+    "title": "Introducing the Australian Youth Safety Blueprint",
+    "summary": "OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and ...",
+    "full_content": "OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and empower young people.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-18",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/australian-youth-safety-blueprint",
+    "read_time": 1,
+    "id": "48d4db25a29d3cf7"
+  },
+  {
     "title": ":tada: 批量主机管理软件 WGCLOUD v3.7.0 正式发布",
     "summary": "WGCLOUD 是一款集成度较高的分布式运维监控平台，具有集群监控，易部署、易上手使用、轻量、高效、自动化等特点，server 端基于 springboot 开发，agent 端使用 go 编写。核心模块包括：主机系统信息监控，CPU 监控...",
     "full_content": "WGCLOUD 是一款集成度较高的分布式运维监控平台，具有集群监控，易部署、易上手使用、轻量、高效、自动化等特点，server 端基于 springboot 开发，agent 端使用 go 编写。核心模块包括：主机系统信息监控，CPU 监控，CPU 温度监控，内存监控，网络流量监控，磁盘 IO 监控，磁盘空间监测，系统负载监控，硬盘 smart 健康检...",
