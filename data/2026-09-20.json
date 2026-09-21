@@ -516,6 +516,18 @@
     "id": "a0a8c8c8b61c7c2f"
   },
   {
+    "title": "OpenAgent v2.93 发布：单二进制自托管 AI Agent 平台，新增 Agent Hub、Casbin 工具权限与审计日志",
+    "summary": "OpenAgent 近日发布 v2.93.0。这是一个自托管的 AI Agent 平台，由 Casbin 开源社区维护，Go + React 编写，Apache 2.0 协议开源，目前在 GitHub 上有 5.6k star、658 fo...",
+    "full_content": "OpenAgent 近日发布 v2.93.0。这是一个自托管的 AI Agent 平台，由 Casbin 开源社区维护，Go + React 编写，Apache 2.0 协议开源，目前在 GitHub 上有 5.6k star、658 fork。 项目定位 OpenAgent 不是需要写代码编排的 Agent 框架，而是一套部署完就能直接使用的平台：配置好模型 API Key 之后，非技术人员也可以通过 We...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-20",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502624",
+    "read_time": 1,
+    "id": "8ca1916e13b5ec02"
+  },
+  {
     "title": "长期不工作的人会失去什么",
     "summary": "长期不工作的人会失去什么",
     "full_content": "长期不工作的人会失去什么",
