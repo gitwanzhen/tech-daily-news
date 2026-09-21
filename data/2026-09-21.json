@@ -408,6 +408,42 @@
     "id": "bba603625c105001"
   },
   {
+    "title": "Building standards for the next phase of AI",
+    "summary": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to i...",
+    "full_content": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-21",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/building-standards-next-phase-ai",
+    "read_time": 1,
+    "id": "25363ac686875488"
+  },
+  {
+    "title": "Expanding OpenAI Academy with new learning paths",
+    "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demon...",
+    "full_content": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-21",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+    "read_time": 1,
+    "id": "cbe71413925cf7bd"
+  },
+  {
+    "title": "How V7 gives AI agents institutional memory",
+    "summary": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.",
+    "full_content": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-21",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/v7",
+    "read_time": 1,
+    "id": "07a9efb9a15596c5"
+  },
+  {
     "title": "Jev 凭什么刷屏：一个不生成文本的 \"判断模型\"，正在悄悄提速 AI Agent",
     "summary": "JeecgBoot AI 专题研究 | TypeSafe AI System One Model 深度解析：Choice/Noul/Score 与 Agent 判断层实战 这两天如果你刷技术圈的社交媒体，大概率会撞见 Jev 这个名字。有人...",
     "full_content": "JeecgBoot AI 专题研究 | TypeSafe AI System One Model 深度解析：Choice/Noul/Score 与 Agent 判断层实战 这两天如果你刷技术圈的社交媒体，大概率会撞见 &quot;Jev&quot; 这个名字。有人说被它 &quot;霸榜&quot; 了，有人晒出用它改造 Codex、BrowserUse 之后速度暴涨的截图，GitHub 上一个相关开源项目几天内就破万星。 但如果你顺着这个...",
