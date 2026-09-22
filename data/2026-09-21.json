@@ -576,6 +576,30 @@
     "id": "d0d019fc30cc0c81"
   },
   {
+    "title": "全能 Go Agent 框架 covonaut v1.1.4 发布：新增工具滚动并行池、多模态读取等",
+    "summary": "covonaut 是一个面向生产环境的 Go 语言 Agent 框架，覆盖 Agent 主循环、工具调用、图编排与多协议互操作等，全部为纯 Go 实现，采用 MIT 协议。 v1.1.4 更新内容 1. 滚动工具执行池：并行与混合两档调度 ...",
+    "full_content": "covonaut 是一个面向生产环境的 Go 语言 Agent 框架，覆盖 Agent 主循环、工具调用、图编排与多协议互操作等，全部为纯 Go 实现，采用 MIT 协议。 v1.1.4 更新内容 1. 滚动工具执行池：并行与混合两档调度 此前的并行执行是「一次性拉起全部调用再靠并发上限排队」，一个慢工具会长期占住槽位。本次改为单一滚动池调度：...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-21",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502653",
+    "read_time": 1,
+    "id": "ffc4db4e6b57d061"
+  },
+  {
+    "title": "【架构实践】用 Rust + Qwen3Guard 搭一套双层安全风控，我们踩过的坑和公开基准都在这了",
+    "summary": "本文是 55873 生态系统技术白皮书第 4 篇 —— 双层安全风控架构。完整拆解我们在生产环境中落地 Rust 底层硬拦截 + Qwen3Guard AI 多语言语义研判的双层架构设计，包括踩过的坑、公开基准数据、以及诚实披露的能力边界。...",
+    "full_content": "本文是 55873 生态系统技术白皮书第 4 篇 —— 双层安全风控架构。完整拆解我们在生产环境中落地 Rust 底层硬拦截 + Qwen3Guard AI 多语言语义研判的双层架构设计，包括踩过的坑、公开基准数据、以及诚实披露的能力边界。 导读 项目定位：双层安全风控 = Rust 底层硬拦截 + Qwen3Guard AI 语义研判 核心技术栈：Rust 编译...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-21",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502652",
+    "read_time": 1,
+    "id": "979b60bb3e61b1e2"
+  },
+  {
     "title": "把配料表中的白砂糖还给我们",
     "summary": "把配料表中的白砂糖还给我们",
     "full_content": "把配料表中的白砂糖还给我们",
