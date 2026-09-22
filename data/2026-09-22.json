@@ -360,6 +360,18 @@
     "id": "1ad1f8dd42ff626e"
   },
   {
+    "title": "Priorities and principles for effective third party assessments",
+    "summary": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of fro...",
+    "full_content": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-22",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/priorities-principles-third-party-assessments",
+    "read_time": 1,
+    "id": "5a9917ede729055e"
+  },
+  {
     "title": "SpaceXAI 发布 Grok 4.7：跟 Claude Fable 同榜，价格砍到三分之一",
     "summary": "SpaceXAI（改名的 xAI）发布了 Grok 4.7，官方口径是最擅长编码和知识工作的模型——比同级模型快两倍、便宜一半。这句话与其说是技术宣言，不如说是价格战的开场白：它和 Grok 4.6 同价同步，直接对标的就是 Claude ...",
     "full_content": "SpaceXAI（改名的 xAI）发布了 Grok 4.7，官方口径是&quot;最擅长编码和知识工作的模型&quot;——比同级模型快两倍、便宜一半。这句话与其说是技术宣言，不如说是价格战的开场白：它和 Grok 4.6 同价同步，直接对标的就是 Claude 那几家。 论据藏在榜单里。CursorBench 4.0 是专门压长时编码任务的基准，Grok 4.7 官方给的宣传数据...",
