@@ -1,5 +1,17 @@
 [
   {
+    "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+    "summary": "We’re introducing a new life sciences research group and laboratory at Anthropic. Our focus is on fundamental biology re...",
+    "full_content": "<article><div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__hero\"></div><div class=\"page-wrapper\"><article><div class=\"\"><div class=\"Body-module-scss-module__z40yvW__body\"><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\"></p><div class=\"Body-module-scss-module__z40yvW__media-column\"><div class=\"Video-module-scss-module__qJNyFq__post-wrapper\"><figure class=\"Video-module-scss-module__qJNyFq__post-video-container\"><!--$!--><!--/$--></figure></div></div><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\"><em>We’re introducing a new life sciences research group and laboratory at Anthropic. Our focus is on fundamental biology research using Claude: exploring datasets of DNA to identify uncharacterized protein families, generating hypotheses at scale, and testing them through experiments in the lab. This post introduces the team behind this work and shares early results in which Claude discovered a novel enzyme system with properties reminiscent of CRISPR, with only high-level direction from our scientists.<br /><br /></em>Many discoveries that have revolutionized biology and medicine started with a scientist noticing something odd in the staggering diversity of molecular machines found in nature. Restriction enzymes<em>, </em>proteins that cut DNA at specific short sequences<em>,</em> were found in bacterial immune systems, where they destroy the DNA of invading viruses. Researchers realized they could use these enzymes to cut DNA at chosen places and splice genes from one organism into another, which launched the biotechnology industry. Taq polymerase, an enzyme that copies DNA at high temperatures, was identified in a bacterium in a Yellowstone hotspring. It became the basis for PCR, the DNA-copying…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-23",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+    "read_time": 9,
+    "id": "68024e28356d7cb5"
+  },
+  {
     "title": "六小龄童重回荧幕",
     "summary": "六小龄童重回荧幕",
     "full_content": "六小龄童重回荧幕<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221213/eaf2dd702d7cc14d8d9511190245d057/lrx9rnKo24.png\" />",
