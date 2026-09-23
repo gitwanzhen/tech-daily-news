@@ -492,6 +492,66 @@
     "id": "908e58821743f624"
   },
   {
+    "title": "Sam Altman’s remarks at the United Nations Security Council",
+    "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations...",
+    "full_content": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-23",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/sam-altman-un-security-council-remarks",
+    "read_time": 1,
+    "id": "7c9a1180e3e37d0b"
+  },
+  {
+    "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+    "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.",
+    "full_content": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-23",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
+    "read_time": 1,
+    "id": "32b5509ca9a676c0"
+  },
+  {
+    "title": "How invideo improves color grading 3x with GPT‑6 Astra",
+    "summary": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produ...",
+    "full_content": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-23",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
+    "read_time": 1,
+    "id": "01d0ed630f34b6f6"
+  },
+  {
+    "title": "Introducing MentalHealthBench",
+    "summary": "MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental h...",
+    "full_content": "MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental health conversations.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-23",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/introducing-mentalhealthbench",
+    "read_time": 1,
+    "id": "df8e4437844de73e"
+  },
+  {
+    "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
+    "summary": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, des...",
+    "full_content": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-23",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/airbnb-gpt-6-astra",
+    "read_time": 1,
+    "id": "70fc10c11a004c5e"
+  },
+  {
     "title": "制作 AI 漫剧，如何尽量低成本、稳定地解决“角色多图/多场景一致性”问题？",
     "summary": "希望看到一些真实的工具组合和工作流经验，尤其是多角色、多场景情况下的实践",
     "full_content": "<p>希望看到一些真实的工具组合和工作流经验，尤其是多角色、多场景情况下的实践</p>",
