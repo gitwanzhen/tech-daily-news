@@ -1258,5 +1258,29 @@
     "url": "https://juejin.cn/post/7688571406653538350",
     "read_time": 1,
     "id": "64bf17377b52c21c"
+  },
+  {
+    "title": "让 AI Agent 替我跑日常重复任务，一周踩坑记录",
+    "summary": "最近把手头几件每天都要重复的小事交给 AI Agent 去跑了：几个平台的签到、每天的待办，还有一些固定格式的整理工作。单件都不超过一分钟，但分散在五六个地方，经常想起来的时候已经错过了时间。 跑了一",
+    "full_content": "最近把手头几件每天都要重复的小事交给 AI Agent 去跑了：几个平台的签到、每天的待办，还有一些固定格式的整理工作。单件都不超过一分钟，但分散在五六个地方，经常想起来的时候已经错过了时间。 跑了一",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-23",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7688341026160328746",
+    "read_time": 1,
+    "id": "f536f5f0baf7cef5"
+  },
+  {
+    "title": "LLM 数据管线缺陷实录：两个单元测试无法覆盖的运行时问题",
+    "summary": "缺陷一：hendrycks_math 缺少必需的 config，数据准备首跑即崩 现象。 数据准备命令 python -m posttrain.prepare 在下载完 GSM8K 后当场抛出： 原因",
+    "full_content": "缺陷一：hendrycks_math 缺少必需的 config，数据准备首跑即崩 现象。 数据准备命令 python -m posttrain.prepare 在下载完 GSM8K 后当场抛出： 原因",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-23",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7688528701484073001",
+    "read_time": 1,
+    "id": "c4c97ec96111b20b"
   }
 ]
