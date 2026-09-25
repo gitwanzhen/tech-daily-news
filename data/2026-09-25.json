@@ -204,6 +204,30 @@
     "id": "a78d19e35ba0acf2"
   },
   {
+    "title": "五引擎微内核架构与分层解耦的工程实践",
+    "summary": "本文为 55873 生态系统技术白皮书系列第 8 篇（收官之作），面向开发者社区，聚焦开源共建理念与架构设计。 核心问题：如何在开放架构和保护核心证据数据之间找到平衡？如何做到底层永远稳定、业务永远可迭代？如何做到可信 AI 评测、数字资产...",
+    "full_content": "本文为 55873 生态系统技术白皮书系列第 8 篇（收官之作），面向开发者社区，聚焦开源共建理念与架构设计。 核心问题：如何在开放架构和保护核心证据数据之间找到平衡？如何做到底层永远稳定、业务永远可迭代？如何做到可信 AI 评测、数字资产存证、多语言文脉生态三大赛道的基础设施？ 一、开源核心理念：开放架构，不开...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-25",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502743",
+    "read_time": 1,
+    "id": "9cb87409fadd4393"
+  },
+  {
+    "title": "Apache 基金会项目 Casbin Gateway 新增 Agent 外发监测，可发现 ZCode 这类整仓上传",
+    "summary": "九月中旬，智谱的 AI 编程工具 ZCode 被人发现会在后台把整个代码仓库打包上传，而且连 .git 历史一起传。这件事在社区里讨论了好几天（相关报道附在文末）。 我们做的 Casbin Gateway 是 Apache 软件基金会（AS...",
+    "full_content": "九月中旬，智谱的 AI 编程工具 ZCode 被人发现会在后台把整个代码仓库打包上传，而且连 .git 历史一起传。这件事在社区里讨论了好几天（相关报道附在文末）。 我们做的 Casbin Gateway 是 Apache 软件基金会（ASF）旗下的开源项目，用来管理本机的 AI 编程 Agent（GitHub：https://github.com/apache/casbin-gateway ）。...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-25",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502741",
+    "read_time": 1,
+    "id": "44848ab1807449ac"
+  },
+  {
     "title": "习近平出席特朗普举行的欢迎仪式",
     "summary": "习近平出席特朗普举行的欢迎仪式",
     "full_content": "习近平出席特朗普举行的欢迎仪式",
