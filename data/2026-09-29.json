@@ -480,6 +480,18 @@
     "id": "c6d409fe495fafea"
   },
   {
+    "title": "Codeaha v1.0.0 正式发布—本地优先的 AI 编程伙伴",
+    "summary": "Codeaha｜码悟 Code + Aha，看见代码的顿悟时刻 本地优先、国产大模型友好的 AI 编程 Agent。 基于 GoFrame + Eino + mark3labs/mcp-go + GF sqlite 驱动（glebarez/...",
+    "full_content": "Codeaha｜码悟 Code + Aha，看见代码的顿悟时刻 本地优先、国产大模型友好的 AI 编程 Agent。 基于 GoFrame + Eino + mark3labs/mcp-go + GF sqlite 驱动（glebarez/go-sqlite，纯 Go 无 CGO）构建。 核心特性 本地优先 — 会话、消息与代码变更全部落盘本地 SQLite，代码数据不出本机 Agent 推理 — 基于 Eino Graph 实...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-29",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502806",
+    "read_time": 1,
+    "id": "54a92e942aa39d4c"
+  },
+  {
     "title": "中美关系从温故到知新",
     "summary": "中美关系从温故到知新",
     "full_content": "中美关系从温故到知新",
@@ -898,5 +910,29 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%80%81%E4%BA%BA%E6%8A%A5%E8%AD%A6%E4%B8%A24%E4%B8%87%E6%B0%91%E8%AD%A6%E6%89%BE%E5%87%BA23%E4%B8%87",
     "read_time": 1,
     "id": "6c8ced89a57c3dda"
+  },
+  {
+    "title": "隔离内网下 AI Agent 工程实战",
+    "summary": "一、前言 好长一段时间不写文章了，又到国庆长假，是时候整理下最近对 AI 工程化上的一些心得进行总结和分享； 在 AI 的时代浪潮里写文章的门槛变低了很多，AI渲染、AI 代笔； 能真正愿意花费时间，",
+    "full_content": "一、前言 好长一段时间不写文章了，又到国庆长假，是时候整理下最近对 AI 工程化上的一些心得进行总结和分享； 在 AI 的时代浪潮里写文章的门槛变低了很多，AI渲染、AI 代笔； 能真正愿意花费时间，",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-29",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7690784318688297010",
+    "read_time": 1,
+    "id": "8ccabcac4b5237fe"
+  },
+  {
+    "title": "AI 应用日志别再 print 了：结构化日志 + request_id 贯穿（O01）",
+    "summary": "AI 应用日志别再 print 了：结构化日志 + request_id 贯穿（O01） 一、先看三个\"盲人摸象\"时刻 用户说\"回答好慢\"——多慢？哪个环节慢？是模型慢还是网关慢？你答不上来。 线上回",
+    "full_content": "AI 应用日志别再 print 了：结构化日志 + request_id 贯穿（O01） 一、先看三个\"盲人摸象\"时刻 用户说\"回答好慢\"——多慢？哪个环节慢？是模型慢还是网关慢？你答不上来。 线上回",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-29",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7690827881904504870",
+    "read_time": 1,
+    "id": "b11a5cae6962565c"
   }
 ]
