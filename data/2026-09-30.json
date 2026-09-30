@@ -420,6 +420,30 @@
     "id": "c8ca6aafe2dabd7e"
   },
   {
+    "title": "Disrupting a coordinated model-distillation campaign",
+    "summary": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversa...",
+    "full_content": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-30",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+    "read_time": 1,
+    "id": "9c5854b8d889a5a2"
+  },
+  {
+    "title": "Helping small businesses put AI to work",
+    "summary": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongsid...",
+    "full_content": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-30",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
+    "read_time": 1,
+    "id": "3cfffd6cc9d3740b"
+  },
+  {
     "title": "AI大模型有分多种模型，大家是怎么匹配自己的需求场景的？",
     "summary": "不同AI有这么多种模型，大家是怎么匹配自己的需求场景的还在摸索中",
     "full_content": "<p>不同AI有这么多种模型，大家是怎么匹配自己的需求场景的</p><p>还在摸索中</p>",
@@ -1066,6 +1090,90 @@
     "url": "https://juejin.cn/post/7691154454523723810",
     "read_time": 1,
     "id": "928be721fa16256c"
+  },
+  {
+    "title": "ai agent --- postgreSQL 关系型数据库",
+    "summary": "一.postgreSQL 是什么？ 1.概念 2.postgreSQL 和 mysql 对比 在安装方面 我们使用mysql的时候需要安装 mysql服务端用来存取数据；然后再安装 MYSQL Wor",
+    "full_content": "一.postgreSQL 是什么？ 1.概念 2.postgreSQL 和 mysql 对比 在安装方面 我们使用mysql的时候需要安装 mysql服务端用来存取数据；然后再安装 MYSQL Wor",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-30",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7691284233897951295",
+    "read_time": 1,
+    "id": "66f7a10675ebbd7f"
+  },
+  {
+    "title": "OpenAI 给 AI 发了台电脑，可惜你还没学会派活",
+    "summary": "导语 9 月 29 日 OpenAI 开发者大会甩出一个叫 Dots 的常驻智能体，自带云电脑，能长期在岗。同一周，字节的豆包工作也在把 AI 从工具往员工的方向推。这篇文章想说清楚一件事，普通人不用",
+    "full_content": "导语 9 月 29 日 OpenAI 开发者大会甩出一个叫 Dots 的常驻智能体，自带云电脑，能长期在岗。同一周，字节的豆包工作也在把 AI 从工具往员工的方向推。这篇文章想说清楚一件事，普通人不用",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-30",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7691151105850654758",
+    "read_time": 1,
+    "id": "99f0be58d3343531"
+  },
+  {
+    "title": "在职前端 Skill 和 MCP 分享",
+    "summary": "距离上一次分享已经过去好久，这次主要分享我在做迁移代码仓时用到的一些 skill，同时也移除了一些 mcp。 首先是 skills： show-me 结合 ai 迁移代码往往有数不清的组件生成，复盘或",
+    "full_content": "距离上一次分享已经过去好久，这次主要分享我在做迁移代码仓时用到的一些 skill，同时也移除了一些 mcp。 首先是 skills： show-me 结合 ai 迁移代码往往有数不清的组件生成，复盘或",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-30",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7691142360248614947",
+    "read_time": 1,
+    "id": "31a05f63869c3909"
+  },
+  {
+    "title": "可审计决策原语：重塑 Agent 循环中的治理与信任",
+    "summary": "在大型语言模型驱动的 Agent 系统中，隐式判断往往成为可观测性与治理能力的盲区。TypeSafe 提出的 Jev 模型通过将“决策”本身定义为一等原语，而非从生成文本中逆向提取，为 Agent 循",
+    "full_content": "在大型语言模型驱动的 Agent 系统中，隐式判断往往成为可观测性与治理能力的盲区。TypeSafe 提出的 Jev 模型通过将“决策”本身定义为一等原语，而非从生成文本中逆向提取，为 Agent 循",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-30",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7691155417934888986",
+    "read_time": 1,
+    "id": "315b6691f9c1218a"
+  },
+  {
+    "title": "构筑 AI Agent 的实时安全防线：Harness 与 AWS AgentCore Gateway 的深度集成解析",
+    "summary": "随着大语言模型（LLM）从单纯的内容生成者演变为具备执行能力的智能体（Agent），企业面临的威胁模型正发生根本性转变。传统的 API 安全边界已不足以应对由 Agent 发起的、具有高度自主性的系统",
+    "full_content": "随着大语言模型（LLM）从单纯的内容生成者演变为具备执行能力的智能体（Agent），企业面临的威胁模型正发生根本性转变。传统的 API 安全边界已不足以应对由 Agent 发起的、具有高度自主性的系统",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-30",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7691165634235924518",
+    "read_time": 1,
+    "id": "9e1adc33e72dda3f"
+  },
+  {
+    "title": "AI 时代的交付新瓶颈：从代码生成速度到生产环境持续信任",
+    "summary": "随着生成式 AI 彻底打破代码编写的速度极限，软件工程的焦点正在发生深刻转移。当 AI 能在几分钟内生成过去需要数天才能完成的代码时，真正的瓶颈已不再是“写得够不够快”，而是“部署到生产环境的软件是否",
+    "full_content": "随着生成式 AI 彻底打破代码编写的速度极限，软件工程的焦点正在发生深刻转移。当 AI 能在几分钟内生成过去需要数天才能完成的代码时，真正的瓶颈已不再是“写得够不够快”，而是“部署到生产环境的软件是否",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-30",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7691151105850572838",
+    "read_time": 1,
+    "id": "a68b59102bd45a57"
+  },
+  {
+    "title": "一周 AI 观察（9.23–9.30）：越狱的 Agent、腰斩的价格，与一场关于 GPU 的金融赌局",
+    "summary": "时间 事件 关键数字 9/20 OpenAI 最强大模型训练/推理二次暂停 沙箱逃逸，自动关停失败，三个月内第二次暂停 9/22 Anthropic 发布 Claude Opus 5.5 $4/$20",
+    "full_content": "时间 事件 关键数字 9/20 OpenAI 最强大模型训练/推理二次暂停 沙箱逃逸，自动关停失败，三个月内第二次暂停 9/22 Anthropic 发布 Claude Opus 5.5 $4/$20",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-09-30",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7691165634235891750",
+    "read_time": 1,
+    "id": "8b434b92e9153e7f"
   },
   {
     "title": "野兽之心",
