@@ -1,5 +1,17 @@
 [
   {
+    "title": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
+    "summary": "The first-of-its-kind Academy trains Frontier Deployed Engineers using the same standard of skills as Anthropic’s own en...",
+    "full_content": "<article><div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__hero\"><div class=\"PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper\"><div class=\"Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-module__WyGOtq__aspect-wide Illustration-module-scss-module__WyGOtq__padding-lg Illustration-module-scss-module__WyGOtq__radius-lg bg-heather\"><div class=\"Illustration-module-scss-module__WyGOtq__inner\"><img alt=\"Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap\" class=\"\" height=\"1000\" src=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/cd4fd51deacd067d4e30aee4f4b149f6cba1b97b-1000x1000.svg\" width=\"1000\" /></div></div></div></div><div class=\"page-wrapper\"><article><div class=\"\"><div class=\"Body-module-scss-module__z40yvW__body\"><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\"><em>The first-of-its-kind Academy trains Frontier Deployed Engineers using the same standard of skills as Anthropic’s own engineers, starting with cohorts from Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley, Novo Nordisk and others.</em></p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Today we are launching Claude Frontier Academy to solve one of the most pressing issues in AI implementation: talent. Backed by a $100 million commitment, Anthropic aims to train 10,000 Frontier Deployed Engineers (FDEs) by the end of 2027. Engineers from Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley and Novo Nordisk are in the first cohorts.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Every enterprise is racing to bring AI int…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-02",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/claude-frontier-academy",
+    "read_time": 10,
+    "id": "93dc283205dabb91"
+  },
+  {
     "title": "陈明昊谈再演刑警",
     "summary": "陈明昊谈再演刑警",
     "full_content": "陈明昊谈再演刑警<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20240304/fbb6ffcfd09815bd66290b6b7bde1196/OBQYPHMTcv.png\" />",
@@ -358,6 +370,18 @@
     "url": "https://openai.com/index/albertsons-reimagining-retail",
     "read_time": 1,
     "id": "0582363bf91ecf5b"
+  },
+  {
+    "title": "Chatham scales its capital markets expertise with OpenAI",
+    "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 mi...",
+    "full_content": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-02",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/chatham-financial",
+    "read_time": 1,
+    "id": "f5331f1181a08fca"
   },
   {
     "title": "Mate90系列火爆开售",
@@ -742,5 +766,77 @@
     "url": "https://juejin.cn/post/7691537889867694115",
     "read_time": 1,
     "id": "f2b5c6ef4e785ae0"
+  },
+  {
+    "title": "Agent 的决策与规划：ReAct、Plan-and-Execute、Reflexion 与 Tree of Thoughts",
+    "summary": "前言：Agent 的“思维方式”决定了它的能力上限 上一篇文章中，我们把 Agent 拆成了感知、LLM/规划、记忆、工具、行动、执行循环六个组件。其中，“规划”和“执行循环”之间的配合方式，直接决定",
+    "full_content": "前言：Agent 的“思维方式”决定了它的能力上限 上一篇文章中，我们把 Agent 拆成了感知、LLM/规划、记忆、工具、行动、执行循环六个组件。其中，“规划”和“执行循环”之间的配合方式，直接决定",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-02",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7691510191482126387",
+    "read_time": 1,
+    "id": "167d48bfa73cdfce"
+  },
+  {
+    "title": "LLM 面试必问的 8 个问题，答不上来直接淘汰",
+    "summary": "第二章：大语言模型（LLM）基础 构建 AI Agent，大语言模型（LLM）是最核心的基础设施。Agent 的推理、工具调用、记忆能力，都依赖底层模型质量。理解 LLM 的内部机制，才能在工程中做出",
+    "full_content": "第二章：大语言模型（LLM）基础 构建 AI Agent，大语言模型（LLM）是最核心的基础设施。Agent 的推理、工具调用、记忆能力，都依赖底层模型质量。理解 LLM 的内部机制，才能在工程中做出",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-02",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7691530846752538639",
+    "read_time": 1,
+    "id": "d6aefaef2ec1fef2"
+  },
+  {
+    "title": "Personal Agent 火了，新酿还是旧酒？",
+    "summary": "Personal Agent 最近突然火了，但长期记忆、持续运行、主动执行，其实都不是新能力。真正的变化是什么？这篇文章从 OpenClaw、Work 一路聊到 Muse，试着拆解一下。",
+    "full_content": "Personal Agent 最近突然火了，但长期记忆、持续运行、主动执行，其实都不是新能力。真正的变化是什么？这篇文章从 OpenClaw、Work 一路聊到 Muse，试着拆解一下。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-02",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7691717198448148518",
+    "read_time": 1,
+    "id": "15a8a7f804e86807"
+  },
+  {
+    "title": "HyperFrames 深度解析：面向 AI 代理的确定性视频渲染框架",
+    "summary": "在 AI 驱动的内容生产浪潮中，将非结构化创意转化为可重复、高质量的媒体资产一直是工程化的难点。HyperFrames 作为一个开源框架，通过解耦 HTML 渲染层与视频编码层，为开发者和 AI 代理",
+    "full_content": "在 AI 驱动的内容生产浪潮中，将非结构化创意转化为可重复、高质量的媒体资产一直是工程化的难点。HyperFrames 作为一个开源框架，通过解耦 HTML 渲染层与视频编码层，为开发者和 AI 代理",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-02",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7691479433082519579",
+    "read_time": 1,
+    "id": "dc5c9414457d40d7"
+  },
+  {
+    "title": "Impeccable：为 AI 编码代理重塑前端设计确定性的开源技能框架深度解析",
+    "summary": "随着 AI 编码代理的普及，前端代码的生成速度呈指数级增长，但设计品质的同质化与审美衰退问题却愈发严重。Impeccable 的出现正是为了破局这一困境。作为一款为 AI 编码代理提供结构化前端设计指",
+    "full_content": "随着 AI 编码代理的普及，前端代码的生成速度呈指数级增长，但设计品质的同质化与审美衰退问题却愈发严重。Impeccable 的出现正是为了破局这一困境。作为一款为 AI 编码代理提供结构化前端设计指",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-02",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7691345821564616731",
+    "read_time": 1,
+    "id": "bd7886613b3c13b5"
+  },
+  {
+    "title": "Context Mode 深度解析：重构 AI 编码代理的上下文管理范式",
+    "summary": "在 AI 编码代理（AI Coding Agents）日益普及的今天，上下文窗口（Context Window）的有限性成为了制约其处理复杂任务能力的核心瓶颈。传统的工具调用模式往往将大量原始数据直接",
+    "full_content": "在 AI 编码代理（AI Coding Agents）日益普及的今天，上下文窗口（Context Window）的有限性成为了制约其处理复杂任务能力的核心瓶颈。传统的工具调用模式往往将大量原始数据直接",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-02",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7691717198448115750",
+    "read_time": 1,
+    "id": "bddb1ee2479a8097"
   }
 ]
