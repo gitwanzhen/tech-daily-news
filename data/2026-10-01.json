@@ -384,6 +384,18 @@
     "id": "b35ef3c4570c767e"
   },
   {
+    "title": "团队使用 Codex 和 Claude Code，API Key 和模型权限怎么管？我开源了 Zentrola",
+    "summary": "一个人使用 AI Coding 工具时，事情很简单：申请一个 API Key，填进 Codex 或 Claude Code，然后开始工作。 但当使用者从一个人变成一个团队，原本简单的配置问题很快就会变成管理问题：真实 API Key 要不要...",
+    "full_content": "一个人使用 AI Coding 工具时，事情很简单：申请一个 API Key，填进 Codex 或 Claude Code，然后开始工作。 但当使用者从一个人变成一个团队，原本简单的配置问题很快就会变成管理问题：真实 API Key 要不要发给每个人？新成员应该能用哪些模型？成员离职后如何撤销权限？上游服务商发生故障时，是否要通知所有人临时修改...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-01",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502836",
+    "read_time": 1,
+    "id": "a52b0cf8806410da"
+  },
+  {
     "title": "迪拜航空确认航班发生事故",
     "summary": "迪拜航空确认航班发生事故",
     "full_content": "迪拜航空确认航班发生事故",
