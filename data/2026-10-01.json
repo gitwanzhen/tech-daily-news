@@ -372,6 +372,18 @@
     "id": "59de816a37b5523f"
   },
   {
+    "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+    "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license ...",
+    "full_content": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-01",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/the-den-family-social",
+    "read_time": 1,
+    "id": "b35ef3c4570c767e"
+  },
+  {
     "title": "迪拜航空确认航班发生事故",
     "summary": "迪拜航空确认航班发生事故",
     "full_content": "迪拜航空确认航班发生事故",
@@ -850,6 +862,18 @@
     "url": "https://juejin.cn/post/7691226839991828530",
     "read_time": 1,
     "id": "fd1c8f4aefae4dec"
+  },
+  {
+    "title": "ai agent --- redis 缓存",
+    "summary": "一.redis 是什么？ 1.概念 2.为什么radis很快？ 他的数据放在内存里面--不需要读取磁盘 他是单线程模型--避免多线程上下文切换 他是基于多路复用（epoll）--单线程也能处理海量并发",
+    "full_content": "一.redis 是什么？ 1.概念 2.为什么radis很快？ 他的数据放在内存里面--不需要读取磁盘 他是单线程模型--避免多线程上下文切换 他是基于多路复用（epoll）--单线程也能处理海量并发",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-01",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7691450666426286134",
+    "read_time": 1,
+    "id": "603bb86a27afad15"
   },
   {
     "title": "侦战",
