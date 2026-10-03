@@ -372,6 +372,18 @@
     "id": "d8bea22f6536e1b4"
   },
   {
+    "title": "🔥 AI 员工支持知识库文档引用：开源 AI 无代码平台 NocoBase",
+    "summary": "汇总一周产品更新日志，最新发布可前往我们的博客查看。 NocoBase 目前更新包括三个分支： main、next 和 develop。** main： 截至目前最稳定的版本，推荐安装此版本。 next： 包含即将发布的新功能，经过初步测试...",
+    "full_content": "汇总一周产品更新日志，最新发布可前往我们的博客查看。 NocoBase 目前更新包括三个分支： main、next 和 develop。** main： 截至目前最稳定的版本，推荐安装此版本。 next： 包含即将发布的新功能，经过初步测试的版本，可能存在部分已知或未知问题。主要面向测试用户，用于收集反馈和进一步优化功能。适合愿意提前体验...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-03",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502842",
+    "read_time": 1,
+    "id": "fea377ef08e9ad06"
+  },
+  {
     "title": "国足0比5惨败却让小将接受采访",
     "summary": "国足0比5惨败却让小将接受采访",
     "full_content": "国足0比5惨败却让小将接受采访",
@@ -874,6 +886,30 @@
     "url": "https://juejin.cn/post/7692387846459654178",
     "read_time": 1,
     "id": "3f9b1c08ef8202f8"
+  },
+  {
+    "title": "LangSmith：从链路追踪到 RAG 自动化评估",
+    "summary": "做过 LangGraph Agent 或 RAG 之后，很快就会遇到一个问题： 程序虽然能跑，但内部到底发生了什么？ 一次请求经过了哪些节点？Retriever 返回了什么？模型真正收到的 Promp",
+    "full_content": "做过 LangGraph Agent 或 RAG 之后，很快就会遇到一个问题： 程序虽然能跑，但内部到底发生了什么？ 一次请求经过了哪些节点？Retriever 返回了什么？模型真正收到的 Promp",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-03",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7691774360802246671",
+    "read_time": 1,
+    "id": "d9cd39b4c76ecdcb"
+  },
+  {
+    "title": "Prompt Engineering 面试怎么考？这 5 个范式你必须会",
+    "summary": "第三章：Prompt Engineering 与推理范式 Prompt Engineering 是大语言模型应用层最核心的工程方法论之一。它决定了模型输出的质量，也是 Agent 系统中行为约束、推理",
+    "full_content": "第三章：Prompt Engineering 与推理范式 Prompt Engineering 是大语言模型应用层最核心的工程方法论之一。它决定了模型输出的质量，也是 Agent 系统中行为约束、推理",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-03",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7692042894160773155",
+    "read_time": 1,
+    "id": "6fdafe4ab8cae388"
   },
   {
     "title": "重生2",
