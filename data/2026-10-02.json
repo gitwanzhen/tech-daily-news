@@ -838,5 +838,29 @@
     "url": "https://juejin.cn/post/7691717198448115750",
     "read_time": 1,
     "id": "bddb1ee2479a8097"
+  },
+  {
+    "title": "大模型应用技术-Prompt工程实践 — 学习笔记",
+    "summary": "大模型应用技术-Prompt工程实践 — 学习笔记 一、实验概览 实验目标 掌握 DeepSeek 大模型 API 的调用方法 掌握 DeepSeek 大模型各个参数的含义与用法 掌握 Prompt",
+    "full_content": "大模型应用技术-Prompt工程实践 — 学习笔记 一、实验概览 实验目标 掌握 DeepSeek 大模型 API 的调用方法 掌握 DeepSeek 大模型各个参数的含义与用法 掌握 Prompt",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-02",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7691537889868496931",
+    "read_time": 1,
+    "id": "2c7adb5dc3ddb640"
+  },
+  {
+    "title": "Agent实践5-无 Function Call 的结构化通用 Agent",
+    "summary": "无 Function Call 的结构化通用 Agent 项目介绍 概念解释 无 Function Call 的 Agent，就是不用平台原生 Function Call，改用提示词约定 + 自己写代",
+    "full_content": "无 Function Call 的结构化通用 Agent 项目介绍 概念解释 无 Function Call 的 Agent，就是不用平台原生 Function Call，改用提示词约定 + 自己写代",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-02",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7691399863523196966",
+    "read_time": 1,
+    "id": "e6690a302913efce"
   }
 ]
