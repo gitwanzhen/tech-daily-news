@@ -252,6 +252,42 @@
     "id": "f4570d4862da3d11"
   },
   {
+    "title": "Our approach to EU text provenance rules",
+    "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why a...",
+    "full_content": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-05",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/eu-text-provenance",
+    "read_time": 1,
+    "id": "f9545c4ec00f8446"
+  },
+  {
+    "title": "Building advertising for the way people use AI",
+    "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand s...",
+    "full_content": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-05",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+    "read_time": 1,
+    "id": "b0c4983426b39633"
+  },
+  {
+    "title": "SmartCall v1.0.7 发布，新增模型以及音色管理",
+    "summary": ":book: 项目简介 SmartCall 是一套基于 AI 大模型 + Asterisk 通信引擎构建的新一代智能客服呼叫中心系统。系统深度融合了 AI 语音机器人、智能 IVR 流程编排、端到端双工对话模型、实时语音识别（ASR）、语音...",
+    "full_content": ":book: 项目简介 SmartCall 是一套基于 AI 大模型 + Asterisk 通信引擎构建的新一代智能客服呼叫中心系统。系统深度融合了 AI 语音机器人、智能 IVR 流程编排、端到端双工对话模型、实时语音识别（ASR）、语音合成（TTS）、大模型意图识别 等核心能力，为企业提供从呼入智能应答到智能外呼的全链路 AI 客服解决方案。 无...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-05",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502844",
+    "read_time": 1,
+    "id": "d59db41026796348"
+  },
+  {
     "title": "怀爱国之心立报国之志",
     "summary": "怀爱国之心立报国之志",
     "full_content": "怀爱国之心立报国之志",
