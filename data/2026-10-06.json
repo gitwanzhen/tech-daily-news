@@ -1,5 +1,17 @@
 [
   {
+    "title": "Expanding the Cyber Verification Program",
+    "summary": "We’re launching a new, expanded version of our Cyber Verification Program (CVP), which makes advanced cyber capabilities...",
+    "full_content": "<article><div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__hero\"></div><div class=\"page-wrapper\"><article><div class=\"\"><div class=\"Body-module-scss-module__z40yvW__body\"><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">We’re launching a new, expanded version of our Cyber Verification Program (CVP), which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals. The program now consists of three access tiers, which allow security teams to apply for the level of access that best suits their work. Each tier includes access to our most capable models, including Claude Opus 5.5, Claude Sonnet 5.5, Claude Mythos 5.1, and new models moving forward. Interested customers can <a href=\"https://portal.anthropic.com/programs/cvp\">apply here</a>.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Cybersecurity is inherently dual use: the same capabilities that enable a security team to find and fix a vulnerability can also help a malicious actor exploit it. For this reason, our generally available models, such as <a href=\"https://www.anthropic.com/claude-opus-5-5\">Claude Opus 5.5</a>, <a href=\"https://www.anthropic.com/claude-fable-and-mythos-5-1\">Claude Fable 5.1</a><span style=\"text-decoration: underline;\">,</span> and <a href=\"https://www.anthropic.com/claude-sonnet-5-5\">Claude Sonnet 5.5</a><span style=\"text-decoration: underline;\">,</span> have conservative cyber safeguards that block most cyber work. This is intended to limit the harmful activities malicious actors can carry out using our models, while we continue to work to reduce false positives for secure coding.</p>…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-06",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/cyber-verification-program",
+    "read_time": 9,
+    "id": "522cf6129a288bba"
+  },
+  {
     "title": "邓紫棋自由的你上线",
     "summary": "邓紫棋自由的你上线",
     "full_content": "邓紫棋自由的你上线<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
@@ -298,6 +310,18 @@
     "url": "https://search.bilibili.com/all?keyword=%E5%BC%9F%E5%BC%9F%E6%A8%A1%E4%BB%BF%E5%A7%90%E5%A7%90%E7%9A%84%E5%81%87%E6%9C%9F%E6%97%A5%E5%B8%B8&from_source=webtop_search",
     "read_time": 1,
     "id": "de5d046c48277c8d"
+  },
+  {
+    "title": "Advancing computer use with Ironclad",
+    "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer...",
+    "full_content": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-06",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+    "read_time": 1,
+    "id": "93f348179aaed7bd"
   },
   {
     "title": "Termexo v0.10.10 发布：19 个本地 MCP 工具，五种编程 Agent 自动接入",
