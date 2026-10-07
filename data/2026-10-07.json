@@ -276,6 +276,18 @@
     "id": "a444153ab1091645"
   },
   {
+    "title": "袋鼠数据库工具 v9.9.1 版已上线",
+    "summary": "袋鼠数据库工具 是一款 AI 驱动的热门数据库系统客户端(MariaDB / MongoDB / MySQL / Oracle / PostgreSQL / Redis / SQLite / SQLServer / …) ，支持建表、查询、...",
+    "full_content": "袋鼠数据库工具 是一款 AI 驱动的热门数据库系统客户端(MariaDB / MongoDB / MySQL / Oracle / PostgreSQL / Redis / SQLite / SQLServer / …) ，支持建表、查询、模型、同步、导入导出等功能，支持 Windows / Mac / Linux 等操作系统，致力于打造一款好用、好玩、开发友好的开发者工具。 新特性或修复的缺陷列表 重组云...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-07",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502849",
+    "read_time": 1,
+    "id": "ef3f9bb1f49f99e1"
+  },
+  {
     "title": "美丽中国山河如画",
     "summary": "美丽中国山河如画",
     "full_content": "美丽中国山河如画",
@@ -634,5 +646,53 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%A4%AA%E5%B9%B3%E8%BD%AE%E5%90%8E%E5%91%A8%E5%AE%B6%E8%94%A1%E5%AE%B6%E5%AF%B9%E6%AF%94%E6%98%8E%E6%98%BE",
     "read_time": 1,
     "id": "83cc1e0074387b57"
+  },
+  {
+    "title": "RAG 面试 6 连问，从原理到优化全部覆盖",
+    "summary": "大语言模型的知识来源于训练数据，存在固有的时效性限制和领域知识盲区。RAG (Retrieval-Augmented Generation, 检索增强生成) 在生成前检索外部知识，将事实信息注入模型上",
+    "full_content": "大语言模型的知识来源于训练数据，存在固有的时效性限制和领域知识盲区。RAG (Retrieval-Augmented Generation, 检索增强生成) 在生成前检索外部知识，将事实信息注入模型上",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-07",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7693689217004732459",
+    "read_time": 1,
+    "id": "2b3e09365e02eda4"
+  },
+  {
+    "title": "哪些任务该交给 AI，哪些必须由开发者负责？",
+    "summary": "开篇 AI 编程最常见的误区，是把问题简化成： 更有用的问题是： 同一个任务，通常不只有“全交给 AI”和“完全自己做”两个选项。 例如，AI 可以先帮你梳理重构风险、生成最小修改建议和补充测试。",
+    "full_content": "开篇 AI 编程最常见的误区，是把问题简化成： 更有用的问题是： 同一个任务，通常不只有“全交给 AI”和“完全自己做”两个选项。 例如，AI 可以先帮你梳理重构风险、生成最小修改建议和补充测试。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-07",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7693357497911803954",
+    "read_time": 1,
+    "id": "c2dcdcf073c346d9"
+  },
+  {
+    "title": "致敬，DeepSeek 最新开源的不是模型，是国产算力的地基",
+    "summary": "致敬DeepSeek，国庆节前，DeepSeek 干了件不太上热搜、但可能比发模型更重要的事，DeepSeek 把自己训练大模型用的\"锅碗瓢盆\"，在国产芯片上也做了一套，然后开源了。",
+    "full_content": "致敬DeepSeek，国庆节前，DeepSeek 干了件不太上热搜、但可能比发模型更重要的事，DeepSeek 把自己训练大模型用的\"锅碗瓢盆\"，在国产芯片上也做了一套，然后开源了。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-07",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7693930819551281179",
+    "read_time": 1,
+    "id": "9f5f08c3b8be4509"
+  },
+  {
+    "title": "A 社为什么反超了",
+    "summary": "爬上来说一个不少人好奇的问题。 昨天直播，有人问我，Google 和 OpenAI 一直在 AI 领域的领跑者，为什么反而被 Anthropic 反超了呢？ 确实，要知道 Google 是 Trans",
+    "full_content": "爬上来说一个不少人好奇的问题。 昨天直播，有人问我，Google 和 OpenAI 一直在 AI 领域的领跑者，为什么反而被 Anthropic 反超了呢？ 确实，要知道 Google 是 Trans",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-07",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7693481478181584932",
+    "read_time": 1,
+    "id": "98a386fe3a4bc29d"
   }
 ]
