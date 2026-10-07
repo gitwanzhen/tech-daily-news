@@ -324,6 +324,30 @@
     "id": "93f348179aaed7bd"
   },
   {
+    "title": "How Jump Trading is scaling quant research with ChatGPT",
+    "summary": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sour...",
+    "full_content": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-06",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/jump-trading",
+    "read_time": 1,
+    "id": "b89eed70c4cf774c"
+  },
+  {
+    "title": "Sharing AI progress in mathematics",
+    "summary": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof forma...",
+    "full_content": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-06",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+    "read_time": 1,
+    "id": "8ab2e904076cfbb4"
+  },
+  {
     "title": "Termexo v0.10.10 发布：19 个本地 MCP 工具，五种编程 Agent 自动接入",
     "summary": "AI 生成概念图，非产品界面。 MIT 开源的 Windows AI 编程工作台 Termexo 发布 v0.10.10。新版把终端、任务和部分设置开放为 19 个本地 MCP 工具，并支持在 Termexo 新启动的 Claude Cod...",
     "full_content": "AI 生成概念图，非产品界面。 MIT 开源的 Windows AI 编程工作台 Termexo 发布 v0.10.10。新版把终端、任务和部分设置开放为 19 个本地 MCP 工具，并支持在 Termexo 新启动的 Claude Code、Codex、OpenCode、Grok Build 和 Antigravity 终端中自动添加连接。 工作台能力作为工具开放 Agent 可以查询工作区和终端，读取指...",
