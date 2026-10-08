@@ -12,6 +12,30 @@
     "id": "220278685f410a51"
   },
   {
+    "title": "2026 Usage Policy update",
+    "summary": "Each year, Anthropic updates its Usage Policy in response to the evolving capabilities of our models, and the feedback w...",
+    "full_content": "<article class=\"\"><div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__hero\"></div><div class=\"page-wrapper\"><article><div class=\"\"><div class=\"Body-module-scss-module__z40yvW__body\"><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Each year, Anthropic updates its Usage Policy in response to the evolving capabilities of our models, and the feedback we’ve received from our customers. We're publishing a new version of the policy today. In this post, we summarize the changes we’ve made.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Most of the updates in the latest version are intended to clarify existing rules. In the year since our last refresh, Claude has taken on longer, more independent work. This update provides new examples that show how our rules apply to Claude’s new capabilities. It draws on new patterns of misuse in influence operations, weapons development, and surveillance that we’ve observed in the past year (as we’ve documented in our <a href=\"https://www.anthropic.com/threat-intelligence-report-september-2026\">latest threat intelligence report</a>). We’ve also made updates to clarify our requirements for high-risk use cases in areas like health and finance, to add controls for when Claude is used to autonomously take physical actions, and to address abusive behavior toward our models.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">The updated policy takes effect on November 12. The full <a href=\"https://www.anthropic.com/legal/aup\">Usage Policy</a> and <a href=\"https://www.anthropic.com/supported-countries\">Supported Regions Policy</a> can be found on their respective pages.</p>…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-08",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/2026-usage-policy-update",
+    "read_time": 9,
+    "id": "c7e79a0127679fa1"
+  },
+  {
+    "title": "Introducing the Anthropic Cyber Mission",
+    "summary": "Today we’re launching the Anthropic Cyber Mission, a long-term commitment to securing the systems everyone depends on. T...",
+    "full_content": "<article class=\"\"><div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__hero\"><div class=\"PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper\"><img alt=\"Introducing the Anthropic Cyber Mission\" class=\"PostDetail-module-scss-module__UQuRMa__heroImage\" height=\"1125\" src=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/e6614df689675126bb32ceb5cfcaaae016050c36-2000x1125.jpg\" width=\"2000\" /></div></div><div class=\"page-wrapper\"><article><div class=\"\"><div class=\"Body-module-scss-module__z40yvW__body\"><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Today we’re launching the Anthropic Cyber Mission, a long-term commitment to securing the systems everyone depends on. The Cyber Mission is a new effort to support defenders with tools, research, and resources to secure their software and systems. We’re starting with two areas:</p><ul class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\"><li><strong>Critical infrastructure:</strong> Starting with securing the operational technology behind power grids, water systems, and transportation networks, and protecting government systems. Today, we’re introducing the Critical Infrastructure Defense Program (CIDP), which brings frontier models, on-site engineers, and threat research to the defenders that protect operational technology.</li><li><strong>Open-source software:</strong> Finding vulnerabilities and proposing patches in the free, shared code that most software depends on, and hardening the underlying code. Today, we’re launching <a href=\"http://anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source\">OSS Scanner</a>, which offers open-source projects regular security scans from our strongest models, for free.</li></ul>…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-08",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+    "read_time": 10,
+    "id": "5bf8bb967c950c6f"
+  },
+  {
     "title": "成都AG超玩会 杭州LGD.NBW",
     "summary": "成都AG超玩会 杭州LGD.NBW",
     "full_content": "成都AG超玩会 杭州LGD.NBW<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221213/eaf2dd702d7cc14d8d9511190245d057/lrx9rnKo24.png\" />",
@@ -358,6 +382,18 @@
     "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
     "read_time": 1,
     "id": "fee7fc1eb27ffed2"
+  },
+  {
+    "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+    "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic...",
+    "full_content": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-08",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/pollo-ai",
+    "read_time": 1,
+    "id": "183b5076638642c5"
   },
   {
     "title": "大家都是怎么判断自己选的大模型的缓存率高低啊？",
