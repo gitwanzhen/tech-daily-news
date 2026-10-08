@@ -1,5 +1,17 @@
 [
   {
+    "title": "Building on our commitment to American scientific discovery",
+    "summary": "Anthropic is deepening its support for American scientific research by committing $150 million over three years to the G...",
+    "full_content": "<article class=\"\"><div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__hero\"><div class=\"PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper\"><div class=\"Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-module__WyGOtq__aspect-wide Illustration-module-scss-module__WyGOtq__padding-lg Illustration-module-scss-module__WyGOtq__radius-lg bg-heather\"><div class=\"Illustration-module-scss-module__WyGOtq__inner\"><img alt=\"Building on our commitment to American scientific discovery\" class=\"\" height=\"1000\" src=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/d6058e0db8e477dc782dacae46e2ec6663d165d9-1000x1000.svg\" width=\"1000\" /></div></div></div></div><div class=\"page-wrapper\"><article><div class=\"\"><div class=\"Body-module-scss-module__z40yvW__body\"><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Anthropic is deepening its support for American scientific research by committing $150 million over three years to the <a href=\"https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission\">Genesis Mission</a>, a federal initiative to accelerate scientific and technological discovery through AI. The funding will go toward making Claude available to more than 15 agencies that are part of the mission, including NASA, the National Institutes of Health, and the National Science Foundation.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">We first announced our partnership with the US Department of Energy (DOE) and the Genesis Mission <a href=\"https://www.anthropic.com/news/genesis-mission-partnership\">last December</a>. Since then, we have…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-08",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/genesis-mission-commitment",
+    "read_time": 9,
+    "id": "220278685f410a51"
+  },
+  {
     "title": "成都AG超玩会 杭州LGD.NBW",
     "summary": "成都AG超玩会 杭州LGD.NBW",
     "full_content": "成都AG超玩会 杭州LGD.NBW<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221213/eaf2dd702d7cc14d8d9511190245d057/lrx9rnKo24.png\" />",
@@ -336,6 +348,42 @@
     "id": "51963a0aa7273ecf"
   },
   {
+    "title": "Disrupting AI-enabled “false front” operations",
+    "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopol...",
+    "full_content": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-08",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+    "read_time": 1,
+    "id": "fee7fc1eb27ffed2"
+  },
+  {
+    "title": "大家都是怎么判断自己选的大模型的缓存率高低啊？",
+    "summary": "好像不同模型的缓存率不一样？大家都是怎么判断自己选的大模型的缓存率高低啊主要是看了一些报告，但实操性不强",
+    "full_content": "<p>好像不同模型的缓存率不一样？大家都是怎么判断自己选的大模型的缓存率高低啊</p><p>主要是看了一些报告，但实操性不强</p>",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-08",
+    "source": "SegmentFault",
+    "url": "https://segmentfault.com/q/1010000048337592",
+    "read_time": 1,
+    "id": "e666644de0e347e1"
+  },
+  {
+    "title": "开发 Agent 时，RAG 检索到底应该设计成 Tool 还是 Node？",
+    "summary": "开发 Agent 时，RAG 检索到底应该设计成 Tool 还是 Node？最近在做一个企业级 RAG Agent，技术栈主要是 Python + LangGraph，Agent 需要完成知识库检索、问题分析、多轮推理、工具调用以及最终回答...",
+    "full_content": "<p>开发 Agent 时，RAG 检索到底应该设计成 Tool 还是 Node？</p><p>最近在做一个企业级 RAG Agent，技术栈主要是 Python + LangGraph，Agent 需要完成知识库检索、问题分析、多轮推理、工具调用以及最终回答。</p><p>目前在设计 Agent Workflow 时遇到了一个比较纠结的问题：</p><p>RAG 检索到底应该作为 Agent 的 Tool，还是作为 Workflow 中独立的 Node？</p>",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-08",
+    "source": "SegmentFault",
+    "url": "https://segmentfault.com/q/1010000048337048",
+    "read_time": 1,
+    "id": "e8aeeb591bcf8a92"
+  },
+  {
     "title": "Apollo 3.0：迈向 Agent First 的配置管理",
     "summary": "大模型正在从“生成内容”走向“执行任务”。Agent 已经开始参与编码、测试、运维和软件交付流程。当 Agent 真正进入这些工作流后，读取配置、修改配置、发布和回滚，也会逐渐成为自然需求。 但配置中心与普通工具不同。它既承载着生产环境的运...",
     "full_content": "大模型正在从“生成内容”走向“执行任务”。Agent 已经开始参与编码、测试、运维和软件交付流程。当 Agent 真正进入这些工作流后，读取配置、修改配置、发布和回滚，也会逐渐成为自然需求。 但配置中心与普通工具不同。它既承载着生产环境的运行控制，也可能包含敏感配置。面向 Agent 开放配置管理能力，不能只是增加几...",
@@ -418,6 +466,54 @@
     "url": "https://www.oschina.net/news/502872/mistral-large-4",
     "read_time": 1,
     "id": "445e86ecdfd5322f"
+  },
+  {
+    "title": "Personal Agent 的终点不该是一个更聪明的命令行",
+    "summary": "Qoni 是 Cognitive（认知）的延伸，是一个 Personal Agent 的托管基础设施，让企业开发者都能开发属于自己的 Muse。",
+    "full_content": "Qoni 是 Cognitive（认知）的延伸，是一个 Personal Agent 的托管基础设施，让企业开发者都能开发属于自己的 Muse。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-08",
+    "source": "开源中国",
+    "url": "https://my.oschina.net/u/9765709/blog/19774529",
+    "read_time": 1,
+    "id": "b847e82a8cca3697"
+  },
+  {
+    "title": "德国搜索引擎 Ecosia 甩了 Mistral：性能落后一整年，换中国开源模型省一半钱",
+    "summary": "一个德国环保搜索引擎，当着整个欧洲的面说：你们的 AI 旗舰不行了，我用中国的。Ecosia，总部在柏林的搜索引擎和浏览器运营商，决定结束与法国 Mistral 的合作，改用中国开源模型为主。CEO Christian Kroll 的话半点...",
+    "full_content": "一个德国环保搜索引擎，当着整个欧洲的面说：你们的 AI 旗舰不行了，我用中国的。Ecosia，总部在柏林的搜索引擎和浏览器运营商，决定结束与法国 Mistral 的合作，改用中国开源模型为主。CEO Christian Kroll 的话半点没留情面：「我们对 Mistral 的质量感到失望，该模型如今已落后竞争对手一整年。」 今年 5 月 Ecosia 才...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-08",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502897/germany-ecosia-search-engine-mistral-china-open-source-ai",
+    "read_time": 1,
+    "id": "98c0d75adc5a33d0"
+  },
+  {
+    "title": "微软为 Windows 讲了个新故事 —— 本地云端的 Agent 中间层，沙箱先转正",
+    "summary": "微软把 Windows 重新定位成了「Agent 住的地方」。10 月 7 日的官方博客《Building Windows for hybrid intelligence》不是宣布什么全新大模型，而是在讲一个路由问题：把 AI 工作拆成本地...",
+    "full_content": "微软把 Windows 重新定位成了「Agent 住的地方」。10 月 7 日的官方博客《Building Windows for hybrid intelligence》不是宣布什么全新大模型，而是在讲一个路由问题：把 AI 工作拆成本地跑和云端跑。小的、私密的活儿——整理文件、改设置、总结本地文档——交给笔记本自己带的那颗模型；需要长推理的大活儿再送云端。...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-08",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502895",
+    "read_time": 1,
+    "id": "df63389c1fb64dcd"
+  },
+  {
+    "title": "Claude Haiku 5.5 来了：价格砍到四分之一，agent 能力从 0 跳到 39%",
+    "summary": "Anthropic 拿出了目前最快的小模型，同时一口气砍了两刀价格。10 月 7 日发布的 Claude Haiku 5.5 是 Haiku 系列第一个支持可调节 effort 设置的型号，用户可以根据场景在速度和智能之间做取舍。 价格直接...",
+    "full_content": "Anthropic 拿出了目前最快的小模型，同时一口气砍了两刀价格。10 月 7 日发布的 Claude Haiku 5.5 是 Haiku 系列第一个支持可调节 effort 设置的型号，用户可以根据场景在速度和智能之间做取舍。 价格直接跌到 Haiku 4.5 的约四分之一——输入每百万 token 0.10 美元、输出 0.50 美元（不超过 10 万 token 的提示），缓存...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-08",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502894/anthropic-claude-haiku-5-5",
+    "read_time": 1,
+    "id": "d50179bb6076a58a"
   },
   {
     "title": "王星失联前向女友求救发猫喂了没",
