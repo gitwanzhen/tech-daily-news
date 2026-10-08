@@ -324,6 +324,30 @@
     "id": "ef3f9bb1f49f99e1"
   },
   {
+    "title": "开源 AI 终端 uniTerm v1.10 发布：安卓版来了！手机上也能 SSH 运维",
+    "summary": "关于 uniTerm uniTerm 是一款轻量级、跨平台的一站式终端软件，基于 Wails v3 + Go + Vue 3 构建。它将远程终端、文件传输、远程桌面、数据库客户端、容器与 Kubernetes 管理、服务器监控、AI 助理整...",
+    "full_content": "关于 uniTerm uniTerm 是一款轻量级、跨平台的一站式终端软件，基于 Wails v3 + Go + Vue 3 构建。它将远程终端、文件传输、远程桌面、数据库客户端、容器与 Kubernetes 管理、服务器监控、AI 助理整合进一个 15MB 的软件包中，覆盖 30 余种网络协议，支持 Windows、macOS、Linux、Android 四大平台。 从 SSH 命令行管理...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-07",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502865",
+    "read_time": 1,
+    "id": "f925adda15c156f8"
+  },
+  {
+    "title": "Termexo v0.10.11 发布：通过 MCP 操控五种编程 Agent，完善连接引导与状态回传",
+    "summary": "Termexo v0.10.11 已发布。Termexo 是面向 Windows x64 的 MIT 开源工作台，支持通过本地 MCP 操作 Claude Code、Codex、OpenCode、Grok Build 和 Antigravi...",
+    "full_content": "Termexo v0.10.11 已发布。Termexo 是面向 Windows x64 的 MIT 开源工作台，支持通过本地 MCP 操作 Claude Code、Codex、OpenCode、Grok Build 和 Antigravity CLI 的终端。 本文由项目维护者提交，AI 辅助撰写，并按当前版本文档与实现核对。 功能概念图，非软件截图。 核心用法：让一个 Agent 操作另一个 开启“设置 ...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-07",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502851",
+    "read_time": 1,
+    "id": "f8ccc61ba54065e0"
+  },
+  {
     "title": "美丽中国山河如画",
     "summary": "美丽中国山河如画",
     "full_content": "美丽中国山河如画",
