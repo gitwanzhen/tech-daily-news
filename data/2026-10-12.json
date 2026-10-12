@@ -312,6 +312,18 @@
     "id": "e1f4049e735bb6f3"
   },
   {
+    "title": "Linus 把 Claude Code 写的内核补丁推送到个人仓库",
+    "summary": "Linus Torvalds 在自己 Linux 仓库里推了一个叫 noref-filemap-read-with-llm 的分支，后缀不是开玩笑。Torvalds 表示：『代码、测试程序、上面清单背后的审阅和这封信的初稿，都由一个 LLM...",
+    "full_content": "Linus Torvalds 在自己 Linux 仓库里推了一个叫 noref-filemap-read-with-llm 的分支，后缀不是开玩笑。Torvalds 表示：『代码、测试程序、上面清单背后的审阅和这封信的初稿，都由一个 LLM 编程助手（Claude Code）在我的指导下完成。测试是在我自己的机器上跑的。』 这个分支不只是一次 AI 写代码的表演，它对着的是一...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-12",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/502978/linus-torvalds-used-claude-code",
+    "read_time": 1,
+    "id": "1295930b83ec193a"
+  },
+  {
     "title": "记者暗访有偿陪伴服务",
     "summary": "记者暗访有偿陪伴服务",
     "full_content": "记者暗访有偿陪伴服务",
@@ -714,5 +726,29 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%A9%AC%E6%96%AF%E5%85%8B%E6%80%80%E7%96%91%E8%87%AA%E5%B7%B1%E6%9C%89%E4%B8%AD%E5%9B%BD%E8%A1%80%E7%BB%9F",
     "read_time": 1,
     "id": "8dd3c9c211283fc9"
+  },
+  {
+    "title": "Agent 工具调用：从工具声明到执行反馈",
+    "summary": "github.com/ludayuan/Lu… 鲁大猿的视频知识库 Agent 工具调用：从工具声明到执行反馈 核心问题：模型给出工具名称和参数之后，程序怎样执行，并让模型利用结果回答用户？ 模型产生",
+    "full_content": "github.com/ludayuan/Lu… 鲁大猿的视频知识库 Agent 工具调用：从工具声明到执行反馈 核心问题：模型给出工具名称和参数之后，程序怎样执行，并让模型利用结果回答用户？ 模型产生",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-12",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7695622779606024207",
+    "read_time": 1,
+    "id": "c3d8c83476ab4868"
+  },
+  {
+    "title": "你让AI干的活，它可能只干了十分之一——而你根本看不出来",
+    "summary": "你有没有过这种经历：让 AI 帮你处理一批文件、写一份报告、审一遍合同，它秒回你“已完成”，你满心欢喜地交了差，结果被人指出漏洞百出，你回头一查才发现——它压根没认真干，只是给了你一个看起来很美的答案",
+    "full_content": "你有没有过这种经历：让 AI 帮你处理一批文件、写一份报告、审一遍合同，它秒回你“已完成”，你满心欢喜地交了差，结果被人指出漏洞百出，你回头一查才发现——它压根没认真干，只是给了你一个看起来很美的答案",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-12",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7695591914960994346",
+    "read_time": 1,
+    "id": "152928a771adef5a"
   }
 ]
