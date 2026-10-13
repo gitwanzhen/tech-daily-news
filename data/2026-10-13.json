@@ -420,6 +420,18 @@
     "id": "bc13c2da28254817"
   },
   {
+    "title": "拾趣 Magpie：macOS 划词 AI 工具",
+    "summary": "macOS 划词 AI 工具 划选或双击，浮动条随即弹出：翻译、解释、总结实时呈现；复制、搜索、写入 Obsidian、预填日历，结果直接落地。图片、视频与扫描文档中的文字，框选亦可识别——处理在原地完成，无需迁入对话窗口。 https:/...",
+    "full_content": "macOS 划词 AI 工具 划选或双击，浮动条随即弹出：翻译、解释、总结实时呈现；复制、搜索、写入 Obsidian、预填日历，结果直接落地。图片、视频与扫描文档中的文字，框选亦可识别——处理在原地完成，无需迁入对话窗口。 https://gitee.com/anziguoer/Magpie https://github.com/demo007x/Magpie...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-13",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/503004",
+    "read_time": 1,
+    "id": "99263922242e359b"
+  },
+  {
     "title": "习近平同巴布亚新几内亚总督互致贺电",
     "summary": "习近平同巴布亚新几内亚总督互致贺电",
     "full_content": "习近平同巴布亚新几内亚总督互致贺电",
@@ -742,6 +754,66 @@
     "url": "https://juejin.cn/post/7695651912991473691",
     "read_time": 1,
     "id": "49b0bd8f5f16428e"
+  },
+  {
+    "title": "LangSmith 全链路观测（下）：用 Dataset 与 LLM Judge 量化评估 RA",
+    "summary": "基于固定客服问答集，使用LangSmith Dataset和OpenEvals构建三类评估器，分别衡量检索相关性、回答忠实度与帮助性，并通过实验结果定位RAG的检索和生成问题。",
+    "full_content": "基于固定客服问答集，使用LangSmith Dataset和OpenEvals构建三类评估器，分别衡量检索相关性、回答忠实度与帮助性，并通过实验结果定位RAG的检索和生成问题。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-13",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7695972603001929747",
+    "read_time": 1,
+    "id": "4eabd14631a7cfab"
+  },
+  {
+    "title": "2028编程圈很火的10个Skills",
+    "summary": "两年前我们聊 Skills，很多人还在问\"这是啥\"。 到了 2028 年，Skills 已经不是什么新概念，而是 AI 编程的\"水电煤\"。 不装 Skill 的 AI 编程助手，就像没装插件的浏览器—",
+    "full_content": "两年前我们聊 Skills，很多人还在问\"这是啥\"。 到了 2028 年，Skills 已经不是什么新概念，而是 AI 编程的\"水电煤\"。 不装 Skill 的 AI 编程助手，就像没装插件的浏览器—",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-13",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7695999629460029466",
+    "read_time": 1,
+    "id": "f0759fe6703a4e36"
+  },
+  {
+    "title": "LangSmith 全链路观测（上）：用 LangGraph 与 Milvus 构建可追踪的 RAG 客服",
+    "summary": "从知识库切块、向量化和Milvus检索出发，用LangGraph编排检索与生成节点，并接入LangSmith追踪调用、耗时和异常，完整拆解一个可观测RAG客服的实现与排错思路。",
+    "full_content": "从知识库切块、向量化和Milvus检索出发，用LangGraph编排检索与生成节点，并接入LangSmith追踪调用、耗时和异常，完整拆解一个可观测RAG客服的实现与排错思路。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-13",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7695982884838572075",
+    "read_time": 1,
+    "id": "f9b8486b6b33156c"
+  },
+  {
+    "title": "我把“赶 Deadline”和AI做成了一款游戏",
+    "summary": "终于把我想象中的游戏给搞出来了！ 全程口喷！ 时间、金钱、Tokens 的消耗如下： 用 AI 或者用 AI 开发的人，肯定听过或者见过一些名称： 比如常见的模型有，豆包、DeepSeek、GLM、C",
+    "full_content": "终于把我想象中的游戏给搞出来了！ 全程口喷！ 时间、金钱、Tokens 的消耗如下： 用 AI 或者用 AI 开发的人，肯定听过或者见过一些名称： 比如常见的模型有，豆包、DeepSeek、GLM、C",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-13",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7695971363199402022",
+    "read_time": 1,
+    "id": "f696029a7ea31f9f"
+  },
+  {
+    "title": "LangChain.js Agent 中间件实战：生命周期、动态工具与文件权限",
+    "summary": "从生命周期钩子出发，讲清模型调用拦截、状态统计、动态工具注入、Command更新，以及DeepAgents虚拟文件系统与权限控制",
+    "full_content": "从生命周期钩子出发，讲清模型调用拦截、状态统计、动态工具注入、Command更新，以及DeepAgents虚拟文件系统与权限控制",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-13",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7695952014753529892",
+    "read_time": 1,
+    "id": "e25aa28c2525b4cf"
   },
   {
     "title": "一个夜晚与三个夏天",
