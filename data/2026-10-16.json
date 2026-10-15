@@ -108,6 +108,54 @@
     "id": "7c5f0b6bc912aa62"
   },
   {
+    "title": "S16入围赛",
+    "summary": "S16入围赛",
+    "full_content": "S16入围赛<br /><img src=\"https://i0.hdslb.com/bfs/activity-plat/static/20251027/aafcb8031fd171c428daaa9b45867226/VaxAnHMq6w.gif\" />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-10-16",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=S16%E5%85%A5%E5%9B%B4%E8%B5%9B&from_source=webtop_search",
+    "read_time": 1,
+    "id": "fe2b6cc268f9e432"
+  },
+  {
+    "title": "TES经理回应ZUIAN签证问题",
+    "summary": "TES经理回应ZUIAN签证问题",
+    "full_content": "TES经理回应ZUIAN签证问题<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-10-16",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=TES%E7%BB%8F%E7%90%86%E5%9B%9E%E5%BA%94ZUIAN%E7%AD%BE%E8%AF%81%E9%97%AE%E9%A2%98&from_source=webtop_search",
+    "read_time": 1,
+    "id": "7f80f7f8db04aa39"
+  },
+  {
+    "title": "希林娜依高水乡绝美Live",
+    "summary": "希林娜依高水乡绝美Live",
+    "full_content": "希林娜依高水乡绝美Live<br />",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-10-16",
+    "source": "B站",
+    "url": "https://search.bilibili.com/all?keyword=%E5%B8%8C%E6%9E%97%E5%A8%9C%E4%BE%9D%E9%AB%98%E6%B0%B4%E4%B9%A1%E7%BB%9D%E7%BE%8ELive&from_source=webtop_search",
+    "read_time": 1,
+    "id": "87e6d39edadef008"
+  },
+  {
+    "title": "Bringing GPT-Rosalind to academic research labs",
+    "summary": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to ad...",
+    "full_content": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-16",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+    "read_time": 1,
+    "id": "0d2e925aac0b74b0"
+  },
+  {
     "title": "坚定实施健康优先发展战略",
     "summary": "坚定实施健康优先发展战略",
     "full_content": "坚定实施健康优先发展战略",
@@ -264,6 +312,30 @@
     "id": "6929c73180a47b90"
   },
   {
+    "title": "吃菌子容易痛风是误区",
+    "summary": "吃菌子容易痛风是误区",
+    "full_content": "吃菌子容易痛风是误区",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-10-16",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%90%83%E8%8F%8C%E5%AD%90%E5%AE%B9%E6%98%93%E7%97%9B%E9%A3%8E%E6%98%AF%E8%AF%AF%E5%8C%BA",
+    "read_time": 1,
+    "id": "cb049b3ebd37e7aa"
+  },
+  {
+    "title": "马斯克为何关注中国内存",
+    "summary": "马斯克为何关注中国内存",
+    "full_content": "马斯克为何关注中国内存",
+    "category": "hot",
+    "categoryName": "🔥 热搜",
+    "date": "2026-10-16",
+    "source": "微博",
+    "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E9%A9%AC%E6%96%AF%E5%85%8B%E4%B8%BA%E4%BD%95%E5%85%B3%E6%B3%A8%E4%B8%AD%E5%9B%BD%E5%86%85%E5%AD%98",
+    "read_time": 1,
+    "id": "fbcbef1561f7a327"
+  },
+  {
     "title": "OctaFuse Gateway 2.15.0：MCP 聚合、向量 Embeddings 与官方目录同步",
     "summary": "OctaFuse Gateway 2.15.0 新增了 MCP 聚合入口：管理员接入多个远程 MCP 服务后，Agent 只需配置一个网关地址和用户 API Key，就能拿到统一的工具目录，工具调用也",
     "full_content": "OctaFuse Gateway 2.15.0 新增了 MCP 聚合入口：管理员接入多个远程 MCP 服务后，Agent 只需配置一个网关地址和用户 API Key，就能拿到统一的工具目录，工具调用也",
@@ -298,6 +370,18 @@
     "url": "https://juejin.cn/post/7696758874040500267",
     "read_time": 1,
     "id": "3fe015008c2d4b77"
+  },
+  {
+    "title": "AI 玩不好？别怪工具，是你给它定的规矩有问题！",
+    "summary": "从工具选型、配置插件，到写定时任务、清理记忆、多任务协作……全套实践下来，我最大的体会就是：工具的终极意义，不是为了证明 AI 有多聪明，而是让你彻底释放大脑，不用时刻绷着那根弦。",
+    "full_content": "从工具选型、配置插件，到写定时任务、清理记忆、多任务协作……全套实践下来，我最大的体会就是：工具的终极意义，不是为了证明 AI 有多聪明，而是让你彻底释放大脑，不用时刻绷着那根弦。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-16",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7696745540985831460",
+    "read_time": 1,
+    "id": "3b43ae4b7bceb1fd"
   },
   {
     "title": "鲸口脱险",
