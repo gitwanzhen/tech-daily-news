@@ -1,5 +1,17 @@
 [
   {
+    "title": "An update on independent evaluators",
+    "summary": "Last month, we committed to stronger independent, third-party assessment of our models and safety practices. We also sig...",
+    "full_content": "<article class=\"\"><div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__hero\"><div class=\"PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper\"><img alt=\"An update on independent evaluators\" class=\"PostDetail-module-scss-module__UQuRMa__heroImage\" height=\"1125\" src=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/6f3b6a11013128a8d7d8edc627ce758917b4e33d-2000x1125.jpg\" width=\"2000\" /></div></div><div class=\"page-wrapper\"><article><div class=\"\"><div class=\"Body-module-scss-module__z40yvW__body\"><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Last month, we committed to <a href=\"https://darioamodei.com/post/we-must-pace-the-frontier\">stronger independent, third-party assessment</a> of our models and safety practices. We also signed the White House Accord on Super Intelligence, in which companies pledged to partner with independent external auditors or evaluators. Today, we’re announcing that we’ve started to give employee-like access to a team from <a href=\"https://metr.org/\">METR</a>, a nonprofit that evaluates frontier AI models.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\"></p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">METR will publish the results of its risk assessments. Over the past year, we’ve worked with METR on <a href=\"https://metr.org/risk-assessment/\">several reviews of our Risk Reports</a>. We’re also working with <a href=\"https://securebio.org/\">SecureBio</a> and <a href=\"https://www.anthropic.com/news/accenture-embedded-evaluation\">Accenture</a> as evaluators, and are in early discussions with several other organizations, including <a href=\"https://huggingface.co/\">Hugging Face</a>.</p>…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-15",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+    "read_time": 9,
+    "id": "eb77f6484e453b05"
+  },
+  {
     "title": "Karsa终于跟RNG老队友重逢",
     "summary": "Karsa终于跟RNG老队友重逢",
     "full_content": "Karsa终于跟RNG老队友重逢<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20240304/fbb6ffcfd09815bd66290b6b7bde1196/OBQYPHMTcv.png\" />",
@@ -442,6 +454,18 @@
     "url": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E5%AE%89%E9%97%A8%E5%B0%8F%E7%8C%AB%E6%98%AF%E8%BF%99%E6%A0%B7%E8%AE%A4%E8%AF%86%E6%AD%A6%E8%AD%A6%E7%9A%84&from_source=webtop_search",
     "read_time": 1,
     "id": "e97ed6fa21cff7ce"
+  },
+  {
+    "title": "Teaching students to think and learn through questions",
+    "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support a...",
+    "full_content": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-15",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+    "read_time": 1,
+    "id": "eef09eb5dfcecbbf"
   },
   {
     "title": "NetBSD 收到创纪录捐赠，12 万美元 ——「AI 越火热，越想躲 AI」",
@@ -1078,5 +1102,53 @@
     "url": "https://juejin.cn/post/7696483064554848256",
     "read_time": 1,
     "id": "3f20438d106646d4"
+  },
+  {
+    "title": "70 美金的 Beyond Compare，我让 Gemini 4 和 DeepSeek 造个开源免费版（Day 2）",
+    "summary": "昨天发帖请大家提名最想平替的付费软件。今天交 Day 2 的账单和最终选题。 1. 为什么定下 Beyond Compare？ 昨晚到今天，AI 员工把 6 个平台的 134 条评论全抓回来了（V2E",
+    "full_content": "昨天发帖请大家提名最想平替的付费软件。今天交 Day 2 的账单和最终选题。 1. 为什么定下 Beyond Compare？ 昨晚到今天，AI 员工把 6 个平台的 134 条评论全抓回来了（V2E",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-15",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7696894428132294665",
+    "read_time": 1,
+    "id": "6df23f3354c7c6ea"
+  },
+  {
+    "title": "【HarmonyOS 7】 应用 Agent 接入云 A2A 与端 A2A 的实践详解",
+    "summary": "【HarmonyOS 7】 应用 Agent 接入云 A2A 与端 A2A 的实践详解 一、前言 用户说一句 帮我预约最近的银行网点，真正有价值的结果不是返回一段网点介绍，而是完成查询、筛选、确认，必",
+    "full_content": "【HarmonyOS 7】 应用 Agent 接入云 A2A 与端 A2A 的实践详解 一、前言 用户说一句 帮我预约最近的银行网点，真正有价值的结果不是返回一段网点介绍，而是完成查询、筛选、确认，必",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-15",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7696693474244247587",
+    "read_time": 1,
+    "id": "75b76f50c5c68e2f"
+  },
+  {
+    "title": "上下文：Agent 的眼睛里到底装着什么",
+    "summary": "先说一个很常见的翻车现场。 一个 Agent 接了完整的工具链，跑「查一下公司今年的差旅政策然后总结给我」这种任务。它输出了一个结构漂亮、条目齐全、语气笃定的答案。政策里有的它说了，政策里没有的——它",
+    "full_content": "先说一个很常见的翻车现场。 一个 Agent 接了完整的工具链，跑「查一下公司今年的差旅政策然后总结给我」这种任务。它输出了一个结构漂亮、条目齐全、语气笃定的答案。政策里有的它说了，政策里没有的——它",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-15",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7696759034846167055",
+    "read_time": 1,
+    "id": "af576d025ec20d9e"
+  },
+  {
+    "title": "Agent = 大脑 + 眼睛 + 手脚：一篇看懂现代 AI Agent 的骨架",
+    "summary": "Agent = 大脑 + 眼睛 + 手脚：一篇看懂现代 AI Agent 的骨架 你有没有遇到过这种情况：看 AI Agent 的文章，每篇都在讲新概念，看完还是说不清它到底是什么。 那我们换个做法。",
+    "full_content": "Agent = 大脑 + 眼睛 + 手脚：一篇看懂现代 AI Agent 的骨架 你有没有遇到过这种情况：看 AI Agent 的文章，每篇都在讲新概念，看完还是说不清它到底是什么。 那我们换个做法。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-15",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7696759034846117903",
+    "read_time": 1,
+    "id": "fb0219ec1bc192d5"
   }
 ]
