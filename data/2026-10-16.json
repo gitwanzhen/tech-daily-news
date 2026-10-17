@@ -444,6 +444,18 @@
     "id": "0f8250f167965b41"
   },
   {
+    "title": "Benefit Street Partners answers questions faster with Codex",
+    "summary": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faste...",
+    "full_content": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-16",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/benefit-street-partners",
+    "read_time": 1,
+    "id": "570b98dc3ba29d1a"
+  },
+  {
     "title": "请问，AI产品，最终是进行了LLM 的调用。请问下AI产品是通过了哪些方式进行了优化实现产品呢？",
     "summary": "请问，AI产品，最终是进行了LLM 的调用。有一个问题：比如：现在的AI写小说，其他AI产品，都是最终通过LLM进行实现的内容输出，但是有的产品做的好有的产品做的不好。我有2个问题。1、LLM 都是接受提示词进行调用没错吧，那么是否AI产品...",
     "full_content": "<p>请问，AI产品，最终是进行了LLM 的调用。</p><p><img alt=\"image.png\" height=\"214\" src=\"/img/bVdq3y8\" title=\"image.png\" width=\"555\" /></p><p>有一个问题：</p><p>比如：现在的AI写小说，其他AI产品，都是最终通过LLM进行实现的内容输出，但是有的产品做的好有的产品做的不好。我有2个问题。</p><p>1、LLM 都是接受提示词进行调用没错吧，那么是否AI产品做的好与坏都是基于提示词的差异？<br />2、除了提示词，AI产品一般还有哪些方式优化产品呢？<br />比如：计划、Agent执行流程？</p>",
@@ -526,6 +538,42 @@
     "url": "https://www.oschina.net/news/503059",
     "read_time": 1,
     "id": "450470e9c9fddfb3"
+  },
+  {
+    "title": "Jync v1.7.5 AI 配置接入本地模型（Ollama 预设 + 深度思考档位）",
+    "summary": "Jync 捷同 是一个异构数据库实时同步工具。在异构数据库之间实时同步结构与数据的开箱即用 Web 应用：单个 jar 启动，浏览器点几下即可在内置 17 种数据库（另支持自定义类型）之间任意两种建立持续同步链路。增量检测默认轮询（零侵入）...",
+    "full_content": "Jync 捷同 是一个异构数据库实时同步工具。在异构数据库之间实时同步结构与数据的开箱即用 Web 应用：单个 jar 启动，浏览器点几下即可在内置 17 种数据库（另支持自定义类型）之间任意两种建立持续同步链路。增量检测默认轮询（零侵入），MySQL / Oracle / PostgreSQL / SQL Server 源库可切换日志 CDC 做到秒级延迟。S...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-16",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/503068/jync-1-7-5-released",
+    "read_time": 1,
+    "id": "b2eaa5c08b0ea3bb"
+  },
+  {
+    "title": "划词 AI 工具拾趣 Magpie Release v0.1.14，重磅发布 Windows 版",
+    "summary": "Magpie拾趣：跨平台沉浸式自定义AI 划词工具 文本提取 · 内容翻译 · 信息整理 划选或双击，浮动条随即弹出：翻译、解释、总结实时呈现；复制、搜索、写入 Obsidian、预填日历，结果直接落地。图片、视频与扫描文档中的文字，框选亦...",
+    "full_content": "Magpie拾趣：跨平台沉浸式自定义AI 划词工具 文本提取 · 内容翻译 · 信息整理 划选或双击，浮动条随即弹出：翻译、解释、总结实时呈现；复制、搜索、写入 Obsidian、预填日历，结果直接落地。图片、视频与扫描文档中的文字，框选亦可识别——处理在原地完成，无需迁入对话窗口。 本次更新，重磅发布 Windows 版。 http...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-16",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/503067/magpie-0-1-14-released-windows-ver",
+    "read_time": 1,
+    "id": "c75c1e70f8ced81d"
+  },
+  {
+    "title": "🔥 优化及缺陷修复：开源 AI 无代码平台 NocoBase",
+    "summary": "汇总一周产品更新日志，最新发布可前往我们的博客查看。 NocoBase 目前更新包括三个分支： main、next 和 develop。** main： 截至目前最稳定的版本，推荐安装此版本。 next： 包含即将发布的新功能，经过初步测试...",
+    "full_content": "汇总一周产品更新日志，最新发布可前往我们的博客查看。 NocoBase 目前更新包括三个分支： main、next 和 develop。** main： 截至目前最稳定的版本，推荐安装此版本。 next： 包含即将发布的新功能，经过初步测试的版本，可能存在部分已知或未知问题。主要面向测试用户，用于收集反馈和进一步优化功能。适合愿意提前体验...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-16",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/503066/nocobase-updated",
+    "read_time": 1,
+    "id": "c4b69b7012c2b61d"
   },
   {
     "title": "坚定实施健康优先发展战略",
