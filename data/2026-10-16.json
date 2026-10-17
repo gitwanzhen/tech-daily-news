@@ -1140,6 +1140,30 @@
     "id": "fcfa6d8ee0068bcf"
   },
   {
+    "title": "别只在 prompt 里让 AI 别碰文件：我给仓库装了四道提交闸门，越界直接拒绝提交",
+    "summary": "上一篇讲怎么用 Cursor 的 Agent 做多文件改造，里面有个关键动作：在 prompt 里把\"能碰哪些文件、绝对不许碰哪些\"写清楚。评论区一位读者点醒了我，他说只写在 prompt 里的约束，",
+    "full_content": "上一篇讲怎么用 Cursor 的 Agent 做多文件改造，里面有个关键动作：在 prompt 里把\"能碰哪些文件、绝对不许碰哪些\"写清楚。评论区一位读者点醒了我，他说只写在 prompt 里的约束，",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-16",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7697074326228025384",
+    "read_time": 1,
+    "id": "fce233c435d009e2"
+  },
+  {
+    "title": "RAG 进阶：Agentic RAG 与多智能体协作（系列二·第2篇）：长上下文优化",
+    "summary": "> Agent 跑 50 步之后，上下文爆了怎么办 系列一搭好了系统，系列二第一篇讲了高级工具",
+    "full_content": "> Agent 跑 50 步之后，上下文爆了怎么办 系列一搭好了系统，系列二第一篇讲了高级工具",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-16",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7697068552914468927",
+    "read_time": 1,
+    "id": "beb88744b8926721"
+  },
+  {
     "title": "鲸口脱险",
     "summary": "评分：0片长：106分钟制片国家/地区：美国导演：布莱恩·达菲尔德主演：奥斯汀·艾布拉姆斯 / 乔什·布洛林 / 伊丽莎白·苏",
     "full_content": "评分：0<br />片长：106分钟<br />制片国家/地区：美国<br />导演：布莱恩·达菲尔德<br />主演：奥斯汀·艾布拉姆斯 / 乔什·布洛林 / 伊丽莎白·苏<br /><img src=\"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935800697.webp\" />",
