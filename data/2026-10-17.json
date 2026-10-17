@@ -1270,5 +1270,53 @@
     "url": "https://juejin.cn/post/7697181229842628650",
     "read_time": 1,
     "id": "a215634b24f65dd9"
+  },
+  {
+    "title": "DeepSeek  新版还是难评！",
+    "summary": "标题难取！因为说“不好”和“好”，都不容易，不说么，没有打开率！ 我只能说，这不是一个让我“兴奋”的模型！ 我刚刚刷了几篇文章，大概是说，梁圣又回来了，能力更强， Tokens消耗更少，时间更短。 D",
+    "full_content": "标题难取！因为说“不好”和“好”，都不容易，不说么，没有打开率！ 我只能说，这不是一个让我“兴奋”的模型！ 我刚刚刷了几篇文章，大概是说，梁圣又回来了，能力更强， Tokens消耗更少，时间更短。 D",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-17",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7697431539588251675",
+    "read_time": 1,
+    "id": "0e285af9a0c8b757"
+  },
+  {
+    "title": "ChatGPT for Chrome 扩展升级解读：从「你复制给它」到「替你操作浏览器」（附三步上手流程）",
+    "summary": "导语 10 月 15 日，OpenAI 给 ChatGPT 的 Chrome 浏览器扩展升了一级，17 日多家中文科技媒体报道。读完本文你可以拿到三样东西：这次升级的能力边界（能读什么、能干什么）、一",
+    "full_content": "导语 10 月 15 日，OpenAI 给 ChatGPT 的 Chrome 浏览器扩展升了一级，17 日多家中文科技媒体报道。读完本文你可以拿到三样东西：这次升级的能力边界（能读什么、能干什么）、一",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-17",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7697250511396814889",
+    "read_time": 1,
+    "id": "f043daffec35788e"
+  },
+  {
+    "title": "[Java] 借助 GUI 展示 class 文件的内容（V1.0版本）",
+    "summary": "之前我花了不少时间写了一个 简易的 class 文件解析工具（它的部分功能还没有完成）。这个工具没有 GUI，考虑到现在 AI 编程非常方便，我用 trae 完成了 Swing 的部分",
+    "full_content": "之前我花了不少时间写了一个 简易的 class 文件解析工具（它的部分功能还没有完成）。这个工具没有 GUI，考虑到现在 AI 编程非常方便，我用 trae 完成了 Swing 的部分",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-17",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7697180584537833514",
+    "read_time": 1,
+    "id": "ec83b2f220c8666c"
+  },
+  {
+    "title": "DeepSeek 又更新！但怎么有个分数往下掉？",
+    "summary": "DeepSeek 今天换了线上模型，版本号 V4.1-Flash-1017。网页、App、API 三边一起切，价格没动。 官方通稿说各项基准都有提升，后面附了十一项成绩。我对着旧版本翻了一遍，能直接比",
+    "full_content": "DeepSeek 今天换了线上模型，版本号 V4.1-Flash-1017。网页、App、API 三边一起切，价格没动。 官方通稿说各项基准都有提升，后面附了十一项成绩。我对着旧版本翻了一遍，能直接比",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-17",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7697626465428815899",
+    "read_time": 1,
+    "id": "5a09fef50253d364"
   }
 ]
