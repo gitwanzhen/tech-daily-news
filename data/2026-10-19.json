@@ -360,6 +360,18 @@
     "id": "3d8fc43ad3c064b9"
   },
   {
+    "title": "Advancing Coding in Low-Resource Programming Languages",
+    "summary": "Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engin...",
+    "full_content": "Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL migration.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-19",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/low-resource-programming-languages",
+    "read_time": 1,
+    "id": "8dad8d5fd5f8d003"
+  },
+  {
     "title": "DeepSeek V4.1 Flash 更新：“许愿式编程”成真 + 搜索 API 开放",
     "summary": "DeepSeek 更新了 V4.1 Flash，版本号 1017。这次的更新有两个看点：「许愿式编程」从零建项目的能力提升，以及自研搜索 API 正式开放——后者对用 DeepSeek API 做应用的开发者影响更直接。 先看性能。官方说这...",
     "full_content": "DeepSeek 更新了 V4.1 Flash，版本号 1017。这次的更新有两个看点：「许愿式编程」从零建项目的能力提升，以及自研搜索 API 正式开放——后者对用 DeepSeek API 做应用的开发者影响更直接。 先看性能。官方说这是「性能-费用的帕累托改进」：基准测试全面提升的同时，缩短了任务运行时间和输出长度——也就是跑得更快、输...",
@@ -848,5 +860,29 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%9D%8E%E5%B0%8F%E5%86%89%E7%A6%BB%E5%A9%9A",
     "read_time": 1,
     "id": "db1c17386ef60765"
+  },
+  {
+    "title": "llama.cpp 本地运行 9B 模型：部署、工具调用与微调数据",
+    "summary": "llama.cpp 本地运行 9B 模型：部署、工具调用与微调数据 把本地助手接起来，先做三件事：让推理服务加载权重，让对话外壳正确发送工具定义，让应用执行工具并回传结果。最后再决定是否需要微调。本文",
+    "full_content": "llama.cpp 本地运行 9B 模型：部署、工具调用与微调数据 把本地助手接起来，先做三件事：让推理服务加载权重，让对话外壳正确发送工具定义，让应用执行工具并回传结果。最后再决定是否需要微调。本文",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-19",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7698287001585418280",
+    "read_time": 1,
+    "id": "06130bedaab92d49"
+  },
+  {
+    "title": "n8n 智能体工作流实战：触发、工具、记忆与发布护栏",
+    "summary": "n8n 智能体工作流实战：触发、工具、记忆与发布护栏 从自动化平台到 AI 后台：n8n 作为生产级 Agent 基础设施 重新定位 n8n",
+    "full_content": "n8n 智能体工作流实战：触发、工具、记忆与发布护栏 从自动化平台到 AI 后台：n8n 作为生产级 Agent 基础设施 重新定位 n8n",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-19",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7698227087581380608",
+    "read_time": 1,
+    "id": "2c1e2557bdb0cfc2"
   }
 ]
