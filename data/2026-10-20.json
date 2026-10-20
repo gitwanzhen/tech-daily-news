@@ -360,6 +360,18 @@
     "id": "afe39255e3235993"
   },
   {
+    "title": "OpenAI acquires Orchestra Bio",
+    "summary": "OpenAI is acquiring Orchestra Bio to bring AI-powered operations to life sciences RD, helping biopharma teams accelerate...",
+    "full_content": "OpenAI is acquiring Orchestra Bio to bring AI-powered operations to life sciences R&amp;D, helping biopharma teams accelerate drug development and advance new treatments.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-20",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+    "read_time": 1,
+    "id": "1ce5d96638a696e9"
+  },
+  {
     "title": "美国禁止政府机构使用 DeepSeek",
     "summary": "美国国土安全部（DHS）下令，联邦民用机构从信息系统中移除所有 DeepSeek 相关产品——包括用 DeepSeek 技术构建的第三方产品和服务。这不是「卸载一个 App」那么简单，机构还得彻查采购的软件背后调用了什么模型。 命令针对联邦...",
     "full_content": "美国国土安全部（DHS）下令，联邦民用机构从信息系统中移除所有 DeepSeek 相关产品——包括用 DeepSeek 技术构建的第三方产品和服务。这不是「卸载一个 App」那么简单，机构还得彻查采购的软件背后调用了什么模型。 命令针对联邦文职机构的信息系统与政府采购，不涉及普通用户和企业。范围包括财政部、国务院、司法部等民...",
@@ -850,5 +862,53 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E8%82%96%E6%88%98%E6%BC%94%E5%94%B1%E4%BC%9A%E4%BA%8C%E5%BC%80%E5%94%AE%E7%A5%A8%E6%97%A0%E9%80%80%E7%A5%A8%E6%9D%83%E7%9B%8A",
     "read_time": 1,
     "id": "2c79c4b185fe436c"
+  },
+  {
+    "title": "开源项目第242期：HyperFrames —— 写 HTML 就能渲染视频，专为 AI Agent 设计的确定性视频框架",
+    "summary": "HeyGen 开源的 HTML 转视频框架：用 HTML + data 属性 + GSAP 等动画描述视频，无头 Chrome 逐帧截取 + FFmpeg 编码，同样的输入永远得到同样的动画",
+    "full_content": "HeyGen 开源的 HTML 转视频框架：用 HTML + data 属性 + GSAP 等动画描述视频，无头 Chrome 逐帧截取 + FFmpeg 编码，同样的输入永远得到同样的动画",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-20",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7698552541928194063",
+    "read_time": 1,
+    "id": "4ff799a951e1fc38"
+  },
+  {
+    "title": "同样10美元，OpenDesign和Command Code的DeepSeek V4.1 Flash额度到底有多少？",
+    "summary": "最近，我买了两个每月10美元的套餐，用来使用 DeepSeek V4.1 Flash，它们分别是 OpenDesign Go 和 Command Code GOAT。 OpenDesign 宣传每月最",
+    "full_content": "最近，我买了两个每月10美元的套餐，用来使用 DeepSeek V4.1 Flash，它们分别是 OpenDesign Go 和 Command Code GOAT。 OpenDesign 宣传每月最",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-20",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7698546901831352370",
+    "read_time": 1,
+    "id": "63a5a15f04c0b0e4"
+  },
+  {
+    "title": "Headroom 深度解析：本地化 LLM 代理下的 Token 压缩艺术",
+    "summary": "在 AI 编码代理日益普及的今天，Token 成本与延迟已成为制约其规模化应用的关键瓶颈。Headroom 作为一款本地运行的 LLM 代理与库，通过精细化的压缩技术，在不牺牲答案质量的前提下，显著降",
+    "full_content": "在 AI 编码代理日益普及的今天，Token 成本与延迟已成为制约其规模化应用的关键瓶颈。Headroom 作为一款本地运行的 LLM 代理与库，通过精细化的压缩技术，在不牺牲答案质量的前提下，显著降",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-20",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7698591060599095338",
+    "read_time": 1,
+    "id": "ed8ba18e1e5af8d8"
+  },
+  {
+    "title": "深度解析 XERJ：为 AI Agent 打造的 Rust 本地搜索引擎",
+    "summary": "随着大语言模型（LLM）能力的爆发，如何让 AI Agent 高效、低消耗地理解并检索大规模代码与文档库，已成为构建智能自动化工具的核心瓶颈。传统的 grep 或基于纯记忆的方案在 Token 消耗上",
+    "full_content": "随着大语言模型（LLM）能力的爆发，如何让 AI Agent 高效、低消耗地理解并检索大规模代码与文档库，已成为构建智能自动化工具的核心瓶颈。传统的 grep 或基于纯记忆的方案在 Token 消耗上",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-20",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7698625451761909796",
+    "read_time": 1,
+    "id": "d46e26f016a946ff"
   }
 ]
