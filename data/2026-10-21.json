@@ -348,6 +348,66 @@
     "id": "912c2a4114a56895"
   },
   {
+    "title": "OpenAI models are coming to Google Cloud",
+    "summary": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Goo...",
+    "full_content": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-21",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/openai-models-google-cloud",
+    "read_time": 1,
+    "id": "707234813354f93d"
+  },
+  {
+    "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+    "summary": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabil...",
+    "full_content": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-21",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+    "read_time": 1,
+    "id": "6d72427cd4b8ad1a"
+  },
+  {
+    "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+    "summary": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what t...",
+    "full_content": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-21",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+    "read_time": 1,
+    "id": "8f9e95c0804b5c27"
+  },
+  {
+    "title": "Using thousands of AI agents to uncover new leads in biological data",
+    "summary": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data f...",
+    "full_content": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-21",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+    "read_time": 1,
+    "id": "c29efc53a85f8595"
+  },
+  {
+    "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+    "summary": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answer...",
+    "full_content": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-21",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/building-chatgpt-ad-stack",
+    "read_time": 1,
+    "id": "3dac179b5263050e"
+  },
+  {
     "title": "DeepSeek 与华为合作设计 AI 芯片，训练环节彻底“去英伟达化”",
     "summary": "DeepSeek 和华为的关系，已经远远超出了「芯片供应商—大模型客户」的边界。两家中国公司正在做的，是一起重新定义「AI 芯片应该怎么设计」——而这对英伟达的冲击，比单纯的份额数字更深远。 先说合作的具体形态。据 The Informat...",
     "full_content": "DeepSeek 和华为的关系，已经远远超出了「芯片供应商—大模型客户」的边界。两家中国公司正在做的，是一起重新定义「AI 芯片应该怎么设计」——而这对英伟达的冲击，比单纯的份额数字更深远。 先说合作的具体形态。据 The Information 报道，华为工程师长期驻点在 DeepSeek 公司，把大模型训练中的实际需求直接纳入芯片设...",
@@ -418,6 +478,18 @@
     "url": "https://www.oschina.net/news/503136/mistral-ai-voxtral-3",
     "read_time": 1,
     "id": "34b8870c76add096"
+  },
+  {
+    "title": "2026 上海开源大赛「智算云赛道」决赛名单公布",
+    "summary": "2026 上海开源软件应用创新大赛「智算云赛道」决赛入围名单今日公布，以下 10 支队伍成功晋级，将于 10 月 29 日在上海张江人工智能创新小镇参加总决赛。 现将入围名单按报名时间顺序公示如下： 项目名称 团队负责人 代码仓库地址 Sh...",
+    "full_content": "2026 上海开源软件应用创新大赛「智算云赛道」决赛入围名单今日公布，以下 10 支队伍成功晋级，将于 10 月 29 日在上海张江人工智能创新小镇参加总决赛。 现将入围名单按报名时间顺序公示如下： 项目名称 团队负责人 代码仓库地址 ShannonBase 李浩 https://github.com/Shannon-Data/ShannonBase 女娲 Nuwax AIOS 邱超 ...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-21",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/503144",
+    "read_time": 1,
+    "id": "a7ea2db796c61ece"
   },
   {
     "title": "男子捡到38000元留了道题给失主",
