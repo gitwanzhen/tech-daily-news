@@ -372,6 +372,18 @@
     "id": "1ce5d96638a696e9"
   },
   {
+    "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+    "summary": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate ...",
+    "full_content": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-20",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/terminal-x",
+    "read_time": 1,
+    "id": "7b80adca1cfe45f8"
+  },
+  {
     "title": "美国禁止政府机构使用 DeepSeek",
     "summary": "美国国土安全部（DHS）下令，联邦民用机构从信息系统中移除所有 DeepSeek 相关产品——包括用 DeepSeek 技术构建的第三方产品和服务。这不是「卸载一个 App」那么简单，机构还得彻查采购的软件背后调用了什么模型。 命令针对联邦...",
     "full_content": "美国国土安全部（DHS）下令，联邦民用机构从信息系统中移除所有 DeepSeek 相关产品——包括用 DeepSeek 技术构建的第三方产品和服务。这不是「卸载一个 App」那么简单，机构还得彻查采购的软件背后调用了什么模型。 命令针对联邦文职机构的信息系统与政府采购，不涉及普通用户和企业。范围包括财政部、国务院、司法部等民...",
