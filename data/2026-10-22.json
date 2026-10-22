@@ -1,5 +1,17 @@
 [
   {
+    "title": "Donating Agent Skills to the Agentic AI Foundation",
+    "summary": "Donating Agent Skills to the Agentic AI FoundationPublishedOct 22, 2026CategoryProductToday, we’re donating Agent Skills...",
+    "full_content": "<div class=\"\"><article class=\"ArticlePage-module-scss-module__EaEYjq__Article\"><header class=\"ArticleHero-module-scss-module__VYxBBq__Header\"><div class=\"ArticleHero-module-scss-module__VYxBBq__Content\"><h1 class=\"ArticleHero-module-scss-module__VYxBBq__Title\">Donating Agent Skills to the Agentic AI Foundation</h1></div><div class=\"ArticleHero-module-scss-module__VYxBBq__Cover\"><div class=\"ArticleHero-module-scss-module__VYxBBq__CoverContainer\"></div></div><div class=\"ArticleHero-module-scss-module__VYxBBq__MetalistContainer\"><ul class=\"ArticleHero-module-scss-module__VYxBBq__Metalist\"><li class=\"ArticleHero-module-scss-module__VYxBBq__Metadata\"><p class=\"text-caption-1\">Published</p><p class=\"text-caption-1\"><time datetime=\"2026-10-22\">Oct 22, 2026</time></p></li><li class=\"ArticleHero-module-scss-module__VYxBBq__Metadata\"><p class=\"text-caption-1\">Category</p><p class=\"text-caption-1\"><a class=\"TopicLink-module-scss-module__wN10Da__link\" href=\"https://www.anthropic.com/news/product\">Product</a></p></li></ul></div></header><div class=\"ArticlePage-module-scss-module__EaEYjq__ContentWrapper\"><div class=\"Body-module-scss-module__PA4F1q__body\"><p class=\"Body-module-scss-module__PA4F1q__reading-column post-text\">Today, we’re donating <a href=\"https://agentskills.io/home\" id=\"base-ui-_R_3s5drpbsnpfkq6btb_\">Agent Skills</a>, the open standard that gives AI agents specialized knowledge and workflows, to the Agentic AI Foundation (AAIF). More than 70 agent platforms, including ChatGPT, Cursor, GitHub Copilot, and VS Code, have integrated Agent Skills since we published the standard in December 2025.</p><h3 class=\"typography-module-scss-module__tOQyXa__headline-5 Body-module-scss-module__PA4F1q__reading-column post-section\" id=\"agent-interoperability-through-simplicity\">Agent in…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-22",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+    "read_time": 9,
+    "id": "014cb4d393dcb21a"
+  },
+  {
     "title": "我国微堆技术迈入商业化阶段",
     "summary": "我国微堆技术迈入商业化阶段",
     "full_content": "我国微堆技术迈入商业化阶段<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
@@ -394,6 +406,18 @@
     "url": "https://openai.com/index/forward-deployed-engineering-means",
     "read_time": 1,
     "id": "f4d7439583ad055d"
+  },
+  {
+    "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+    "summary": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentatio...",
+    "full_content": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-22",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/uber-chatgpt-work-rollout",
+    "read_time": 1,
+    "id": "6cec5c61df6514b1"
   },
   {
     "title": "DeepSeek 融了 150 亿美元 —— 宁德时代和腾讯领投，目标两次上调",
