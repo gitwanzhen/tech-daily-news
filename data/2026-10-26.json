@@ -480,6 +480,42 @@
     "id": "915861e8a7961b82"
   },
   {
+    "title": "ChatGPT’s expanding world of work",
+    "summary": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for wor...",
+    "full_content": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-26",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/chatgpt-expanding-world-of-work",
+    "read_time": 1,
+    "id": "38fe6a22544b47a4"
+  },
+  {
+    "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+    "summary": "See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code...",
+    "full_content": "See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-26",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/openai-cut-incident-investigation",
+    "read_time": 1,
+    "id": "25e1b98740f4cadb"
+  },
+  {
+    "title": "Introducing GPT-6.1 Terra",
+    "summary": "Bringing fast and capable computer use to everyone",
+    "full_content": "Bringing fast and capable computer use to everyone",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-26",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+    "read_time": 1,
+    "id": "5664397e2812ae8f"
+  },
+  {
     "title": "SmartCall v1.0.9 发布：智能体知识库上线，让 AI 客服先查资料再回答",
     "summary": "📖 项目简介 SmartCall 是一套基于 AI 大模型 + Asterisk 通信引擎构建的新一代智能客服呼叫中心系统。系统深度融合了 AI 语音机器人、智能 IVR 流程编排、端到端双工对话模型、实时语音识别（ASR）、语音合成（TT...",
     "full_content": "📖 项目简介 SmartCall 是一套基于 AI 大模型 + Asterisk 通信引擎构建的新一代智能客服呼叫中心系统。系统深度融合了 AI 语音机器人、智能 IVR 流程编排、端到端双工对话模型、实时语音识别（ASR）、语音合成（TTS）、大模型意图识别 等核心能力，为企业提供从呼入智能应答到智能外呼的全链路 AI 客服解决方案。 无论...",
