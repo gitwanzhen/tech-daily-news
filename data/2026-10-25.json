@@ -504,6 +504,18 @@
     "id": "9a9e8accc894d1da"
   },
   {
+    "title": "10 MB 的桌面 AI 客户端：用仓颉 + 系统 WebView 替代 Electron",
+    "summary": "我用华为仓颉写了个桌面框架，产物 4.7–10 MB. 项目：cj-tauri（仓颉版 Tauri），MIT 仓库：https://atomgit.com/qq8864/cj-tauri 官网：https://yangyongzhen.gi...",
+    "full_content": "我用华为仓颉写了个桌面框架，产物 4.7–10 MB. 项目：cj-tauri（仓颉版 Tauri），MIT 仓库：https://atomgit.com/qq8864/cj-tauri 官网：https://yangyongzhen.github.io/cj-tauri/ 思路跟 Tauri 一样：前端照写 Web，后端是原生二进制，中间一条 IPC 桥加一层能力白名单， WebView 用系统自带的（Windows WebView2 / ...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-25",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/503196",
+    "read_time": 1,
+    "id": "4c273d77fa082707"
+  },
+  {
     "title": "翘首木船见证革命信仰",
     "summary": "翘首木船见证革命信仰",
     "full_content": "翘首木船见证革命信仰",
@@ -1222,5 +1234,17 @@
     "url": "https://juejin.cn/post/7700157305414058019",
     "read_time": 1,
     "id": "dc6d1b45cbc6c504"
+  },
+  {
+    "title": "一份声明，多份产物：飞书 SDK 的 AI 工具面是怎么生成的",
+    "summary": "飞书 SDK 1228 个方法中，仅通过 351 个接口声明生成 AI 工具链。利用 Roslyn 源生成器在编译期产出参数类、Schema、注册器与契约测试，实现可评审、可回滚的工具产物。",
+    "full_content": "飞书 SDK 1228 个方法中，仅通过 351 个接口声明生成 AI 工具链。利用 Roslyn 源生成器在编译期产出参数类、Schema、注册器与契约测试，实现可评审、可回滚的工具产物。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-25",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7700084697595052066",
+    "read_time": 1,
+    "id": "8145a83c589dcf63"
   }
 ]
