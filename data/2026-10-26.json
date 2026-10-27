@@ -516,6 +516,30 @@
     "id": "5664397e2812ae8f"
   },
   {
+    "title": "Working with academic communities to build scientific understanding",
+    "summary": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how re...",
+    "full_content": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-26",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+    "read_time": 1,
+    "id": "6b6861f5dfdd32fb"
+  },
+  {
+    "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+    "summary": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers ...",
+    "full_content": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-26",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+    "read_time": 1,
+    "id": "12c7a1020fa4d8a1"
+  },
+  {
     "title": "SmartCall v1.0.9 发布：智能体知识库上线，让 AI 客服先查资料再回答",
     "summary": "📖 项目简介 SmartCall 是一套基于 AI 大模型 + Asterisk 通信引擎构建的新一代智能客服呼叫中心系统。系统深度融合了 AI 语音机器人、智能 IVR 流程编排、端到端双工对话模型、实时语音识别（ASR）、语音合成（TT...",
     "full_content": "📖 项目简介 SmartCall 是一套基于 AI 大模型 + Asterisk 通信引擎构建的新一代智能客服呼叫中心系统。系统深度融合了 AI 语音机器人、智能 IVR 流程编排、端到端双工对话模型、实时语音识别（ASR）、语音合成（TTS）、大模型意图识别 等核心能力，为企业提供从呼入智能应答到智能外呼的全链路 AI 客服解决方案。 无论...",
