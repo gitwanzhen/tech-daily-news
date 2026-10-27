@@ -372,6 +372,18 @@
     "id": "011555b6960ee180"
   },
   {
+    "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+    "summary": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power ne...",
+    "full_content": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-27",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/oracle-apps-in-chatgpt",
+    "read_time": 1,
+    "id": "866a8680f78e7f42"
+  },
+  {
     "title": "mica-ppocr 1.2.4 发布：OCR 预处理内存砍半，检测提速 2.6 倍",
     "summary": "发布日期： 2026-10-25　·　上一版本：v1.2.3（2026-09-12） 这一版把预处理内存砍掉一半、检测提速 2.6 倍，顺手清掉了两类「写了却不生效」「关了却关不掉」的问题：PDF 双通道的配置终于传到了引擎，mica.ai...",
     "full_content": "&gt; 发布日期： 2026-10-25　·　上一版本：v1.2.3（2026-09-12） 这一版把预处理内存砍掉一半、检测提速 2.6 倍，顺手清掉了两类「写了却不生效」「关了却关不掉」的问题：PDF 双通道的配置终于传到了引擎，mica.ai.ppocr.enabled=false 之后应用也能正常启动；海报类版面也有了声明检测参数的口子。 变更总览 模块 变更 ...",
@@ -454,6 +466,18 @@
     "url": "https://www.oschina.net/news/503242/cloudflare-glm-kv-cache-exposure-remediation",
     "read_time": 1,
     "id": "1a1c07b3df443d11"
+  },
+  {
+    "title": "OpenAI 和 Anthropic 将大模型价格砍了八成，这门生意到底怎么算的？",
+    "summary": "从六月 GPT-5.6 系列发布到现在，OpenAI 和 Anthropic 的主流模型价格塌了一大截，最多砍掉 80%。Max Woolf 把这场价格战的时间线全捋了一遍，结论有点反直觉：这不像烧钱抢市场的套路。 先看数字怎么掉的。GPT...",
+    "full_content": "从六月 GPT-5.6 系列发布到现在，OpenAI 和 Anthropic 的主流模型价格塌了一大截，最多砍掉 80%。Max Woolf 把这场价格战的时间线全捋了一遍，结论有点反直觉：这不像烧钱抢市场的套路。 先看数字怎么掉的。GPT-5.6 Sol 卖 $5/$30/$0.50（输入/输出/缓存读取，每百万 token），Luna 是 $1/$6/$0.10。后来 Luna 直接砍 80...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-27",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/503251/cheap-llms",
+    "read_time": 1,
+    "id": "6008b189bd8dc2c3"
   },
   {
     "title": "T1大概率抽到LPL",
