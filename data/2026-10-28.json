@@ -1,5 +1,17 @@
 [
   {
+    "title": "AI for Science expands to foundations and research institutions",
+    "summary": "Chapter 01: Science funders and societiesAI for Science expands to foundations and research institutions…",
+    "full_content": "<div class=\"\"><article class=\"ArticlePage-module-scss-module__EaEYjq__Article\"><div class=\"TableOfContents-module-scss-module__f4L05W__Bar\"><div class=\"StickyTableOfContents-module-scss-module__otSNYa__Accordion\"><div class=\"StickyTableOfContents-module-scss-module__otSNYa__Item\"><h3 class=\"StickyTableOfContents-module-scss-module__otSNYa__Header\"><button class=\"StickyTableOfContents-module-scss-module__otSNYa__Trigger\" id=\"base-ui-_R_5bpbsnpfkq6btbH2_\" tabindex=\"0\" type=\"button\"><span class=\"StickyTableOfContents-module-scss-module__otSNYa__TriggerLabel\">Chapter<!-- --> <!-- -->01<!-- -->: <span class=\"StickyTableOfContents-module-scss-module__otSNYa__Target\">Science funders and societies</span></span><div class=\"StickyTableOfContents-module-scss-module__otSNYa__TriggerIcon\" style=\"width: 20px; height: 20px; display: flex;\"><svg fill=\"currentColor\" height=\"20\" viewBox=\"0 0 20 20\" width=\"20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M14.128 7.16482C14.3126 6.95983 14.6298 6.94336 14.835 7.12771C15.0402 7.31242 15.0567 7.62952 14.8721 7.83477L10.372 12.835L10.2939 12.9053C10.2093 12.9667 10.1063 13 9.99995 13C9.85833 12.9999 9.72264 12.9402 9.62788 12.835L5.12778 7.83477L5.0682 7.75273C4.95072 7.55225 4.98544 7.28926 5.16489 7.12771C5.34445 6.96617 5.60969 6.95939 5.79674 7.09744L5.87193 7.16482L9.99995 11.7519L14.128 7.16482Z\"></path></svg></div></button></h3></div></div></div><header class=\"ArticleHero-module-scss-module__VYxBBq__Header\"><div class=\"ArticleHero-module-scss-module__VYxBBq__Content\"><h1 class=\"ArticleHero-module-scss-module__VYxBBq__Title\">AI for Science expands to foundations and research institutions</h1></div><div class=\"ArticleHero-module-scss-module__VYxBBq__TableOfContentsContainer\">…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-28",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+    "read_time": 9,
+    "id": "5bcdc646a6322b91"
+  },
+  {
     "title": "以色列大选具体在选些什么",
     "summary": "以色列大选具体在选些什么",
     "full_content": "以色列大选具体在选些什么<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
@@ -382,6 +394,18 @@
     "url": "https://openai.com/index/the-future-of-the-firm",
     "read_time": 1,
     "id": "a0f1f341400c3ee4"
+  },
+  {
+    "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+    "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflow...",
+    "full_content": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-28",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+    "read_time": 1,
+    "id": "fbd38a03737261a6"
   },
   {
     "title": "OpenAI 称其模型证明了局部光滑化猜想，并推翻指数时间假设",
