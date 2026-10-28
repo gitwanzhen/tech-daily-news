@@ -12,6 +12,18 @@
     "id": "9e22205eaa34a4bc"
   },
   {
+    "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+    "summary": "Expanding our partnership with GSA to bring Claude to all levels of governmentPublishedOct 27, 2026CategoryPartnershipsW...",
+    "full_content": "<div class=\"\"><article class=\"ArticlePage-module-scss-module__EaEYjq__Article\"><header class=\"ArticleHero-module-scss-module__VYxBBq__Header\"><div class=\"ArticleHero-module-scss-module__VYxBBq__Content\"><h1 class=\"ArticleHero-module-scss-module__VYxBBq__Title\">Expanding our partnership with GSA to bring Claude to all levels of government</h1></div><div class=\"ArticleHero-module-scss-module__VYxBBq__Cover\"><div class=\"ArticleHero-module-scss-module__VYxBBq__CoverContainer\"><img alt=\"Expanding our partnership with GSA to bring Claude to all levels of government\" class=\"ArticleHero-module-scss-module__VYxBBq__CoverImage\" height=\"489.375\" src=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/4e3bfa972a8ec391977288fa36de3da1ecd78232-1920x1080.webp?fm=webp\" width=\"870\" /></div></div><div class=\"ArticleHero-module-scss-module__VYxBBq__MetalistContainer\"><ul class=\"ArticleHero-module-scss-module__VYxBBq__Metalist\"><li class=\"ArticleHero-module-scss-module__VYxBBq__Metadata\"><p class=\"text-caption-1\">Published</p><p class=\"text-caption-1\"><time datetime=\"2026-10-27\">Oct 27, 2026</time></p></li><li class=\"ArticleHero-module-scss-module__VYxBBq__Metadata\"><p class=\"text-caption-1\">Category</p><p class=\"text-caption-1\"><a class=\"TopicLink-module-scss-module__wN10Da__link\" href=\"https://www.anthropic.com/news/partnerships\">Partnerships</a></p></li></ul></div></header><div class=\"ArticlePage-module-scss-module__EaEYjq__ContentWrapper\"><div class=\"Body-module-scss-module__PA4F1q__body\"><p class=\"Body-module-scss-module__PA4F1q__reading-column post-text\">We are expanding our partnership with the General Services Administration (GSA) through a new agreement that gives government partners a 40% discount on Claude Enterprise, Claude for Government, and the Claude API. For the first t…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-27",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+    "read_time": 9,
+    "id": "c6996b4346a3f164"
+  },
+  {
     "title": "LOS TSW",
     "summary": "LOS TSW",
     "full_content": "LOS TSW<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221213/eaf2dd702d7cc14d8d9511190245d057/lrx9rnKo24.png\" />",
@@ -406,6 +418,18 @@
     "url": "https://openai.com/index/check-point-daybreak",
     "read_time": 1,
     "id": "150f1b29aeaf5e97"
+  },
+  {
+    "title": "Retell uses OpenAI models to help power 100M monthly calls",
+    "summary": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee...",
+    "full_content": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-27",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/retell-ai",
+    "read_time": 1,
+    "id": "8c368ae02674f286"
   },
   {
     "title": "mica-ppocr 1.2.4 发布：OCR 预处理内存砍半，检测提速 2.6 倍",
