@@ -372,6 +372,18 @@
     "id": "87c30b1210a8d91b"
   },
   {
+    "title": "The future of the firm",
+    "summary": "How AI might enter the org chart—beneath, beside, and between us.",
+    "full_content": "How AI might enter the org chart—beneath, beside, and between us.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-28",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/the-future-of-the-firm",
+    "read_time": 1,
+    "id": "a0f1f341400c3ee4"
+  },
+  {
     "title": "OpenAI 称其模型证明了局部光滑化猜想，并推翻指数时间假设",
     "summary": "OpenAI 昨天一口气放出三个领域的模型独立发现，数学、计算机科学、物理各一个，并且把证明材料公开、请学术界来验证。发布这篇的意义可能比结果本身更大——这是 OpenAI 首次系统性地把内部模型的前沿科研产出摆到台面上，邀请外部审查。 数...",
     "full_content": "OpenAI 昨天一口气放出三个领域的&quot;模型独立发现&quot;，数学、计算机科学、物理各一个，并且把证明材料公开、请学术界来验证。发布这篇的意义可能比结果本身更大——这是 OpenAI 首次系统性地把内部模型的前沿科研产出摆到台面上，邀请外部审查。 数学这项在调和分析：模型证明了所有维度的局部光滑化猜想（Local Smoothing C...",
@@ -934,5 +946,41 @@
     "url": "https://juejin.cn/post/7701535272555544616",
     "read_time": 1,
     "id": "7d79f1e775a5c417"
+  },
+  {
+    "title": "局部改善不等于整体进步：怎样判断 Agent 真的变好了？",
+    "summary": "图片压缩后更小了，金额却识别错了：用一个直观例子拆解局部修复、测量变化和用户任务改善，看看如何判断 Agent 是否真正变好。",
+    "full_content": "图片压缩后更小了，金额却识别错了：用一个直观例子拆解局部修复、测量变化和用户任务改善，看看如何判断 Agent 是否真正变好。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-28",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7701579900327690266",
+    "read_time": 1,
+    "id": "40ce375c921b7122"
+  },
+  {
+    "title": "网站正在对 AI Agent 集体关门：亚马逊封锁 Muse、银行拒绝登录，开发者怎么活下去",
+    "summary": "2026 年 10 月 17 日，The Verge 刊出一篇调查报道：OpenAI、Meta 和 Google 都在向用户承诺，AI Agent 可以替你订餐厅、清收件箱、买鞋，把网上的事全包了。可",
+    "full_content": "2026 年 10 月 17 日，The Verge 刊出一篇调查报道：OpenAI、Meta 和 Google 都在向用户承诺，AI Agent 可以替你订餐厅、清收件箱、买鞋，把网上的事全包了。可",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-28",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7701566014480121894",
+    "read_time": 1,
+    "id": "b2855b1e7b9e2ab3"
+  },
+  {
+    "title": "magpie：让薅到的 AI 羊毛物尽其用",
+    "summary": "手里有多个 AI 订阅和模型额度，怎么在编程时用起来？从接入供应商到配置路由组，再用意图规则把不同任务分给合适的模型。",
+    "full_content": "手里有多个 AI 订阅和模型额度，怎么在编程时用起来？从接入供应商到配置路由组，再用意图规则把不同任务分给合适的模型。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-28",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7701591870954094607",
+    "read_time": 1,
+    "id": "defe4eea738dc483"
   }
 ]
