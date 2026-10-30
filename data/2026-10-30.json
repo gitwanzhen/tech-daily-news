@@ -336,6 +336,30 @@
     "id": "aaf5e6791aaf44c5"
   },
   {
+    "title": "Making it easier for websites to express AI training preferences",
+    "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to part...",
+    "full_content": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-30",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+    "read_time": 1,
+    "id": "14b39e2399e0e210"
+  },
+  {
+    "title": "Community safety report and new protections for teens",
+    "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commit...",
+    "full_content": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-30",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+    "read_time": 1,
+    "id": "de97c2c5f0bfcb44"
+  },
+  {
     "title": "当不会编程的人也能写代码，程序员该怎么办？",
     "summary": "在一家公司做了七年前端开发，今天老板提醒我，现在很多公司都在裁员，程序员也必须学习 AI，否则迟早会被淘汰。想想真的有点讽刺。以前总觉得，读好书、学好技术、累积专业经验，就能有一技之长。如今，AI 不只会写代码，还让越来越多不会编程的人也能...",
     "full_content": "<p>在一家公司做了七年前端开发，今天老板提醒我，现在很多公司都在裁员，程序员也必须学习 AI，否则迟早会被淘汰。</p><p>想想真的有点讽刺。</p><p>以前总觉得，读好书、学好技术、累积专业经验，就能有一技之长。如今，AI 不只会写代码，还让越来越多不会编程的人也能进入这个行业，竞争越来越激烈。</p><p>反而是一些不需要高学历的工作，短期内可能更难被 AI 取代，未来甚至会越来越吃香？</p><p>也许时代真的变了。我们能做的，就是不断学习，适应这个变化越来越快的世界。</p>",
@@ -802,6 +826,42 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%91%A8%E5%85%AD%E7%A6%8F%E6%B6%89%E4%BA%8B%E9%97%A8%E5%BA%97%E7%BB%8F%E7%90%86%E5%B7%B2%E8%A2%AB%E5%88%91%E6%8B%98",
     "read_time": 1,
     "id": "958dba48f015bdfa"
+  },
+  {
+    "title": "给 AI 眼镜开发应用有多难？我从零做了一个陪练，还上架了",
+    "summary": "我用 Rokid AIUI 做了一个自我介绍陪练，叫“说清楚”。用户先说自己的经历，模型根据上下文追问；卡住时换成句式补全，时间紧时缩短练习，结束后再单独生成整轮总结和介绍成稿。 我想解决的是开口以后",
+    "full_content": "我用 Rokid AIUI 做了一个自我介绍陪练，叫“说清楚”。用户先说自己的经历，模型根据上下文追问；卡住时换成句式补全，时间紧时缩短练习，结束后再单独生成整轮总结和介绍成稿。 我想解决的是开口以后",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-30",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7702407629825916954",
+    "read_time": 1,
+    "id": "8d22a69d74f2da6a"
+  },
+  {
+    "title": "用 AI 写代码为什么拼到最后还是拼人：算力瓶颈与领域专家提示词的本质差异",
+    "summary": "用AI写代码，拼到最后还是拼人。算力永远追不上需求，真正卡你的不是模型强弱，而是你懂不懂。不懂技术硬写，遇到bug连从哪修都不知道；领域专家能一眼看穿问题，靠专业提示词把经验注入AI。能跑不等于懂。",
+    "full_content": "用AI写代码，拼到最后还是拼人。算力永远追不上需求，真正卡你的不是模型强弱，而是你懂不懂。不懂技术硬写，遇到bug连从哪修都不知道；领域专家能一眼看穿问题，靠专业提示词把经验注入AI。能跑不等于懂。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-30",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7702407629825900570",
+    "read_time": 1,
+    "id": "c4ba9c0218bf1760"
+  },
+  {
+    "title": "EMBRACE 攻击打穿五个 AI 编程工具的浏览器：本地开发机成了最大攻击面",
+    "summary": "一个被访问的网页，能让你的 AI 编辑器在开发机上执行命令；一个本地 HTML 文件，能读走你的 SSH 私钥。这两件事在 10 月 29 日之前，同时成立在五个主流桌面 AI 助手身上。 一份报告点",
+    "full_content": "一个被访问的网页，能让你的 AI 编辑器在开发机上执行命令；一个本地 HTML 文件，能读走你的 SSH 私钥。这两件事在 10 月 29 日之前，同时成立在五个主流桌面 AI 助手身上。 一份报告点",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-30",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7702407629825654810",
+    "read_time": 1,
+    "id": "497521d1d809ea88"
   },
   {
     "title": "笑傲江湖2：东方不败",
