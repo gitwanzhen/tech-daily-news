@@ -922,5 +922,29 @@
     "url": "https://juejin.cn/post/7702592913590583315",
     "read_time": 1,
     "id": "398af71cb3356a62"
+  },
+  {
+    "title": "Agent 架构怎么选：从单 Agent 到多 Agent 编排的选型决策指南",
+    "summary": "95%先别上多Agent：Anthropic建议workflow优先。附单Agent 3条判据、多Agent仅2种值、可跑选型Python函数与对照表，用2~10倍token看清该不该上。",
+    "full_content": "95%先别上多Agent：Anthropic建议workflow优先。附单Agent 3条判据、多Agent仅2种值、可跑选型Python函数与对照表，用2~10倍token看清该不该上。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-31",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7702483654677364774",
+    "read_time": 1,
+    "id": "a0811046959e352c"
+  },
+  {
+    "title": "小春学习日刊 2026年第9期：2026.10.31",
+    "summary": "本期AI要闻：Anthropic推出个人智能体Claude Duet并交表IPO；谷歌发布Genie 4与Gemini 4；OpenAI、Anthropic论文证明ETH错误；智元连发具身智能全栈技术",
+    "full_content": "本期AI要闻：Anthropic推出个人智能体Claude Duet并交表IPO；谷歌发布Genie 4与Gemini 4；OpenAI、Anthropic论文证明ETH错误；智元连发具身智能全栈技术",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-31",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7702438435248619556",
+    "read_time": 1,
+    "id": "37ea57fe79fdea00"
   }
 ]
