@@ -228,6 +228,18 @@
     "id": "b9febe6c65ab0c74"
   },
   {
+    "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+    "summary": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
+    "full_content": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-04",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/devrev-enterprise-self-service",
+    "read_time": 1,
+    "id": "47bc864ef0d25079"
+  },
+  {
     "title": "仓颉语言原生 Coding Agent：cjh，一个文件就是整个开发团队",
     "summary": "项目地址 GitHub: https://github.com/yangyongzhen/cjh 它是什么 cjh 是一个用华为仓颉语言从零实现的交互式编码代理（coding agent harness）。在终端里用自然语言描述任务，Age...",
     "full_content": "项目地址 GitHub: https://github.com/yangyongzhen/cjh 它是什么 cjh 是一个用华为仓颉语言从零实现的交互式编码代理（coding agent harness）。在终端里用自然语言描述任务，Agent 自主规划、调用工具、观察结果、迭代直到完成——全程 TUI 实时呈现，也可以通过 Web 远程驱动。 但它不是又一个&quot;LLM 套壳&quot;。cjh 从立项...",
