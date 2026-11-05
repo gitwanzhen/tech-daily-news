@@ -396,6 +396,18 @@
     "id": "e1307179e49cf8be"
   },
   {
+    "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+    "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trai...",
+    "full_content": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-05",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/introducing-gpt-6-cyber",
+    "read_time": 1,
+    "id": "8a77616c0c9245f0"
+  },
+  {
     "title": "🔥🔥开源接口平台 v6.5.0 发布，升级 JDK 25",
     "summary": "ApiGo 是一款在线接口开发和管理平台，多数据库插件化数据源框架、SQL2API 。支持 WorkBuddy、千问办公、Trea Work、豆包等 AI 办公平台 MCP 接入。支持接入（mysql、oracle、达梦、TiDB、Dolp...",
     "full_content": "ApiGo 是一款在线接口开发和管理平台，多数据库插件化数据源框架、SQL2API 。支持 WorkBuddy、千问办公、Trea Work、豆包等 AI 办公平台 MCP 接入。支持接入（mysql、oracle、达梦、TiDB、DolphinDB、Hive、DuckDB ）等 SQL 或 NoSQL 数据源，在线可视化编写 SQL 快速发布接口，支持接口上下线、接口管理、接口限流、权限...",
