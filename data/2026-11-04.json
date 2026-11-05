@@ -240,6 +240,30 @@
     "id": "47bc864ef0d25079"
   },
   {
+    "title": "A thousand fewer paths to root",
+    "summary": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vuln...",
+    "full_content": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-04",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+    "read_time": 1,
+    "id": "30ad2e480e6f94c3"
+  },
+  {
+    "title": "Introducing Images 2.6",
+    "summary": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Code...",
+    "full_content": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-04",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/introducing-images-2-6",
+    "read_time": 1,
+    "id": "7a4bae13d7faff0a"
+  },
+  {
     "title": "仓颉语言原生 Coding Agent：cjh，一个文件就是整个开发团队",
     "summary": "项目地址 GitHub: https://github.com/yangyongzhen/cjh 它是什么 cjh 是一个用华为仓颉语言从零实现的交互式编码代理（coding agent harness）。在终端里用自然语言描述任务，Age...",
     "full_content": "项目地址 GitHub: https://github.com/yangyongzhen/cjh 它是什么 cjh 是一个用华为仓颉语言从零实现的交互式编码代理（coding agent harness）。在终端里用自然语言描述任务，Agent 自主规划、调用工具、观察结果、迭代直到完成——全程 TUI 实时呈现，也可以通过 Web 远程驱动。 但它不是又一个&quot;LLM 套壳&quot;。cjh 从立项...",
