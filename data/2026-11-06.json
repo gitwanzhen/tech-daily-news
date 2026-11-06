@@ -372,6 +372,30 @@
     "id": "a001352201c836cb"
   },
   {
+    "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+    "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen d...",
+    "full_content": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-06",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/partnering-with-hacktron",
+    "read_time": 1,
+    "id": "4650983e6e647dcd"
+  },
+  {
+    "title": "Measuring how AI agents handle everyday wet-lab science",
+    "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and ...",
+    "full_content": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-06",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+    "read_time": 1,
+    "id": "d1cb052980785bb6"
+  },
+  {
     "title": "当 Coding Agent 走进研发团队：腾讯开源了云端自进化研发平台 LoopForge",
     "summary": "单机 Coding Agent 已经能飞快写出代码，但一旦走进真实研发团队，合盖断流、多人上下文割裂、自由 Vibe Coding 质量失控、日常盯单耗时以及同类问题反复踩坑，很快就会把团队卡在“单兵提效、全局内耗”的瓶颈里。为此，腾讯轻量...",
     "full_content": "单机 Coding Agent 已经能飞快写出代码，但一旦走进真实研发团队，合盖断流、多人上下文割裂、自由 Vibe Coding 质量失控、日常盯单耗时以及同类问题反复踩坑，很快就会把团队卡在“单兵提效、全局内耗”的瓶颈里。为此，腾讯轻量云团队打造并开源了云端自进化 AI 研发平台 LoopForge——集 7×24 小时云端工作区、多角色...",
