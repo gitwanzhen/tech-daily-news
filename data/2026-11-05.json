@@ -408,6 +408,30 @@
     "id": "8a77616c0c9245f0"
   },
   {
+    "title": "Merge builds product and business tools with OpenAI technology",
+    "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan e...",
+    "full_content": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-05",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/merge-builds-with-openai",
+    "read_time": 1,
+    "id": "47af8b9f451ce4d4"
+  },
+  {
+    "title": "Flipsnack grows product signups with conversion optimization",
+    "summary": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering t...",
+    "full_content": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-05",
+    "source": "OpenAI",
+    "url": "https://openai.com/ads/customers/flipsnack",
+    "read_time": 1,
+    "id": "50fc98dbfbcfad79"
+  },
+  {
     "title": "🔥🔥开源接口平台 v6.5.0 发布，升级 JDK 25",
     "summary": "ApiGo 是一款在线接口开发和管理平台，多数据库插件化数据源框架、SQL2API 。支持 WorkBuddy、千问办公、Trea Work、豆包等 AI 办公平台 MCP 接入。支持接入（mysql、oracle、达梦、TiDB、Dolp...",
     "full_content": "ApiGo 是一款在线接口开发和管理平台，多数据库插件化数据源框架、SQL2API 。支持 WorkBuddy、千问办公、Trea Work、豆包等 AI 办公平台 MCP 接入。支持接入（mysql、oracle、达梦、TiDB、DolphinDB、Hive、DuckDB ）等 SQL 或 NoSQL 数据源，在线可视化编写 SQL 快速发布接口，支持接口上下线、接口管理、接口限流、权限...",
