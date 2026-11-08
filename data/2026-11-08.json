@@ -670,5 +670,29 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E5%A4%9A%E5%9C%B0%E8%BF%BD%E7%BC%B4%E7%A4%BE%E4%BF%9D%E5%92%8C%E5%85%AC%E7%A7%AF%E9%87%91%E4%B8%8D%E8%AE%BE%E6%97%B6%E6%95%88%E9%99%90%E5%88%B6",
     "read_time": 1,
     "id": "42a8f14112b77890"
+  },
+  {
+    "title": "XXL-AI v1.5.0 发布｜AI应用开发平台",
+    "summary": "XXL-AI 是一个「**云本结合**」的 AI Agent 开发平台，提供两种同源同品牌、能力互补的交付形态，可按团队规模与使用场景独立选用，也可组合使用。",
+    "full_content": "XXL-AI 是一个「**云本结合**」的 AI Agent 开发平台，提供两种同源同品牌、能力互补的交付形态，可按团队规模与使用场景独立选用，也可组合使用。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-08",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7705621037060423695",
+    "read_time": 1,
+    "id": "0aee5c123f23e49a"
+  },
+  {
+    "title": "DeepSeek-V4.1-Flash-1017 官方许愿案例太吸睛，我也复刻了一个",
+    "summary": "DeepSeek-V4.1-Flash-1017 实测：跑分大涨之外，更值得关注的是性能–费用的帕累托改进。两次许愿复刻赛车游戏，看许愿式编程是否真的到来。",
+    "full_content": "DeepSeek-V4.1-Flash-1017 实测：跑分大涨之外，更值得关注的是性能–费用的帕累托改进。两次许愿复刻赛车游戏，看许愿式编程是否真的到来。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-08",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7705412224672366627",
+    "read_time": 1,
+    "id": "16fc19611b2b8162"
   }
 ]
