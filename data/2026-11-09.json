@@ -1,5 +1,17 @@
 [
   {
+    "title": "Introducing Claude Fable 5.2 and Claude Mythos 5.2",
+    "summary": "IntroductionPerformance and efficiencyCodingCybersecurityScience and engineeringSafety and alignmentData privacyAvailabi...",
+    "full_content": "<span hidden=\"\"></span><div class=\"lWsDcW_page theme-ivory\"><nav class=\"_4mQ7ya_side-toc\"><ol class=\"_4mQ7ya_list\"><li><a class=\"_4mQ7ya_link _4mQ7ya_is-active\" draggable=\"false\" href=\"https://www.anthropic.com/claude-fable-and-mythos-5-2#introduction\"><span class=\"_4mQ7ya_pill\">Introduction</span></a></li><li><a class=\"_4mQ7ya_link\" draggable=\"false\" href=\"https://www.anthropic.com/claude-fable-and-mythos-5-2#evaluations\"><span class=\"_4mQ7ya_pill\">Performance and efficiency</span></a></li><li><a class=\"_4mQ7ya_link\" draggable=\"false\" href=\"https://www.anthropic.com/claude-fable-and-mythos-5-2#coding\"><span class=\"_4mQ7ya_pill\">Coding</span></a></li><li><a class=\"_4mQ7ya_link\" draggable=\"false\" href=\"https://www.anthropic.com/claude-fable-and-mythos-5-2#cybersecurity\"><span class=\"_4mQ7ya_pill\">Cybersecurity</span></a></li><li><a class=\"_4mQ7ya_link\" draggable=\"false\" href=\"https://www.anthropic.com/claude-fable-and-mythos-5-2#science-and-engineering\"><span class=\"_4mQ7ya_pill\">Science and engineering</span></a></li><li><a class=\"_4mQ7ya_link\" draggable=\"false\" href=\"https://www.anthropic.com/claude-fable-and-mythos-5-2#safety-and-alignment\"><span class=\"_4mQ7ya_pill\">Safety and alignment</span></a></li><li><a class=\"_4mQ7ya_link\" draggable=\"false\" href=\"https://www.anthropic.com/claude-fable-and-mythos-5-2#data-privacy\"><span class=\"_4mQ7ya_pill\">Data privacy</span></a></li><li><a class=\"_4mQ7ya_link\" draggable=\"false\" href=\"https://www.anthropic.com/claude-fable-and-mythos-5-2#availability\"><span class=\"_4mQ7ya_pill\">Availability</span></a></li></ol></nav><section class=\"CRRtZG_willy-hero lWsDcW_hero\"><div class=\"stage\"><p class=\"eyebrow\"><time datetime=\"2026-11-09\">November 9, 2026</time></p><h1 class=\"name\" id=\"launch-hero-title\"><span class=\"line\">…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-09",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+    "read_time": 9,
+    "id": "456a529aa2a3e101"
+  },
+  {
     "title": "4家内存供应商利润创新高",
     "summary": "4家内存供应商利润创新高",
     "full_content": "4家内存供应商利润创新高<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png\" />",
@@ -300,6 +312,18 @@
     "id": "3ea18970cc016a4a"
   },
   {
+    "title": "Kuken Industries searches 70 years of drawings in minutes",
+    "summary": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a ...",
+    "full_content": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-09",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/kuken",
+    "read_time": 1,
+    "id": "80bc4c6a8b59176a"
+  },
+  {
     "title": "Vue 可视化 AI 表单设计器 FcDesigner v3.6 版本发布，支持导出 SQL 功能!",
     "summary": "FcDesigner 是基于 Vue 的低代码可视化 AI 表单设计器。用自然语言描述业务即可生成表单结构，也可以拖拽组件并导出 JSON，再由渲染器还原成可交互表单，适合政务、OA、ERP、电商和流程审批。 源码地址: Github | ...",
     "full_content": "FcDesigner 是基于 Vue 的低代码可视化 AI 表单设计器。用自然语言描述业务即可生成表单结构，也可以拖拽组件并导出 JSON，再由渲染器还原成可交互表单，适合政务、OA、ERP、电商和流程审批。 源码地址: Github | Gitee | 文档 | 在线演示 核心功能 内置表单多语言体系，轻松打破语言隔阂。 提供 30+ 常用组件，涵盖表单...",
@@ -322,6 +346,42 @@
     "url": "https://www.oschina.net/news/503478",
     "read_time": 1,
     "id": "886ddc33374506ff"
+  },
+  {
+    "title": "🔥🔥ApiGo 5.5 发布，新增数据行列级权限",
+    "summary": "ApiGo 是面向企业的 AI Agent 受控数据服务网关与 API 与 MCP 构建平台，通过WorkBuddy、千问办公等 AI 智能体，一句话即可完成受控的 API 与 MCP 的创建发布，帮助企业把 ERP、CRM、SRM 等存量...",
+    "full_content": "ApiGo 是面向企业的 AI Agent 受控数据服务网关与 API 与 MCP 构建平台，通过WorkBuddy、千问办公等 AI 智能体，一句话即可完成受控的 API 与 MCP 的创建发布，帮助企业把 ERP、CRM、SRM 等存量业务系统数据封装成标准化 REST API 与 MCP 工具，让 AI 智能体在策略管控下访问企业业务数据。 5.5 更新内容 1、新增接口发布...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-09",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/503488",
+    "read_time": 1,
+    "id": "9f0150aaadc9a447"
+  },
+  {
+    "title": "千星达成！开源终端 uniTerm v1.12 发布：Docker 多租户部署、本地服务、终端录制与批量执行齐上线",
+    "summary": "uniTerm 是一款轻量级一站式开源终端软件。整合终端、文件传输、远程桌面、数据库客户端、容器等 5 大类协议于一身，覆盖 32 种协议，安装包不到 20 MB；内置可自主执行的 AI Agent，能规划并执行多轮 Shell 命令。 v...",
+    "full_content": "uniTerm 是一款轻量级一站式开源终端软件。整合终端、文件传输、远程桌面、数据库客户端、容器等 5 大类协议于一身，覆盖 32 种协议，安装包不到 20 MB；内置可自主执行的 AI Agent，能规划并执行多轮 Shell 命令。 v1.12 最重要的几项更新：Docker Web 多租户部署——uniTerm 可作为浏览器访问的服务部署，每位用户拥有...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-09",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/503487",
+    "read_time": 1,
+    "id": "b35f01524de4a899"
+  },
+  {
+    "title": "🔥 优化及缺陷修复：开源 AI 无代码平台 NocoBase",
+    "summary": "汇总一周产品更新日志，最新发布可前往我们的博客查看。 NocoBase 目前更新包括三个分支： main、next 和 develop。** main： 截至目前最稳定的版本，推荐安装此版本。 next： 包含即将发布的新功能，经过初步测试...",
+    "full_content": "汇总一周产品更新日志，最新发布可前往我们的博客查看。 NocoBase 目前更新包括三个分支： main、next 和 develop。** main： 截至目前最稳定的版本，推荐安装此版本。 next： 包含即将发布的新功能，经过初步测试的版本，可能存在部分已知或未知问题。主要面向测试用户，用于收集反馈和进一步优化功能。适合愿意提前体验...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-09",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/503485",
+    "read_time": 1,
+    "id": "4d6de657428e0599"
   },
   {
     "title": "高原上习近平让出自己的氧气袋",
