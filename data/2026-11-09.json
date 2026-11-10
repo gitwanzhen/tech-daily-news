@@ -324,6 +324,30 @@
     "id": "80bc4c6a8b59176a"
   },
   {
+    "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+    "summary": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when...",
+    "full_content": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-09",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/control-room",
+    "read_time": 1,
+    "id": "179dae4d6c560260"
+  },
+  {
+    "title": "CodeRabbit scales agentic software development and ships 20x more",
+    "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the sa...",
+    "full_content": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-09",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/coderabbit-codex-daybreak",
+    "read_time": 1,
+    "id": "ebd6c1fb221ab407"
+  },
+  {
     "title": "Vue 可视化 AI 表单设计器 FcDesigner v3.6 版本发布，支持导出 SQL 功能!",
     "summary": "FcDesigner 是基于 Vue 的低代码可视化 AI 表单设计器。用自然语言描述业务即可生成表单结构，也可以拖拽组件并导出 JSON，再由渲染器还原成可交互表单，适合政务、OA、ERP、电商和流程审批。 源码地址: Github | ...",
     "full_content": "FcDesigner 是基于 Vue 的低代码可视化 AI 表单设计器。用自然语言描述业务即可生成表单结构，也可以拖拽组件并导出 JSON，再由渲染器还原成可交互表单，适合政务、OA、ERP、电商和流程审批。 源码地址: Github | Gitee | 文档 | 在线演示 核心功能 内置表单多语言体系，轻松打破语言隔阂。 提供 30+ 常用组件，涵盖表单...",
