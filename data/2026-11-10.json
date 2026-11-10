@@ -1,5 +1,17 @@
 [
   {
+    "title": "Anthropic launches roadshow for proposed initial public offering",
+    "summary": "Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A common stock.The prop...",
+    "full_content": "<div class=\"\"><article class=\"EaEYjq_Article\"><div class=\"EaEYjq_ContentWrapper\"><div class=\"PA4F1q_body\"><p class=\"PA4F1q_reading-column post-text\">Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A common stock.</p><p class=\"PA4F1q_reading-column post-text\">The proposed offering consists of 825,000,000 shares of Class A common stock. Of these, 801,351,354 shares are being offered by Anthropic and 23,648,646 shares are being offered by certain existing stockholders. Anthropic will not receive any proceeds from the sale of shares by the selling stockholders. Anthropic also expects to grant the underwriters a 30-day option to purchase up to an additional 123,750,000 shares of its Class A common stock.</p><p class=\"PA4F1q_reading-column post-text\">The initial public offering price is expected to be between $70.00 and $78.00 per share. Anthropic has applied to list its Class A common stock on the Nasdaq Global Select Market under the symbol “ANT.”</p><p class=\"PA4F1q_reading-column post-text\"><em>The proposed offering will be made only by means of a prospectus. Copies of the preliminary prospectus may be obtained from: Goldman Sachs &amp; Co. LLC, Attention: Prospectus Department, 200 West Street, New York, NY 10282, by telephone at (866) 471-2526, or by email at prospectus-ny@ny.email.gs.com; or Morgan Stanley &amp; Co. LLC, Attention: Prospectus Department, 180 Varick Street, 2nd Floor, New York, NY 10014.</em></p><p class=\"PA4F1q_reading-column post-text\"><em>A registration statement relating to these securities has been filed with the U.S. Securities and Exchange Commission but has not yet become effective. These securities may not be sold, nor may offers to buy be accepted, prior to the time the registration statement be…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-10",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/roadshow-launch",
+    "read_time": 9,
+    "id": "2b4d7d1089cab0b2"
+  },
+  {
     "title": "细节复盘BLG被抢龙真相",
     "summary": "细节复盘BLG被抢龙真相",
     "full_content": "细节复盘BLG被抢龙真相<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221213/eaf2dd702d7cc14d8d9511190245d057/lrx9rnKo24.png\" />",
@@ -382,6 +394,30 @@
     "url": "https://openai.com/index/closing-ai-guidance-gap-education",
     "read_time": 1,
     "id": "7f83c7f8edcabf8d"
+  },
+  {
+    "title": "Helping caregivers use AI in everyday life",
+    "summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practi...",
+    "full_content": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-10",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+    "read_time": 1,
+    "id": "c0bcf16e8fea16d8"
+  },
+  {
+    "title": "Work at the Frontier: AI’s effect on freelance work",
+    "summary": "New research from OpenAI and Upwork finds shifting demand for freelance work, new skill combinations, and larger budgets...",
+    "full_content": "New research from OpenAI and Upwork finds shifting demand for freelance work, new skill combinations, and larger budgets and more hours for AI-related projects.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-10",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/ai-effect-on-freelance-work",
+    "read_time": 1,
+    "id": "db3d3bbb0683ec4c"
   },
   {
     "title": "10x 工程师变成 100x 了，普通工程师还是那么普通",
