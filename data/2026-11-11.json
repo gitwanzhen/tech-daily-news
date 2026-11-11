@@ -360,6 +360,18 @@
     "id": "55a31f6446277ce4"
   },
   {
+    "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+    "summary": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI ...",
+    "full_content": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-11",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/jiostar-vijay-seshadri",
+    "read_time": 1,
+    "id": "cc75dd113e1a0abb"
+  },
+  {
     "title": "OwnCoder 0.2.0 发布，面向开发者的桌面端 AI 编程工具",
     "summary": "修复了一些bug，优化了效果。 有时候我们总想多做点什么，告诉LLM要怎么做，最后发现，什么都不说，让LLM自行判断才是最好的。说的越多，越容易带偏。 佛家说，放下自己的执着。 道家讲无为，或许对LLM会很适用。无为，就是让LLM自己判断，...",
     "full_content": "修复了一些bug，优化了效果。 有时候我们总想多做点什么，告诉LLM要怎么做，最后发现，什么都不说，让LLM自行判断才是最好的。说的越多，越容易带偏。 佛家说，放下自己的执着。 道家讲无为，或许对LLM会很适用。无为，就是让LLM自己判断，不做过多的干涉和引导。 软件简介 OwnCode 是一款面向开发者的桌面端 AI 编程工具...",
@@ -790,5 +802,17 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3DPEL",
     "read_time": 1,
     "id": "9fba3091734974c7"
+  },
+  {
+    "title": "从命令到工作流：juejin-cli 如何让写作自动化更可靠",
+    "summary": "本文从 juejin-cli 的真实实现出发，讨论命令行工具如何连接本地 Markdown、平台接口与 AI Agent，并解释命令发现、写入回执、失败恢复和批量预检背后的工程取舍。",
+    "full_content": "本文从 juejin-cli 的真实实现出发，讨论命令行工具如何连接本地 Markdown、平台接口与 AI Agent，并解释命令发现、写入回执、失败恢复和批量预检背后的工程取舍。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-11",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7706807603482361907",
+    "read_time": 1,
+    "id": "b1ceabbad1356d99"
   }
 ]
