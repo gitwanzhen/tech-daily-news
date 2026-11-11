@@ -348,6 +348,18 @@
     "id": "b599fb57f583ade8"
   },
   {
+    "title": "Voxtral 3",
+    "summary": "Speech transcription and voice generation have come a long way, but building end-to-end voice agents that can listen, re...",
+    "full_content": "<div class=\"relative lg:px-6 mx-auto w-full max-w-322 lg:flex lg:gap-10\"><div class=\"flex flex-col gap-4 lg:gap-10 w-full min-w-0 px-4 py-4 lg:px-0 lg:py-10 pt-6\"><section class=\"relative w-full\"><p class=\"text-body-large text-text-primary mb-10\">Speech transcription and voice generation have come a long way, but building end-to-end voice agents that can listen, reason, interact, and handle complex workflows remains difficult.&nbsp;</p><p class=\"text-body-large text-text-primary mb-10\">A reliable voice agent needs to do four things very well (and simultaneously):&nbsp;</p><ol class=\"mb-10 pl-5 flex flex-col gap-2 list-decimal\"><li><p class=\"text-body-large text-current\"><strong>Listen accurately </strong>across languages, accents, speakers, and interruptions,</p></li><li><p class=\"text-body-large text-current\"><strong>Reason</strong> <strong>deeply </strong>about what users mean in specific contexts,</p></li><li><p class=\"text-body-large text-current\"><strong>Speak naturally </strong>with emotion and expression, and&nbsp;</p></li><li><p class=\"text-body-large text-current\"><strong>Take action </strong>over multiple steps through connected systems.&nbsp;</p></li></ol><p class=\"text-body-large text-text-primary mb-10\">Getting all four to work together reliably in real time remains a challenge.&nbsp;</p><p class=\"text-body-large text-text-primary mb-10\">To address this, we introduce Voxtral 3: a new family of state-of-the-art <a class=\"underline font-semibold\" href=\"https://docs.mistral.ai/studio/audio/speech-to-text/overview\" rel=\"noopener noreferrer\" target=\"_blank\"><u>speech-to-text</u></a> and <a class=\"underline font-semibold\" href=\"https://docs.mistral.ai/studio/audio/text-to-speech/overview\" rel=\"noopener noreferrer\" target=\"_blank\"><u>text-to-speech</u></a> models,…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-20",
+    "source": "Mistral AI",
+    "url": "https://mistral.ai/news/voxtral-3/",
+    "read_time": 9,
+    "id": "90e3b37a09eaeb60"
+  },
+  {
     "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
     "summary": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free ...",
     "full_content": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow.",

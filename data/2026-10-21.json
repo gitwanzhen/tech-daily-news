@@ -360,6 +360,18 @@
     "id": "912c2a4114a56895"
   },
   {
+    "title": "Mistral Advances AI for Engineering with NVIDIA",
+    "summary": "Mistral is collaborating with NVIDIA to develop a new generation of AI-native engineering workflows powered by NVIDIA ac...",
+    "full_content": "<div class=\"relative lg:px-6 mx-auto max-w-232 w-full\"><div class=\"flex flex-col gap-4 lg:gap-10 w-full min-w-0 px-4 py-4 lg:px-0 lg:py-10\"><section class=\"relative w-full\"><figure class=\"mb-10\"><img alt=\"\" src=\"https://mistral.ai/_astro/Linkedin-Partnership-nvidia_1tHcoA.webp?dpl=6af32e4b87c17b82b4c2e356\" /></figure><p class=\"text-body-large text-text-primary mb-10\">Mistral is collaborating with NVIDIA to develop a new generation of AI-native engineering workflows powered by NVIDIA accelerated computing. Combining <a class=\"underline font-semibold\" href=\"https://mistral.ai/news/mistral-large-4/\"><u>Mistral Large 4</u></a>, with Mistral’s data generation, and physics modeling pipelines, accelerated by <a class=\"underline font-semibold\" href=\"https://www.nvidia.com/en-us/technologies/cuda-x/\"><u>NVIDIA CUDA-X</u></a> libraries and <a class=\"underline font-semibold\" href=\"https://developer.nvidia.com/warp-python\"><u>NVIDIA Warp</u></a>, the initiative aims to accelerate engineering simulation and enable closed-loop workflows that connect simulation, AI model development and engineering design. Mistral and NVIDIA will also work together to integrate Mistral's models with <a class=\"underline font-semibold\" href=\"https://www.nvidia.com/en-us/omniverse/\"><u>NVIDIA Omniverse</u></a> libraries for GPU-accelerated 3D scene generation and SimReady asset creation.&nbsp;</p><p class=\"text-body-large text-text-primary mb-10\">A central focus of the collaboration is the development of public benchmarks and open datasets for evaluating physics models. These benchmarks will give researchers, developers and industrial teams a shared foundation to compare model accuracy and performance and build and validate automated CAD-to-simulation workflows.</p>…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-21",
+    "source": "Mistral AI",
+    "url": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+    "read_time": 9,
+    "id": "9bde5caa0375c81d"
+  },
+  {
     "title": "OpenAI models are coming to Google Cloud",
     "summary": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Goo...",
     "full_content": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",

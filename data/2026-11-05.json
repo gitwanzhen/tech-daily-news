@@ -384,6 +384,18 @@
     "id": "80cf3a756821719f"
   },
   {
+    "title": "Le Chonk brings the brains. Studio puts it to work.",
+    "summary": "Mistral Large 4 (Le Chonk) pushes the frontier of what enterprises can build with open models. It does great for coding,...",
+    "full_content": "<div class=\"relative lg:px-6 mx-auto max-w-232 w-full\"><div class=\"flex flex-col gap-4 lg:gap-10 w-full min-w-0 px-4 py-4 lg:px-0 lg:py-10\"><section class=\"relative w-full\"><p class=\"text-body-large text-text-primary mb-10\">Mistral Large 4 (Le Chonk) pushes the frontier of what enterprises can build with open models. It does great for <a class=\"underline font-semibold\" href=\"https://mistral.ai/news/mistral-large-4-oss/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>coding</u></a>, delivers advanced <a class=\"underline font-semibold\" href=\"https://mistral.ai/news/mistral-large-4-oss/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>defensive cybersecurity capabilities</u></a>, and brings powerful reasoning to <a class=\"underline font-semibold\" href=\"https://artificialanalysis.ai/articles/mistral-large-4-france-ai\" rel=\"noopener noreferrer\" target=\"_blank\"><u>complex documents</u></a> and <a class=\"underline font-semibold\" href=\"https://mistral.ai/news/mistral-large-4-oss/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>business tasks</u></a>.</p><p class=\"text-body-large text-text-primary mb-10\">Mistral Studio is our enterprise AI platform for putting that intelligence to work in your business. It lets your teams activate models quickly through agents, workflows and apps connected to your enterprise data and systems. Deploy them wherever you choose: in the cloud, in your own VPC, on-premises or across a combination of environments. And retain full control and understanding of the intelligence you create, from how your systems work to the knowledge they build.</p><p class=\"text-body-large text-text-primary mb-10\">Today, we’re expanding Studio with managed agents and apps, alongside new capabilities for workflows, enterprise context, agent observability and evaluations.</p>…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-05",
+    "source": "Mistral AI",
+    "url": "https://mistral.ai/news/build-with-studio/",
+    "read_time": 9,
+    "id": "95ed6192fa24990c"
+  },
+  {
     "title": "Setting a new standard for responsible AI infrastructure",
     "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create ...",
     "full_content": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",

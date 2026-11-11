@@ -456,6 +456,18 @@
     "id": "e97ed6fa21cff7ce"
   },
   {
+    "title": "Introducing Timestral",
+    "summary": "Today, we’re releasing Timestral, our first family of time-series foundation models. Our largest model, at just 209M par...",
+    "full_content": "<div class=\"relative lg:px-6 mx-auto w-full max-w-322 lg:flex lg:gap-10\"><div class=\"flex flex-col gap-4 lg:gap-10 w-full min-w-0 px-4 py-4 lg:px-0 lg:py-10 pt-6\"><section class=\"relative w-full\"><p class=\"text-body-large text-text-primary mb-10\">Today, we’re releasing Timestral, our first family of time-series foundation models. Our largest model, at just 209M parameters, ranks first on all three of the field's main public benchmarks, GIFT-Eval, TIME, and fev-bench, outperforming the previous state of the art with only two-thirds of the model parameters.</p><p class=\"text-body-large text-text-primary mb-10\">Timestral delivers probabilistic, multivariate forecasts and supports past-only and known-future covariates. Our family of models sits on the Pareto front of forecasting accuracy versus model size, delivering leading performance at each size. Results have been submitted to the GIFT-Eval and TIME leaderboards.</p><h2 class=\"text-h3 font-mistral text-current mb-5 pb-5 border-b border-border-primary not-first:mt-16\">Time Series Foundation Models (TSFM)</h2><p class=\"text-body-large text-text-primary mb-10\">Time series is one of the most common data types in enterprise, from sensor telemetry to observability metrics. Forecasts built on it drive decisions in capacity planning, energy, supply chains, risk and maintenance.</p><p class=\"text-body-large text-text-primary mb-10\">Industrial plants forecast process sensors against the production schedule, catch equipment drift before it fails, and plan capacity and spare parts across thousands of assets. Finance teams forecast flows, volumes, and volatility to inform positions, hedging, and treasury across thousands of accounts.</p><p class=\"text-body-large text-text-primary mb-10\">Classical models such as ARIMA and linear regr…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-15",
+    "source": "Mistral AI",
+    "url": "https://mistral.ai/news/timestral/",
+    "read_time": 10,
+    "id": "6bdcc866d475b19a"
+  },
+  {
     "title": "Teaching students to think and learn through questions",
     "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support a...",
     "full_content": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.",

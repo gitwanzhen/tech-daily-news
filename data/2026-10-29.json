@@ -324,6 +324,18 @@
     "id": "232caba3592c3316"
   },
   {
+    "title": "Le Chonk: Built for Coders, Trusted by Defenders.",
+    "summary": "We release the weights of Le Chonk, advancing the frontier of open models in agentic coding and cybersecurity.Earlier th...",
+    "full_content": "<div class=\"relative lg:px-6 mx-auto w-full max-w-322 lg:flex lg:gap-10\"><div class=\"flex flex-col gap-4 lg:gap-10 w-full min-w-0 px-4 py-4 lg:px-0 lg:py-10 pt-6\"><section class=\"relative w-full\"><p class=\"text-body-large text-text-primary mb-10\"><strong>We release the weights of Le Chonk, advancing the frontier of open models in agentic coding and cybersecurity.</strong></p><p class=\"text-body-large text-text-primary mb-10\">Earlier this month, we released Mistral Large 4 (Le Chonk), our flagship 1-trillion-parameter, natively multimodal model, in public preview. The response to the preview has exceeded our expectations, and we're grateful to our developer community, early-access customers, and partners for their support, collaboration, and feedback.</p><figure class=\"mb-10\"><img alt=\"\" src=\"https://mistral.ai/_astro/partners-ml4-oss_17QG5o.webp?dpl=6af32e4b87c17b82b4c2e356\" /></figure><p class=\"text-body-large text-text-primary mb-10\">Since then, we've put that feedback to work while continuing to scale reinforcement learning, driving massive improvements in <strong><em>coding</em></strong> and defensive <strong><em>cybersecurity</em></strong>. Gains continue to accelerate, with no signs of saturation.</p><p class=\"text-body-large text-text-primary mb-10\"><strong>Today, we're releasing the weights of this improved Mistral Large 4.</strong> The new model also features substantial gains in reasoning efficiency that give developers greater performance while lowering inference costs.</p><p class=\"text-body-large text-text-primary mb-10\">Mistral Large 4 ranks as the <strong>best open-weight model for coding</strong> and among the world's most capable open models overall. Trained from scratch on European infrastructure with clear lineage from inception to release, it gives o…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-10-29",
+    "source": "Mistral AI",
+    "url": "https://mistral.ai/news/mistral-large-4-oss/",
+    "read_time": 9,
+    "id": "aa6b452fb675c833"
+  },
+  {
     "title": "How we detect frontier model misalignment",
     "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can i...",
     "full_content": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.",
