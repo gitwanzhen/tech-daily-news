@@ -276,6 +276,18 @@
     "id": "34c6d4acf53a55ca"
   },
   {
+    "title": "Gondola doubles revenue as its team builds more with Codex",
+    "summary": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simpl...",
+    "full_content": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-12",
+    "source": "OpenAI",
+    "url": "https://openai.com/business/customer-stories/gondola",
+    "read_time": 1,
+    "id": "0e0766ec9c770c31"
+  },
+  {
     "title": "全球化筑基，AI 赋能新体验，openKylin 3.0 SP1 正式发布",
     "summary": "OpenAtom openKylin（以下简称“openKylin”）社区今日正式发布 openKylin 3.0 SP1 版本。本次版本更新以国际化为底座，围绕国际化体验、AI 融合、硬件生态、系统质量四大方向完成全面升级：新增阿拉伯语、...",
     "full_content": "OpenAtom openKylin（以下简称“openKylin”）社区今日正式发布 openKylin 3.0 SP1 版本。本次版本更新以国际化为底座，围绕国际化体验、AI 融合、硬件生态、系统质量四大方向完成全面升级：新增阿拉伯语、朝鲜语、傣语等多语言支持；上线全新小K AI 浏览器扩展；持续丰富硬件生态，强化以飞腾 D3000M、进迭时空 V100 为...",
@@ -706,6 +718,42 @@
     "url": "https://juejin.cn/post/7707126730373562395",
     "read_time": 1,
     "id": "9da9c5349e89cb82"
+  },
+  {
+    "title": "【2】整体架构蓝图：六层依赖与技术选型",
+    "summary": "接上一篇，如何六层依赖图摊开整个系统：编排、存储与本地/云端 LLM 的选型取舍，外加一句「蓝图不是预言」。",
+    "full_content": "接上一篇，如何六层依赖图摊开整个系统：编排、存储与本地/云端 LLM 的选型取舍，外加一句「蓝图不是预言」。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-12",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7707184266060333090",
+    "read_time": 1,
+    "id": "60e1e95e29f61548"
+  },
+  {
+    "title": "Claude Code核心拆解：计划模式——怎么让模型\"先对齐再动手\"",
+    "summary": "Claude Code核心拆解：计划模式——怎么让模型\"先对齐再动手\" 从一个你天天会遇到的需求说起 假设你在 Claude Code 里说了一句： 模型收到这句话，干了几件事：它先扫了一遍项目结构（",
+    "full_content": "Claude Code核心拆解：计划模式——怎么让模型\"先对齐再动手\" 从一个你天天会遇到的需求说起 假设你在 Claude Code 里说了一句： 模型收到这句话，干了几件事：它先扫了一遍项目结构（",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-12",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7707163856813096970",
+    "read_time": 1,
+    "id": "c53ec5b2d7f4713c"
+  },
+  {
+    "title": "密码骰子：结合AIUI在眼镜上生成一串16位密码",
+    "summary": "一、做什么 当用户面临临时注册个账号、填个表单，需要一串随机密码，但手上不方便掏手机或掏手机还需找到对应工具才能生成，又或是连6位数验证码都记不住的小伙伴，这时候我的智能体的用处就派上用场啦。密码骰子",
+    "full_content": "一、做什么 当用户面临临时注册个账号、填个表单，需要一串随机密码，但手上不方便掏手机或掏手机还需找到对应工具才能生成，又或是连6位数验证码都记不住的小伙伴，这时候我的智能体的用处就派上用场啦。密码骰子",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-12",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7707127617359921206",
+    "read_time": 1,
+    "id": "90cc09699deec0d0"
   },
   {
     "title": "无可替代的你",
