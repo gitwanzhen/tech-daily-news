@@ -814,5 +814,17 @@
     "url": "https://juejin.cn/post/7706807603482361907",
     "read_time": 1,
     "id": "b1ceabbad1356d99"
+  },
+  {
+    "title": "我给 Agent 测试注入了 72 种谎话，它抓住了 44 种",
+    "summary": "我给 Agent 测试注入了 72 种谎话，它抓住了 44 种 先讲一个真实的假通过 想象你的 Agent 负责在咖啡店系统里下单。它调用接口，返回 applied，页面上出了取餐号 101。你的测试",
+    "full_content": "我给 Agent 测试注入了 72 种谎话，它抓住了 44 种 先讲一个真实的假通过 想象你的 Agent 负责在咖啡店系统里下单。它调用接口，返回 applied，页面上出了取餐号 101。你的测试",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-11",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7706760145859477540",
+    "read_time": 1,
+    "id": "86886757544987ee"
   }
 ]
