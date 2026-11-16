@@ -264,6 +264,78 @@
     "id": "e1f75517207ad798"
   },
   {
+    "title": "Science at the Frontier: How scientists use ChatGPT",
+    "summary": "Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, ...",
+    "full_content": "Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-16",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/science-at-the-frontier",
+    "read_time": 1,
+    "id": "b0555ded361241e5"
+  },
+  {
+    "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
+    "summary": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more acc...",
+    "full_content": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-16",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/lvmh-media-division-partnership",
+    "read_time": 1,
+    "id": "b73c6d7b39720723"
+  },
+  {
+    "title": "Our first phase of embedded assessments",
+    "summary": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate mod...",
+    "full_content": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-16",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+    "read_time": 1,
+    "id": "29025d7302d128ce"
+  },
+  {
+    "title": "Advancing computer-use agents for healthcare teams",
+    "summary": "Advancing computer-use agents for healthcare teams",
+    "full_content": "",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-16",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+    "read_time": 1,
+    "id": "725ebed5702515d0"
+  },
+  {
+    "title": "More ways to move care forward with ChatGPT for Healthcare",
+    "summary": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare softw...",
+    "full_content": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-16",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+    "read_time": 1,
+    "id": "350189c720832b3e"
+  },
+  {
+    "title": "The King’s Trust and OpenAI launch £1m partnership",
+    "summary": "The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI ...",
+    "full_content": "The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI skills for work.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-16",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/the-kings-trust-and-openai",
+    "read_time": 1,
+    "id": "2b4f9d829bf9c8a7"
+  },
+  {
     "title": "Asahi Linux 许可证从 MIT 换成 GPL，因为有人拿 AI 洗了它的代码",
     "summary": "Asahi Linux 是今天你能在 Apple Silicon Mac 上运行 Linux 的底层。多年来，这个开源项目把自己大部分代码放在 MIT 许可证下，好让任何人——包括各种 BSD——都能按需复用。现在这条路走到头了。 Asah...",
     "full_content": "Asahi Linux 是今天你能在 Apple Silicon Mac 上运行 Linux 的底层。多年来，这个开源项目把自己大部分代码放在 MIT 许可证下，好让任何人——包括各种 BSD——都能按需复用。现在这条路走到头了。 Asahi Linux 宣布，所有仓库都迁到 GPL v2 或更高版本。今后 Asahi 的代码只会使用强 copyleft 许可证。 原因不是法律风险...",
@@ -670,5 +742,41 @@
     "url": "https://juejin.cn/post/7708372402224906249",
     "read_time": 1,
     "id": "f0e7ef784572d1e2"
+  },
+  {
+    "title": "看懂了历史，为什么你反而更怕 AI",
+    "summary": "先说句得罪人的：那些拿“历史上自动化从没让人失业”来安慰你的文章，我劝你少看。 它不是错了。它是答错了题。 你怕的从来不是“人类会不会失业”。你怕的是下一个被优化的是不是你。 这两件事中间，隔着一条很",
+    "full_content": "先说句得罪人的：那些拿“历史上自动化从没让人失业”来安慰你的文章，我劝你少看。 它不是错了。它是答错了题。 你怕的从来不是“人类会不会失业”。你怕的是下一个被优化的是不是你。 这两件事中间，隔着一条很",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-16",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7708687035030601779",
+    "read_time": 1,
+    "id": "7105d6e642fcf06a"
+  },
+  {
+    "title": "同一个问题问 100 遍，钱就扣 100 次？精确缓存让它只扣一次（C02）",
+    "summary": "精确缓存是 AI 成本优化里唯一零质量损失的手段。6 个测试 + 真实链路验证，让同一个问题只扣一次钱：命中率 50%，未命中 11.1 秒、命中仅 3 毫秒，还讲清缓存 key 三要素与灰度串场。",
+    "full_content": "精确缓存是 AI 成本优化里唯一零质量损失的手段。6 个测试 + 真实链路验证，让同一个问题只扣一次钱：命中率 50%，未命中 11.1 秒、命中仅 3 毫秒，还讲清缓存 key 三要素与灰度串场。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-16",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7708714089748791332",
+    "read_time": 1,
+    "id": "dd3c6adaff590fc7"
+  },
+  {
+    "title": "【轻量化复刻大模型 / KIMI K3】Multi-Token Prediction（MTP / EAGLE-3）(2)",
+    "summary": "【轻量化复刻大模型 / KIMI K3】Multi-Token Prediction（MTP / EAGLE-3） 0x00 概要 0x05 子知识点深度分析 5.0 共享抽象与统一符号 5.1 子知",
+    "full_content": "【轻量化复刻大模型 / KIMI K3】Multi-Token Prediction（MTP / EAGLE-3） 0x00 概要 0x05 子知识点深度分析 5.0 共享抽象与统一符号 5.1 子知",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-16",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7708609864209498127",
+    "read_time": 1,
+    "id": "426a182303cba268"
   }
 ]
