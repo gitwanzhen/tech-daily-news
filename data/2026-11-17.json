@@ -300,6 +300,30 @@
     "id": "3dacc3cb13a76ed0"
   },
   {
+    "title": "Introducing OpenAI for Chile",
+    "summary": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and hel...",
+    "full_content": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-17",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/introducing-openai-for-chile",
+    "read_time": 1,
+    "id": "fa0dad41f9385591"
+  },
+  {
+    "title": "Astra for Law leads in legal intelligence",
+    "summary": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now re...",
+    "full_content": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-17",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/astra-law-6-2",
+    "read_time": 1,
+    "id": "f2812a4ba9a1d9a4"
+  },
+  {
     "title": "qOntology 开源版 v1.1.3 发布：长文档抽取支持分窗重试与阶段续跑，完善候选校验",
     "summary": "随着本体建模逐步引入 AI 辅助抽取，抽取任务的执行稳定性、候选数据的规范性，以及后续审核操作的完整性，都成为影响建模流程的重要环节。 本次 qOntology 开源版 v1.1.3 围绕 AI 辅助建模流程进行了多项完善，重点优化分窗抽取...",
     "full_content": "随着本体建模逐步引入 AI 辅助抽取，抽取任务的执行稳定性、候选数据的规范性，以及后续审核操作的完整性，都成为影响建模流程的重要环节。 本次 qOntology 开源版 v1.1.3 围绕 AI 辅助建模流程进行了多项完善，重点优化分窗抽取、异常窗口重试与任务续跑机制，同时调整四轮抽取提示词和候选数据校验规则。 此外，本次更...",
@@ -752,5 +776,29 @@
     "url": "https://juejin.cn/post/7708591867139702819",
     "read_time": 1,
     "id": "2229d83aa4dea481"
+  },
+  {
+    "title": "设计模式与生活·总论：AI 能替你砌墙，替不了你打地基",
+    "summary": "今天北京的温度是个位数。没太阳。 出门的时候风从领口往里钻。到公司，AI 助手把一个小接口的实现给了三版，都能跑，注释也齐。选哪版，卡了一会儿。快是真快；可“为什么选这版”，它答得很顺，却替不了我签字",
+    "full_content": "今天北京的温度是个位数。没太阳。 出门的时候风从领口往里钻。到公司，AI 助手把一个小接口的实现给了三版，都能跑，注释也齐。选哪版，卡了一会儿。快是真快；可“为什么选这版”，它答得很顺，却替不了我签字",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-17",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7708966693008506899",
+    "read_time": 1,
+    "id": "ee8c38126838d089"
+  },
+  {
+    "title": "2027年火的很可能是AI工作台",
+    "summary": "先说个判断：2027 年大概率会火的是 AI 工作台。不是那种陪你聊两句的对话框，是能把一件事从接单做到验收、还得有人签收的工具。正好这两天我把 SoduWork 拉到本地跑了一遍——国内网络三道坎都",
+    "full_content": "先说个判断：2027 年大概率会火的是 AI 工作台。不是那种陪你聊两句的对话框，是能把一件事从接单做到验收、还得有人签收的工具。正好这两天我把 SoduWork 拉到本地跑了一遍——国内网络三道坎都",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-17",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7708966693008359443",
+    "read_time": 1,
+    "id": "dd5ab493b18cc9f8"
   }
 ]
