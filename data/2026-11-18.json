@@ -324,6 +324,42 @@
     "id": "a2f695ac2f9b40c7"
   },
   {
+    "title": "Inside the Codex sandbox",
+    "summary": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, ...",
+    "full_content": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-18",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/inside-the-codex-sandbox",
+    "read_time": 1,
+    "id": "271c8d9c47fbf7cb"
+  },
+  {
+    "title": "The Silent Consensus",
+    "summary": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can re...",
+    "full_content": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-18",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/the-silent-consensus",
+    "read_time": 1,
+    "id": "4739d25187174c21"
+  },
+  {
+    "title": "Advancing chip design with OpenAI models",
+    "summary": "OpenAI models optimized circuits used in Jalapeño silicon and improved RISC‑V core designs, showing progress in AI-assis...",
+    "full_content": "OpenAI models optimized circuits used in Jalapeño silicon and improved RISC‑V core designs, showing progress in AI-assisted chip design with GPT‑6 Astra.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-18",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/advancing-chip-design-with-our-models",
+    "read_time": 1,
+    "id": "6cc0bdc2d0097c3d"
+  },
+  {
     "title": "微软编程模型「MAI Code」上新，用 Claude Opus 5.5 百分之五的价格拿到 96% 的性能",
     "summary": "微软宣布推出新版本编程模型：MAI Code 2 和 Code 2 Flash。它给 MAI Code 2 定的核心卖点写在小标题里：「不到一半的价格，交付生产级质量」。 具体数字更有冲击力。在 DeepSWE 1.1、Terminal B...",
     "full_content": "微软宣布推出新版本编程模型：MAI Code 2 和 Code 2 Flash。它给 MAI Code 2 定的核心卖点写在小标题里：「不到一半的价格，交付生产级质量」。 具体数字更有冲击力。在 DeepSWE 1.1、Terminal Bench 2.1、SWE-Atlas 和 FrontierCode v1.1 这四个针对企业日常编码任务的基准上取平均，MAI Code 2 拿到了 GPT 6.1 Sol 的 ...",
@@ -370,6 +406,18 @@
     "url": "https://www.oschina.net/news/503625/opencode-browse",
     "read_time": 1,
     "id": "8cde847661370a43"
+  },
+  {
+    "title": "18 年铸就开源创新基础设施，开源中国「模力方舟词元养成计划」发布",
+    "summary": "GOTC 2026 于 11 月 14 日圆满落幕，主会场上，开源中国董事长马越发表演讲，系统回顾开源中国 18 年的发展历程，分享从开源社区、源代码社区、研发效能平台到人工智能平台、创新孵化平台的五次阶段演进。现场，开源中国统一品牌标识与...",
+    "full_content": "GOTC 2026 于 11 月 14 日圆满落幕，主会场上，开源中国董事长马越发表演讲，系统回顾开源中国 18 年的发展历程，分享从开源社区、源代码社区、研发效能平台到人工智能平台、创新孵化平台的五次阶段演进。现场，开源中国统一品牌标识与 IP 形象集中亮相，模力方舟词元养成计划（MoArk Token Incubation Program）正式发布...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-18",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/503647",
+    "read_time": 1,
+    "id": "c824535a4b0aeb93"
   },
   {
     "title": "亚太是我们的共同家园",
@@ -740,5 +788,41 @@
     "url": "https://juejin.cn/post/7709327113614966784",
     "read_time": 1,
     "id": "f29f0a583bc2651b"
+  },
+  {
+    "title": "AI 读不懂你的代码怎么办：用高价值注释消除曲解、过度优化与上下文膨胀",
+    "summary": "AI 读不懂代码，多半是注释只写了「做什么」。四类高价值注释补上意图、边界与取舍，曲解、过度优化、上下文膨胀一起降。",
+    "full_content": "AI 读不懂代码，多半是注释只写了「做什么」。四类高价值注释补上意图、边界与取舍，曲解、过度优化、上下文膨胀一起降。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-18",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7709386928819241010",
+    "read_time": 1,
+    "id": "26b492cd92995855"
+  },
+  {
+    "title": "AI 总模仿代码库里的过时写法怎么办：先清坏样例，再用类型与测试让 AI 无法犯错",
+    "summary": "AI 抄你库里的旧写法不是学坏，是缺坏样例清理。两步治：先删可抄的旧代码，再用类型与测试让错写法编译不过。",
+    "full_content": "AI 抄你库里的旧写法不是学坏，是缺坏样例清理。两步治：先删可抄的旧代码，再用类型与测试让错写法编译不过。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-18",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7709358271694520329",
+    "read_time": 1,
+    "id": "05db97f30e52736d"
+  },
+  {
+    "title": "五周、两个开源仓库、九次拦截之后:AI 时代程序员缺的到底是什么",
+    "summary": "(系列第六篇。前五篇:品牌 AI 可见性实测、完整榜单、一人+Agent 复盘、科沃斯悖论、引擎代际翻转。这一篇不聊测量,聊我自己的位置——一个自认\"积极拥抱 AI\"的 Java 程序员,五周实测之后",
+    "full_content": "(系列第六篇。前五篇:品牌 AI 可见性实测、完整榜单、一人+Agent 复盘、科沃斯悖论、引擎代际翻转。这一篇不聊测量,聊我自己的位置——一个自认\"积极拥抱 AI\"的 Java 程序员,五周实测之后",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-18",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7709384944046260234",
+    "read_time": 1,
+    "id": "dcf889077b563945"
   }
 ]
