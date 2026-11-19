@@ -1,5 +1,17 @@
 [
   {
+    "title": "Anthropic prices initial public offering",
+    "summary": "Today Anthropic, PBC priced its initial public offering of its Class A common stock at $83.00 per share. The offering co...",
+    "full_content": "<div class=\"\"><article class=\"EaEYjq_Article\"><div class=\"EaEYjq_ContentWrapper\"><div class=\"PA4F1q_body\"><p class=\"PA4F1q_reading-column post-text\">Today Anthropic, PBC priced its initial public offering of its Class A common stock at $83.00 per share. The offering consists of 980,000,000 shares of Class A common stock, 956,351,354 of which are being sold by Anthropic and 23,648,646 of which are being sold by certain selling stockholders. Anthropic will not receive any proceeds from the sale of shares by the selling stockholders.</p><p class=\"PA4F1q_reading-column post-text\">The shares are expected to begin trading on the Nasdaq Global Select Market on November 19, 2026 under the symbol “ANT.” The offering is expected to close on November 20, 2026, subject to the satisfaction of customary closing conditions. In addition, Anthropic has granted the underwriters a 30-day option to purchase up to an additional 147,000,000 shares of its Class A common stock.</p><p class=\"PA4F1q_reading-column post-text\"><em>A registration statement relating to these securities was declared effective by the Securities and Exchange Commission on November 18, 2026. The offering is being made only by means of a prospectus. Copies of the final prospectus may be obtained, when available, from: Goldman Sachs &amp; Co. LLC, Attention: Prospectus Department, 200 West Street, New York, NY 10282, by telephone at (866) 471-2526, or by email at prospectus-ny@ny.email.gs.com; or Morgan Stanley &amp; Co. LLC, Attention: Prospectus Department, 180 Varick Street, 2nd Floor, New York, NY 10014, or by email at prospectus@morganstanley.com.</em></p><p class=\"PA4F1q_reading-column post-text\"><em>Today’s announcement does not constitute an offer to sell or the solicitation of an offer to buy these securities, no…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-18",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+    "read_time": 9,
+    "id": "d3a1bbdb81250830"
+  },
+  {
     "title": "在APEC感受跨越山海的情谊",
     "summary": "在APEC感受跨越山海的情谊",
     "full_content": "在APEC感受跨越山海的情谊<br /><img src=\"http://i0.hdslb.com/bfs/activity-plat/static/20221213/eaf2dd702d7cc14d8d9511190245d057/lrx9rnKo24.png\" />",
@@ -358,6 +370,42 @@
     "url": "https://openai.com/index/advancing-chip-design-with-our-models",
     "read_time": 1,
     "id": "6cc0bdc2d0097c3d"
+  },
+  {
+    "title": "Research acceleration: The jagged frontier",
+    "summary": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this si...",
+    "full_content": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-18",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+    "read_time": 1,
+    "id": "32f46a407aa3905b"
+  },
+  {
+    "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
+    "summary": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. E...",
+    "full_content": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-18",
+    "source": "OpenAI",
+    "url": "https://openai.com/business/customer-stories/sumitomo-life",
+    "read_time": 1,
+    "id": "c4029f8d3d08f72b"
+  },
+  {
+    "title": "Managing frontier AI risk: From training to deployment",
+    "summary": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, block...",
+    "full_content": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-18",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/managing-frontier-ai-risk",
+    "read_time": 1,
+    "id": "62857bef727acad9"
   },
   {
     "title": "微软编程模型「MAI Code」上新，用 Claude Opus 5.5 百分之五的价格拿到 96% 的性能",
