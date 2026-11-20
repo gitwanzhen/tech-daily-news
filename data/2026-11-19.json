@@ -300,6 +300,18 @@
     "id": "2e76d5b4b679af87"
   },
   {
+    "title": "Deploying Daybreak Red",
+    "summary": "Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, se...",
+    "full_content": "Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-19",
+    "source": "OpenAI",
+    "url": "https://openai.com/business/learn/deploying-daybreak-red",
+    "read_time": 1,
+    "id": "556aee5cf74a0b17"
+  },
+  {
     "title": "Gemini 4 Neon 发布：Google 在最强和最便宜之间，塞进了一个中间档",
     "summary": "Gemini 4 系列现在是三个档位：Carbon 攻坚最难的长周期项目，Hydrogen 负责日常快速执行，新来的 Neon 卡在中间——按 Google 自己的说法，是「平衡深度与效率」。 输入每百万 token 3 美元，缓存输入 0...",
     "full_content": "Gemini 4 系列现在是三个档位：Carbon 攻坚最难的长周期项目，Hydrogen 负责日常快速执行，新来的 Neon 卡在中间——按 Google 自己的说法，是「平衡深度与效率」。 输入每百万 token 3 美元，缓存输入 0.15 美元（95% 折扣），输出每百万 token 15 美元，上下文窗口 100 万 token。 这个定价放在前沿模型里不算激进，但...",
