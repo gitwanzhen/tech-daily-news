@@ -1,5 +1,17 @@
 [
   {
+    "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of...",
+    "summary": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its...",
+    "full_content": "<div class=\"\"><article class=\"EaEYjq_Article\"><div class=\"EaEYjq_ContentWrapper\"><div class=\"PA4F1q_body\"><p class=\"PA4F1q_reading-column post-text\">Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price. The offering consisted of 1,103,351,354 shares sold by Anthropic and 23,648,646 shares sold by certain selling stockholders. The aggregate gross proceeds from the offering, before deducting underwriting discounts and commissions and other offering expenses, were approximately $93.5 billion, of which approximately $91.6 billion was received by Anthropic. Anthropic did not receive any proceeds from the sale of shares by the selling stockholders.</p><p class=\"PA4F1q_reading-column post-text\">Anthropic’s Class A common stock began trading on the Nasdaq Global Select Market on November 19, 2026 under the symbol “ANT.”</p><p class=\"PA4F1q_reading-column post-text\">In addition to the shares of Class A common stock sold in the initial public offering, Anthropic closed the concurrent sale of an aggregate of 313,253,007 shares of Class N common stock to Advanced Micro Devices, Inc., Broadcom Inc., Google LLC, Micron Technology, Inc., Microsoft Corporation, NVIDIA Corporation, and TSMC Partners, Ltd. at the public offering price of $83.00 per share, in a private placement for an aggregate purchase price of approximately $26.0 billion. The sale of these shares of Class N common stock was not registered under the Securities Act of 1933, as amended (the “Securities Act…",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-20",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/ipo-close",
+    "read_time": 10,
+    "id": "462db626dd31f818"
+  },
+  {
     "title": "习近平主持中俄美元首会晤",
     "summary": "习近平主持中俄美元首会晤",
     "full_content": "习近平主持中俄美元首会晤<br />",
@@ -262,6 +274,54 @@
     "url": "https://www.oschina.net/news/503698",
     "read_time": 1,
     "id": "b970f2310ad87aac"
+  },
+  {
+    "title": ":fire: xbatis 1.10.11 正式发版，mybatis 系列最好用最简单最方便的 ORM !!",
+    "summary": "推荐理由： 强、强、强 ，单表？连表？不想连表？让你直接少写 1/3 甚至 2/3 的持久层代码；API 简单 快捷 优雅 简洁 构建 SQL 非常强！用过的 没用过的都来体验，虽然有 AI 了，但是真正好用的 ORM 的还不能忽略的，除非...",
+    "full_content": "推荐理由： 强、强、强 ，单表？连表？不想连表？让你直接少写 1/3 甚至 2/3 的持久层代码；API 简单 快捷 优雅 简洁 构建 SQL 非常强！用过的 没用过的都来体验，虽然有 AI 了，但是真正好用的 ORM 的还不能忽略的，除非你以后不维护。 1.10.15 - 2026-11-05 1：修复一些问题和优化代码 2：提前部分兼容 mybatis 3.6.0 ...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-20",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/503711",
+    "read_time": 1,
+    "id": "25435447c4b48dbb"
+  },
+  {
+    "title": "Jync v2.4.3 AI 助手确认执行与启动诊断",
+    "summary": "Jync v2.4.3 新增 AI 运维助手可以执行运行态操作，但每一次都由人确认：启动 / 停止同步任务、立即同步一次、启用 / 停用 / 立即运行 ETL 任务、启停 / 立即运行 / 取消专属迁移、重建 CDC 基线，助手只生成确认卡...",
+    "full_content": "Jync v2.4.3 新增 AI 运维助手可以执行运行态操作，但每一次都由人确认：启动 / 停止同步任务、立即同步一次、启用 / 停用 / 立即运行 ETL 任务、启停 / 立即运行 / 取消专属迁移、重建 CDC 基线，助手只生成确认卡；点「确认执行」后由服务端按当前账号的角色与资源归属重新校验一次才生效。确认令牌绑定发起账号、5 分...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-20",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/503710",
+    "read_time": 1,
+    "id": "a6932a67a3514ea5"
+  },
+  {
+    "title": "【AI 智能运维平台】本周更新：内置常用智能体模版，简单配置快速启用",
+    "summary": "Blueking Lite 是一个 AI First 的轻量版运维产品，具有部署资源要求低、使用成本低、渐进式体验等特点，为运维管理员提供日常运维中的必备工具。 :loudspeaker: 【平台 · 本周更新速递】 :hammer_and...",
+    "full_content": "Blueking Lite 是一个 AI First 的轻量版运维产品，具有部署资源要求低、使用成本低、渐进式体验等特点，为运维管理员提供日常运维中的必备工具。 :loudspeaker: 【平台 · 本周更新速递】 :hammer_and_wrench: 系统管理 • 新增「超级审计员」角色，可只读查看全部组织和应用数据 :card_index_dividers: CMDB • 采集任...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-20",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/503707",
+    "read_time": 1,
+    "id": "39196c9fae2ec3ee"
+  },
+  {
+    "title": "哈佛大学研究人员：AI 编程目前的瓶颈是“Code Review”",
+    "summary": "哈佛大学两位博士候选人做了一份工作论文，把 AI 编程 Agent 的真实效果算了一遍。样本是 718 家公司、725938 名员工。 结论不太好看。 用上 AI 编程 Agent 之后，人均每月新增代码行数从 5017 涨到 6511，多...",
+    "full_content": "哈佛大学两位博士候选人做了一份工作论文，把 AI 编程 Agent 的真实效果算了一遍。样本是 718 家公司、725938 名员工。 结论不太好看。 用上 AI 编程 Agent 之后，人均每月新增代码行数从 5017 涨到 6511，多了约 30%。提交数增长 20%，Pull Request 增长 23%。该有的增长都出现了。 但活干完了吗？没有。 论文用 Jira i...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-20",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/503706/harvard-researchers-find-ai-coding-agents-shifted",
+    "read_time": 1,
+    "id": "d6c0fcf44ef028de"
   },
   {
     "title": "中俄美元首深圳会晤",
@@ -569,6 +629,54 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E6%9B%9D%E9%9D%92%E7%A8%9A%E9%80%89%E6%8B%A9%E7%99%BD%E5%B0%8F%E7%BA%AF%E7%9A%84%E5%8E%9F%E5%9B%A0",
     "read_time": 1,
     "id": "43a41f454046b1b6"
+  },
+  {
+    "title": "当公司不久后变成冒险者公会，我担心什么",
+    "summary": "李彦宏在百度世界 2026 上讲了个新词，智能组织。他打了个比方：AI 是新电能，光给机器换电机没用，厂房也得推倒重盖。那座新厂房，就是它——公司的活拆成一件件任务，不再按岗位切；人和智能体临时组队接",
+    "full_content": "李彦宏在百度世界 2026 上讲了个新词，智能组织。他打了个比方：AI 是新电能，光给机器换电机没用，厂房也得推倒重盖。那座新厂房，就是它——公司的活拆成一件件任务，不再按岗位切；人和智能体临时组队接",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-20",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7710126647601053746",
+    "read_time": 1,
+    "id": "3efbc2bcda2af390"
+  },
+  {
+    "title": "AI 写的 Three.js 大屏，为什么越跑越卡？我在 Node 里复现了它的内存曲线",
+    "summary": "Node+three 0.187 复现 AI 大屏代码三类病灶：每帧重建不清理 60 秒漏 75MB；节点堆到万级遍历涨到 3ms；dispose 只发事件，释放靠渲染器监听。",
+    "full_content": "Node+three 0.187 复现 AI 大屏代码三类病灶：每帧重建不清理 60 秒漏 75MB；节点堆到万级遍历涨到 3ms；dispose 只发事件，释放靠渲染器监听。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-20",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7710094508160008230",
+    "read_time": 1,
+    "id": "eb0adcb615988215"
+  },
+  {
+    "title": "哇塞~24小时开机的WorkBuddy免费领，速来",
+    "summary": "最近中国电信干了件挺大方的事：它家的智能体，注册就白送一台云电脑，4核8G，装的还是正经 Windows。 大家好，我是小虎。 我一听就太喜欢了，平时下班得把笔记本电脑关机塞进包里，跑一半的任务只能停",
+    "full_content": "最近中国电信干了件挺大方的事：它家的智能体，注册就白送一台云电脑，4核8G，装的还是正经 Windows。 大家好，我是小虎。 我一听就太喜欢了，平时下班得把笔记本电脑关机塞进包里，跑一半的任务只能停",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-20",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7710097773307592719",
+    "read_time": 1,
+    "id": "03f9104f34565fdd"
+  },
+  {
+    "title": "AI 知识库的主流做法是 RAG，RAG怎么做",
+    "summary": "AI 知识库一般怎么搭建 AI 知识库的主流做法是 RAG：文档先切块，建立向量和关键词索引后入库；提问时先检索相关片段，再交给大模型回答，并带上来源。模型本身不“记住”你的资料，这些内容也不会写进模",
+    "full_content": "AI 知识库一般怎么搭建 AI 知识库的主流做法是 RAG：文档先切块，建立向量和关键词索引后入库；提问时先检索相关片段，再交给大模型回答，并带上来源。模型本身不“记住”你的资料，这些内容也不会写进模",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-20",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7710134286456062015",
+    "read_time": 1,
+    "id": "5280ab9c1f8eaf54"
   },
   {
     "title": "饥饿游戏：收获日出",
