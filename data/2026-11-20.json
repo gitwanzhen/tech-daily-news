@@ -240,6 +240,42 @@
     "id": "4cce9e8d80779caf"
   },
   {
+    "title": "Combatting adversarial distillation",
+    "summary": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to...",
+    "full_content": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-20",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/combatting-adversarial-distillation",
+    "read_time": 1,
+    "id": "7121ba7c91734ceb"
+  },
+  {
+    "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+    "summary": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation re...",
+    "full_content": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-20",
+    "source": "OpenAI",
+    "url": "https://openai.com/business/customer-stories/hebbia",
+    "read_time": 1,
+    "id": "c2d364619a446974"
+  },
+  {
+    "title": "Can AI help scientists identify promising drug candidates?",
+    "summary": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select ...",
+    "full_content": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-20",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/introducing-medchembench",
+    "read_time": 1,
+    "id": "3c753634dc1f4ee5"
+  },
+  {
     "title": "蚂蚁 OceanBase 团队开源 PowerContext，跨对话的 Agent 记忆服务",
     "summary": "蚂蚁 OceanBase 团队开源了名为「PowerContext」的项目，解决的问题很具体：上下文不该死在一次对话里。 它的定位是「给 AI agent 用的开源上下文服务」。把工作中那些耐久的东西——决策、约束、证据、进度——从对话里搬...",
     "full_content": "蚂蚁 OceanBase 团队开源了名为「PowerContext」的项目，解决的问题很具体：上下文不该死在一次对话里。 它的定位是「给 AI agent 用的开源上下文服务」。把工作中那些耐久的东西——决策、约束、证据、进度——从对话里搬到外面，这样下一个会话、下一个 agent，或者下一个人接手时，能从当前状态继续，不用重读一遍聊天...",
