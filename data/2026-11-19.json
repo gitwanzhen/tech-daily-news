@@ -264,6 +264,42 @@
     "id": "6ea811258a465008"
   },
   {
+    "title": "Explore the Codex Security Plugin",
+    "summary": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results ...",
+    "full_content": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-19",
+    "source": "OpenAI",
+    "url": "https://openai.com/business/learn/codex-security-plugin-demo",
+    "read_time": 1,
+    "id": "6ed6090c09421c36"
+  },
+  {
+    "title": "See PR scans in action",
+    "summary": "Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow.",
+    "full_content": "Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-19",
+    "source": "OpenAI",
+    "url": "https://openai.com/business/learn/pr-scans-demo",
+    "read_time": 1,
+    "id": "787cd754371822f4"
+  },
+  {
+    "title": "Get started with Daybreak Blue",
+    "summary": "Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started.",
+    "full_content": "Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started.",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-19",
+    "source": "OpenAI",
+    "url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+    "read_time": 1,
+    "id": "2e76d5b4b679af87"
+  },
+  {
     "title": "Gemini 4 Neon 发布：Google 在最强和最便宜之间，塞进了一个中间档",
     "summary": "Gemini 4 系列现在是三个档位：Carbon 攻坚最难的长周期项目，Hydrogen 负责日常快速执行，新来的 Neon 卡在中间——按 Google 自己的说法，是「平衡深度与效率」。 输入每百万 token 3 美元，缓存输入 0...",
     "full_content": "Gemini 4 系列现在是三个档位：Carbon 攻坚最难的长周期项目，Hydrogen 负责日常快速执行，新来的 Neon 卡在中间——按 Google 自己的说法，是「平衡深度与效率」。 输入每百万 token 3 美元，缓存输入 0.15 美元（95% 折扣），输出每百万 token 15 美元，上下文窗口 100 万 token。 这个定价放在前沿模型里不算激进，但...",
@@ -658,6 +694,30 @@
     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D%E7%89%B9%E6%9C%97%E6%99%AE%E6%80%BB%E7%BB%9F%E8%AF%B4%E8%AF%B7%E4%B8%AD%E5%9B%BD%E7%BB%A7%E7%BB%AD%E4%BF%9D%E6%8C%81%E5%BC%BA%E5%A4%A7",
     "read_time": 1,
     "id": "ad8ebb651c8413c0"
+  },
+  {
+    "title": "五、《从零手撸 Agent》 — 什么是 Agent：从“会聊天”到“会做事”，差的就是一个循环",
+    "summary": "前面四篇，你已经在和模型“对话”了：会发消息、会收流式、会拼上下文。但对话不是做事。 这一篇不写一行代码，只干一件事——把概念地图铺正：什么是 Agent、它和聊天机器人差在哪、由哪几部分组成。这张图",
+    "full_content": "前面四篇，你已经在和模型“对话”了：会发消息、会收流式、会拼上下文。但对话不是做事。 这一篇不写一行代码，只干一件事——把概念地图铺正：什么是 Agent、它和聊天机器人差在哪、由哪几部分组成。这张图",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-19",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7709781930410655770",
+    "read_time": 1,
+    "id": "6e25fca2e1bb0dcb"
+  },
+  {
+    "title": "为什么越来越多人用 Spring AI ？",
+    "summary": "Spring AI简介 Spring AI是Spring生态面向人工智能领域的官方扩展，旨在让Java开发者无需深入机器学习底层，就能像使用Spring MVC、Spring Data一样自然地构建A",
+    "full_content": "Spring AI简介 Spring AI是Spring生态面向人工智能领域的官方扩展，旨在让Java开发者无需深入机器学习底层，就能像使用Spring MVC、Spring Data一样自然地构建A",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-19",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7709781930410360858",
+    "read_time": 1,
+    "id": "cf7eaf46bcf9c2e6"
   },
   {
     "title": "深度安静",
