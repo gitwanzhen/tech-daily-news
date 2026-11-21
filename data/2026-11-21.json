@@ -774,6 +774,66 @@
     "id": "760ec7aafd65877c"
   },
   {
+    "title": "别再傻傻地喂文件了，大厂都在偷偷给AI建这种“专属图书馆”",
+    "summary": "AI 再强也不懂你的业务。大厂在做的不是把文件塞给模型，而是用文档分片、向量化和智能索引，给 AI 建一座可检索的专属图书馆。",
+    "full_content": "AI 再强也不懂你的业务。大厂在做的不是把文件塞给模型，而是用文档分片、向量化和智能索引，给 AI 建一座可检索的专属图书馆。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-21",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7710499585361575945",
+    "read_time": 1,
+    "id": "0c543b739721f6f9"
+  },
+  {
+    "title": "Agent开发 00｜从 ChatGPT 到生产级 AI Agent",
+    "summary": "Agent开发 00｜从 ChatGPT 到生产级 AI Agent 《Agent开发》系列 · 第 00 篇 当我们使用 ChatGPT、Codex、Cursor 等 AI 工具时，很容易产生一种感",
+    "full_content": "Agent开发 00｜从 ChatGPT 到生产级 AI Agent 《Agent开发》系列 · 第 00 篇 当我们使用 ChatGPT、Codex、Cursor 等 AI 工具时，很容易产生一种感",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-21",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7710178154624008246",
+    "read_time": 1,
+    "id": "2a6b21e915e4fed4"
+  },
+  {
+    "title": "一款运行在 DSH（DeepSeek Harness）中的类 Postman HTTP 接口调试插件",
+    "summary": "Tree New Bee 接口请求 一款运行在 DSH（DeepSeek Harness）中的类 Postman HTTP 接口调试插件。左侧栏提供统一入口，可在面板中构造请求、查看响应、管理集合/环",
+    "full_content": "Tree New Bee 接口请求 一款运行在 DSH（DeepSeek Harness）中的类 Postman HTTP 接口调试插件。左侧栏提供统一入口，可在面板中构造请求、查看响应、管理集合/环",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-21",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7710170786309685263",
+    "read_time": 1,
+    "id": "59031d763ac81bcf"
+  },
+  {
+    "title": "我让 AI 给掘金首页做了次性能体检：LCP 8.9 秒是真的，但它判读错了一处",
+    "summary": "用 chrome-devtools-mcp 让 AI 给掘金首页体检：LCP 8.956s、冗余图 4MB，数字对原始 trace 全中，唯独 LCP 成因判读错一处，报告可用，裁决靠人。",
+    "full_content": "用 chrome-devtools-mcp 让 AI 给掘金首页体检：LCP 8.956s、冗余图 4MB，数字对原始 trace 全中，唯独 LCP 成因判读错一处，报告可用，裁决靠人。",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-21",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7710499585361264649",
+    "read_time": 1,
+    "id": "f50f6181ced614a8"
+  },
+  {
+    "title": "GitHub Copilot：你可以暂时不用，但别不知道它有多强",
+    "summary": "用 AI 把 GitHub 开源项目跑起来：一份面向新手的 Copilot Pro 实操教程 上一篇文章聊到一个想法：从 GitHub 找一个解决实际问题的开源项目，用 AI 辅助复现、改进和部署，再",
+    "full_content": "用 AI 把 GitHub 开源项目跑起来：一份面向新手的 Copilot Pro 实操教程 上一篇文章聊到一个想法：从 GitHub 找一个解决实际问题的开源项目，用 AI 辅助复现、改进和部署，再",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-21",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7710454471289323529",
+    "read_time": 1,
+    "id": "5205df591f0e7af3"
+  },
+  {
     "title": "霹雳英雄：素还真",
     "summary": "标题：霹雳英雄：素还真评分：6.8片长：102分钟(中国大陆)制片国家/地区：中国台湾导演：黄强华 王嘉祥 郑保品 王泉修主演：黄文择",
     "full_content": "标题：霹雳英雄：素还真<br />评分：6.8<br />片长：102分钟(中国大陆)<br />制片国家/地区：中国台湾<br />导演：黄强华 王嘉祥 郑保品 王泉修<br />主演：黄文择<br /><img src=\"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2937648552.webp\" />",
