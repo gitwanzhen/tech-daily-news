@@ -324,6 +324,18 @@
     "id": "5ecb6e3f719f5a5a"
   },
   {
+    "title": "phimint v0.13.0 发布：Windows 自更新、卸载、路径显示逐条修好；MIT OR Apache-2.0 双协议",
+    "summary": "phimint v0.13.0 已发布（2026-11-23）。phimint 是一个用 Rust 写的终端 AI 编码 agent：一条命令装上，配好 API key，就能在终端里把需求变成跑通的代码。 这一轮要讲的不是新功能，是一批具体...",
+    "full_content": "phimint v0.13.0 已发布（2026-11-23）。phimint 是一个用 Rust 写的终端 AI 编码 agent：一条命令装上，配好 API key，就能在终端里把需求变成跑通的代码。 这一轮要讲的不是新功能，是一批具体的麻烦事被一个一个修好了。跨平台工具真正难的地方往往不在&quot;能不能跑&quot;，而在&quot;装上之后会不会跟你捣乱&quot;。0.12 到 0.13 这两轮...",
+    "category": "ai",
+    "categoryName": "AI/大模型",
+    "date": "2026-11-23",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/503758",
+    "read_time": 1,
+    "id": "760e46fe1d1f81dc"
+  },
+  {
     "title": "亚太同行深入人心",
     "summary": "亚太同行深入人心",
     "full_content": "亚太同行深入人心",
